@@ -1,0 +1,429 @@
+.step-5__activity--step-1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > .chatbot__container {
+    // flex: 1;
+    width: 300px;
+    margin-bottom: $space-x-small;
+    // width: auto;
+
+    @media (min-width: $md-width) {
+      margin-right: $space-small;
+      margin-bottom: 0;
+    }
+  }
+
+  & > .step-5__activity--step-1-eco-areas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $space-xx-small;
+
+    & > li {
+      background-color: $grey-2;
+      border: 0.2em solid $grey-4;
+      border-radius: $small-border-radius;
+      color: $grey-4;
+      font-weight: bold;
+      padding: $space-xx-small $space-x-small;
+      text-align: center;
+
+      &.step-5__activity--step-1-eco-area-success {
+        background-color: $green-success;
+        background-image: url("/badge-assets/chatbots/_global/svg/icon--success-small.svg");
+        background-position: 90% 45%;
+        background-repeat: no-repeat;
+        border-color: $green-success;
+        color: $white;
+        padding-right: $space-large;
+        text-align: left;
+      }
+
+      @media (min-width: $md-width) {
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: $md-width) {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+  }
+}
+
+.step-5__activity--step-2-deploying {
+  align-items: center;
+  background-color: $grey-2;
+  border: 0.1em solid $grey-3;
+  border-radius: $small-border-radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: $space-xx-large;
+  text-transform: uppercase;
+
+  & > p {
+    font-family: "Monoton", sans-serif;
+    font-size: 2rem;
+  }
+}
+
+.step-5__activity--step-2-error {
+  background-color: $pastel-yellow;
+  border: 0.1em solid $orange;
+  border-radius: $small-border-radius;
+  margin-bottom: $space-large;
+  padding: $space-medium;
+
+  & h3 {
+    color: $orange;
+    font-weight: bold;
+    font-size: 150%;
+    margin-bottom: $space-small;
+  }
+}
+
+.step-5__activity--step-2-container {
+  background-color: $purple;
+  border-radius: $small-border-radius;
+  color: $white;
+  font-family: "Monaco", monospace;
+  margin-bottom: $space;
+  padding: $space-medium;
+
+  & code {
+    display: block;
+
+    & > span {
+      &[contenteditable="true"] {
+        &:focus {
+          border: 0;
+          outline: 0.2em dashed $white;
+          outline-offset: 0.3em;
+        }
+      }
+
+      &.step-5__activity--step-2-code-highlighted {
+        background-color: $gradient-blue;
+        display: block;
+      }
+
+      &.step-5__activity--step-2-code-complete {
+        background: darkslategrey;
+        display: block;
+      }
+    }
+
+    & .code--orange {
+      color: $orange;
+    }
+
+    & .code--green {
+      color: $green-success;
+    }
+
+    & .code--gold {
+      color: $idea-gold;
+    }
+  }
+
+  & > span {
+    display: block;
+    margin: $space 0 $space $space-xx-small;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.step-5__activity--step-2-errors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-xx-small;
+  justify-content: space-between;
+  margin-bottom: $space-small;
+
+  & > li {
+    background-color: $grey-2;
+    border: 0.2em solid $grey-4;
+    border-radius: $small-border-radius;
+    color: $grey-4;
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+    padding: $space-xx-small $space-x-small;
+
+    & > button {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      & > span {
+        color: white;
+        display: flex;
+      }
+
+      & > span.counter {
+        align-items: center;
+        background-color: $white;
+        border-radius: 50%;
+        color: $red-fail;
+        display: flex;
+        font-size: $small-text-size;
+        height: 1.25rem;
+        justify-content: center;
+        margin-left: 0.4rem;
+        width: 1.25rem;
+        flex-grow: inherit;
+      }
+      &.disabled {
+        opacity: 1;
+      }
+    }
+
+    &.step-5__activity--step-2-error-success {
+      background-color: $green-success;
+      background-image: url("/badge-assets/chatbots/_global/svg/icon--success-small.svg");
+      background-position: 95% 42%;
+      background-repeat: no-repeat;
+      border-color: $green-success;
+      color: $white;
+    }
+
+    &.step-5__activity--step-2-error-fail {
+      background-color: $red-fail;
+      border-color: $red-fail;
+      color: $white;
+      text-align: left;
+    }
+
+    & > span.dropdown {
+      display: inline-block;
+      height: 18px;
+      margin-right: 0.5em;
+      width: 15px;
+    }
+
+    & span.dropdown--open {
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (min-width: $sm-width) {
+    justify-content: space-between;
+  }
+}
+
+.step-5__activity--step-2-errors-dropdown {
+  background: $white;
+  border-radius: $small-border-radius;
+  padding: $space-small;
+  margin: $space 0;
+
+  p {
+    margin: 0;
+
+    + p {
+      margin: $space-medium 0;
+    }
+  }
+}
+
+.holder--reflection {
+  margin: $space-large 0;
+}
+
+.step-5__activity--step-3-progress {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: $space-medium;
+  margin-bottom: -2rem;
+
+  & .step-5__activity--step-3-progress__progress {
+    background: $gradient-orange;
+    background-clip: text;
+    color: transparent;
+    font-family: "Monoton", sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+  }
+}
+
+.step-5__activity--step-3-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-xx-small;
+
+  & .step-5__activity--step-3-statement {
+    align-items: center;
+    background-color: $white;
+    border: 0.2em solid $grey-3;
+    border-top-right-radius: $small-border-radius;
+    border-top-left-radius: $small-border-radius;
+    display: flex;
+    flex: 1;
+    margin-bottom: 0 !important; // would prefer to remove this
+    padding: $space-x-small;
+
+    @media (min-width: $md-width) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: $small-border-radius;
+    }
+  }
+
+  & .step-5__activity--step-3-options {
+    display: flex;
+    flex-direction: row;
+    gap: $space-xx-small;
+
+    & > li {
+      flex: 1;
+
+      & > button {
+        background-color: $white;
+        border-bottom-right-radius: $small-border-radius;
+        border-bottom-left-radius: $small-border-radius;
+        display: block;
+        font-weight: bold;
+        height: 100%;
+        padding: $space-x-small;
+        text-transform: uppercase;
+        width: 100%;
+
+        &::after {
+          content: "?";
+        }
+
+        @media (min-width: $md-width) {
+          border-top-right-radius: $small-border-radius;
+          border-bottom-left-radius: 0;
+          width: 8rem;
+        }
+      }
+    }
+
+    & > .step-5__activity--step-3-option-strength {
+      & > button {
+        border: 0.2em solid $green-success;
+        color: $green-success;
+      }
+
+      &.selected {
+        & > button {
+          background-color: $green-success !important;
+          color: #fff;
+        }
+      }
+    }
+
+    & > .step-5__activity--step-3-option-weakness {
+      & p,
+      & > button {
+        border: 0.2em solid $red-fail;
+        color: $red-fail;
+      }
+
+      &.selected {
+        & > button {
+          background-color: $red-fail !important;
+          color: #fff;
+        }
+      }
+    }
+
+    @media (min-width: $md-width) {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.step-5__activity--step-3-container-success {
+  & .step-5__activity--step-3-statement {
+    background-color: $green-success;
+    border-color: $green-success;
+    color: #fff;
+  }
+
+  & .step-5__activity--step-3-options {
+    & > li {
+      & > button {
+        background-color: $green-success;
+        border-top-color: #fff;
+        color: $white !important; //fix
+
+        &::after {
+          content: "!";
+        }
+
+        @media (min-width: $md-width) {
+          border-left-color: #fff;
+        }
+      }
+    }
+
+    @media (min-width: $md-width) {
+      border-right: 0;
+    }
+  }
+}
+
+.step-5__activity--step-3-container-fail,
+.step-5__activity--step-3-container-weakness {
+  & .step-5__activity--step-3-statement {
+    background-color: $red-fail;
+    border-color: $red-fail;
+    color: #fff;
+  }
+
+  & .step-5__activity--step-3-options {
+    & > li {
+      & > button {
+        background-color: $red-fail;
+        border-top-color: #fff;
+        color: $white !important; //fix
+
+        &::after {
+          content: "";
+        }
+
+        @media (min-width: $md-width) {
+          border-left-color: #fff;
+        }
+      }
+    }
+
+    @media (min-width: $md-width) {
+      border-right: 0;
+    }
+  }
+}
+.step-5__activity--step-1-container,
+.prototype {
+  .chatbot__container {
+    .chatbot__middle {
+      .chatbot__middle--entry-left {
+        .chatbot--user-icon {
+          background: white;
+          img {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}

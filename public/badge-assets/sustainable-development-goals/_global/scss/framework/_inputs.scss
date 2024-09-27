@@ -1,0 +1,46 @@
+
+/*-----
+INPUTS
+-----*/
+
+.select-wrapper:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url('../img/dropdown.svg') no-repeat 50% 50%;
+    display: block;
+    pointer-events: none;
+    line-height: 32px;
+    width: 4rem;
+    height: 3rem;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select { 
+	-webkit-appearance: none;  
+	-moz-appearance: none;
+	border: 1px solid $black;
+	padding: 5px 6rem 6px 8px;
+	border-radius: 5px;
+	background: #fff;
+	color: #666;
+	font-family: $arvo;
+	font-weight: $bold;
+	font-size: 1.4rem;
+	color: $black;
+   	width: 18rem;
+    height: 3rem;
+}
+.select-wrapper { position:relative; display: inline-block; }
+
+
+@media(min-width: $md-width){
+
+	.select-l-margin { margin-left: 1rem; }
+	.select-r-margin { margin-right: 1rem; }
+	.select-lr-margin { margin-left: 1rem; margin-right: 1rem; }
+}

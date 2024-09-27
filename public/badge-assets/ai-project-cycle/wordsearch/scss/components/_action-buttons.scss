@@ -1,0 +1,25 @@
+/*! Action Buttons */
+
+.desktop-actions { display: none; }
+.action-buttons  { display: none; }
+
+.icon-button__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 0;
+    display: block;
+    transition: all .3s ease;
+}
+
+@media only screen and (min-width: 768px){
+
+	.action-buttons {display: flex; padding: 2rem 0; max-width: 41rem; margin: 0; width: 100%; justify-content: center; }
+	.action-buttons .icon-button__icon { width: 2.4rem; height: 2.4rem; }
+
+	.icon-button { /* flex: 1; */ display: flex; flex-direction: column; justify-content: center; align-items: center; color: inherit; text-decoration: none; transition: all .3s ease; padding: 0 1.8rem; }
+
+	.icon-button:hover { color: $primary-colour; }
+	.icon-button:hover .icon-button__icon {  fill: $primary-colour; }
+
+	.icon-button__text { font-family: SofiaPro-Regular,sans-serif;  font-size: 1.4rem;  margin-top: .5rem;	}
+}

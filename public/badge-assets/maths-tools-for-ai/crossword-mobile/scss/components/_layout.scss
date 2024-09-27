@@ -1,0 +1,275 @@
+.crossword-layout {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+}
+
+.crossword-layout .puzzle-table tbody tr:nth-child(10) td:nth-child(4) .number {
+	opacity: 0;
+}
+
+@media only screen and (max-width:767px) {
+	.crossword-layout {
+		display: flex;
+		flex-direction: column
+	}
+	.touch .gameplay {
+		max-height: calc(100% - 16rem)
+	}
+	.touch .keyboard {
+		height: 16rem
+	}
+	.no-touch .keyboard {
+		display: none
+	}
+
+	.gameplay {
+		display: flex;
+		flex-direction: column
+	}
+	.gameplay,
+	.grid-and-buttons {
+		flex-grow: 1
+	}
+	.grid {
+		overflow: auto
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.crossword-layout {
+		display: flex;
+		flex-direction: column
+	}
+	.touch .gameplay {
+		max-height: calc(100% - 22rem)
+	}
+	.touch .keyboard {
+		height: 22rem
+	}
+	.no-touch .gameplay {
+		max-height: calc(100% - 7rem)
+	}
+	.no-touch .keyboard {
+		display: none
+	}
+
+	.gameplay {
+		display: flex
+	}
+	.gameplay,
+	.grid-and-buttons {
+		flex-grow: 1
+	}
+	.grid {
+		overflow: auto
+	}
+	.list-view {
+		display: none
+	}
+	.clues {
+		width: 26rem;
+		padding: 0 2rem 0 0
+	}
+}
+
+@media only screen and (min-width:1001px) {
+	.clues {
+		width: 48rem;
+		padding: 0 2rem 2rem 0
+	}
+	.gameplay,
+	.mobile-menu {
+		max-width: 106rem;
+		margin: 0 auto;
+		padding: 0
+	}
+}
+
+.grid-and-buttons {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch
+}
+
+.puzzle-table {
+	//border: 1px solid #333; 
+	border-collapse: collapse;
+	margin: 0 auto
+}
+
+.puzzle-table td {
+	//border-right: 1px solid #333
+	//border-bottom: 1px solid #333;
+
+	border-right: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	width: 4rem;
+	text-align: center;
+	border-radius: 8px;
+	/* background-color: #fff; /*
+}
+
+.puzzle-table .blank .square {
+	background-color: $dark-blue;
+	/* border-color: $dark-blue; */
+}
+
+.blank .square { 
+	background-color: $dark-blue; 
+}
+
+.puzzle-table .current .square {
+	background: $current-colour;
+}
+
+.puzzle-table .selected-word .square  {
+	background: rgba(255, 255, 255, 0.75);
+}
+
+.puzzle-table .current.selected-word .square {
+	background: #01DFF4
+}
+
+.puzzle-table .correct.selected-word .square,
+.puzzle-table .correct .square {
+	background: $correct-colour;
+}
+
+.puzzle-table td.dmark-right {
+	border-right-color: #000
+}
+
+.puzzle-table td.dmark-bottom {
+	border-bottom-color: #000
+}
+
+.square {
+	display: block;
+	width: 1fr;
+	padding-bottom: 100%;
+	overflow: hidden;
+	background-color: #fff;
+    border-radius: 4px;
+}
+
+.square {
+	position: relative
+}
+
+.current .square {
+	background: #fff;
+	color: $current-colour;
+}
+
+.number {
+	position: absolute;
+	font-size: .8rem;
+	left: .25vw;
+	top: .45vw;
+	color: $dark-blue; 
+	font-family: $regular-font;
+	line-height: 1
+}
+
+.letter,
+.square {
+	text-align: center;
+}
+
+.letter {
+	display: flex;
+	font-size: 4.8vw;
+	padding: 1.5vw 0 0;
+	color: #000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	align-items: center;
+	justify-content: center;
+	font-family: $regular-font;
+	font-weight: 700
+}
+
+.correct .number,
+.correct .letter { 
+	color: #fff; 
+}
+
+.dmark-right .square {
+	border-right: 1px solid #000
+}
+
+.dmark-bottom .square {
+	border-bottom: 1px solid #000
+}
+
+.dmark-hyphen-right .square:after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 8px;
+	height: 2px;
+	background: #000;
+	right: -5px;
+	bottom: 10px
+}
+
+.dmark-hyphen-bottom .square:before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 2px;
+	height: 8px;
+	background: #000;
+	bottom: -5px;
+	left: 50%;
+	margin-left: -1px
+}
+
+@media only screen and (min-width:568px) {
+	.letter {
+		font-size: 1.8rem;
+		padding: .5vw 0 0;
+	}
+}
+
+@media only screen and (min-width:600px) {
+	.grid-and-buttons {
+		padding: 0
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.grid-and-buttons {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden
+	}
+	.puzzle-table td {
+		width: 3.5rem
+	}
+	.number {
+		font-size: 1rem;
+		left: .2rem;
+		top: .1rem
+	}
+	.letter {
+		padding: .8rem 0 0
+	}
+}
+
+
+
+.clues {
+	overflow-y: auto;
+	-webkit-overflow-scrolling: auto
+}

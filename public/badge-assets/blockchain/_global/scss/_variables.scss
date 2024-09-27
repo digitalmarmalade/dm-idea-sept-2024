@@ -1,0 +1,31 @@
+/* Variables */
+
+$sm-width: 600px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xl-width: 1200px;
+
+/* COLOURS */
+
+$white: #FFF;
+$pink: #ED2F84;
+$yellow: #FFC400;
+$green: #00C28A;
+$blue: #302F68;
+
+$grad-blue: linear-gradient(to right, #5E4FB4, #302368);
+$grad-yellow: linear-gradient(to right, #FC9408, #FFC400);
+$grad-green: linear-gradient(to right, #00C28A, #2FED98);
+$grad-pink: linear-gradient(to right, #C20038, #ED2F84);
+
+
+/* Layout */
+$border-radius: 20px;
+$border-radius-btn: 5px;
+$padding: 20px;
+$padding-big-screen: 40px;
+$box-shadow: 0px 0px 15px rgba(0,0,0,.5);
+
+/* Typography */
+
+$source-code: 'Source Code Pro', monospace;

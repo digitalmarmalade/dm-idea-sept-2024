@@ -1,0 +1,28 @@
+
+@media only screen and (max-width: 767px) {
+    .page-summary { padding: 5rem 0 10rem;
+        img { width: 10rem; height: 10rem; margin: 0 auto 3rem; display: block; }
+        .page-cta { text-align: center; }
+    }
+    .page-summary__text { 
+        p:first-child { text-align: center; }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .page-summary { display: flex; justify-content: center; align-items: flex-start; position: relative; z-index: 10;
+        img { width: 18rem; height: 18rem; }
+    }
+    .page-summary__text { max-width: 54rem; padding: 0 4rem; }
+}
+
+.success-row { position: relative; 
+    .barbell { bottom: 21rem; left: 40rem; }
+    .squares--success1 { top: 5em; left: 50%; margin: 0 0 0 -40rem; opacity: .1; }
+    .squares--success2 { transform: scale(.7); left: 50%; bottom: -4rem; margin: 0 0 0 23rem; }
+    .success-triangle { width: 0; height: 0; border-style: solid; border-width: 0 320px 320px 320px; border-color: transparent transparent #fff transparent; opacity: .5; position: absolute; left: 0; bottom: -10rem; }
+}
+@media only screen and (min-width: 768px) {
+    
+    .holder--success { padding: 11rem 0 26rem; }
+    
+}

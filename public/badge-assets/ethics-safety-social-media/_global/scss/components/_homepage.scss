@@ -1,0 +1,118 @@
+.home {
+  .intro {
+    margin: 20px 0;
+  }
+  ul {
+    z-index: 2;
+  }
+  li {
+    margin: 0 0 5px;
+    display: inline-block;
+    p {
+      background-color: $purple;
+      display: inline;
+      padding: 10px 20px;
+      font-size: 1.15em;
+      text-align: left;
+      width: auto;
+      float: left;
+      margin: 0;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+
+  .home {
+    max-width: 65%;
+    .intro {
+      margin: 20px 0;
+    }
+    ul {
+      position: absolute;
+      top: 160px;
+      right: 0;
+      width: 40%;
+    }
+    li {
+      float:right;
+      margin: 0 0 15px;
+      p {
+        text-align: left;
+        display: inline-block;
+      }
+    }
+    #animation_container {
+      position: absolute;
+      bottom: -130px;
+      right: -350px;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .home-wrapper {
+    margin-bottom: -120px;
+    position: relative;
+  }
+  .home {
+    max-width: 45%;
+    ul {
+      top: 40px;
+      width: 50%;
+    }
+    li {
+      p{
+        padding: 20px;
+      }
+    }
+    #animation_container {
+      position: absolute;
+      bottom:-340px;
+      right: -160px;
+    }
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+  .home {
+    max-width: 45%;
+    font-size: 90%;
+    ul {
+      width: 70%;
+    }
+    li {
+      p{
+        padding: 20px;
+      }
+    }
+    #animation_container {
+      position: absolute;
+      bottom:-300px;
+      right: -160px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1490px) {
+  .home {
+    .holder {
+      // width: 55%;
+    }
+    ul{
+      margin-top: 0;
+      width: 50%;
+    }
+    li:last-child{
+      width: 45%;
+    }
+    #animation_container {
+      transform: scale(1);
+      position: absolute;
+      bottom: -200px;
+      right: -60px
+    }
+  }
+}

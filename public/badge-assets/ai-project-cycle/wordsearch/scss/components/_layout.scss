@@ -1,0 +1,15 @@
+body { background-color: $bg-colour; }
+
+* { -webkit-touch-callout: none; -webkit-user-select: none; }
+
+.wordsearch-layout { overflow: hidden; }
+.text-title { display: none }
+@media(min-width: $md-width){
+  .puzzle { display: flex; align-items: flex-start;  justify-content: center; transform: scale(1, 1) !important;  }
+
+  .playable-area { position: static; width: 100%; max-width: 860px; margin: 0 auto;  height: auto !important; width: auto !important; top: auto !important; left: auto !important; padding-left: 0 !important;  }
+
+  .words { height: auto !important; width: auto !important; }
+
+  .wordsearch-layout  { position: relative; width: 100%; margin:0 auto; height:100vh; }
+}

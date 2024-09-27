@@ -1,0 +1,135 @@
+/*! Typography */
+
+
+html {
+  font-size: 100%;
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  color: $white;
+  -moz-osx-font-smoothing: grayscale; /* Fixes issues with blurred fonts in Firefox */
+}
+
+
+h1 {
+  font-size: $section-heading-mob;
+  margin:0 0 .8rem;
+  text-align: left;
+  width: 100%;
+  &.intro-title {
+    font-size: 3.2em;
+
+    line-height: 100%;
+    margin: -1.6rem 0 1.6rem;
+
+  }
+  &.congratulations {
+    font-size: 175%;
+  }
+
+}
+
+h2 {
+  font-size: $section-subheading-mob;
+  margin: 0 0 .4em;
+  span {
+    text-transform: none;
+  }
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: calc(#{$bodycopy} * 2);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 .4rem;
+}
+
+
+
+p, li {
+  font-size: $bodycopy;
+  margin: 0 0 calc(#{$bodycopy} * .75);
+  &.uppercase {
+    text-transform: uppercase;
+  }
+  &.bold {
+    font-weight: 700;
+  }
+}
+
+p:last-child {
+  margin: 0 auto;
+}
+
+p + h2 {
+  margin: 2.4em 0 .8em;
+}
+
+.disclaimer {
+  font-size: 60%;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.text-transform--uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+
+@media only screen and (min-width: $md-width) {
+
+  html {
+    font-size: 110%;
+  }
+  h1 {
+    font-size: $section-heading;
+    text-align: center;
+    margin: 0 0 2.4rem;
+    &.intro-title {
+      font-size: 5.6rem;
+    }
+  }
+  h2 {
+    font-size: $section-subheading;
+    margin: 0 0 .8em
+  }
+  .col-single,
+  .section__title {
+    text-align: center;
+  }
+  h3 {
+    font-size: calc(#{$bodycopy} * 1.5);
+    margin: 0 0 .4rem;
+  }
+  p {
+      margin: 0 0 $bodycopy;
+  }
+  .holder--intro {
+    p {
+        text-align: left;
+    }
+
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  html {
+    font-size: 135%;
+  }
+}
+
+@media only screen and (min-width: $xxl-width) {
+  html {
+    font-size: 150%;
+  }
+}

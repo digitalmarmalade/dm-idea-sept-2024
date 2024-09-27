@@ -1,0 +1,256 @@
+.question-number {
+  font-family: $bebas;
+  font-size: 2em;
+  background-color: $dark-blue;
+  padding: 10px 40px;
+  margin: 0 0 30px;
+  display: inline-block;
+  box-shadow: $box-shadow;
+}
+
+.question{
+  .question-bg {
+    display: none;
+  }
+  .holder {
+    padding: 0 0 40px;
+  }
+  li {
+    display: inline-block;
+    font-family: $bebas;
+    font-size: 2em;
+    padding: 10px 30px;
+    border: 2px solid $white;
+    border-radius: $border-radius;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    line-height: .9;
+  }
+  li.selected,
+  li:hover {
+    background-color: $white;
+    color: $red;
+  }
+  a {
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+    text-decoration: none;
+    font-family: $oswald;
+    font-size: .65em;
+    color: $white;
+  }
+  a.selected,
+  a:hover {
+    color: $blue;
+  }
+}
+
+.task-3 .question li.selected,
+.task-3 .question li:hover {
+  color: $orange;
+}
+
+.task-4 .question li.selected,
+.task-4 .question li:hover {
+  color: $yellow;
+  background: $dark-blue;
+}
+.task-5 .question li.selected,
+.task-5 .question li:hover {
+  color: $green;
+}
+.task-6 .question li.selected,
+.task-6 .question li:hover {
+  color: $blue;
+}
+
+.task{
+  padding: 40px 0 0;
+  min-height: 100vh;
+}
+
+.feedback {
+  z-index: 3;
+  padding: 40px 0;
+  position: relative;
+  // margin: 0 0 -80px;
+
+
+  .holder {
+    padding: 0;
+  }
+  a {
+    display: inline-block;
+    font-family: $bebas;
+    font-size: 2em;
+    padding: 6px 30px;
+    border: 2px solid $white;
+    border-radius: $border-radius;
+    color: $white;
+    text-decoration: none;
+    margin-top: 30px;
+    max-width: 240px;
+  }
+  a:hover {
+    background-color: $white;
+    color: $dark-blue;
+  }
+  p {
+    margin: 20px 0;
+  }
+}
+
+
+.feedback-fail p {
+  font-family: $bebas;
+  font-size: 2.5em;
+}
+
+.quiz {
+  position: relative;
+  z-index: 2;
+}
+
+.task-1 {
+  background: $grad-pink;
+  min-height: 100vh;
+
+}
+
+.quiz-question {
+  margin-bottom: 100px;
+}
+
+.quiz-error {
+  background: $grad-red;
+  padding: 20px;
+}
+
+.quiz-options ul {
+  display: flex;
+}
+
+.quiz-options li {
+  border: none;
+  display: flex;
+  padding: 0;
+  a {
+    height: 120px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid $white;
+    border-radius: $border-radius;
+    line-height: 1.2;
+  }
+  a.selected-right,
+  a:hover {
+    background-color: $white;
+    color: $blue;
+
+  }
+}
+
+#question5 {
+  .quiz-options li {
+    a {
+      height: 180px;
+    }
+  }
+}
+
+.quiz-options li:hover {
+  background-color: transparent;
+}
+
+.avoid-clicks {
+  pointer-events: none;
+  cursor: default !important;
+}
+
+@media only screen and (min-width: $md-width) {
+  .question{
+    .question-bg {
+      display: block;
+      position: absolute;
+    }
+    .question-bg-right {
+      right: 0;
+    }
+    img {
+      width: 60%;
+      margin: 0 auto;
+      display: block;
+      z-index: 1;
+      position: relative;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      width: calc(50% - 20px);
+      cursor: pointer;
+    }
+  }
+
+  .task-2 .question-3 .holder img {
+    width: 80%;
+  }
+
+  .step-3 .feedback,
+  .step-2 .feedback,
+  .step-1 .feedback {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .question{
+    img {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+    }
+
+  }
+  .task-3 section:nth-last-child(2) .question-4 img,
+  .task-3 section:nth-last-child(2) .question-7 img,
+  .task-3 section:nth-last-child(2) .question-8 img {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .task-2 .feedback .holder {
+    max-width: 800px;
+  }
+
+}
+
+.tip a {
+  font-family: "Oswald", sans-serif;
+  text-transform: normal;
+  border: none;
+  font-size: 1em;
+  display: inline;
+  padding: 0;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+    background: transparent;
+    color: $white;
+  }
+
+}

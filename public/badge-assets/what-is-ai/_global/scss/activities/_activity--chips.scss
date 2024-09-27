@@ -1,0 +1,52 @@
+.activity--chips {
+  li,
+  &.list--activity-answers__item {
+    width: calc(50% - .8rem);
+    height: 5rem;
+    padding: .8rem .8rem .8rem .4rem;
+  }
+  .list--activity-answers__item {
+    p {
+      text-align: left;
+      font-size: 3vw;
+      line-height: 1.2;
+      margin: 0;
+      &:last-child {
+        margin:0;
+      }
+
+    }
+    img {
+      width: 50%;
+      height: auto;
+      margin: 0 .4rem 0 0;
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: $sm-width) {
+  .activity--chips {
+    .list--activity-answers__item {
+      flex-direction: column;
+      width: calc(20% - .8rem);
+      padding: .8rem;
+      height: 10rem;
+      p {
+        text-align: center;
+        margin: .4rem auto 0;
+        font-size: 85%;
+        &:last-child {
+          margin: .4rem auto 0;
+        }
+      }
+      img {
+        width: 100%;
+        margin: 0 auto;
+
+      }
+
+    }
+  }
+}

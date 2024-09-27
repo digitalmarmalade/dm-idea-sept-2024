@@ -1,0 +1,119 @@
+.software-type { position: relative; background: #fff; padding: 4rem 2rem; max-width: 60rem; margin: 0 auto; color: #333; text-align: left; border-bottom: 1px solid #ccc; z-index: 2; box-shadow: 1rem 1rem 2rem rgba(0,0,0,.2);  
+    &:before { transition: all 1s ease; }
+}
+
+@media only screen and (min-width: 768px) {
+.software-type { padding: 4rem; border: none; margin: 0 auto 4rem; }
+}
+
+.software-type--with-strengths-weaknesses { padding-bottom: 0; }
+
+.software-type-logo { margin: 0 0 2rem; }
+
+@media only screen and (min-width: 600px) {
+.software-type-logo { position: absolute; right: 4rem; top: 5.9rem; transform: translateY(-50%); }
+}
+
+.software-type-title { font-size: 3rem; font-weight: 400; margin: 0 0 2rem; }
+.software-type-helps-title { font-size: 1.8rem; margin: 4rem 0 1rem; font-weight: 400; }
+.software-type-helps-box { padding: 2rem 2rem 1rem; color: #fff; }
+
+.software-type--slack {
+    .software-type-helps-title { color: #e41570; }
+    .software-type-helps-box { background: #e41570; }
+}
+.software-type--trello {
+    .software-type-helps-title { color: #0079bf; }
+    .software-type-helps-box { background: #0079bf; }
+}
+.software-type--conceptboard {
+    .software-type-helps-title { color: #1b7dc1; }
+    .software-type-helps-box { background: #1b7dc1; }
+}
+.software-type--teamweek {
+    .software-type-helps-title { color: #5fd257; }
+    .software-type-helps-box { background: #5fd257; }
+}
+
+@media only screen and (min-width: $lg-width) {
+    .software-type--slack {
+        &:before { content: ''; display: block; width: 293px; height: 294px; background: url(../img/step-1/slack-icon.png) no-repeat; background-position: -293px 0; position: absolute; left: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: -100px 0; }
+        }
+    }
+    .software-type--trello {
+        &:before { content: ''; display: block; width: 267px; height: 267px; background: url(../img/step-1/trello-icon.png) no-repeat; background-position: 267px 0; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: 100px 0; }
+        }
+    }
+    .software-type--conceptboard {
+        &:before { content: ''; display: block; width: 329px; height: 280px; background: url(../img/step-1/conceptboard-icon.png) no-repeat; background-position: -329px 0; position: absolute; left: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: -100px 0; }
+        }
+    }
+    .software-type--teamweek {
+        &:before { content: ''; display: block; width: 400px; height: 266px; background: url(../img/step-1/teamweek-icon.png) no-repeat; background-position: 400px 0; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: 200px 0; }
+        }
+    }
+    
+    .software-type--squarespace {
+        &:before { content: ''; display: block; width: 371px; height: 297px; background: url(../img/step-2/squarespace-icon.png) no-repeat; background-position: 371px 0; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: 100px 0; }
+        }
+    }
+    .software-type--wordpress {
+        &:before { content: ''; display: block; width: 386px; height: 386px; background: url(../img/step-2/wordpress-icon.png) no-repeat; background-position: -386px 0; position: absolute; left: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: -100px 0; }
+        }
+    }
+    .software-type--joomla {
+        &:before { content: ''; display: block; width: 360px; height: 360px; background: url(../img/step-2/joomla-icon.png) no-repeat; background-position: 360px 0; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: 100px 0; }
+        }
+    }    
+    .software-type--shopify {
+        &:before { content: ''; display: block; width: 340px; height: 386px; background: url(../img/step-2/shopify-icon.png) no-repeat; background-position: -340px 0; position: absolute; left: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: -50px 0; }
+        }
+    }
+    .software-type--magento {
+        &:before { content: ''; display: block; width: 329px; height: 386px; background: url(../img/step-2/magento-icon.png) no-repeat; background-position: 329px 0; position: absolute; right: 100%; top: 50%; transform: translateY(-50%); }
+        &.come-in { 
+            &:before { background-position: 50px 0; }
+        }
+    }
+    
+    .question-marks { position: relative;
+    &:after,
+    &:before { display: block; content: ''; position: absolute; transition: all .5s ease 1s; transform: scale(.3); opacity: 0; }
+    &:before { width: 150px; height: 129px; right: 105%; top: 0; background: url(../img/step-1/question-marks-left.png) no-repeat; transform-origin: right center; }
+    &:after { width: 112px; height: 113px; left: 105%; top: 0; background: url(../img/step-1/question-marks-right.png) no-repeat; transform-origin: left center; }
+}
+.come-in {
+    .question-marks:after,
+    .question-marks:before { transform: scale(1); opacity: 1; }
+    }
+}
+
+.strengths-and-weaknesses { margin: 2rem -2rem 0; border-top: 1px solid #ededed; }
+.strength-or-weakness { padding: 2rem;
+    h4 { font-size: 2.4rem; line-height: 2.7rem; margin: 0 0 2rem; font-weight: 400; }
+    ul { list-style: none; padding: 0; margin: 0; color: #333; }
+    li { border-top: 1px solid #ededed; padding-top: 1rem; }
+}
+.strength-or-weakness--strengths { color: #093; border-bottom: 4px solid #093; border-right: 1px solid #ededed; }
+.strength-or-weakness--weakness { color: #900; border-bottom: 4px solid #900; }
+@media only screen and (min-width: 768px) {
+.strengths-and-weaknesses { margin: 4rem -4rem 0; display: flex; }
+.strength-or-weakness { flex: 1; padding: 4rem; }
+
+}

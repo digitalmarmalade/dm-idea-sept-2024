@@ -1,0 +1,135 @@
+.list {
+  display: flex;
+  gap: $space-xx-small;
+
+  :where(h2, h3, h4) + & {
+    margin-top: $space-medium;
+  }
+}
+
+.list__item {
+  align-items: center;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  padding: $space-x-small $space-small;
+  text-align: center;
+
+  @media (min-width: $md-width) {
+    padding: $space-small $space-medium;
+  }
+}
+
+.list__item--blue {
+  background-color: $blue-light;
+  color: $blue-dark;
+}
+
+.list__item--white {
+  background: $white;
+  color: $blue-dark;
+}
+
+.list__item--spicy {
+  border-radius: 0.8rem;
+  font-weight: normal !important;
+}
+
+.list__item--numbered {
+  align-items: flex-start;
+  counter-increment: numbered 1;
+  flex-direction: column;
+  text-align: left;
+
+  &::before {
+    content: counter(numbered);
+    font-size: 18rem;
+    font-weight: 900;
+    line-height: 1.25;
+    margin-right: $space-x-small;
+
+    @media (min-width: $md-width) {
+      line-height: 0.75;
+      margin-right: $space-small;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+  }
+}
+
+.list__item__heading {
+  font-size: 4rem;
+  margin-bottom: $space-xxx-small;
+
+  @media (min-width: $md-width) {
+    font-size: $r-xx-large;
+  }
+}
+
+.list__item--headed {
+  font-weight: normal ;
+  padding: 3rem;
+}
+
+.list__item__heading--inherit {
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.list__item--small {
+  font-size: $r-small;
+  font-weight: bold;
+  line-height: 1;
+  padding: $space-x-small;
+  text-transform: uppercase;
+}
+
+.list--one-col {
+  flex-direction: column;
+}
+
+.list--inline {
+  flex-wrap: wrap;
+
+  & .list-item {
+    font-weight: bold;
+    padding: $space-small $space-large;
+    text-align: center;
+  }
+}
+
+.list--condensed {
+  gap: $space-small;
+
+  & .list__item {
+    padding: 0;
+  }
+}
+
+// probably wants to be one col on small devices
+.list--two-col {
+  flex-direction: column;
+
+  & .list__item {
+    padding: $space-small;
+
+    @media (min-width: $md-width) {
+      width: calc(50% - #{$space-xx-small});
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.list--numbered {
+  counter-reset: numbered 0;
+}
+
+.list--a-start {
+  align-items: flex-start;
+}

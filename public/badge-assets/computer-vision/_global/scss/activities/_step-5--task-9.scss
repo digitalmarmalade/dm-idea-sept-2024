@@ -1,0 +1,64 @@
+.task-9 {
+  .holder {
+    padding-top: 0;
+  }
+  &.disabled {
+    opacity: .25;
+    button,
+    input {
+      pointer-events:none;
+    }
+  }
+  .footage_holder {
+    width: calc(50% - .8rem);
+    margin: .4rem;
+    img {
+      margin: 0 0 .4rem;
+      outline: .32rem solid white;
+      outline-offset: -.32rem;
+      &.success {
+        border-color: $green;
+      }
+      &.fail {
+        border-color: $red;
+      }
+    }
+    input {
+      height: 32px;
+      padding: 0 .2rem;
+      &.success {
+        background: $green;
+        color: white;
+      }
+      &.fail {
+        background: $red;
+        color: white;
+      }
+    }
+  }
+
+}
+
+.keywords {
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+@media only screen and (min-width: $md-width) {
+  .task-9 {
+
+    .footage_holder {
+      width:  calc(25% - .8rem);
+      margin: .4rem;
+      input {
+        height: 40px;
+      }
+    }
+  }
+  .labeling__holder {
+      max-width: 75%;
+
+  }
+}

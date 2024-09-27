@@ -1,0 +1,74 @@
+/* CSS Document */
+
+//Reset
+@import "_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "_typography.scss";
+
+@import "_framework.scss";
+@import "_global.scss";
+@import "_helpers.scss";
+
+@import "components/_header.scss";
+@import "components/_footer.scss";
+
+//These are optional
+@import "components/_grid.scss";
+@import "components/_buttons.scss";
+
+/*@import "components/_forms.scss";*/
+
+@import "components/_sidebar.scss";
+
+/*
+@import "components/_alphabet-list.scss";
+@import "components/_back-to-top.scss";
+@import "components/_breadcrumbs.scss";
+
+@import "components/_contact-list.scss";
+@import "components/_diary.scss";
+@import "components/_documents-and-links.scss";
+@import "components/_feature-banner.scss";
+
+@import "components/_governer-list.scss";
+
+@import "components/_house-table.scss"; 
+@import "components/_lazyload.scss";
+@import "components/_letters-home.scss";
+@import "components/_letter-from.scss";
+@import "components/_link-panel.scss";
+@import "components/_map.scss";
+@import "components/_news-article.scss";
+@import "components/_news-and-events-list.scss";
+@import "components/_overlays.scss";
+@import "components/_pagination.scss";
+@import "components/_parallax-banner.scss";
+@import "components/_promos.scss";
+@import "components/_search.scss";
+@import "components/_section-nav.scss";
+@import "components/_slick.scss";
+@import "components/_staff-list.scss";
+@import "components/_tabs.scss";
+@import "components/_tables.scss";
+@import "components/_teaser-panel.scss";
+@import "components/_tooltips.scss";
+@import "components/_transforms.scss";
+@import "components/_trending.scss";
+@import "components/_video.scss";
+*/
+//Choose your style of responsive navigation
+//@import "components/_navigation-push-content-down.scss";
+
+//Import icon fonts if required
+@import "components/_flaticon.scss";
+
+//Import icon fonts if required - old one, not used on this site
+//@import "components/_basic-ui.scss";
+
+//this wasn't in bex hill
+//@import "components/_masonry.scss";
+
+@import "_pagebuilder.scss";

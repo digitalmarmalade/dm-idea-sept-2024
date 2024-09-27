@@ -1,0 +1,161 @@
+.fact {
+  background-color: $white;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .8rem;
+  padding-left: calc(36.5px + #{$space-small});
+  position: absolute;
+  opacity: 0;
+  width: 90%;
+  span{
+    font-size: 1.4rem;
+    @media (min-width: $md-width) {
+      font-size: 1.6rem;
+    }
+  }
+  & .fact__figure {
+    background: $gradient-orange;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Monoton', sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    -webkit-background-clip: text;
+
+    @media (min-width: $sm-width) {
+      font-size: 6.4rem;
+    }
+  }
+
+  @media (min-width: $sm-width) {
+    background-position: left center;
+    background-size: 64px;
+    padding-left: calc(73px + #{$space-small});
+  }
+
+  @media (min-width: $md-width) {
+    background-position: left center;
+    background-size: 64px;
+    padding-left: calc(73px + #{$space-small});
+  }
+}
+
+
+
+.fact--twitter {
+  animation: fact-carousel-1 30s infinite linear forwards;
+  background-image: url('/badge-assets/fake-news/svg/icon--social-media.svg');
+}
+
+.fact--youtube {
+  animation: fact-carousel-2 30s infinite linear forwards;
+  background-image: url('/badge-assets/fake-news/svg/icon--social-media-1.svg');
+}
+
+.fact--messenger {
+  animation: fact-carousel-3 30s infinite linear forwards;
+  background-image: url('/badge-assets/fake-news/svg/icon--social-media-2.svg');
+}
+
+.fact--email {
+  animation: fact-carousel-4 30s infinite linear forwards;
+  background-image: url('/badge-assets/fake-news/svg/icon--social-media-3.svg');
+}
+
+.fact--blog {
+  animation: fact-carousel-5 30s infinite linear forwards;
+  background-image: url('/badge-assets/fake-news/svg/icon--social-media-4.svg');
+}
+
+.fact--facebook {
+  animation: fact-carousel-6 30s infinite linear forwards;
+  background-image: url('/badge-assets/fake-news/svg/icon--social-media-5.svg');
+}
+
+@keyframes fact-carousel-1 {
+  0%, 1% {
+    opacity: 0;
+  }
+
+  1%, 15.666% {
+    opacity: 1;
+  }
+
+  16.666%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fact-carousel-2 {
+  16.666%, 17.666% {
+    opacity: 0;
+  }
+
+  17.666%, 32.333% {
+    opacity: 1;
+  }
+
+  33.333%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fact-carousel-3 {
+  33.333%, 34.333% {
+    opacity: 0;
+  }
+
+  34.333%, 48.999% {
+    opacity: 1;
+  }
+
+  49.999%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fact-carousel-4 {
+  49.999%, 50.999% {
+    opacity: 0;
+  }
+
+  50.999%, 65.666% {
+    opacity: 1;
+  }
+
+  66.666%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fact-carousel-5 {
+  66.666%, 67.666% {
+    opacity: 0;
+  }
+
+  67.666%, 82.333% {
+    opacity: 1;
+  }
+
+  83.333%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fact-carousel-6 {
+  83.333%, 84.333% {
+    opacity: 0;
+  }
+
+  84.333%, 98.999% {
+    opacity: 1;
+  }
+
+  99.999%, 100% {
+    opacity: 0;
+  }
+}

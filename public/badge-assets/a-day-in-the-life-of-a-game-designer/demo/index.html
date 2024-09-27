@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="en" />
+        <!--[if IE]> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <![endif]-->
+        <title>Total Swipeout</title>
+        <meta name="description" content="">
+        <meta content="True" name="HandheldFriendly">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+  
+    </head>
+    <body>
+	
+	<div class="intro-screen">
+        <div class="img-holder"><img src="img/logo.png" class="jsIntroLogoDrag" alt="" width="302" height="263" /></div>
+        <p class="start-the-game"><button class="jsPickCategories btn btn-primary">Play</button></p>
+        <p class="hold-the-help"><button class="jsHowToPlay btn btn-help">?</button></p>
+        
+    </div>
+    
+    <div class="about-the-game-screen">
+    
+        <div class="instructions">
+        
+                <div class="instructions-animation">
+                <p class="instructions-question">2+2</p>
+                <div class="dummy-answer"></div>
+                <div class="hand">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 97.4 107.7" xml:space="preserve" enable-background="new 0 0 97.4 107.7"> <style type="text/css"> .st0{fill:#1A1A1A;} </style> <g> <path class="st0" d="M87.2 65l-2.8 1.5 -0.7-2c0 0-3.3-6.7-3.7-14.1C78.6 26.1 71 17.5 68.7 14.7c-3.9-4.8-9.5-4.6-11.1-3.4 1.6 1.5 1.9 3.6 1.6 3.2 -5.1-5.4-11.4-4.6-14.4-2.2 1.7 1.1 2.8 4.1 2.4 6.1 -4.4-6.7-11.3-8.2-16.6-3.2C34.7 21 33.5 26 33.5 26s-2.6-7.4-7.2-13.6c-1.6-2.2-3.9-4.5-6.2-7C10.7-5 4.3 2.8 4.3 2.8 0.1 7.8 7.6 15.5 7.6 15.5l5.5 6.9 4.1 10.3c1.1 3.5 2.3 6.5 3.8 9.2 3 9.1 0.5 9.5 1.7 15.2 -2.8-1.3-4.1-2.9-8-3.4 -6.3-1-12.1 0.3-14.2 5.7 -1.9 4.9 3.2 7 9.3 8.3 4.8 1 6 4.9 10.8 5.6 5 0.7 18.6 8.1 29.3 9.3 0.2 0 0.3 0 0.4 0 0.3 0.4 0.6 0.8 0.9 1.1l-4.7 2.5 10.8 21.5 40.3-22.5L87.2 65z"/> </g> </svg>
+                </div><!--/hand-->
+                </div>
+                
+                <div class="how-to-play-text">
+                
+                <h2>How to Play</h2>
+                <p>Swipe left if the answer is wrong. <br>
+                Swipe right if the answer is correct.</p>
+                
+                
+                </div>
+                
+                <p class="start-the-game"><button class="jsPickCategories btn btn-primary">Play</button></p>
+
+        
+        </div>
+    
+    </div>
+    
+    <div class="home jsPageHome">
+    	<div class="the-intro">
+            <h1>Select your<br>categories</h1>
+            <ul class="jsCategoryHolder checkboxes">
+            </ul>
+            <button class="jsStartGame btn btn-primary">Play</button>
+        </div>
+	</div>
+
+
+    
+<div class="background jsBackground">
+    <ul class="timer-animation">
+        <li class="circle circle1"><span></span></li>
+        <li class="circle circle2"><span></span></li>
+        <li class="circle circle3"><span></span></li>
+        <li class="circle circle4"><span></span></li>
+        <li class="circle circle5"><span></span></li>
+        <li class="circle circle6"><span></span></li>
+        <li class="circle circle7"><span></span></li>
+        <li class="circle circle8"><span></span></li>
+        <li class="circle circle9"><span></span></li>
+        <li class="circle circle10"><span></span></li>
+    </ul>
+</div>
+
+<div class="score-holder"><div class="jsScoreQuestion score-added"></div> <div class="score jsScoreHolder">0</div></div>
+
+<div class="the-game">
+
+    <div class="question jsQuestionHolder">1 + 1</div>
+    <div class="equals-holder">=</div>
+    
+    <div class="the-meat">
+    
+    <div class="answer jsAnswerDrag"><span class="drag-the-answer jsAnswerHolder">2</span></div>
+    
+    <a href="#" class="answer-button wrong"></a>
+    
+    <a href="#" class="answer-button right"></a>
+    
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="total-score jsPageGameEnded">
+
+<p class="personal-best-score">Personal Best: <span class="jsScoreBest">0</span></p>
+
+	<div class="scores">
+
+    
+        <h2 class="your-final-score-heading">Your Score</h2>
+        <p class="your-final-score jsScoreHolder">0</p>
+        
+        <p class="play-again"><a href="#" class="jsRestartGame btn btn-primary">Play Again?</a></p>
+        <p><a href="#" class="jsChooseNewCats btn btn-secondary">Choose Different Categories?</a></p>
+
+    </div>
+
+    
+	<p class="jsPersonalBestAlert personal-best-alert">New personal best!</p>
+
+</div>
+
+
+<script src='js/vendor/jquery-1.10.2.min.js'></script>
+<script src="js/vendor/TweenMax.min.js"></script>
+<script src="js/vendor/Draggable.min.js"></script>  
+<script src="js/app-functions.js"></script>
+<script src="js/app.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", ready, false);
+    document.addEventListener("touchmove", function (evt)
+    {
+        evt.preventDefault();
+    }, false);
+
+    function ready()
+    {
+        
+    }
+</script>
+    </body>
+</html>

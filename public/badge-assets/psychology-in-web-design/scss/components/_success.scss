@@ -1,0 +1,36 @@
+.cloud-anim { height: 46rem; position: relative; }
+.success-columns { position: relative;
+    .engraving-image--balloon { position: relative; z-index: 2;
+        img { animation: balloonAnim 4s linear 0s infinite forwards; }
+    }
+}
+
+.success-columns { 
+    .success-column { width: 50%; flex:none; padding-top: 0; }
+}
+
+.cloud { position: absolute; z-index: 0; left: 50%; top: 150%; animation: cloudAnim 10s linear 0s infinite forwards; opacity: 0; mix-blend-mode: darken; }
+.cloud2 { position: absolute; z-index: 0; right: 50%; transform: scaleX(-1); top: 150%;  animation: cloudAnim 10s linear 5s infinite forwards; opacity: 0; mix-blend-mode: darken; }
+
+@media only screen and (min-width: 768px) {
+    .cloud-anim { position: absolute; right: 0; top: 0; height: 50rem; width: 50%; }
+    .engraving-image--balloon { margin-top: 7rem; }
+}
+
+@keyframes cloudAnim {
+    0% { top: -50%; opacity: 0; }
+    25% { top: -12.5%; opacity: .7; }
+    50% { top: 25%; opacity: .7; }
+    75% { top: 62.5%; opacity: 0; }
+    100% { top: 100%; opacity: 0; }
+
+}
+@keyframes balloonAnim {
+    0% { transform: translate(-1rem,0rem); }
+    20% { transform: translate(0rem,0rem); }
+    50% { transform: translate(1rem,0rem); }
+    75% { transform: translate(0rem,0rem); }
+    100% { transform: translate(-1rem,0rem); }
+
+}
+.lowercase { text-transform: lowercase; }

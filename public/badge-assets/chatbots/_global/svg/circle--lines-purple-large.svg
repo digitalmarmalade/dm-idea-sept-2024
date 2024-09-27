@@ -1,0 +1,46 @@
+<svg width="165" height="168" viewBox="0 0 165 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="circle--lines">
+    <mask id="mask0_1846_36906" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-2" y="-44" width="168" height="256">
+      <g id="lines">
+        <rect id="Rectangle 44" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 160.832 -0.978271)" fill="#C4C4C4"/>
+        <rect id="Rectangle 45" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 160.978 5.09766)" fill="#C4C4C4"/>
+        <rect id="Rectangle 46" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.124 11.1733)" fill="#C4C4C4"/>
+        <rect id="Rectangle 47" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.27 17.2493)" fill="#C4C4C4"/>
+        <rect id="Rectangle 48" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.416 23.3252)" fill="#C4C4C4"/>
+        <rect id="Rectangle 49" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.562 29.4009)" fill="#C4C4C4"/>
+        <rect id="Rectangle 50" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.708 35.4768)" fill="#C4C4C4"/>
+        <rect id="Rectangle 51" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.853 41.5527)" fill="#C4C4C4"/>
+        <rect id="Rectangle 52" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 161.999 47.6284)" fill="#C4C4C4"/>
+        <rect id="Rectangle 53" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 162.145 53.7043)" fill="#C4C4C4"/>
+        <rect id="Rectangle 54" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 162.291 59.7803)" fill="#C4C4C4"/>
+        <rect id="Rectangle 55" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 162.437 65.8562)" fill="#C4C4C4"/>
+        <rect id="Rectangle 56" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 162.583 71.9319)" fill="#C4C4C4"/>
+        <rect id="Rectangle 57" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 162.729 78.0078)" fill="#C4C4C4"/>
+        <rect id="Rectangle 58" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 162.875 84.0837)" fill="#C4C4C4"/>
+        <rect id="Rectangle 59" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.02 90.1594)" fill="#C4C4C4"/>
+        <rect id="Rectangle 60" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.166 96.2354)" fill="#C4C4C4"/>
+        <rect id="Rectangle 61" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.312 102.311)" fill="#C4C4C4"/>
+        <rect id="Rectangle 62" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.458 108.387)" fill="#C4C4C4"/>
+        <rect id="Rectangle 63" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.604 114.463)" fill="#C4C4C4"/>
+        <rect id="Rectangle 64" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.75 120.539)" fill="#C4C4C4"/>
+        <rect id="Rectangle 65" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 163.896 126.615)" fill="#C4C4C4"/>
+        <rect id="Rectangle 66" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 164.042 132.69)" fill="#C4C4C4"/>
+        <rect id="Rectangle 67" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 164.187 138.766)" fill="#C4C4C4"/>
+        <rect id="Rectangle 68" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 164.333 144.842)" fill="#C4C4C4"/>
+        <rect id="Rectangle 69" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 164.479 150.918)" fill="#C4C4C4"/>
+        <rect id="Rectangle 70" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 164.625 156.994)" fill="#C4C4C4"/>
+        <rect id="Rectangle 71" width="2" height="163" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 164.771 163.07)" fill="#C4C4C4"/>
+      </g>
+    </mask>
+    <g mask="url(#mask0_1846_36906)">
+      <ellipse id="Ellipse 5" rx="81.6532" ry="81.5" transform="matrix(0.0243128 1.01264 -0.986615 0.0235612 82.4327 84.6402)" fill="url(#paint0_linear_1846_36906)"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_1846_36906" x1="74.0195" y1="89.9132" x2="147.548" y2="-35.5855" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E38DDD"/>
+      <stop offset="0.00359712" stop-color="#E38DDD"/>
+      <stop offset="1" stop-color="#9571F6"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,37 @@
+.well-done {
+  margin-bottom: $space-small;
+  min-height: 40rem;
+  position: relative;
+
+  & .well-done__blob {
+    position: absolute;
+    right: 0;
+    top: 2%;
+  }
+
+  & .well-done__circle-lines {
+    position: absolute;
+    right: 20%;
+    top: 12%;
+  }
+
+  & .well-done__circle-solid-1 {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+  }
+
+  & .well-done__circle-solid-2 {
+    position: absolute;
+    right: 40%;
+    top: -5%;
+  }
+  
+  & .well-done__heading {
+    bottom: 0;
+    font-family: 'Monoton', sans-serif;
+    font-size: 9.6rem;
+    left: 0;
+    position: absolute;
+  }
+}

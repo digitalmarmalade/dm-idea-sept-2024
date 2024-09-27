@@ -1,0 +1,32 @@
+.list--activity-answers__item--cadidates {
+  text-align: left;
+  font-weight: normal;
+  .candidate {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin: 0;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .list--activity-answers__item--cadidates {
+      padding: $padding;
+      margin: .4rem;
+      &:last-child {
+        margin: .4rem;
+      }
+
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+
+  .list--activity-answers__item--cadidates {
+    padding: $padding;
+  }
+}

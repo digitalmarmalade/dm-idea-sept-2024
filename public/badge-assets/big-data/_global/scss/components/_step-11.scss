@@ -1,0 +1,18 @@
+.step-10 {
+  .question-bg {
+    position: fixed;
+    top: 50%;
+    margin-top: -230px;
+  }
+  .animated {
+    animation-delay: 1s;
+  }
+  .next-step {
+    a {
+      color: $dark-blue;
+    }
+    a:before {
+      background: $dark-blue;
+    }
+  }
+}

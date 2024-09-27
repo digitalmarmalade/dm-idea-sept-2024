@@ -1,0 +1,320 @@
+/*! Intro Page */
+
+.intro-page-banner { background: #455a64; color: #fff; text-align: center; height: 564px; display: block; margin: 0; position: relative; overflow: hidden; padding-top: 300px; }
+
+.intro-page-times { background: #f06f46; height: 235px; }
+
+.coffee-cup { position: absolute; left: 220px; top: 370px; height: 144px; width: 144px; background: url(../img/coffee-sprite.png) no-repeat; z-index: 1; }
+.coffee-cup.spilled { background-position: right top; }
+
+.intro-top-left { background: url(../img/intro-top-left.jpg); width: 690px; height: 492px; position: absolute; left: 0; top: 0; }
+.intro-top-left::before { content: ''; display: block; width: 158px; height: 182px; background: url(../img/tl-arm-l.png); position: absolute; left: 30px; top: -95px; animation-name: topLeftLeftHandTyping; animation-duration: 5s; animation-iteration-count: infinite; }
+.intro-top-left::after { content: ''; display: block; width: 190px; height: 151px; background: url(../img/tl-arm-r.png); position: absolute; left: -79px; top: 0; animation-name: topLeftRightHandTyping; animation-duration: 5s; animation-iteration-count: infinite; }
+
+.intro-top-right { background: url(../img/intro-top-right.jpg); width: 513px; height: 426px; position: absolute; right: 0; top: 0; }
+.intro-top-right::before { content: ''; display: block; width: 207px; height: 244px; background: url(../img/tr-arm-r.png); position: absolute; right: -20px; top: -90px; animation-name: topRightRightHandTyping; animation-duration: 4s; animation-iteration-count: infinite; animation-delay: .5s; }
+.intro-top-right::after { content: ''; display: block; width: 238px; height: 203px; background: url(../img/tr-arm-l.png); position: absolute; right: -40px; top: -10px; animation-name: topRightLeftHandTyping; animation-duration: 4s; animation-iteration-count: infinite; }
+
+.intro-heading { font-family: mullerregular; font-size: 3.6em; text-transform: uppercase; line-height: 1; position: relative; z-index: 10;
+    span { font-family: mullerextrabold; font-size: 1.3em; display: table; margin: 0 auto; text-shadow: 3px 3px 5px rgba(0,0,0,.3); }
+}
+
+.intro-clock { height: 90px; width: 89px; background: url(../img/sprite-clock.png); position: absolute; left: 15px; top: -42px; }
+.intro-clock--1 { background-position: 0 0; }
+.intro-clock--2 { background-position: -90px 0; }
+.intro-clock--3 { background-position: -180px 0; }
+.intro-clock--4 { background-position: -270px 0; }
+.intro-time { position: relative; height: 235px; }
+
+.overflow-container { position: absolute; top: -40px; left: 0; right: 0; bottom: 0; overflow: hidden; }
+
+.intro-time--1 { background: url(../img/time-1.jpg) no-repeat -41px bottom; }
+.time-1-arm { width: 156px; height: 207px; background: url(../img/time-1-arm.png); position: absolute; right: 68px; bottom: -23px; animation-name: time1Arm; animation-duration: 2s; animation-iteration-count: infinite; }
+
+.intro-time--2 .overflow-container { background: url(../img/time-2.png) no-repeat center bottom; left: -40px; }
+.time-2-arm { width: 72px; height: 222px; background: url(../img/time-2-arm.png); position: absolute; right: 87px; bottom: -153px; animation-name: time2Arm; animation-duration: 3s; animation-iteration-count: infinite; transform: rotate(-25deg); }
+
+.intro-time--3 .overflow-container { background: url(../img/time-3.png) no-repeat right bottom; right: -20px; left: -30px; }
+.time-3-arm { width: 100px; height: 226px; background: url(../img/time-3-arm.png); position: absolute; left: 27px; bottom: -153px; animation-name: time3Arm; animation-duration: 2s; animation-iteration-count: infinite; transform: rotate(0deg); }
+
+.intro-time--4 .overflow-container { background: url(../img/time-4.png) no-repeat right bottom; }
+.time-4-arm { width: 150px; height: 214px; background: url(../img/time-4-arm.png); position: absolute; right: -62px; bottom: -63px; animation-name: time4Arm; animation-duration: 4s; animation-iteration-count: infinite; transform: rotate(0deg); }
+
+.pencil { width: 91px; height: 91px; position: absolute; right: 400px; top: 60px; z-index: 2; background: url(../img/pencil.png); }
+.pencil:hover { animation: spin .4s infinite linear; animation-fill: forwards; }
+
+.down-arrow { width: 50px; height: 50px; background: url(../img/down-arrow.png) center center no-repeat; display: block; position: absolute; left: 50%; margin: 0 0 0 -25px; bottom: 120px; }
+
+.big-intro-banner { overflow: hidden; margin: 0 0 30px; 
+    .row { margin: 0; }
+}
+
+.payoff-banner,
+.payoff-banner .intro-page-banner { position: static; left:0; top: 0; right: 0; bottom: 0; height: 100%; width: 100%; margin: 0; }
+
+
+
+
+@media only screen and (max-width: $md-width-under) {
+
+.intro-top-left { display: none; }   
+.intro-page-banner { display: block; padding-top: 400px; } 
+.intro-page-times { background: #f06f46; height: 470px; } 
+.intro-time { border-top: 5px solid #fff; }
+
+.intro-time--1 { background-position: -32px bottom; }
+.intro-time--2 .overflow-container { left: -30px; top: -50px; }
+.intro-time--3 .overflow-container { left: -30px; }
+.intro-time--4 .overflow-container { left: -30px; }
+
+.intro-clock { top: -20px; }
+.coffee-cup { top: 180px; left: 90px; }
+
+.down-arrow { bottom: 30px; }
+
+    
+}
+
+@media only screen and (max-width: $sm-width-under) {
+
+.intro-page-times { display: none; } 
+.coffee-cup { display: none; }
+.intro-top-right { transform: scale(.8); transform-origin: right top; }
+
+.down-arrow { bottom: 30px; }
+
+.intro-page-banner { padding-top: 300px; height: 487px; }
+.intro-heading { padding: 20px; font-size: 2.4em; }
+
+.payoff-banner,
+.payoff-banner .intro-page-banner { position: static; left:0; top: 0; right: 0; bottom: 0; height: 100%; width: 100%; margin: 0; overflow: hidden; }
+.payoff-sentence { padding-left: 20px; padding-right: 20px; }
+.payoff-banner .btn { margin: 0 20px; word-wrap: normal; white-space: normal;  }
+    
+}
+
+@media only screen  and (min-width: $md-width) and (max-width: $lg-width-under) {
+ 
+.intro-top-left { display: none; }
+.intro-top-right { right: -40px; }
+.intro-page-banner { display: block; padding-top: 330px; }
+.intro-page-times { background: #f06f46; height: 470px; } 
+.intro-time { border-top: 5px solid #fff; }
+.coffee-cup { top: 121px; left: 90px; }
+.intro-clock { top: -20px; }
+
+.intro-time--1 { background-position: 53px bottom; }
+.intro-time--2 .overflow-container { left: 37px; top: -50px; }
+.intro-time--3 .overflow-container { left: 60px; }
+.intro-time--4 .overflow-container { left: -30px; }
+
+.down-arrow { bottom: 70px; }
+
+.payoff-banner .intro-top-left { transform: scaleY(-1); left: 0; bottom: 0; top: auto; display: block; }
+    
+}
+
+@media only screen  and (min-width: $lg-width) and (max-width: $xl-width-under) {
+ 
+.intro-top-left { left: -40px; }
+.intro-top-right { right: -40px; }
+.intro-page-banner { display: block; padding-top: 330px; }
+
+.coffee-cup { top: 390px; left: 140px; }
+
+.intro-time--1 { background-position: 9px bottom; }
+.intro-time--2 .overflow-container { left: 0; top: -50px; }
+.intro-time--3 .overflow-container { left: 0; right: 0; }
+.intro-time--4 { display: none; }
+
+.down-arrow { bottom: 70px; }
+
+.payoff-banner .intro-page-banner { padding-top: 250px; }
+    
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0deg); }
+    100%   { transform: rotate(360deg); }
+}
+
+@keyframes time4Arm {
+    0%   { right: -62px; bottom: -63px; }
+    33%   { right: -2px; bottom: 0; }
+    66%   { right: 14px; bottom: -13px; }
+
+}
+
+@keyframes time3Arm {
+    0%   { left: 27px; bottom: -153px; transform: rotate(0deg) scale(1,1); }
+    5%   { left: 27px; bottom: -153px; transform: rotate(0deg) scale(.96,.96); }
+    10%   { left: 27px; bottom: -153px; transform: rotate(0deg) scale(1,1); }
+    30%   { left: 27px; bottom: -153px; transform: rotate(0deg) scale(1,1); }
+    60%   { left: 27px; bottom: -76px; transform: rotate(0deg) scale(1,1); }
+    65%   { left: 27px; bottom: -76px; transform: rotate(0deg) scale(.96,.96); }
+    70%   { left: 27px; bottom: -76px; transform: rotate(0deg) scale(1,1); }
+}
+
+
+@keyframes time2Arm {
+    0%   { right: 87px; bottom: -153px; transform: rotate(-25deg); }
+    30%   { right: 80px; bottom: -25px; transform: rotate(-5deg); }
+    35%   { right: 80px; bottom: -25px; transform: rotate(-5deg) scale(.98,.98); }
+    40%   { right: 80px; bottom: -25px; transform: rotate(-5deg) scale(1,1); }
+    45%   { right: 80px; bottom: -25px; transform: rotate(-5deg) scale(.98,.98); }
+    50%   { right: 80px; bottom: -25px; transform: rotate(-5deg) scale(1,1); }
+    65%   { right: 80px; bottom: -25px; transform: rotate(-5deg); }
+
+}
+
+
+@keyframes time1Arm {
+    0%   { right: 68px; bottom: -23px; }
+    3%   { right: 69px; bottom: -14px; }
+    23%   { right: 34px; bottom: -12px; }
+    26%   { right: 32px; bottom: -21px; }
+    46%   { right: 68px; bottom: -23px; }
+    50%   { right: 56px; bottom: -20px; }
+    54%   { right: 52px; bottom: -21px; }
+    58%   { right: 48px; bottom: -19px; }
+    62%   { right: 44px; bottom: -20px; }
+    66%   { right: 42px; bottom: -19px; }
+    70%   { right: 39px; bottom: -18px; }
+    85%   { right: 5px; bottom: -70px; }
+    95%   { right: 5px; bottom: -70px; }
+
+}
+
+@keyframes topRightRightHandTyping {
+    0%   { right: 20px; top: -90px; }
+    5%   { right: 30px; top: -70px; transform: scale(1,1); }
+    7%   { right: 30px; top: -70px; transform: scale(.98,.98); }
+    9%   { right: 30px; top: -70px; transform: scale(1,1); }
+    15%   { right: 10px; top: -80px; transform: scale(1,1); }
+    17%   { right: 10px; top: -80px; transform: scale(.98,.98); }
+    19%   { right: 10px; top: -80px; transform: scale(1,1); }
+    25%   { right: 15px; top: -90px; transform: scale(1,1); }
+    27%   { right: 15px; top: -90px; transform: scale(.98,.98); }
+    29%   { right: 15px; top: -90px; transform: scale(1,1); }
+    35%   { right: 25px; top: -120px; transform: scale(1,1); }
+    37%   { right: 25px; top: -120px; transform: scale(.98,.98); }
+    39%   { right: 25px; top: -120px; transform: scale(1,1); }
+    45%   { right: 0px; top: -80px; transform: scale(1,1); }
+    47%   { right: 0px; top: -80px; transform: scale(.98,.98); }
+    49%   { right: 0px; top: -80px; transform: scale(1,1); }
+    55%   { right: -40px; top: -114px; transform: scale(1,1); }
+    57%   { right: -40px; top: -114px; transform: scale(.98,.98); }
+    59%   { right: -40px; top: -114px; transform: scale(1,1); }
+    65%   { right: 20px; top: -100px; transform: scale(1,1); }
+    67%   { right: 20px; top: -100px; transform: scale(.98,.98); }
+    69%   { right: 20px; top: -100px; transform: scale(1,1); }
+    75%   { right: 5px; top: -120px; transform: scale(1,1); }
+    77%   { right: 5px; top: -120px; transform: scale(.98,.98); }
+    79%   { right: 5px; top: -120px; transform: scale(1,1); }
+    85%   { right: 10px; top: -100px; transform: scale(1,1); }
+    87%   { right: 10px; top: -100px; transform: scale(.98,.98); }
+    89%   { right: 10px; top: -100px; transform: scale(1,1); }
+    95%   { right: 20px; top: -90px; }
+    100%   { right: 20px; top: -90px; }
+   
+}
+
+@keyframes topRightLeftHandTyping {
+    0%   { right: -40px; top: -10px; }
+    10%   { right: -50px; top: 14px; transform: scale(1,1); }
+    12%   { right: -50px; top: 14px; transform: scale(.98,.98); }
+    14%   { right: -50px; top: 14px; transform: scale(1,1); }
+    20%   { right: -80px; top: 20px; transform: scale(1,1); }
+    22%   { right: -80px; top: 20px; transform: scale(.98,.98); }
+    24%   { right: -80px; top: 20px; transform: scale(1,1); }
+    30%   { right: -55px; top: 0px; transform: scale(1,1); }
+    32%   { right: -55px; top: 0px; transform: scale(.98,.98); }
+    34%   { right: -55px; top: 0px; transform: scale(1,1); }
+    40%   { right: -70px; top: -5px; transform: scale(1,1); }
+    42%   { right: -70px; top: -5px; transform: scale(.98,.98); }
+    44%   { right: -70px; top: -5px; transform: scale(1,1); }
+    50%   { right: -40px; top: 15px; transform: scale(1,1); }
+    52%   { right: -40px; top: 15px; transform: scale(.98,.98); }
+    54%   { right: -40px; top: 15px; transform: scale(1,1); }
+    60%   { right: -45px; top: 0px; transform: scale(1,1); }
+    62%   { right: -45px; top: 0px; transform: scale(.98,.98); }
+    64%   { right: -45px; top: 0px; transform: scale(1,1); }
+    70%   { right: -70px; top: 25px; transform: scale(1,1); }
+    72%   { right: -70px; top: 25px; transform: scale(.98,.98); }
+    74%   { right: -70px; top: 25px; transform: scale(1,1); }
+    80%   { right: -35px; top: -15px; transform: scale(1,1); }
+    82%   { right: -35px; top: -15px; transform: scale(.98,.98); }
+    84%   { right: -35px; top: -15px; transform: scale(1,1); }
+    90%   { right: -60px; top: 15px; transform: scale(1,1); }
+    92%   { right: -60px; top: 15px; transform: scale(.98,.98); }
+    94%   { right: -60px; top: 15px; transform: scale(1,1); }
+    100%   { right: -60px; top: 15px; transform: scale(1,1); }
+}
+
+@keyframes topLeftLeftHandTyping {
+    0%   { left: 20px; top: -90px; }
+    5%   { left: 30px; top: -70px; transform: scale(1,1); }
+    7%   { left: 30px; top: -70px; transform: scale(.98,.98); }
+    9%   { left: 30px; top: -70px; transform: scale(1,1); }
+    15%   { left: 10px; top: -80px; transform: scale(1,1); }
+    17%   { left: 10px; top: -80px; transform: scale(.98,.98); }
+    19%   { left: 10px; top: -80px; transform: scale(1,1); }
+    25%   { left: 15px; top: -90px; transform: scale(1,1); }
+    27%   { left: 15px; top: -90px; transform: scale(.98,.98); }
+    29%   { left: 15px; top: -90px; transform: scale(1,1); }
+    35%   { left: -20px; top: -115px; transform: scale(1,1); }
+    37%   { left: -20px; top: -115px; transform: scale(.98,.98); }
+    39%   { left: -20px; top: -115px; transform: scale(1,1); }
+    45%   { left: 0px; top: -80px; transform: scale(1,1); }
+    47%   { left: 0px; top: -80px; transform: scale(.98,.98); }
+    49%   { left: 0px; top: -80px; transform: scale(1,1); }
+    55%   { left: 30px; top: -80px; transform: scale(1,1); }
+    57%   { left: 30px; top: -80px; transform: scale(.98,.98); }
+    59%   { left: 30px; top: -80px; transform: scale(1,1); }
+    65%   { left: 80px; top: -120px; transform: scale(1,1); }
+    67%   { left: 80px; top: -120px; transform: scale(.98,.98); }
+    69%   { left: 80px; top: -120px; transform: scale(1,1); }
+    75%   { left: 5px; top: -110px; transform: scale(1,1); }
+    77%   { left: 5px; top: -110px; transform: scale(.98,.98); }
+    79%   { left: 5px; top: -110px; transform: scale(1,1); }
+    85%   { left: 10px; top: -100px; transform: scale(1,1); }
+    87%   { left: 10px; top: -100px; transform: scale(.98,.98); }
+    89%   { left: 10px; top: -100px; transform: scale(1,1); }
+    95%   { left: 20px; top: -90px; transform: scale(1,1); }
+    97%   { left: 20px; top: -90px; transform: scale(.98,.98); }
+    99%   { left: 20px; top: -90px; transform: scale(1,1); }
+    100%   { left: 20px; top: -90px; transform: scale(1,1); }
+}
+
+@keyframes topLeftRightHandTyping {
+    0%   { left: -40px; top: -10px; }
+    10%   { left: -50px; top: 14px; transform: scale(1,1); }
+    12%   { left: -50px; top: 14px; transform: scale(.98,.98); }
+    14%   { left: -50px; top: 14px; transform: scale(1,1); }
+    20%   { left: -80px; top: 20px; transform: scale(1,1); }
+    22%   { left: -80px; top: 20px; transform: scale(.98,.98); }
+    24%   { left: -80px; top: 20px; transform: scale(1,1); }
+    30%   { left: -55px; top: 0px; transform: scale(1,1); }
+    32%   { left: -55px; top: 0px; transform: scale(.98,.98); }
+    34%   { left: -55px; top: 0px; transform: scale(1,1); }
+    40%   { left: -70px; top: -5px; transform: scale(1,1); }
+    42%   { left: -70px; top: -5px; transform: scale(.98,.98); }
+    44%   { left: -70px; top: -5px; transform: scale(1,1); }
+    50%   { left: -40px; top: 15px; transform: scale(1,1); }
+    52%   { left: -40px; top: 15px; transform: scale(.98,.98); }
+    54%   { left: -40px; top: 15px; transform: scale(1,1); }
+    60%   { left: -45px; top: 0px; transform: scale(1,1); }
+    62%   { left: -45px; top: 0px; transform: scale(.98,.98); }
+    64%   { left: -45px; top: 0px; transform: scale(1,1); }
+    70%   { left: -70px; top: 25px; transform: scale(1,1); }
+    72%   { left: -70px; top: 25px; transform: scale(.98,.98); }
+    74%   { left: -70px; top: 25px; transform: scale(1,1); }
+    80%   { left: -35px; top: -15px; transform: scale(1,1); }
+    82%   { left: -35px; top: -15px; transform: scale(.98,.98); }
+    84%   { left: -35px; top: -15px; transform: scale(1,1); }
+    90%   { left: -60px; top: 15px; transform: scale(1,1); }
+    92%   { left: -60px; top: 15px; transform: scale(.98,.98); }
+    94%   { left: -60px; top: 15px; transform: scale(1,1); }
+    100%  { left: -45px; top: -20px; }
+}
+

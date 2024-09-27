@@ -1,0 +1,420 @@
+@font-face {
+  font-family: 'Roboto Slab', serif;
+}
+
+html, button, input, select, textarea { color: #000; }
+
+/*--Stops firefox from moving the grid a pixel when clicking in a square in the first column--*/
+@-moz-document url-prefix() {
+  table { border-collapse: separate; }
+}
+
+body { -webkit-touch-callout: none !important; }
+a { -webkit-user-select: none !important; }
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+.no-js-message { position: relative; z-index: 100001; padding: 10px; text-align: center; }
+
+/* ==========================================================================
+   WordSearch Styles
+   ========================================================================== */
+
+.title, .timer, .draggable-letter, table .text-cell-default, .words li span, .action-buttons li a, .yesno a, .overlay.complete h1, .overlay.complete p.complete-time, .rotate-text {   font-family: 'Roboto Slab', serif; }
+
+/*html, body { font-family: Helvetica, Arial, "Lucida Grande", sans-serif !important;  min-width: 300px; height: 100%; overflow: hidden; }*/
+
+/*body { padding: 0 0 15px; background: #1f9bde url(../img/background.png) no-repeat center center; }
+@media only screen and (min-width: 800px) {
+body { background-size: cover; }
+}*/
+
+/* * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0);  }*/ */
+a { color: #000; outline: none !important; border-bottom: none; }
+form * { -webkit-appearance: none; }
+
+/* li { font-size: 12px; } */
+
+/*.playable-area { position: absolute;  }*/
+
+
+
+/* ==========================================================================
+   Generic
+   ========================================================================== */
+
+::selection {
+	background: transparent; /* Safari */
+	}
+::-moz-selection {
+	background: transparent; /* Firefox */
+}
+
+/*--
+Puzzle Title
+--*/
+
+h1 { font-size: 25px; color: #fff; margin: 0; padding: 11px 0 10px; font-weight: normal; display: block; position: relative; }
+h1 .found-header { display: inline-block; height: 26px; border-radius: 13px; padding: 0 22px; line-height: 26px; background: #324047; color: #fff; vertical-align: middle;font-size: 15px; font-family:   font-family: 'Roboto Slab', serif; position: absolute; right: 0; top: 13px;  }
+.logo { display: block; background: url(../img/wordsearch.png) no-repeat; width: 83px; height: 36px; background-size: 83px 36px; }
+
+/*--
+Timer
+--*/
+
+.timer { color: #000; text-align: right; font-size: 16px; position: absolute; width: auto; padding: 0; top: 10px; height: 38px; line-height: 40px; z-index: 2; right: 20px; color: #fff; }
+
+@media only screen and (min-width: 540px) {
+
+.timer { right: 45px; font-size: 24px; top: 25px; }
+
+}
+
+/*--
+Action Buttons
+--*/
+
+.action-buttons { padding: 10px; list-style: none; position: absolute; left: 0; width: 100%; bottom: 0; margin: 0; background: #fff; height: 60px; border-top: 1px solid #fff; text-align: center; box-shadow: 0 -1px 5px rgba(0,0,0,0.5); }
+.action-buttons a { transition: opacity 100ms; }
+.action-buttons a:active { opacity: .45; }
+.action-buttons li { display: inline-block; margin: 0 10px; }
+.action-buttons li a { display: block; padding: 0; text-align: center; font-weight: normal; font-size: 12px; text-decoration: none; position: relative; color: #000; text-transform: uppercase; height: 32px; line-height: 32px; }
+
+.icon { width: 16px; height: 16px; margin: 0 5px 0 0; display: inline-block; }
+.text, .icon { display: inline-block; vertical-align: middle; }
+
+.check .icon { background: url(../img/check.png) no-repeat; background-size: 16px 16px; }
+.reset-grid .icon { background: url(../img/reset.png) no-repeat; background-size: 16px 16px; }
+.show-solution .icon { background: url(../img/solution.png) no-repeat center center; background-size: 16px 16px; }
+
+.check.on .icon { background-image: url(../img/check-on.png); }
+.reset-grid.on .icon { background-image: url(../img/reset-on.png); }
+.show-solution .solution-showing .icon { background-image: url(../img/solution-on.png); }
+
+.on .text, .solution-showing .text { color: #80bd01; }
+
+@media only screen and (min-width: 540px) {
+	.action-buttons { height: 100px; padding: 0;}
+	.action-buttons li { display: inline-block; margin: 0; }
+	.action-buttons li a { font-size: 18px; height: 100px; width: 150px; border-right: 1px solid #ccc; text-align: center; padding-top: 20px; }
+	.action-buttons li:first-child a { border-left: 1px solid #ccc; }
+	.icon { width: 32px; height: 32px; margin: 0 auto; display: block; }
+	.check .icon { background: url(../img/check.png) no-repeat; background-size: 32px 32px; }
+	.reset-grid .icon { background: url(../img/reset.png) no-repeat center center; background-size: 26px 26px; }
+	.show-solution .icon { background: url(../img/solution.png) no-repeat center center; background-size: 32px 32px; }
+
+}
+
+
+/*--
+Overlays
+--*/
+
+.overlay-bg, .menu-bg { position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,0.5); z-index: 2499; display: none; }
+.menu-bg { background: rgba(0,0,0,0.25); z-index: 1000; }
+.overlay { position: absolute; background: #fff; left: 50%; top: 50%; height: 150px; width: 240px; margin: -75px 0 0 -120px; border-radius: 10px; padding: 0; z-index: 2500; display: none; }
+.overlay h1 { padding: 30px 0 0; color: #000; }
+
+.close-overlay { width: 30px; height: 30px; background-repeat: no-repeat; background-size: 15px; display: block; text-indent: -9999px; border-radius: 50%; position: absolute; top: -15px; right: -15px; border: none; z-index: 2; background-position: center center; background-color: #00a4e2; }
+.overlay h1 { text-align: center; font-size: 15px; margin: 0 0 25px; }
+
+/*--
+Unsuccessful
+--*/
+
+.overlay.incorrect { padding-top: 10px; }
+.overlay.incorrect, .overlay.complete { width: 240px; height: 166px; margin: -83px 0 0 -120px; }
+.overlay.incorrect h1 { font-size: 40px; margin: 0 0 5px; height: auto; }
+.overlay.incorrect p { font-size: 15px; text-align: center;  line-height: 20px; color: #314047; width: 190px; margin: 0 auto 15px; text-transform: -1px; }
+.game-over-option { list-style: none; margin: 0 auto; padding: 0; width: 190px; }
+.game-over-option li { margin: 0 0 10px; }
+.game-over-option a { height: 35px; line-height: 35px; display: block; text-align: center; color: #fff; border-radius: 7px; text-decoration: none; font-size: 20px; letter-spacing: -1px; }
+.btn-continue a { background: #e85a23; }
+.btn-more-puzzles a { background: #314047; }
+
+/*--
+Successful
+--*/
+
+.overlay.complete { padding-top: 20px; }
+.overlay.complete h1 { font-size: 40px; line-height: 35px; margin: 0 auto 20px; height: auto; padding: 0; width: 190px; color: #00a4e2; }
+.overlay.complete p { font-size: 15px; text-align: center;  line-height: 20px; color: #314047; width: 190px; margin: 0 auto 15px; text-transform: -1px; }
+.overlay.complete p.complete-time { font-size: 20px;}
+
+@-webkit-keyframes successfade {
+0% { opacity: 1; left: 0; }
+80% { opacity: 1; left: 0; }
+100% { opacity: 0; left: 0; }
+}
+@keyframes successfade {
+0% { opacity: 1; left: 0; }
+80% { opacity: 1; left: 0; }
+100% { opacity: 0; left: 0; }
+}
+
+/*--
+Choice Buttons
+--*/
+
+.incorrect .yesno a { font-size: 18px; }
+
+.yesno { list-style: none; padding: 0; margin: 0; position: absolute; bottom: 28px; left: 0; width: 100%; text-align: center; height: 35px; }
+.yesno li { margin: 0 6px; padding: 0; display: inline-block; }
+.yesno a { border: none; display: block; text-align: center; width: 100%; height: 35px; line-height: 35px; font-size: 20px; text-decoration: none; color: #fff !important; width: 85px; background: #1f9bde; border-radius: 7px; font-weight: 400; text-transform: uppercase }
+
+.yesno .btn-no a { background: #666; }
+.yesno a:active { background-color: #d5d6d8; }
+
+
+.kindle .puzzle { overflow: visible; }
+
+/*--Puzzle--*/
+.puzzle { display: inline-block; -webkit-transform-origin: left top; -webkit-transition: -webkit-transform 250ms ease-in; transform-origin: left top; transition: transform 250ms ease-in; }
+.puzzle table { position: relative; margin: 0; }
+td { width: 30px; height: 30px; text-align:center; font-size: 20px; overflow: hidden; color: #1f9bde; line-height:1; }
+td span { display: block; height: 30px; width: 30px; line-height: 30px; font-size: 28px;}
+.table-holder { padding: 10px 5px 4px; display: inline-block; position: relative; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+.table-holder:before { background: #fff; border-radius: 3px; position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: -10000; content: ''; }
+
+#dragger { position:absolute; width:400px; height:200px; background:rgba(255,128,0,0); top:9px; left:5px; cursor: pointer !important; }
+.viewer { position:absolute; width:0; height:0; background:#1f9bde; opacity: .3; top:0; left:0; z-index: -200 !important; }
+.viewer.done { z-index: -200 !important; }
+.viewer.done.right { z-index: -200 !important; background: #80bd01; opacity: .5; }
+.viewer.done.wrong { z-index: -200 !important; background: #ec0b43; opacity: .5; }
+
+.words { margin: 0 0 0 -2px; padding: 2px 0 0; list-style: none; }
+.words:after { clear: both; content: ''; }
+.words li { float: left; width: 33.3%; font-size: 12px; padding: 0 2px 4px; }
+.words li span { background: #fff; border-radius: 3px; display: block; text-align: center; padding: 0; height: 20px; line-height: 20px; color: #1f9bde; box-shadow: 0 0 5px rgba(0,0,0,0.5); }
+.words li.got span { text-decoration: line-through; opacity: .5; box-shadow: none; }
+
+.selected-boxes { border: 1px solid #9e9e9e; position: absolute; top: 119px; left: 35px; width: 200px; padding: 0 0 0 10px; background: #f4f4f4; height: 45px; line-height: 45px; color: #626261; }
+.selected-boxes span { position: absolute; top: 0; right: 0; height: 43px; line-height: 43px; background: #fff; width: 55px; border-left: 1px solid #9e9e9e; text-align: center; font-size: 20px; }
+
+.btn-relaunch { background-repeat: no-repeat; background-position: center center; background-size: 32px 32px; display: block; width: 42px; height: 42px; right: 30px; top: 10px; position: absolute; text-indent: -9999em; z-index: 1000; }
+
+.onboarding-overlay { background: #fff; z-index: 3000; width: 530px; height: 530px; position: fixed; top: 50%; left: 50%; margin: -265px 0 0 -265px; display:none; overflow: hidden;}
+.onboarding-overlay-bg { position: fixed; width: 100%; height: 100%; left: 0; top: 0; background: rgba(0,0,0,0.8); z-index: 2999; display: none; }
+.close-onboarding-overlay { width: 40px; height: 40px; background-repeat: no-repeat; background-size: 15px 15px; display: block; text-indent: -9999px; border-radius: 50%; position: absolute; top: 0; right: 0; border: none; z-index: 2; background-position: center center; }
+.slide-content { height: 496px; }
+
+.viewer { border-radius:30px; }
+.viewer.done { border-radius:30px; }
+.touch .viewer { margin-top: -3px; }
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir { background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px; }
+.ir:before { content: ""; display: block; width: 0; height: 150%; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.hide { display: none; }
+
+@media only screen and (max-height: 500px) {
+/*	.title { display: none; height: 0; overflow: hidden; padding: 20px 0 0; }*/
+}
+
+@media only screen and (min-width: 540px) {
+
+/* ==========================================================================
+Game Layout
+========================================================================== */
+
+/*--
+Puzzle Title
+--*/
+
+.title { font-size: 32px; padding: 20px 0 20px; }
+
+/*--
+Timer
+--*/
+
+
+
+}
+
+/*-----
+ROTATE TO VIEW
+-------*/
+.rotate-warning { display: none; }
+@media only screen and (orientation:landscape) and (max-height: 499px) {
+	.page-wrap { display:none; }
+	.rotate-warning { display:block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+	.rotate-text { position: absolute; top: 50%; left: 0; width: 100%; margin: -65px 0 0 0; font-size: 1em; color: #fff; background: url(../img/rotate-icon.png) no-repeat center top; background-size: 40px auto; padding: 50px 0 0; text-align: center; text-transform: uppercase; line-height: 1.05;  font-style: normal; font-weight: normal; }
+}
+@media only screen and (orientation:landscape) and (min-height: 500px) {
+	.rotate-warning { display:none; }
+	.page-wrap { display: block; }
+}
+
+ .icon-button-close, .close-overlay, .close-onboarding-overlay, .crossword .close-overlay { background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4xLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMTYgMTYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE2IDE2IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjE1LjksMS43IDE0LjIsMCA4LDYuMiAxLjcsMCAwLDEuNyA2LjIsOCAwLDE0LjIgMS43LDE1LjkgOCw5LjcgMTQuMiwxNS45IDE1LjksMTQuMiA5LjcsOCAJCSIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K); }
+
+.playable-area {
+  margin-top: 30px;
+  height: auto !important;
+  margin-left: 3px;
+  overflow-x: hidden;
+  left: 0;
+}
+
+.playable-area #puzzle {
+  margin: 0 auto;
+  display: block;
+  /* width: 335px; */
+  /* transform: scale(.75); */
+}
+
+.playable-area .table-holder {
+  margin-bottom: 20px;
+  box-shadow: none;
+  padding: 5px;
+}
+
+.playable-area .words {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.playable-area .words li {
+  margin: 0 0 5px;
+  font-size: 10px;
+  line-height: 32px;
+  width: calc(33.3% - 6px);
+}
+
+.playable-area .table-holder:before {
+  background-color: #ff80a1;
+}
+
+.playable-area table .text-cell-default  {
+  color: #FFF;
+  font-family: 'Roboto Slab', serif;
+  font size: 1.5em;
+
+}
+.playable-area table td,
+.playable-area table td span {
+  font-size: 1em;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.playable-area .viewer {
+  background: #FFF;
+
+}
+
+.viewer {
+  margin-top: -4px;
+  border-radius: 0!important;
+  background-color: #8883ea !important;
+  opacity: 1;
+}
+
+
+
+.playable-area .words li span {
+    font-family: 'Roboto Slab', serif;
+  box-shadow: none;
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 0;
+  height: 28px;
+  line-height: 26px;
+}
+
+
+#overlayCompleted .holder {
+  overflow: hidden;
+}
+
+ @media only screen and (min-width: 768px) {
+   .playable-area {
+     position: relative;
+     margin: 30px auto 0 auto;
+     left: 0 !important;
+     padding-left: 0 !important;
+     overflow-x: visible !important;
+     height: 500px !important;
+   }
+
+   .playable-area td span,
+   .playable-area td {
+      width: 30px !important;
+      height: 30px !important;
+   }
+
+   .playable-area #puzzle {
+     /* width: 330px; */
+     float: left;
+   }
+
+   .playable-area .words {
+     position: absolute;
+     top: 0;
+     right: -140px;
+     width: 120px !important;
+   }
+
+   .playable-area .words li {
+     width: 100%;
+   }
+
+   .playable-area .words li span{
+     font-size: 1.25em;
+
+   }
+
+   .viewer {
+     margin-top: -8px;
+   }
+   .playable-area .table-holder {
+       margin-top: 15px;
+   }
+
+ }
+
+ @media only screen and (min-width: 1024px) {
+   .playable-area {
+     left:100px !important;
+     /* overflow: hidden !important; */
+   }
+   .playable-area .words {
+     right:-250px;
+     width: 210px !important;
+   }
+   .playable-area .words li {
+     font-size: 1em;
+   }
+   .playable-area .words li span {
+    border: 3px solid #333;
+    line-height: 27px;
+    height: 30px;
+    font-size: .8em;
+   }
+ }
+
+ @media only screen and (min-width: 1366px) {
+   .playable-area {
+     left:210px !important;
+   }
+
+
+ }

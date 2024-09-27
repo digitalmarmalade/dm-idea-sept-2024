@@ -1,0 +1,93 @@
+	/*-----
+SLIDER
+-----*/
+
+.slider {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+}
+
+.slider.slick-initialized {
+    visibility: visible;
+    opacity: 1;    
+}
+
+.slide { position: relative; }
+.slick-initialized .slick-slide { height: auto; } 
+
+.slick-slider { max-width: 120rem; margin:0 auto; }
+
+.slick-list,
+.slick-track,
+.slick-slide { background-color: $white; }
+
+.slick-list  { border: .2rem solid $black; }
+
+.slick-slider h3 { font-size: 2rem; font-weight: $bold; margin-bottom: 1.5rem; }
+.slider-text p { font-size:1.6rem; }
+.slider-image img { margin: auto; max-width: 100%; }
+
+.slide-content { max-width: 75%; margin: 0 auto; padding: 4rem 0;}
+
+/* NAVIGATION */
+.slick-prev { background:url('../img/carousel/prev.svg') no-repeat 50% 50%; }
+.slick-next { background:url('../img/carousel/next.svg') no-repeat 50% 50%; }
+
+.slick-arrow { background-color: $black; }
+
+/* DOTS */
+.slick-dots { padding: 2rem 0; }
+.slick-dots li { margin:0 .25rem; }
+.slick-dots li button { width: 1rem; height: 1rem; border: .1rem solid $black; background-color: $white; border-radius: 50%; }
+.slick-dots .slick-active button { background-color: $black; }
+
+@media(min-width: $md-width){
+	.slick-slider h3 { font-size: 5rem;  }
+
+	.slide-content{ max-width: 100%; padding: 6rem; }
+
+	.slick-dots li { margin:0 .5rem; }
+	.slick-dots li button { width:2rem; height:2rem; border: .2rem solid $black; }
+
+	.slick-list  { border: .3rem solid $black; }
+	.slider-text p { font-size: 1.75rem; }
+}
+
+@media(min-width: $lg-width){
+  .slick-slider h3 { font-size: 4rem;  }
+  .slider-text p { font-size: 1.8rem; line-height:1.8; }
+}
+
+@media(min-width: $xl-width){
+  .slick-slider h3 { font-size: 6rem;  }
+}
+
+.slide {
+	.hide-mobile { display: none; }
+	.hide-tablet { display: block; }
+	.hide-desktop { display: none; }
+}
+
+@media(min-width: $md-width){
+	.hide-tablet { display: none; }
+
+	.slide {
+		.slider-image {}
+		.slider-text { margin-left: 2.5rem; }
+
+	}
+
+	.slider-holder h3 { margin-bottom: 3rem }
+}
+
+@media(min-width: $lg-width){
+	.hide-tablet { display: none; }
+	.hide-desktop { display: block; }
+
+	.slide {
+		.slider-image { margin: -3rem; min-width: 46rem; }
+		.slider-text { margin-left: 2.5rem; }
+	}
+}

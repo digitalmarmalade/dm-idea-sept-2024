@@ -1,0 +1,191 @@
+
+.tooltip {
+    position: relative;
+    display: inline-flex;
+    border-bottom: .1rem dotted $white;
+    cursor: pointer;
+    height: 1.6em;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 16rem;
+    background-color: $yellow;
+    border-radius: $border-radius;
+    padding: $padding;
+    color: $blue-dark;
+    font-size: $bodycopy;
+    text-align: left;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: $box-shadow;
+    transition: $transition;
+  }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 99%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color:  $yellow transparent transparent transparent;
+}
+
+
+@media only screen and (min-width: $lg-width) {
+  .tooltip .tooltiptext {
+    width: 366px;
+  }
+}
+
+
+
+.tooltipster.tooltip--blue { 
+    border-color: $blue-dark;
+}
+
+// Don't touch the edge of the screen.
+.tooltipster-base.tooltipster-top,
+.tooltipster-base.tooltipster-bottom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.tooltipster-base.tooltipster-right {
+    padding-right: 1.5rem;
+}
+
+.tooltipster-base.tooltipster-left {
+    padding-left: 1.5rem;
+}
+
+.tooltipster { 
+    display: inline-flex;
+    border-bottom: .1rem dotted $white;
+    cursor: pointer;
+}
+
+.tooltip_templates { 
+    display: none; 
+}
+
+.tooltipster-sidetip .tooltipster-box {
+    background-color: $yellow;
+    border-radius: $border-radius;
+    padding: $padding;
+    text-align: left;
+    box-shadow: $box-shadow;
+    border: 0 none;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: $yellow;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: $yellow;
+}
+
+.tooltipster-sidetip .tooltipster-content {
+    color: $blue-dark; 
+    font-size: $bodycopy;
+    line-height: inherit;
+    padding: 0;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow {
+    bottom: 0;
+    height: 1rem;
+    margin-left: -1rem;
+    width: 2rem;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-border {
+    border: 1rem solid transparent;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-background {
+    border: 1rem solid transparent;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-background {
+    border: 1rem solid transparent;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    top: 0;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+    margin-top: 1rem;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-box {
+    margin-bottom: 1rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border,
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border { 
+    display: none; 
+}
+
+.tooltipster-sidetip.tooltipster-top {
+    margin-top: .5rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom {
+    margin-top: -.5rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+    height: 1rem;
+    margin-left: -1rem;
+    top: 0;
+    width: 2rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+    border-bottom-color: $yellow;
+    top: 0;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+    margin-top: 1.4rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+    height: 2rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-uncropped { 
+    top: -.7rem; 
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+    top: 2px;
+ }
+ 
+ .card {
+   .tooltipster { 
+       border-bottom: .1rem dotted $blue-dark;
+   }
+
+ }
+
+ .tooltipster {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

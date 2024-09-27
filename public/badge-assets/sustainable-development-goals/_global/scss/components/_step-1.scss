@@ -1,0 +1,139 @@
+  
+
+.slider-holder { position: relative;  }
+
+.slider-image-top-wrapper { /* margin-bottom: -8rem;  margin-top: 8rem; margin-bottom: -12.5%;  margin-top: 20%;*/
+  img { max-width: 100%;  margin-bottom: -8rem;  margin-top: 8rem; margin-bottom: -12.5%;  margin-top: 20%; }
+} 
+
+.step-1 .slide-content .slider-text { padding: 3rem; }
+.step-1 .slider-text p { font-size: 1.4rem; }
+
+.slider-step-1 {
+  .slide-content { max-width: 80%; margin: 0 auto; padding: 3rem 0; } 
+  .slide { height: 85%; background-repeat: no-repeat; background-position: bottom center; }
+}
+
+.step-1 .quiz-holder { padding: 14rem 0 0 0; width:90%; }
+.step-1 .quiz .quiz-the-question { margin-right: 3rem; }
+.step-1 .quiz-holder .quiz-image img { right: -5.5%; }
+
+/** ------------------------ */
+
+.step-1 .slide-content { padding:0; width:100%; max-width: 100%;  
+    .slider-text { padding:3rem; background-color: $white; }
+    .slider-text p:last-child { margin-bottom: 0; }
+    .slider-image { background-size: contain; background-position: center center; background-repeat: no-repeat; }
+    .slider-continue { padding: 3rem; text-align: center; }
+}
+
+.slider-continue-desktop { display: none; }
+
+.slider-step-1 {
+  .slide-1 .slider-image { background-position: bottom center; }
+  .slide-4 .slider-image { background-size: cover; }
+  .slide-5 .slider-image { background-size: cover; }
+  .slide-6 .slider-image { background-size: cover; }
+}
+
+@media(max-width:1023px){
+    .slider-step-1 .slider-image { flex-grow: 1; }
+    .slider-step-1 .slide { display: flex !important; }
+    .step-1 .slide-content { flex-direction: column; display: flex; }
+}
+
+@media(min-width: $md-width){
+  .slider-holder { max-width: 67rem; }
+
+  .slider-image-top-wrapper img{  margin-top: 2%;  }
+  .step-1 .slide-content .slider-text { padding: 6rem; }
+  .slide-content { padding:3rem; }
+
+  .slider-step-1 {
+    .slide { }
+    .slide-content { max-width: 100%; }
+    .slider-text { margin:0; }
+  }
+
+  .step-1 .quiz { max-width: 63rem; }
+  .step-1 .quiz .quiz-the-question { margin-right: 0; }
+  .step-1 .quiz-holder { padding: 5rem 0; }
+  .step-1 .quiz-holder .quiz-image img { top: 10rem; left: -7.5rem; right: auto; }
+}
+
+@media(min-width: $lg-width){
+
+  .slider-step-1 {
+    .slide { height:45rem; background-position: bottom left; }
+    .slick-initialized .slick-slide { display: flex; }
+    .step-1 .slide-content .slider-text { padding:0 3rem; }
+  }
+
+  .slider-holder { max-width: 92rem; }
+  .step-1 .slide-content .slider-text { padding: 3rem; }
+
+  .slider-image-top-wrapper { /*margin-bottom: -9.5%; margin-top: -10%; margin-left: 22%; */ }
+  .slider-image-top-wrapper img { margin-bottom: -9.5%; margin-top: -10%; margin-left: 22%;  }
+
+  .slide-content { display: flex; justify-content: center; align-items: center; }
+  .slider-text { order:1; padding: 0 2rem 0 4rem; }
+
+  .step-1 .quiz-holder { width: 100%;}
+  .step-1 .quiz { max-width: 85rem;}
+  .step-1 .quiz .quiz-feedback { width: 26rem; min-width: 26rem; }
+
+  .step-1 .slider-image { min-width: 40rem; max-width: 40rem; height: 100%; }
+  .step-1 .slide .slider-image { margin:0; }
+  .step-1 .slider-text p { font-size: 1.6rem; }
+  .slider-step-1 .slide-content { padding:0; }
+
+  .slider-step-1 .slide-2 .slide-content,
+  .slider-step-1 .slide-3 .slide-content,
+  .slider-step-1 .slide-7 .slide-content,
+  .slider-step-1 .slide-8 .slide-content  {
+      padding: 0 0 0 3rem;
+  }
+
+  .slider-continue-desktop { display: block; }
+  .slider-continue-mobile { display: none; }
+
+}
+
+@media(min-width: $xl-width){
+  .slider-holder { max-width: 120rem; }
+  .slider-image-top-wrapper img { margin-bottom: -7%; margin-top: -8.5%;  margin-left: 32%; }
+}
+
+@media(min-width: 1440px){
+  .slider-image-top-wrapper img { margin-left: 42%; }
+}
+
+
+@media(min-width: $lg-width){
+  .step-1 .quiz-holder { width: auto; }
+}
+
+/* MOBILE SCREEN SIZES */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+  .slider-step-1 .slide { height: 80% }
+}
+
+/* iPHONE X */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+  .slider-step-1 .slide { height: 52rem; }
+
+ }
+
+@media(min-height: 600px) and (max-width: 600px){
+  .slider-step-1 .slide { height: 54rem; }
+}
+
+@media(min-width:768px) and (max-width: 1023px){
+  .slider-step-1 .slide { height: 60%; }
+}

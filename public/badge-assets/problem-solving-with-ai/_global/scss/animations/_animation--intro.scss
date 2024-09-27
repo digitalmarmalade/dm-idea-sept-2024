@@ -1,0 +1,50 @@
+.holder--animation {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin: -3.2em auto;
+  overflow: hidden;
+  #canvas,
+  #animation_container,
+  #dom_overlay_container  {
+    max-width: 145%;
+    height: auto !important;
+    top: 0;
+    left: -2.4em;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: $sm-width) {
+  .holder--animation {
+    margin: -6.4em auto -4.8em
+    ;
+    #canvas,
+    #animation_container,
+    #dom_overlay_container  {
+      max-width: 100%;
+      left: 1.6em;
+    }
+  }
+}
+@media only screen and (min-width: $md-width) {
+  .holder--animation {
+    margin: -8em auto -6.4em;
+    #canvas,
+    #animation_container,
+    #dom_overlay_container  {
+      max-width: 115%;
+      left: -.4em;
+    }
+  }
+}
+@media only screen and (min-width: $lg-width) {
+  .holder--animation {
+    overflow: visible;
+    #canvas,
+    #animation_container,
+    #dom_overlay_container  {
+      left: .8em;
+    }
+  }
+}

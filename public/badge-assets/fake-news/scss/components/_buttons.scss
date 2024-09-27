@@ -1,0 +1,136 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  align-items: center;
+  border-radius: $large-border-radius;
+  box-shadow: 0.25em 0.25em 2em 0.15em $grey-3;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: inherit;
+  font-weight: bold;
+  justify-content: center;
+  line-height: 1;
+  min-width: 12rem;
+  padding: $space-x-small $space-small;
+  text-transform: uppercase;
+
+  &:hover {
+    box-shadow: none;
+
+    & > svg {
+
+      & > g > path {
+        fill: $orange;
+      }
+    }
+  }
+
+  & > svg {
+    margin-left: $space-xx-small;
+
+    & > g > path {
+      fill: $white;
+      transition: 1s;
+    }
+  }
+
+  &:focus-visible {
+    background: $grey-5 !important;
+    color: #fff;
+    outline: none;
+    border-color: $grey-5 !important;
+  }
+
+  &:focus:not(:focus-visible) {
+    border-color: $grey-5 !important;
+    outline: none;
+  }
+}
+
+.btn--blue-bg {
+  box-shadow: 0.25em 0.25em 2em 0.15em $blue;
+}
+
+.btn--orange {
+  background: $white;
+  background: $gradient-orange;
+  border: 0.2em solid $orange;
+  color: $white;
+  position: relative;
+  transition: color 1s, opacity 1s;
+  z-index: 1;
+
+  &::before {
+    background: #fff;
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 1s;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $orange;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.btn--white {
+  background-color: $white;
+  border: 0.2em solid $orange;
+  color: $orange;
+  position: relative;
+  transition: color 1s, opacity 1s;
+  z-index: 1;
+
+  &::before {
+    background: $gradient-orange;
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 1s;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $white;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.back-to-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: $space-small;
+  text-align: center;
+  
+  & > img {
+    margin-bottom: $space-xxx-small;
+  }
+
+  & > span {
+    color: $orange;
+    display: inline-block;
+  }
+}

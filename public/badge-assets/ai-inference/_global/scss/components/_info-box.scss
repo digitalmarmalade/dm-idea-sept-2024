@@ -1,0 +1,29 @@
+.info-box {
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: $space-small;
+
+  & > .icon-btn {
+    flex-shrink: 0;
+    transition: $transition;
+    &:hover {
+      transform:scale(1.2);
+    }
+  }
+
+}
+
+.info-box--yellow {
+  background-color: $yellow;
+  color: $blue-3;
+  margin: $space-small;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  width: calc(100% - 48px);
+  @media (min-width: $lg-width) {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,93 @@
+@charset 'UTF-8';
+/* Arrows */
+ .slick-prev,
+.slick-next
+{
+  position: absolute;
+  top: 40%;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 2;
+  color: transparent;
+}
+
+.slick-prev:before
+{
+  content: url(../img/step-3-arrow-prev.png);
+}
+
+.slick-next:before
+{
+    content: url(../img/step-3-arrow-next.png);
+}
+
+.slick-prev
+{
+    left: 0px;
+}
+
+.slick-next
+{
+    right: 0px;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before
+{
+  content: url(../img/step-3-arrow-prev-hover.png);
+}
+
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+  content: url(../img/step-3-arrow-next-hover.png);
+}
+
+.slick-prev, .slick-next  {
+  display: none !important;
+}
+
+/* Dots */
+
+.slick-dots
+{
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li button
+{
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 900;
+  font-size:1.5em;
+  line-height: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  color:  #302F68;
+  border: 0;
+  outline: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width:768px) {
+  .slick-prev, .slick-next  {
+    display: inline-block !important;
+  }
+}

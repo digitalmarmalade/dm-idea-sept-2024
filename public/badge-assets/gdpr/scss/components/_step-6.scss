@@ -1,0 +1,93 @@
+.step-6 { background-color: #002790; color: #fff;
+    .page-header {  }
+    .page-header-image { max-width: 46.5rem; width: 100%; margin: 0 auto 3rem; }
+    .progress li { background: #33C3CC; }
+    .page-header {
+        &:before { border-top-color: #33C3CC;  }
+        &:after { border-top-color: #312671; opacity: .3; }
+    }
+    .page-header-triangles {
+        &:before { border-top-color: #33C3CC; }
+        &:after { border-top-color: #3294B1; }
+    }
+    .success-row { background: linear-gradient(to bottom, #1975AE 0%,#33C3CC 100%); }
+    .animation-holder { max-width: 46rem; padding: 0 2rem 0; margin: 0 auto 3rem; position: relative; z-index: 10;
+        canvas { width: 100% !important; height: auto !important; }
+    }
+    .animation-container { height: 0 !important; width: 100%; padding-bottom: 110%; }
+    .top-slant-1 {
+        &:before { border-top-color: #33C3CC; } 
+        &:after { border-top-color: #312671; } 
+    }
+    .top-slant-1--volcano {
+        &:before { border-top-color: #C27523; }
+        &:after { border-top-color: rgba(0,0,0,.2); }
+    }
+}
+
+
+.privacy-quiz-row { padding: 15rem 0; background: #1975AE; }
+ @media only screen and (min-width: 768px) {
+     .privacy-quiz-row { padding: 30rem 0 12rem; }
+ }
+
+
+.privacy-policy-holder { max-width: 68rem; margin: 0 auto; padding: 0 4rem; position: relative; z-index: 5; }
+
+.privacy-policy-tips { background: #33C3CC; border-radius: .5rem; padding: 3rem 2rem; color: #001D6B; margin: 0 0 2rem;
+    h2 { font-size: 2.2rem; font-weight: 700; margin: 0 0 1rem; }
+    p + h2 { margin-top: 3rem; }
+}
+
+
+
+.privacy-policy-quote { background: rgba(255,255,255,.05); padding: 3rem 2rem; border-radius: .5rem; margin: 0 0 2rem;
+    p { font-size: 3rem; font-family: Georgia, sans-serif; line-height: 1.4; color: #fff; font-weight: 400; text-decoration: underline; text-decoration-color: #33C3CC; }
+}
+
+ @media only screen and (min-width: 1024px) {
+ .privacy-policy-holder { max-width: 108rem; margin: 0 auto; padding: 4rem; display: flex; align-items: flex-start; }  
+     .privacy-policy-quote { width: calc(40% - 2rem); margin: 0 0 0 2rem; }
+     .privacy-policy-text,
+     .privacy-policy-tips { width: 60%; }
+}
+
+.volcano-row { background: linear-gradient(180deg, #AB4123 30%, #C27523 100%); padding: 2rem 0; 
+    .privacy-policy-quote {
+        p { text-decoration-color: #AA4122; }
+    }
+}
+.bottom-slant-2--volcano {
+    &:before { border-bottom-color: #AB4123; }
+    &:after { border-bottom-color: rgba(0,0,0,.2); }
+}
+
+ @media only screen and (min-width: 768px) {
+     .volcano-row { padding: 10rem 0 10rem; }
+ }
+
+.volcano-image { width: 24rem; margin: 0 auto 3rem; padding: 20rem 0 0; position: relative; }
+.smoke { position: absolute; left: 6rem; top: 1rem; background: none; }
+
+ .privacy-question { background: #fff; border-radius: .5rem; padding: 2rem; margin: 0 0 2rem; color: #333; }
+ .privacy-question-title { font-size: 1.8rem; color: #7216CF; margin: 0 0 1.5rem; font-weight: 700; line-height: 1.3; }
+ .privacy-question-options { list-style: none; margin: 0 -.5rem; padding: 0; display: flex;
+     li { margin: 0 .5rem; padding: 0; flex: 1; }
+     a { display: block; background: #7216CF; text-align: center; color: #fff; text-decoration: none; border-radius: .5rem; padding: 3rem 1rem; font-size: 1.6rem; text-transform: uppercase; font-weight: 700; transition: background .25s ease;
+         &:hover { background: #312671; }
+         &.selected { background: #312671; }
+     }
+     .privacy-question-good { background: #27AE60; }
+     .privacy-question-bad { background: #E74C3C; }
+ }
+ p + .privacy-question { margin-top: 4rem; }
+.privacy-question-answer { padding: 2rem 0 0;
+    h3 { font-weight: 400; color: #7216CF; font-size: 2rem; margin: 0 0 1.5rem; }
+    .question-example-good { color: #27AE60; }
+    .question-example-bad { color: #E74C3C; }
+}
+
+
+
+
+.privacy-question-image { margin: 0 auto 2rem; }

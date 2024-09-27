@@ -1,0 +1,4 @@
+/*! Lazy Load */
+
+.lazyload { opacity: 0; transform: scale(1); }
+.lazyloaded { opacity: 1; transform: scale(1); transition: all 1s; }

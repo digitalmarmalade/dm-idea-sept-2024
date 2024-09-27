@@ -1,0 +1,61 @@
+.box {
+  background-color: $white;
+  color: $blue-dark;
+  padding: $padding;
+  border-radius: $border-radius;
+  position: relative;
+  overflow: hidden;
+  + h1 {
+    margin: 3.2rem 0 1.2rem;
+  }
+  .col {
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &.blue {
+    background-color: $blue-light;
+  }
+  &.cobalt {
+    padding: 1.6rem;
+    background-color: $cobalt-light;
+    text-align: center;
+  }
+  &.gold {
+    background-color: $idea-gold;
+  }
+  &.bg-grad--blue-light {
+    background-color: $gradient--blue-light;
+    &.transparent {
+    margin: 2.4rem 0;
+      background-color: $gradient--blue-light-transparent;
+    }
+  }
+
+}
+
+.box__title {
+  font-size: $box-title;
+  margin: 0 0 .4em;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .box {
+
+      .tooltip {
+        border-color: $blue-dark;
+      }
+    &.blue, &.cobalt {
+      padding: $padding;
+
+    }
+    &.bg-grad--blue-light.transparent {
+      padding:2.4rem ;
+      h3 {
+        margin-top: 0;
+      }
+    }
+  }
+
+}

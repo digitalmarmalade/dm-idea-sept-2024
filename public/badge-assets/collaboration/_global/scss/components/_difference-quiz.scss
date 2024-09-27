@@ -1,0 +1,35 @@
+.difference-quiz { padding: 3rem 0; background: #28864a; background: linear-gradient(to bottom, #e0a943 0%,#2d9953 52%,#28864a 100%); color: #fff;
+    h2 { color: inherit; }
+}
+.difference-intro { margin: 0 0 3rem; }
+.difference-question { background: #fff; padding: 2rem; color: #333; border-radius: .3rem; margin: 0 0 2rem; box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2); }
+.difference-question--wrong { animation:shake 2s ease infinite; }
+.difference-options { display: flex; justify-content: space-between; list-style: none; margin: 3rem 0 1rem; padding: 0;
+    li { margin: 0; }
+    a { display: block; text-align: center; padding: 2rem; background: #e38c01; color: #fff; border-radius: .2rem; text-decoration: none; width: 10rem; transition: all .25s ease; 
+        &:hover { background: #04243b; }
+        &.selected { background: #018e33; }
+    }
+}
+
+.difference-quiz-answer { min-height: 12rem; background: #ededed; padding: 2rem; margin: 2rem 0 0; border-radius: .3rem; 
+    p { line-height: 1.2; }
+}
+.difference-quiz-answer--right p { padding-top: 2.5rem; }
+.difference-quiz-label { display: flex; height: 8rem; width: 6rem; align-items: center; justify-content: center;  margin: 0 1rem 0 0; float: left;
+    img { max-width: 60%; }
+}
+.difference-quiz-label--question { background: #223873; }
+.difference-quiz-label--right { background: #018e33; }
+.difference-quiz-label--wrong { background: #900; }
+
+.whoops { background: #900; color: #fff; padding: 2rem; box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2); border-radius: .3rem; margin: 0 0 2rem;
+    p { margin: 0; }
+}
+
+@media only screen and (min-width: $md-width) {
+    .difference-quiz-answer {  }
+    
+}
+
+.difference-quiz-summary { background: rgba(255,255,255,.2); padding: 2rem 2rem 1rem; text-align: center; border-radius: .3rem; color: #333; box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2); color: #fff; }

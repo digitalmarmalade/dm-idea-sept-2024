@@ -1,0 +1,83 @@
+.countdown-animation {
+  flex: 1;
+  font-family: 'Monoton', sans-serif;
+  height: 200px;
+  max-width: 200px;
+  position: relative;
+  text-transform: uppercase;
+
+  & .countdown-animation__svg {
+    position: absolute;
+    top: 1.4rem;
+    
+    @media (min-width: $md-width) {
+      top: 0;
+    }
+  }
+
+  & .countdown-animation__time, .countdown-animation__unit {
+    background: $gradient-orange;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    -webkit-background-clip: text;
+  }
+
+  & .countdown-animation__time {
+    font-size: 6rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    @media (min-width: $sm-width) {
+      font-size: 8rem;
+    }
+  }
+
+  & .countdown-animation__unit {
+    bottom: 24%;
+    font-size: 1.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    @media (min-width: $sm-width) {
+      bottom: 20%;
+      font-size: 1.6rem;
+    }
+  }
+
+  & .countdown-animation__time--sm {
+
+    @media (max-width: $sm-width) {
+      font-size: 3.333rem;
+    }
+  }
+
+  & .countdown-animation__unit--sm {
+
+    @media (max-width: $sm-width) {
+      bottom: 35%;
+      font-size: 1rem;
+    }
+  }
+
+  & .countdown-animation__time--dig {
+    font-size: 2.5rem;
+
+    @media (min-width: $sm-width) {
+      font-size: 3.25rem;
+    }
+  }
+
+  & .countdown-animation__unit--dig {
+    bottom: 30%;
+    font-size: 1.5rem;
+
+    @media (min-width: $sm-width) {
+      bottom: 20%;
+      font-size: 2rem;
+    }
+  }
+}

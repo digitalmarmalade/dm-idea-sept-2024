@@ -1,0 +1,189 @@
+.bubble {
+  border-radius: 2.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: $space-small;
+  @media (min-width: $md-width) {
+    padding: $space-medium;
+  }
+
+  &.bubble__btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.bubble--tip-bottom-left {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    left: 5rem;
+    position: absolute;
+    top: 100%;
+  }
+}
+
+.bubble--tip-bottom-centre {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+  }
+}
+
+.bubble--tip-bottom-centre-right {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    left: 65%;
+    position: absolute;
+    top: 100%;
+  }
+}
+
+.bubble--tip-bottom-right {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    position: absolute;
+    right: 5rem;
+    top: 100%;
+  }
+}
+
+.bubble--tip-middle-left {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    left: 5rem;
+    position: absolute;
+    top: 100%;
+
+    @media (min-width: $md-width) {
+      left: -1.25rem;
+      top: 50%;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.bubble--tip-left-top {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    content: '';
+    left: -1.25rem;
+    position: absolute;
+    top: 2.5rem;
+    transform: rotate(90deg);
+  }
+}
+
+.bubble--tip-left-bottom {
+
+  &::after {
+    border-top: 10px solid black;
+    border-top-color: inherit;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: 2.5rem;
+    content: '';
+    left: -1.25rem;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+}
+
+.bubble--green, .bubble--red {
+  @media (min-width: $md-width) {
+    padding: $space-small;
+  }
+  & .bubble__title {
+    font: inherit;
+    font-weight: bold;
+  }
+  .btn {
+    align-self: flex-start;
+  }
+}
+
+.bubble--green {
+  background-color: $green;
+  border-top-color: $green;
+  color: $blue-3;
+}
+
+.bubble--gold {
+  background-color: $idea-gold;
+  border-top-color: $idea-gold;
+  color: $white;
+}
+
+.bubble--red {
+  background-color: $red;
+  border-top-color: $red;
+  color: $white;
+}
+
+.bubble--blue {
+  background-color: $blue-1;
+  border-top-color: $blue-1;
+  box-shadow: 0.75em 0.75em 1.5em 0.1em rgb(0 40 90 / 0.5);
+  color: $blue-3;
+  @media (min-width: $md-width) {
+    padding: $space-small;
+  }
+  &.bubble__title {
+    font-size: $r-medium;
+  }
+  .btn {
+    text-align: left;
+    align-self: flex-start;
+  }
+}
+
+.bubble--white {
+  background-color: $white;
+  border-top-color: $white;
+  color: $blue-3;
+}
+
+.bubble--yellow {
+  background-color: $yellow;
+  border-top-color: $yellow;
+  color: $blue-3;
+  margin-bottom: -32px;
+  @media (min-width: $md-width) {
+    margin-bottom: 0;
+    margin-left: -96px;
+  }
+
+}

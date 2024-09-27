@@ -1,0 +1,56 @@
+
+.tips {
+  width: 100%;
+  li {
+    width: calc(100% - 40px);
+    text-align:left;
+    position: relative;
+  }
+  .figure {
+    background-color: $green;
+    color: $white;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    width: 100%;
+  }
+  p {
+    padding: 20px;
+    background-color: $light-green;
+    span {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      display: block;
+      font-size: 1.15em;
+      line-height: 1.2;
+      margin-bottom: 5px;
+    }
+  }
+}
+@media only screen and (min-width: $md-width) {
+
+  .tips li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tips .figure {
+    display: inline-flex;
+    width: 12.5%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+
+  .tips p {
+    max-width: calc( 100% - 12.5% - 40px);
+    display: inline-block;
+    margin: 0 0 0 12.5%;
+  }
+}

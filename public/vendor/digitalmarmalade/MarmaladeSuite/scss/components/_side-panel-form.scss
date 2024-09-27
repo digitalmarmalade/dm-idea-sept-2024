@@ -1,0 +1,138 @@
+/* Side Panel Form */
+
+.side-panel-form { max-width: 800px; margin: 0 auto; position: relative; }
+
+.sidebar-preview { width: 200px; background: $primary-colour; float: left; }
+.sidebar-edit { width: 580px; float: right; }
+
+.side-panel-instructional-text { text-align: center; color: #666; padding: 20px;  max-width: 400px; margin: 0 auto; }
+.side-panel-instructional-text.live-scores { padding: 30px!important; /*temp fix for snag*/ }
+
+.side-panel-pods { list-style: none; margin: 0; padding: 10px; height: 580px; overflow-y: auto; }
+.side-panel-pods li.full-width { width: 100%; }
+.side-panel-pods li { width: 50%; padding: 10px; float: left; margin: 0;
+
+	p { font-size: 1em; margin-bottom: 10px; }
+
+}
+
+/*.side-panel-pods li > p { font-size: 1em; margin: 0 0 10px; }*/
+
+.side-panel-pod-content { background: #f5f5f5; opacity: 1; transition: .25s opacity ease-in; position: relative; }
+.side-panel-pod-text { padding: 10px; height: 60px; }
+
+.side-panel-pod-actions { list-style: none; margin: -17px 0 0; padding: 0; position: absolute; left: 0; top: 50%; width: 100%; text-align: center; opacity: 0;transition: .25s opacity ease-in;
+	li { margin: 0 5px; display: inline-block; width: auto; padding: 0; float: none; }
+	.btn { width: 90px; }
+}
+
+.pod-holder { position: relative; }
+.pod-holder:hover {
+	
+	.side-panel-pod-content { opacity: .25; }
+	.side-panel-pod-actions { opacity: 1; }
+	.pod-in-use-mark { opacity: 0; }
+	
+}
+
+.edit-panel-pod { display: none; position: absolute; left: 0; top: 0; width: 580px; z-index: 1; height: 711px; }
+
+.pod-in-use-mark { position: absolute; width: 30px; height: 30px; background: #696; color: #fff; text-align: center; line-height: 30px; border-radius: 50%; position: absolute; left: 50%; top: 50%; margin: -15px 0 0 -15px; transition: .25s opacity ease-in;  }
+
+.side-panel-pod--in-use .side-panel-pod-content  { opacity: .25; }
+
+@media only screen and (max-width: 1200px) {
+.side-panel-form { max-width: 750px; position: relative; left: 25px; }
+.sidebar-preview { width: 200px; }
+.sidebar-edit { width: 530px; float: left; }	
+}
+
+
+
+
+.sidebar-preview .panel-preview { border-bottom: 1px solid #fff; margin-bottom: 10px; }
+.sidebar-preview .panel-preview:last-child { border-bottom: 0; margin-bottom: 0; }
+
+.sidebar-preview .additional-info { margin: 15px; color: #fff;  }
+.sidebar-preview .additional-info h2 { margin: 0 0 15px 0; /*color: $red; @include fs-medium;*/ font-size: 1.5em; padding: 0; }
+.sidebar-preview .additional-info ul { position: relative; display: block; margin: 0; padding: 0; list-style: none; }
+.sidebar-preview .additional-info ul li { position: relative; display: block; margin: 0 0 10px 0; padding: 0; font-size: 1.2em; }
+.sidebar-preview .additional-info ul li a { position: relative; display: block; background: url(../../img/aside-header-arrow-right.png) no-repeat right 8px center; padding: 7px 9px; text-decoration: none; /*color: $body-text-color;*/ border: 1px solid #fff; color: #fff; }
+
+
+.sidebar-preview .header-a-bg { position: relative; background: url(../img/aside-header.png); color: #fff; overflow: auto; margin: 0 0 4px 0;  }
+.sidebar-preview .header-a { position: relative; display: block;  color: #fff; text-decoration: none; margin: 0 0 11px 0; }
+.sidebar-preview .header-a-bg span.title { position: relative; display: block; font-size: 1.5em;  margin: auto; padding: 0 0 0 15px; height: 30px; line-height: 22px; }
+.sidebar-preview .header-a-bg span.date { position: absolute; display: block; top: 8px; right: 15px; font-size: 1.1em; text-transform: uppercase;  line-height: 1em; }
+.sidebar-preview .header-a span.subtitle { position: relative; display: block; border: 1px solid #fff;  margin: auto; font-size: 1.2em; padding: 7px 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 30px; margin: 0 15px; background: url(../../img/aside-header-arrow-right.png) no-repeat right 8px center; }
+
+$orangez: #f96332;
+
+.sidebar-preview .date-list { position: relative; margin: 10px 0; }
+.sidebar-preview .date-list ul { position: relative; display: block; margin: 0 15px; padding: 0; list-style: none; }
+.sidebar-preview .date-list ul li { position: relative; display: block; margin: 0 0 10px 0; padding: 0; font-size: 1em; }
+.sidebar-preview .date-list ul li .link { position: relative; display: block; border: 1px solid #fff; text-decoration: none;color: #fff; }
+.sidebar-preview .date-list ul li .link img { display: block; width: 100%; border-bottom: 1px solid #fff; }
+.sidebar-preview .date-list ul li .link .content { position: relative; display: block; min-height: 60px; }
+.sidebar-preview .date-list ul li .link .date { position: absolute; display: block; width: 100%; margin: 0 0 0 0; height: 20px; background: #fff; color: $orangez; text-align: center; }
+.sidebar-preview .date-list ul li .link .date span { position: relative; display: inline; text-transform: uppercase; line-height: 20px; }
+.sidebar-preview .date-list ul li .link .date span.day { font-size: 1.2em; }
+.sidebar-preview .date-list ul li .link .date span.month { font-size: 1.2em; }
+.sidebar-preview .date-list ul li .link .date span.year { font-size: 1.2em; }
+.sidebar-preview .date-list ul li .link .copy { position: relative; display: block; padding: 30px 10px 9px 10px; font-size: 1.2em; background: url(../img/aside-header-arrow-right.png) no-repeat right 8px center; min-height: 60px; }
+.sidebar-preview .date-list ul li .link .copy.no-date {  padding: 10px 10px 9px 10px; }
+.sidebar-preview .date-list ul li span.link .copy { padding-right: 9px; }
+
+
+.sidebar-preview .calendar { position: relative; /*background: #fff;*/ padding: 0 15px 0 15px; margin: 0 0 10px 0; }
+.sidebar-preview .calendar .calendar-header { position: relative; }
+.sidebar-preview .calendar .calendar-header h2 { margin: 0; color: #fff; font-size: 1.5em; text-align: center; padding: 0 0 10px 0; }
+.sidebar-preview .calendar .calendar-header h3 { font-size: 1.3em; margin: 0; text-align: center; color: #fff; } 
+.sidebar-preview .calendar .arrow { position: absolute; display: block; bottom: 0; width: 10px; height: 15px; background: #000; text-indent: -9999px; overflow: hidden; display: none; }
+/*.sidebar-preview .calendar .arrow.left { background: url(../img/aside-header-arrow-left.png); left: 33px; } 
+.sidebar-preview .calendar .arrow.right { background: url(../img/aside-header-arrow-right.png); right: 33px; } 
+.sidebar-preview .calendar .arrow.left:hover { background: url(../img/aside-header-arrow-left-red.png); }
+.sidebar-preview .calendar .arrow.right:hover { background: url(../img/aside-header-arrow-right-red.png); }*/
+.sidebar-preview .calendar .table-container { position: relative; display: block; margin: 15px 0 0 0; border-top: 1px solid #fff; }
+.sidebar-preview .calendar table { width: 170px; }
+.sidebar-preview .calendar table thead {  color: #fff; background: none; font-size: 1.3em; }
+.sidebar-preview .calendar table thead tr {  }
+.sidebar-preview .calendar table thead tr th {  height: 24px; border-bottom: 0px solid #fff; border-left: 1px solid #fff; border-right: 1px solid #fff; text-align: center; }
+.sidebar-preview .calendar table tbody { }
+.sidebar-preview .calendar table tbody tr {  }
+.sidebar-preview .calendar table tbody tr td { border: 1px solid #fff; height: 23px; text-align: center; font-size: 1.2em; }
+.sidebar-preview .calendar table tbody tr td:nth-child(1) { border-left: 1px solid #fff; }
+.sidebar-preview .calendar table tbody tr td:nth-child(7) { border-right: 1px solid #fff; }
+.sidebar-preview .calendar table tbody tr:last-child td { border-bottom: 1px solid #fff; }
+.sidebar-preview .calendar table tbody tr td span { width: 23px; height: 23px; color: #fff; position: relative; display: block; line-height: 23px; margin: auto; /*border-radius: 50%;*/ text-align: center; }
+.sidebar-preview .calendar table tbody tr td.today span { background-color: #fff; color: $orangez; }
+.sidebar-preview .calendar table tbody tr td.earmark { background-image: url(../../img/earmark.png); background-repeat: no-repeat; background-position: top right; }
+.sidebar-preview .calendar table tbody tr td.today.earmark span { background-image: url(../../img/earmark-today.png); background-repeat: no-repeat; background-position: top right; }
+
+
+/*quick fix for sidebar pod images*/
+.newpod-0-preview-image-wrapper { width: 260px!important; height: 170px!important; }
+.side-panel-pod-content { overflow-x: hidden; }
+
+
+/*quick fix for button and alt tag size inside new sidepanel pod image uploader*/
+/*.edit-panel-pod .uploaded-image p  { font-size: 1em; }
+.side-panel-pod { font-size: 1em; }
+.edit-panel-pod .uploaded-image p { font-size: 1.2em; }
+.side-panel-pod-actions .btn { font-size: 1.2em; }
+.edit-panel-pod .centre-actions .btn { font-size: 1.2em; }*/
+
+/*.sidebar-preview mask */
+.sidebar-preview { position: relative; }
+.sidebar-preview:before { content:""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: +1;  }
+
+
+
+
+
+
+
+
+
+
+

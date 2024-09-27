@@ -1,0 +1,169 @@
+/*! Overlay */
+
+.overlay { background-color: rgba(0,0,0, .76); position:absolute; top:0; bottom:0; left:0; right:0; width:100%; height:100%; margin:0; border-radius: 0; text-align: center; }
+
+.overlay { opacity:0; visibility: hidden; transition: all .25s ease-in-out; }
+
+.overlay video { width: 100%; height: auto; 
+
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.overlay-bg { background: rgba(0,0,0,.25); opacity: 0; display: unset;}
+
+.overlay-inner { position: relative; top:50%; left: 50%; transform:translate(-50%, -50%); background: #10141B; border-radius: .5rem;  padding:2rem; color:#fff; max-width: 90%; }
+
+@media(min-width: 768px){
+	.overlay-inner { margin: 0; width:100%; max-width: 53rem; padding-top: 4.2rem; padding-bottom: 4.2rem; }
+}
+
+@media(min-width: $lg-width){
+	.overlay-inner {
+	    max-width: 60rem;
+	}
+}
+
+.overlay-text { margin-bottom: 3rem; }
+
+.overlay-title { font-size: 3.2rem; line-height: 1; margin-top:0; margin-bottom: 3rem; }
+
+.overlay p { font-family: $regular-font; font-size: 1.6rem; line-height: 1.4; }
+
+
+
+/* ------------------------------  */
+// Overlay Success
+/* ------------------------------  */
+
+.overlay-success {   
+	.overlay-inner,
+	.overlay-title,
+	.overlay-text-1,
+	.overlay-text-2,
+	.overlay-anagram,
+	.complete-time,
+	.secret-letters,
+	.btn { opacity: 0; }
+
+	.anagram { opacity: 1; }
+	.anagram span { opacity: 0; display: inline-block;  transform: scale(1); }
+
+	.success-video { opacity: 0; }
+
+	//.overlay-inner { background-color: transparent; }
+
+	.btn-group { flex-direction: column; }
+}
+
+
+.overlay-success--visible {   
+
+	//background-color: transparent;
+
+	.overlay-bg { height:100%; display: block; background-color: rgba(0,0,0, .25); animation: animateOverlayCompleteBg .25s 1 forwards ease-in; animation-delay: 0s; background-image: none; }
+	.overlay-inner { animation: animateOverlayBg .25s 1 forwards ease-in; animation-delay: 2s; }
+	
+	.complete-time,
+	.overlay-title { animation: animateOverlayTitle .5s 1 forwards ease-in; animation-delay: 2.75s; }
+
+	.overlay-text-1 { animation: animateOverlayText1 .5s 1 forwards ease-in; animation-delay: 4s;  }
+	.overlay-text-2 { animation: animateOverlayText1 .5s 1 forwards ease-in; animation-delay: 4.2s;  }
+
+	.secret-letters { animation: animateOverlayText2 .5s 1 forwards ease-in; animation-delay: 4s; }
+
+	.overlay-anagram { margin:0; padding-top:1rem; }
+
+	.btn { animation: animateButton .25s 1 forwards ease-in; animation-delay: 5s; }
+	.fade-in-5 { animation: animateButton .25s 1 forwards ease-in; animation-delay: 5.5s; opacity: 0; }
+
+}
+
+@keyframes animateOverlayCompleteBg {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@keyframes animateOverlayTitle {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@keyframes animateOverlayText1 {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@keyframes animateOverlayText2 {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@keyframes animateOverlayAnagram {
+    0% { opacity: 0;  transform: scale(1);}
+    50% {  transform: scale(1.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+
+/* ------------------------------  */
+// Reset Overlay
+/* ------------------------------  */
+
+.overlay-reset {   
+	.overlay-inner,
+	.overlay-title,
+	.btn { opacity: 0; }
+}
+
+.overlay-reset--visible { 
+	.overlay-inner { animation: animateOverlayBg .25s 1 forwards ease-in; animation-delay: .5s; }
+	.overlay-title { animation: animateOverlayTitle .25s 1 forwards ease-in; animation-delay: .65s; }
+	.btn { animation: animateButton .25s 1 forwards ease-in; animation-delay: 1s; }
+}
+
+/* ------------------------------  */
+// Reveal Overlay
+/* ------------------------------  */
+
+.overlay-reveal {   
+	.overlay-inner,
+	.overlay-title,
+	.btn { opacity: 0; }
+}
+
+.overlay-reveal--visible { 
+	.overlay-inner { animation: animateOverlayBg .25s 1 forwards ease-in; animation-delay: .5s; }
+	.overlay-title { animation: animateOverlayTitle .25s 1 forwards ease-in; animation-delay: .65s; }
+	.btn { animation: animateButton .25s 1 forwards ease-in; animation-delay: 1s; }
+}
+
+/* ------------------------------  */
+// Reveal and Reset Overlay
+/* ------------------------------  */
+
+.overlay-reveal h2,
+.overlay-reset h2 { font-size: 2rem; }
+
+.overlay-reveal .btn,
+.overlay-reset .btn { display: inline-block; margin:0 1rem; }
+
+.overlay-reveal .overlay-inner,
+.overlay-reset .overlay-inner { padding: 4rem 3rem; }
+
+@media(min-width: $md-width){
+	.overlay-reveal .overlay-inner,
+	.overlay-reset .overlay-inner { max-width: 36rem; }
+}
+
+
+// Show Overlays
+.overlay-video--visible,
+.overlay-success--visible ,
+.overlay-fail--visible,
+.overlay--visible,
+.overlay-reset--visible,
+.overlay-help--visible,
+.overlay-1-life-lost--visible,
+.overlay-reveal--visible  { opacity: 1; visibility: visible; }

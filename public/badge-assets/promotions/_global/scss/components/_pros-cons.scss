@@ -1,0 +1,112 @@
+.medium-heading { font-family: 'bebas_neuebold'; margin: 0; padding: 0; font-size: 5.6rem; font-weight: 100; text-transform: uppercase; text-align: center; line-height: 5.6rem; margin:  0 0 10px 0; color: $white; text-shadow: 3px 3px 0px  $light-green;}
+.medium-image { max-width: 100%; margin: 0 auto 2rem; }
+.medium-intro { margin: 0 auto 3rem; max-width: 50rem;
+  p {
+    max-width: 100%;
+  }
+}
+.medium-correct-message { margin: 0 0 2rem;
+    img { display: block; margin: 0 auto 1rem; }
+    p { margin: 0; font-family: 'bebas_neuebold'; font-size: 3.6rem; max-width: 100%;}
+}
+.pro-or-con { background: #fff; padding: 2rem; color: #333; margin: 0 0 2rem; }
+.pro-or-con--pro { color: $dark-green; box-shadow: .3rem .3rem 0  $light-green; }
+.pro-or-con--con { color: $orange; box-shadow: .3rem .3rem 0 #f7dfaf; }
+.pro-or-con-heading { font-family: 'bebas_neuebold'; font-size: 3.2rem; margin: 0 0 2rem;
+    img { margin: -.25em .5rem 0 0; vertical-align: middle; }
+}
+
+.pro-or-con-list {
+    li { padding: 2rem 0 0; margin: 2rem 0 0;
+        .pro-or-con--pro & { border-top: 1px dashed $dark-green; }
+        .pro-or-con--con & { border-top: 1px dashed $orange; }
+        &:first-child { padding: 0; margin: 0; border: none; }
+    }
+}
+
+.tint-background { background: rgba(255,255,255,.1); margin: 0 -2rem 2rem; padding: 2rem 2rem 0; }
+
+.pros-cons-aside-image { max-width: 100%; display: block; }
+
+.pros-cons--full-width {
+    .pro-or-con-heading { margin: 0; }
+}
+
+.outdoor-media-image { width: calc(100% + 40px); margin: 0 -20px; display: block; }
+
+@media only screen and (min-width: $md-width) {
+    .tint-background { background: rgba(255,255,255,.1); margin: 0 -4rem 2rem; padding: 4rem; }
+    .medium-heading { text-shadow: 6px 6px 0px  $light-green; margin: 0 0 3rem; font-size: 9.6rem; line-height: 9.6rem; }
+    .medium-correct-message { margin: 0 0 4rem; }
+    .medium-two-column-intro { display: flex; text-align: left; }
+    .medium-intro { padding: 2rem; flex: 1; }
+    // .pros-cons { display: flex; align-items: top; }
+
+    .pro-or-con { margin: 0 2rem 3rem;  padding: 4rem; width: 50%;}
+    .pro-or-con-heading { margin: 0 0 3rem; }
+    .pro-or-con-list {
+        li { padding: 2rem 0 0; margin: 2rem 0 0; }
+    }
+    .pros-cons--vertical { position: relative; padding-bottom: 50px;
+        .pro-or-con:nth-child(even) ul { padding-right: 1rem; }
+        .pro-or-con:nth-child(odd) ul { padding-left: 1rem; }
+    }
+    .pros-cons-aside-image { position: absolute; left: 50%; bottom: -8rem; max-height: 100%; max-width: 30%; transform: translateX(-50%); margin: 0 0 0 4rem; }
+
+    .pro-or-con--pro { box-shadow: .6rem .6rem 0  $light-green; }
+    .pro-or-con--con { box-shadow: .6rem .6rem 0  #f7dfaf; }
+
+    .outdoor-media-image { width: calc(100% + 80px); margin: 0 -40px; display: block; }
+    .radio-image { max-width: 80%; margin: 0 auto 40px; }
+}
+
+.radio-image { max-width: 100%; margin: 0 auto 20px; }
+
+.pro-or-con--detailed { padding: 0; }
+.pro-or-con--detailed__image { padding: 2rem 2rem 1rem; }
+.pro-or-con--detailed__text { padding: 0 3rem 3rem 3rem; text-align:center;
+    h4 { font-family: 'bebas_neuebold'; font-size: 3.2rem; margin: 0 0 1rem; text-transform: uppercase; line-height: 1;}
+    p { color: #666; margin: 0; }
+}
+
+
+@media only screen and (min-width: $md-width) {
+ .pro-or-con--detailed { display: flex; padding: 0; flex-direction: column }
+ .pro-or-con--detailed__image { padding: 4rem 4rem 0; }
+  .pro-or-con--detailed__text { padding: 2em 0 4em 0; }
+  .pro-or-con--detailed__text p { margin: 0 auto; }
+
+
+  .step-3 .pros-cons {
+    display: flex;
+  }
+
+  .pros-cons-aside-image {
+    margin-bottom: -4em;
+  }
+}
+
+
+@media only screen and (min-width: $lg-width) {
+    .pros-cons--vertical { flex-direction: column; position: relative;
+        .pro-or-con { width: 50%; }
+        .pro-or-con:nth-child(even) ul { padding-right: 0; }
+        .pro-or-con:nth-child(odd) ul { padding-left: 0; }
+    }
+    .pros-cons--full-width { flex-wrap: wrap;
+        .pro-or-con { width: 100%; flex: none; margin: 2rem 0; }
+    }
+    .pros-cons-aside-image { left: auto; right: -4rem; bottom: -4rem; max-height: 100%; max-width: 50%; transform: none; margin: 0; }
+
+
+    .outdoor-media-image { width: 100vw;  max-width: none; position: relative; left: 50%; transform: translateX(-50%); margin: 0; }
+
+    .pro-or-con--detailed { display: flex; padding: 0; flex-direction: row; }
+    .pro-or-con--detailed__image { padding: 4rem ; }
+     .pro-or-con--detailed__text { padding:4em 0 4em 0; text-align: left;}
+     .pro-or-con--detailed__text p { margin: 0; }
+
+     .pros-cons-aside-image {
+       margin-bottom: -4em;
+     }
+}

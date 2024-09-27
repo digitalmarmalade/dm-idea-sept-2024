@@ -1,0 +1,289 @@
+.activity-box-step-1 {
+  padding: 4em 0;
+}
+
+.activity-box-step-1 .holder {
+  padding: 0 2em;
+}
+
+.theory-box-scoping {
+  animation-duration: 6s;
+}
+
+.theory-box-scoping {
+  ul {
+    width: 100%;
+    padding: 6em 0 0;
+    li {
+      width: calc(100% - .8em);
+      height: auto;
+      padding:.8em;
+      background-image: none;
+      display: flex;
+      background-color: $black;
+      align-items: center;
+      justify-content: center;
+      font-size:  1.6em;
+        margin: .4em;
+
+      p {
+        color: #FFF;
+        width: 100%;
+        margin:0;
+      }
+      img {
+        width: 8em;
+        height: auto;
+        position: absolute;
+        top: -2em;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+    }
+    li:not(:first-child) {
+      background-color: #ededed;
+      text-transform: none;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+
+    }
+  }
+  ul:nth-child(2) {
+    li {
+      img {
+        top: -3em;
+        width: 4em;
+      }
+    }
+  }
+}
+
+
+.activity-box-step-1 .activity-1-slide {
+
+  .scope {
+    position: relative;
+    margin: 0 1em;
+    height: 30em;
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+
+  .slide--content {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: $border-mob;
+    border-color: white;
+    cursor: pointer;
+    height: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    img {
+      width: auto;
+      height: 12em;
+      margin: 0 auto .5em;
+    }
+    p {
+      width: 100%;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+    }
+    button{
+      text-transform: uppercase;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      padding: .4em 1.6em;
+      border: 1px solid $white;
+      height: auto;
+      background: transparent;
+      font-size: 1.6em;
+    }
+    &.question.selected {
+      background-color: $yellow;
+    }
+    &.answer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: none;
+      img {
+        margin: 0 0 1em;
+        &:first-child {
+          margin:  0 auto .5em;
+          height: 12em;
+          width: auto;
+        }
+      }
+      p {
+        font-family: 'bebas_neuebold', sans-serif;
+        text-transform: uppercase;
+        font-size: 3em;
+        margin: 0;
+      }
+    }
+    &.answer-project-creep {
+      background-color: $red;
+      margin: 0;
+
+      -webkit-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+
+      -webkit-animation: project-creep .5s linear infinite;
+      -moz-animation: project-creep .5s linear infinite;
+      -ms-animation: project-creep .5s linear infinite;
+      animation: project-creep .5s linear infinite;
+      span {
+        font-size: 1.6em;
+      }
+    }
+    &.answer-success {
+      background-color: $green-2;
+      margin: 0;
+    }
+    &.answer-success img.correct {
+      width: 20% !important;
+      height: auto;
+      margin: 20px auto 40px auto;
+    }
+  }
+
+}
+
+.slick-prev, .slick-next {
+    top: 30% !important;
+}
+
+
+// .activity-box-step-1 .question-content,
+// .activity-box-step-1 .answer-content {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   padding: 0 20px;
+//   width: 100%;
+// }
+
+
+
+
+
+
+
+
+// .activity-box-step-1 .activity-1-slide .answer-project-creep img {
+//   height: 140px;
+// }
+
+@-webkit-keyframes project-creep {
+  0%   {background-color: $red;}
+  50% {background-color: $yellow;}
+  100% {background-color: $red;}
+}
+
+@-moz-keyframes project-creep {
+  0%   {background-color: $red;}
+  50% {background-color: $yellow;}
+  100% {background-color: $red;}
+}
+
+@-ms-keyframes project-creep {
+  0%   {background-color: $red;}
+  50% {background-color: $yellow;}
+  100% {background-color: $red;}
+}
+
+@keyframes project-creep {
+  0%   {background-color: $red;}
+  50% {background-color: $yellow;}
+  100% {background-color: $red;}
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .activity-box-step-1 .activity-1-slide {
+    .scope {
+      height: 28em;
+    }
+    .slide--content {
+      padding: 1em;
+      p {
+        font-size: 1.15em;
+      }
+      img {
+        height: 9em;
+      }
+      &.answer {
+        p {
+          font-size: 1.15em;
+        }
+        img {
+          &:first-child {
+            height: 9em;
+          }
+        }
+      }
+    }
+    .slide--content.answer-project-creep span {
+      font-size: 1.25em;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .activity-box-step-1 .activity-1-slide {
+    .scope {
+      height: 30em;
+    }
+    .slide--content {
+      padding: 2em 1em;
+      p {
+        font-size: 1.35em;
+      }
+      img {
+        height: 11em;
+      }
+      &.answer {
+        p {
+          font-size: 1.6em;
+        }
+        img {
+          &:first-child {
+            height: 10em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:$xl-width) {
+  .activity-box-step-1 .activity-1-slide {
+    .slide--content {
+      p {
+        font-size: 1.2em;
+      }
+      &.answer {
+        p {
+          font-size: 1.35em;
+        }
+      }
+    }
+  }
+}

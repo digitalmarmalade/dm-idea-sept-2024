@@ -1,0 +1,50 @@
+.three-ethic-principles {
+  float: left;
+  clear:left;
+  .three {
+    font-size: 7em;
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: .7;
+    font-family: 'bebas_neuebold', sans-serif;
+    margin-right: 5px;
+  }
+
+  p:first-of-type {
+    margin: 20px auto;
+  }
+}
+
+img.step-1 {
+  margin: 20px;
+}
+
+@media only screen and (min-width: $md-width) {
+  .three-ethic-principles {
+    .three {
+      font-size: 10em;
+    }
+  }
+  img.step-1 {
+    width: 100%;
+    margin: -40px 20px 0 -50%;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .three-ethic-principles {
+    .three {
+      font-size: 13em;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1490px) {
+  .three-ethic-principles {
+    .three {
+      font-size: 13em;
+    }
+  }
+}

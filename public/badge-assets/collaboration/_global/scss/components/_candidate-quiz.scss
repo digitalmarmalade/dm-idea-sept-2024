@@ -1,0 +1,49 @@
+.candidate-holder { background: rgba(0,0,0,.1); padding: 2rem 0 0; }
+.candidate { background: #fff; padding: 0 2rem; margin: 0 0 2rem; color: #333; border-radius: .5rem;
+    > h3 { font-size: 1.8rem; margin: 0 -2rem 0; padding: 2rem 2rem 2rem 3rem; position: relative;
+        &:before { content: ''; display: inline-block; margin: 0 .3rem 0 0; width: 2rem; height: 2rem; position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAJUlEQVR42mNgAILy8vL/DLgASBKnApgkVgXIkhgKiNKJ005s4gDLbCZBiSxfygAAAABJRU5ErkJggg==") no-repeat scroll center center transparent; }
+        &:hover { cursor: pointer; color: #666; }
+        &.expanded::before { transform: rotate(90deg) translateX(-50%); transform-origin: center; }
+    }
+}
+.candidate-rejected { 
+    h3 { text-decoration: line-through;  }
+    .candidate-status { color: #900; }
+}
+.candidate-offered { 
+    .candidate-status { color: #093; }
+}
+
+.candidate-actions { padding: 2rem 0;
+    a { margin: 0 0 1rem; }
+}
+
+@media only screen and (min-width: $sm-width) {
+    .candidate-actions { padding: 2rem 0; display: flex; justify-content: space-between;
+        a { margin: 0; }
+    } 
+    .candidate-holder { padding: 4rem 0 0; margin: 7rem 0 0; }
+}
+
+.candidate-positions { padding: 0 0 2rem;
+    a { display: inline-block; border: 1px solid #ccc; border-radius: .3rem; padding: 1rem 2rem; text-decoration: none; color: #333; font-size: 1.6rem; margin: 0 .5rem 1rem 0; }
+    a.role-filled { position: relative; color: #999;
+        &::after { display: table; content: 'Role Filled'; text-transform: uppercase; background: #e41570; border-radius: .3rem; padding: .5rem 1rem; font-size: 1rem; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff; width: 8rem; }
+    }
+}
+.candidate-list { padding: 2rem 0; }
+@media only screen and (min-width: $sm-width) {
+
+    .candidate-list { padding: 3rem 0 4rem; }
+}
+
+.candidate-outcome { margin: 0 -2rem; border-top: 1px solid #ededed; padding: 2rem; display: flex; align-items: top; 
+    p { margin: 0; }
+}
+.candidate-label { margin: 0 1.5rem 0 0; padding: 1rem; }
+.candidate-label--right { background: #093; }
+.candidate-label--wrong { background: #900; }
+
+.candidate-status { float: right; color: #999; }
+
+.faded { opacity: .3; }

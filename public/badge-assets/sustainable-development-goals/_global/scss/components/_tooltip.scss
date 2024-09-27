@@ -1,0 +1,56 @@
+/*-----
+TOOLTIPS
+-----*/
+
+.tooltip {
+    position: relative; z-index:1000; background-color: $black; color: $white; display: inline; border:.5rem solid $black; white-space: nowrap; text-decoration: none;
+
+    span {
+        position: absolute;
+        width:27rem;
+        color: #ffffff;
+        background: $black;
+        padding:2rem;
+        line-height: 1.8;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        white-space: normal;
+        font-size: 1.4rem;  
+        font-weight: normal;
+        transition: opacity .25s ease-out;
+    }
+
+    span strong { font-weight: $bold; }
+
+    span:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -1.6rem;
+        width: 0; height: 0;
+        border-top: 1.6rem solid $black;
+        border-right: 1.6rem solid transparent;
+        border-left: 1.6rem solid transparent;
+    }
+
+    &:hover span {
+        visibility: visible;
+        bottom: 5rem;
+        left: 50%;
+        margin-left: -13.5rem;
+        z-index: 999;
+        opacity: 1;
+    }
+}
+
+@media(min-width: $md-width){
+    .tooltip {
+        span { width: 32rem; }
+
+        &:hover span {
+            margin-left: -16rem;
+        }
+    }
+}

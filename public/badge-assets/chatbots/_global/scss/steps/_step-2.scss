@@ -1,0 +1,101 @@
+.step-2__nlp-technique--container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-small;
+
+  & > div {
+    align-items: center;
+    border-radius: $medium-border-radius;
+    display: flex;
+    padding: $space-large;
+  }
+
+  & .step-2__nlp-technique--technique {
+    background: $gradient-purple;
+    color: $white;
+
+    & h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: $space;
+    }
+
+    @media (min-width: $lg-width) {
+      width: 65%;
+    }
+  }
+
+  & .step-2__nlp-technique--example {
+    background-color: $grey-1;
+    position: relative;
+    padding: $space-medium;
+
+    &::after {
+      background-image: linear-gradient(to bottom right, transparent 50%, $grey-1 0);
+      content: '';
+      height: 1rem;
+      left: 50%;
+      position: absolute;
+      top: -0.75em;
+      transform: rotate(225deg) translateX(-50%);
+      width: 1rem;
+    }
+
+    @media (min-width: $lg-width) {
+      width: 35%;
+
+      &::after {
+        background-image: linear-gradient(to bottom right, transparent 50%, $grey-1 0);
+        left: -5%;
+        top: 50%;
+        transform: rotate(135deg) translateX(-50%);
+      }
+    }
+  }
+
+  @media (min-width: $lg-width) {
+    flex-direction: row;
+  }
+}
+
+.step-2__activity {
+  background-color: $grey-1;
+  border-radius: $small-border-radius;
+  padding: $space-large;
+
+  & h4 {
+    margin-bottom: $space;
+  }
+
+  & .step-2__activity--carousel-control {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $space;
+
+    & > span {
+      font-family: 'Monoton', sans-serif;
+      font-size: 2rem;
+    }
+
+    & > button {
+      height: 2rem;
+      width: 2rem;
+      transition: transform 0.25s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  & .step-2__activity--activity {
+    background-color: $white;
+    border-radius: $medium-border-radius;
+    padding: $space;
+  }
+
+  & > .fail--box {
+    margin-bottom: $space;
+  }
+}

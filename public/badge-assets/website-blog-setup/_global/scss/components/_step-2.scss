@@ -1,0 +1,113 @@
+.step-2 {
+  .top {
+    background-color: $light-blue;
+    margin: 0 0 -10px 0;
+    padding: 0;
+  }
+
+  .middle {
+    background-color: $cream;
+    padding-top: 30px;
+  }
+
+  .bottom {
+    background-color: $white;
+    padding: 40px 20px;
+  }
+
+  .quiz-3 a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+  table {
+    width: 100%;
+    margin: 30px 0 60px 0;
+    caption {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    th {
+      width: 50%;
+      color: $white;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    th:first-child {
+      background-color: $green;
+    }
+    th:last-child {
+      background-color: $red;
+    }
+    th, td {
+      padding: 10px;
+    }
+    td.pro {
+      background-color: $light-green;
+    }
+    td.con {
+      background-color: $cream;
+    }
+  }
+}
+
+.methods {
+  width: 100%;
+  li {
+    padding: 20px;
+    background-color: rgba(255,255,255,.25);
+    margin: 0 0 20px;
+
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+  }
+
+}
+
+@media only screen and (min-width: $md-width) {
+  .website-methods ul {
+    display: flex;
+    margin: 30px 0;
+    li {
+      margin: 10px;
+      width: 33%;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step-2 {
+    .hero {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+// Step 2 - Tasks //
+
+@media only screen and (min-width: $md-width) {
+  .step-2 .middle {
+    height: 490px;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step-2 .middle {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+
+
+}

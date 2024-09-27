@@ -1,0 +1,13 @@
+<svg width="257" height="122" viewBox="0 0 257 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="speech-bubble">
+    <path id="path3934" d="M255.03 12.2523L256.623 109.146C256.623 116.049 251.369 121.576 245.035 121.336L0.142938 112.045L27.985 90.6861C32.6002 87.1452 35.383 81.4132 35.4697 75.264V10.5038C35.552 4.70771 39.8887 0.055568 45.2117 0.055568H243.832C250.017 0.055568 255.03 5.51626 255.03 12.2523Z" fill="url(#paint0_linear_1492_82492)"/>
+    <text id="Today&#39;s forecast for London is seven degrees with showers." transform="translate(51.9956 20.8069)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="15.1002" font-weight="bold" letter-spacing="0em"><tspan x="0" y="18.7877">Today&#39;s forecast for </tspan><tspan x="0" y="41.7877">London is seven degrees </tspan><tspan x="0" y="64.7877">with showers.</tspan></text>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_1492_82492" x1="256.623" y1="58.5188" x2="-61.5301" y2="58.5188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC444"/>
+      <stop offset="0.996403" stop-color="#F36F56"/>
+      <stop offset="1" stop-color="#F36F56"/>
+    </linearGradient>
+  </defs>
+</svg>

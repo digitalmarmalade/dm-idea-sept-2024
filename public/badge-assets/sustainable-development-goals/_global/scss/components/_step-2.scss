@@ -1,0 +1,120 @@
+/*! STEP 2 */
+
+
+
+/*! Points List */
+.step-2 { }
+
+
+.step-2 section { overflow: hidden;  }
+.step-2 .section-1{ overflow: visible }
+
+
+.point-intro { background-color: rgba(255,255,255,.3);  padding:8rem 3rem 13rem 3rem; 
+	p {font-size:1.6rem;}
+	.point-intro-text { max-width: 144rem;  }
+}
+
+.points { padding:0 3rem; margin: auto; margin-top:-12rem; position: relative;
+	.points-img { display: block; margin: auto auto -1rem auto; max-width:100%; }
+	
+	.point { display:flex; border: .2rem solid $black; padding:3rem; margin-bottom: 1.6rem; background-color: $white; position: relative; }
+	.point p:last-child { margin-bottom:0; }
+	.point__number { font-size: 10rem; line-height: .85; font-weight: bold; padding-right: 2rem; }
+	p { font-size:1.4rem; }
+	ul { list-style:disc; padding:0 0 0 2rem; margin-bottom: 2rem; }
+	li { margin-bottom: .5rem; }
+	li p { margin-bottom: 0; }
+}
+
+/* DROPDOWNS*/
+
+.step-2 {
+	.dropdown-1 .select-wrapper {   }
+}
+
+.step-2 {
+	 .task-dropdown-check { justify-content: space-between; align-items: baseline;}
+	 .hint { display: inline-block; font-size:1.4rem; background-color: $cream; padding:.5rem 1rem; border: .1rem dashed $black; color: $black; text-decoration: none;   transition: box-shadow 0.15s ease; }
+	 .hint:hover {  box-shadow: 0px 0px 3px rgba(0,0,0,.2); }
+	 .hint-underline{ text-decoration:underline; border-bottom: 1px solid #000; }
+}
+
+
+@media(min-width: $md-width){
+
+	.step-2 {
+		 .hint {  padding:.5rem 2rem; }
+	}
+
+	.point-intro { padding:3rem 5rem; display: flex; position: relative;
+		p { max-width:50%;  }
+		.point-intro-image { position: absolute; top:0; right:0; }
+	 }
+
+	.points { flex-wrap: wrap;  display: flex;   padding:3rem 3.57rem; margin: auto;
+		
+		.points-img {    /* display: none; */ position: absolute; top: -17%; right: 12%;  max-width: 31%; }
+
+		.point {width: calc(50% - 3rem);  margin: 0 1.5rem 3rem;  padding: 2.4rem; border: .3rem solid $black; }
+	
+		.point-2 { z-index:100; } 
+
+		.point-3 { align-self: flex-start; }
+		.point-5 { margin-top: -36%; }
+	 }
+
+	.step-2 {
+		select { width:auto; }
+	}
+}
+
+
+@media(min-width: $lg-width){
+
+	.point-intro { padding:6rem 10rem; display: flex; position: relative;
+		p { font-size: 1.8rem;  max-width:50%;  }
+		.point-intro-image { position: absolute; top:0; right:0; }
+	 }
+
+	.points { flex-wrap: wrap;  display: flex;  max-width: 144rem;  padding:6rem 7rem 0 7rem;
+		.points-img { right: 12%; max-width: 31%; /* top:0; */ }
+		.point {width: calc(50% - 6rem);  margin: 0 3rem 6rem; }
+		p { font-size: 1.8rem; }
+		.point-2:before { background-size: 80%; }
+		.point-5 { margin-top:-31%; }
+	 }
+
+	 .step-2 .continue-bar { margin-top: -10rem; }
+
+	 .slide-goal-col-wrapper { display: flex; 
+		ul { flex-basis: 50%; }
+		ul:first-child { margin-right: 3rem; }
+	 }
+
+	 .slider-goals .slide { min-height: 66rem;}
+	 .slider-goals .slide-goal-img img { max-width: 80%; margin: auto 10%; width: 100%; }
+}
+
+
+@media(min-width: $xl-width){
+	.points {
+		.point__number { font-size: 20rem; line-height: .85; }
+
+		.point-2:before { background-size: 58%; }
+		.point-5 {  margin-top: -19%; }
+		.point { padding: 6rem; }
+
+		.points-img { top: -20%; }
+	}
+}
+
+@media(min-width: 1366px){
+	.step-2 .continue-bar { margin-top: -20rem; }
+
+	.points .points-img { top: -22%; }
+}
+
+@media(min-width: $md-width) and (max-width: 1023px){
+	.step-2 .task-dropdown-wrapper { max-width: 60rem; }
+}

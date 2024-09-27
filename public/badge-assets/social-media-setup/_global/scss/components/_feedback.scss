@@ -1,0 +1,38 @@
+section.feedback:last-of-type,
+section.feedback {
+  // margin-top: -100px;
+  padding: 40px 0 140px 0;
+  h2 {
+    text-transform: none;
+  }
+  .btn {
+    margin: 60px auto;
+  }
+  img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+section.feedback-fail {
+  color: $white;
+  h2{
+    font-weight: 400;
+  }
+  .btn span {
+    background-color: $green;
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  section.feedback:last-of-type,
+  section.feedback {
+    padding: 40px 0;
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+}

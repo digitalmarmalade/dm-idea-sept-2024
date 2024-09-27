@@ -1,0 +1,88 @@
+/*! Management Game */
+
+.management-game { border: 1px solid #ccc; background: #fff; padding: 2rem; margin: 0 0 5rem; }
+.management-game-title { display: table;  color: #fff; text-transform: uppercase; background: #221f1f; padding: 1rem 2rem; font-size: 2.4rem; font-family: 'Nutmeg-UltraBlack'; }
+
+.management-game-progress { position: relative; height: 1rem; margin: 0 0 2rem; display: flex; justify-content: space-around;  -ms-justify-content: space-around;
+    &:after,
+    &:before { content: ''; display: block; height: .4rem; width: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #ededed; }
+    &:after { background: #00b3e3; width: 4.5%; transition: width .25s ease; }
+    li { display: inline-block; position: relative; z-index: 1; flex: 1;
+        &:after { content: ''; display: block; position: absolute; left: 50%; top: 0; transform: translate(-50%,0);  height: 1rem; width: 1rem; background: #ededed; border-radius: 50%; transtion: background .25s ease .2s; }
+    }
+}
+
+.management-question { font-size: 1.8rem; margin: 0 0 2rem; font-weight: 500; }
+.management-game-question { display: none; }
+
+.management-game--question-1 {
+    li:nth-child(1):after { background: #00b3e3; }
+    .management-game-question-1 { display: block; }
+}
+/* 9% */
+.management-game--question-2 {
+    li:nth-child(-n+2):after { background: #00b3e3; }
+    .management-game-progress::after { width: 13.5%; }
+    .management-game-question-2 { display: block; }
+}
+.management-game--question-3 {
+    li:nth-child(-n+3):after { background: #00b3e3; }
+    .management-game-progress::after { width: 22.5%; }
+    .management-game-question-3 { display: block; }
+}
+.management-game--question-4 {
+    li:nth-child(-n+4):after { background: #00b3e3; }
+    .management-game-progress::after { width: 31.5%; }
+    .management-game-question-4 { display: block; }
+}
+.management-game--question-5 {
+    li:nth-child(-n+5):after { background: #00b3e3; }
+    .management-game-progress::after { width: 40.5%; }
+    .management-game-question-5 { display: block; }
+}
+.management-game--question-6 {
+    li:nth-child(-n+6):after { background: #00b3e3; }
+    .management-game-progress::after { width: 49.5%; }
+    .management-game-question-6 { display: block; }
+}
+.management-game--question-7 {
+    li:nth-child(-n+7):after { background: #00b3e3; }
+    .management-game-progress::after { width: 58.5%; }
+    .management-game-question-7 { display: block; }
+}
+.management-game--question-8 {
+    li:nth-child(-n+8):after { background: #00b3e3; }
+    .management-game-progress::after { width: 67.5%; }
+    .management-game-question-8 { display: block; }
+}
+.management-game--question-9 {
+    li:nth-child(-n+9):after { background: #00b3e3; }
+    .management-game-progress::after { width: 76.5%; }
+    .management-game-question-9 { display: block; }
+}
+.management-game--question-10 {
+    li:nth-child(-n+10):after { background: #00b3e3; }
+    .management-game-progress::after { width: 86.5%; }
+    .management-game-question-10 { display: block; }
+}
+.management-game--question-11 {
+    li:nth-child(-n+11):after { background: #00b3e3; }
+    .management-game-progress::after { width: 95.5%; }
+    .management-game-question-11 { display: block; }
+}
+
+.management-game-buttons { 
+    li { display: block; margin: 0 0 .4rem; font-size: 1.8rem; }
+    a { display: block; background: #00b3e3; padding: 1rem 2rem; color: #fff; text-decoration: none; }
+    a.disabled { color: #666; background: #ccc; pointer-events: none; cursor: not-allowed; }
+    a:hover { background: #000; }
+}
+
+.error-message { color: #b44426; margin: 0 0 2rem; }
+
+@media only screen and (min-width: $sm-width) {
+    .management-game-buttons { 
+        li { display: inline-block; margin: 0 0 .4rem; font-size: 1.8rem; }
+        a { display: inline-block; background: #00b3e3; padding: 1rem 2rem; color: #fff; text-decoration: none; }
+    }
+}

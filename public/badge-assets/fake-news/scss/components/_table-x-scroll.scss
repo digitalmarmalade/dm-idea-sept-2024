@@ -1,0 +1,50 @@
+.table-x-scroll-wrapper {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.table-x-scroll {
+  border-collapse: collapse;
+  color: #000;
+  table-layout: auto;
+  max-width: 100%;
+
+  & .table-x-scroll__row {
+
+    &:nth-child(even) {
+      background-color: $white;
+    }
+
+    &:nth-child(odd) {
+      background-color: $grey-2;
+    }
+  }
+
+  & .table-x-scroll__head {
+    border-bottom: 0.15em solid #000;
+
+    & .table-x-scroll__heading {
+      background-color: $white;
+      font-size: $r-small;
+      font-weight: bold;
+      min-width: 25rem;
+      padding: $space-xx-small $space-xxx-small;
+      scroll-snap-align: start;
+      text-align: left;
+    }
+
+    & .table-x-scroll__heading--counter {
+      min-width: 1rem;
+    }
+  }
+
+  & .table-x-scroll__body {
+
+    & .table-x-scroll__data {
+      font-size: $r-x-small;
+      padding: $space-xx-small $space-xxx-small;
+      scroll-snap-align: start;
+      vertical-align: top;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  &.no-margin {
+    margin: 0;
+  }
+  + .cols {
+    margin: .8em 0 0;
+  }
+}
+
+.logo--intel {
+  max-width: 80px;
+  height: auto;
+}
+
+.section__icon {
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.illustration--why {
+  max-width: 70%;
+  height: auto;
+}
+
+.illustration--what {
+  max-width: 31%;
+  height: auto;
+  float: right;
+  position: relative;
+
+}
+
+
+@media only screen and (min-width: $md-width) {
+  img {
+    + .cols {
+      margin: 2.4em 0 0;
+    }
+  }
+  
+  .illustration--why,
+  .illustration--what {
+    display: flex;
+  }
+  
+  .illustration--what {
+    justify-content: flex-end;
+  }
+}

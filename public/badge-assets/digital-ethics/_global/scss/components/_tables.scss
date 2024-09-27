@@ -1,0 +1,70 @@
+table {
+  table-layout: auto;
+  font-size: var(--font-size-sm);
+  border-spacing: var(--space-xsm);
+
+  @media (min-width: $md-width) {
+    font-size: var(--font-size-default);
+  }
+
+  th {
+    text-align: center;
+    block-size: 1.6rem;
+    font-family: var(--ranchers);
+    letter-spacing: 0.056em;
+    text-transform: uppercase;
+
+    @media (min-width: $md-width) {
+      block-size: 2.4rem;
+    }
+
+    &:first-child {
+      padding: 0 var(--space-sm);
+      text-align: left;
+
+      @media (min-width: $md-width) {
+        padding: 0 var(--space);
+      }
+    }
+  }
+
+  td {
+    position: relative;
+    min-inline-size: 4rem;
+    @media (min-width: $md-width) {
+      min-inline-size: 5.6rem;
+    }
+
+    &:first-child {
+
+      p {
+        padding: var(--space-sm);
+        background-color: var(--cream);
+        border-radius: var(--space-xsm);
+        border: .2rem solid var(--black);
+        text-align: left;
+
+        @media (min-width: $md-width) {
+          padding: var(--space-md);
+        }
+      }
+
+
+    }
+  }
+
+  div.height--full {
+    block-size: 100%;
+    block-size: 100%;
+    position: absolute;
+    inline-size: 100%;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+  }
+
+  input[type="checkbox"]+label,
+  input[type="radio"]+label {
+    padding: var(--space-xsm);
+
+  }
+}

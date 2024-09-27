@@ -1,0 +1,122 @@
+/*! Forms */
+
+$form-input-border-radius: 0; 
+$form-input-padding: 8px; 
+$form-input-border: 1px solid $grey;
+$form-input-background-colour: $white;
+$form-input-transition: border-color .2s, box-shadow .2s;
+
+$checkbox-on-colour: $white;
+$radio-on-colour: #000;
+
+$form-help-colour: #666;
+
+$form-horizontal-label-width: 200px;
+
+@mixin form-focus { border-color: $medium-grey; box-shadow: 0 0 3px rgba(0,0,0,0.5); }
+
+label { display: block; margin: 0 0 3px; }
+
+.lg-input { font-size: 2em; }
+.sm-input { font-size: 1.1em; }
+
+/*--
+FORM INLINE
+--*/
+
+
+
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+.main-form input[type="text"], .main-form input[type="password"] { padding: 5px; width: 100%; border: 1px solid #ddd; }
+button.btn-delete { border: 0; }
+
+/*--
+FORM HORIZONTAL
+--*/
+
+.form-horizontal label { display: inline-block; width: $form-horizontal-label-width; }
+.form-horizontal .checkbox,
+.form-horizontal .radio { padding-left: $form-horizontal-label-width + 4; }
+
+/*--
+INPUTS
+--*/
+
+textarea { height: 100px; resize:vertical; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select{ border: $form-input-border; padding: 0 0 0 $form-input-padding; border-radius: $form-input-border-radius; background: $form-input-background-colour; transition: $form-input-transition; height: 34px; line-height: 34px; }
+
+.customSelect:after { content: '\e0d4'; width: 30px; border-left: 1px solid $grey; height: 100%; text-align: center; display: inline-block; height: 32px; line-height: 32px; font-family: "Flaticon"; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus { @include form-focus; }
+
+input + label { display: inline-block; }
+
+.help-block,
+.help-inline { color: $form-help-colour; }
+
+.help-block { display: block; padding: 4px 0 0; }
+.help-inline { display: inline-block; margin: 0 0 0 10px; }
+
+.form-action-right { text-align: right; }
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked { position: absolute; left: -9999px; }
+[type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label { position: relative; padding-left: 25px; cursor: pointer; }
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before { content: ''; position: absolute; left:0; top: 0; width: 20px; height: 20px; background: $form-input-background-colour; border-radius: $form-input-border-radius; transition: $form-input-transition; border: 1px solid $grey; }
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after { content: '\e08f'; position: absolute; top: 0; left: 0; width: 20px; text-align: center; font-size: 16px; color: $checkbox-on-colour; transition: all .2s; font-family: "Flaticon"; color: $theme-primary-bg; }
+[type="checkbox"]:not(:checked) + label:after { opacity: 0; transform: scale(0); }
+[type="checkbox"]:checked + label:after { opacity: 1; transform: scale(1); }
+[type="checkbox"]:checked:focus + label:before, [type="checkbox"]:not(:checked):focus + label:before { @include form-focus; outline: none; }
+
+[type="radio"] + label { display: inline-block; }
+[type="radio"]:not(:checked), [type="radio"]:checked { position: absolute; left: -9999px; }
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label { position: relative; padding-left: 25px; cursor: pointer; }
+[type="radio"]:not(:checked) + label:before, [type="radio"]:checked + label:before { content: ''; position: absolute; left:0; top: 0; width: 20px; height: 20px; border: $form-input-border; background: $form-input-background-colour; border-radius: $form-input-border-radius; transition: $form-input-transition; border-radius: 25px; }
+[type="radio"]:not(:checked) + label:after, [type="radio"]:checked + label:after { content: '\2714'; position: absolute; top: 0; left: 0; width: 20px; text-align: center; font-size: 14px; color: $radio-on-colour; transition: all .2s; }
+[type="radio"]:not(:checked) + label:after { opacity: 0; transform: scale(0); }
+[type="radio"]:checked + label:after { opacity: 1; transform: scale(1); }
+[type="radio"]:checked:focus + label:before, [type="radio"]:not(:checked):focus + label:before { @include form-focus; outline: none; }
+
+.radio-inline p, .checkbox-inline p { display: inline-block; margin-right: 10px; }
+
+input[type="file"]::-webkit-file-upload-button, input[type="file"]::-moz-file-upload-button{ display: none; }
+.input-file-container span { display: none; }
+
+
+.customSelect { border: 1px solid $medium-grey; padding: 5px; background: url(../img/select-button.png) no-repeat right center; box-shadow: 1px 1px 1px rgba(0,0,0,0.1); width: 200px; cursor: pointer;-moz-appearance: none; appearance: none; -moz-appearance: none; -webkit-appearance: none; font-size: 1.3em; height: 31px; margin: 5px 5px 5px 0; }
+
+.customSelect.customSelectHover {
+/* Styles for when the select box is hovered */
+}
+.customSelect.customSelectOpen {
+/* Styles for when the select box is open */
+}
+.customSelect.customSelectFocus {
+/* Styles for when the select box is in focus */
+}
+.customSelectInner {
+/* You can style the inner box too */
+}
+
+.xs-width-1-2 { width: 50%; }
+
+@media only screen and (min-width: $sm-width) {
+
+.sm-width-1-2 { width: 50%; }
+
+}
+
+@media only screen and (min-width: $md-width) {
+	.form-inline input { width: auto !important; }
+	.form-inline p { display: inline-block; margin: 0 5px 0 0; }
+.form-inline label { display: inline-block; padding: 0 3px 0 0; }
+}

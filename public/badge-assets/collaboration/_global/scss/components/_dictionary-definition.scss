@@ -1,0 +1,8 @@
+.dictionary-definition { background: #fff; font-family: Georgia, sans-serif; padding: 2rem; color: #444; margin: 0 0 3rem; box-shadow: .7rem .7rem .7rem rgba(0,0,0,.2);
+    h3 { font-size: 2.2rem; font-weight: 700; margin: 0 0 1rem; }
+    p { font-size: 1.8rem; }
+    cite { font-size: 1.4rem; display: block; border-top: 1px dotted #121212; padding: 1.5rem 0 0; margin: 1.5rem 0 0; font-style: normal; }
+}
+@media only screen and (min-width: 600px) {
+.dictionary-definition { padding: 4rem; }
+}

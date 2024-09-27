@@ -1,0 +1,31 @@
+.buying-step { background: #fff; box-shadow: .3rem .3rem 0  $light-green; color: #333; padding: 2rem; margin: 0 0 4rem;
+    h3 { font-size: 3.6rem; font-family: 'bebas_neuebold'; color: $light-green; line-height: 3.6rem; margin: 0 0 1rem;
+        span { font-size: 4.8rem; color: $dark-green; display: block; line-height: 4.8rem; }
+    }
+    img { margin: 0 0 1rem;}
+    p { max-width: 100%;}
+}
+
+
+@media only screen and (max-width: $md-width-under) {
+    .buying-step { position: relative; margin: 0 0 11.6rem;
+        &::after { display: block; content: ''; position: absolute; top: 100%; width: 100%; left: 0; height: 11.1rem; }
+        &:nth-child(odd)::after { background: url(../img/buyer-steps/arrow-mob-1.png) no-repeat center top; }
+        &:nth-child(even)::after { background: url(../img/buyer-steps/arrow-mob-2.png) no-repeat center top; }
+        &:nth-child(7)::after { display: none; }
+        &:nth-child(7) { margin: 0 0 4rem; }
+    }
+}
+
+@media only screen and (min-width: $md-width) {
+    .buying-step { width: 45%; max-width: 36rem; margin: 0 0 6rem; min-height: 57rem; padding: 4rem; box-shadow: .6rem .6rem 0  $light-green; position: relative;
+        &:nth-child(odd) { margin: 0 0 6rem auto; }
+        &:nth-child(n+3) { margin-top: -20rem; }
+        &:after { content: ''; display: block; position: absolute; bottom: 100%; margin: 0 0 1rem; }
+        &:nth-child(3)::after { width: 38rem; height: 18.1rem; background: url(../img/buyer-steps/arrow1.png) no-repeat; right: 50%; }
+        &:nth-child(4)::after { width: 40.2rem; height: 16.7rem; background: url(../img/buyer-steps/arrow2.png) no-repeat; left: 48%; }
+        &:nth-child(5)::after { width: 39.4rem; height: 14rem; background: url(../img/buyer-steps/arrow3.png) no-repeat; right: 50%; }
+        &:nth-child(6)::after { width: 38rem; height: 18.1rem; background: url(../img/buyer-steps/arrow4.png) no-repeat; left: 50%; }
+        &:nth-child(7)::after { width: 40rem; height: 19rem; background: url(../img/buyer-steps/arrow5.png) no-repeat; right: 50%; }
+    }
+}

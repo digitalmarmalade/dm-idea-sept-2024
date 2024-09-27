@@ -1,0 +1,166 @@
+.step-7 {
+  h1 {
+    margin: 0;
+  }
+  .hide-mobile{
+    display: none;
+  }
+  .smart-goal-framework > div {
+    background-color: $yellow;
+    padding: 20px;
+    margin: 0 0 20px;
+    p {
+      color: white;
+      margin: 0;
+      font-family: 'bebas_neuebold';
+      font-weight: 700;
+      line-height: 1;
+      font-size: 1.5em;
+    }
+  }
+
+  .smart {
+
+    div {
+      display: flex;
+      border: 3px solid $dark-blue;
+      text-align: left;
+      font-family: 'bebas_neuebold';
+      font-weight: 700;
+      line-height: 1;
+      font-size: 2.25em;
+      background-color: $light-yellow;
+      padding: 10px;
+
+      span {
+        background-color: $dark-blue;
+        color: $white;
+        margin: -10px 10px -10px -10px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+      }
+    }
+    p {
+      background-color: $light-blue;
+      padding: 20px;
+      margin: 0 0 20px;
+      width: calc(100% - 40px);
+    }
+
+  }
+
+}
+
+@media only screen and (min-width: $md-width) {
+
+
+  .step-7 {
+    .cols {
+      padding-top: 180px;
+    }
+    .smart p {
+      text-align: left;
+    }
+    .step-title h1 {
+      top: 35%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step-7 {
+
+    .hide-mobile {
+      display: block;
+      .mark {
+        background-color: $dark-blue;
+        display: block;
+        position: absolute;
+        width: auto;
+        padding: 5px 10px;
+      }
+      .mark-attainable {
+        top: 2.5%;
+        left: 25.5%;
+      }
+      .mark-specific {
+        top: 2.5%;
+        left: 56%;
+      }
+      .mark-specific:after,
+      .mark-attainable:after {
+        content:url(../img/mark-down.svg);
+        top: 100%;
+        left: 47.5%;
+        width: 10px;
+        height: auto;
+        position: absolute;
+      }
+
+      .mark-timely {
+        bottom: 5%;
+        left: 12.5%;
+      }
+      .mark-relevant {
+        bottom: 5%;
+        left: 41%;
+      }
+      .mark-measureable {
+        bottom: 5%;
+        left: 72.5%;
+      }
+      .mark-timely:after,
+      .mark-relevant:after,
+      .mark-measureable:after  {
+        content:url(../img/mark-up.svg);
+        bottom: 100%;
+        left: 47.5%;
+        width: 10px;
+        height: auto;
+        position: absolute;
+      }
+
+    }
+    .hide-desktop {
+      display: none;
+    }
+
+    .smart-goal-framework {
+      position: relative;
+    }
+
+    .smart-goal-framework > div {
+      background-color: $white;
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .smart-goal-framework > div p {
+      margin: 0 auto;
+    }
+
+    .smart-goal-framework > div p span{
+      margin: 0 1px;
+      background-color: $yellow;
+      padding: 15px 10px;
+    }
+
+    .smart {
+      div {
+        width: 220px;
+      }
+      p {
+        width: calc(100% - 80px);
+        margin-left: 52px;
+      }
+    }
+
+  }
+
+
+
+}

@@ -1,0 +1,179 @@
+
+
+
+ul.scenarios-steps {
+  width: 100%;
+  margin: 40px 0;
+  display: block;
+  li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: $black;
+    border: 2px solid $black;
+    line-height: 38px;
+    padding: 0;
+    margin:0;
+    font-family: 'bebas_neuebold', sans-serif;
+    background-color: transparent;
+    font-size: 2em;
+  }
+  li.completed {
+    color: $green-1;
+    background-color: $black;
+
+  }
+}
+
+.scenario {
+  display: none;
+  margin-bottom: 40px;
+  width: 100%;
+  ul {
+    width: 100%;
+    display: block;
+    margin: 4px 0 0 0;
+
+    li {
+      width: 100%;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+
+      border: $border-mob;
+      border-color: white;
+      text-transform: none;
+      vertical-align: top;
+      padding: 1em;
+      display: block;
+      margin: 0 0 .5em;
+      cursor: pointer;
+      font-size: 1.6em;
+
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      -ms-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+
+    }
+    li:hover, li:focus {
+      background-color: $white;
+      color: $black;
+      border: 6px solid $black;
+    }
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.scenario-1  {
+  display: block;
+}
+
+.scenario-question-box {
+  position: relative;
+  border: 6px solid $black;
+  p {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  background-color: $black;
+  color: #FFF;
+  }
+  img {
+    width:100%;
+    height: auto;
+    padding: 20px;
+    max-height: 250px;
+  }
+
+}
+
+.answer-box {
+  position: relative;
+}
+
+.scenario .answer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 0 0 20px 0; /*fixes issue with padding if firefox */
+  img {
+    width: 80px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+  }
+  p {
+    background-color: transparent;
+    padding: 20px;
+  }
+  p.cta {
+    background-color: $black;
+    width: 140px;
+    margin: 25px auto;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'bebas_neuebold', sans-serif;
+    cursor: pointer;
+  }
+}
+
+.scenario .answer-incorrect {
+  background-color: $red;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .scenario-question-box img {
+    width: auto;
+    height: 300px;
+    padding: 20px 0;
+  }
+
+  .scenario ul {
+    display: flex;
+    width: 100%;
+    margin: 0 0 0 -.25em;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: .25em;
+    }
+  }
+
+  .scenario-1 .answer p {
+    padding: 20px 80px 10px 80px;
+  }
+
+  .scenario-question-box p.question {
+    padding: 20px 200px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .theory-box-controlling  {
+    .cols {
+      display: flex;
+      justify-content: space-between;
+      .col {
+        width: 47.5%;
+      }
+    }
+    p {
+    text-align: left;
+    }
+  }
+}

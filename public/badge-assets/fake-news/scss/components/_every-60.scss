@@ -1,0 +1,57 @@
+.every-60 {
+  display: flex;
+  background-color: $grey-1;
+  border-radius: $medium-border-radius;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: $space-large;
+  padding: $space-xx-small;
+
+  @media (min-width: $md-width) {
+    margin-bottom: $space-x-large;
+    padding: $space-medium;
+  }
+
+  & .every-60__every {
+    background: $gradient-orange;
+    background-clip: text;
+    display: inline-block;
+    -webkit-background-clip: text;
+  }
+
+  & .every-60__timer {
+    align-items: center;
+    color: transparent;
+    display: flex;
+    font-family: 'Monoton', sans-serif;
+    font-size: 3rem;
+    height: 199px;
+    justify-content: space-around;
+    text-transform: uppercase;
+
+    @media (min-width: $sm-width) {
+      font-size: 8rem;
+    }
+
+    @media (min-width: $md-width) {
+      font-size: 8rem;
+    }
+  }
+
+  & .every-60__carousel {
+    background-color: $white;
+    border-radius: $small-border-radius;
+    height: 140px;
+    padding: $space-small;
+    position: relative;
+
+    @media (min-width: $md-width) {
+      height: 200px;
+      padding: $space-medium;
+    }
+  }
+
+  @media (min-width: $sm-width) {
+    gap: $space-x-small;
+  }
+}

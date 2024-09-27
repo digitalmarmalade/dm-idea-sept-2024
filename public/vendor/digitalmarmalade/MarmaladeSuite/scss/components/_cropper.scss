@@ -1,0 +1,40 @@
+/*! Cropper */
+
+.overlay-container { left: 0; top: 0; right: 0; bottom: 0; background: #ededed; position: fixed; display: none; z-index: 100; }
+.overlay-content { position: absolute; left: 50%; top: 50%; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,.5); padding: 20px; }
+
+.dm-cropper { overflow: hidden; width: 640px; height: 470px; }
+.dm-image-container { height: 100%; }
+.dm-cropper-controls { position: absolute; right: 20px; bottom: 20px; width: 210px; }
+.dm-preview { max-width: 210px !important; min-height: 100px; overflow: hidden; border: 1px solid #ededed; margin: 0 auto 20px; background: #ededed; }
+.dm-preview img { max-width: 100% !important; }
+
+.dm-cropper-controls h2 { color: $primary-colour; font-size: 1.2em; text-align: center; text-transform: uppercase; margin: 10px 0; }
+
+.close-overlay { position: absolute; top: 20px; right: 20px; font-size: 1em; color: $primary-colour; }
+
+.dm-cropper-action { text-align: right; margin: 0; }
+
+.dm-cropper-controls .dm-cropper-buttons h2 { color: #666; margin: 0 0 4px; font-size: 1em; }
+.dm-cropper-button-group { float: left; width: 50%; }
+
+.dm-cropper-buttons { list-style: none; padding: 15px 0; text-align: center; border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;  }
+.dm-cropper-buttons ul { list-style: none; margin: 0 0 0 -10px; }
+.dm-cropper-buttons + .dm-cropper-buttons { border-top: none; }
+.dm-cropper-buttons li { margin: 0 -1px; display: inline-block; }
+.dm-cropper-buttons li .btn { background: #ededed; color: #666; font-size: 1.2em; }
+.dm-cropper-buttons li .btn:hover { background: #ccc; }
+.dm-cropper-buttons li:first-child { border-right: 1px solid #fff; }
+.dm-cropper-buttons li:first-child .btn { border-radius: 25px 0 0 25px; }
+.dm-cropper-buttons li:last-child .btn { border-radius: 0 25px 25px 0; } 
+
+.cropper-line, .cropper-point { background-color: $primary-colour !important; }
+.cropper-line { opacity: .2 !important; }
+
+.cropper-bg { background: repeating-linear-gradient(-45deg, #fff, #fff 5px, #ededed 5px, #ededed 7px) !important; }
+
+.cropper-text-button { font-size: 1em; background: #ededed; color: #666;
+    .glyph-icon { margin-right: 10px; }
+    
+ }
+ .cropper-text-button:hover { background: #ccc; color: #666; }

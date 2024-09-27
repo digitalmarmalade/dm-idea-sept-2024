@@ -1,0 +1,168 @@
+.step-3__carousel--buttons-container {
+  margin: 0 $space;
+  position: relative;
+
+  & .step-3__carousel--previous, & .step-3__carousel--next {
+    position: absolute;
+    top: 45%;
+    //transform: translateY(-50%);
+    transform: scale(0.8);
+    transition: transform 0.25s;
+    z-index: 1;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  & .step-3__carousel--previous {
+    left: -1.75em;
+  }
+
+  & .step-3__carousel--next {
+    right: -1.75em;
+  }
+
+  @media (min-width: $md-width) {
+    transform: scale(1);
+    margin: 0;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.step-3__carousel--container {
+  background-color: $white;
+  box-shadow: $box-shadow-two;
+  border-radius: $medium-border-radius;
+  display: flex;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: $grey-5 $white;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey-5;
+    border-radius: 20px;
+    border: 5px solid $white;
+  }
+
+  & .step-3__carousel--slide {
+    flex: 0 0 auto;
+    padding: $space-medium;
+    position: relative;
+    scroll-snap-align: start;
+    width: 100%;
+    .heading-orange {
+      font-size: 1.6rem;
+      width: 80%;
+    }
+
+    @media (min-width: $md-width) {
+      padding: $space-large;
+      .heading-orange {
+        font-size: 2rem;
+      }
+    }
+
+    & .step-3__carousel--image-container {
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: $space-small 0;
+
+      & > picture > img {
+        border-radius: $medium-border-radius;
+        margin-right: 0;
+        margin-left: 0;
+
+      }
+    }
+
+    & .step-3__carousel--image-container-1 {
+
+      background-image: url('/badge-assets/chatbots/_global/svg/bg--1-cropped.svg');
+      background-position: 75%;
+
+
+      & > picture > img {
+        border: 0.4rem solid $orange;
+      }
+    }
+
+    & .step-3__carousel--image-container-2 {
+      background-image: url('/badge-assets/chatbots/_global/svg/bg--6-cropped.svg');
+      background-position: 75%;
+
+      & > picture > img {
+        border: 0.4rem solid $purple-1;
+      }
+    }
+
+    & .step-3__carousel--image-container-3 {
+      background-image: url('/badge-assets/chatbots/_global/svg/bg--7-cropped.svg');
+      background-position: 75%;
+
+      & > picture > img {
+        border: 0.4rem solid $pink;
+        margin-left: 3.2rem;
+      }
+    }
+
+    & .step-3__carousel--image-container-4 {
+      background-image: url('/badge-assets/chatbots/_global/svg/bg--5-cropped.svg');
+      background-position: 75%;
+
+      & > picture > img {
+        margin-left: 3.2rem;
+      }
+    }
+
+    & .step-3__carousel--counter {
+      font-family: 'Monoton', sans-serif;
+      font-size: 2rem;
+
+      @media (min-width: $md-width) {
+        position: absolute;
+        right: $space-large;
+        top: $space-large;
+      }
+    }
+
+    & .step-3__carousel--text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+
+      & p {
+        flex: 1;
+
+        & + p {
+          margin-top: $space-xx-small;
+        }
+      }
+
+      @media (min-width: $md-width) {
+        flex-direction: row;
+
+        & p + p {
+          margin-top: 0;
+          margin-left: $space-x-small;
+        }
+      }
+    }
+
+    & .step__completed {
+      margin: $space-xx-large 0;
+    }
+  }
+}

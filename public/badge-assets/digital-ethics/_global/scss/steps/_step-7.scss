@@ -1,0 +1,26 @@
+.box--mission {
+    padding: var(--space-lg) var(--space);
+    background-color: var(--white-48);
+    border: none;
+    margin: var(--space-sm) 0;
+    letter-spacing: .112rem;
+    @media (min-width: $md-width) { 
+        padding: var(--space-lg);
+        span:not(.toolitp-trigger) {
+            font-size: var(--font-size-md);
+        }
+    }
+}
+
+.container--question-step-7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap:var(--space-lg);
+    @media (min-width: $sm-width) { 
+        flex-direction: row;
+    }
+}

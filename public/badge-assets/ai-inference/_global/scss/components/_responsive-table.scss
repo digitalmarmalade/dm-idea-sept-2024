@@ -1,0 +1,202 @@
+// BASIC RESPONSIVE TABLE LAYOUT
+// vertically stacked when viewport < 768px
+// horizontally stacked when viewport >= 768px
+.table-a11y {
+  color: $blue-3;
+  text-align: left;
+  width: 100%;
+
+  caption {
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+
+  thead,
+  tbody,
+  tfoot {
+    width: 100%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+// END: BASIC RESPONSIVE TABLE LAYOUT
+
+
+/* THIS CSS IS NOT REQUIRED TO GIVE ACCESSIBILITY+RESPONSIVENESS TO A TABLE */
+/* ONLY FOR DEMO PURPOSE */
+.responsive-table {
+  border-collapse: collapse;
+  max-width: 900px;
+  font-size: 1.4rem;
+  margin: $space-large 0;
+
+  td, th {
+    background: white;
+    border: 0.1rem solid $blue-3;
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 16px 16px 16px 156px;
+  }
+
+  tbody {
+   /* DISPLAY EACH ROW AS A CARD */
+
+    tr {
+         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+         margin-bottom: 16px;
+
+         @media (min-width: 768px) {
+           &:not(:last-child) {
+             border-radius: 0;
+           }
+
+           &:last-child {
+             border-top-right-radius: 0;
+             border-top-left-radius: 0;
+           }
+         }
+       }
+
+    th, td {
+      @media (max-width: 767px) {
+           display: flex;
+         }
+    }
+    th {
+       font-weight: bold;
+       text-align: left;
+       border-top-left-radius: 0.8rem;
+       border-top-right-radius: 0.8rem;
+     }
+     td {
+       background-color: rgba(255,255,255,1);
+        &:nth-child(2){
+          background-color: rgba(255,255,255,.8);
+        }
+        &:nth-child(3){
+          background-color: rgba(255,255,255,.64);
+          border-bottom-left-radius: 0.8rem;
+          border-bottom-right-radius: 0.8rem;
+
+
+        }
+      }
+    }
+  }
+
+  /* INDIVIDUAL CELL HEADING STYLES */
+
+    .col-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 140px;
+      padding: 16px;
+      align-items: center;
+      display: flex;
+      background-color: $yellow;
+      color: $blue-3;
+      height: 100%;
+      font-weight: bold;
+    }
+    th {
+      .col-header {
+        border-top-left-radius: 0.8rem;
+      }
+    }
+    td:last-child {
+      .col-header {
+        border-bottom-left-radius: 0.8rem;
+      }
+    }
+
+
+/* MOBILE MODE */
+@media (max-width: 767px) {
+  .responsive-table {
+    /* even if table headers are visually hidden, it's necessary to set row as block level to avoid weird bug on VoiceOver */
+    thead {
+      position: absolute !important;
+      clip: rect(1px, 1px, 1px, 1px);
+    }
+
+  }
+}
+
+/* TABLET MODE */
+@media (min-width: 768px) {
+  .responsive-table {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    th, td  {
+      padding: 16px;
+    }
+    /* ROWS MOBILE STYLING RESET & STYLING FOR TABLET */
+    thead {
+
+
+      th {
+          background-color: $yellow;
+          border-radius: 0;
+          position: relative;
+          &:first-child {
+            border-top-left-radius: 0.8rem;
+          }
+          &:last-child {
+            border-top-right-radius: 0.8rem;
+          }
+
+      }
+    }
+
+    tbody {
+      tr {
+        background: none;
+        box-shadow: none;
+        margin-bottom: 0;
+        &:last-child {
+          th {
+            border-bottom-left-radius: .8rem;
+          }
+          td:last-child {
+            border-bottom-right-radius: .8rem;
+          }
+        }
+      }
+      th, td  {
+        background-color: white;
+        border-radius: 0;
+        &:nth-child(3){
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+      }
+    }
+
+
+    /* SET CELLS WIDTH */
+    thead, tbody {
+      th, td {
+        width: 37.5%;
+
+        &:first-child, &:first-child {
+          width: 25%;
+        }
+      }
+    }
+
+    /* HIDE INVIDUAL CELL HEADING */
+    tbody .col-header {
+      display: none;
+    }
+  }
+}

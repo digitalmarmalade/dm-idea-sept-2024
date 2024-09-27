@@ -1,0 +1,114 @@
+.task-6 {
+  .container {
+    flex-direction: column;
+  }
+  .cell {
+    display: flex;
+    padding: .2rem;
+    margin: 0.05rem;
+    text-align: center;
+    max-width: 1.8rem;
+    min-height: 1.8rem;
+    width: 1.8rem;
+    align-items: center;
+    background: white;
+    color: $blue-medium;
+    font-size: $bodycopy;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .kernel .cell {
+      min-height: 3.7rem;
+      min-width:  3.7rem;
+      width: 3.7rem;
+  }
+
+  .kernel,
+  .input,
+  .output {
+      margin: 1.6rem;
+  }
+
+  .kernel {
+    background: white;
+
+    .cell {
+      border: .12rem solid $yellow;
+      background-color: rgba(254,230,0,.2);
+      color: $blue-dark;
+      font-weight: bold;
+      font-size: calc(#{$bodycopy} * 1.5);
+    }
+    .row:nth-child(2) {
+      .cell:nth-child(2) {
+        background-color: rgba(254,230,0,.75);
+      }
+    }
+
+  }
+  .flex {
+      display: flex;
+  }
+
+  .row {
+      flex-direction: row;
+  }
+
+  .column {
+      flex-direction: column;
+  }
+
+  .kenrnel_correct_position {
+      margin: 100px;
+  }
+
+  .cell__input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  #input-cell-8,
+  #input-cell-9,
+  #input-cell-10,
+  #input-cell-14,
+  #input-cell-15,
+  #input-cell-16,
+  #input-cell-20,
+  #input-cell-21,
+  #input-cell-22 {
+    border: .12rem solid $yellow;
+    background-color: rgba(254,230,0,.2);
+
+  }
+  #input-cell-15 {
+    background-color: rgba(254,230,0,.75);
+  }
+
+  .output {
+    background: transparent;
+    input {
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 0;
+      &:focus,
+      &:hover {
+        background: $yellow;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: $md-width) {
+  .task-6 {
+
+    .container {
+      flex-direction: row;
+
+    }
+  }
+}

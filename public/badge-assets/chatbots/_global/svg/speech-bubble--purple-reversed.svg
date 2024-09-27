@@ -1,0 +1,13 @@
+<svg width="258" height="122" viewBox="0 0 258 122" fill="none" xmlns="http://www.w3.org/2000/svg" transform="translate(100, 0) scale(-1, 1)" />
+  <g id="speech-bubble">
+    <path id="path3934" d="M2.12466 12.3406L0.53186 109.234C0.53186 116.137 5.78655 121.665 12.1203 121.424L257.012 112.133L229.17 90.7745C224.555 87.2336 221.772 81.5015 221.685 75.3524V10.5922C221.603 4.79608 217.266 0.143944 211.943 0.143944H13.3228C7.13826 0.143944 2.12466 5.60464 2.12466 12.3406Z" fill="url(#paint0_linear_1112_4340)"/>
+    <text id="Hey, Google. What&#226;&#128;&#153;s the weather like in London tomorrow?" transform="translate(24.1617 20.8953)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="15.1002" font-weight="bold" letter-spacing="0em"><tspan x="0" y="18.7877">Hey, Google.&#10;</tspan><tspan x="0" y="41.7877">What&#x2019;s the weather like in </tspan><tspan x="0" y="64.7877">London tomorrow?</tspan></text>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_1112_4340" x1="295.25" y1="-3.6274" x2="282.773" y2="164.13" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AA80F9"/>
+      <stop offset="0.996403" stop-color="#6165D7"/>
+      <stop offset="1" stop-color="#6165D7"/>
+    </linearGradient>
+  </defs>
+</svg>

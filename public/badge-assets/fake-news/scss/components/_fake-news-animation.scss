@@ -1,0 +1,35 @@
+.fake-news-animation {
+  height: 50rem;
+  max-width: 72rem;
+  position: relative;
+
+  & .fake-news-animation__img-1,
+  & .fake-news-animation__img-2,
+  & .fake-news-animation__img-3,
+  & .fake-news-animation__img-4 {
+    position: absolute;
+  }
+
+  & .fake-news-animation__img-1 {
+    left: 0;
+    top: 0;
+  }
+
+  & .fake-news-animation__img-2 {
+    right: 0;
+    top: 15rem;
+    z-index: 1;
+  }
+
+  & .fake-news-animation__img-3 {
+    left: 0;
+    top: 17.5rem;
+    z-index: 2;
+  }
+
+  & .fake-news-animation__img-4 {
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+  }
+}

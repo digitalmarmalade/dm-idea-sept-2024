@@ -1,0 +1,59 @@
+.sortable-wrapper {
+	width: 100%;
+	max-width: 20rem;
+}
+
+.quiz-reorder {
+	overflow: auto;
+	padding: 0;
+		/* height: auto !important; */
+	li { 
+		user-select: none; 
+		cursor: move; 
+		margin: 0 0 .4rem 0;
+		position: relative;
+		padding-left: 3rem;
+		width: 100%;
+		
+	}
+
+	.drag-handle {
+		position: absolute; 
+		top:0; 
+		left: 0rem;
+		width: 3rem;
+		height: 3rem;
+		background: rgba(255, 255, 255, 0.5) url('../images/icons/icon--drag.svg') no-repeat 50% 50%;
+	}
+
+	.correct .drag-handle { 
+		background: $green; 
+	}
+
+	.drag-text { 
+		background-color: #fff;
+		padding: .8rem; 
+		color: $blue-dark; 
+		border-radius: 0 .4rem .4rem 0;
+		height: 3rem;
+		font-weight: 700;
+		text-align: left;
+	}
+
+	.ui-sortable-placeholder { 
+		background-color: rgba(255, 255, 255, 0.5);
+		left: 0; 
+		right: 0; 
+		width: 100% !important; 
+		/* position: absolute; */
+	}
+}
+
+.sortable-wrapper { 
+	position: relative;
+}
+
+
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+
+}

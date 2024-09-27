@@ -1,0 +1,20 @@
+.list--sponsors,
+.list--resources {
+    display: flex;
+    gap: var(--space-sm);
+    flex-direction: column;
+    li {
+        display: flex;
+        flex-grow:1;
+    }
+    @media (min-width: $md-width) {
+        flex-direction: row;
+        gap: var(--space-md);
+        flex-wrap: wrap;
+        li {
+            width: calc(50% - calc(var(--space-md)/2));
+        }
+
+    }
+}
+

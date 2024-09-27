@@ -1,0 +1,171 @@
+.step-7 { background-color: #72CDFE; color: #001D6B; counter-reset: compliance-steps;
+    .page-header {  }
+    .page-header-image { max-width: 58rem; width: 100%; margin: 0 auto; }
+    .progress li { background: #72CDFE; }
+    .page-header {
+        &:before { border-top-color: #2C3E50;  }
+        &:after { border-top-color: #72CDFE; opacity: .7; }
+    }
+    .page-header-triangles {
+        &:before { border-top-color: #2C3E50; opacity: .8; }
+        &:after { border-top-color: #72CDFE; opacity: .5; }
+    }
+    .success-row { background: linear-gradient(to bottom, #72CDFE 0%,#5EB5E3 100%); }
+    .animation-holder { max-width: 52rem; padding: 0 2rem 0; margin: 0 auto 3rem; position: relative; z-index: 10;
+        canvas { width: 100% !important; height: auto !important; }
+    }
+    .animation-container { height: 0 !important; width: 100%; padding-bottom: 110%; }
+    .top-slant-1 {
+        &:before { border-top-color: #2C3E50;  }
+        &:after { border-top-color: #72CDFE; opacity: .7; }
+    }
+}
+
+.compliance-holder { max-width: 68rem; margin: 0 auto; padding: 0 4rem; position: relative; z-index: 5; }
+.compliance-quote { background: rgba(255,255,255,.05); padding: 3rem 2rem; border-radius: .5rem; margin: 0 0 2rem;
+    p { font-size: 3rem; font-family: Georgia, sans-serif; line-height: 1.4; color: #fff; font-weight: 400; text-decoration: underline; text-decoration-color: #33C3CC; }
+}
+.compliance-text { 
+    h3 { font-size: 2.2rem; font-weight: 900;}
+}
+ @media only screen and (min-width: 1024px) {
+    .compliance-holder { max-width: 108rem; margin: 0 auto; padding: 4rem; display: flex; }
+    .compliance-quote-holder { width: calc(40% - 2rem); margin: 0 1.5rem; }
+    .compliance-quote { position: sticky; top: 2rem; }
+    .compliance-text,
+    .compliance-tips { width: calc(60% - 2rem); margin: 0 1.5rem; }
+}
+
+.compliance-step-1 { counter-increment: compliance-steps; margin-top: 5rem;
+    background: #2C3E50; padding: 5rem 0; color: #fff;
+}
+.compliance-step-2 { counter-increment: compliance-steps;
+    background: #FF7286; padding: 5rem 0; color: #fff;
+}
+.compliance-step-3 { counter-increment: compliance-steps;
+    background: #2C3E50; padding: 5rem 0; color: #fff;
+}
+.compliance-step-4 { counter-increment: compliance-steps;
+    background: #FF7286; padding: 5rem 0; color: #fff;
+}
+.compliance-step-5 { counter-increment: compliance-steps;
+    background: #2C3E50; padding: 5rem 0; color: #fff;
+}
+
+.compliance-intro { position: relative; max-width: 108rem; margin: 0 auto; padding: 0 4rem 4rem; z-index: 1;
+    
+    &:after { display: block; content: ''; height: .1rem; background: #fff; left: 4rem; right: 4rem; bottom: 0; }
+}
+.compliance-intro-number { content: counter(compliance-steps); position: absolute; display: block; opacity: .1; font-size: 50rem; font-weight: 900; left: 0; top: -11rem; line-height: 50rem; }
+.compliance-intro__text { max-width: 60rem; margin: 0 auto; padding: 0; text-align: center; 
+    h2 { font-weight: 900; margin: 0 0 1rem; font-size: 3.6rem; }
+    p { font-size: 2rem; margin: 0 0 4rem; line-height: 1.4; }
+}
+.compliance-intro__number { display: block; text-align: center; font-size: 14rem; }
+
+@media only screen and (min-width: 768px) {
+
+    .compliance-intro { position: relative; max-width: 108rem; margin: 0 auto; padding: 0 4rem 4rem; z-index: 1;
+       
+    }
+    .compliance-intro-number { font-size: 86rem; top: -16rem; line-height: 86rem; }
+    
+}
+
+.data-mapping { margin: 0 0 4rem; padding: 0; list-style: none; 
+    li { background: rgba(0,0,0,.2); margin: 0 0 1rem; border-radius: 1rem; padding: 2rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .compliance-holder--quote-left { display: flex; flex-direction: column;
+        .compliance-quote { order: 2; }
+        .compliance-text { order: 1; }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .data-mapping { margin: 0 -1rem 4rem; padding: 0; list-style: none; display: flex; flex-wrap: wrap; 
+        li { background: rgba(0,0,0,.2); margin: 0 1rem 2rem; border-radius: 1rem; padding: 2rem; width: calc(50% - 2rem); height: 12rem; display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.4; }
+    }
+    .compliance-intro__text { padding: 5rem 0 5rem 18rem; text-align: left; position: relative; margin: 0 auto 3rem; 
+        h2 { position: static; font-size: 5rem; }
+        p { margin: 0;}
+    }
+    .compliance-intro__number { position: absolute; left: 0; top: 50%; transform: translateY(-50%); font-size: 28.8rem; }
+}
+
+.if-applicable-title { text-transform: uppercase; margin: 0 -4rem 4rem; border-bottom: .2rem solid #FF7286; padding: 0 4rem 3rem; display: block; text-align: center; font-size: 3rem; font-weight: 900; }
+.if-applicable { background: rgba(0,0,0,.1); padding: 5rem 4rem; margin: 0 0 5rem;
+    h3 { font-size: 2.2rem; font-weight: 900;}
+}
+
+.if-applicable-content { padding: 0; max-width: 60rem; margin: 2rem auto 4rem; }
+.if-applicable-tip { background: rgba(255,255,255,.05); padding: 2rem; 
+    h4 { font-size: 1.2rem; font-weight: 900; margin: 0 0 1.5rem; border-bottom: .1rem solid #fff; text-transform: uppercase; padding: 0 0 1.5rem; letter-spacing: .05rem; }
+    ol { margin: 0; padding: 0; list-style: none; }
+}
+@media only screen and (min-width: 768px) {
+    /*.if-applicable { padding: 0 4rem; }*/
+    .if-applicable-content { position: relative; padding-left: 14rem; }
+    .if-applicable-title-holder { position: absolute; left: 0; top: -7rem;  }
+    .if-applicable-title { position: absolute; transform: rotateZ(90deg); transform-origin: 0 100%; bottom: 100%; width: 74rem; display: block; font-size: 4.4rem; }
+    .flip-text { transform: rotate(180deg); display: inline-block; transform-origin: center center; }
+}
+
+.data-breach-steps { list-style: none; margin: 0 auto 3rem; padding: 0 4rem; max-width: 68rem; 
+    li { background: #C4C4C4; padding: 2rem 2rem 4rem; margin: 0 0 1rem; color: #2C3E50; }
+    h4 { font-size: 3.6rem; font-weight: 900; margin: 0 0 1.5rem; }
+}
+@media only screen and (min-width: 768px) {
+    .data-breach-steps { padding: 0 4rem 3rem; display: flex; flex-wrap: wrap;
+        li { width: calc(50% - 2rem); margin: 0 1rem 2rem; height: 31rem; }
+    }
+
+}
+@media only screen and (min-width: 1024px) {
+    .data-breach-steps { max-width: 108rem; 
+        li { width: calc(25% - 2rem); height: auto; }
+    }
+}
+
+.compliance-narrow-text { max-width: 68rem; padding: 0 4rem; margin: 0 auto; }
+
+.compliance-points { list-style: none; margin: 0; padding: 0;
+    li { background: #C4C4C4; padding: 2rem; margin: 0 0 1.5rem; color: #2C3E50; 
+        ul { list-style: disc; 
+            li { margin: 0 0 1rem; padding: 0; }
+        }
+    }
+}
+
+.steps-quiz-row { background: #72CDFE; padding: 5rem 0; }
+
+.steps-question { padding: 2rem; margin: 0 0 2rem; border-radius: .5rem; background: #fff; color: #2C3E50; }
+.steps-question-description { font-size: 2rem; font-weight: 400; line-height: 1.4; border-bottom: .1rem solid rgba(255,255,255,.4); padding: 5rem 2rem; margin: 0 0 1.5rem; background: rgba(114,205,254,.3); text-align: center; }
+
+.steps-question-options { list-style: none; margin: 0; padding: 0;
+    li { margin: 0 0 1rem; background: #2C3E50; color: #fff; border-radius: .5rem; 
+        &.selected { background: #72CDFE; }
+        &:hover { background: lighten(#2C3E50,5%)}
+    }
+    a {  text-align: left; text-decoration: none; padding: 2rem; display: block; line-height: 1.2;
+        h3 { font-size: 2rem; margin: 0 0 1.3rem; line-height: 1.2; border-bottom: .1rem solid #fff; padding: 0 0 1rem; width: 100%; }
+        p { font-size: 1.6rem; line-height: 1.2; }
+    }
+    img { width: 10rem; height: auto; position: absolute; bottom: 8rem; left: 50%; transform: translateX(-50%); }
+    .officer { height: 10rem; width: auto; }
+}
+
+@media only screen and (min-width: 768px) {
+    .steps-question-options { margin: 0 -.5rem; display: flex; flex-wrap: wrap;
+        li { width: calc(33.3333% - 1rem); margin: 0 .5rem 1rem; }
+        a {  }
+    } 
+}
+
+ .steps-question { 
+     .question-answer { 
+     h3 { color: #212121; text-align: center; }
+     p { line-height: 1.4; max-width: 40rem; margin: 0 auto; }
+     }
+  }

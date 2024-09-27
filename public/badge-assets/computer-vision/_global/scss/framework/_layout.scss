@@ -1,0 +1,268 @@
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: $blue-dark;
+  //overflow-x: hidden;
+}
+
+.holder {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  padding: 1.6rem .8rem;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+
+.col {
+  width: 100%;
+  margin: 0 0 calc(#{$bodycopy} * 2);
+  p {
+  margin: 0 0 calc(#{$bodycopy} * .75);
+    &:last-child {
+      margin: 0;
+    }
+  }
+  + .col {
+    margin: .8rem 0 0 ;
+  }
+}
+
+.col-single {
+  max-width: 640px;
+  margin: 0 auto 2.4rem;
+}
+
+
+.col-single + ul {
+  margin: -.8rem auto 1.6em;
+}
+
+
+ul, ol {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+
+  li {
+    width: 100%;
+    margin: 0 0 .8rem;
+  }
+
+  img {
+    margin: 1.2em 0 0;
+  }
+  &.highlighted {
+    background: #f4f4f4;
+    border: $border-radius;
+  }
+}
+
+.height--full {
+  height: 100%;
+}
+
+
+.holder--pixelated-img {
+  flex-direction: column;
+  align-items: center;
+  figure {
+    margin: 1.6rem;
+    width: 100%;
+  }
+}
+
+.layer-index {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+.holder__animations {
+  margin-top: 4.8rem;
+}
+
+p + .box {
+  margin: 1.6rem 0 0;
+}
+
+
+.holder--intro {
+  p {
+      text-align: center;
+  }
+
+}
+
+/* This gives a minimum height for the speech bubble holder in step 5 */
+.holder--instruction  {
+  height: 24rem;
+  z-index: 1;
+}
+.group-1.full--screen, .group-2.full--screen,
+section.full--screen {
+  height: 100vh;
+}
+
+.group-1, .group-2 {
+  padding: .8rem 0 0;
+}
+
+.jsScrollAnchor2 {
+  margin-top: 2.4rem;
+}
+
+@media only screen and (min-width: $sm-width) {
+  .holder--pixelated-img {
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 2.4rem 0 0;
+    figure {
+      width: 300px;
+      margin: 1.6rem;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .holder {
+    padding: 2.4rem;
+  }
+
+  .cols {
+    flex-direction: row;
+    text-align: left;
+    margin: 0 0 2.4rem;
+  }
+  .col {
+    width: calc(50% - .8rem);
+    margin: 0;
+    + .col {
+       margin: 0;
+    }
+  }
+
+  .cols-3 {
+
+
+    .col {
+      width: calc(33% - .8rem);
+      margin: 0;
+    }
+
+    &.layers {
+      flex-direction: column;
+      padding: 0 4.8rem;
+      .col {
+        width: 100%;
+
+        &.layer-index {
+          width: 20%;
+          font-size: 12rem;
+          margin: 0;
+          justify-content: center;
+
+        }
+      }
+
+    }
+  }
+
+  .cols {
+    margin: $margin;
+  }
+
+  .holder--step-5 {
+    padding: 0 3.2rem;
+  }
+
+  /* This gives a minimum height for the speech bubble holder in step 5 */
+  .holder--instruction  {
+    height: 16rem;
+  }
+  // .group-1.full--screen, .group-2.full--screen,
+  section.full--screen {
+    height: calc(100vh - 100px - 532px);
+  }
+
+  .step-4 .holder {
+    width: 80%;
+    padding: 1.6rem 0;
+    .width--full {
+      justify-content: center;
+    }
+  }
+  /* This gives a minimum height for the speech bubble holder in step 5 */
+  .holder--instruction  {
+    height: 24rem;
+  }
+
+  .group-1, .group-2 {
+    padding: .8rem 0 0;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: $lg-width) {
+  .step-4 .holder {
+    width: 100%;
+    padding: 3.2rem;
+    .width--full {
+      justify-content: center;
+    }
+  }
+
+  .cols-3 {
+   &.layers {
+     flex-direction: row;
+     padding: 0;
+    .col {
+      width: calc(40% - .8rem);
+        margin: .4rem;
+
+
+      &.layer-index {
+        width: calc(20% - .8rem);
+        font-size:16rem;
+        &.order-3 {
+          order: 3;
+        }
+      }
+
+    }
+
+   }
+  }
+  .group-1.full--screen, .group-2.full--screen,
+  section.full--screen {
+    height: auto;
+  }
+
+  /* This gives a minimum height for the speech bubble holder in step 5 */
+  .holder--instruction  {
+    height: 400px;
+    margin-top: -4.8rem;
+  }
+}
+
+// @media only screen and (min-width: $xl-width) {
+//   .group-1.full--screen, .group-2.full--screen,
+//   section.full--screen {
+//     height: calc(100vh - 532px);
+//   }
+// }
+
+img + .col-single {
+  margin-top: 2.4rem;
+}

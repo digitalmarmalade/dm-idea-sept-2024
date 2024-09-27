@@ -1,0 +1,80 @@
+.task-14 {
+  color: $blue-dark;
+  border-radius: .8rem;
+  margin: 1.2rem;
+  width: calc(100% - 2.4rem);
+  padding: 1.6rem 0;
+  max-width: 1360px;
+
+  .sortable-wrapper {
+  	width: 100%;
+  	max-width: 32rem;
+    position: relative;
+  }
+
+  .quiz-reorder {
+  	overflow: auto;
+  	padding: 0;
+
+  	li {
+  		user-select: none;
+  		cursor: move;
+  		margin: 0 0 .4rem 0;
+  		position: relative;
+  		padding-left: 3rem;
+  		width: 100%;
+
+  	}
+
+  	.drag-handle {
+  		position: absolute;
+  		top:0;
+  		left: 0rem;
+  		width: 3rem;
+      height: 100%;
+  		background: rgba(255, 255, 255, 0.5) url('../svg/icons/icon--drag.svg') no-repeat 50% 50%;
+  	}
+
+  	.correct .drag-handle {
+  		background: $green;
+  	}
+
+  	.drag-text {
+  		background-color: #fff;
+  		padding: .8rem;
+  		color: $blue-dark;
+  		border-radius: 0 .4rem .4rem 0;
+  		height: 8rem;
+  		font-weight: 700;
+  		text-align: left;
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+  	}
+
+  	.ui-sortable-placeholder {
+  		background-color: rgba(255, 255, 255, 0.5);
+  		left: 0;
+  		right: 0;
+  		width: 100% !important;
+
+  	}
+  }
+
+
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .task-14 {
+    margin: 0 auto;
+    .quiz-reorder {
+      li {
+        margin: 0 0 .8rem;
+      }
+      .drag-text {
+        height: 4.8rem;
+      }
+    }
+  }
+}

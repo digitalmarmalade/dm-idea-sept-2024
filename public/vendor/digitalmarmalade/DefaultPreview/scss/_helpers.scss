@@ -1,0 +1,22 @@
+/*! Helpers */
+
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after,
+.clear-both { clear: both; }
+
+.hide { display: none; }
+
+.image-in-content { margin: 0 0 15px; width: 100%; }
+
+@media screen and (max-width: $sm-width-under) {
+	.back-btn-holder { position: relative; top: -15px; float: right; }
+}
+
+@media screen and (min-width: $sm-width) {
+.with-back-button { position: relative; }
+.with-back-button .back-btn-holder { position: absolute; right: 0; top: 15px; }
+.with-back-button .main-heading { padding-right: 66px; }
+}

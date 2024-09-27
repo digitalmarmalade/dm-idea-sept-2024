@@ -1,0 +1,13 @@
+select {
+  background-color: transparent;
+  border: 0.1rem solid $yellow;
+  border-radius: 0.2rem;
+  color: $yellow;
+  cursor: pointer;
+  padding: $space-xx-small;
+
+  &:hover, &:focus {
+      background: $yellow;
+      color: $blue-dark;
+    }
+  }

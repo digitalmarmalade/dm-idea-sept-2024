@@ -1,0 +1,40 @@
+/* CSS Document */
+
+//Reset
+@import "_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "components/_typography.scss";
+
+@import "components/_framework.scss";
+@import "components/_helpers.scss";
+
+@import "components/_header.scss";
+@import "components/_footer.scss";
+
+@import "components/_general.scss";
+
+//These are optional
+@import "components/_breadcrumbs.scss";
+@import "components/_buttons.scss";
+@import "components/_forms.scss";
+@import "components/_grid.scss";
+@import "components/_masonry.scss";
+@import "components/_lazyload.scss";
+@import "components/_overlays.scss";
+@import "components/_tables.scss";
+@import "components/_tabs.scss";
+@import "components/_tooltips.scss";
+@import "components/_transforms.scss";
+
+@import "components/_parallax.scss";
+@import "components/_animsition.scss";
+@import "components/_explanation-screen.scss";
+@import "components/_task-intro.scss";
+@import "components/_task.scss";
+@import "components/_test-task.scss";
+
+//Import icon fonts if required
+@import "components/_flaticon.scss";

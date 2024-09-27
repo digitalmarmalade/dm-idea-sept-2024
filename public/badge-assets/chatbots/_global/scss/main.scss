@@ -1,0 +1,22 @@
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_animation.scss";
+
+@import "framework/_layout.scss";
+@import "framework/_typography.scss";
+
+@import "steps/_global.scss";
+@import "steps/_step-1.scss";
+@import "steps/_step-2.scss";
+@import "steps/_step-3.scss";
+@import "steps/_step-4.scss";
+@import "steps/_step-5.scss";
+@import "steps/_overlay.scss";
+
+@import "components/_header.scss";
+@import "components/_tooltips.scss";
+@import "components/_buttons.scss";
+@import "components/_inputs.scss";
+
+//@import "inputs/_input--select.scss";
+//@import "inputs/_input--text.scss";

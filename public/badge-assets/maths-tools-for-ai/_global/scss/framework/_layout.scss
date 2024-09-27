@@ -1,0 +1,152 @@
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: $gradient--blue-dark;
+  //overflow-x: hidden;
+}
+
+.holder {
+  width: 100%;
+  height: auto;
+  max-width: 960px;
+  padding: 2.4em 1.2em;
+  margin: 0 auto;
+  &.no-padding-bottom {
+    padding-bottom: 0;
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.cols {
+  margin: $margin;
+  &.no-padding-bottom {
+    padding-bottom: 0;
+  }
+}
+
+.col {
+  width: 100%;
+  margin: 0 0 $bodycopy;
+  p {
+    margin: 0 0 1.6em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  img + p {
+    margin: 1.6em 0 0 ;
+  }
+  img + p:last-child {
+    margin: 1.6em 0 0 ;
+  }
+  .box {
+    text-align: center;
+    margin: 0 0 1.6em;
+    img {
+      margin: 0 auto 1.6em;
+      &.symbol-vectors-1 {
+        margin: 0 auto;
+      }
+
+    }
+  }
+}
+
+.col-single {
+  max-width: 600px;
+  margin: 0 auto 2.4em;
+}
+
+
+.col-single + ul {
+  margin: -1.6em 0 1.6em;
+}
+
+
+ul, ol {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+
+  li {
+    width: 100%;
+    margin: $margin;
+    &.with-auto {
+      width: auto;
+    }
+  }
+
+  img {
+    margin: 1.2em 0 0;
+  }
+}
+
+.width-full {
+  width: 100%;
+}
+.width-auto {
+  width: auto;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+@media only screen and (min-width: $sm-width) {
+  .cols {
+    flex-direction: row;
+    text-align: left;
+    padding: 0 0 2.4em;
+    &.no-padding-bottom {
+      padding-bottom: 0;
+      margin: 0;
+    }
+    &.flex--row-reverse {
+      flex-direction: row-reverse; 
+    }
+    &.no-margin {
+      margin: 0;
+    }
+  }
+  .col {
+    width: calc(50% - .8rem);
+    margin: 0;
+    &.no-margin {
+      width: 50%
+    }
+    &.table-with-graph {
+      table {
+        width: auto;
+        table-layout: fixed;
+        margin: 2.4em auto;
+        th {
+          width: 8em;
+        }
+      }
+    }
+  }
+  .cols--resources {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+      margin: 1.2em;
+      width: calc(50% - 2.4em);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  .holder {
+    padding: $padding-lg;
+  }
+
+}

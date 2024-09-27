@@ -1,0 +1,36 @@
+/*! Staggered Entry */
+
+.js .not-visible { transform: translateY(50px); }
+.come-in {
+  transform: translateY(50px);
+  animation: come-in .5s ease forwards;
+}
+@media only screen and (min-width: $sm-width) {
+	.js .not-visible { transform: translateY(50px); }
+	.come-in {
+	  transform: translateY(50px);
+	  animation: come-in .8s ease forwards;
+	}
+	.come-in:nth-child(2n+1) {
+	  animation-duration: 0.6s;
+	}
+}
+@media only screen and (min-width: $lg-width) {
+	.come-in:nth-child(3n+1) { animation-duration: 0.6s; }
+	.come-in:nth-child(3n+2) { animation-duration: 0.8s; }
+	.come-in:nth-child(3n+3) { animation-duration: 1s; }
+}
+@media only screen and (min-width: $xl-width) {
+	.come-in:nth-child(4n+1) { animation-duration: .6s; }
+	.come-in:nth-child(4n+2) { animation-duration: .8s; }
+	.come-in:nth-child(4n+3) { animation-duration: 1s; }
+	.come-in:nth-child(4n) { animation-duration: 1.2s; }
+}
+.js .already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}

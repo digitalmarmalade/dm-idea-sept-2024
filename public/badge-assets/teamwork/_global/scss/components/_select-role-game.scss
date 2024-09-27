@@ -1,0 +1,19 @@
+/*! Select Role Game */
+
+.select-role-game { background: rgba(237,237,237,0.7); padding: 2rem; text-align: center; margin: 0 0 3rem;
+    label { font-size: 3rem; font-family: 'Nutmeg-UltraBlack'; margin: 0 1rem 0 0; line-height: 3rem; display: inline-block; vertical-align: middle; }
+}
+
+#moveOn { display: none; }
+
+select {
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background: #fff url(../img/select-arrow.png) no-repeat right 1rem center;   /* add custom arrow */
+   padding: 10px;
+   font-family: 'Roboto', sans-serif; font-size: 1.8rem; font-weight: 300; border: none; border-radius: .3rem;
+}
+select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}

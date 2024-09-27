@@ -1,0 +1,115 @@
+.success {
+  h1 {
+    position: relative;
+    bottom: auto;
+
+  }
+  .bottom {
+    padding-bottom: 60px;
+  }
+  a {
+    display: inline-block;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+  }
+  .btn-next-step {
+    margin-left: -10px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    display: block;
+    height: auto;
+    text-decoration: none;
+    padding: 40px 20px 80px 20px;
+    background: $green url(../img/arrow-right.svg) no-repeat center 90%;
+    background-size: 15%;
+  }
+  .pink {
+    background: $pink url(../img/arrow-down.svg) no-repeat center 90%;
+    background-size: 11%;
+  }
+  .idea {
+
+    .button {
+      img {
+        width: 100%;
+        height: auto;
+        left:50%;
+        top: 0;
+        transform: translateX(-50%);
+        margin: -20px 0 -22px 0;
+      }
+    }
+  }
+  .grad-yellow {
+    padding: 60px 0 300px;
+    background: url(../img/grad-yellow.png) no-repeat 100px -200px, $grad-yellow;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .success {
+    .grad-blue {
+      height: auto;
+    }
+
+    .grad-blue img {
+      width: 50%;
+      display: block;
+    }
+    .grad-yellow .holder {
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 47.5%;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+    }
+    .btn-next-step {
+      margin-left: 0px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 270px;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .success {
+    .grad-blue,.grad-yellow {
+      height: auto;
+    }
+    .grad-blue .holder {
+
+      display: flex;
+      img {
+        width: 100%;
+      }
+      div:first-child {
+        display: block;
+        width: 70%;
+        margin-right: 60px;
+      }
+      div:last-child {
+        width: 30%;
+      }
+    }
+    .grad-yellow .holder {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .success {
+
+  }
+}

@@ -1,0 +1,76 @@
+.holder--computer-files {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.computer-file {
+  width:148px;
+  height: 148px;
+  margin-bottom: -16px;
+  background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-file-default.svg') 8px -16px no-repeat;
+  background-size: 100% ;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $transition;
+  padding-top: 24px;
+  .sound,
+  .video {
+    stroke: $blue-3;
+  }
+  .picture {
+    fill: $blue-3;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover {
+    transform: scale(.9);
+  }
+  &.success {
+    pointer-events: none;
+    background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-file-success.svg') 8px -16px no-repeat;
+    background-size: 100%;
+    pointer-events: none;
+    transform: scale(1.1);
+  }
+
+  &.fail {
+    pointer-events: none;
+    background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-file-fail.svg') 8px -16px no-repeat;
+    background-size: 100% ;
+    color: white;
+    transform: scale(.9);
+    .sound,
+    .video {
+      stroke: white;
+    }
+    .picture {
+      fill: white;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-file-disabled.svg') 8px -16px no-repeat;
+    background-size: 100% ;
+    color: $grey-7;
+    transform: scale(.9);
+    .video {
+      stroke: $grey-7;
+    }
+    .picture {
+      fill: $grey-7;
+    }
+  }
+}

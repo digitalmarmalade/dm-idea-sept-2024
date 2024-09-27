@@ -1,0 +1,27 @@
+.other-badges {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $space-x-small;
+  justify-content: center;
+  margin-top: $space-medium;
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.other-badge {
+
+  & > a {
+
+    & > img {
+      transition: transform 0.333s linear;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

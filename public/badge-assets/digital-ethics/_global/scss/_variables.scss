@@ -1,0 +1,56 @@
+
+/* SCREEN SIZES */
+$sm-width: 600px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xlg-width: 1280px;
+
+:root {
+    // /* Colours */
+    --white-48: rgba(255,255,255,.48);
+    --white: #FFFFFF;
+    --offwhite: #E4EDEB;
+    --blue: #A9C7D8;
+    --green: #A9E0D5;
+    --yellow: #FFCA83;
+    --cream: #FFF1D2;
+    --peach: #FEEEE4;
+    --red: #EF9F97;
+    --brown: #BC886A;
+    --black: #2C3B45;
+    --idea-gold: #C89A09;
+
+    --font-size-default: 1rem;
+
+    --font-size-xsm: calc(var(--font-size-default) * .64);
+    --font-size-sm: calc(var(--font-size-default) * .75);
+    --font-size-md: calc(var(--font-size-default) * 1.375);
+    --font-size-lg: calc(var(--font-size-default) * 2);
+    --font-size-xlg: calc(var(--font-size-default) * 3);
+    --font-size-xxlg: calc(var(--font-size-default) * 6);
+    --font-size-xxxlg: calc(var(--font-size-default) * 7.75);
+
+    --ranchers: 'Ranchers', cursive;
+    --roboto: 'Roboto', sans-serif;
+
+    --space: 1rem;
+
+    --space-xxxsm: calc(.125 * var(--space));
+    --space-xxsm: calc(.25 * var(--space));
+    --space-xsm: calc(.5 * var(--space));
+    --space-sm: calc(.75 * var(--space));
+    --space-md: calc(1.2 * var(--space));
+    --space-lg: calc(2 * var(--space));
+    --space-xlg: calc(3 * var(--space));
+    --space-xxlg: calc(6 * var(--space));
+    
+    --border-radius: var(--space-sm);
+    --border-radius-sm: var(--space-xsm);
+    --border-radius-xxsm: var(--space-xxsm);
+
+    --box-shadow-button: 2px 2px 16px rgba(0, 0, 0, 0.32);
+    --box-shadow-answer: 2px 2px 12px rgba(0, 0, 0, 0.04);
+
+    --transition: all .3s;
+}
+

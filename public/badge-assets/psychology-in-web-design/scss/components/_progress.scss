@@ -1,0 +1,7 @@
+.progress { padding: 3rem 2rem; margin: 0 7rem 5rem;
+    ol { display: flex; justify-content: space-between; margin: 0 auto; padding: 0; list-style: none; position: relative; max-width: 30rem;
+        &::before { position: absolute; left: 0; top: 50%; right: 0; height: .1rem; background: #444; display: block; content: ''; margin-top: -.1rem; }
+    }
+    li { width: 1.5rem; height: 1.5rem; border-radius: 50%; border: .1rem solid #444; background: #fefbf7; margin: 0; position: relative; z-index: 1; }
+    .current { background: #444; }
+}

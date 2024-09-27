@@ -1,0 +1,14 @@
+.double-col {
+  display: flex;
+  flex-direction: column;
+  gap: $space-medium;
+  justify-content: space-between;
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+  }
+}
+
+.col {
+  flex: 1;
+}

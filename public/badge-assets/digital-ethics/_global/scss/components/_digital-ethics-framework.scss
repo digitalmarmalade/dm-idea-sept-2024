@@ -1,0 +1,108 @@
+/* Accordion styles */
+.framework {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--space-xsm);
+    &.static {
+        pointer-events: none;
+        .framework__step-header:after {
+            content: "";
+
+        }
+    }
+  }
+  .framework__step {
+    width: 100%;
+    color: var(--black);
+    overflow: hidden;
+
+  }
+  input[type="checkbox"] + label.framework__step-header,
+  .framework__step-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--space);
+    font-family: var(--ranchers);
+    cursor: pointer;
+    font-size: var(--font-size-md);
+    gap: var(--space-sm);
+    border: .24rem solid var(--black);
+    border-radius: var(--space-xsm);
+    text-transform: uppercase;
+    position: relative;
+    background-color: var(--blue);
+    height: auto;
+    letter-spacing: .08rem;
+
+    &.bg--green {
+        background-color: var(--green);
+    }
+    .step {
+        background-color: var(--white);
+    }
+
+    &::after {
+      content: "\276F";
+      text-align: center;
+      transition: var(--transition);
+      position: absolute;
+      left: 94%;
+      top: 50%;
+      transform: rotate(0) translateY(-50%);
+      transform-origin: center;
+    }
+  }
+  .framework__step-content {
+    max-height: 0;
+    background: var(--blue);
+    border: .24rem solid var(--black);
+    transition: var(--transition);
+    border-radius: var(--space-xsm);
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;
+    top: -.64rem;
+    display: none;
+    &.bg--green {
+        background-color: var(--green);
+    }
+  }
+
+
+  input[type="checkbox"]:hover + label.framework__step-header {
+    transform: scale(1);
+    background-color: var(--blue);
+    color: var(--black);
+    &.bg--green {
+        background-color: var(--green);
+    }
+    &::after {
+        transform: rotate(90deg) translateX(-125%);
+    }
+  }
+  input[type="checkbox"]:checked {
+    + label.framework__step-header {
+        transform: scale(1);
+        background-color: var(--blue);
+        color: var(--black);
+        &.bg--green {
+            background-color: var(--green);
+        }
+      &::after {
+        transform: rotate(90deg) translateX(-125%);
+      }
+    }
+    ~ .framework__step-content {
+      max-height: 100vh;        
+      padding: var(--space);
+      display: flex;
+      &.bg--green {
+        background-color: var(--green);
+    }
+    }
+  }
+  

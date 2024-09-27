@@ -1,0 +1,161 @@
+
+
+.crossword-clues { 
+  width: 100%;
+  background-color: rgba(255,255,255,0.25);
+  border-radius: .4em;
+  padding: 1.2em;
+  text-align: left;
+  margin-bottom: 1.6rem;
+  text-align: left;
+  margin: 0 0 .8em;
+
+  p {
+    margin: 0 0 .8em;
+  }
+  ol {
+    width: calc(100% - 1.2em);
+    margin: 0 0 1.6em;
+    list-style: none;
+    color: $blue-dark;
+    &:last-child{
+      margin: 0;
+    }
+    li {
+      //margin: 0 .8em .8em 1.2em;
+     margin: 0 .8em .8em 0;
+     font-size: 65%;
+    }
+  }    
+}
+
+p.note-scroll { 
+  font-size: 75%; 
+  color: #fff; 
+}
+
+.no-touch .note-scroll { 
+  display: none;
+}
+
+.touch .note-scroll { 
+  display: block;
+}
+
+.crossword-mobile {
+  height: fit-content;
+}
+
+// .crossword-desktop { 
+// 	display: none;
+//     height: fit-content;
+//     iframe {
+//       height: fit-content !important;
+//     }
+//  }
+
+.crossword-next {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .35s ease-in-out;
+}
+
+.crossword-next.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+// .touch .crossword-desktop { 
+//   height: 400px !important; 
+//   iframe {
+//   height: 400px !important; 
+//   }
+// }
+
+// @media(min-width: 1024px){
+//   .touch .crossword-desktop { 
+//     height: 500px !important; 
+//     iframe {
+//     height: 500px !important; 
+//     }
+//   }
+// }
+
+// .crossword-desktop { 
+//     height: 600px !important; 
+//     iframe {
+//     height: 600px !important; 
+//   }
+// }
+
+  // .crossword-desktop { 
+  //   height:340px !important; 
+  //   iframe {
+  //   height:340px !important; 
+  //   }
+  // }
+
+.mobile-across,
+.mobile-down { display: block; }
+.desktop-across,
+.desktop-down { display: none; }
+
+@media(min-width: 568px){
+	.crossword-holder {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: row-reverse;
+	}
+
+	.crossword-clues { 
+	    max-width: 300px;
+	    margin-left: 1.6rem;
+	    margin-bottom: 0;
+	    p {
+	    	font-size: .7rem;
+	    }
+	}
+
+	// .crossword-mobile { 
+	// 	display: none; 
+	// }
+	// .crossword-desktop { 
+	// 	display: block; 
+	// }
+
+	// .mobile-across,
+	// .mobile-down { display: none; }
+	// .desktop-across,
+	// .desktop-down { display: block; }
+
+
+
+}
+
+@media(min-width: $md-width){
+  .crossword-mobile iframe { height: 750px}
+}
+
+
+@media(min-width: 812px){
+	.holder-crossword {
+	  max-width: 1056px;
+	}
+
+	.crossword-desktop { width: 610px;}
+}
+
+
+.crossword-layout {
+  border:1px solid red;
+  table {
+    tr:nth-child(10){
+      td:nth-child(4){
+        .number {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

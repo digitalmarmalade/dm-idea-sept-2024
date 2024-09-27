@@ -1,0 +1,157 @@
+.container--questions {
+    gap: var(--space-xxxlg);
+}
+
+.container--question {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:var(--space-sm);
+}
+
+.container--ctas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:var(--space-lg);
+    @media (min-width: $sm-width) { 
+        flex-direction: row;
+    }
+}
+
+.list--actions {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: .064rem;
+        font-family: var(--ranchers);
+        text-transform: uppercase;
+        width: 260px;
+        height: 232px;
+        border: .16rem solid var(--black);
+        font-size: var(--font-size);
+        transform-origin: 50% 50%;
+        padding: var(--space);
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+        &:nth-child(1n) {
+            background-color: var(--blue);
+            top: -20px;
+            &.animate {
+                animation: actionCard1 .4s ease-out forwards;
+            }           
+        }
+        &:nth-child(2n) {
+            background-color: var(--yellow);
+            &.animate {
+                animation: actionCard2 .4s ease-out forwards;
+                
+                animation-delay: .8s;
+            }
+        }
+        &:nth-child(3n) {
+            background-color: var(--red);
+            &.animate {
+                animation: actionCard3 .4s ease-out forwards;
+                animation-delay: 1.2s;
+            }
+        }
+        &:nth-child(4n) {
+            background-color: var(--cream);
+            &.animate {
+                animation: actionCard4 .4s ease-out forwards;
+                animation-delay: 1.4s;
+            }
+        }
+        &:nth-child(5n) {
+            background-color: var(--white);
+            &.animate {
+                animation: actionCard5 .4s ease-out forwards;
+                animation-delay: 1.6s;
+            }
+        }
+    }
+}
+
+@keyframes actionCard1 {
+    0% {
+        opacity: 0;
+        transform: rotate(0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(-8deg) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(8deg) scale(1);
+    }
+}
+@keyframes actionCard2 {
+    0% {
+        opacity: 0 ;
+        transform: rotate(0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(3deg) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-3deg) scale(1);
+    }
+}
+@keyframes actionCard3 {
+    0% {
+        opacity: 0;
+        transform: rotate(-10deg) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(4deg) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(4deg) scale(1);
+    }
+}
+@keyframes actionCard4 {
+    0% {
+        opacity: 0;
+        transform: rotate(0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(1deg) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-1deg) scale(1);
+    }
+}
+@keyframes actionCard5 {
+    0% {
+        opacity: 0;
+        transform: rotate(0) scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: rotate(-8deg) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(8deg) scale(1);
+    }
+}

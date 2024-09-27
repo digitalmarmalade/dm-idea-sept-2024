@@ -1,0 +1,60 @@
+/*! Typography */
+
+html {
+  font-size:100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: $purple;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0;
+  padding:0;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  margin:  0 0 10px 0;
+  color: $purple;
+}
+
+h1 {
+  padding: 0 0 20px;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin: 0 0 30px;
+}
+
+h3 {
+  font-size: 1.15em;
+  line-height: 1.24;
+}
+
+p {
+  margin: 0 auto 1rem auto;
+  width: 1.6em;
+  max-width: 700px;
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  h1 {
+    margin: 60px 0 20px;
+    font-size: 3.25em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    margin: 0 0 30px;
+  }
+}
+//
+// @media only screen and (min-width: $lg-width) {
+//
+// }

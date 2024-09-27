@@ -1,0 +1,132 @@
+
+.bg-grad--blue-dark {
+  background: $gradient--blue-dark;
+}
+
+.bg-grad--blue-light {
+  background: $gradient--blue-light;
+}
+
+.bg-grad--purple-dark {
+  background: $gradient--purple-dark;
+}
+
+.factory-bg {
+  background-image: url('/badge-assets/ai-inference/_global/svg/bg--factory.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.confused-bg {
+  background-image: url('/badge-assets/ai-inference/_global/svg/illustration--robot-confused.svg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.step-3 {
+  &.office-bg {
+     > div {
+       height: 100vh;
+       background-image: url('/badge-assets/ai-inference/_global/svg/illustration--office.svg');
+       background-attachment: fixed;
+       background-position: center top;
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+
+  }
+
+}
+
+
+.step-4 {
+
+
+  &.office-bg {
+    background-image: url('/badge-assets/ai-inference/_global/svg/illustration--office.svg');
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: flex-start;
+    min-height: calc(100% - 101px);
+    align-items: center;
+  }
+  &.traffic-animation {
+      .traffic-animation--overlay {
+        display:flex;
+        background-color: rgba(0,0,0,.24);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+      background:
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--4.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--2.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lamp.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-left-right-bottom-top--plain.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-left-right-top-bottom--plain.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--5.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--1.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--6.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--3.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-right-left-bottom-top--plain.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-right-left-top-bottom--plain.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/road-base.svg') no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover, cover, cover, cover, cover, cover, cover, cover, cover, cover, cover, cover;
+    }
+    &.traffic-animation--red-boxes {
+      background:
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--4.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--2.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lamp.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-left-right-bottom-top--red-box.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-left-right-top-bottom--red-box.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--5.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--1.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--6.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--3.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-right-left-bottom-top--red-box.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-right-left-top-bottom--red-box.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/road-base.svg') no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover, cover, cover, cover, cover, cover, cover, cover, cover, cover, cover, cover;
+    }
+    &.traffic-animation--labled {
+      background:
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--4.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--2.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lamp.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-left-right-bottom-top--labled.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-left-right-top-bottom--labled.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--5.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--1.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--6.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/lights--3.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-right-left-bottom-top--labled.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/vehicles-right-left-top-bottom--labled.svg') no-repeat center center,
+      url('/badge-assets/ai-inference/_global/svg/animations/animation--traffic/road-base.svg') no-repeat center center;
+      background-attachment: fixed;
+      background-size: cover, cover, cover, cover, cover, cover, cover, cover, cover, cover, cover, cover;
+    }
+}
+
+.step-5 {
+  background-attachment: fixed;
+  background-image: url('/badge-assets/ai-inference/_global/svg/illustration--office.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $md-width) {
+    background-position: center -10rem;
+  }
+}

@@ -1,0 +1,16 @@
+.task-1 {
+  .feedback {
+    a {
+      max-width: 300px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+
+  .step-2 {
+    min-height: 100%;
+  }
+
+}

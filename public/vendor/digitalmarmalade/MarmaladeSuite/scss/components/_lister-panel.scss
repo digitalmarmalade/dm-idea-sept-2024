@@ -1,0 +1,57 @@
+.lister-panel { background: #fff; max-width: 980px; margin: 0 auto; }
+.lister-panel.margin-bottom { margin-bottom: 15px; } 
+
+.none-yet { padding: 80px; text-align: center; color: #999; font-size: 1.6em; margin: 0; font-style: italic; }
+
+.num-results-holder { padding: 15px 20px; position: relative; border-bottom: 1px solid #ededed; }
+.num-results-holder .pagination { position: absolute; right: 20px; top: 50%; margin-top: -17px; }
+.num-results-holder p { margin: 0; }
+
+.lister-total-results { margin: 0 15px 0 0; text-transform: uppercase; color: #666; }
+
+.list-table { font-size: 1.2em; width: 100%; color: #666;
+
+    th { text-transform: uppercase; background: #f5f5f5; border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; padding: 10px 20px; font-weight: 400; transition: background .25s ease-in; 
+        .glyph-icon { float: right; }
+        .flaticon-arrows,
+        .flaticon-arrows-1 { font-size: 80%; position: relative; top: 1px; }
+    }
+    
+    th.sortable:hover { cursor: pointer; background: #e6e6e6; }
+    th a { text-decoration: none; color: inherit; display: block; }
+    
+    td { padding: 20px; border-bottom: 1px solid #e3e3e3; border-right: 1px solid #e3e3e3; }
+    
+    .icon-action { width: 50px; padding: 0; overflow: hidden;
+        a { display: block; text-align: center; font-size: 150%; color: $primary-colour; padding: 20px; transition: background .25s ease-in, transform .15s ease-in; }
+        
+        .btn-icon { border: none; background: none; display: block; text-align: center; font-size: 150%; color: $primary-colour; padding: 20px; transition: background .25s ease-in, transform .15s ease-in;  }
+        
+        .btn-icon:hover,
+        a:hover { background: #f5f5f5; transform: scale(1.2,1.2); }
+    }
+
+
+}
+
+.column-section { width: 160px; }
+.column-sub-section { width: 250px; }
+.column-page-type { width: 140px; }
+
+.lister-actions { text-align: center; }
+
+.list-table.translations th { width:33.33%; }
+/*.list-table.translations th:nth-child(1) { width: 30%; }
+.list-table.translations th:nth-child(2) { width: 30%; }
+.list-table.translations th:nth-child(3) { width: 40%; }*/
+.list-table.translations input[type="text"] { width:100%; }
+
+.list-table.courses th {  }
+.list-table.courses th.column-title { width: 250px; }
+.list-table.courses th.column-start-date { width: 135px; }
+.list-table.courses th.column-category { width: 135px; }
+.list-table.courses th.role { width: 100px; }
+
+
+
+

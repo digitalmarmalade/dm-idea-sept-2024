@@ -1,0 +1,89 @@
+.feedback {
+  padding: 30px 20px;
+  float: left;
+  width: calc(100% - 40px);
+
+  position: relative;
+  p {
+    color: $white;
+      text-align: center;
+  }
+  span {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    display: block;
+    margin: 5px 0 10px 0;
+  }
+  img {
+    width: 40px;
+    height: auto;
+  }
+  a {
+    color: $white;
+  }
+}
+
+.feedback-fail {
+  background-color: $red;
+}
+
+.feedback-success {
+  background-color: $green;
+}
+
+.hide {
+  display: none;
+}
+
+.feedback .btn {
+  margin: 0;
+}
+
+.feedback-fail .btn {
+  color: $red;
+}
+.feedback-success .btn {
+  color: $green
+}
+
+
+
+
+
+@media only screen and (min-width: $md-width) {
+  .feedback {
+    height: auto;
+    margin-top: -210px;
+  }
+  .feedback-step-4 {
+    margin-top: -195px;
+  }
+  .feedback-step-3,
+  .feedback-step-2  {
+    margin-top: -100px;
+  }
+
+  .feedback-step-5 {
+    margin-top: -40px;
+  }
+  .feedback-step-7 {
+    margin-top: -40px;
+  }
+}
+@media only screen and (min-width: $lg-width) {
+  .feedback {
+    margin-top: -140px;
+  }
+  .feedback-step-4 {
+    margin-top: -170px;
+  }
+  .feedback-step-7,
+  .feedback-step-3,
+  .feedback-step-2  {
+    margin-top: 0;
+  }
+  .feedback-step-5 {
+    margin-top: -40px;
+  }
+}

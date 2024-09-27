@@ -1,0 +1,212 @@
+.task-12 {
+     // position: relative;
+     .activity--feedback {
+       top: -40%;
+       left: 50%;
+       transform: translateX(-50%);
+       position: absolute;
+       z-index: 1;
+       margin: 1.2rem;
+       width: calc(100% - 2.4rem);
+     }
+    .holder {
+      padding: 0;
+    }
+    .animation__holder {
+      width: calc(100% - 2.4rem);
+      height: auto;
+      flex-direction: column;
+      margin: 1.2rem;
+    }
+
+    .animation--cnn__holder {
+      padding: 0 1.6rem;
+      background: url("../svg/animations/animation--cnn--arrows-mob.svg") no-repeat 45% 52%;
+      background-size: 85%;
+
+    }
+    .helmet {
+      border: .2rem solid $blue-light;
+      width: 80px;
+      height: auto;
+      float:left;
+    }
+    .icon--processing {
+      margin: 1.6rem;
+    }
+    .btn--pause-training {
+      width: auto;
+      padding: 0 1.2rem;
+      margin: 1.6rem;
+    }
+    table {
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+      color: $blue-dark;
+      font-weight: bold;
+      font-size: calc(#{$bodycopy}*.65);
+      float: right;
+    }
+    td {
+      padding: .4rem;
+      background: white;
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+      color: $blue-dark;
+      font-weight: bold;
+      &.positive {
+        color: $green;
+      }
+      &.negative {
+        color: $red;
+      }
+      &.border--left {
+        border-top-left-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+      }
+      &.border--right {
+        border-top-right-radius: .4rem;
+        border-bottom-right-radius: .4rem;
+        text-align: right;
+        width: 30px;
+      }
+      &.actual-output {
+        width: auto;
+        text-align: center;
+      }
+      &.arrows {
+        background: transparent;
+        padding: 0 .4rem;
+        font-size: calc(#{$bodycopy} * 1.5);
+        .positive {
+          color: $green;
+        }
+        .negative {
+          color: $red;
+        }
+      }
+
+
+    }
+    th {
+      color: white;
+      background: $blue-dark;
+      width: 100px;
+      padding: .4rem 1.2rem;
+      &:first-child {
+        padding: 0;
+        width: 30px;
+        background: transparent;
+      }
+      &:nth-child(2){
+        border-top-left-radius: .4rem;
+        border-bottom-left-radius: .4rem;
+      }
+      &:last-child {
+        border-top-right-radius: .4rem;
+        border-bottom-right-radius: .4rem;
+        background: $red;
+      }
+    }
+}
+
+@media only screen and (min-width: $md-width) {
+  .task-12 {
+      .activity--feedback {
+        top: -80%;
+      }
+      .animation--cnn__holder {
+        padding: 0;
+        background: none;
+        order: -1;
+      }
+      .animation__holder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &:first-of-type {
+          margin-top: 1.6rem;
+        }
+      }
+      .helmet {
+        float: none;
+        order: -1;
+      }
+      table {
+        float: none;
+      }
+
+      .holder_animations {
+        align-items: center;
+        position: relative;
+        bottom:.46rem;
+        left: .4rem;
+        transform: scale(.95);
+        flex-grow: unset;
+        .animation__holder {
+          margin: 0;
+        }
+      }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .task-12 {
+    .activity--feedback {
+      top: -60%;
+    }
+    .helmet {
+      float: none;
+      width: 130px;
+      border: .4rem solid $blue-light;
+
+    }
+      table {
+        font-size: $bodycopy;
+        td {
+          padding: .6rem;
+        }
+
+      }
+
+      td {
+        &.border--right {
+          width: 60px;
+        }
+      }
+      .animation__holder {
+        &:last-of-type {
+          margin-bottom: 2.4rem;
+        }
+      }
+      .holder_animations {
+        align-items: center;
+        position: absolute;
+        bottom:-1.6rem;
+        left: 50%;
+        transform: translateX(-50%) scale(.8);
+        width: 100%;
+        justify-content: flex-end;
+      }
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+    .task-12 {
+      .bg--computer-zoomed-in {
+        background: url(../imgs/illustration--computer-zoomed-in.png) no-repeat 50% 100%;
+        background-size: 80%;
+      }
+
+    }
+
+}
+
+@media only screen and (min-width:1600px) {
+  .task-12 {
+    .activity--feedback {
+      top: -20%;
+    }
+  }
+}

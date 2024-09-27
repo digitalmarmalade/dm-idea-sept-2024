@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine ON
+
+    RewriteRule ^auth/callback$ auth/callback.php [L,QSA]
+    RewriteRule ^auth/logout$ auth/logout.php [L,QSA]
+
+</IfModule>

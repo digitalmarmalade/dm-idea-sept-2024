@@ -1,0 +1,40 @@
+
+
+@media only screen and (min-width: $lg-width) {
+  .step-3 {
+    .top .holder {
+      background: url(../img/interrogation-mark.png) no-repeat 60% 0;
+    }
+    .top  {
+      background: url(../img/bg.png) no-repeat 60% 0, $grad-blue;
+    }
+
+    .cols:first-child {
+      display: flex;
+      div:first-child {
+        width: 60%;
+        margin: 0 40px 0 0;
+      }
+      div:last-child {
+        width: 40%;
+      }
+      div.pink {
+        width: 100%;
+      }
+    }
+    .cols:last-child {
+      display: flex;
+      div:first-child {
+        margin: 0 80px 0 0;
+        width: 35%;
+      }
+      div:last-child {
+        margin: 0 40px 0 0;
+        width: 65%;
+      }
+      div.yellow {
+        width: 100%;
+      }
+    }
+  }
+}

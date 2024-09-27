@@ -1,0 +1,30 @@
+
+.lockup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  img {
+    display: block;
+    width: 70px;
+    height: auto;
+  }
+  a:last-child {
+    float: right;
+  }
+}
+
+.step-lockup { position: relative;
+    img { margin: 0 0 2rem; }
+    p { background: $light-green; padding: 1rem; margin: 0 auto 2rem; display: table;  text-transform: uppercase; font-family: 'bebas_neuebold'; color: $dark-green; font-size: 2rem; line-height: 1; }
+}
+
+@media only screen and (min-width: $md-width) {
+    .step-lockup { background: $light-green; text-align: left; padding: 2rem; margin: 0 0 5rem;
+        p { margin: 0; font-size: 3rem; }
+        img { position: absolute; right: 3rem; top: 0; width: 80px; }
+    }
+
+    .lockup img { position: absolute; right: 3rem; top: 0; width: 80px; }
+}

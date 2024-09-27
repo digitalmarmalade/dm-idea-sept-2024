@@ -1,0 +1,119 @@
+
+.the-restaurant {
+  position: relative;
+  .building {
+    width: 100%;
+    bottom: -10px;
+    left: 15%;
+    position: relative;
+  }
+  .people {
+    position: absolute;
+    width: 20%;
+    bottom: -40px;
+    left: 22.5%;
+  }
+  .fence {
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.the-restaurant-task {
+  font-weight: 400;
+  ul {
+    margin: 0 auto;
+
+    li {
+      width: calc(100% - 40px);
+      margin: 0 0 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: $light-yellow;
+      color: $dark-blue;
+
+
+      padding: 20px;
+      transition: all .3s;
+    }
+    li:hover {
+      background-color: $green;
+      color: $white;
+    }
+    .selected {
+      background-color: $green;
+      color: $white;
+    }
+  }
+  .feedback-fail .btn {
+    font-size: .75em;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+
+  .the-restaurant {
+
+      .building {
+      bottom: -20px;
+      left: 10%;
+    }
+    .people {
+      bottom: -80px;
+      left: 22.5%;
+    }
+  }
+  .the-restaurant-task ul  {
+    max-width: 80%;
+    li {
+        text-align: left;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $lg-width) {
+  .the-restaurant{
+    padding-top: 0;
+    .building {
+      width: 100%;
+      bottom: -20px;
+      left: 35%;
+      position: relative;
+    }
+    .people {
+      bottom: -70px;
+      left: 55%;
+    }
+    .fence {
+      position: absolute;
+      width: 120%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+  .the-restaurant {
+    .building {
+      width: 90%;
+      bottom: -35px;
+      left: 35%;
+    }
+    .people {
+      width: 15%;
+      bottom: -100px;
+      left: 65%;
+    }
+    .fence {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

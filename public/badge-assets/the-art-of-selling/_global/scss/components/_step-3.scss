@@ -1,0 +1,258 @@
+.step-3, .step-4, .step-5 {
+  text-align: center;
+  .section-slide {
+    margin: 0;
+  }
+  .box {
+    background-color: $white;
+    padding: 40px 10px 30px;
+    text-align: center;
+    border-radius: $border-radius;
+    font-size: 85%;
+    color: $blue-3;
+    position: relative;
+    .icon-box {
+      width: 140px;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 auto 20px;
+      img {
+        display: block;
+        position: relative;
+      }
+    }
+    .figure {
+      width: 60px;
+      height: 80px;
+      background-color: $white;
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 300%;
+      font-weight: 900;
+      border-radius: 12px 12px 0 0;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      font-family: $headings;
+      font-size: 4em;
+    }
+  }
+  .cols-wrapper {
+    margin-bottom: 40px;
+    div {
+      position: relative;
+      text-align: left;
+    }
+
+    h2 {
+      text-align: left;
+    }
+
+    img {
+      padding: 20px;
+    }
+
+    .cycle-figure {
+      position: absolute;
+      font-family: $headings;
+      opacity: .15;
+      font-size: 30em;
+      padding:0;
+      margin: 0;
+      top: 140px;
+      line-height: 0;
+    }
+    ul {
+      margin: 20px;
+      padding: 0;
+      position: relative;
+      z-index: 5;
+    }
+    li {
+      margin: 0 0 8px;
+    }
+  }
+
+}
+
+.step-3 {
+  .quiz {
+    margin: 40px 0;
+  }
+  .quiz-reorder {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+    list-style: none;
+    font-size: 1.15em;
+    li {
+      width: 340px;
+      padding: 20px 0;
+      margin:0 0 30px;
+    }
+  }
+  .check-answers {
+    font-size: 1.5em;
+    padding: 8px 0;
+  }
+  .correct-answers {
+    background-color: $white;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: $headings;
+    margin: -30px 0 20px 0;
+    span.figure {
+      display: block;
+      font-size: 7em;
+      line-height: normal;
+    }
+  }
+  .hint {
+    text-decoration: none;
+    color: $white;
+    .tooltip {
+      border: none;
+    }
+    .tooltiptext {
+      font-family: $body-copy;
+      font-size: .5em;
+      font-weight: normal;
+      opacity: 1;
+    }
+
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+}
+
+#sales-cycle {
+  h1 {
+    margin-top: 100px;
+  }
+  .cols-wrapper {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .step-3 {
+    .section-slide {
+      margin: -20px;
+    }
+    .box {
+      padding: 40px 25px 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .step-3, .step-4, .step-5 {
+    .section-slide {
+      padding: 120px 0 0;
+    }
+    .cols-wrapper {
+      margin: 50px 0 0;
+      img {
+        padding: 0;
+        z-index: 2;
+        position: relative;
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div.copy {
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .cycle-figure {
+        left: -120px;
+        z-index: 1;
+      }
+      &:nth-child(odd) {
+        flex-direction: row-reverse;
+        .cycle-figure {
+          // left: 160px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .step-3  {
+    .cols-wrapper:nth-child(odd) .cycle-figure {
+      left: -50px;
+    }
+
+    .quiz .cols-wrapper {
+      flex-direction: row;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .quiz-reorder {
+      li {
+        width: 290px;
+      }
+      li.btn:before {
+        border-right: 290px solid transparent;
+      }
+      li.btn:after {
+        border-right: 290px solid transparent;
+      }
+      li.btn:nth-child(even):before {
+        border-left: 290px solid transparent;
+        border-right: 0;
+      }
+      li.btn:nth-child(even):after {
+          border-left: 290px solid transparent;
+          border-right: 0;
+      }
+    }
+
+    .check-answers-wrapper {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+
+    .hint {
+      .tooltiptext {
+        font-size: .75em;
+      }
+    }
+  }
+
+
+  .step-4  {
+    section:nth-child(even) .cols-wrapper {
+      flex-direction: row;
+    }
+  }
+
+  .step-5 {
+    section:nth-child(odd) .cols-wrapper {
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .step-3 {
+    .section-slide {
+      min-height: 100vh;
+    }
+    section:first-of-type {
+      min-height:100vh;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.activity {
+  padding: $space-large 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow:1;
+}
+
+.activity--light-blue {
+  background-image: $gradient--blue-light;
+  color: $blue-3;
+}
+
+.activity--blue {
+  background-image: $gradient--blue-dark;
+  color: $white;
+}
+
+.activity--factory {
+  background-image: url('/badge-assets/ai-inference/_global/svg/bg--factory.svg'),
+                    $gradient--blue-dark;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: $white;
+}

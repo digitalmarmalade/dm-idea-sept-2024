@@ -1,0 +1,6 @@
+.btn { font-family: 'Lato', sans-serif; display: inline-flex; background: $btn-bg; color: $btn-fg; border-radius: .5rem; font-size: 1.8rem; padding: 1.4rem 3rem; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: .1rem; align-items: center; transiton: all .25s ease;
+    &:hover { background: #ededed; }
+    svg { width: 1.2rem; height: 1.2rem; fill: $btn-fg; margin: 0 0 0 .5rem; transition: fill .25s ease; }
+
+}
+.btn__text { flex-grow: 1; text-align: left; }

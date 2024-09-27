@@ -1,0 +1,95 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 08/03/2016 11:30
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("icon-fonts/Flaticon.eot");
+  src: url("icon-fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("icon-fonts/Flaticon.woff") format("woff"),
+       url("icon-fonts/Flaticon.ttf") format("truetype"),
+       url("icon-fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("icon-fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .glyph-icon:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+      .flaticon-arrows:before { content: "\f100"; }
+.flaticon-arrows-1:before { content: "\f101"; }
+.flaticon-arrows-2:before { content: "\f102"; }
+.flaticon-arrows-3:before { content: "\f103"; }
+.flaticon-arrows-4:before { content: "\f104"; }
+.flaticon-arrows-5:before { content: "\f105"; }
+.flaticon-arrows-6:before { content: "\f106"; }
+.flaticon-arrows-7:before { content: "\f107"; }
+.flaticon-arrows-8:before { content: "\f108"; }
+.flaticon-arrows-9:before { content: "\f109"; }
+.flaticon-business:before { content: "\f10a"; }
+.flaticon-computer:before { content: "\f10b"; }
+.flaticon-cross:before { content: "\f10c"; }
+.flaticon-dates:before { content: "\f10d"; }
+.flaticon-delete:before { content: "\f10e"; }
+.flaticon-edit:before { content: "\f10f"; }
+.flaticon-food:before { content: "\f110"; }
+.flaticon-interface:before { content: "\f111"; }
+.flaticon-line:before { content: "\f112"; }
+.flaticon-link:before { content: "\f113"; }
+.flaticon-mark:before { content: "\f114"; }
+.flaticon-photo:before { content: "\f115"; }
+.flaticon-profile:before { content: "\f116"; }
+.flaticon-search:before { content: "\f117"; }
+.flaticon-tool:before { content: "\f118"; }
+.flaticon-tool-1:before { content: "\f119"; }
+.flaticon-tool-2:before { content: "\f11a"; }
+.flaticon-two:before { content: "\f11b"; }
+    
+    $font-Flaticon-arrows: "\f100";
+    $font-Flaticon-arrows-1: "\f101";
+    $font-Flaticon-arrows-2: "\f102";
+    $font-Flaticon-arrows-3: "\f103";
+    $font-Flaticon-arrows-4: "\f104";
+    $font-Flaticon-arrows-5: "\f105";
+    $font-Flaticon-arrows-6: "\f106";
+    $font-Flaticon-arrows-7: "\f107";
+    $font-Flaticon-arrows-8: "\f108";
+    $font-Flaticon-arrows-9: "\f109";
+    $font-Flaticon-business: "\f10a";
+    $font-Flaticon-computer: "\f10b";
+    $font-Flaticon-cross: "\f10c";
+    $font-Flaticon-dates: "\f10d";
+    $font-Flaticon-delete: "\f10e";
+    $font-Flaticon-edit: "\f10f";
+    $font-Flaticon-food: "\f110";
+    $font-Flaticon-interface: "\f111";
+    $font-Flaticon-line: "\f112";
+    $font-Flaticon-link: "\f113";
+    $font-Flaticon-mark: "\f114";
+    $font-Flaticon-photo: "\f115";
+    $font-Flaticon-profile: "\f116";
+    $font-Flaticon-search: "\f117";
+    $font-Flaticon-tool: "\f118";
+    $font-Flaticon-tool-1: "\f119";
+    $font-Flaticon-tool-2: "\f11a";
+    $font-Flaticon-two: "\f11b";

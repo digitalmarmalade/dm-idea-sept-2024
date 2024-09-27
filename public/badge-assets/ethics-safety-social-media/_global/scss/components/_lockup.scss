@@ -1,0 +1,21 @@
+
+.lockup {
+
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    img {
+      display: block;
+      width: 60px;
+      height: auto;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .lockup a { right: 30px; }
+  .lockup a img { width: 70px; }
+}

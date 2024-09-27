@@ -1,0 +1,65 @@
+.keywords__labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-x-small;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 45rem;
+
+  @media (min-width: $lg-width) {
+    max-width: unset;
+  }
+}
+
+.keywords__keyword {
+  background-color: $cobalt-1;
+  border-radius: 0.4rem;
+  color: $blue-3;
+  font-size: $r-small;
+  font-weight: bold;
+  padding: $space-xxx-small;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.keywords__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-small;
+  justify-content: center;
+  margin-top: $space-medium;
+}
+
+.keywords__option {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xx-small;
+  width: calc(50% - #{$space-small});
+
+  @media (min-width: $md-width) {
+    width: auto;
+  }
+}
+
+.keywords__image {
+  align-items: center;
+  background-color: $blue-5;
+  border-radius: 0.4rem;
+  display: flex;
+  min-height: 10rem;
+}
+
+.keywords__input {
+  width: 100%;
+}
+
+.keywords__input--success {
+  background-color: $green;
+  color: $white;
+  pointer-events: none;
+}
+
+.keywords__input--fail {
+  background-color: $red;
+  color: $white;
+}

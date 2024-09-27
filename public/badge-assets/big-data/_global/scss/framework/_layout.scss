@@ -1,0 +1,139 @@
+body {
+  overflow-x: hidden;
+}
+
+.scroll-to {
+  position: absolute;
+  bottom: 4em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: .1em 0 0;
+  line-height: 1;
+  transition: all .3s;
+  border: .2rem solid white;
+  border-radius: 50%;
+  &:hover {
+    background-color: rgba(255,255,255,.25);
+  }
+}
+
+section {
+  width: 100%;
+  padding: 40px 0;
+  position: relative;
+}
+
+.holder {
+  width: 90%;
+  max-width: 1040px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.grad-pink {
+  background: $grad-pink;
+}
+
+.grad-red {
+  background: $grad-red;
+}
+
+.grad-orange {
+  background: $grad-orange;
+}
+
+.grad-yellow {
+  background: $grad-yellow;
+  color: $dark-blue;
+}
+
+.grad-green {
+  background: $grad-green;
+}
+
+.grad-blue {
+  background: $grad-light-blue;
+}
+
+.grad-dark-blue {
+  background: $grad-dark-blue;
+}
+
+.grad-dark-blue-2 {
+  background: $grad-dark-blue-2;
+}
+
+.grad-dark-blue-2-success {
+  background: $grad-dark-blue-2-success;
+}
+
+
+.red {
+  background-color: $red;
+}
+
+.yellow {
+  background: $yellow;
+  color: $dark-blue;
+}
+
+.light-blue {
+  background: $blue;
+}
+
+.orange {
+  background: $orange;
+}
+
+.pink {
+  background: $pink;
+}
+
+.green {
+  background: $green;
+}
+
+.tip b {
+  font-size: 200%;
+  font-family: $bebas;
+  display: block;
+  text-transform: uppercase;
+}
+
+
+
+@media only screen and (min-width: 1366px) {
+  .grad-dark-blue-2 {
+    background: $grad-dark-blue-3;
+  }
+  .grad-dark-blue-2-success {
+    background: $grad-dark-blue-5-success;
+  }
+}
+
+
+@media only screen and (min-width: 1500px) {
+  .grad-dark-blue-2 {
+    background: $grad-dark-blue-6;
+  }
+  .grad-dark-blue-2-success {
+    background: $grad-dark-blue-7-success;
+  }
+
+}

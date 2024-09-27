@@ -1,0 +1,54 @@
+/*! Intro Page */
+
+.intro-page-banner { color: #fff; text-align: center; height: 564px; display: block; margin: 0 0 100px; position: relative; background: linear-gradient(to bottom, #91daff 0%, #91daff 25%, #75d1ff 25.1%, #75d1ff 50%, #52c5ff 50.1%, #52c5ff 75%, #27b7ff 75.1%, #27b7ff 100%); }
+
+.intro-heading { font-family: mullerregular; font-size: 3.6em; text-transform: uppercase; line-height: 1; position: relative; z-index: 10;
+    span { font-family: mullerextrabold; font-size: 1.3em; display: table; margin: 0 auto; text-shadow: 3px 3px 5px rgba(0,0,0,.3); }
+}
+
+.fruit-mask { height: 564px; overflow: hidden; }
+
+
+.title { background: url(../img/title.png) no-repeat; width: 464px; height: 222px; position: absolute; left: 50%; top: 50%; margin: -111px 0 0 -232px; z-index: 4; }
+
+ .apple { background: url(../img/apple.png) no-repeat; width: 74px; height: 89px; position: absolute; margin-left: 938px; margin-top: -150px; animation: drop 25s 2s infinite linear; }
+.bananas { background: url(../img/bananas.png) no-repeat; width: 89px; height: 79px; position: absolute; margin-left: 510px; margin-top: -150px; animation: drop 38s 10s infinite linear; }
+.grapes { background: url(../img/grapes.png) no-repeat; width: 89px; height: 89px; position: absolute; margin-left: 1044px; margin-top: -150px; animation: drop 22s 38s infinite linear; }
+.kiwi { background: url(../img/kiwi.png) no-repeat; width: 69px; height: 69px; position: absolute; margin-left: 42px; margin-top: -150px; animation: drop 31s 15s infinite linear; }
+.orange { background: url(../img/orange.png) no-repeat; width: 89px; height: 84px; position: absolute; margin-left: 408px; margin-top: -150px; animation: drop 41s 3s infinite linear; }
+.pear { background: url(../img/pear.png) no-repeat; width: 69px; height: 109px; position: absolute; margin-left: 272px; margin-top: -150px; animation: drop 18s 11s infinite linear; }
+.pineapple { background: url(../img/pineapple.png) no-repeat; width: 50px; height: 104px; position: absolute; margin-left: 198px; margin-top: -150px; animation: drop 50s 0s infinite linear; }
+.strawberry { background: url(../img/strawberry.png) no-repeat; width: 64px; height: 79px; position: absolute; margin-left: 826px; margin-top: -150px; animation: drop 37s 46s infinite linear; }
+
+.ground { width: 100%; height: 131px; background: url(../img/ground.png) no-repeat; position: absolute; left: 0; bottom: -79px; z-index: 2; }
+
+.hero-move { position: absolute; left: 40px; bottom: 10px; z-index: 5; transition: left 2s linear; }
+.hero-sprite { background: url(../img/hero-sprite.png) no-repeat; width: 83px; height: 228px; animation: heroRun .4s 0s infinite linear; }
+.hero-sprite.flip { transform: scaleX(-1); }
+
+.down-arrow { width: 50px; height: 50px; background: url(../img/down-arrow.png) center center no-repeat; display: block; position: absolute; left: 50%; margin: 0 0 0 -25px; bottom: 120px; }
+
+@keyframes drop {
+    0%   { margin-top: -150px; }
+    100%  { margin-top: 714px; }
+}
+
+@keyframes heroRun {
+    0%   { background-position: 0 0; }
+    49.9%   { background-position: 0 0; }
+    50%  { background-position: right 0; }
+    100%  { background-position: right 0; }
+}
+
+@media only screen and (max-width: $sm-width-under) {
+.title { background-size: 300px 144px; width: 300px; height: 144px; margin: -72px 0 0 -150px; }
+.intro-page-banner { overflow: hidden; }
+
+
+}
+
+@media only screen and (min-width: $sm-width) {
+    
+
+   
+}

@@ -1,0 +1,62 @@
+.speech-bubble {
+    width: 100%;
+    max-width: 18rem;
+    border-radius: $border-radius;
+    padding: $padding;
+    color: $blue-dark;
+    font-size: $bodycopy;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    margin: 0 0 1.6rem;
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 92.5%;  /* At the top of the tooltip */
+      border-width: 1.2rem;
+      border-style: solid;
+    }
+    &.green {
+      background-color: $green;
+      p {
+        color: $blue-dark;
+      }
+      &::after {
+        right: .8rem;
+        border-color: $green transparent transparent transparent;
+      }
+    }
+
+    &.red {
+      background-color: $red;
+      p {
+        color: $white;
+      }
+      &::after {
+        left: .8rem;
+        border-color:  $red transparent transparent transparent;
+      }
+    }
+    &.yellow {
+      background-color: $yellow;
+      p {
+        color: $blue-dark;
+      }
+      &::after {
+        left: .8rem;
+        border-color:  $yellow transparent transparent transparent;
+      }
+    }
+
+    &.blue {
+      background-color: $blue-light;
+      p {
+        color: $blue-dark;
+      }
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+        border-color:  $blue-light transparent transparent transparent;
+      }
+    }
+  }

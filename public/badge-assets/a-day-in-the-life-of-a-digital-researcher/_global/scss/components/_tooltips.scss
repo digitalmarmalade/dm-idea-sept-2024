@@ -1,0 +1,23 @@
+/*! Tooltips */
+
+$tooltip-background: #fff;
+$tooltip-border: #ccc;
+$tooltip-pointer: #999;
+$tooltip-text: #333;
+
+a.tooltip { outline: none; }
+a.tooltip strong { line-height: 30px; }
+a.tooltip:hover { text-decoration: none; } 
+.tooltip-text { z-index: 10; display: none; padding: 14px 20px; margin-top: -25px; margin-left: 15px; width: 300px; line-height: 16px; border-radius: 4px; box-shadow: 5px 5px 8px #CCC; }
+a.tooltip:hover .tooltip-text { display: inline; position: absolute; color: $tooltip-text; border: 1px solid $tooltip-border; background: $tooltip-background; }
+.tooltip-text:after { z-index: 20; position: absolute; top: 28px; border: 0; left: -12px; width: 0;  content: ''; height: 0; border-left: 6px solid transparent; border-bottom: 6px solid transparent; border-top: 6px solid transparent; border-right: 6px solid $tooltip-pointer; }
+
+a.tooltip--bottom { position: relative; }
+a.tooltip--bottom .tooltip-text { margin-top: 12px; left: 0; margin-left: 0; top: auto; }
+a.tooltip--bottom:hover .tooltip-text { display: block; }
+a.tooltip--bottom .tooltip-text:after { z-index: 20; position: absolute; top: -12px; border: 0; left: 12px; width: 0;  content: ''; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 6px solid transparent; border-bottom: 6px solid $tooltip-pointer; }
+
+a.tooltip--top { position: relative; }
+a.tooltip--top .tooltip-text { margin-top: 12px; left: 0; margin-left: 0; top: auto; bottom: 30px; }
+a.tooltip--top:hover .tooltip-text { display: block; }
+a.tooltip--top .tooltip-text:after { z-index: 20; position: absolute; top: auto; bottom: -12px; border: 0; left: 12px; width: 0;  content: ''; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid transparent; border-top: 6px solid $tooltip-pointer; }

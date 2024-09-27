@@ -1,0 +1,40 @@
+.success {
+  section {
+    min-height: 100vh;
+  }
+  .btn {
+    padding: 20px;
+    line-height: 1;
+    &:after {
+      border: none;
+    }
+  }
+  h1 {
+    font-size: 5em;
+  }
+
+}
+
+@media only screen and (min-width: $md-width) {
+  .success {
+    .btn {
+      width: 500px;
+      padding: 20px;
+      line-height: 1;
+      &:before {
+        border-right: 400px solid transparent;
+      }
+      &:after {
+        border-right: 400px solid transparent;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .success {
+    #animation_container {
+      margin-bottom: -230px;
+    }
+  }
+}

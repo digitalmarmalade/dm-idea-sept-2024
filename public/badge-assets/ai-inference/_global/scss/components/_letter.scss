@@ -1,0 +1,105 @@
+.letter {
+  background-color: white;
+  border-radius: 0.4rem;
+  color: $blue-3;
+  padding: $space-small;
+  @media (min-width: $md-width) {
+    padding: $space-large;
+  }
+}
+
+.letter__header {
+  margin-bottom: $space-large;
+}
+
+.letter-inputs {
+}
+
+.letter-input {
+  background-position: 95% 15px;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-width: 0.1rem;
+  display: block;
+  padding: $space-x-small $space-x-large $space-x-small $space-x-small;
+  position: relative;
+  resize: vertical;
+  text-align: left;
+  width: 100%;
+
+
+
+  &:is(:hover, :focus) {
+    background-color: inherit;
+  }
+}
+.holder--text-area {
+  position: relative;
+  .tooltipster {
+    border: none;
+    position: absolute;
+    top: $space-xxx-small;
+    right: $space-xxx-small;
+    z-index: 1;
+    transition: $transition;
+    svg {
+      fill:$blue-3;
+    }
+    &:hover {
+      transform: scale(.8);
+      opacity: .64;
+    }
+  }
+  + .holder--text-area {
+    margin-top: $space-xxx-small;
+  }
+  .letter-input--default {
+    background-color: $blue-7;
+    border-color: $blue-3;
+    color: $blue-3;
+
+    &::placeholder {
+      color: $cobalt-1;
+    }
+  }
+
+  .letter-input--fail {
+    background-color: $red-pastel;
+    + .tooltipster {
+      svg {
+        fill:$red;
+      }
+    }
+    border-color: $red;
+    color: $red;
+
+    &::placeholder {
+      color: $red;
+    }
+  }
+
+  .letter-input--success {
+    background-color: $green-pastel;
+    border-color: $green;
+    color: $green;
+
+    &::placeholder {
+      color: $green;
+    }
+  }
+}
+
+
+
+.letter-input--small {
+  //min-height: 1rem;
+}
+
+.letter-input--medium {
+  min-height: 13.7rem;
+}
+
+.letter-input--large {
+  min-height: 24rem;
+}

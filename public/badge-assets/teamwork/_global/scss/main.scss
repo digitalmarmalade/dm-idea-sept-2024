@@ -1,0 +1,25 @@
+/* CSS Document */
+
+//Reset
+@import "framework/_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "framework/_fonts.scss";
+@import "framework/_typography.scss";
+@import "framework/_helpers.scss";
+
+@import "components/_lockup.scss";
+@import "components/_home.scss";
+@import "components/_buttons.scss";
+@import "components/_staggered-entry.scss";
+@import "components/_task.scss";
+@import "components/_team-role.scss";
+@import "components/_select-role-game.scss";
+@import "components/_belbin-quiz.scss";
+@import "components/_team-dynamic.scss";
+@import "components/_teamwork-step.scss";
+@import "components/_management-game.scss";
+@import "components/_morale-game.scss";
+@import "components/_final-screen.scss";

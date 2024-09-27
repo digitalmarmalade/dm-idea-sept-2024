@@ -1,0 +1,310 @@
+.grid-holder { padding: 70px 10px 324px; }
+.no-intro .grid-holder { padding-top: 65px; }
+.icon span, .keyboard-icon { background-size: auto; }
+.keyboard-minimised .grid-holder { padding-bottom: 130px; }
+
+
+/*--Title Info--*/
+.title-info-holder { display: block; position: absolute; top: 0; left: 0; padding: 10px 10px 0; height: auto; }
+h1 { margin: 0; line-height: 1.1; }
+h2.setter-name, p .setter-name { display: none; }
+.setter-name { font-size: 11px; color: #000; }
+.title-info p { font-size: 12px; color: #666; font-style: italic; }
+
+/*--Keyboard--*/
+.keyboard-holder { bottom: 0; padding: 0; height: 195px; }
+.keyboard { padding: 20px 0 0; height: 195px; }
+.keys li a { width: 45px; height: 42px; line-height: 42px; }
+.keys .keyboard-push-left { margin-right: 40px; }
+.keys .keyboard-push-right { margin-left: 40px; }
+.keys li a.key-direction { width: 50px; }
+.keys li a.key-backspace { width: 50px; }
+
+.android .keys li a {
+border-top: 2px solid #6c6c6c;
+border-bottom: 1px solid #333;
+text-shadow: 0 0 3px rgba(0,0,0,0.75); border-radius: 3px;
+}
+.android .keyboard-holder, .android .keyboard { height: 228px; }
+.android .keyboard { padding: 8px 0 0; }
+.android .keys li a { width: 45px; height: 58px; line-height: 58px; font-size: 18px;}
+.android .keys li { margin: 0 2px 12px; }
+.android .individual-clue-holder { bottom: 298px; }
+.android .action-buttons { bottom: 228px; }
+.android .grid-holder { padding-bottom: 357px; }
+.android .clues-list-holder { padding-bottom: 357px; }
+.android .clues-maximised .clues-list-holder { padding-bottom: 298px; }
+.android .keyboard-minimised.clues-maximised .clues-list-holder { padding-bottom: 70px !important; }
+.android .keyboard-minimised .grid-holder { padding-bottom: 130px; }
+.btn-prev, .btn-next { width: 100px; }
+
+/*--Individual Clue--*/
+.individual-clue-holder { bottom: 265px; }
+.individual-clue { padding: 20px 50px; }
+.individual-clue p { margin: 0; line-height: 1.4; }
+.keyboard-minimised .individual-clue-holder { bottom: 70px; }
+
+.clues-maximised .individual-clue-holder { display: none; }
+.reset { display: block; }
+
+
+/*--Action Buttons--*/
+.action-buttons { bottom: 195px; height: 70px; padding: 5px 0 10px; }
+.action-buttons li { width: 14.285%; }
+.no-touch-remove .clues-list-holder { padding-bottom: 0 !important; }
+.no-touch-remove .individual-clue-holder { bottom: 70px !important; }
+.no-touch-remove .action-buttons li { width: 16.6666%; }
+
+
+/*--Clues List--*/
+.btn-text-reduce span { background-position: -23px -69px; }
+.btn-text-increase span { background-position: -46px 0; }
+.clues-maximised .clues-list { overflow: hidden; }
+.clues-maximised .clues-list-holder { display: block; padding-bottom: 265px;}
+.clues-maximised .clues-set { height: 100%; }
+.across-clues, .down-clues { height: 100%; padding-top: 29px; }
+.clues-maximised .across-clues, .clues-maximised .down-clues { float: left; width: 50%; padding-bottom: 0; height: 100%; padding-top: 29px; }
+.clues-maximised.multiple-clues .across-clues, .clues-maximised.multiple-clues .down-clues { padding-top: 58px; }
+.clues-maximised .across-clues > div, .clues-maximised .down-clues > div {overflow: auto; max-height: 100%; }
+.no-touch-remove .clues-maximised .across-clues, .no-touch-remove .clues-maximised .down-clues { padding-bottom: 0; }
+.clues-maximised .across-clues { border-right: 1px solid #eaeaea; }
+.clues-maximised .clue-text-size { right: 55px; }
+.clues-maximised.multiple-clues .clue-text-size { right: 6px; top: 26px;}
+.clues-select { display: block; }
+.clues-list h2 { display: none; }
+
+.android .clues-maximised .across-clues > div, .android .clues-maximised .down-clues > div { max-height: 100%; min-height: 465px; display: block; }
+
+.clues-maximised .clues-list h2 { display: block; position: fixed; top: 0; z-index: 4; width: 50%; }
+.clues-maximised.multiple-clues .clues-list h2 { top: 29px; }
+.clues-maximised .clues-list .across-clues h2 { left: 0; }
+.clues-maximised .clues-list .down-clues h2 { right: 0; }
+
+.keyboard-minimised.clues-maximised .clues-list-holder { display: block; padding-bottom: 70px;}
+
+
+
+/*--Grid--*/
+.puzzle table td, .square, .letter { height: 32px; width: 32px; }
+.letter { font-size: 16px; line-height: 32px; }
+
+.grid-zoomed-in .puzzle table td, .grid-zoomed-in .square, .grid-zoomed-in .letter { height: 40px; width: 40px; }
+.grid-zoomed-in .letter { font-size: 24px; line-height: 40px; }
+
+
+.btn-clues-switch { display: none; }
+
+
+
+.grid-holder { padding: 70px 240px 294px 10px; }
+.keyboard-minimised .grid-holder { padding-bottom: 70px; }
+
+
+.no-intro .grid-holder { padding-top: 64px; }
+
+.fixed h2 { position: fixed; z-index: 4; }
+
+/*--Title Info--*/
+.title-info-holder { display: block; position: absolute; top: 0; left: 0; padding: 0 241px 0 10px; }
+h1 { margin: 0 0 5px; line-height: 1.1; }
+h2.setter-name, p .setter-name { display: none; }
+.setter-name { font-size: 11px; color: #000; }
+.title-info p { font-size: 12px; color: #666; font-style: italic; line-height: 1.2; }
+.small-font .title-info p { font-size: 14px; }
+
+/*--Keyboard--*/
+.keyboard-holder { height: 225px; }
+.keyboard { padding: 20px 0 0; height: 225px; }
+.keys li, .keys .keyboard-push-left { margin: 0 4px 7px; }
+.keys li a { width: 57px; height: 57px; line-height: 57px; border-radius: 5px; font-size: 22px; }
+
+.keys li a.key-direction { width: 57px; }
+.keys li a.key-backspace { width: 57px; }
+
+
+/*--Individual Clue--*/
+.individual-clue-holder { bottom: 210px; padding: 0 10px; display: none; height: 0; }
+.individual-clue { height: 48px; background: #333; padding: 5px 0; color: #fff; }
+
+.clues-select li { width: 49%; overflow: hidden; }
+
+/*--Action Buttons--*/
+.action-buttons { bottom: 225px; height: 70px; padding: 5px 230px 10px 0; z-index: 1; background: #fff; }
+.action-buttons li { width: 16.666%; }
+.no-touch-remove .action-buttons li { width: 16.666%; }
+.list-clues { display: none; }
+
+/*--Grid--*/
+
+.overlay { z-index: 21; }
+.settings-overlay, .reset-overlay { top: 50%; margin-top: -145px; }
+.overlay.reset-overlay { margin-top: -100px; }
+
+.grid-zoomed-in .puzzle table td, .grid-zoomed-in .square, .grid-zoomed-in .letter { height: 40px; width: 40px; }
+.grid-zoomed-in .letter { font-size: 22px; line-height: 36px; }
+
+/*--Clues List--*/
+.clues-list h2 { display: block; }
+.clues-list-holder { display: block; width: 230px; left: auto; right: 0; top: 0; padding: 0 0 224px; }
+.keyboard-minimised .clues-list-holder { padding: 0; }
+
+
+.boxes { display: none; }
+.set-tracker { display: block; }
+.across-tracker, .down-tracker { display: none; }
+.multiple-clues .clue-text-size { top: 28px; }
+.keyboard-minimised.multiple-clues .clues-list-holder { padding: 0 0 57px; }
+.multiple-clues .clues-list-holder { padding: 0 0 203px; }
+
+.clues-maximised .across-clues, .clues-maximised .down-clues { width: 100%; float: none; }
+.multiple-clues .across-clues { padding-top: 58px; }
+.multiple-clues .down-clues, .down-clues { padding-top: 0; }
+.clues-list .across-clues h2 { left: auto; right: 0; }
+.clues-list .across-clues h2 { position: fixed; left: auto; right: 0; top: 0; z-index: 4; width: 230px; }
+.multiple-clues .clues-list .across-clues h2 { top: 29px; }
+.clues-list .down-clues h2 { position: static; }
+
+.android .individual-clue-holder { bottom: 298px; }
+.android .action-buttons { bottom: 228px; }
+.android .grid-holder { padding-bottom: 298px; }
+.android .clues-list-holder { padding-bottom: 298px; }
+.android .keys li a { width: 55px; font-size: 20px; }
+.android .keyboard-minimised .grid-holder { padding-bottom: 70px; }
+.android .keyboard-minimised .clues-list-holder { padding-bottom: 0; }
+
+
+.grid-holder { padding: 100px 465px 326px 0; }
+.keyboard-minimised .grid-holder { padding-bottom: 70px; }
+
+.icon span, .keyboard-icon { background-size: auto; }
+
+/*--Title Info--*/
+.title-info-holder { display: block; position: absolute; top: 0; left: 0; padding: 15px 465px 0 10px; }
+h1 { margin: 0 0 5px; line-height: 1.1; }
+h2.setter-name, p .setter-name { display: none; }
+.setter-name { font-size: 11px; color: #000; }
+.title-info p { font-size: 12px; color: #666; font-style: italic; }
+
+/*--Keyboard--*/
+.keyboard-holder { height: 257px; z-index: 1; }
+.keyboard { padding: 10px 0 0; height: 257px; }
+.keys li, .keys .keyboard-push-left { margin: 0 5px 7px; }
+.keys li a { width: 78px; height: 74px; line-height: 74px; border-radius: 5px; font-size: 28px; }
+.keys li a.keyboard-collapse { width: 74px; }
+.keys li a.key-direction { width: 78px; }
+.keys li a.key-backspace { width: 78px; }
+
+.overlay { z-index: 21; }
+.settings-overlay { padding: 0 0 294px; }
+.keyboard-minimised .settings-overlay { padding: 0 0 70px; }
+
+
+/*--Individual Clue--*/
+.individual-clue-holder { bottom: 210px; padding: 0 10px; display: none; height: 0; overflow: hidden; }
+
+/*--Action Buttons--*/
+.action-buttons { bottom: 257px; height: 70px; padding: 5px 454px 10px 0; background: #fff;  }
+.action-buttons li { width: 16.666%; }
+.list-clues { display: none; }
+
+/*--Grid--*/
+.puzzle table td, .square, .letter { height: 28px; width: 28px; }
+.letter { font-size: 16px; line-height: 24px; }
+
+.grid-zoomed-in .puzzle table td, .grid-zoomed-in .square, .grid-zoomed-in .letter { height: 40px; width: 40px; }
+.grid-zoomed-in .letter { font-size: 22px; line-height: 36px; }
+.grid-zoomed-in .zoom-out { opacity: 1; }
+.grid-zoomed-in .zoom-in { opacity: 0.2; }
+
+/*--Clues List--*/
+.clues-list-holder { display: block; width: 454px; left: auto; right: 0; top: 0; padding: 0 0 257px; }
+.clues-maximised .clues-list-holder { display: block; padding-bottom: 206px;}
+.keyboard-minimised.clues-maximised .clues-list-holder { padding-bottom: 57px; }
+.across-clues, .down-clues, .clues-maximised .across-clues, .clues-maximised .down-clues { width: 50%; float: left; }
+.down-clues { border-left: 1px solid #eaeaea; }
+.boxes { display: none; }
+.clues-list { overflow: hidden; }
+.clues-set { height: 100%; }
+.across-clues, .down-clues { height: 100%; padding-top: 29px; }
+.across-clues > div, .down-clues > div {overflow: auto; max-height: 100%; }
+.set-tracker { display: none; }
+.across-tracker, .down-tracker { display: block; }
+.across-clues, .down-clues { height: 100%; overflow: auto; }
+
+.clues-list .across-clues h2, .clues-list .down-clues h2 { position: fixed; left: auto; right: 0; top: 0; z-index: 4; width: 227px; }
+.clues-list .across-clues h2, .clues-maximised .clues-list .across-clues h2 { right: 227px; left: auto; }
+.down-clues { padding-top: 29px; }
+.multiple-clues .across-clues, .multiple-clues .down-clues { padding-top: 29px; }
+.multiple-clues .clues-list .down-clues h2 { top: 29px; }
+.multiple-clues .clues-list-holder .expand-minimise { top: 33px; }
+.clues-maximised.multiple-clues .across-clues, .clues-maximised.multiple-clues .down-clues { padding-top: 29px; }
+.clues-maximised.multiple-clues .clue-text-size { right: 55px; }
+
+.clues-minimised .clues-list-holder { width: 230px; }
+.clues-minimised .across-clues, .clues-minimised  .down-clues { width: auto; float: none; height: auto; overflow: hidden; clear: both; }
+.clues-minimised .down-clues { padding-top: 0; }
+.clues-minimised .clues-set { height: auto; }
+.clues-minimised .grid-actions-holder { padding-right: 240px; }
+.clues-minimised .title-info-holder { padding-right: 240px; }
+.clues-minimised .grid-holder { padding-right: 240px; }
+.clues-minimised .clues-list { overflow: auto; }
+.clues-minimised .clues-list-holder .expand { display: block; }
+.clues-minimised .clues-list-holder .minimise { display: none; }
+
+.clues-minimised .clues-list .across-clues h2 { right: 0; width: 230px; }
+.clues-minimised .clues-list .down-clues h2 { position: static; width: auto; }
+
+.clues-select li { width: auto; }
+.clues-list-holder .expand-minimise { display: block; right: 25px; }
+.clue-text-size { right: 55px; }
+
+.multiple-clues .clues-list-holder { padding: 0 0 206px; }
+.keyboard-minimised.multiple-clues .clues-list-holder { padding: 0 0 101px; }
+.no-touch-remove .multiple-clues .clues-list-holder { padding-bottom: 10px; }
+.no-touch-remove .keyboard-minimised.multiple-clues .clues-list-holder { padding: 0 0 101px; }
+.multiple-clues.clues-minimised .clue-text-size { top: 28px; right: 55px; }
+.multiple-clues.clues-minimised .clues-list-holder .expand-minimise { top: 33px; }
+.multiple-clues .clues-list-holder { padding-top: 29px; }
+.clues-maximised.multiple-clues .clue-text-size { top: 28px; }
+
+.clue-text-size { top: 0; }
+
+
+
+
+.clues-maximised .key-direction { opacity: 1; }
+
+.clues-minimised .clues-select li { width: 45%; overflow: hidden; }
+
+.android .keys li a { width: 74px; font-size: 20px; }
+.android .keys li { margin: 0 3px 10px; }
+
+
+
+.submit-overlay { display:none; }
+.box.current { background:#f90; }
+
+
+
+
+/*--puzzle type overrides--*/
+.puzzle-type-american .clue-format-holder { display:none; }
+
+
+/*
+====================================================================================================================================
+*/
+.overlay-bg { background: #000; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)"; }
+.crossword .close-overlay { background: url(../img/btn-close.png) no-repeat center center; }
+.onoff { background: url(../img/off.png) no-repeat; }
+.onoff.btn-on { background: url(../img/on.png) no-repeat; }
+.btn-pen .icon, .btn-pen.on:active .icon { background: url(../img/pen-off.png) no-repeat;  }
+.btn-pen.on .icon { background: url(../img/pen-on.png) no-repeat; }
+.btn-pencil .icon, .btn-pencil.on:active .icon { background: url(../img/pencil-off.png) no-repeat; }
+.btn-pencil.on .icon { background: url(../img/pencil-on.png) no-repeat; }
+.show-solution .icon { background: url(../img/solution-off.png) no-repeat; }
+.show-solution .solution-showing .icon { background: url(../img/solution-on.png) no-repeat; }
+.zoom-in .icon { background: url(../img/zoom-off.png) no-repeat; }
+.zoom-out .icon { background: url(../img/zoom-on.png) no-repeat; }
+.reset .icon { background: url(../img/reset-off.png) no-repeat; }
+.settings .icon { background: url(../img/settings-off.png) no-repeat; }

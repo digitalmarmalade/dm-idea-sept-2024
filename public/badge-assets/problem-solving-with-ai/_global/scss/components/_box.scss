@@ -1,0 +1,63 @@
+.box {
+  background-color: $white;
+  color: $blue-dark;
+  padding: $padding;
+  border-radius: $border-radius;
+  position: relative;
+  overflow: hidden;
+  + h1 {
+    margin: 3.2rem 0 1.2rem;
+  }
+  .col {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.box__title {
+  font-size: $box-title;
+  margin: 0 0 .4em;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .box {
+      padding: $padding-lg;
+      .tooltip {
+        border-color: $blue-dark;
+      }
+  }
+
+}
+
+.box--relationship {
+  margin: .6em;
+  p, span {
+    text-align: center;
+    font-size: 80%;
+    margin: 0;
+  }
+  img {
+    width: 50%;
+    margin: .2em 0;
+  }
+}
+.box--relationship-positive {
+  background-color: rgba(0,203,116,.1);
+}
+.box--relationship-negative {
+  background-color: rgba(247,29,87,.1);
+}
+
+@media only screen and (min-width: $md-width) {
+  .box--relationship {
+    margin: .6em;
+    p, span {
+      text-align: center;
+    }
+    img {
+      margin: 1.2em 0;
+    }
+  }
+}

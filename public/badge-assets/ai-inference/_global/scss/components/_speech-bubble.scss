@@ -1,0 +1,165 @@
+.speech-bubble {
+    width: 100%;
+    max-width: 24rem;
+    border-radius: 1.6rem;
+    padding: 1.6em;
+    color: $blue-dark;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    margin: 0 0 .4rem;
+    transition: $transition;
+    p {
+      overflow: hidden;
+      margin: 0;
+    }
+    .btn {
+      margin: .8rem 0 0;
+    }
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 2rem;
+      line-height: normal;
+      margin: 0 0 .4rem;
+    }
+
+    &.hide-on-desktop {
+      display: none;
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      border-width: 1.2rem;
+      border-style: solid;
+
+    }
+    &.tip--bottom {
+      &::after {
+        top:98%;
+      }
+      &.left {
+        &::after {
+        left: 0;
+        }
+      }
+      &.center {
+        &::after {
+          left: 50%;
+          // margin-left: -.6rem;
+        }
+      }
+      &.right {
+        &::after {
+          right: 0;
+        }
+      }
+    }
+
+    &.tip--left {
+      &::after {
+        top:50%;
+        margin-top: -1.2rem;
+        left: -2.4rem;
+        transform: rotate(90deg);
+      }
+    }
+
+    &.green {
+      background-color: $green;
+      p {
+        color: $blue-dark;
+      }
+      &::after {
+        top: 98%;
+        right: .8rem;
+        border-color: $green transparent transparent transparent;
+      }
+    }
+
+    &.red {
+      background-color: $red;
+      p {
+        color: $white;
+      }
+      &::after {
+        top: 98%;
+        left: .8rem;
+        border-color:  $red transparent transparent transparent;
+      }
+    }
+    &.yellow {
+      background-color: $yellow;
+      p {
+        color: $blue-dark;
+      }
+      &::after {
+        border-color:  $yellow transparent transparent transparent;
+      }
+    }
+
+    &.blue {
+      background-color: $blue-light;
+      p {
+        color: $blue-dark;
+      }
+      margin: 0 0 1.6rem;
+      &::after {
+        border-color:  $blue-light transparent transparent transparent;
+      }
+    }
+    &.gold {
+      margin: 0 0 1.2rem;
+      background-color: $idea-gold;
+      p {
+        color: white;
+      }
+      &::after {
+        border-color:  $idea-gold transparent transparent transparent;
+      }
+    }
+  }
+
+  .speech-bubble__holder {
+    padding: 1.2rem;
+    &.hide-on-mobile {
+      display: none;
+    }
+    img {
+      width: 100px;
+      height: auto;
+      &.animation--alert {
+        width:320px;
+      }
+    }
+
+  }
+
+  @media(min-width: $md-width){
+    .speech-bubble {
+      width: 24rem;
+    }
+  }
+
+  @media(min-width: $lg-width){
+    .speech-bubble__holder {
+      padding: 0;
+      &.hide-on-desktop{
+        display: none;
+      }
+      &.hide-on-mobile {
+        display:flex;
+        .animation--alert {
+          margin: 0;
+        }
+        .speech-bubble {
+          margin: 0  0 0 -3.2rem;
+          &.blue,
+          &.gold {
+            margin: 0 0 0 1.6rem;
+          }
+        }
+      }
+    }
+  }

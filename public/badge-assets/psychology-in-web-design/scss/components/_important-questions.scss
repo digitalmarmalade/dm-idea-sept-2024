@@ -1,0 +1,11 @@
+.important-questions { list-style: none; margin: 3rem 0; padding: 0;
+    li { margin-bottom: 1rem; background: $primary-colour; color: #fff; font-size: 2.4rem; padding: 2rem 3rem; display: table; }
+}
+.centre { margin-left: auto; margin-right: auto; }
+.right { margin-left: auto; }
+
+@media only screen and (max-width: 599px) {
+    .important-questions { 
+        li { display: block; font-size: 2rem; padding: 2rem; }
+    }
+}

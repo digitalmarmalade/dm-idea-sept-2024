@@ -1,0 +1,1 @@
+<svg version="1.1" id="svgCross" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 44 32.9" enable-background="new 0 0 44 32.9" xml:space="preserve"> <polygon fill="#CC3333" points="39 28.6 26.8 16.4 39 4.2 34.8 0 22.6 12.2 10.4 0 6.1 4.2 18.3 16.4 6.1 28.6 10.4 32.9 22.6 20.7 34.8 32.9 "/> </svg>

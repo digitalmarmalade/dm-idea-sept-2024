@@ -1,0 +1,376 @@
+.factory-animation {
+  overflow: hidden;
+  position: relative;
+  margin: $space-large auto $space-x-small;
+  width: 200%;
+  svg {
+    position: relative;
+    left: -48%;
+    @media (min-width: $md-width) {
+      left:-18%;
+    }
+    @media (min-width: $lg-width) {
+      left:-4%;
+    }
+    @media (min-width: $xl-width) {
+      left: 4%;
+    }
+    @media (min-width: $xxl-width) {
+      left: 8%;
+    }
+  }
+}
+.recycling {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 28%;
+  left: 8%;
+  overflow: visible;
+  @media (min-width: $md-width) {
+    top: 34%;
+    left: 16%;
+  }
+  @media (min-width: $lg-width) {
+    width: 100%;
+    top: 32%;
+  }
+  @media (min-width: $xl-width) {
+    width: 800px;
+    overflow: hidden;
+    left: 16%;
+  }
+  @media (min-width: $xxl-width) {
+    width: 640px;
+    left: 18%;
+  }
+  @media (min-width: 1920px) {
+    left:16%;
+  }
+}
+
+.factory-animation--paused {
+  animation-play-state: paused !important;
+}
+
+#robot-1__complete {
+  animation: float 6s infinite;
+}
+
+#robot-1__head {
+  animation: head-tilt 3s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#robot-1__shadow {
+  animation: scale 6s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#robot-2__left-arm {
+  animation: arm 44.5s infinite forwards;
+  transform-box: fill-box;
+  transform-origin: bottom right;
+}
+
+#robot-arm__light {
+  animation: blink 44.5s linear infinite forwards;
+  opacity: 0.1;
+}
+
+.cog {
+  animation: cog 3.5s infinite linear;
+  transform-origin: center; /* or transform-origin: 50% */
+  transform-box: fill-box;
+}
+
+
+
+
+#animated-belt-and-light__recycling {
+  animation: marquee 44.5s linear 1s infinite forwards running;
+  transform: translate3d(0, 0, 0) translateX(-104%);
+}
+
+#animated-computer-1 {
+  bottom: 20%;
+  display: none;
+  position: absolute;
+  left: 10%;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    display: block;
+  }
+}
+
+#animated-computer-2 {
+  bottom: 20%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    right: 18%;
+  }
+}
+
+.animated-computer-2__screen-item {
+  visibility: hidden;
+
+  //&.animate {
+    //animation: show-and-hide 3s 1 forwards;
+  //}
+}
+
+#paper-1 {
+  animation: paper-1 44.5s infinite forwards;
+}
+
+#paper-2 {
+  animation: paper-2 44.5s infinite forwards;
+}
+
+#paper-3 {
+  animation: paper-3 44.5s infinite forwards;
+}
+
+#metal-1 {
+  animation: metal-1 44.5s infinite forwards;
+}
+
+#metal-2 {
+  animation: metal-2 44.5s infinite forwards;
+}
+
+#glass-1 {
+  animation: glass-1 44.5s infinite forwards;
+}
+
+#glass-2 {
+  animation: glass-2 44.5s infinite forwards;
+}
+
+
+@keyframes cog {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes paper-1 {
+  0%, 65.1% {
+    visibility: hidden;
+  }
+
+  65.2%, 68.2% {
+    visibility: visible;
+  }
+
+  68.3%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes paper-2 {
+  0%, 50.9% {
+    visibility: hidden;
+  }
+
+  51%, 54% {
+    visibility: visible;
+  }
+
+  54.1%, 100% {
+    visibility: hidden;
+  }
+}
+
+
+@keyframes paper-3 {
+  0%, 36.7% {
+    visibility: hidden;
+  }
+
+  36.8%, 39.8% {
+    visibility: visible;
+  }
+
+  39.9%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes metal-1 {
+  0%, 72.2% {
+    visibility: hidden;
+  }
+
+  72.3%, 75.3% {
+    visibility: visible;
+  }
+
+  75.4%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes metal-2 {
+  0%, 29.6% {
+    visibility: hidden;
+  }
+
+  29.7%, 32.7% {
+    visibility: visible;
+  }
+
+  32.8%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes glass-1 {
+  0%, 58% {
+    visibility: hidden;
+  }
+
+  58.1%, 61.1% {
+    visibility: visible;
+  }
+
+  61.2%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes glass-2 {
+  0%, 43.8% {
+    visibility: hidden;
+  }
+
+  43.9%, 46.9% {
+    visibility: visible;
+  }
+
+  47%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-shadow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .15;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.5);
+  }
+}
+
+@keyframes head-tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes arm {
+  0%, 29.6%, 30.8%, 36.7%, 37.9%, 43.8%, 45%, 50.9%, 52.1%, 58%, 59.2%, 65.1%, 66.3%, 72.2%, 73.4%, 100% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+
+  29.7%, 30.7%, 36.8%, 37.8%, 43.9%, 44.9%, 51%, 52%, 58.1%, 59.1%, 65.2%, 66.2%, 72.3%, 73.3% {
+    transform: rotate(8deg) translateX(-8px);
+  }
+}
+
+@keyframes float-robot--2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(2.5%, 0) ;
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, 1.5%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes blink {
+ 0%, 29.6%, 30.8%, 36.7%, 37.9%, 43.8%, 45%, 50.9%, 52.1%, 58%, 59.2%, 65.1%, 66.3%, 72.2%, 73.4%, 100% {
+   opacity: 0.1;
+ }
+
+ 29.7%, 30.7%, 36.8%, 37.8%, 43.9%, 44.9%, 51%, 52%, 58.1%, 59.1%, 65.2%, 66.2%, 72.3%, 73.3% {
+   opacity: 1;
+ }
+}
+
+@keyframes show-and-hide {
+  from {
+    visibility: visible;
+  }
+
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0) translateX(-104%);
+  }
+
+  100% {
+    transform: translate3d(104%, 0, 0);
+  }
+}

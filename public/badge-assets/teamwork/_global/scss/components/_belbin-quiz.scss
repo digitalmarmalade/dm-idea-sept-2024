@@ -1,0 +1,106 @@
+/*! Belbin Quiz Game */
+
+.belbin-quiz-holder { background: #fff; border: 1px solid #ccc; padding: 2rem; margin: 0 0 2rem; }
+
+.belbin-quiz-h2 { font-size: 2.4rem; }
+.belbin-portrait { width: 254px; padding: 256px 0 0 0; background: url(../img/artist-bg.jpg) no-repeat left top; position: relative; margin: 1rem auto 2rem;
+    img { position: absolute; left: 0; top: 100px; }
+    figcaption { text-align: center; margin: 0; padding: 0; }
+}
+@media only screen and (min-width: $md-width) {
+.belbin-portrait { float: left; margin: 0 2rem 2rem 0; }
+}
+
+.team-quiz-types { margin: 0 0 2rem; padding: 0; list-style: none;
+    li { background: #ededed; padding: 2rem; }
+}
+
+.belbin-quiz-question { border: none; padding: 0; margin: 0; display: none;
+    legend { border: none; padding: 0; margin: 0 0 2rem; font-size: 1.8rem; font-weight: 500; width: 100%; }
+    input[type="radio"] { position: absolute; left: -9999rem; 
+        & + label { background: #ededed; display: block; padding: 1rem; }
+        & + label:hover { background: #000; color: #fff; cursor: pointer; }
+    }
+    input[type="radio"]:checked + label { background: #00b3e3; color: #fff; }
+    p { margin: 0 0 .2rem; }
+}
+
+.belbin-quiz-progress { position: relative; height: 1rem; margin: 0 0 2rem; display: flex; justify-content: space-around;
+    &:after,
+    &:before { content: ''; display: block; height: .4rem; width: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #ededed; }
+    &:after { background: #00b3e3; width: 7.15%; transition: width .25s ease; }
+    li { height: 1rem; width: 1rem; background: #ededed; border-radius: 50%; display: inline-block; position: relative; z-index: 1; transtion: background .25s ease .2s; }
+}
+
+.belbin-quiz--question-1 {
+    li:nth-child(1) { background: #00b3e3; }
+    .question-1 { display: block; }
+}
+/* 14.3% */
+.belbin-quiz--question-2 {
+    li:nth-child(-n+2) { background: #00b3e3; }
+    .belbin-quiz-progress::after { width: 21.45%; }
+    .question-2 { display: block; }
+}
+
+.belbin-quiz--question-3 {
+    li:nth-child(-n+3) { background: #00b3e3; }
+    .belbin-quiz-progress::after { width: 35.75%; }
+    .question-3 { display: block; }
+}
+
+.belbin-quiz--question-4 {
+    li:nth-child(-n+4) { background: #00b3e3; }
+    .belbin-quiz-progress::after { width: 50.05%; }
+    .question-4 { display: block; }
+}
+
+.belbin-quiz--question-5 {
+    li:nth-child(-n+5) { background: #00b3e3; }
+    .belbin-quiz-progress::after { width: 64.35%; }
+    .question-5 { display: block; }
+}
+
+.belbin-quiz--question-6 {
+    li:nth-child(-n+6) { background: #00b3e3; }
+    .belbin-quiz-progress::after { width: 78.65%; }
+    .question-6 { display: block; }
+}
+
+.belbin-quiz--question-7 {
+    li:nth-child(-n+7) { background: #00b3e3; }
+    .belbin-quiz-progress::after { width: 92.95%; }
+    .question-7 { display: block; }
+}
+
+.belbin-chosen-role { text-align: center;
+    img { max-width: 100%; display: block; margin: 0 auto 2rem; }
+}
+.belbin-chosen-role-title { text-transform: uppercase; font-family: 'Nutmeg-UltraBlack'; font-size: 3rem; line-height: 3rem; margin: 0 0 2rem; }
+@media only screen and (min-width: $md-width) {
+    .belbin-chosen-role-title { font-size: 4.8rem; line-height: 4.8rem; }    
+}
+.belbin-chosen-role-description { margin: 0 0 2rem; }
+.belbin-chosen-role-traits { background: #ededed; padding: 2rem 2rem 1rem; text-align: left; 
+    h3 { font-size: 1.8rem; font-weight: 500; margin: 0; }
+}
+
+.belbin-quiz-final-screen { display: none; 
+    &-title { font-size: 1.8rem; font-weight: 500; margin: 2rem 0; text-align: center; }
+}
+.belbin-quiz-final-screen.visible { display: block; }
+
+@media only screen and (min-width: $md-width) {
+    .belbin-quiz-other-roles { display: flex; margin: 0 -1rem; 
+        .belbin-chosen-role { width: 50%; padding: 1rem; }
+        .belbin-chosen-role-title { font-size: 2.4rem; line-height: 2.4rem; }
+    }
+}
+
+.hidden-content { display: none; }
+
+.select-role-result { padding: 2rem; background: #ededed; margin: 0 0 1rem;
+    p { margin: 0; }
+}
+
+.select-role-message { margin: 0 0 2rem; background: #221f1f; color: #fff; text-align: center; padding: 2rem; }

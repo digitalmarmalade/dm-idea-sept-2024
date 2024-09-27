@@ -1,0 +1,26 @@
+/* CSS Document */
+
+//Reset
+@import "framework/_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "framework/_typography.scss";
+@import "framework/_helpers.scss";
+
+@import "components/_steps.scss";
+@import "components/_buttons.scss";
+@import "components/_homepage.scss";
+@import "components/_layout.scss";
+@import "components/_layout-success.scss";
+@import "components/_lockup.scss";
+@import "components/_tips.scss";
+@import "components/_step-1.scss";
+@import "components/_step-2-task.scss";
+@import "components/_step-3.scss";
+@import "components/_step-4.scss";
+@import "components/_step-5.scss";
+@import "components/_step-6.scss";
+@import "components/_success.scss";
+@import "components/_tooltips.scss";

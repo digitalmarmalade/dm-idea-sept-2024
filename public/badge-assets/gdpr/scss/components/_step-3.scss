@@ -1,0 +1,63 @@
+.step-3 { background-color: #268AF2; background-image: radial-gradient(550.61px at 50% 6.78%, #F098D9 0%, #268AF2 100%); background-repeat: no-repeat ; color: #fff;
+    .page-header {  }
+    .page-header-image { max-width: 40rem; width: 90%; margin: 0 auto 3rem; }
+    .progress li { background: #268AF2; }
+    .page-header {
+        &:before { border-top-color: #F098D9; }
+        &:after { border-top-color: #268AF2; opacity: 1; }
+    }
+    .page-header-triangles {
+        &:before { border-top-color: #F098D9; }
+        &:after { border-top-color: #268AF2; }
+    }
+    .success-row { background: linear-gradient(to bottom, #2584e6 0%,#f098d9 100%); 
+        &:before { border-top-color: #F098D9; }
+        &:after { border-top-color: #268AF2; opacity: .1; }
+    }
+    .animation-holder { max-width: 60rem; padding: 0 2rem; margin: 0 auto; position: relative; z-index: 10;
+        canvas { width: 90% !important; height: auto !important; }
+    }
+    .bottom-slant-2 {
+        &:before { border-bottom-color: #F098D9; } 
+        &:after { border-bottom-color: #268AF2; opacity: .1; } 
+    }
+}
+.ico,
+.gdpr-role { padding: 2rem; margin: 2rem 0; background: rgba(0,10,186,.1); border-radius: .5rem; position: relative; text-align: left;
+    img  {display: block; margin: 0 auto 2rem; }
+    h2 { font-weight: 400; font-size: 2.2rem; margin: 0 0 1rem; color: #fff; }
+    p { font-size: 1.6rem; line-height: 1.4; }
+}
+.ico { padding: 4rem 2rem; margin: 0 0 6rem; }
+.gdpr-role + h2 { margin-top: 6rem; }
+
+@media only screen and (min-width: 768px) {
+    .gdpr-role { padding: 4rem 2rem 4rem 20rem;
+        img { position: absolute; left: 2rem; top: 4rem; }
+        .officer { left: 4rem; }
+    }     
+}
+
+.roles-quiz-row { background: linear-gradient(to bottom, #f098d9 0%,#2584e6 100%); padding: 10rem 0 0; }
+
+.role-question { padding: 2rem; margin: 0 0 2rem; border-radius: .5rem; background: rgba(0,10,186,.1); }
+.role-question-description { font-family: Georgia, sans-serif; font-size: 2rem; font-weight: 400; line-height: 1.4; padding: 3rem 2rem; margin: 0 0 1.5rem; background: rgba(0,0,0,.1); border-radius: .3rem; }
+
+.role-question-options { list-style: none; margin: 0 -.5rem; padding: 0; display: flex; flex-wrap: wrap;
+    li { margin: 0 .5rem 1rem; width: calc(50% - 1rem); background: rgba(0,10,186,.1); border-radius: .3rem; 
+        &.selected { background: rgba(255,255,255,.2); }
+    }
+    a {  text-align: center; text-decoration: none; padding: 12rem 0 2rem; height: 18rem; display: block; line-height: 1.2; }
+    img { width: 10rem; height: auto; position: absolute; bottom: 8rem; left: 50%; transform: translateX(-50%); }
+    .officer { height: 10rem; width: auto; }
+}
+
+@media only screen and (min-width: 768px) {
+    .role-question-options {
+        li { width: calc(33.3333% - 1rem); }
+    } 
+}
+
+ .role-question { 
+     .question-answer h3 { color: #fff; text-align: center; }
+  }

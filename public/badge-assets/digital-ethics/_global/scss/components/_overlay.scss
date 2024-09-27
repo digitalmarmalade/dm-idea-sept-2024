@@ -1,0 +1,24 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow-y: auto;
+    .container {
+        padding: var(--space);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    a {
+        display: flex;
+        align-self: flex-end;
+
+    }
+}

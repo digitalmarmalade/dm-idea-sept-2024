@@ -1,0 +1,69 @@
+/*! Forms */
+
+$form-horizontal-label-width: 200px;
+
+label { display: block; margin: 0 0 3px; }
+
+.lg-input { font-size: 2em; }
+.sm-input { font-size: 1.1em; }
+
+/*--
+FORM INLINE
+--*/
+
+.form-inline p { display: inline-block; margin: 0 10px 0 0; }
+.form-inline label { display: inline-block; padding: 0 3px 0 0; }
+.form-inline input { width: auto !important; }
+
+/*--
+FORM HORIZONTAL
+--*/
+
+.form-horizontal label { display: inline-block; width: $form-horizontal-label-width; text-align: right; padding-right: 10px; }
+.form-horizontal .checkbox label,
+.form-horizontal .radio label { text-align: left; }
+.form-horizontal .checkbox,
+.form-horizontal .radio { padding-left: $form-horizontal-label-width + 4; }
+
+/*--
+INPUTS
+--*/
+
+input, textarea, select { -moz-appearance: none; -webkit-appearance: none; }
+textarea { height: 100px; resize:vertical; }
+select { position: relative; background: #fff url(../img/select-arrow.png) no-repeat center right 10px; }
+
+
+.standard-form-control { border: $form-input-border; padding: $form-input-padding; border-radius: $form-input-border-radius; background: $form-input-background-colour; transition: $form-input-transition; box-shadow: inset 0 1px 2px rgba(0,0,0,0.2); width: 250px; outline-width: 0; }
+select.standard-form-control  { background: #fff url(../img/select-arrow.png) no-repeat center right 10px; }
+
+
+input + label { display: inline-block; }
+
+.help-block,
+.help-inline { color: $form-help-colour; }
+
+.help-block { display: block; padding: 4px 0 0; }
+.help-inline { display: inline-block; margin: 0 0 0 10px; }
+
+.form-action-right { text-align: right; }
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked { position: absolute; left: -9999px; }
+[type="checkbox"]:not(:checked) + label, [type="checkbox"]:checked + label { position: relative; padding-left: 25px; cursor: pointer; }
+[type="checkbox"]:not(:checked) + label:before, [type="checkbox"]:checked + label:before { content: ''; position: absolute; left:0; top: 0; width: 20px; height: 20px; border: $form-input-border; background: $form-input-background-colour; border-radius: $form-input-border-radius; transition: $form-input-transition; }
+[type="checkbox"]:not(:checked) + label:after, [type="checkbox"]:checked + label:after { content: ''; position: absolute; top: 4px; left: 4px; width: 12px; height: 12px; text-align: center; color: $checkbox-on-colour; transition: all .2s; display: block; background: $checkbox-on-colour; border-radius: $form-input-border-radius; }
+[type="checkbox"]:not(:checked) + label:after { opacity: 0; transform: scale(0); }
+[type="checkbox"]:checked + label:after { opacity: 1; transform: scale(1); }
+[type="checkbox"]:checked:focus + label:before, [type="checkbox"]:not(:checked):focus + label:before { outline: none; }
+
+[type="radio"] + label { display: inline-block; }
+[type="radio"]:not(:checked), [type="radio"]:checked { position: absolute; left: -9999px; }
+[type="radio"]:not(:checked) + label, [type="radio"]:checked + label { position: relative; padding-left: 25px; cursor: pointer; }
+[type="radio"]:not(:checked) + label:before, [type="radio"]:checked + label:before { content: ''; position: absolute; left:0; top: 0; width: 20px; height: 20px; border: $form-input-border; background: $form-input-background-colour; border-radius: 50%; transition: $form-input-transition; }
+[type="radio"]:not(:checked) + label:after, [type="radio"]:checked + label:after { content: ''; position: absolute; top: 5px; left: 5px; width: 10px; height: 10px; border-radius: 50%; background: $radio-on-colour; transition: all .2s; }
+[type="radio"]:not(:checked) + label:after { opacity: 0; transform: scale(0); }
+[type="radio"]:checked + label:after { opacity: 1; transform: scale(1); }
+[type="radio"]:checked:focus + label:before, [type="radio"]:not(:checked):focus + label:before { outline: none; }
+
+.radio-inline p,
+.checkbox-inline p { display: inline-block; margin-right: 10px; }

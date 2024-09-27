@@ -1,0 +1,25 @@
+.task-4 {
+  .question-box {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .question-box div{
+    width: calc(75% - 40px);
+  }
+
+  .question-box .question-number {
+    width: 25%;
+    margin-right: 40px;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .question-number {
+    p {
+      margin-top: -19%;
+    }
+  }
+}

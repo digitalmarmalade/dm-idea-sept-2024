@@ -1,0 +1,35 @@
+.list--innovations {
+    display: flex;
+    gap: var(--space-sm);
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $md-width) {
+        flex-direction: row;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: .24rem solid var(--black);
+        background-color: var(--red);
+        text-transform: uppercase;
+        letter-spacing: .056rem;
+        width: 196px;
+        height: 196px;
+        border-radius: 196px;
+        font-size: var(--font-size-md);
+        padding: var(--space-lg);
+        font-family: var(--ranchers);
+        &:nth-child(2) {
+            background-color: var(--green);
+        }
+        &:nth-child(3) {
+            background-color: var(--blue);
+        }
+        &:nth-child(4) {
+            background-color: var(--white);
+        }      
+
+    }
+}

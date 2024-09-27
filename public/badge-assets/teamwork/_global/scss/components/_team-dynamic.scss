@@ -1,0 +1,19 @@
+/*! Team Dynamic */
+
+.team-dynamic { border: 1px solid #ccc; margin: 0 0 2rem; padding: 2rem; position: relative; background: #fff; }
+.team-dynamic-image { max-width: 100%; margin: 0 0 2rem; }
+.big-number { position: absolute; left: 2rem; top: 2rem; font-size: 6rem; color: rgba(0,0,0,.1);  font-family: 'Nutmeg-UltraBlack'; line-height: 6rem; }
+.team-dynamic-title { font-size: 1.8rem; margin: 0 0 1rem; font-weight: 500;}
+
+@media only screen and (min-width: $md-width) {
+    
+    .team-dynamic { padding: 4rem 4rem 4rem 50%; min-height: 34rem; }
+    .team-dynamic-image { max-width: calc(50% - 4rem); margin: 0; position: absolute; left: 2rem; top: 2rem; }
+    .big-number { font-size: 15rem; line-height: 15rem; left: calc(50% - 2rem); }
+    
+        .team-dynamic--text-left { padding: 4rem 50% 4rem 4rem; 
+            .team-dynamic-image { left: auto; right: 2rem; }
+            .big-number { left: 2rem; }
+        }
+    
+}

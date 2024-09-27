@@ -1,0 +1,139 @@
+.ide {
+  margin-bottom: $space-x-small;
+}
+
+.ide__top {
+  background-color: $cobalt-1;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0 100%);
+  color: $blue-6;
+  font-size: $r-small;
+  font-weight: bold;
+  margin-bottom: -1px;
+  padding: $space-xxx-small $space-small;
+  width: fit-content;
+}
+
+.ide__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.ide-toolbar {
+  background-color: $cobalt-1;
+  display: flex;
+  padding: $space-xxxx-small $space-xxxx-small 0 $space-xxxx-small;
+}
+
+.ide-toolbar__run {
+  background-image: $gradient--purple-light;
+  cursor: pointer;
+  flex-shrink: 0;
+  height: 3.6rem;
+  margin-right: $space-xxxx-small;
+  width: 3.6rem;
+  svg {
+    transition: $transition;
+  }
+  &:hover {
+    svg {
+      transform: scale(.75);
+    }
+  }
+}
+
+.ide-toolbar__placeholder {
+  background-image: $gradient--purple-light;
+  border: 0;
+  border-radius: 0;
+  color: $white;
+  flex-grow: 1;
+  height: 3.6rem;
+}
+
+.ide-content-container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.ide-input-container {
+  background-color: $cobalt-1;
+  padding: $space-xxxx-small;
+  height: 100%;
+}
+
+.ide-input {
+  background-image: $gradient--purple-light;
+  max-height: 50rem;
+  min-height: 15rem;
+  padding: $space-small;
+  overflow-y: auto;
+  height: 100%;
+  span {
+      background: transparent !important;
+  }
+  input {
+    border: none;
+    border-bottom: .1rem dashed $red;
+    text-align: left;
+    width: auto;
+    min-width: 6ch;
+    height: auto;
+    padding: 0 $space-xxxx-small;
+    transition: $transition;
+    &:hover{
+      background-color: rgba(255,255,255,.25);
+      border-color: white;
+      color: white;
+    }
+    &:active, &:focus  {
+      background-color: $yellow;
+      color: $blue-dark;
+      border-color: white;
+    }
+
+    &.success {
+      color: $green;
+      background-color: $green-pastel;
+      border: none;
+    }
+    &.fail {
+      color: $red;
+      background-color: $red-pastel;
+    }
+  }
+
+}
+
+.ide-output-container {
+  background-color: $green;
+  border-bottom-left-radius: 0.4rem;;
+  border-bottom-right-radius: 0.4rem;;
+  padding: $space-xxxx-small;
+  position: relative;
+
+}
+
+.ide-output-title {
+  background-color: $green;
+  color: $blue-6;
+  display: block;
+  font-family: $roboto;
+  font-size: $r-small;
+  font-weight: bold;
+  height: 2.5rem;
+  left: calc(0 + #{$space-xxxx-small});
+  padding: 0 $space-xxx-small;
+  position: absolute;
+  top: calc(0 + #{$space-xxxx-small});
+}
+
+.ide-output {
+  background-image: $gradient--purple-dark;
+  max-height: 25rem;
+  min-height: 15rem;
+  overflow-y: auto;
+  padding: calc(2.5rem + #{$space-small}) $space-small $space-small $space-small;
+}

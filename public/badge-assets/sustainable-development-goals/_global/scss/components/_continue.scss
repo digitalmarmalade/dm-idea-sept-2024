@@ -1,0 +1,26 @@
+/*-----
+CONTINUE BAR
+-----*/
+
+.continue-bar { 
+	position: relative;
+	background: url('../img/continue/continue-illustration.png') no-repeat top right;
+}
+
+.continue-bg { height:18em; width: 100%; background-color: #FAEDDA; padding: 0 3rem; z-index: -1; position: relative; }
+
+.continue-text { position:absolute; left:0; right:0; bottom: 6rem; padding:0 3rem; }
+
+.continue-bar { text-align:center; padding: 22% 0 0; background-size: 160%; }
+
+@media(min-width: $md-width){
+	.continue-bar { padding: 21.5% 0 0;  }
+}
+
+@media(min-width: $lg-width){
+	.continue-bar { padding: 18.7% 0 0; background-size: auto; }
+}
+
+@media(min-width: 1366px){
+	.continue-bar { padding: 18.5rem 0 0; }
+}

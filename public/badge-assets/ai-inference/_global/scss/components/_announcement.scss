@@ -1,0 +1,18 @@
+.announcement {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto $space-large auto;
+  max-width: calc(70rem + calc(#{space-small} * 2));
+  padding: 0 $space-small;
+  border: 2px solid red;
+
+  & .announcement__icon {
+    border: 2px solid green;
+    transform: scale(0.5);
+  }
+
+  & .announcement__content {
+    flex: 1;
+  }
+}

@@ -1,0 +1,14 @@
+input {
+  background-color: transparent;
+  border: 0.1rem solid $yellow;
+  border-radius: 0.2rem;
+  color: $yellow;
+  padding: $space-xxx-small;
+  text-align: center;
+
+  &:hover, &:focus {
+      background: $yellow;
+      color: $blue-dark;
+    }
+  }
+

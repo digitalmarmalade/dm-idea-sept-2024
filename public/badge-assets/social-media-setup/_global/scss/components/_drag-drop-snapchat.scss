@@ -1,0 +1,208 @@
+.drop-wrapper-snapchat .drop-wrapper {
+  width: 336px;
+  margin: 30px auto;
+  float: left;
+}
+
+.drop-wrapper-snapchat  .droppable-zone {
+  width: 140px;
+  float: left;
+  font-size: .725em;
+  margin: 0 0 0 0;
+  padding: 0 0 40px;
+}
+
+.drop-wrapper-snapchat .dropzone {
+  height: 140px;
+  background-size: 100%;
+  width: 150px;
+  border: 4px solid $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin: 0 0 20px;
+  padding: 0 5px;
+  background-color: $white;
+   p {
+     margin: 0 0 5px;
+   }
+   span {
+     font-family: 'Roboto Slab', serif;
+
+     display: block;
+     margin: 0 0 5px;
+   }
+   .after-drop {
+     img {
+      width: 20px;
+      height: auto;
+     }
+     display: none;
+    font-size: .75em;
+   }
+   .before-drop {
+    width: 100%;
+    display: block;
+    font-size: .8em;
+   }
+}
+.drop-wrapper-snapchat .drag-options {
+  width: 160px;
+  float: left;
+  font-size: .9em;
+  margin-right: 10px;
+}
+
+.drop-wrapper-snapchat .drag-option {
+  background-color: $white;
+  border: 4px solid $black;
+  height: 140px;
+  margin: 0 0 18px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+  transition: all .3s;
+  cursor: pointer;
+  font-size: 0.6em;
+  text-align: center;
+  margin: 0 0 20px 0;
+  width: calc(100% - 16px);
+  p {
+    margin: 0;
+  }
+  img {
+    max-width: 60%;
+  }
+}
+
+.drop-wrapper-snapchat li.ui-draggable-dragging {
+  background-color: $white;
+  color: $black;
+  border: 4px solid $black;
+
+}
+
+.drop-wrapper-snapchat .drag-option:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (min-width: $md-width) {
+
+  .drop-wrapper-snapchat{
+    width: 336px;
+    margin: 30px auto;
+    float: none;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+
+  .drop-wrapper-snapchat {
+    width: 800px;
+    margin: 40px auto 80px auto;
+    position: relative;
+  }
+  .drop-wrapper-snapchat .droppable-zone {
+      width: 100%;
+      font-size: .725em;
+      margin: 0 0 20px;
+      padding: 0;
+      float: none;
+      // width: calc(100% - 40px);
+    }
+    .drop-wrapper-snapchat .dropzone {
+      width: 580px;
+      height: 60px;
+      display: inline-flex;
+      padding: 20px;
+      vertical-align: top;
+      font-size: 1.15em;
+      float:right;
+      text-align: left;
+      position: relative;
+      span {
+        font-size: 125%;
+      }
+    }
+
+    .drop-wrapper-snapchat .drag-options {
+      width: 100px;
+      float: left;
+      height: 100px;
+    }
+
+    .drop-wrapper-snapchat .drag-option {
+      vertical-align: top;
+      width: 100px;
+      display: inline-flex;
+      background-color: $white;
+      height:100px;
+      color: $white;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 3;
+      p {
+        margin: 0;
+        font-size: 1.25em;
+      }
+      img {
+        max-width: 80px;
+      }
+    }
+
+    .drop-wrapper-snapchat .dropzone .before-drop {
+      span  {
+      width:100px;
+      height: 100px;
+      padding: 20px;
+      border: 4px solid $black;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      background-color: $white;
+    }
+      p {
+        font-size: 1.25em;
+        width: calc(100% - 140px);
+        padding-left: 140px;
+      }
+    }
+
+    .drop-wrapper-snapchat .dropzone .after-drop {
+      img {
+       width: 80px;
+       height: auto;
+       padding: 30px;
+       border: 4px solid $black;
+       position: absolute;
+       top: -4px;
+       left: -4px;
+       background-color: $white;
+      }
+      display: none;
+     font-size: 1em;
+     p {
+       width: calc(100% - 140px);
+       padding: 0 0 0 140px;
+     }
+    }
+}
+
+@media only screen and (min-width: $xl-width) {
+
+  .drop-wrapper-snapchat .dropzone, .drop-wrapper-snapchat .drag-option {
+
+    height: 100px;
+  }
+}
+
+.nice-one {
+  width: 100%;
+  clear:both;
+  padding: 80px 0 0;
+}

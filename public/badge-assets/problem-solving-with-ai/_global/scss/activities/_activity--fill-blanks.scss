@@ -1,0 +1,148 @@
+.activity--fill-blanks {
+
+  fieldset {
+    background: white;
+    padding: $padding;
+    margin: .8em auto 1.6em;
+    border: none;
+    text-align: left;
+    border-radius: $border-radius;
+    p {
+      transition: $transition;
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (min-width: $md-width) {
+.activity--fill-blanks {
+    fieldset {
+      padding: $padding-lg;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+
+/* The container must be positioned relative: */
+.custom-select {
+ position: relative;
+ width: auto;
+ display: inline-flex;
+ align-items: center;
+ margin: .4rem .1rem;
+ flex-direction: column;
+ &.selected {
+   opacity: .25;
+   box-shadow: none;
+ }
+
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: $blue-light;
+  color: $blue-dark;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  white-space: nowrap;
+  min-width: 180px;
+
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+ position: absolute;
+ content: "";
+ top: 50%;
+ margin-top: -3px;
+ right: 10px;
+ width: 0;
+ height: 0;
+ border: 6px solid transparent;
+ border-color: $blue-dark transparent transparent transparent;
+ transition: $transition;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+ border-color: transparent transparent $blue-dark transparent;
+ top: 50%;
+ transform: translateY(-50%);
+}
+
+/* style the items (options), including the selected item: */
+.select-items span,.select-selected {
+  color: $blue-dark;
+  padding: .2rem 1.6rem .2rem .8rem;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  transition: $transition;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: $white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border-radius: $border-radius;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: $box-shadow;
+  margin-top: -.2rem;
+  span {
+    cursor: pointer;
+    border-bottom: .1rem solid $blue-dark;
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+ display: none;
+}
+
+.select-items span:hover, .same-as-selected {
+  background-color: $blue-light;
+}
+
+.activity--fill-blanks-history-computer-chips {
+  .select-selected {
+    min-width: 160px;
+  }
+}
+.activity--fill-blanks-what-is-ai {
+  .select-selected {
+    min-width: 160px;
+  }
+}
+
+  @media only screen and (min-width: $lg-width) {
+    .select-selected {
+      min-width: 200px;
+    }
+    .activity--fill-blanks-what-is-ai {
+      .select-selected {
+        min-width: 200px;
+      }
+    }
+    .activity--fill-blanks-history-computer-chips {
+      .select-selected {
+        min-width: 180px;
+      }
+    }
+  }

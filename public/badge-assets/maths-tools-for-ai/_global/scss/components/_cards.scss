@@ -1,0 +1,122 @@
+
+.cards {
+  .card {
+    background: white;
+    color: $blue-dark;
+    padding: 2.4em 1.6em;
+    margin: .4em 0;
+    width: 100%;
+    border-radius: $border-radius;
+    &:last-child {
+      margin: .4em 0;
+    }
+
+  }
+
+  .card__icon {
+    margin: 0 0 1.6em;
+  }
+
+  .card__title {
+    margin: 0 0 .4em;
+  }
+  
+}
+
+.cards--deployment {
+  .card__title {
+    text-transform: none;
+    font-size: $bodycopy;
+  }
+}
+
+@media only screen and (min-width: $sm-width) {
+  .cards {
+    .card {
+      max-width: calc(50% - .8em);
+      margin: .4em;
+      &:last-child {
+        margin: .4em;
+      }
+    }
+  }
+}
+
+.cards--with-examples {
+  margin: 0 0 -1.6em ;
+
+  h2 {
+    margin: 0 0 .4em;
+  }
+  .card {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    color: $blue-dark;
+
+    margin: .8em 0;
+    width: 100%;
+    &:last-child {
+      margin: .8em 0;
+    }
+  }
+  .card__top {
+    background-color: white;
+    border-radius: $border-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 2.4em 1.6em 1.6em;
+    .tooltipster {
+      border-bottom: .1rem dotted $blue-dark;
+    }
+  
+  }
+  .card__bottom {
+    color: white;
+    background-color: rgba(255,255,255,.25);
+    border-radius: $border-radius;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 1.6em .4em 2.4em;
+    span {
+      font-size: 85%;
+      display: inline-flex;
+      text-transform: uppercase;
+      letter-spacing: .2rem;
+      margin: 0 0 .8em;
+    }
+    em {
+      font-family: $roboto, sans-serif;
+    }
+  }
+  .list--figures {
+    margin: 0 0 .8em;
+    li {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: $blue-dark;
+      background-color: $blue-light;
+      margin: 0 .1em;
+    }
+  }
+}
+
+@media only screen and (min-width: $sm-width) {
+  .cards--with-examples {
+    margin: 0;
+    text-align: center;
+    .card {
+      margin: 0 0 1.6em;
+    }
+    .card__bottom {
+      padding: 1.6em 1.6em 2.4em;
+    }
+    
+    .list--figures {
+      li {
+        margin: 0 .2em;
+      }
+    }
+  }
+}

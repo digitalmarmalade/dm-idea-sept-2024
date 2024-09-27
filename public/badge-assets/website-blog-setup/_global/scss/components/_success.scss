@@ -1,0 +1,22 @@
+
+
+.success h1 {
+  margin: 0;
+  padding: 100px 0 40px 0;
+}
+
+.success p  {
+  color: #FFF;
+}
+
+.success .btn {
+  display: block;
+  height: auto;
+  line-height: 1.4;
+  max-width: 300px;
+  padding: 10px;
+  margin: 0 auto;
+  span {
+    text-transform: lowercase;
+  }
+}

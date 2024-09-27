@@ -1,0 +1,167 @@
+.activity--smart-home {
+  .cols {
+    width: 100%;
+  }
+  h2 {
+    color: $blue-dark;
+  }
+  padding: 2.4em 0;
+}
+
+.list--smart-home {
+  justify-content: flex-start;
+  li {
+    margin: $margin;
+  }
+  .btn {
+    width: auto;
+    min-width: auto;
+    padding: $padding;
+  }
+
+  .selected {
+    opacity: .25;
+    box-shadow: none;
+  }
+}
+
+
+.overlay--smart-home-triggers {
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background-color:rgba(5,30,88,.95);
+  height: auto;
+  z-index: 1;
+  min-height: 100vh;
+  ul {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    max-height: calc(100vh - 5rem);
+  }
+  .overlay__control {
+    position: fixed;
+    right: 1.2em;
+    &.close {
+      top: 1.2em;
+    }
+    &.scroll {
+      bottom: 1.2em;
+    }
+  }
+}
+
+
+.holder--smart-home {
+  width: 160%;
+  max-width: 900px;
+  height: auto;
+  margin: -1.6em 0 1.6rem 4.8rem;
+
+}
+
+.display-desktop {
+  display: none;
+}
+
+#smart-home {
+  display: flex;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  .smart-item  {
+    display: none;
+    transform-origin: center; /* or transform-origin: 50% */
+    transform-box: fill-box;
+      &.active {
+        display: block;
+      }
+  }
+
+  .item--highlighted {
+    transform-origin: center; /* or transform-origin: 50% */
+    transform-box: fill-box;
+  }
+}
+
+
+.btn-add-smart-items {
+  margin: 0;
+}
+
+@media only screen and (min-width: $md-width) {
+  .btn {
+    margin: $margin;
+  }
+
+  .list--smart-home {
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: $margin;
+    }
+  }
+
+  .overlay--smart-home-triggers {
+    align-items: center;
+    justify-content: center;
+    .overlay__control {
+      &.scroll {
+        display: none;
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .display-desktop {
+    display: flex;
+  }
+
+  .btn-add-smart-items {
+    display: none;
+  }
+
+  .list--smart-home {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 -.2em;
+    width: 87.5%;
+    li {
+      margin: $margin;
+      font-size: 60%;
+    }
+  }
+
+  .activity--smart-home {
+    .holder--activity {
+      position: relative;
+      width: 100%;
+      padding: 2.4rem 0;
+
+      > div {
+        width: 50%;
+      }
+    }
+
+    .btn--continue {
+      margin: 0;
+      width: auto;
+      min-width: auto;
+      position: absolute;
+      right: 0;
+      bottom: 2.4em;
+      width: 8rem;
+    }
+  }
+
+
+  .holder--smart-home {
+    width: 145%;
+    margin: -7.2rem 0 0 4rem;
+  }
+
+}

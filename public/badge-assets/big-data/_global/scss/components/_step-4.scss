@@ -1,0 +1,9 @@
+.task-4 { overflow: hidden; }
+
+@media only screen and (min-width: $md-width){
+  .task-4 .step-copy-wrapper { width: 70%; } 
+}
+
+@media only screen and (min-width: $lg-width){
+  .task-4 .step-copy-wrapper { width: 100%; } 
+}

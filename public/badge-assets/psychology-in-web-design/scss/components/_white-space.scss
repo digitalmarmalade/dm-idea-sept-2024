@@ -1,0 +1,17 @@
+.white-space-holder { padding: 4rem 0 0; 
+    .tint-section { margin-top: 5rem; }
+}
+
+div.full-width-image { background: #fff; text-align: center; margin: 0 0 3rem; }
+div.full-width-image--with-padding { padding: 2rem; 
+    img { margin: 0 auto; display: block; max-width: 100%; height: auto; }
+}
+.white-space-bad { position: relative; margin: 0 auto; display: inline-block;
+    a { position: absolute; left: 7%; top: 63%; width: 22%; height: 12%; background: transparent; opacity: .3; display: block; }
+    img { max-width: 100%; height: auto;}
+}
+
+.white-space-good { position: relative; margin: 0 auto; display: inline-block; 
+    a { position: absolute; left: 55%; top: 62.5%; width: 22%; height: 10%; background: transparent; opacity: .3; display: block; }
+    img { max-width: 100%; height: auto;}
+}

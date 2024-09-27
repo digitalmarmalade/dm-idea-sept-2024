@@ -1,0 +1,55 @@
+.inference-animation {
+
+  & .inference-animation__top {
+    display: flex;
+    flex-direction: column;
+    gap: $space-medium;
+    justify-content: space-between;
+    margin-bottom: $space-medium;
+
+    & .feedback {
+      margin: 0;
+    }
+
+    & .inference-animation__bubble {
+      
+      @media (min-width: $md-width) {
+        width: calc(70% - #{$space-medium});
+      }
+    }
+
+    & .inference-animation__list {
+      align-self: flex-start;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media (min-width: $md-width) {
+        flex-direction: column;
+        width: calc(30% - #{$space-medium});
+      }
+
+      & .inference-animation__list-item {
+        display: flex;
+        justify-content: space-between;
+
+        & .inference-animation__list-item__p {
+          margin-left: $space-small;
+
+          @media (min-width: $md-width) {
+            margin-left: auto;
+          }
+        }
+      }
+
+      & .inference-animation__list-item--active {
+        background-color: $green;
+        box-shadow: 0 0 0.75em 0.333em rgb(255 255 255 / 0.333);
+        color: $white;
+      }
+    }
+
+    @media (min-width: $md-width) {
+      flex-direction: row;
+    }
+  }
+}

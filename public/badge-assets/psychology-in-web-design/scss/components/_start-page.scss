@@ -1,0 +1,46 @@
+.start-page { position: relative; left: 0; width: 100%; top: 0; height: 100%; overflow: hidden; }
+
+.start-page__title { background: $primary-colour; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff; margin: 0; font-size: 3.2rem; text-align: center; max-width: 80%; border: .1rem solid #FEFBF7; padding: 2.2rem 3rem 2rem; display: table; z-index: 15; letter-spacing: .1rem; line-height: 3.6rem; }
+
+@media only screen and (min-width: 768px) {
+    .start-page__title { line-height: 3rem; }    
+}
+
+.start-page__cta { position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%); margin: 0; z-index: 15; width: 18rem; }
+@media only screen and (min-height: 700px) {
+    .start-page__cta { top: 50%; bottom: auto; margin: 22rem 0 0; }  
+}
+
+.start-page__triangle1 { width: 0; height: 0; border-style: solid; border-width: 0 172px 172px 172px; border-color: transparent transparent #F7EFE4 transparent; opacity: .5; position: absolute; left: 13.5rem; bottom: 0; }
+
+.start-page__triangle2 { width: 0; height: 0; border-style: solid; border-width: 234px 234px 0 234px; border-color: #F7EFE4 transparent transparent transparent; opacity: .5; position: absolute; right: 11.2rem; top: 0; }
+
+.start-page__triangle3 { width: 0; height: 0; border-style: solid; border-width: 0 140px 140px 140px; border-color: transparent transparent #F7EFE4 transparent; opacity: .5; position: absolute; left: 50%; top: 50%; margin: -24rem 0 0 -28rem; }
+
+.start-page__circle { width: 20rem; height: 20rem; background: #F7EFE4; opacity: .8; border-radius: 50%; position: absolute; left: 50%; top: 50%; z-index: 11; margin: 2rem 0 0 8rem; }
+
+.lines--start1 { left: -10rem; bottom: 15rem; }
+.lines--start2 { right: -10rem; top: 15rem; }
+
+.lines--start3,
+.lines--start4 { left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-45deg) scale(.75); }
+.lines--start3 { margin-left: -20rem; }
+.lines--start4 { margin-left: 20rem; }
+
+.start__brain { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); max-width: 80%; height: auto; width: 33rem; }
+
+.squares--start1 { left: 50%; top: 50%; transform: translate(-50%,-50%); margin: -25rem 0 0 -35rem; }
+.squares--start2 { left: 50%; top: 50%; transform: translate(-50%,-50%) scale(.6); margin: 20rem 0 0 30rem; }
+
+.barbell--start1 { left: 50%; top: 50%; margin: -15rem 0 0 8rem; animation: barbellAnim 6s linear 5s infinite forwards; }
+.barbell--start2 { left: 50%; top: 50%; margin: 25rem 0 0 -8rem; animation: barbellAnim 6s linear 7s infinite forwards; }
+.barbell--start3 { right: 17.1rem; bottom: 21rem; animation: barbellAnim 6s linear 4s infinite forwards; }
+.barbell--start4 { left: 7.2rem; top: 12.5rem; animation: barbellAnim 6s linear 12s infinite forwards; }
+.barbell--start5 { left: 3.4rem; top: 20.6rem; animation: barbellAnim 6s linear 9s infinite forwards; }
+.barbell--start6 { left: 50%; top: 50%; margin: -5rem 0 0 12rem; animation: barbellAnim 6s linear 3.5s infinite forwards; }
+.barbell--start7 { left: 50%; top: 50%; margin: 15rem 0 0 -20rem; animation: barbellAnim 6.5s linear 11s infinite forwards; }
+
+.fill-square--start1 { margin: 13rem 0 0 -13rem; animation: squareAnim 6.5s linear 2s infinite forwards;}
+.fill-square--start2 { margin: 16rem 0 0 -16rem; animation: squareAnim 5.5s linear 4s infinite forwards;}
+.fill-square--start3 { margin: -16rem 0 0 11rem; animation: squareAnim 6s linear 7s infinite forwards;}
+.fill-square--start4 { margin: -11rem 0 0 13rem; animation: squareAnim 5s linear 6s infinite forwards;}

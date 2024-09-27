@@ -1,0 +1,60 @@
+.progress {
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  top: $space-medium;
+  transform: translateX(-50%);
+  width: 12.5rem;
+  z-index: 1;
+
+  & .progress__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 25%;
+
+    &::after {
+      content: '';
+      border-bottom: 0.1em solid #fff;
+      left: 60%;
+      position: absolute;
+      top: 0.5rem;
+      width: 68%;
+      z-index: 1;
+
+      @media (min-width: $md-width) {
+        left: 56%;
+        width: 81%;
+      }
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+  }
+
+  & .progress__counter {
+    border: 0.1em solid $white;
+    border-radius: 50%;
+    display: block;
+    height: 1.2rem;
+    position: relative;
+    width: 1.2rem;
+    z-index: 2;
+  }
+
+  & .progress__counter--current {
+    background-color: $white;
+    border-color: $white;
+  }
+
+  & .progress__counter--completed {
+    background-color: $white;
+  }
+
+  @media (min-width: $md-width) {
+    width: 25rem;
+  }
+}

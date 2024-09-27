@@ -1,0 +1,11 @@
+.success-box {
+  background-color: $green-success;
+  background-image: url('/badge-assets/fake-news/svg/icon--success.svg');
+  background-position: 5% $space-xx-small;
+  background-repeat: no-repeat;
+  border-radius: $x-small-border-radius;
+  color: $white;
+  margin-top: $space-x-small;
+  padding: $space-xx-small $space-xx-small $space-xx-small $space-xx-large;
+  position: relative;
+}

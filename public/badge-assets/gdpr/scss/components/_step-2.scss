@@ -1,0 +1,88 @@
+.step-2 { background-color: #000BBA; background-image: radial-gradient(550.61px at 50% 6.78%, #009CEF 0%, #000BBA 100%); background-repeat: no-repeat ; color: #fff; counter-reset: eu-steps;
+    .page-header {  }
+    .page-header-image { max-width: 50rem; margin: 0 auto; padding: 15rem 0 4rem; width: 90%; }
+    .progress { position: absolute; z-index: 11; width: 100%;}
+    .progress li { background: #000ABA; }
+    .page-header {
+        &:before { border-top-color: #000BBA; }
+    }
+    .page-header-triangles {
+        &:before { border-top-color: #000BBA; }
+    }
+    .success-row { background: linear-gradient(to bottom, #000BBA 0%,#009CEF 100%); }
+    .top-slant-1 {
+        &:before { border-top-color: #002fc7; } 
+        &:after { border-top-color: #000BBA; } 
+    }
+    .bottom-slant-2 {
+        &:before { border-bottom-color: #002fc7; } 
+        &:after { border-bottom-color: #000BBA; } 
+    }
+}
+
+.subject-to-gdpr { background: rgba(255,255,255,.1); border-radius: .5rem; margin: 4rem auto 3rem; max-width: 102rem; 
+    h2 { font-size: 2rem; font-weight: 900; margin: 0; padding: 4rem; text-align: center; }
+    ol { margin: 0; padding: 0; background: rgba(51,51,51,.1); list-style: none; 
+        li { padding: 15rem 2rem 2rem; text-align: center; border-left: .2rem solid #000ABA; border-top: .2rem solid #000ABA; margin: 0; border-bottom: none; counter-increment: eu-steps;
+            &:first-child { border-left: none; }
+            &:before { content: counter(eu-steps); display: block; position: absolute; left: 50%; top: 3rem; color: #FFCF3A; font-size: 5rem; font-weight: 900; padding-top: .6rem; transform: translateX(-50%); width: 10rem; height: 10rem; background: url(../img/step-2/stars.svg) no-repeat; background-size: 100% 100%; }
+        }
+        
+    }
+}
+
+ 
+ @media only screen and (min-width: 768px) {
+     .subject-to-gdpr { margin: 8rem auto 5rem;
+         ol { display: flex; flex-wrap: wrap;
+             li { width: 50%; padding: 16.5rem 4rem 4rem; 
+                 &:before { width: 12rem; height: 12rem; padding-top: 1rem; }
+             }
+         }
+     }
+ }
+ @media only screen and (min-width: 1024px) {
+     .subject-to-gdpr {
+         ol { display: flex; flex-wrap: nowrap;
+             li { flex: 1; }
+         }
+     }
+ }
+ 
+ .top-tip { background: #fff; padding: 2rem 2rem .5rem; border-radius: .5rem; color: #000ABA; margin: 0 0 3rem;
+     h3 { font-size: 1.2rem; text-transform: uppercase; margin: 0 0 1rem; padding: 0 0 1rem; border-bottom: .1rem solid #000ABA; font-weight: 900; letter-spacing: .1rem; }
+ }
+ 
+ .text-two-cols { padding-top: 20rem; }
+ @media only screen and (min-width: 768px) {
+     .top-tip { padding: 4rem 4rem 2rem; }
+     .text-two-cols { display: flex; margin: 0 -1rem 4rem; padding-top: 30rem;
+         .text-col,
+         .top-tip { margin: 0 1rem; }
+     }
+ }
+ 
+ .americas-row { background: url(../img/step-2/americas.svg) no-repeat, linear-gradient(180deg, #0026C4 -40%, #0A10AB 140%) repeat; background-size: auto 120%, 100% auto; background-position: left center, center center; background-attachment: fixed; padding: 5rem 0 0; }
+ .uk-row { background: url(../img/step-2/uk.svg) no-repeat, linear-gradient(180deg, darken(#0026C4,5%) -40%, darken(#0A10AB,5%) 140%) repeat; background-size: auto 130%, 100% auto; background-position: right center, center center; background-attachment: fixed; padding: 5rem 0 0; }
+ .world-row { background: url(../img/step-2/world.svg) no-repeat, linear-gradient(180deg, #0026C4 -40%, #0A10AB 140%) repeat; background-size: auto 100%, 120% auto; background-position: -20rem center, center center; background-attachment: fixed; padding: 5rem 0 0; }
+ 
+  @media only screen and (min-width: 768px) {
+      .americas-row { padding: 15rem 0 0;  }
+      .uk-row { padding: 15rem 0 0; }
+      .world-row { padding: 15rem 0 0; }
+  }
+ 
+ .organisation-question { background: rgba(255,255,255,.1); border-radius: .5rem; padding: 2rem;
+     .question-answer h3 { color: #FFCF3A; }
+  }
+  .company-info { background: rgba(0,0,0,.2); padding: 2.5rem 2rem 1rem; margin: 0 0 3rem; border-radius: .3rem;
+      h3 { color: #F2C94C; font-size: 1.2rem; text-transform: uppercase; font-weight: 700; margin: 0; }
+  }
+.company-info-section { border-bottom: .1rem solid rgba(255,255,255,.3); padding: 0 0 1rem; margin: 0 0 2rem;  display: flex; 
+    &:last-of-type { border: none; margin: 0; padding: 0; }
+} 
+.company-info-block { flex: 1; }
+.company-image { margin: 0 0 4rem; 
+    img { display: block; margin: 0 auto; }
+}
+ 

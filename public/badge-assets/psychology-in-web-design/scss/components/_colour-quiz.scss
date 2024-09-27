@@ -1,0 +1,53 @@
+.colour-quiz { background: #fff; padding: 2rem; text-align: center; margin: 0 0 4rem; }
+
+@media only screen and (min-width: 768px) {
+    .colour-quiz { padding: 8rem 2rem; }
+}
+
+.colour-list { list-style: none; margin: 0 -.5rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;
+
+    li { width: calc(16.6666% - 1rem); margin: 0 .5rem 1rem; padding: .5rem; border: 1px solid #ccc;
+        &:hover { border-color: #444; }
+        div { padding-bottom: 100%; position: relative;  }
+    }
+    a { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+}
+
+.colour-list__red { background: #EB5757; }
+.colour-list__orange { background: #F2994A; }
+.colour-list__yellow { background: #F2C94C; }
+.colour-list__green { background: #219653; }
+.colour-list__blue { background: #2D9CDB; }
+.colour-list__purple { background: #9B51E0; }
+.colour-list__pink { background: #E47AFF; }
+.colour-list__white { background: #fff; }
+.colour-list__black { background: #000; }
+.colour-list__grey { background: #C4C4C4; }
+.colour-list__brown { background: #603101; }
+
+.colour-quiz__title { font-size: 2rem; margin: 0 0 2rem; }
+.colour-quiz__question { font-size: 2.4rem; margin: 0 0 3rem; }
+
+.question-divider { display: block; width: 30rem; max-width: 100%; background: #ccc; height: .1rem; margin: 4rem auto; position: relative;
+    &:after,
+    &:before { display: block; content: ''; width: 30rem; max-width: 100%; background: #ccc; height: .1rem; width: 9.6rem; position: absolute; left: 50%; transform: translateX(-50%); }
+    &:after { top: 1rem; }
+    &:before { bottom: 1rem; }
+}
+
+.correct,
+.wrong {  margin: 4rem 0 0; text-align: left;
+    img { width: 10rem; height: 10rem; }
+    .typography-question & { padding: 0 1rem 2rem; }
+    .layout-quiz & { padding: 0 1rem 2rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .answer-content img { margin: 0 auto 2rem; }
+    .answer-text p:first-child { text-align: center; }
+}
+
+@media only screen and (min-width: 768px) {
+.answer-content { display: flex; justify-content: center; }
+.answer-text { max-width: 54rem; padding: 2rem 4rem 0; display: flex; justify-content: center; flex-direction: column; }
+}

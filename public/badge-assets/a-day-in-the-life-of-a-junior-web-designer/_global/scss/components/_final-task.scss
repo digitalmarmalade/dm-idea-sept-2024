@@ -1,0 +1,130 @@
+/*! Final Task */
+
+
+.email-intro { background: url(../img/final-task-bg.png) no-repeat center top; height: 443px; background-size: 150% auto; position: relative; margin: 0 0 80px; border-bottom: 5px solid #455a64; }
+
+.get-email-envelope { background: #fff; border-radius: 5px; width: 100px; height: 75px; box-shadow: 0 0 10px rgba(0,0,0,.5); position: absolute; left: 50%; top: 174px; margin: 0 0 0 -50px; overflow: hidden; animation: youveGotMail 1.4s 1 linear; animation-delay: .5s; opacity: 0; animation-fill-mode: forwards; }
+
+.get-email-envelope:after { display: block; content: ''; width: 100px; height: 100px; transform: rotate(45deg); border-radius: 5px; border: 2px solid #f48d6b; position: absolute; left: 50%; top: -70px; margin-left: -50px; background: #fff; }
+.get-email-envelope:before { display: block; content: ''; width: 100px; height: 100px; transform: rotate(45deg); border-radius: 5px; border: 2px solid #f48d6b; position: absolute; left: 50%; bottom: -70px; margin-left: -50px; background: #fff; }
+
+.the-email { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background: rgba(0,0,0,.3); opacity: 0; animation: theEmailBg .7s 1 linear; animation-delay: 2.4s; opacity: 0; animation-fill-mode: forwards; }
+.the-email-window { background: #fff; box-shadow: 0 0 10px rgba(0,0,0,.5); position: absolute; width: 580px; left: 50%; margin: 0 0 0 -290px; animation: theEmail 1.4s 1 linear; animation-delay: 2.4s; opacity: 0; animation-fill-mode: forwards; top: 16px;
+    ul { background: #ededed; padding: 20px 20px 10px; }
+    li { background: #fff; padding: 5px; }
+ }
+ .email-body { padding: 20px; }
+
+
+@media only screen and (min-width: $md-width) {
+.get-email-envelope { top: 178px; }
+.email-intro { height: 453px; background-size: 120% auto; }
+.the-email-window { top: 20px; }
+}
+
+@media only screen and (min-width: $lg-width) {
+.get-email-envelope { top: 227px; }
+.email-intro { height: 552px; background-size: 110% auto; margin: 0; }
+.the-email-window { top: 25px; }
+}
+
+@media only screen and (min-width: 1200px) {
+.get-email-envelope { top: 237px; }
+.email-intro { height: 575px; background-size: 100% auto; }
+.the-email-window { top: 30px; }
+}
+
+#completelyBroken img { outline: 5px solid #900; }
+
+.the-page { box-shadow: 0 0 10px rgba(0,0,0,.3); margin: 0 auto; display: table; }
+.the-page img { display: block; transition: all .25s; outline: 2px dotted transparent; }
+.the-page a:hover img { outline: 5px solid #f06f46; box-shadow: 0 0 10px rgba(0,0,0,.4); position: relative; z-index: 1; }
+.the-page.hide { display: none; }
+.the-page .overlay-trigger img { outline: 5px solid #900; outline-offset: -5px; }
+
+textarea.fillscreen { width: 100%; height: 100%; border: 1px solid #ccc; font-family: monospace; font-size: 1.6em; }
+.overlay-instructions {  padding: 10px 0; font-size: 1.4em; position: absolute; left: 40px; top: 0; font-family: mullerregular; color: #f06f46; }
+
+.help { position: fixed; bottom: 0; right: -395px; top: 0; width: 400px; background: #fff; overflow-y: auto; z-index: 1000; padding: 30px; box-shadow: 0 0 20px rgba(0,0,0,.5); border-left: 5px solid #f06f46; transition: right .25s ease; }
+.trigger-help { display: block; width: 60px; height: 60px; line-height: 60px; text-align: center; position: fixed; top: 190px; z-index: 1001; text-transform: uppercase; color: #fff; font-weight: 700; font-size: 1.6em; right: 0;  transition: right .25s ease; cursor: pointer; }
+.trigger-help:before { content: ''; background: rgba(0,0,0,.2); display: block; width: 60px; height: 60px; position: absolute; left: -4px; top: 0; z-index: 1000; filter: blur(2px); border-radius: 5px 0 0 5px; }
+.trigger-help:after { content: 'Help'; display: block; width: 60px; height: 60px; background: #f06f46; line-height: 60px; text-align: center; position: absolute; top: 0; z-index: 1001; text-transform: uppercase; color: #fff; font-weight: 700; left: 0; border-radius: 5px 0 0 5px; }
+
+.help.expanded { right: 0; }
+.trigger-help.on { right: 400px; }
+
+.help h2,
+.final-heading { font-family: mullerextrabold; font-size: 2em; text-transform: uppercase; color: #455a64; }
+.help h2 { padding: 0 10px; }
+.final-heading { font-size: 3em; color: #666; }
+
+.help h3 { font-size: 1.6em; font-family: mullerextrabold; margin: 0; border-top: 1px dotted #ccc; padding: 20px 10px; color: #666; cursor: pointer; text-transform: uppercase; transition: background .25s ease; }
+.help h3:hover { background: #ededed; }
+.help p { display: none; padding: 0 10px; }
+
+.confirm-changes { position: absolute; right: 40px; bottom: 40px; background: #f06f46; padding: 15px 35px; color: #fff; text-decoration: none; text-transform: uppercase; font-size: 1.8em; }
+
+.not-right { position: fixed; padding: 40px; left: 0; top: -200px; right: 0; background: rgba(153,0,0,.9) ; color: #fff; margin: 0; text-align: center; z-index: 1000; transition: top .7s ease; }
+.show-error .not-right { top: 0; }
+
+.payoff-sentence { z-index: 2; position: relative; }
+
+.badge-holder { background: url(../img/badge.png) no-repeat center center; border-radius: 15px; background-size: 100%; width: 150px; height: 150px; box-shadow: 0 0 20px rgba(0,0,0,.4); z-index: 3; margin: 0 auto 20px; position: relative; z-index: 1;}
+
+
+@keyframes youveGotMail {
+    0%   { transform: scale(.2,.2); opacity: 0; }
+    20%   { transform: scale(.2,.2); opacity: 0; }
+    30%   { transform: scale(.2,.2); opacity: 1; }
+    50%   { transform: scale(1,1); opacity: 1; }
+    70%   { opacity: 0; }
+    80%   { opacity: 1; }
+    90%   { opacity: 0; }
+    100%   { opacity: 1; }  
+}
+
+@keyframes theEmail {
+    0%   { transform: scale(.2,.2); opacity: 0; }
+    20%   { transform: scale(.2,.2); opacity: 0; }
+    30%   { transform: scale(.2,.2); opacity: 1; }
+    50%   { transform: scale(1,1); opacity: 1; }
+    100%   { transform: scale(1,1); opacity: 1; }
+}
+
+@keyframes theEmailBg {
+    0%   { opacity: 0; }
+    100%   { opacity: 1; }
+
+}
+
+.overlay-question { text-align: center; max-width: 840px; margin: 0 auto; padding: 20px; 
+    .img-holder { margin: 0 -20px 20px; }
+}
+.answer-buttons { padding: 10px; margin: 0 -10px; }
+
+.code-overlay { overflow-y: auto; }
+
+@media only screen and (max-width: $md-width-under) {
+.help { width: 80%; padding: 20px 0; }
+.trigger-help.on { right: 80%; }
+.help p { font-size: 1.2em; }
+.help h3 { font-size: 1.4em; }
+.the-email-window { max-width: 100%; left: 0; margin: 0; top: 0; }
+.email-intro { height: 570px; }
+.confirm-changes { left: 0; bottom: 0; right: 0; text-align: center; }
+.code-overlay { padding-bottom: 53px; }
+.overlay-instructions { left: 0; right: 40px; background: rgba(255,255,255,.8); padding: 10px; }
+.answer-buttons { padding: 10px; margin: 0 -10px; 
+    .btn { width: 100%; margin: 0 0 15px; white-space: normal; }
+}
+}
+@media only screen and (min-width: $sm-width) {
+
+    .overlay-question { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100%; padding: 0 0 20px; 
+        img { box-shadow: 0 0 5px rgba(0,0,0,.4); }
+    }
+    .answer-buttons { display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+        .btn { margin: 0 10px 10px; max-width: 100%; white-space: normal; }
+    }
+
+}

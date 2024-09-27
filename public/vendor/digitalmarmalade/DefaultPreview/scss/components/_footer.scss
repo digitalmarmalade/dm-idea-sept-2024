@@ -1,0 +1,149 @@
+/*! Footer */
+
+.logo-belt { position: relative; display: block; height: 255px; background: $body-bg-color-dark; overflow: hidden; }
+.logo-belt .logo-belt-container { max-width: 1200px; margin: auto; position: relative; }
+.logo-belt .logo-belt-container h2 { position: relative; display: block; font-size: 2.3em; color: $orange; @include fs-semibold; margin: 30px 0; }
+.logo-belt .arrow { display: block; position: absolute; top: 106px; left: -60px; width: 19px; height: 25px; overflow: hidden; text-indent: -9999px; background: url(../img/footer-arrows.png) no-repeat 0 0; z-index: +1; }
+.logo-belt .arrow.disabled { opacity: .4; }
+.logo-belt .arrow.right { background-position: -19px 0; left: auto; right: -60px; }
+.logo-belt .logo-belt-container.hide-scroll .arrow { display: none; }
+
+.logo-belt .scroll-container { position: relative; overflow: hidden; height: 130px; width: 1196px; }
+.logo-belt .scroll-container ul { position: absolute; display: block; list-style: none; margin: 0; padding: 0; width: 50000px; @include transition(transform, 500ms, linear); }
+.logo-belt .scroll-container ul li { position: relative; display: block; float: left; margin: 0 11px 0 0; }
+.logo-belt .scroll-container ul li img { width: 190px; }
+
+.logo-belt .scrollbar-buttons { position: absolute; display: block; bottom: -23px; width: 34px; right: 50%; margin-right: -15px; text-align: center; height: 5px; }
+.logo-belt .scrollbar-buttons a { position: relative; display: block; float: left; margin: 0 6px; width: 5px; height: 5px; background: $white; overflow: hidden; text-indent: -9999px; border-radius: 50%; }
+.logo-belt .scrollbar-buttons a.active { background: $orange; }
+
+.logo-belt .scrollbar-buttons a.button-3 { display: none; }
+.logo-belt .scrollbar-buttons a.button-4 { display: none; }
+
+
+
+footer { position: relative; display: block;  height: 219px; background: $red url(../img/footer-bg-solid.png) no-repeat right 0; }
+footer .container { position: relative; max-width: 1200px; margin: auto; }
+footer .footer-top { height: 75px; overflow: hidden; background: $orange url(../img/footer-bg-solid.png) no-repeat right 0;; }
+footer .footer-top h2 { margin: 0; padding: 0; font-size: 2.3em; @include fs-semibold; color: $white; line-height: 75px;  position: relative; display: inline-block; }
+footer .footer-top h2 a { color: $white; text-decoration: none;  background: url(../img/footer-title-arrow.png) no-repeat right center; padding: 0 26px 0 0; }
+footer .footer-top h2 a:hover { color: $dark-red; background: url(../img/footer-title-arrow-dark-red.png) no-repeat right center; }
+footer .footer-top .social { position: absolute; display: block; top: 0; right: 0; }
+footer .footer-top .social h3 { margin: 0; font-size: 2em; @include fs-semibold; color: $white; line-height: 75px; position: relative; display: block; float: left; margin: 0 7px 0 0; }
+footer .footer-top .social ul { position: relative; display: block; float: left; list-style: none; overflow: auto; margin: 0; padding: 0; }
+footer .footer-top .social ul li { position: relative; display: block; float: left; margin: 19px 0 0 15px; padding: 0; }
+footer .footer-top .social ul li a { width: 38px; height: 38px; overflow: hidden; text-indent: -9999px; background: url(../img/social-alt.png); position: relative; display: block; background-size: auto 76px; }
+footer .footer-top .social ul li a.twitter { background-position: 0 0; }
+footer .footer-top .social ul li a.facebook { background-position: -53px 0; }
+footer .footer-top .social ul li a.youtube { background-position: -106px 0; }
+footer .footer-top .social ul li a.linkedin { background-position: -159px 0; }
+footer .footer-top .social ul li a.twitter:hover { background-position: 0 -38px; }
+footer .footer-top .social ul li a.facebook:hover { background-position: -53px -38px; }
+footer .footer-top .social ul li a.youtube:hover { background-position: -106px -38px; }
+footer .footer-top .social ul li a.linkedin:hover { background-position: -159px -38px; }
+
+footer .footer-bottom { position: relative; }
+footer .footer-bottom ul { position: relative; display: block; margin: 0; padding: 18px 0 0 0; height: 66px; border-bottom: 1px solid $dark-red; }
+footer .footer-bottom ul li { position: relative; display: block; float: left; font-size: 1em; @include fs-medium; margin: 0 20px 0 -8px; }
+footer .footer-bottom ul li.contact { display: none; }
+footer .footer-bottom ul li.back-to-top { float: right; margin: 0 -8px 0 0; }
+footer .footer-bottom ul li.back-to-top a { padding: 0 28px 0 8px; background: url(../img/back-to-top-arrow.png) no-repeat right center; }
+footer .footer-bottom ul li a { display: block; color: $white; font-size: 1.3em; text-decoration: none; height: 30px; line-height: 30px; padding: 0 8px;  @include transition(background-color, 250ms, linear); }
+footer .footer-bottom ul li a:hover { background-color: $orange; }
+
+footer .small-container { position: relative; display: block; color: $white; padding: 22px 0 0 0; }
+footer .small-container small { position: relative; display: block; float: right; font-size: 1.1em; @include fs-regular; margin: 0 0 0 20px; }
+footer .small-container small:nth-child(1) { float: left; margin: 0; }
+footer .small-container small a { color: $white; }
+footer .deco { display: none; }
+
+footer a.back-to-top { /*position: absolute; top: 0; right: 0; */}
+
+@media only screen and (max-width: $xl-width-under) {
+    .logo-belt .logo-belt-container { width: 793px; }
+    .logo-belt .scroll-container {   width: 793px; }
+    footer .container { width: 1004px; }
+    .logo-belt .scrollbar-buttons a.button-3 { display: block; }
+    .logo-belt .scrollbar-buttons { width: 68px; margin-right: -42px; }
+}
+
+@media only screen and (max-width: $lg-width-under) {
+    .logo-belt .logo-belt-container { width: 594px; }
+    .logo-belt .scroll-container { width: 594px; }
+    footer .container { width: 748px; width: auto; margin: 0 11px; }
+    footer .footer-bottom ul { height: auto; overflow: auto; min-height: 66px; }
+    footer .footer-bottom ul li.back-to-top { display: none; }
+    .logo-belt .scrollbar-buttons { display: block; }
+    .logo-belt .arrow { display: none; }
+    .logo-belt .scrollbar-buttons a.button-4 { display: block; }
+    .logo-belt .scrollbar-buttons { width: 68px; margin-right: -38px; }
+
+}
+
+
+@media only screen and (max-width: $md-width-under) {
+    footer { height: auto; background: $red; }
+    footer .container { overflow: auto; margin: 0; }
+    footer .footer-top { height: 70px; background: $orange; }
+    footer .footer-top h2 { display: none; }
+    footer .footer-top .social h3 { display: none; }
+    footer .footer-top .social { position: relative; top: auto; right: auto; overflow: auto; }
+    footer .footer-top .social ul { float: none; width: 227px; margin: auto; }
+    footer .footer-top .social ul li { margin-top: 17px; }
+    
+    footer .footer-bottom ul { border-bottom: 0; }
+    footer .footer-bottom ul li { float: none; margin: 0 0 8px 0; width: calc(50% - 14px);  }
+    footer .footer-bottom ul li.contact { display: block; }
+    footer .footer-bottom ul li a { padding: 0 0 0 14px; }
+    footer .footer-bottom ul li:nth-child(5), footer .footer-bottom ul li:nth-child(6), footer .footer-bottom ul li:nth-child(7), footer .footer-bottom ul li:nth-child(8) { position: absolute; text-align: right; top: 18px; right: 0; }   
+    footer .footer-bottom ul li:nth-child(5) a, footer .footer-bottom ul li:nth-child(6) a, footer .footer-bottom ul li:nth-child(7) a, footer .footer-bottom ul li:nth-child(8) a {  padding: 0 14px 0 0; }   
+    footer .footer-bottom ul li:nth-child(6) { top: 56px; }
+    footer .footer-bottom ul li:nth-child(7) { top: 94px; }
+    footer .footer-bottom ul li:nth-child(8) { top: 132px; }
+
+    footer .deco { display: block; width: 100%; }
+    footer .small-container { background: $dark-red; padding: 18px 0 10px 0; }
+    footer .small-container small,footer .small-container small:nth-child(1) { float: none; display: block; margin: 0; padding: 0 0 10px 0; text-align: center; }
+    
+    
+}
+
+@media only screen and (max-width: $sm-width-under) {
+   .logo-belt .scroll-container ul li img { width: 95px; }
+   .logo-belt .logo-belt-container{ width: 297px; }
+   .logo-belt .scroll-container { width: 297px; }
+   .logo-belt .arrow { left: -40px; top: 64px; }
+   .logo-belt .arrow.right { right: -40px; }
+   .logo-belt .scroll-container ul li { margin: 0 6px 0 0; }
+   
+    .logo-belt { height: 173px; }
+    .logo-belt .logo-belt-container h2 { margin: 20px 0; text-align: center; }   
+    
+    .logo-belt .scrollbar-buttons { bottom: 41px; }
+    .logo-belt .scrollbar-buttons { width: 68px; margin-right: -32px; }
+}
+
+
+/*sticky footer
+html, body { height: 100%; }
+#holder { overflow:auto; overflow-x: hidden; }
+footer { position: relative; clear: both; } 
+
+@media only screen and (min-width: $sm-width) {
+    #wrap { min-height: 100%; }
+    #holder { padding-bottom: 66px; } 
+    footer { margin-top: -220px; height: 220px; }   
+}
+
+@media only screen and (min-width: $md-width) {
+	footer { display: block; }	
+}
+
+@media only screen and (min-width: $lg-width) {
+	footer, body.navigation-expanded footer { }
+	#holder {overflow:auto; padding-bottom: 220px; } 
+	footer {position: relative;	margin-top: -220px; height: 220px; clear: both; } 
+}
+
+
+*/

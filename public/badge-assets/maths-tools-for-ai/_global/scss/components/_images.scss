@@ -1,0 +1,85 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  &.no-margin {
+    margin: 0;
+  }
+  + p {
+    margin: 1.6em 0 0 ;
+  }
+  + p:last-child {
+    margin: 1.6em 0 0 ;
+  }
+  &.img-bleed {
+    max-width: 150%;
+    width: 150%;
+    margin: 0;
+  }
+  + .cols {
+    margin: .8em 0 0;
+  }
+}
+
+.logo--intel {
+  max-width: 80px;
+  height: auto;
+}
+
+.graph--matrices,
+.illustration--functions-1 {
+  max-width: 60%;
+}
+
+
+.symbol-vectors-1 {
+  width: 40px;
+  height: 60px;
+  &.inline {
+    display: inline-flex;
+    width: 1.1em;
+    height: auto;
+    padding: 0 .2em;
+    position: relative;
+    top: .1em;
+  }
+}
+
+.symbol-vectors-2 {
+  width: 45px;
+  height: 50px;
+  display: inline-flex;
+  padding: 0 .4em;
+  position: relative;
+  top: 23px;
+}
+
+.illustration--matrices {
+  margin: -4.8em 0 -2.4em;
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  img {
+      + .cols {
+        margin: 2.4em 0 0;
+      }
+    }
+    .illustration--functions-2.no-margin {
+        margin: 0 0 0 2.1em;
+        position: relative;
+        top: -1.8em;
+    }
+    
+    .illustration--matrices {
+      margin: -9.6em 0 -2.4em;
+    }
+    .graph--activity {
+      margin: 1.75em 0 0;
+      transform: scale(1.045);
+    }
+
+}
+

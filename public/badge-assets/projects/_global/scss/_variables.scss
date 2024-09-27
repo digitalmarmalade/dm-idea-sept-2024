@@ -1,0 +1,64 @@
+/* Variables */
+
+$sm-width: 600px;
+$md-width: 600px;
+$lg-width: 1200px;
+$xl-width: 1440px;
+
+$sm-width-under: 479px;
+$md-width-under: 767px;
+$lg-width-under: 1023px;
+$xl-width-under: 1199px;
+
+$xs-max-width: 480px;
+$sm-max-width: 768px;
+$md-max-width: 1024px;
+$lg-max-width: 1366px;
+$xl-max-width: 1366px;
+
+
+$column-padding: 20px;
+$column-gutter: 10px;
+$column-border: #000;
+
+$link-colour: #900;
+$link-colour-hover: #000;
+
+@mixin fade-transition {
+    transition: background .25s ease-in-out, color .25s ease-in-out;
+}
+
+$border-radius: .5rem;
+$border-radius-inner: .3rem;
+
+$panel-box-border-width: .1rem;
+$panel-box-border-colour: #ededed;
+$panel-box-background: #fafafa;
+$panel-box-border-radius: .5rem;
+
+$form-input-border-radius: $border-radius;
+$form-input-padding: 1rem;
+$form-input-border: .1rem solid #ccc;
+$form-input-background-colour: #fff;
+$form-input-transition: border-color .2s, box-shadow .2s;
+
+$checkbox-on-colour: #000;
+$radio-on-colour: #000;
+
+$form-help-colour: #666;
+
+$fontsPath: '../fonts';
+
+
+/* COLOURS */
+
+$white: #FFF;
+$black: #333;
+$grey: #ededed;
+$red: #ed1c24;
+$yellow: #f9a11b;
+$green-1: #6da098;
+$green-2: #8bb673;
+
+$border-mob: .4rem solid $black;
+$border: .6rem solid $black;

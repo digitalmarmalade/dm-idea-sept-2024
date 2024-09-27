@@ -1,0 +1,49 @@
+/* Variables */
+
+$sm-width: 568px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xl-width: 1200px;
+
+
+/* Colours */
+
+$white: #FFFFFF;
+$green: #00CB74;
+$red: #F71D57;
+$yellow: #FEE600;
+
+$blue-light: #01DFF4;
+$blue-medium: #03488F;
+$blue-dark: #051E58;
+
+
+$gradient--blue-light: linear-gradient(1.77deg, #0071C5 22.54%, #01DFF4 98.5%);
+$gradient--blue-dark: linear-gradient(180deg, #0071C5 0%, #020D49 100%);
+
+
+/* Layout */
+
+$margin: .4em;
+$padding: 1.2em;
+$padding-lg: 2.4em;
+
+$border-radius: .4em;
+
+$box-shadow:4px 4px 20px rgba(0, 0, 0, 0.25);
+
+
+/* Typography */
+
+$bodycopy: 0.875rem;
+
+$section-heading: 2.15rem;
+$section-subheading: 1.85rem;
+$box-title: 1.45rem;
+
+
+$roboto: 'Roboto', sans-serif;
+
+
+/* Transitions */
+$transition: all .3s ease-in-out;

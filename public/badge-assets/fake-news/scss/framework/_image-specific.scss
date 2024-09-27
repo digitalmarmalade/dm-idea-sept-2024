@@ -1,0 +1,11 @@
+.classification-regression {
+  display: flex;
+  gap: $space-x-small;
+  justify-content: center;
+
+  & > img {
+    border: 0.1em solid $grey-3;
+    border-radius: $x-small-border-radius;
+    margin: 0;
+  }
+}

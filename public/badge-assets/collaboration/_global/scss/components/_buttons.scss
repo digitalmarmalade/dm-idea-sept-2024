@@ -1,0 +1,15 @@
+/*! Buttons */
+
+.btn { background: #900; cursor: pointer; display: inline-block; font-size: 2.4rem; padding: 1rem 3rem; box-shadow: 16px 16px 30px rgba(0,0,0,.2); color: #fff; text-decoration: none; text-transform: uppercase; border-radius: 30px; font-weight: 700; white-space: nowrap; }
+
+.btn--get-started { position: absolute; left: 50%; bottom: 5rem; transform: translate(-50%,-50%); }
+
+@media only screen and (min-width: $md-width) {
+ .btn { padding: 2rem 4rem; border-radius: 40px; }
+}
+
+.btn-offer,
+.btn-dont-offer { background: #093; cursor: pointer; display: inline-block; font-size: 1.8rem; padding: 1rem 2rem; color: #fff; text-decoration: none; text-transform: uppercase; border-radius: .3rem; font-weight: 700; white-space: nowrap; }
+.btn-dont-offer { background: #900; }
+
+.btn--claim { text-transform: none; }

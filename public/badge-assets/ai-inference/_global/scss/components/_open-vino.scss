@@ -1,0 +1,54 @@
+.open-vino__header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: $space-small;
+  justify-content: space-between;
+  margin-bottom: $space-medium;
+
+  @media (min-width: $md-width) {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.open-vino__heading {
+  text-transform: none;
+}
+
+.open-vino__logo {
+  margin: 0;
+}
+
+.open-vino__list {
+  justify-content: space-between;
+  margin-top: $space-small;
+
+  .open-vino__list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    flex-grow: 1;
+
+    & > img {
+      margin: 0 0 $space-x-small 0;
+      width: 100%;
+    }
+
+    & > h3 {
+      margin-bottom: $space-xxxx-small;
+      text-transform: uppercase;
+    }
+
+    & p + p {
+      margin-top: $space-x-small;
+      width: 100%;
+    }
+
+    @media (min-width: $md-width) {
+      width: calc(50% - #{$space-x-small});
+    }
+  }
+}

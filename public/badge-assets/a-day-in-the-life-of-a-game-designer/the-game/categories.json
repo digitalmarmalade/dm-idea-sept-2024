@@ -1,0 +1,653 @@
+
+{
+	"data" :
+	{
+		"categories" :
+		{
+			"eumathsfrench" :
+			{
+				"name" : "EU Maths - French",
+				"data" : [
+					{
+						"answer" : "7 - 6",
+						"image" : "un.png"
+					},
+					{
+						"answer" : "9 - 7",
+						"image" : "deux.png"
+					},
+					{
+						"answer" : "6 / 2",
+						"image" : "trois.png"
+					},
+					{
+						"answer" : "8 / 2",
+						"image" : "quatre.png"
+					},
+					{
+						"answer" : "9 - 4",
+						"image" : "cinq.png"
+					},
+					{
+						"answer" : "7 - 1",
+						"image" : "six.png"
+					},
+					{
+						"answer" : "9 - 2",
+						"image" : "sept.png"
+					},
+					{
+						"answer" : "2 * 4",
+						"image" : "huit.png"
+					},
+					{
+						"answer" : "3 * 3",
+						"image" : "neuf.png"
+					},
+					{
+						"answer" : "5 * 2",
+						"image" : "dix.png"
+					}
+				]
+			},
+			"sportingsuperstarprofessions" :
+			{
+				"name" : "Sporting Superstar Professions",
+				"data" : [
+					{
+						"answer" : "Footballer",
+						"image" : "ronaldo.png"
+					},
+					{
+						"answer" : "Boxer",
+						"image" : "anthony-joshua.png"
+					},
+					{
+						"answer" : "Tennis Player",
+						"image" : "andy-murray.png"
+					},
+					{
+						"answer" : "Golfer",
+						"image" : "rory-mcilroy.png"
+					},
+					{
+						"answer" : "Tennis Player",
+						"image" : "serena-williams.png"
+					},
+					{
+						"answer" : "Basketball Player",
+						"image" : "lebron-james.png"
+					},
+					{
+						"answer" : "UFC Fighter",
+						"image" : "ronda-rousey.png"
+					},
+					{
+						"answer" : "Sailor",
+						"image" : "dame-ellen-macarthur.png"
+					},
+					{
+						"answer" : "Cyclist",
+						"image" : "chris-froome.png"
+					},
+					{
+						"answer" : "Cricketer",
+						"image" : "freddie-flintoff.png"
+					}
+				]
+			},
+			"sportingsuperstarnations" :
+			{
+				"name" : "Sporting Superstar Nations",
+				"data" : [
+					{
+						"answer" : "Portugal",
+						"image" : "ronaldo.png"
+					},
+					{
+						"answer" : "England",
+						"image" : "anthony-joshua.png"
+					},
+					{
+						"answer" : "Scotland",
+						"image" : "andy-murray.png"
+					},
+					{
+						"answer" : "Northern Ireland",
+						"image" : "rory-mcilroy.png"
+					},
+					{
+						"answer" : "USA",
+						"image" : "serena-williams.png"
+					},
+					{
+						"answer" : "USA",
+						"image" : "lebron-james.png"
+					},
+					{
+						"answer" : "USA",
+						"image" : "ronda-rousey.png"
+					},
+					{
+						"answer" : "England",
+						"image" : "dame-ellen-macarthur.png"
+					},
+					{
+						"answer" : "Kenya",
+						"image" : "chris-froome.png"
+					},
+					{
+						"answer" : "England",
+						"image" : "freddie-flintoff.png"
+					}
+				]
+			},
+			"sportingsuperstarfacts" :
+			{
+				"name" : "Sporting Superstar Facts",
+				"data" : [
+					{
+						"answer" : "Plays for Real Madrid",
+						"image" : "ronaldo.png"
+					},
+					{
+						"answer" : "IBF World Champion",
+						"image" : "anthony-joshua.png"
+					},
+					{
+						"answer" : "US Open Champion",
+						"image" : "andy-murray.png"
+					},
+					{
+						"answer" : "Has been awarded an MBE",
+						"image" : "rory-mcilroy.png"
+					},
+					{
+						"answer" : "Has 4 sisters",
+						"image" : "serena-williams.png"
+					},
+					{
+						"answer" : "Has won 2 gold medals",
+						"image" : "lebron-james.png"
+					},
+					{
+						"answer" : "Is a vegan",
+						"image" : "ronda-rousey.png"
+					},
+					{
+						"answer" : "Won Top Gear's Fastest Driver of the Year Award",
+						"image" : "dame-ellen-macarthur.png"
+					},
+					{
+						"answer" : "Has competed for Kenya",
+						"image" : "chris-froome.png"
+					},
+					{
+						"answer" : "His real name is Andrew",
+						"image" : "freddie-flintoff.png"
+					}
+				]
+			},
+			"landmarks" :
+			{
+				"name" : "Famous Landmarks",
+				"data" : [
+					{
+						"answer" : "France",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "USA",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Egypt",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "Italy",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Greece",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Brazil",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "India",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Russia",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "UK",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "Australia",
+						"image" : "10.png"
+					}
+				]
+			},
+			"flags" :
+			{
+				"name" : "Flags",
+				"data" : [
+					{
+						"answer" : "Switzerland",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Jamaica",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Sweden",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "South Africa",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Brazil",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "China",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "South Korea",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Japan",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "Germany",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "USA",
+						"image" : "10.png"
+					}
+				]
+			},
+			"pests" :
+			{
+				"name" : "Pests",
+				"data" : [
+					{
+						"answer" : "Ants",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Bed Bugs",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Bees",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "Cockroaches",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Flies",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Mosquitos",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "Scorpions",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Snails",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "Spiders",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "Ticks",
+						"image" : "10.png"
+					}
+				]
+			},
+			"musicalinstruments" :
+			{
+				"name" : "Musical Instruments",
+				"data" : [
+					{
+						"answer" : "Accordion",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Banjo",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Clarinet",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "Double Bass",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Drum",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Guitar",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "Harp",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Saxophone",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "Trumpet",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "Violin",
+						"image" : "10.png"
+					}
+				]
+			},
+			"countryoutlines" :
+			{
+				"name" : "Country Outlines",
+				"data" : [
+					{
+						"answer" : "Canada",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Egypt",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "France",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "India",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Japan",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Mexico",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "Portugal",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Spain",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "South Africa",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "UK",
+						"image" : "10.png"
+					}
+				]
+			},
+			"europeancapitals" :
+			{
+				"name" : "European capitals",
+				"data" : [
+					{
+						"answer" : "Athens",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Reykjavik",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Bucharest",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "Moscow",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Oslo",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Ankara",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "Dublin",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Budapest",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "Brussels",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "Warsaw",
+						"image" : "10.png"
+					}
+				]
+			},
+			"guessthefraction" :
+			{
+				"name" : "Guess the Fraction",
+				"data" : [
+					{
+						"answer" : "1/20",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "1/10",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "1/4",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "1/3",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "2/5",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "4/5",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "2/3",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "3/5",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "9/10",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "3/4",
+						"image" : "10.png"
+					}
+				]
+			},
+			"famousdatesinbritishhistory" :
+			{
+				"name" : "Famous dates in British history",
+				"data" : [
+					{
+						"answer" : "Magna Carta",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Gunpowder Plot",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Great Fire of London",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "Great Britain formed",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Captain Cook lands in Australia",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Battle of Waterloo",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "End of World War 1",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Start of World War 2",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "Mount Everest climbed",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "World Wide Web proposed",
+						"image" : "10.png"
+					}
+				]
+			},
+			"algebra" :
+			{
+				"name" : "Algebra",
+				"data" : [
+					{
+						"answer" : "3a + 8 = 35",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "3a = 57",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "2a * 3 = 108",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "3a = 54 - 3",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "7a – 2a = 75",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "2a + 4a = 93 – 9",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "a = (64 -12) / 4",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "4a = 57 – 9",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "6a – 2 = 64",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "3a + 7 = 55",
+						"image" : "10.png"
+					}
+				]
+			},
+			"currencies" :
+			{
+				"name" : "Currencies",
+				"data" : [
+					{
+						"answer" : "Dollar",
+						"image" : "01.png"
+					},
+					{
+						"answer" : "Yen",
+						"image" : "02.png"
+					},
+					{
+						"answer" : "Euro",
+						"image" : "03.png"
+					},
+					{
+						"answer" : "Pound",
+						"image" : "04.png"
+					},
+					{
+						"answer" : "Yuan",
+						"image" : "05.png"
+					},
+					{
+						"answer" : "Rouble",
+						"image" : "06.png"
+					},
+					{
+						"answer" : "Rupee",
+						"image" : "07.png"
+					},
+					{
+						"answer" : "Won",
+						"image" : "08.png"
+					},
+					{
+						"answer" : "Naira",
+						"image" : "09.png"
+					},
+					{
+						"answer" : "Bitcoin",
+						"image" : "10.png"
+					}
+				]
+			}
+		}
+	}
+}

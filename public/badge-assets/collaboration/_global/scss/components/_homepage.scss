@@ -1,0 +1,321 @@
+.homepage-banner { display: block; overflow: hidden; position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+
+.animated-scene {}
+
+.scene,
+.layer { display: block; height: 100%; width: 100%; padding: 0; margin: 0; }
+.scene { min-height: 460px; position: relative; overflow: hidden; background: linear-gradient(to bottom, #0f1832 0%,#233975 50%); }
+
+.layer { position: absolute; }
+.layer > div { transform: translate3d(0,0,0); transform-style: preserve-3d; backface-visibility: hidden; }
+
+.moon { background: url(../img/home-animation/moon.png) no-repeat; position: absolute; right: 15%; top: 10%; width: 19.9rem; height: 19.3rem; }
+
+.waves { background: url(../img/home-animation/waves.png) repeat-x 0 0; height: 20rem; margin-left: -10rem; position: absolute; left: -10rem; right: -10rem; bottom: 34%; }
+
+.waves-6 { animation: wave 4s 0s infinite linear; }
+.waves-5 { bottom: 32%; animation: wave 4s 0.1s infinite linear; }
+.waves-4 { bottom: 30%; animation: wave 4.5s 0.35s infinite linear; }
+.waves-3 { bottom: 28%; animation: wave 3.8s 0.52s infinite linear; }
+.waves-2 { bottom: 26%; animation: wave 4.2s 0.61s infinite linear; }
+.waves-1 { bottom: 24%; animation: wave 4.3s 0.89s infinite linear; }
+
+.lighthouse { background:  url(../img/home-animation/lighthouse.png) no-repeat; width: 25.1rem; height: 22rem; position: absolute; bottom: 34%; left: 30%; margin-bottom: 10rem; 
+    &:after { background: url(../img/home-animation/lighthouse-beam.png) no-repeat; display: block; content: ''; width: 38.3rem; height: 24.5rem; position: absolute; left: 12rem; top: -9rem; animation: lighthouse 8s 0s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955); transform-origin: left center; }
+}
+
+.shark { background: url(../img/home-animation/shark.png) no-repeat; width: 9rem; height: 5.5rem; position: absolute; left: 30%; bottom: 40%; animation: shark 10s 0s infinite linear; margin-bottom: 2rem; }
+
+.mountain-1 { background: url(../img/home-animation/mountain-back.png) no-repeat; width: 47.2rem; height: 25.3rem; bottom: 35%; left: -15%; position: absolute; }
+.mountain-2 { background: url(../img/home-animation/mountain-front.png) no-repeat; width: 75.1rem; height: 41.4rem; bottom: 30%; left: -5%; position: absolute; }
+
+.hill-1 { background: url(../img/home-animation/hill-1.png) no-repeat; position: absolute; left: -10%; bottom: 10%; width: 91.7rem; height: 44rem; }
+.hill-2 { background: url(../img/home-animation/hill-2.png) no-repeat; position: absolute; left: -10%; bottom: -10%; width: 110rem; height: 55rem; }
+.hill-3 { background: url(../img/home-animation/hill-3.png) no-repeat; position: absolute; left: -10%; bottom: -10%; width: 99.6rem; height: 46.5rem; }
+.hill-1--extra { left: auto; right: -10%;}
+.hill-2--extra { left: 40%;}
+.hill-3--extra { left: 35%;}
+
+.tree { width: 31.1rem; height: 40.4rem; position: absolute; transform-origin: center bottom; }
+.layer .tree-1 { bottom: 30%; transform: translate3d(0,0,0) scale(.3); }
+.layer .tree-2 { bottom: 26%; transform: translate3d(0,0,0) scale(.5); left: 30%; 
+    
+}
+.layer .tree-3 { bottom: 18%; transform: translate3d(0,0,0) scale(.7); left: 8%; }
+.layer .tree-4 { bottom: -10%; transform: translate3d(0,0,0); left: -5%; }
+
+.house { width: 14.7rem; height: 8.7rem; background: url(../img/home-animation/house.png) no-repeat; position: absolute; left: 5rem; bottom: 34%; }
+
+.sway { background: url(../img/home-animation/tree.png) no-repeat; width: 31.1rem; height: 40.4rem; animation: sway 4s 0.1s infinite linear; transform-origin: center bottom; }
+
+.cloud-1 { background: url(../img/home-animation/cloud-1.png) no-repeat; position: absolute; top: 20%; right: -5%; width: 27.1rem; height: 15.3rem; animation: cloud-drift 240s 0.1s infinite alternate linear; }
+.cloud-2 { background: url(../img/home-animation/cloud-2.png) no-repeat; position: absolute; top: 15%; right: 2%; width: 24.4rem; height: 15.2rem; animation: cloud-drift 250s 0.1s infinite alternate linear; }
+.cloud-3 { background: url(../img/home-animation/cloud-3.png) no-repeat; position: absolute; top: -3%; right: 50%; width: 28.8rem; height: 15.6rem; animation: cloud-drift 210s 0.1s infinite alternate linear; }
+.cloud-4 { background: url(../img/home-animation/cloud-4.png) no-repeat; position: absolute; top: -4%; right: 60%; width: 31.2rem; height: 15.3rem; animation: cloud-drift 180s 0.1s infinite alternate linear; }
+.cloud-5 { background: url(../img/home-animation/cloud-5.png) no-repeat; position: absolute; top: 11%; right: 30%; width: 24.5rem; height: 21rem; animation: cloud-drift 160s 0.1s infinite alternate linear; }
+.cloud-6 { background: url(../img/home-animation/cloud-4.png) no-repeat; position: absolute; top: -4%; right: -50%; width: 31.2rem; height: 15.3rem; animation: cloud-drift 180s 0.1s infinite alternate linear; }
+.cloud-7 { background: url(../img/home-animation/cloud-3.png) no-repeat; position: absolute; top: -3%; right: -25%; width: 28.8rem; height: 15.6rem; animation: cloud-drift 210s 0.1s infinite alternate linear; }
+
+.office-1 { background: url(../img/home-animation/office1.png) no-repeat; position: absolute; right: 10%; bottom: -12rem; width: 41.8rem; height: 80rem; }
+.office-2 { background: url(../img/home-animation/office2.png) no-repeat; position: absolute; right: 0; bottom: -8rem; width: 37.6rem; height: 100rem;
+    &:after,
+    &:before { content: ''; display: block; width: 10px; height: 10px; background: red; box-shadow: 0 0 20px red; position: absolute; top: 0; border-radius: 50%; top: 22px; animation: blink 1.2s infinite linear; }
+    &:after { left: 153px;}
+    &:before { left: 177px; }
+}
+.office-3 { background: url(../img/home-animation/office3.png) no-repeat; position: absolute; right: -25rem; bottom: -12rem; width: 50rem; height: 85rem; }
+
+.badge-title { text-align: center; margin-top: -4rem; }
+.badge-title__letter { display: inline-block; transform-origin: center top; margin: 0 -3.5rem; }
+.c { background: url(../img/home-animation/c.png) no-repeat; width: 13.1rem; height: 29.5rem; }
+.o { background: url(../img/home-animation/o.png) no-repeat; width: 13.2rem; height: 29.4rem;  }
+.l { background: url(../img/home-animation/l.png) no-repeat; width: 13.9rem; height: 29.5rem;  }
+.a { background: url(../img/home-animation/a.png) no-repeat; width: 15rem; height: 29.2rem;  }
+.b { background: url(../img/home-animation/b.png) no-repeat; width: 13.1rem; height: 29.5rem;  }
+.r { background: url(../img/home-animation/r.png) no-repeat; width: 13.1rem; height: 29.2rem;  }
+.t { background: url(../img/home-animation/t.png) no-repeat; width: 12.9rem; height: 28.9rem;  }
+.i { background: url(../img/home-animation/i.png) no-repeat; width: 13.7rem; height: 29.2rem;  }
+.n { background: url(../img/home-animation/n.png) no-repeat; width: 13.6rem; height: 28.9rem;  }
+
+.swing-1 { animation: swing 4s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.swing-2 { animation: swing 3.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.swing-3 { animation: swing 3s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.swing-4 { animation: swing 2.5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+.swing-5 { animation: swing 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+
+@media only screen and (max-height: 768px) {
+
+    .layer {
+        .hill-1,
+        .hill-2,
+        .hill-3 { transform: scale(.8); transform-origin: left bottom; }
+        .mountain-1,
+        .mountain-2 { transform: scale(.8); transform-origin: left bottom; }
+        .office-1,
+        .office-2,
+        .office-3 { transform: scale(.8); transform-origin: right bottom; bottom: -20rem; }
+    }
+    .layer .tree-1 { transform: translate3d(0,0,0) scale(.2); bottom: 32%; }
+    .layer .tree-2 { transform: translate3d(0,0,0) scale(.3); left: 30%; }
+    .layer .tree-3 { transform: translate3d(0,0,0) scale(.5); left: 8%; }
+    .layer .tree-4 { transform: translate3d(0,0,0) scale(.8); left: -5%; }
+    .layer .house { transform: translate3d(0,0,0) scale(.8); left: 3%; bottom: 35%; }
+    .waves-6 { bottom: 27%; }
+    .waves-5 { bottom: 25%; }
+    .waves-4 { bottom: 23%; }
+    .waves-3 { bottom: 21%; }
+    .waves-2 { bottom: 19%; }
+    .waves-1 { bottom: 17%; }
+
+    .lighthouse { bottom: 31%; left: 30%; margin-bottom: 10rem; transform: scale(.8); }
+
+    .shark { left: 30%; bottom: 37%; animation: shark 10s 0s infinite linear; margin-bottom: 2rem; }
+  
+}
+
+@media only screen and (max-width: 980px) and (max-height: 610px) {
+
+    .layer {
+        .hill-1,
+        .hill-2,
+        .hill-3 { transform: scale(.55); transform-origin: left bottom; }
+        .mountain-1,
+        .mountain-2 { transform: scale(.55); transform-origin: left bottom; }
+        .badge-title { transform: scale(.8); transform-origin: center top; margin-top: -1rem; }
+        .office-1,
+        .office-2,
+        .office-3 { transform: scale(.65); transform-origin: right bottom; bottom: -20rem; }
+        .office-3  {right: -15rem; }
+    }
+    .layer .tree-1 { transform: translate3d(0,0,0) scale(.1); bottom: 34%; }
+    .layer .tree-2 { transform: translate3d(0,0,0) scale(.2); left: 26%; bottom: 25%; }
+    .layer .tree-3 { transform: translate3d(0,0,0) scale(.3); left: 8%; }
+    .layer .tree-4 { transform: translate3d(0,0,0) scale(.5); left: -5%; }
+    .layer .house { transform: translate3d(0,0,0) scale(.8); left: 0%; bottom: 31%; }
+    .waves-6 { bottom: 17%; }
+    .waves-5 { bottom: 15%; }
+    .waves-4 { bottom: 13%; }
+    .waves-3 { bottom: 11%; }
+    .waves-2 { bottom: 9%; }
+    .waves-1 { bottom: 7%; }
+
+    .lighthouse { bottom: 21%; left: 25%; margin-bottom: 10rem; transform: scale(.8); }
+
+    .shark { left: 25%; bottom: 23%; animation: shark 10s 0s infinite linear; margin-bottom: 2rem; }
+  
+}
+
+@media only screen and (max-height: 980px) and (max-width: 610px) {
+
+    .layer {
+        .hill-1,
+        .hill-2,
+        .hill-3 { transform: scale(.55); transform-origin: left bottom; }
+        .hill-1 { left: -5rem; }
+        .mountain-1 { transform: scale(.55); transform-origin: left bottom; bottom: 23%; }
+        .mountain-2 { transform: scale(.55); transform-origin: left bottom; bottom: 23%; }
+        .badge-title { transform: scale(.55); transform-origin: center top; position: absolute; left: 0; right: 0; width: 200%; margin-left: -50%; margin-top: -3rem;  }
+        .office-1,
+        .office-2,
+        .office-3 { transform: scale(.65); transform-origin: right bottom; bottom: -8rem; }
+        .office-3  {right: -15rem; }
+    }
+    .layer .tree-1 { transform: translate3d(0,0,0) scale(.1); bottom: 24rem; }
+    .layer .tree-2 { transform: translate3d(0,0,0) scale(.2); left: 15rem; bottom: 14rem; }
+    .layer .tree-3 { transform: translate3d(0,0,0) scale(.3); left: 10rem; bottom: 8rem; }
+    .layer .tree-4 { transform: translate3d(0,0,0) scale(.5); left: -5%; }
+    .layer .house { transform: translate3d(0,0,0) scale(.7); left: 0%; bottom: 23rem; }
+    .waves-6 { bottom: 17%; }
+    .waves-5 { bottom: 15%; }
+    .waves-4 { bottom: 13%; }
+    .waves-3 { bottom: 11%; }
+    .waves-2 { bottom: 9%; }
+    .waves-1 { bottom: 7%; }
+
+    .lighthouse { bottom: 19%; left: 25%; transform: scale(.8); }
+
+    .shark { left: 25%; bottom: 23%; animation: shark 10s 0s infinite linear; margin-bottom: 2rem; }
+    
+    .cloud-3,
+    .cloud-4,
+    .cloud-6,
+    .cloud-7 { display: none; }
+    .cloud-1 { top: 25%; }
+    .cloud-2 { top: 30%; }
+    .cloud-5 { top: 28%; }
+    .moon { top: 15%; }
+  
+}
+
+@media only screen and (max-width:768px) and (max-height:1024px) {
+    .layer {
+        .hill-1,
+        .hill-2,
+        .hill-3 { transform: scale(.55); transform-origin: left bottom; }
+        .hill-1 { left: -5rem; }
+        .mountain-1 { transform: scale(.55); transform-origin: left bottom; bottom: 23%; }
+        .mountain-2 { transform: scale(.55); transform-origin: left bottom; bottom: 23%; }
+        .badge-title { transform: scale(.7); transform-origin: center top; position: absolute; left: 0; right: 0; width: 200%; margin-left: -50%; margin-top: -3rem;  }
+        .office-1,
+        .office-2,
+        .office-3 { transform: scale(.65); transform-origin: right bottom; bottom: -8rem; }
+        .office-3  {right: -15rem; }
+    }
+    .layer .tree-1 { transform: translate3d(0,0,0) scale(.1); bottom: 24rem; }
+    .layer .tree-2 { transform: translate3d(0,0,0) scale(.2); left: 15rem; bottom: 14rem; }
+    .layer .tree-3 { transform: translate3d(0,0,0) scale(.3); left: 10rem; bottom: 8rem; }
+    .layer .tree-4 { transform: translate3d(0,0,0) scale(.5); left: -5%; }
+    .layer .house { transform: translate3d(0,0,0) scale(.7); left: 0%; bottom: 23rem; }
+    .waves-6 { bottom: 17%; }
+    .waves-5 { bottom: 15%; }
+    .waves-4 { bottom: 13%; }
+    .waves-3 { bottom: 11%; }
+    .waves-2 { bottom: 9%; }
+    .waves-1 { bottom: 7%; }
+
+    .lighthouse { bottom: 19%; left: 25%; transform: scale(.8); }
+
+    .shark { left: 25%; bottom: 23%; animation: shark 10s 0s infinite linear; margin-bottom: 2rem; }
+    
+    .cloud-3,
+    .cloud-4,
+    .cloud-6,
+    .cloud-7 { display: none; }
+    .cloud-1 { top: 25%; }
+    .cloud-2 { top: 30%; }
+    .cloud-5 { top: 28%; }
+    .moon { top: 15%; }
+}
+
+@media only screen and (max-height:900px) and (max-width: 480px) {
+
+    .layer {
+        .hill-1,
+        .hill-2,
+        .hill-3 { transform: scale(.45); transform-origin: left bottom; }
+        .hill-1 { bottom: 8%; }
+        .mountain-1 { transform: scale(.6); transform-origin: left bottom; bottom: 20%; left: -5rem; display: none; }
+        .mountain-2 { transform: scale(.6); transform-origin: left bottom; bottom: 19%; left: -15rem; }
+        .badge-title { transform: scale(.35); transform-origin: center top; position: absolute; left: 0; right: 0; width: 300%; margin-left: -100%; margin-top: 0; top: 7rem; border-top: 3px solid #121212;  }
+        .lighthouse { bottom: 17%; left: 16%; transform: scale(.5); }
+        .cloud-3,
+        .cloud-4,
+        .cloud-6,
+        .cloud-7 { display: none; }
+        .cloud-1 { top: 10%; transform: translate3d(0,0,0) scale(.5);  right: -15rem; }
+        .cloud-2 { top: 20%; transform: translate3d(0,0,0) scale(.5);  right: 2rem; }
+        .cloud-5 { top: 18%; transform: translate3d(0,0,0) scale(.5);  right: -2rem; }
+        .moon { top: 15%; transform: translate3d(0,0,0) scale(.5); right: -5rem; }
+        .office-1,
+        .office-2,
+        .office-3 { transform: scale(.43); transform-origin: right bottom; bottom: -8rem; }
+        .office-3  {right: -10rem; }
+    }
+    .layer .tree-1 { display: none; }
+    .layer .tree-2 { transform: translate3d(0,0,0) scale(.15); left: -6rem; bottom: 8rem; }
+    .layer .tree-3 { transform: translate3d(0,0,0) scale(.25); left: 3rem; bottom: 6rem; }
+    .layer .tree-4 { transform: translate3d(0,0,0) scale(.35); left: -5%; }
+    .layer .house { transform: translate3d(0,0,0) scale(.6); left: 0%; bottom: 15.5rem; }
+    .waves-6 { bottom: 19%; transform: translate3d(0,0,0) scale(.5); }
+    .waves-5 { bottom: 17%; transform: translate3d(0,0,0) scale(.5); }
+    .waves-4 { bottom: 15%; transform: translate3d(0,0,0) scale(.5); }
+    .waves-3 { bottom: 13%; transform: translate3d(0,0,0) scale(.5); }
+    .waves-2 { bottom: 11%; transform: translate3d(0,0,0) scale(.5); }
+    .waves-1 { bottom: 9%; transform: translate3d(0,0,0) scale(.5); }
+
+    
+
+    .shark { left: 25%; bottom: 23%; animation: shark 10s 0s infinite linear; margin-bottom: 2rem; }
+    
+    
+  
+}
+
+
+@keyframes wave {
+  0% {
+    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg); } 
+}
+
+@keyframes sway {
+  0%,100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes letter-sway {
+  0%,100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+@keyframes cloud-drift {
+  0% { margin-right: 0; }
+  100% { margin-right: 100%; }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotateZ(5deg); }
+  100% {
+    transform: rotateZ(-5deg); } 
+}
+
+@keyframes blink {
+  0%,45%, 75%, 100% { opacity: 0; }
+  50%, 70% { opacity: 1; }
+}
+
+@keyframes lighthouse {
+  0%,100% { transform: scaleX(1); opacity: 1; }
+  50% { transform: scaleX(-1); opacity: 1; }
+  75% { transform: scaleX(0); opacity: 0; }
+}
+
+
+@keyframes shark {
+  0% { transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg) translateX(0rem) scaleX(1); }
+  50% { transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg) translateX(20rem) scaleX(1); }
+  51% { transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg) translateX(20rem) scaleX(-1); }
+  100% { transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg) translateX(0rem) scaleX(-1); } 
+}

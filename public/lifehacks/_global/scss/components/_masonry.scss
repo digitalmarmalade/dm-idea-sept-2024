@@ -1,0 +1,29 @@
+/*! Parallax Banner Scroll */
+
+.grid-sizer { width: 100%; }
+.grid-item { background: #fff; width: 100%; height: 300px; box-shadow: inset 0 0 20px rgba(0,0,0,.3); padding: 20px; }
+.grid-item--width2 { width: 100%; }
+
+@media only screen and (min-width: $sm-width) {
+	
+.grid-sizer { width: 50%; }
+.grid-item { background: #fff; width: 50%; height: 300px; box-shadow: inset 0 0 20px rgba(0,0,0,.3); padding: 20px; }
+.grid-item--width2 { width: 100%; }
+	
+}
+
+@media only screen and (min-width: $md-width) {
+
+.grid-sizer { width: 33.33%; }
+.grid-item { background: #fff; width: 33.33%; height: 300px; box-shadow: inset 0 0 20px rgba(0,0,0,.3); padding: 20px; }
+.grid-item--width2 { width: 66.66%; }
+
+}
+
+@media only screen and (min-width: $xl-width) {
+
+.grid-sizer { width: 20%; }
+.grid-item { background: #fff; width: 20%; height: 300px; box-shadow: inset 0 0 20px rgba(0,0,0,.3); padding: 20px; }
+.grid-item--width2 { width: 40%; }
+
+}

@@ -1,0 +1,32 @@
+{
+	"meta": {
+		"id": "159",
+		"title": "4Ws Wordsearch",
+		"difficulty": "",
+		"date": "",
+		"variant": "Wordsearch",
+		"slug": "wordsearch-no-0001-1",
+		"number": "0001",
+		"description": "",
+		"archive": "..\/..\/..\/archive.json",
+		"related": ""
+	},
+	"settings": {
+		"colCount": 10,
+		"rowCount": 8,
+		"allowedValues": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+		"solution": "56,52;24,27;12,14;59,77"
+	},
+	"celldata": "WHABWRECAWOWHOHEWIWHRIWWHATWAIWNGYREYRNRKNWJWKWWTEWEREHWPHWWHRDWWOHHMNAWFWLRYWWN",
+	"cluedata": "WHERE,WHAT,WHO,WHY",
+	"copy": {
+		"date-publish": "Tuesday, 22 December 2020",
+		"date-publish-email": "22 December 2020",
+		"date-publish-analytics": "2020\/12\/22 00:00 Tuesday",
+		"date-release": "Tuesday, 22 December 2020",
+		"date-solution": "Tuesday, 22 December 2020",
+		"id": "0001"
+	},
+	"feedback": null,
+	"sharing": null
+}

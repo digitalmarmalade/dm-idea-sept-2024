@@ -1,0 +1,275 @@
+.coffee-shop-goals {
+  margin: 0 0 10px;
+  li {
+    background-color: rgba(255,255,255,.5);
+    padding: 20px;
+    display: inline-block;
+    margin: 0 0 10px;
+  }
+}
+
+.the-coffee-shop {
+  position: relative;
+  .building {
+    width: 90%;
+    bottom: -10px;
+    left: 7.5%;
+    position: relative;
+  }
+  .people {
+        position: absolute;
+    width: 50%;
+    bottom: -40px;
+    left: 22.5%;
+  }
+  .fence {
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.task-coffee-shop {
+  .question-number {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: $dark-blue;
+    font-family: 'bebas_neuebold';
+    font-weight: 700;
+    color: $white;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .question-icon {
+    border: 3px solid $dark-blue;
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 50%;
+    margin: 20px auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  .question-text {
+    font-weight: 800;
+  }
+
+  .question ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    li {
+      display: block;
+      margin: 0 0 10px;
+      background-color: $light-yellow;
+      border-radius: 5px;
+      padding: 10px 20px;
+      transition: all .3s;
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      &:hover, &.selected {
+        background-color: $green;
+        color: $white;
+      }
+    }
+  }
+
+  .question-4 ul {
+    li {
+      width: calc(33.3% - 10px);
+      margin: 0 5px 10px;
+      position: relative;
+      cursor: pointer;
+      background-color: transparent;
+      border-radius: 0;
+      padding: 0;
+      &:hover, &.selected{
+        background-color: $white;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    img:first-child {
+      position: absolute;
+      top:0;
+      left: 0;
+      display: none;
+    }
+    li.selected img:first-child,
+    li:hover img:first-child {
+      display: block;
+      transition: all .3s;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: $md-width) {
+
+
+  .the-coffee-shop-task {
+    .task-intro {
+      width: 70%;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+    }
+  }
+
+
+
+  .the-coffee-shop {
+    .building {
+      bottom: -20px;
+      left: 10%;
+    }
+    .people {
+      width: 50%;
+      bottom: -80px;
+      left: 22.5%;
+    }
+  }
+
+  .task-coffee-shop {
+    .question-number {
+      position: absolute;
+      left: 90%;
+      top:  30px;
+      transform: translate(-50%,0);
+    }
+
+    .question-icon {
+      margin: 0 auto 20px auto ;
+    }
+    .question-text {
+      font-weight: 800;
+      font-size: 125%;
+      line-height: 1.1;
+    }
+    .question ul {
+      margin: 30px 0 0;
+      li {
+        margin: 0 5px 10px;
+        width: 60%;
+      }
+    }
+
+    .question-4 ul {
+      li {
+        width: calc(16.66% - 10px);
+      }
+
+    }
+    .question-6 ul {
+      margin: 30px auto 0;
+      width: calc(100% - 60px);
+      li {
+        width: calc(50% - 60px);
+      }
+    }
+
+  }
+}
+
+
+
+@media only screen and (min-width: $lg-width) {
+
+
+  .coffee-shop-goals {
+    li {
+      padding: 10px 20px;
+    }
+  }
+
+
+  .the-coffee-shop-task {
+    .task-intro {
+      width: 45%;
+      text-align: left;
+      text-align: left;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+
+  .the-coffee-shop {
+    padding-top: 240px;
+    .building {
+      width: 50%;
+      bottom: -20px;
+      left: 25%;
+      position: relative;
+    }
+    .people {
+      width: 30%;
+      bottom: -70px;
+      left: 55%;
+    }
+    .fence {
+      position: absolute;
+      width: 70%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+
+  .the-coffee-shop-task {
+    .task-intro {
+      width: 55%;
+    }
+  }
+  .the-coffee-shop {
+    padding-top: 80px;
+    .building {
+      bottom: -35px;
+      left: 30%;
+    }
+    .people {
+      width: 30%;
+      bottom: -100px;
+      left: 65%;
+    }
+    .fence {
+      position: absolute;
+      width: 80%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

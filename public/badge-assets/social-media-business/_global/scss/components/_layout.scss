@@ -1,0 +1,274 @@
+html {
+  overflow-x: hidden;
+  background-color: $grey;
+}
+
+section {
+  position: relative;
+  float: left;
+  width: 100%;
+
+}
+
+.holder {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  transform: translateX(-9999px);
+}
+
+.blue {
+  background-color: $light-blue;
+  border-bottom: 60px solid $dark-green;
+}
+.grey {
+  background-color: $grey;
+  border-top: 6px solid $white;
+}
+
+.dark-grey {
+  padding: 50px 0;
+  background-color: $dark-grey;
+}
+
+.blue-no-border-bottom {
+  border-bottom: none !important;
+}
+
+.grey-no-border-top {
+  border-top: none;
+  padding: 20px 0 30px;
+}
+
+.top {
+  padding: 100px 0 0;
+}
+
+.bottom {
+  padding: 20px 0 30px;
+}
+
+.panel {
+  border: 6px solid rgba(44,49,93,.3);
+  padding: 20px;
+  background-color: $white;
+}
+
+.tip {
+  width: 240px;
+  height: 240px;
+  background-color: $light-blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  p {
+    margin: 20px 30px 30px;
+    line-height: 1.2;
+    span {
+      display: block;
+      margin: 0 ;
+      font-family: 'bebas_neuebold';
+      font-weight: 700;
+      margin: 0 auto;
+      font-size: 2em;
+    }
+  }
+}
+
+.cols {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 0 0;
+  .col {
+    position: relative;
+    .panel {
+      display: block;
+      margin: 0 0 20px;
+    }
+  }
+}
+
+.step-title {
+  position: relative;
+  margin: 120px 0 20px;
+  z-index: 2;
+  h1 {
+    color: $white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-8deg);
+    width: 85%;
+    font-size: 2.15em;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.step-number {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-color: $dark-blue;
+  font-family: 'bebas_neuebold';
+  font-weight: 700;
+  color: $white;
+  border-radius: 50%;
+  position: absolute;
+  top:-60px;
+  left: 50%;
+  transform: translate(-50%,0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.full-height {
+  padding: 0 0 100px;
+}
+
+
+@media only screen and (min-width: 375px) {
+  .step-title {
+    h1 {
+      font-size: 2.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .top {
+    padding: 120px 0 0;
+  }
+
+
+  .panel {
+    border: 8px solid rgba(44,49,93,.3);
+    padding: 50px;
+    margin: 0 auto;
+  }
+
+  .cols {
+    display: flex;
+    .col {
+      width: 50%;
+      margin: 10px 0 0;
+      .panel {
+        display: block;
+        margin: 0 10px 20px;
+        text-align: left;
+        h2 {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .step-title {
+    margin: 40px 0 20px;
+    width: 90%;
+    bottom: -60px;
+    h1 {
+      top: 0;
+      left: 10%;
+      transform: rotate(-8deg);
+      font-size: 2.25em;
+    }
+  }
+
+  .step-2 .step-title h1 {
+    top: -15px;
+  }
+
+  .step-number {
+    top: 0;
+  }
+
+  .step-intro {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .bottom {
+    padding: 50px 0;
+  }
+
+  .blue {
+    background-color: $light-blue;
+    border-bottom: 100px solid $dark-green;
+  }
+
+  .tip {
+    text-align: center;
+    margin: 20px 0 0 -15px;
+    p {
+      margin: 0 30px 0 30px !important;
+    }
+  }
+
+
+}
+@media only screen and (min-width: $lg-width) {
+
+  .cols {
+    padding: 0;
+  }
+
+  .step-number {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: $dark-blue;
+    font-family: 'bebas_neuebold';
+    font-weight: 700;
+    color: $white;
+    border-radius: 50%;
+    position: absolute;
+    top:60px;
+    left: 85%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+      z-index: 4;
+  }
+  .step-title h1 {
+    font-size: 3.25em;
+    top: 15px;
+  }
+  .tip {
+    text-align: center;
+    margin: 20px auto 0 auto;
+    p {
+      margin: 0 30px 0 30px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+  .blue {
+    background-color: $light-blue;
+    border-bottom: 120px solid $dark-green;
+  }
+
+}

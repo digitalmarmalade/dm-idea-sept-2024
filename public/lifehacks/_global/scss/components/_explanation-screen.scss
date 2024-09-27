@@ -1,0 +1,62 @@
+/*! Explanation Screen */
+
+.gradient-holder { background: linear-gradient(to bottom, #56c4d0 0%,#225478 100%); padding: 20px; color: #fff; text-align: center; }
+.gradient { background: linear-gradient(to bottom, #56c4d0 0%,#225478 100%); text-align: center; }
+
+.page-header { background: #ededed; padding: 30px 20px; }
+.page-content { padding: 30px 20px; color: #fff; }
+
+.timeline-holder { position: relative; padding: 20px 0 1px; max-width: 900px; margin: 0 auto 30px; overflow: hidden; }
+.timeline { position: absolute; width: 4px; height: 100%; background: #fff; top: 0; border-radius: 2px; }
+
+.timeline-block-heading { font-size: 2.4em; line-height: 1.1; font-family: 'pantonregular'; margin: 0 0 5px; text-transform: none; 
+    span { font-size: 66.66%; display: block; }
+    b { padding: 10px 15px; margin: 0 0 3px; display: inline-block; border-radius: 3px; }
+}
+
+@media only screen and (max-width: $md-width-under) {
+    .timeline-block { text-align: left; width: auto; margin: 0 0 20px 40px; position: relative; }
+    .timeline-block:before { content: ''; position: absolute; width: 20px; display: block; height: 2px; background: #fff; top: 10px; left: -40px; }
+    .timeline-block:after { height: 8px; width: 8px; content: ''; display: block; background: #fff; border-radius: 50%; position: absolute; left: -20px; top: 11px; margin: -4px 0 0 0; }
+    .timeline-block-heading { font-size: 1.6em; }
+}
+
+@media only screen and (min-width: $md-width) {
+    .timeline-holder { position: relative; padding: 20px 0 1px; max-width: 720px; margin: 0 auto 30px; }
+    .timeline-block { width: 300px; margin: 0 0 20px; }
+    .timeline {  left: 50%; margin: 0 0 0 -2px; }
+    .timeline-left { text-align: right; position: relative; }
+    .timeline-left:before { content: ''; position: absolute; width: 40px; display: block; height: 2px; background: #fff; top: 10px; right: -60px; }
+    .timeline-left:after { height: 8px; width: 8px; content: ''; display: block; background: #fff; border-radius: 50%; position: absolute; right: -20px; top: 11px; margin: -4px 0 0 0; }
+    .timeline-right { text-align: left; margin-left: 420px; position: relative; }
+    
+    .timeline-right:before { content: ''; position: absolute; width: 40px; display: block; height: 2px; background: #fff; top: 10px; left: -60px; }
+    .timeline-right:after { height: 8px; width: 8px; content: ''; display: block; background: #fff; border-radius: 50%; position: absolute; left: -20px; top: 11px; margin: -4px 0 0 0; }  
+}
+
+
+@media only screen and (min-width: $lg-width) {
+    .timeline-block-heading { font-size: 2.8em; line-height: 1.1; font-family: 'pantonregular'; margin: 0 0 5px;
+    span { font-size: 66.66%; display: block; }
+    }
+    .timeline-holder { position: relative; padding: 20px 0 1px; max-width: 900px; margin: 0 auto 30px; }
+    .timeline-block { width: 350px; margin: 0 0 20px; }
+    .timeline {  left: 50%; margin: 0 0 0 -2px; }
+    .timeline-left { text-align: right; position: relative; }
+    .timeline-left:before { content: ''; position: absolute; width: 80px; display: block; height: 2px; background: #fff; top: 13px; right: -100px; }
+    .timeline-left:after { height: 8px; width: 8px; content: ''; display: block; background: #fff; border-radius: 50%; position: absolute; right: -20px; top: 14px; margin: -4px 0 0 0; }
+    .timeline-right { text-align: left; margin-left: 550px; position: relative; }
+    
+    .timeline-right:before { content: ''; position: absolute; width: 80px; display: block; height: 2px; background: #fff; top: 13px; left: -100px; }
+    .timeline-right:after { height: 8px; width: 8px; content: ''; display: block; background: #fff; border-radius: 50%; position: absolute; left: -20px; top: 14px; margin: -4px 0 0 0; }  
+}
+
+.explanation-text { margin: 0 0 30px; }
+.explanation-text h2 { margin: 0 0 10px; }
+.explanation-text p { max-width: 360px; margin: 0 auto 10px; }
+
+.explanation-intro { max-width: 768px; margin: 0 auto 30px; text-align: center; padding: 40px 0 0; }
+.page-heading .argon { display: block; }
+
+.page-outro { max-width: 500px; margin: 0 auto; padding: 30px 0 60px; text-align: center; }
+.cta { padding-top: 20px; }

@@ -1,0 +1,19 @@
+.crossword { padding: 3rem 0; text-align: center; background: #40bedf;  }
+.crossword-iframe { width: 100%; max-width: 100rem; margin: 0 auto 3rem; height: 100vh; max-height: 60rem; border: none; }
+.crossword-intro { max-width: 50rem; margin: 0 auto 2rem; color: #04243b; padding: 0 2rem; }
+.crossword-heading { color: #04243b; }
+@media only screen and (min-width: $lg-width) {
+.crossword { padding: 6rem 0; }
+.crossword-holder { display: table; padding: 2rem 2rem 2rem 0; margin: 0 auto 3rem; width: 100%; max-width: 110rem; box-shadow: 0 0 2rem rgba(0,0,0,.6); background: #04243b; }
+.crossword-iframe { width: 100%; max-width: 110rem; margin: 0; height: 100vh; max-height: 60rem; border: none;  }
+
+}
+.launch-crossword-button { display: none; }
+@media only screen and (max-width: 767px) {
+    .launch-crossword-button { display: inline-block; margin: 0 0 3rem; padding: 1.5rem 2rem; background:#e38c01; color: #fff; text-decoration: none; text-transform: uppercase; font-weight: 700; font-size: 1.8rem; border-radius: 3px;
+        &:hover { background: #04243b; }
+    }
+    .crossword-holder { display: none; margin: 0; }
+    .crossword-holder.full-screen { display: block; position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 2; background: #fff;}
+    .crossword-iframe { height: 100%; max-height: none; }
+}

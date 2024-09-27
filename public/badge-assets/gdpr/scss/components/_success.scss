@@ -1,0 +1,25 @@
+.success{ background: #0C003A; color: #fff; text-align: center;
+    .page-header { margin: 0 0 15vh; }
+    .page-header-image { max-width: 46.5rem; width: 100%; margin: 0 auto 3rem; }
+    .progress li { background: #000ABA; }
+    .page-header {
+        &:before { border-top-color: #8F1ED8;  }
+        &:after { border-top-color: #312671; opacity: .3; }
+    }
+    .page-header-triangles {
+        &:before { border-top-color: #8F1ED8; opacity: .8; }
+        &:after { border-top-color: #8F1ED8; opacity: .5; }
+    }
+    .holder { padding-bottom:50vh; }
+}
+
+.success-holder { background: #0C003A url(../img/success/success.jpg) no-repeat center bottom; background-size: 100% auto; }
+@media only screen and (min-width: 768px) {
+    .success{ 
+        .page-header { margin: 0 0 20rem; }
+        .holder { padding-bottom:40vw; }
+    }
+    
+}
+
+.lowercase { text-transform: lowercase; font-weight: inherit; }

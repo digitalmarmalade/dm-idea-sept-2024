@@ -1,0 +1,132 @@
+.graph-container {
+  backdrop-filter: blur(10px);
+  background-color: rgb(255 255 255 / 0.2);
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 30px 0px #00000059;
+  padding: $space-small;
+}
+
+.graph {
+}
+
+.graph__caption {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $space-small;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.graph__title {
+  display: block;
+  font-size: $r-small;
+  font-weight: bold;
+}
+
+.graph__definition {
+  display: block;
+  font-size: $r-x-small;
+  margin-top: $space-xxxx-small;
+}
+
+.graph-icons {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+
+.graph-icon {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px rgb(0 0 0 / 0.5));
+
+  &:hover {
+    transition: transform 200ms ease-in;
+    transform: scale(1.1);
+  }
+
+  & + & {
+    margin-left: 0.5rem;
+  }
+
+  &.inactive {
+    opacity: 0.3;
+  }
+}
+
+.graph-icons--colour {
+
+  .graph-icon-car__background {
+    fill: $red;
+    stroke: $red;
+  }
+
+  .graph-icon-truck__background {
+    fill: $green;
+    stroke: $green;
+  }
+
+  .graph-icon-van__background {
+    fill: $yellow;
+    stroke: $yellow;
+  }
+
+  .graph-icon-bus__background {
+    fill: $cobalt-1;
+    stroke: $cobalt-1;
+  }
+}
+
+.graph-icons--white {
+
+  .graph-icon-car__background {
+    fill: $white;
+    stroke: $white;
+  }
+
+  .graph-icon-truck__background {
+    fill: $white;
+    stroke: $white;
+  }
+
+  .graph-icon-van__background {
+    fill: $white;
+    stroke: $white;
+  }
+
+  .graph-icon-bus__background {
+    fill: $white;
+    stroke: $white;
+  }
+}
+
+.graph-icons--large {
+
+  & .graph-icon {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+.graph-icon--correct {
+
+  & .graph-icon-car__background,
+  & .graph-icon-truck__background,
+  & .graph-icon-bus__background,
+  & .graph-icon-van__background {
+    fill: $green !important;
+    stroke: transparent !important;
+  }
+}
+
+.graph-icon--incorrect {
+
+  & .graph-icon-car__background,
+  & .graph-icon-truck__background,
+  & .graph-icon-bus__background,
+  & .graph-icon-van__background  {
+    fill: $red !important;
+    stroke: transparent !important;
+  }
+}

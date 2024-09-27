@@ -1,0 +1,153 @@
+
+.homepage {
+  h1 {
+    font-size: 9.6em;
+    line-height:1;
+  }
+  ul {
+    width: 100%;
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.2em;
+      padding: .4em 0;
+      width: calc(100% - .8rem);
+      border: $border-mob;
+      text-transform: uppercase;
+      font-family: 'bebas_neuebold', sans-serif;
+      margin: .5rem;
+      background-color: #FFF;
+    }
+    li:first-child { animation-delay:.5s}
+    li:nth-child(2) { animation-delay:.75s}
+    li:nth-child(3) { animation-delay:1s}
+  }
+  .bottom {
+    .btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+.animation {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $green-1;
+  padding: 120px 0;
+  position: relative;
+}
+
+.animation div {
+  margin: 120px 0;
+  height: 15px;
+  border: 10px dashed rgba(255,255,255,.15);
+}
+
+.animation-homepage img {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  right: -100%;
+
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.animation-homepage img.car-1 {
+  top: 60px;
+  z-index: 2;
+  -webkit-animation: race 2s linear infinite;
+  -moz-animation: race 2s linear infinite;
+  -ms-animation: race 2s linear infinite;
+  animation: race 2s linear infinite;
+
+}
+
+.animation-homepage img.car-2 {
+  top: 120px;
+  z-index: 3;
+
+  -webkit-animation: race 3s linear 1s infinite;
+  -moz-animation: race 3s linear 1s infinite;
+  -ms-animation: race 3s linear 1s infinite;
+  animation: race 3s linear 1s infinite;
+}
+
+.animation-homepage img.car-3 {
+  top: 30px;
+
+
+  -webkit-animation: race 1.5s linear .5s infinite;
+  -moz-animation: race 1.5s linear .5s infinite;
+  -ms-animation: race 1.5s linear .5s infinite;
+  animation: race 1.5s linear .5s infinite;
+}
+
+.animation-homepage img.car-4 {
+  top: 300px;
+  z-index: 3;
+  -webkit-animation: race 2.5s linear 1s infinite;
+  -moz-animation: race 2.5s linear 1s infinite;
+  -ms-animation: race 2.5s linear 1s infinite;
+  animation: race 2.5s linear 1s infinite;
+}
+
+.animation-homepage img.car-5 {
+  top: 260px;
+  z-index: 2;
+
+  -webkit-animation: race 2s linear .5s infinite;
+  -moz-animation: race 2s linear .5s infinite;
+  -ms-animation: race 2s linear .5s infinite;
+  animation: race 2s linear .5s infinite;
+}
+
+.animation-homepage img.car-6 {
+  top: 400px;
+
+
+  -webkit-animation: race 1.5s linear .5s infinite;
+  -moz-animation: race 1.5s linear .5s infinite;
+  -ms-animation: race 1.5s linear .5s infinite;
+  animation: race 1.5s linear .5s infinite;
+}
+
+
+@-webkit-keyframes race {
+  0%   {right: -240px;}
+  100% {right: 100%;}
+}
+
+@-moz-keyframes race {
+  0%   {right: -240px;}
+  100% {right: 100%;}
+}
+
+@-ms-keyframes race {
+  0%   {right: -240px;}
+  100% {right: 100%;}
+}
+
+@keyframes race {
+  0%   {right: -240px;}
+  100% {right: 100%;}
+}
+
+@media only screen and (min-width: $md-width) {
+  .homepage {
+    ul {
+      display: flex;
+      margin: 2rem 0 0;
+    }
+    h1 {
+      font-size: 16em;
+    }
+  }
+}

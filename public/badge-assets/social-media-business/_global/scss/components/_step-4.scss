@@ -1,0 +1,141 @@
+.the-flower-shop {
+  position: relative;
+  .building {
+    width: 90%;
+    bottom: -10px;
+    left: 2.5%;
+    position: relative;
+  }
+  .people {
+    position: absolute;
+    width: 40%;
+    bottom: -40px;
+    left: 22.5%;
+  }
+  .fence {
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.task-flower-shop {
+  li {
+    background-color: $light-yellow;
+    padding: 10px;
+    border-radius: 4px;
+    line-height: 1;
+    margin: 0 0 10px;
+    cursor:pointer;
+  }
+  li:hover,
+  li.selected {
+    background-color: $green;
+    color: $white;
+  }
+  .feedback {
+    padding: 40px 20px 10px;
+  }
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .task-flower-shop {
+    .cols {
+    display: block;
+    }
+    .col {
+      width: 100%;
+    }
+    .feedback {
+      padding: 50px 50px 10px;
+    }
+  }
+  .the-flower-shop {
+    position: relative;
+    .building {
+      width: 70%;
+      bottom: -25px;
+    }
+    .people {
+      width: 30%;
+      bottom: -40px;
+    }
+    .fence {
+      position: absolute;
+      width: 180%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .task-flower-shop {
+    .col {
+      width: 40%;
+    }
+    .col:last-child {
+      width: 60%;
+      margin-left: 40%;
+    }
+    .task-intro {
+      width: 90%;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      .col {
+        width: 50%;
+      }
+    }
+    .panel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+  }
+  .the-flower-shop {
+    padding-top: 220px;
+    .building {
+      width: 40%;
+      bottom: -25px;
+      left: -25%;
+    }
+    .people {
+      width: 17.5%;
+      bottom: -40px;
+    }
+    .fence {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+  .the-flower-shop {
+    padding-top: 140px;
+    .building {
+      width: 30%;
+      bottom: -25px;
+      left: -20%;
+    }
+    .people {
+      width: 14%;
+      bottom: -40px;
+    }
+    .fence {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+/* CSS Document */
+
+//Reset
+@import "framework/_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "framework/_fonts.scss";
+@import "framework/_typography.scss";
+
+@import "framework/_framework.scss";
+@import "framework/_helpers.scss";
+@import "framework/_forms.scss";
+@import "framework/_animsition.scss";
+
+@import "page-structure/_header.scss";
+@import "page-structure/_footer.scss";
+@import "page-structure/_grid.scss";
+
+@import "components/_general.scss";
+
+//These are optional
+@import "components/_breadcrumbs.scss";
+@import "components/_buttons.scss";
+@import "components/_feature-banner.scss";
+
+@import "components/_masonry.scss";
+@import "components/_lazyload.scss";
+@import "components/_overlays.scss";
+@import "components/_pagination.scss";
+@import "components/_parallax-banner.scss";
+@import "components/_progress.scss";
+@import "components/_tables.scss";
+@import "components/_tabs.scss";
+@import "components/_tasks.scss";
+@import "components/_tooltips.scss";
+@import "components/_transforms.scss";
+
+@import "components/_intro-page.scss";
+@import "components/_css-range.scss";
+@import "components/_final-task.scss";
+@import "components/_overlay-select.scss";
+
+@import "components/_matching_game.scss";
+
+//Import icon fonts if required
+@import "components/_flaticon.scss";
+

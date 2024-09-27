@@ -1,0 +1,71 @@
+.cols--animation {
+  margin: 0 0 -12em;
+  background: url("../svg/illustration--intro-bg.svg") repeat-x center -25%;
+}
+
+.animation--intro-title {
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-sizing: content-box;
+}
+
+.animation--intro-illustration {
+  width: 150%;
+  height: auto;
+  overflow: visible;
+  margin: -3.2em 0 0 1.6em;
+  display: flex;
+  box-sizing: content-box;
+
+  .speech-balloon {
+    opacity: 0;
+    animation: fadein;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+  }
+
+  #speech-balloon-1 {
+    animation-delay: 6s;
+  }
+
+  #speech-balloon-2 {
+    animation-delay: 7s;
+  }
+
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  50%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media only screen and (min-width: $md-width) {
+  .animation--intro-title {
+    margin: -12em 0 0 0;
+    width: 125%;
+  }
+  .animation--intro-illustration {
+    width: 150%;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+
+  .cols--animation {
+    margin: 0 0 -18em -2.4em;
+    width: 115%;
+  }
+
+  .animation--intro-title {
+    width: 150%;
+  }
+  .animation--intro-illustration {
+    width: 150%;
+    margin: -3.2em 0 0 -9.6em;
+  }
+}

@@ -1,0 +1,72 @@
+.holder--computer-folders {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.computer-folder {
+  width:148px;
+  height: 148px;
+  margin-bottom: -16px;
+  background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-folder-default.svg') center center no-repeat;
+  background-size: 100% auto;
+  cursor: pointer;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: $transition;
+  p {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 4px -2px 0 0 ;
+    &.alternate-line-height {
+      line-height: .66;
+    }
+  }
+  @-moz-document url-prefix() {
+    p.alternate-line-height {
+       line-height: 1.2;
+    }
+  }
+
+  span span {
+    text-transform: none;
+  }
+  &:hover {
+    transform: scale(.9);
+  }
+  &.success {
+    pointer-events: none;
+    background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-folder-success.svg') center center no-repeat;
+    background-size: 100% auto;
+    pointer-events: none;
+    transform: scale(1.1);
+  }
+
+  &.fail {
+    pointer-events: none;
+    background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-folder-fail.svg') center center no-repeat;
+    background-size: 100% auto;
+    color: white;
+    transform: scale(.9);
+  }
+
+  &.disabled {
+    pointer-events: none;
+    background: url('/badge-assets/ai-inference/_global/svg/icons/icon--computer-folder-disabled.svg') center center no-repeat;
+    background-size: 100% auto;
+    color: $grey-7;
+    transform: scale(.9);
+  }
+}

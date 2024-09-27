@@ -1,0 +1,210 @@
+.engraving-image { position: relative; overflow: visible; }
+
+.engraving-image--clock {
+    .triangle { top: 12.3rem; left: -6rem; }
+    .lines { transform: scale(.9) rotate(-45deg); bottom: 14rem; right: -15rem; }
+    .time-for-box { position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%);}
+}
+
+.engraving-image--eyeball {
+    .lines { left: -34rem; top: 0rem; }
+    .circle { bottom: -6rem; left: -6rem; }
+    .squares { top: -5rem; right: 0; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--pen { height: 30rem;
+        img { width: 30rem; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); margin: 0 0 0 5rem; }   
+    }
+}
+.engraving-image--pen {
+    .circle { top: -4rem; right: 8rem; }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .engraving-image--pen {
+        img { width: 50rem; position: absolute; left: 12.3rem; bottom: -24rem; } 
+        .circle { top: auto; bottom: 14rem; right: 12rem; }
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .engraving-image--pen {
+        img { width: 50rem; position: absolute; left: 12.3rem; top: -18rem; }   
+    }
+}
+
+.kraken-row { position: relative;
+        .circle { right: -10rem; width: 32.5rem; height: 32.5rem; top: 50%; margin: -26.5rem 0 0; }
+        .lines { right: -15rem; bottom: 15rem; opacity: .2; }
+    }
+@media only screen and (min-width: 768px) {
+    
+    .kraken-image { position: absolute; right: -2rem; top: 50%; width: 50%; transform: translateY(-50%); z-index: 1; mix-blend-mode: multiply; }
+}
+
+.engraving-image--typewriter {
+    .circle { bottom: -4rem; right: -6rem; }
+    .squares { right: -7rem; top: -10rem; opacity: .1; }
+    .triangle { left: -15rem; top: -12rem; }
+    .lines { top: -10rem; left: 0; opacity: .2; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--typewriter {
+        img { max-width: 40rem; margin: 0 0 4rem auto; display: block; }
+    }
+}
+
+.engraving-image--camera {
+    .circle { top: 10rem; right: -10rem; }
+    .lines { top: -2rem; left: -15rem; transform: rotate(-45deg) scale(.8); }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--camera {
+        img { max-width: 38rem; margin: 2rem auto 5rem auto; display: block; }
+    }
+}
+
+.engraving-image--castle { 
+    .circle { top: -5rem; left: -5rem; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--castle {
+        img { max-width: 50rem; margin: 2rem auto 5rem; display: block; }
+    }
+}
+
+.engraving-image--brain { 
+    .circle { top: 10rem; right: -5rem; }
+    .lines { bottom: 3rem; left: -15rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--brain {
+        img { max-width: 50rem; margin: 3rem auto 5rem; display: block; }
+    }
+}
+
+.engraving-image--exercise { 
+    .squares { top: -3rem; right: 13rem; transform: scale(.5); }
+    .lines { bottom: 30rem; left: -20rem; }
+    .time-for-box { position: relative; margin: -5rem auto 3rem;}
+}
+.engraving-image--point { 
+    img { max-width: 33rem; width: 100%; margin: 0 auto; }
+    .squares { bottom: 4rem; left: 3rem; }
+    .lines { top: 10rem; right: -30rem; }
+    .circle { top: 20rem; right: -5rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--point {
+        img { max-width: 50rem; width: 60%; margin: 0 auto 5rem; display: block; }
+    }
+}
+
+.engraving-image--microscope { 
+    img { max-width: 32rem; display: block; margin: 0 auto; }
+    .circle { bottom: -5rem; right: -5rem; }
+    .lines { top: 10rem; left: -10rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--microscope {
+        img { max-width: 50rem; width: 60%; margin: 2rem auto 5rem; display: block; }
+    }
+}
+
+.engraving-image--brain2 { 
+    .circle { bottom: -5rem; left: -5rem; }
+    .lines { bottom: 10rem; right: -15rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--brain2 {
+        img { max-width: 50rem; width: 90%; margin: 2rem auto 5rem; display: block; }
+    }
+}
+
+.engraving-image--reciprocation { 
+    img { max-width: 32rem; display: block; margin: 0 auto; }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--reciprocation {
+        img { max-width: 40rem; width: 50%; margin: 2rem auto 2rem; display: block; }
+    }
+}
+
+.engraving-image--commitment { 
+    img { max-width: 28rem; display: block; margin: 0 auto; }
+}
+
+@media only screen and (max-width: 767px) {
+    .engraving-image--commitment {
+        img { max-width: 28rem; width: 50%; margin: 4rem auto 2rem; display: block; }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--social-proof {
+        img { max-width: 40rem; width: 80%; margin: 4rem auto 2rem; display: block; }
+    }
+}
+@media only screen and (min-width: 768px) {
+    .engraving-image--social-proof { 
+        img { width: 50rem; display: block; margin: 0 auto; }
+    }
+}
+
+.engraving-image--authority { 
+    img { width: 18rem; display: block; margin: 0 auto; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--authority {
+        img { max-width: 40rem; width: 30%; margin: 4rem auto 2rem; display: block; }
+    }
+}
+
+.engraving-image--scarcity { 
+    img { width: 36rem; display: block; margin: 0 auto; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--scarcity {
+        img { max-width: 40rem; width: 70%; margin: 4rem auto 2rem; display: block; }
+    }
+}
+
+.engraving-image--framing { 
+    img { width: 36rem; display: block; margin: 0 auto; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--framing {
+        img { max-width: 40rem; width: 70%; margin: 4rem auto 2rem; display: block; }
+    }
+}
+
+.engraving-image--salience { 
+    img { width: 40rem; display: block; margin: 0 auto; }
+}
+@media only screen and (max-width: 767px) {
+    .engraving-image--salience {
+        img { max-width: 40rem; width: 70%; margin: 4rem auto 2rem; display: block; }
+    }
+}
+
+.engraving-image--balloon { 
+    img { width: 36rem; display: block; margin: 0 auto; }
+}
+@media only screen and (max-width: 599px) {
+    .engraving-image--balloon {
+        img { width: 26rem;  margin: 4rem auto 2rem; display: block; }
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .engraving-image--balloon {
+        img { width: 32rem;  margin: 4rem auto 2rem; display: block; }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+.sticky { position: sticky; top: 2rem; }
+}

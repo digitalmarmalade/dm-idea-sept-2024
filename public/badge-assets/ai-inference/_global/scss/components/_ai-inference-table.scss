@@ -1,0 +1,133 @@
+.ai-inference-table {
+
+  & table {  
+    color: $blue-dark;
+    height: auto;
+    line-height: 1.2;
+    margin-bottom: $space-medium;
+    position: relative;
+    table-layout: auto;
+    width: 100%;
+  }
+
+  & table, & thead, & tbody, & th, & td, & tr {
+    display: block;
+  }
+
+  & thead > tr > th {
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+  }
+
+  & tr > td { 
+    background-color: #fff;
+    border: none;
+    padding: 1em 1em 1em calc(33.333% + 1em);
+    position: relative;
+  }
+
+  & tr > td::before { 
+    left: 1em;
+    padding-right: 2em;
+    position: absolute; 
+    white-space: nowrap;
+    width: 33.333%; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  & tr:first-of-type > td:first-of-type {
+    border-top-right-radius: $border-radius;
+    border-top-left-radius: $border-radius;
+  }
+
+  & tr:last-of-type > td:last-of-type {
+    border-bottom-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+  }
+
+  & tr > td:first-of-type {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+  & tr > td:nth-of-type(2) {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  & tr > td:nth-of-type(3) {
+    background-color: rgba(255, 255, 255, 0.65);
+    border-bottom: 0.2em solid $blue-dark;
+  }
+
+  & tr > td::before {
+    font-weight: bold;
+  }
+
+  & tr > td:nth-of-type(1)::before { 
+    content: 'Model'; 
+    text-transform: none;
+  }
+
+  & tr > td:nth-of-type(2)::before { 
+    content: 'Functionality'; 
+  }
+
+  & tr > td:nth-of-type(3)::before {
+    content: 'Example'; 
+  }
+
+  @media screen and (min-width: 768px) {
+    & table, & thead, & tbody, & th, & td, & tr {
+      display: revert;
+    }
+
+    & thead > tr > th {
+      background-color: $yellow;
+      left: unset;
+      padding: 1em;
+      position: static;
+      top: unset;
+    }
+
+    & th:first-child {
+      border-top-left-radius: $border-radius;
+    }
+
+    & th:last-child {
+      border-top-right-radius: $border-radius;
+    }
+
+    & tr > td::before { 
+      display: none;
+    }
+
+    & tr > td { 
+      border: revert;
+      padding: 1em;
+    }
+
+    & tr > td:nth-of-type(2) {
+      background-color: rgba(255, 255, 255, 0.85);
+    }
+
+    & tr > td:nth-of-type(3) {
+      background-color: rgba(255, 255, 255, 0.65);
+      border: none;
+    }
+
+    & tr:last-of-type td:first-of-type {
+      border-bottom-left-radius: $border-radius;
+    }
+
+    & tr:last-of-type td:last-of-type {
+      border-bottom-right-radius: $border-radius;
+      border-bottom-left-radius: revert;
+    }
+
+    & tr:first-of-type > td:first-of-type {
+      border-radius: revert;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/*! Dashboard */
+
+.dashboard-banner { height: 400px; background: url(../../../SwimWales/Website/img/dashboard-banner.jpg) center center; background-size: cover; background-position:center top; margin: -20px 0; } 
+.dashboard-holder { width: 980px;  margin: 0 auto; position: relative; text-align: center; padding: 20px 0; }
+.dashboard-logo-holder { display: table; width: 264px; height: 164px; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,.5); position: absolute; top: -97px; left: 0; }
+.dashboard-logo { display: table-cell; text-align: center; vertical-align: middle; }
+
+.dashboard-minor-links { background: $primary-colour; padding: 10px 0;
+
+	ul { width: 980px; margin: 0 auto; text-align: right; padding: 0; }
+	li { display: inline-block; margin: 0 0 0 15px; border-left: 1px solid #fff; padding-left: 15px; line-height: 1; }
+	li:first-child { border-left: none; }
+	a { color: #fff; text-transform: uppercase; text-decoration: none; }
+
+}
+
+.dashboard-heading { font-size: 3.6em; color: #666; margin: 0 284px 10px; padding: 40px 0 0; line-height: 1.1; font-weight: 400; }
+.dashboard-subheading { color: $primary-colour; font-size: 1.8em; max-width: 700px; margin: 0 auto 20px; }
+
+.dashboard-links { list-style: none; margin: 0 -10px 40px; padding: 0; 
+
+	li { width: 20%; padding: 10px; margin: 0; display: table; float: left; }
+	a { display: table-cell; background: #fff; vertical-align: middle; height: 100px; color: #666; font-size: 1.2em; text-decoration: none; text-transform: uppercase; border: 1px solid #ccc; }
+
+}

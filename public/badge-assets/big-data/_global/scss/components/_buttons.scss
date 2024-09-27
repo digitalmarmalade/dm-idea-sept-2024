@@ -1,0 +1,28 @@
+/*! Buttons */
+
+.btn-next-step {
+  width: auto;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: $bebas;
+  font-size: 3em;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  color: $white;
+  z-index: 2;
+  background: $dark-blue;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  transition: .3s all;
+  &:hover {
+    background: darken($dark-blue, 10%);
+  }
+}
+
+
+.btn-next-step span {
+  font-weight: bold;
+  text-transform: lowercase;
+  font-family: 'arial','helvetica', sans-serif;
+}

@@ -1,0 +1,37 @@
+.task-1 {
+  select {
+    background-color: $white;
+    border: none;
+    color: $pink;
+    font-family: $source-code;
+    padding: 10px;
+    border-radius: $border-radius-btn;
+    font-size: 1em;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  .grad-green{
+    min-height: calc(100vh - 40px);
+    background: url(../img/grad-yellow.png) no-repeat 200% 0, $grad-green;
+  }
+
+}
+
+
+@media only screen and (min-width: $lg-width) {
+ .task-1 {
+   h1 {
+     font-size: 3rem;
+   }
+   p {
+     font-size: 1rem;
+   }
+   li {
+     font-size: .75rem;
+     margin: 0 0 1.2rem;
+   }
+   select {
+     padding: .25rem 1rem;
+   }
+ }
+}

@@ -1,0 +1,16 @@
+/*! Words List */
+
+.words .got span {  background-color: $dark-blue; color:#fff;}
+.words li { font-size: 1.3rem; }
+.words li span  { color: $text-colour;  border-radius: .2rem; height: 4rem; line-height: 4rem; letter-spacing: .1rem;}
+
+.intro-complete td.selected { color:#FFF; }
+.intro-complete .words .got span { background-color: $dark-blue; color: #fff; }
+
+.words li.got span { font-weight: normal; }
+
+.words li span,
+td span { font-family: $regular-font;  font-weight: 700; font-size: 14px; }
+
+
+.words { displaY: none; }

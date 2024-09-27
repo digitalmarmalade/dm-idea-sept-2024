@@ -1,0 +1,118 @@
+.processing {
+  background-color: $blue-3;
+  border: 0.5em solid $blue-1;
+  border-radius: 1.6rem;
+  display: none;
+  left: 50%;
+  padding: $space-large;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(80rem, 90%);
+  z-index: 2;
+
+  & .processing__top {
+    display: flex;
+    gap: $space-medium;
+    justify-content: center;
+
+    & > * {
+      width: calc(50% - #{$space-medium});
+    }
+
+    & .processing__images {
+      position: relative;
+    }
+  }
+
+  & .processing__bottom {
+    font-size: $r-medium;
+    font-weight: bold;
+    height: 35px;
+    margin-bottom: $space-large;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.processing__image {
+  background-color: rgb(255 255 255 / 0.333);
+  border-radius: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
+}
+
+.processing__item {
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  visibility: hidden;
+  width: 100%;
+}
+
+.processing__item--1, .processing__image--1 {
+  animation: processing__animation--1 10s infinite forwards;
+}
+
+.processing__item--2, .processing__image--2 {
+  animation: processing__animation--2 10s infinite forwards;
+}
+
+.processing__item--3, .processing__image--3 {
+  animation: processing__animation--3 10s infinite forwards;
+}
+
+@keyframes processing__animation--1 {
+  0%, 33.333% {
+    visibility: visible;
+  }
+
+  33.4%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes processing__animation--2 {
+  0%, 33.333% {
+    visibility: hidden;
+  }
+
+  33.4%, 66.666% {
+    visibility: visible;
+  }
+
+  66.7%, 100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes processing__animation--3 {
+  0%, 66.666% {
+    visibility: hidden;
+  }
+
+  66.7%, 100% {
+    visibility: visible;
+  }
+}
+
+.overlay {
+  background-color: rgb(0 40 90 / 0.75);
+  backdrop-filter: blur(10px);
+  bottom: 0;
+  display: none;
+  left: 0;
+  //inset: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.processing--active, .overlay--active {
+  display: block;
+}

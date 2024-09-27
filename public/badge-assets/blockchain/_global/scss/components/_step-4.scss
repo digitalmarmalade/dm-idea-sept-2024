@@ -1,0 +1,44 @@
+
+@media only screen and (min-width: $md-width) {
+  .step-4 {
+    .cols {
+      width: 75%;
+    }
+    .cols2 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 47.5%;
+
+      }
+    }
+    h2 {
+      margin: 60px 0 0;
+    }
+  }
+
+  .slick-slide {
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  .slick-slide {
+    p {
+      font-size: 1.25em;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .slick-slide {
+    p {
+      font-size: 1.5em;
+    }
+  }
+}

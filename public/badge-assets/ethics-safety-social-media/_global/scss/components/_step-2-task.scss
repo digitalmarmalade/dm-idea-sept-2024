@@ -1,0 +1,174 @@
+.task ul.steps {
+  margin: 30px auto 0 auto;
+  display: block;
+  width: 259px;
+  li {
+    border: 1px solid rgba(255,255,255,.5);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+    position: relative;
+  }
+  li:after {
+    content: "";
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    width: 12px;
+    position: absolute;
+    top: 50%;
+    right: -13px;
+  }
+  li:last-child:after {
+    width: 0;
+  }
+  li.on {
+    border: 1px solid rgba(255,255,255,1);
+    background-color: $purple;
+  }
+  li.on:after {
+    border-bottom: 1px solid rgba(255,255,255,1);
+  }
+}
+.task {
+  padding-bottom: 40px;
+  ul {
+    position: relative;
+    z-index: 2;
+    margin: 60px 0 20px 0;
+  }
+  li {
+    width: 100%;
+    height: 60px;
+    display: block;
+    margin: 0 0 10px;
+    a {
+      font-weight: 400;
+      border-radius: $border-radius;
+      background-color: $blue;
+      color: $white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      margin: 0;
+      text-decoration: none;
+      transition: all .3s;
+    }
+    a:hover {
+      background-color: $purple;
+    }
+    a.selected {
+      background-color: $purple;
+    }
+    a.selected-wrong {
+      background: $red;
+      animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+    }
+  }
+
+}
+
+.task-ethics {
+  p.behaviour {
+    width: calc(100% - 30px);
+    font-family: 'bebas_neuebold', sans-serif;
+    font-size: 2em;
+    line-height: .9;
+    color: $light-green;
+    position: relative;
+    margin: 60px 0 0 30px;
+    transition: all .3s;
+  }
+  p.behaviour:before, p.behaviour:after {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 4em;
+    position: absolute;
+    opacity: .5;
+  }
+  p.behaviour:before {
+
+    content: "\201C";
+    top: -40px;
+    left: -30px;
+  }
+  p.behaviour:after {
+    content: "\201D";
+    top: 70%;
+    right: 40px;
+  }
+  .feedback {
+    padding: 10px 0 40px 0;
+    float:left;
+    position: relative;
+  }
+
+}
+.col-1-step-2 img {
+
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+    flex-shrink: 0;
+}
+
+@media only screen and (min-width: $md-width) {
+
+}
+
+
+@media only screen and (min-width: $lg-width) {
+  .task-ethics .question {
+    ul {
+      display: flex;
+    }
+    li {
+      margin: 0 5px;
+    }
+    p.behaviour:after {
+      content: "\201D";
+      top: 50%;
+      right: 40px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: $xl-width) {
+  .task ul.steps {
+    margin: 60px auto;
+    width: 390px;
+    li {
+      width: 20px;
+      height: 20px;
+    }
+    li:after {
+      content: "";
+      border-bottom: 1px solid rgba(255,255,255,.5);
+      width: 13px;
+      position: absolute;
+      top: 10px;
+      right: -14px;
+    }
+  }
+  .task-ethics p.behaviour {
+    font-size: 3em;
+  }
+
+  .task-ethics p.behaviour:before {
+    top: -80px;
+    left: -30px;
+  }
+  .task-ethics p.behaviour:after {
+    top: 80%;
+    right: 20px;
+  }
+
+}

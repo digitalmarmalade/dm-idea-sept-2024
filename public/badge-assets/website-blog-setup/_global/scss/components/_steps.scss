@@ -1,0 +1,33 @@
+.step {
+  background-color: $red;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: $white;
+  height: auto;
+  padding: 50px 0 10px 0;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1em;
+  margin: 0 -20px 90px;
+  span {
+    background-color: $purple;
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.home .step {
+  font-size: 1.35em;
+  margin: 0 auto 40px;
+}
+
+@media only screen and (min-width: $md-width) {
+   .step {
+    max-width: 400px;
+    margin: 0 auto 100px auto;
+  }
+}

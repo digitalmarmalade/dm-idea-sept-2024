@@ -1,0 +1,74 @@
+/*-----
+HOME
+-----*/
+
+.home { background-color: $cream; 
+  main { overflow: hidden; }
+  &__globe { display:block; max-width: 111.5rem; width: 100%; margin: auto; padding: 3rem 2.5rem 0 2.5rem;; }
+  &__intro { width:100%; max-width:100%; text-align: center; margin:0 auto 6rem auto; padding: 0 2.5rem; }
+  &__title { font-size: 12vw; font-weight: $bold; line-height: .95; margin-bottom:3.5rem; }
+  &__title span { font-size: 7.5vw; }
+
+  &__characters { position: relative;  padding-top: 15%; }
+  &__characters img { position: absolute; }
+  &__people img { max-width: 100%;   }
+  &__people-image { position: relative; z-index:100; width: 100%; }
+
+  &__people-image { position: relative;  }
+  
+  &__people-history { top:0; left:0%; width: 25.76%;}
+  &__people-importance { top: -8%; left: 23.2%; z-index:14; width: 22.08%;  }
+  &__people-goal-keeper { top:0; left: 42.5%; z-index:13; width: 34.65%; }
+  &__people-technology { top: 9%; left: 71%; width: 25.76%; }
+
+
+  /* Animations */
+  &__people-history,
+  &__people-importance, 
+  &__people-goal-keeper, 
+  &__people-technology {  animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: linear;
+  animation-name: MoveUpDown; }
+
+  &__people-history { animation-delay: 0s; }
+  &__people-importance { animation-delay: .25s; }
+  &__people-goal-keeper  { animation-delay: .8s; }
+  &__people-technology {  animation-delay: .5s; }
+
+  &__button-start { position: absolute; bottom:0; z-index:100; bottom: 5rem; width: 100%; text-align: center; }
+  img { display: block; }
+}
+
+.home p { font-size: 1.8rem; }
+
+@media(min-width: $md-width){
+  .home p { font-size: 2.2rem; }
+
+  .home {
+      &__button-start { bottom: 8%; }
+
+  }
+}
+
+
+@media(min-width: $lg-width){
+  .home__intro-text { max-width:70%; margin-left:auto; margin-right:auto; }
+}
+
+@keyframes MoveUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% {  transform: translateY(-1.5rem);  }
+}
+
+@media(min-width: $xl-width){
+  .home__intro-text { max-width:50%; }
+}
+
+
+
+@media(min-width: 1600px){
+
+  .home {
+    &__title { font-size: 8vw; }
+    &__title span { font-size: 5vw; }
+  }
+}

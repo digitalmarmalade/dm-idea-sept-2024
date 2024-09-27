@@ -1,0 +1,20 @@
+/*! Framework */
+
+img { width: 100%; height: auto; position: relative; display: block; margin: 0 auto; }
+html, body, .holder { min-height: 100%; }
+
+
+.inline-list li { display: inline-block; margin: 0 10px 10px 0; }
+/*
+@media only screen and (max-width: $sm-width-under) {
+    .small-screen { display: flex; align-items: center; text-align: center; width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: #455a64; color: #fff; }
+    .small-screen-message { width: 80%; margin: 0 auto; }
+    .page-content { display: none; }
+}
+
+@media only screen and (min-width: $sm-width) {
+
+   .small-screen { display: none; }
+
+}*/
+.small-screen { display: none; }

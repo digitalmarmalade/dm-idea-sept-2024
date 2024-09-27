@@ -1,0 +1,111 @@
+.radio-button-activity {
+  align-items: center;
+  background-color: $white;
+  border: 0.1em solid $grey-3;
+  border-radius: $x-small-border-radius;
+  display: flex;
+  flex-direction: column;
+  gap: $space-x-small;
+  margin-bottom: $space-xxx-small;
+  padding: $space-small;
+
+  &:last-of-type {
+    margin-bottom: $space-medium;
+  }
+
+  & .radio-button-activity__question {
+
+    @media (min-width: $md-width) {
+      width: calc(70% - #{$space-x-small});
+    }
+  }
+
+  & .radio-button-activity__choices {
+    align-self: flex-start;
+    display: flex;
+    flex: 1;
+    margin: 0;
+    width: 100%;
+
+    & .radio-button-activity__choice {
+      background: $gradient-orange;
+      background-clip: text;
+      border: 0.2em solid $orange;
+      color: transparent;
+      cursor: pointer;
+      flex: 1;
+      font-size: $r-small;
+      font-weight: bold;
+      line-height: 1;
+      padding: $space-x-small $space-xx-small;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-background-clip: text;
+
+      &:hover {
+        background: $gradient-orange;
+        color: $white;
+      }
+
+      &:first-of-type {
+        border-bottom-left-radius: $small-border-radius;
+        border-top-left-radius: $small-border-radius;
+        margin-right: -0.1em;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: $small-border-radius;
+        border-bottom-right-radius: $small-border-radius;
+        margin-left: -0.1em;
+      }
+    }
+
+    & .radio-button-activity__choice--success {
+      background: $green-success !important;
+      border-color: $green-success;
+      color: $white;
+      pointer-events: none;
+    }
+
+    & .radio-button-activity__choice--fail {
+      background: $red-fail !important;
+      border-color: $red-fail;
+      color: $white;
+      pointer-events: none;
+    }
+
+    & > input[type="radio"] {
+      appearance: none;
+      background-color: $white;
+      display: none;
+      margin: 0;
+      -webkit-appearance: none;
+
+      &:focus {
+        outline: none;
+      
+        & + .radio-button-activity__choice {
+          outline: 0.1em dashed $grey-5;
+          outline-offset: 0.1em;
+        }
+      }
+
+      &:checked + .radio-button-activity__choice {
+        background: $gradient-orange;
+        color: $white;
+      }
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+  }
+}
+
+.radio-button-activity--col {
+  flex-direction: column;
+
+  & .radio-button-activity__question {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+.activity--feedback {
+  position: relative;
+  max-width: 32rem;
+  margin: -1.2rem auto 1.2rem;
+  width: calc(100% - 3.2rem);
+
+  .holder {
+    position: relative;
+    margin: 1.2rem 0;
+    width: 100%;
+    padding: 0;
+  }
+  .speech-bubble--holder {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .speech-bubble {
+    width: 100%;
+    max-width: 100%;
+  }
+  img {
+    width: 60px;
+    height: auto;
+    margin: 0;
+  }
+  .btn {
+    width: 12rem;
+    position: absolute;
+    bottom: 1.2em;
+    margin: 0;
+  }
+}
+
+.activity--feedback-fail {
+  .btn {
+    right: 1.2em;
+  }
+  .speech-bubble {
+    background-color: $red;
+  }
+}
+
+.activity--feedback-success {
+  .btn {
+    left: 1.2em;
+  }
+  .speech-bubble {
+    background-color: $green;
+  }
+}
+
+
+
+
+@media only screen and (min-width: $sm-width) {
+  .activity--feedback {
+    margin: -3.2rem auto 3.2rem;
+    .speech-bubble--holder {
+      padding: 1.6em;
+    }
+  }
+  .activity--feedback-success,
+  .activity--feedback-fail {
+    .btn {
+      position: absolute;
+      left: 50%;
+      margin-left: -6rem;
+    }
+  }
+}

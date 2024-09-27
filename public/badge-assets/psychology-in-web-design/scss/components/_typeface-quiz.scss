@@ -1,0 +1,33 @@
+.typeface-quiz-holder { padding: 5rem 0 0; }
+
+.quiz-intro { text-align: center; margin: 5rem auto; max-width: 44rem; }
+.typeface-quiz { background: #fff; padding: 3rem 2rem 1rem; text-align: center; margin: 0 0 4rem; }
+
+@media only screen and (min-width: 768px) {
+    .typeface-quiz { padding: 8rem 2rem; }
+}
+
+@media only screen and (max-width: 768px) {
+.typeface-list { list-style: none; margin: 0; padding: 0;
+    
+    li { margin: 0 0 1rem; }
+    a { display: block; padding: 1rem; text-align: center; color: #fff; text-decoration: none; background: #444; font-size: 2rem; 
+        &.selected { background: $success; }
+    }
+}
+}
+
+@media only screen and (min-width: 768px) {
+.typeface-list { list-style: none; margin: 0 -.5rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;
+    
+    li { width: calc(50% - 1rem); margin: 0 .5rem 1rem; }
+    a { display: block; padding: 3rem; text-align: center; color: #fff; text-decoration: none; background: #444; font-size: 3rem; 
+        &.selected { background: $success; }
+    }
+}
+}
+
+.typeface-quiz__title { font-size: 2rem; margin: 0 0 2rem; }
+.typeface-quiz__question { font-size: 2.4rem; margin: 0 0 3rem; }
+
+.sans-serif { font-family: sans-serif; }

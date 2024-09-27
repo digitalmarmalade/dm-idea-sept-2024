@@ -1,0 +1,62 @@
+.password-strength-test {
+    input {
+        border: none;
+        border-bottom: 1px solid $black;
+        width: 80%;
+        max-width: 700px;
+        height: 60px;
+        font-size: 1.5em;
+        color: $purple;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 400;
+        text-align: center;
+        outline: none;
+        cursor: pointer;
+    }
+    .strength-bar {
+        border: 1px solid $pink;
+        height: 20px;
+        width: 100%;
+        position: relative;
+        span {
+            height: 100%;
+            display: inline-block;
+            width: 0;
+            background-color: $pink;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .strength-bar-legend {
+        p {
+            text-align: center;
+            margin: 10px 0;
+            span:first-child {
+                float: left;
+            }
+            span:last-child {
+                float: right;
+            }
+        }
+    }
+    .password-feedback {
+        padding: 40px 0 10px;
+    }
+    .password-feedback-text {
+        margin: 30px 0;
+        color: $pink;
+        font-weight: 700;
+    }
+}
+
+.password-strength-boxes {
+    padding: 0 0 40px;
+}
+
+@media only screen and (min-width: $lg-width) {
+    .password-strength-test .password-feedback{
+        width: 600px;
+        margin: 0 auto;
+    }
+}

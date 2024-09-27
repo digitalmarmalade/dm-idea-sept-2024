@@ -1,0 +1,100 @@
+html {
+  background-image: $gradient--purple-dark;
+  background-repeat: no-repeat;
+  // min-height: 100%; /* This is needed to fix the issue in Firefox */
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh; /* This is needed to fix the issue in Firefox */
+  height: auto;
+}
+
+.main-content {
+  padding: $space-small 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.main-footer {
+  margin-top: $space-x-large;
+  padding-bottom: $space-small;
+  text-align: center;
+  font-size: $r-small;
+}
+
+article {
+  margin-bottom: $space-medium;
+  & section {
+    &:not(:last-child) {
+      margin-bottom: $space-medium;
+    }
+  }
+  @media (min-width: $md-width) {
+    margin-bottom: $space-large;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(89.7rem + calc($space-small * 2));
+  padding: 0 $space-small;
+  + .container {
+    margin-top: $space-small;
+  }
+  @media (min-width: $md-width) {
+    max-width: calc(89.7rem + calc($space-medium * 2));
+    padding: 0 $space-medium;
+    + .container {
+      margin-top: $space-x-large;
+    }
+  }
+}
+
+.container--sm {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(60rem + calc($space-small * 2));
+  padding: 0 $space-small;
+  @media (min-width: $md-width) {
+    max-width: calc(60rem + calc($space-medium * 2));
+    padding: 0 $space-medium;
+  }
+}
+
+p {
+
+  & + * {
+    margin-top: $space-x-small;
+  }
+}
+
+ul {
+
+  & + * {
+    margin-top: $space-small;
+  }
+}
+
+img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img, svg {
+  height: auto;
+}
+
+.width--full {
+  width: 100%;
+}

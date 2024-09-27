@@ -1,0 +1,19 @@
+.image-quiz { background: #fff; padding: 2rem; text-align: center; margin: 0 0 4rem; }
+
+@media only screen and (min-width: 768px) {
+    .image-quiz { padding: 6rem; }
+}
+
+.image-list { list-style: none; margin: 0 -.5rem; padding: 0; display: flex; justify-content: center;
+    
+    li { flex: 1; margin: 0 .5rem; }
+    a { display: block; text-decoration: none; border: .1rem solid #ededed;
+        &.selected { outline: .5rem solid $success; outline-offset: -.5rem; }
+    }
+    img{ max-width: 100%; height : auto; }
+}
+
+.image-quiz__title { font-size: 2rem; margin: 0 0 2rem; }
+.image-quiz__question { font-size: 2.4rem; margin: 0 0 3rem; }
+
+.sans-serif { font-family: sans-serif; }

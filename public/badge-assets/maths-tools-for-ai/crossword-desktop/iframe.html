@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<a href="#" class="check">Check</a>
+	<iframe id="game" src="index.html" width="100%" height="600px"></iframe>
+
+<script>
+/*
+        var myCustomData = { status: 'completed' }
+        var event = new CustomEvent('myEvent', { detail: myCustomData })
+        window.parent.document.dispatchEvent(event)
+*/
+var iframe = document.getElementById("game").contentWindow;
+var check = document.querySelector('.check');
+
+
+check.addEventListener('click', function (e) {
+	e.preventDefault();
+
+	var myCustomData = { status: 'check' }
+	var event = new CustomEvent('checkGame', { detail: myCustomData })
+	
+	// Dispatch the event to the iframe.
+    iframe.dispatchEvent(event);
+	//console.log(test1);
+});
+
+</script>
+
+
+
+</body>
+</html>

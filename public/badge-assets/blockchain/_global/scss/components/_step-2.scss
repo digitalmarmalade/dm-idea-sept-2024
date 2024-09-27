@@ -1,0 +1,50 @@
+.step-2 {
+  .top .slides {
+    background: url(../img/interrogation-mark.png) no-repeat 25% 0;
+  }
+  section {
+    padding: 0;
+    min-height: auto;
+  }
+  h1 {
+    padding: 80px 20px 20px;
+  }
+  .slides {
+    margin: 30px auto;
+  }
+  .box:nth-child(6) .icon-box {
+    width: 200px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .grad-green{
+    background: url(../img/grad-yellow.png) no-repeat 200% -300px, $grad-green;
+    min-height: auto;
+  }
+}
+
+
+@media only screen and (min-width: $md-width) {
+
+  .step-2 {
+    .box {
+      padding: 40px 20px 20px;
+    }
+    .slick-initialized .slick-slide.slick-slide {
+      height: 450px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step-2 {
+    h1 {
+      padding: 80px 100px 20px;
+    }
+    .slick-initialized .slick-slide.slick-slide {
+      height: 490px !important;
+    }
+  }
+}

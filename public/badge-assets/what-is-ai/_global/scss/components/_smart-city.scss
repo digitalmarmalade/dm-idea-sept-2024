@@ -1,0 +1,64 @@
+.smart-city {
+  overflow: hidden;
+}
+
+.holder--smart-city {
+  width: 440px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 0 1.6rem;
+  background: url(../images/illustration--smart-city.png) no-repeat center center;
+  background-size: 100%;
+
+}
+
+
+#smart-city {
+  display: flex;
+  //width: 100%;
+  height: auto;
+  //width: 90%;
+  width: 100%;
+  margin-left: -3rem;
+  .speech-bubble {
+    display: none;
+    overflow: hidden;
+    transform-origin: center; /* or transform-origin: 50% */
+    transform-box: fill-box;
+    &.active {
+      display: block;
+    }
+  }
+
+  .trigger {
+    transform-origin: center; /* or transform-origin: 50% */
+    transform-box: fill-box;
+
+
+  }
+}
+
+.trigger g { cursor: pointer; }
+
+@media only screen and (min-width: $md-width) {
+  .holder--smart-city {
+    width: 880px;
+
+    margin: -4.8em auto 4.8em auto;
+    z-index: 2;
+  }
+
+  #smart-city {
+      width: 100%;
+  }
+  //
+  .hide-overflow.smart-city {
+   // overflow: visible;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .hide-overflow.smart-city .holder--smart-city {
+   // overflow: visible;
+  }
+}

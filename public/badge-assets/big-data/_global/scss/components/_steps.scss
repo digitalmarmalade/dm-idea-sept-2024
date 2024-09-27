@@ -1,0 +1,137 @@
+.step {
+  display: flex;
+  padding:0;
+  flex-direction: column;
+  position: relative;
+}
+
+.step-task,
+.step-number {
+  width: 100%;
+  font-size: 8em;
+  font-family: $bebas;
+  padding: 10px 0;
+  display: block;
+  line-height: 1;
+  position: relative;
+}
+
+.step-task {
+  font-size: 3em;
+}
+
+.step-copy-wrapper {
+  display: block;
+}
+
+.step-copy {
+  padding: 30px 0;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .step {
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+  }
+  .task-header {
+    height: 240px;
+  }
+  .step-task,
+  .step-number {
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .step-copy-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px;
+    width: 100%;
+    text-align: left;
+
+  }
+  .step-copy {
+    margin: 0;
+    width: auto;
+    width: 90%;
+
+  }
+
+  .step-1 .step-copy-wrapper {
+    background: url(../img/step-bg.png) no-repeat 100% 0, $grad-pink;
+  }
+
+  .step-2 .step-copy-wrapper {
+    background: url(../img/step-bg.png) no-repeat 100% 0, $grad-red;
+  }
+
+  .step-3 .step-copy-wrapper {
+    background: url(../img/step-bg.png) no-repeat 100% 0, $grad-orange;
+  }
+
+  .step-4 .step-copy-wrapper {
+    background: url(../img/step-bg.png) no-repeat 100% 0, $grad-yellow;
+  }
+
+  .step-5 .step-copy-wrapper {
+    background: url(../img/step-bg.png) no-repeat 100% 0, $grad-green;
+  }
+
+  .step-6 .step-copy-wrapper {
+    background: url(../img/step-bg.png) no-repeat 100% 0, $grad-light-blue;
+  }
+
+  .task-1 .step-copy-wrapper {
+    background: no-repeat 100% 0, $grad-pink;
+  }
+
+  .task-2 .step-copy-wrapper {
+    background: no-repeat 100% 0, $grad-red;
+  }
+
+  .task-3 .step-copy-wrapper {
+    background: no-repeat 100% 0, $grad-orange;
+  }
+
+  .task-4 .step-copy-wrapper {
+    background: no-repeat 100% 0, $grad-yellow;
+  }
+
+  .task-5 .step-copy-wrapper {
+    background:no-repeat 100% 0, $grad-green;
+  }
+
+  .task-6 .step-copy-wrapper {
+    background: no-repeat 100% 0, $grad-light-blue;
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step {
+    display: flex;
+    height: 380px;
+    flex-direction: row;
+  }
+
+  .task-header {
+    height: 240px;
+  }
+
+  .step-number {
+    width: 240px;
+    font-size: 14em;
+  }
+
+  .step-copy {
+    width: 62.5%;
+  }
+}

@@ -1,0 +1,22 @@
+
+  select {
+    height:50px;
+    border-radius: .2rem;
+    width: 100%;
+    font-family: $roboto;
+    color: $yellow;
+    position: relative;
+    z-index: 2;
+    padding: 0 .8rem 0 0.2rem;
+    min-width: auto;
+    background-color: transparent;
+    font-size: $bodycopy;
+    border: .1rem solid $yellow;
+    cursor: pointer;
+    width: auto;
+    &:focus,
+    &:hover {
+       background: $yellow;
+       color: $blue-dark;
+     }
+   }

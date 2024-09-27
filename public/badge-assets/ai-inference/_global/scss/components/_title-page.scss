@@ -1,0 +1,28 @@
+.title-page {
+  background-image: url('/badge-assets/ai-inference/_global/svg/bg--factory.svg'),$gradient--blue-dark;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.title-page__heading {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  text-shadow: 0 0 0.25em rgb(255 255 255 / 0.5);
+
+  @media (min-width: $md-width) {
+    font-size: 10rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.title-page__heading--exp {
+  display: block;
+  font-size: 10rem;
+  margin-bottom: -2.5rem;
+
+  @media (min-width: $md-width) {
+    font-size: 20rem;
+    margin-bottom: -5rem;
+  }
+}

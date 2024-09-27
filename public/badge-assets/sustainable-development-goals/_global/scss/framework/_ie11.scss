@@ -1,0 +1,38 @@
+/* specific IE stuff */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.goal-2-col .goal-1-col { min-height: 78rem }
+
+	.step-item-2 .task-dropdown-wrapper { position:absolute; top: 6.5%; left: 50%; transform: translateX(-50%); }  
+	.step-item-3 .task-dropdown-wrapper { position:absolute; top: 10%; left: 50%; transform: translateX(-50%); }
+	
+	.step-item-4 {
+		.quiz-holder { position:absolute; top: 15%; left: 50%; transform: translateX(-50%); }
+		.step-4-intro-text img { width: 100%; right: 20%; }
+
+		.bg-health { background-size: 110% !important; background-position: bottom right -42rem !important; }
+
+	
+		.laptop { left: 0%; max-width: 75%; }
+		.mouse { max-width: 25%; left: 50%; }
+		.ruler { max-width: 45%; left: 60%; }
+		.pencil  { max-width: 25%; left: 72%; }
+
+		.bg-energy { background-size: 80%; }
+		.human-hand-wrapper { padding-bottom: 100%; }
+	} 
+
+}
+
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (min-width: 1200px){
+	.col-wrapper.col-hunger .col { flex-basis: 28%; }
+}
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) and (max-width:1199px) and (min-width:768px){
+	.col-wrapper.col-hunger .col-1 .inner-col, .col-wrapper.col-hunger .col-4 .inner-col {
+	    flex-basis: 40%;
+	}
+}

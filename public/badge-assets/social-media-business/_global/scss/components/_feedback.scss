@@ -1,0 +1,45 @@
+.feedback {
+  color: $white;
+  position: relative;
+  padding: 50px 20px 10px;
+  margin: 20px -20px -20px;
+  p{
+    display: block;
+  }
+  p:first-child {
+    font-family: 'bebas_neuebold';
+    font-size: 2em;
+    line-height: 1;
+  }
+  .btn {
+    background-color: $white;
+    margin: 10px 0 30px 0;
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  .btn:hover {
+    background-color: rgba(255,255,255,.8);
+  }
+}
+
+.feedback-success {
+  background-color: $dark-blue;
+  .btn {
+    color: $dark-blue;
+    border-bottom: 3px solid $light-blue;
+  }
+}
+
+.feedback-fail {
+  background-color: $pink;
+  .btn {
+    color: $pink;
+    border-bottom: 3px solid #efa0be;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .feedback {
+    margin: 50px -50px -50px;
+  }
+}

@@ -1,0 +1,109 @@
+.activity {
+  background: $gradient--blue-light;
+  overflow: hidden;
+  p {
+    color: $blue-dark;
+  }
+  // padding: 1.2em;
+}
+
+.box--activity__feature,
+.box--activity__questions-index {
+  font-weight: 700;
+}
+
+
+.list--activity-answers__item {
+  cursor: pointer;
+  background-color: $white;
+  color: $blue-dark;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  margin: .8em 0;
+  transition: $transition;
+  height: auto;
+  font-weight: 700;
+  line-height: 1.2;
+  position: relative;
+  //&:hover,
+  &.selected {
+    opacity: .25;
+    box-shadow: none;
+  }
+  &:focus {
+    border: .2rem solid $blue-dark;
+  }
+  &:last-child {
+    margin: .8em 0;
+  }
+  &.transparent {
+    background-color: rgba(255,255,255,.25);
+    border: .05rem solid rgba(225,255,255,.5);
+    img {
+      margin: 0;
+    }
+  }
+  .selection-overlay {
+    position: absolute;
+    transition: $transition;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.75);
+    border-radius: $border-radius;
+    border: .1rem solid rgba(225,255,255,.5);
+    color: $blue-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.touch .list--activity-answers__item {
+  &.selected {
+    .selection-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.no-touch .list--activity-answers__item {
+  &.selected,
+  &:hover {
+    .selection-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.no-touch .list--activity-answers__item {
+  &:hover {
+    opacity: .25;
+    box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: $sm-width) {
+  .list--activity-answers__item {
+    display: flex;
+    max-width: calc(50% - .8em);
+    margin: .4em;
+    &:last-child {
+      margin: .4em;
+    }
+  }
+
+  .list--activity-answers-3-cols {
+    display: flex;
+    width: 100%;
+    .list--activity-answers__item {
+      width: calc(33.3% - .8rem);
+    }
+  }
+}

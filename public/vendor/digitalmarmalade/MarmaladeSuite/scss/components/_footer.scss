@@ -1,0 +1,71 @@
+/*! Footer */
+
+
+.site-footer { padding: 90px 30px 30px; position: relative; }
+.site-footer-links { list-style: none; margin: 0; padding: 0; text-transform: uppercase; }
+.site-footer-links li { font-size: 1.1em; margin: 0 0 5px; }
+.site-footer-links a { color: #333; text-decoration: none; }
+.site-footer-links a:hover { text-decoration: underline; }
+
+.powered-by-logo-holder,
+.footer-council-logo-holder { position: absolute; top: 20px; display: table; width: 45%; height: 40px; }
+
+.powered-by-logo-holder { left: 30px; }
+.footer-council-logo-holder { right: 30px; }
+
+.powered-by-logo,
+.footer-council-logo { display: table-cell; vertical-align: middle; }
+
+.footer-council-logo { text-align: right; }
+
+.powered-by-logo img,
+.footer-council-logo img { width: auto; max-height: 40px; }
+
+
+@media screen and (min-width: $md-width) {
+
+.site-footer { padding: 90px 30px 20px; }
+.site-footer-links li { display: inline-block; margin: 0 0 10px -4px; width: 27%; vertical-align: top; }
+.site-footer-links li:nth-child(4n) { width: 19%; }
+
+.powered-by-logo-holder { left: 20px; width: auto; }
+.footer-council-logo-holder { right: 20px; width: auto; }
+
+.powered-by-logo-holder,
+.footer-council-logo-holder { height: 50px; }
+
+.powered-by-logo img,
+.footer-council-logo img { max-height: 50px; }
+
+}
+
+@media screen and (min-width: $lg-width) {
+	
+.site-footer { padding: 30px 180px 30px 170px; }
+	
+}
+
+@media screen and (min-width: $xl-width) {
+	
+	.site-footer { padding: 30px 200px 30px 200px; }
+	
+}
+
+/* No Council Logo */
+
+.footer-no-council-logo .footer-council-logo-holder { display: none; }
+
+/* Council Logo Left */
+
+.footer-council-logo-left .powered-by-logo-holder { left: auto; right: 20px; }
+.footer-council-logo-left .footer-council-logo-holder { right: auto; left: 20px; }
+.footer-council-logo-left .powered-by-logo { text-align: right; }
+.footer-council-logo-left .footer-council-logo { text-align: left; }
+
+@media screen and (min-width: $lg-width) {
+.footer-council-logo-left .site-footer { padding: 30px 170px 30px 190px; }
+}
+
+@media screen and (min-width: $xl-width) {
+.footer-council-logo-left .site-footer { padding: 30px 200px 30px 220px; }
+}

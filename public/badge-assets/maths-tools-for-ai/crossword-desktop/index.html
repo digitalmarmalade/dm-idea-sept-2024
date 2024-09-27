@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <style type="text/css">
+        .spinner-holder { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #fff; z-index: 100000; }
+        .spinner-holder.finished { z-index: -10 !important; background: none !important; }
+        div.spinner { height: 24px; width: 24px; position: fixed; top: 50%; left: 50%; margin: -12px 0 0 -12px; }            
+        div.spinner div {
+            width: 12%; height: 26%; background: #000; position: absolute; left: 44.5%; top: 37%; opacity: 0;
+            -webkit-border-radius: 50px;
+            -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+            -webkit-animation: fade 1s linear infinite;
+        }
+        div.spinner div.bar1 {
+            -webkit-transform:rotate(0deg) translate(0, -142%);
+            -webkit-animation-delay: 0s;
+        }    
+        div.spinner div.bar2 {
+            -webkit-transform:rotate(30deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.9167s;
+        }
+        div.spinner div.bar3 {
+            -webkit-transform:rotate(60deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.833s;
+        }
+        div.spinner div.bar4 {
+            -webkit-transform:rotate(90deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.7497s;
+        }
+        div.spinner div.bar5 {
+            -webkit-transform:rotate(120deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.6664s;
+        }
+        div.spinner div.bar6 {
+            -webkit-transform:rotate(150deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.5831s;
+        }
+        div.spinner div.bar7 {
+            -webkit-transform:rotate(180deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.4998s;
+        }
+        div.spinner div.bar8 {
+            -webkit-transform:rotate(210deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.4165s;
+        }
+        div.spinner div.bar9 {
+            -webkit-transform:rotate(240deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.3332s;
+        }
+        div.spinner div.bar10 {
+            -webkit-transform:rotate(270deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.2499s;
+        }
+        div.spinner div.bar11 {
+            -webkit-transform:rotate(300deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.1666s;
+        }
+        div.spinner div.bar12 {
+            -webkit-transform:rotate(330deg) translate(0, -142%); 
+            -webkit-animation-delay: -0.0833s;
+        }
+        div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+        div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+        div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+        div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+        div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+        div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+        div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+        div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+        div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+        div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+        div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+        div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+        @-webkit-keyframes fade {
+            from {opacity: 1;}
+            to {opacity: 0.25;}
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css" type="text/css">    
+    <script src="js/vendor/vue.js"></script>
+    <script src="js/vendor/axios.min.js"></script>
+    <script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-touchevents-setclasses !*/
+    !function (e, n, t) { function o(e, n) { return typeof e === n } function s() { var e, n, t, s, a, i, r; for (var l in c) if (c.hasOwnProperty(l)) { if (e = [], n = c[l], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (t = 0; t < n.options.aliases.length; t++)e.push(n.options.aliases[t].toLowerCase()); for (s = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++)i = e[a], r = i.split("."), 1 === r.length ? Modernizr[r[0]] = s : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = s), f.push((s ? "" : "no-") + r.join("-")) } } function a(e) { var n = u.className, t = Modernizr._config.classPrefix || ""; if (p && (n = n.baseVal), Modernizr._config.enableJSClass) { var o = new RegExp("(^|\\s)" + t + "no-js(\\s|$)"); n = n.replace(o, "$1" + t + "js$2") } Modernizr._config.enableClasses && (n += " " + t + e.join(" " + t), p ? u.className.baseVal = n : u.className = n) } function i() { return "function" != typeof n.createElement ? n.createElement(arguments[0]) : p ? n.createElementNS.call(n, "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments) } function r() { var e = n.body; return e || (e = i(p ? "svg" : "body"), e.fake = !0), e } function l(e, t, o, s) { var a, l, f, c, d = "modernizr", p = i("div"), h = r(); if (parseInt(o, 10)) for (; o--;)f = i("div"), f.id = s ? s[o] : d + (o + 1), p.appendChild(f); return a = i("style"), a.type = "text/css", a.id = "s" + d, (h.fake ? h : p).appendChild(a), h.appendChild(p), a.styleSheet ? a.styleSheet.cssText = e : a.appendChild(n.createTextNode(e)), p.id = d, h.fake && (h.style.background = "", h.style.overflow = "hidden", c = u.style.overflow, u.style.overflow = "hidden", u.appendChild(h)), l = t(p, e), h.fake ? (h.parentNode.removeChild(h), u.style.overflow = c, u.offsetHeight) : p.parentNode.removeChild(p), !!l } var f = [], c = [], d = { _version: "3.3.1", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (e, n) { var t = this; setTimeout(function () { n(t[e]) }, 0) }, addTest: function (e, n, t) { c.push({ name: e, fn: n, options: t }) }, addAsyncTest: function (e) { c.push({ name: null, fn: e }) } }, Modernizr = function () { }; Modernizr.prototype = d, Modernizr = new Modernizr; var u = n.documentElement, p = "svg" === u.nodeName.toLowerCase(), h = d._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""]; d._prefixes = h; var m = d.testStyles = l; Modernizr.addTest("touch", function () { var t; if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) t = !0; else { var o = ["@media (", h.join("touch-enabled),("), "heartz", ")", "{#modernizr{top:9px;position:absolute}}"].join(""); m(o, function (e) { t = 9 === e.offsetTop }) } return t }), s(), a(f), delete d.addTest, delete d.addAsyncTest; for (var v = 0; v < Modernizr._q.length; v++)Modernizr._q[v](); e.Modernizr = Modernizr }(window, document);
+</script>
+
+<style>
+
+    .crossword-layout { height: 100% !important; }
+
+    .no-touch .grid-and-buttons { height: 340px !important; overflow: visible !important; }
+    .no-touch .grid { height: 340px !important; overflow: visible !important;}
+
+    .touch .grid-and-buttons {  overflow: visible !important; }
+    .touch .grid { }
+
+    .gameplay, .grid-and-buttons { flex-grow: initial !important;}
+
+</style>
+</head>
+
+<body ontouchstart="">
+
+    <p class="no-js-message" id="noJS">Javascript is required to play this puzzle. Please enable Javascript in your browser to continue.</p>
+
+    <div class="spinner-holder" id="spinner">            
+        <div class="spinner">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+            <div class="bar7"></div>
+            <div class="bar8"></div>
+            <div class="bar9"></div>
+            <div class="bar10"></div>
+            <div class="bar11"></div>
+            <div class="bar12"></div>
+        </div>            
+    </div>
+
+<div class="crossword-layout" id="vue-container" @click.stop="wrapperClicked" v-cloak :class="[{'list-view': !modes.grid}]">
+
+
+    <div class="gameplay">
+        <div class="grid-and-buttons">
+            <div class="grid">
+                <component-grid></component-grid>
+            </div>
+        </div>
+    </div>
+
+    <component-keyboard></component-keyboard>
+
+
+</div>
+
+<script>document.getElementById('noJS').style.display="none";</script>
+
+
+<svg>
+    <defs>
+    <symbol viewbox="0 0 200 200" id="iconClose">
+        <rect x="177.782" y="36.36" width="200" height="20" rx="10" transform="rotate(135 177.782 36.36)" />
+        <rect x="163.64" y="177.782" width="200" height="20" rx="10" transform="rotate(-135 163.64 177.782)" />
+    </symbol>
+
+    <symbol viewbox="0 0 200 200" id="iconDelete">
+        <path d="M200 81.956L127.778 9.734 0 137.512l52.754 52.754H170.71V178.48h-67.235L200 81.956zM57.636 178.481l-40.97-40.969 51.39-51.389 55.555 55.556-36.802 36.802H57.636z" />
+    </symbol>
+</defs>
+</svg>
+
+<!--  component: "grid"  -->
+<script>
+    Vue.component('component-grid', {
+        template: '<table cellpadding="0" cellspacing="0" class="puzzle-table">     <tbody class="puzzleholderz">         <tr v-for="(row, idx) in $root.puzzle.grid">             <component-cell v-for="(cell, idx) in row" :item="cell" :idx="idx" :key="cell.id"></component-cell>         </tr>     </tbody> </table> ',
+        props: ['item'],
+    });
+
+</script>
+
+<!--  component: "cell"  -->
+<script>
+    Vue.component('component-cell', {
+        template: '<td :class="[     {\'current\' : !item.isBlank && item.id === $root.active.cell},     {\'blank\' : item.isBlank},     {\'correct\' : !item.isBlank && markAsCorrect},     {\'incorrect\' : !item.isBlank && markAsIncorrect},     {\'selected-word\' : !item.isBlank && isWordSelected}, ]" @click.stop.prevent="click">     <span class="square">         <span class="number">{{item.number}}</span>         <span class="letter" :class="[             {\'pencil\' : isPencil}         ]">{{letterToDisplay}}</span>     </span> </td> ',
+        props: ['item', 'idx'],
+        computed: {
+            isCorrect: function () {
+                if (this.item.isBlank === true || this.userAnswer.trim() === '') {
+                    return false;
+                }
+                return this.userAnswer === this.item.letter;
+            },
+            isCurrent: function () {
+                return this.item.id === this.$root.active.cell;
+            },
+            isIncorrect: function () {
+                if (this.item.isBlank === true || this.userAnswer.trim() === '') {
+                    return false;
+                }
+                return !this.isCorrect;
+            },
+            isPencil: function () {
+                var id = this.item.id;
+                return this.$root.user.notes['cell_' + (id - 1)] === 1;
+            },
+            isWordCompleted: function () {
+                return this.$root.isWordCompleted(this.$root.activeWord);
+            },
+            isWordSelected: function () {
+                return this.item.across === this.$root.activeWord || this.item.down === this.$root.activeWord;
+            },
+            letterToDisplay: function () {
+                var id = this.item.id;
+                var cell = this.$root.puzzle.cells[id];
+                if (cell.isBlank === true) {
+                    return '';
+                }
+                if (this.$root.reveal.grid === true) {
+                    return this.item.letter;
+                }
+                return this.userAnswer;
+            },
+            markAsCorrect: function () {
+                if (!this.isCorrect) {
+                    return false;
+                }
+                return this.markCell;
+            },
+            markAsIncorrect: function () {
+                if (!this.isIncorrect) {
+                    return false;
+                }
+                return this.markCell;
+            },
+            markCell: function () {
+                if (this.$root.check.grid === true) {
+                    return true;
+                }
+                if (this.$root.reveal.grid === true) {
+                    return true;
+                }
+                if (this.$root.check.letter === this.item.id) {
+                    return true;
+                }
+                if (this.item.across && this.$root.check.word === this.item.across) {
+                    return true;
+                }
+                if (this.item.down && this.$root.check.word === this.item.down) {
+                    return true;
+                }
+                if (this.isWordCompleted && this.isWordSelected && this.$root.user.settings.answersautocheck) {
+                    return true;
+                }
+                return false;
+            },
+            userAnswer: function () {
+                var id = this.item.id;
+                return this.$root.user.answers['cell_' + (id - 1)] || '';
+            },
+        },
+        methods: {
+            click: function () {
+                if (this.item.isBlank) {
+                    return false;
+                }
+                this.$root.active.cell = this.item.id;
+                this.$forceUpdate();
+                document.dispatchEvent(new CustomEvent('CellClick', this.$root.getEventData(this, 'cell')));
+                var self = this;
+                setTimeout(
+                    function () {
+                        self.$root.resetActions();
+                    },
+                    0
+                    );
+            },
+            delete: function (event, code) {
+                if (this.item.id === this.$root.active.cell) {
+                    var activeCell = this.$root.active.cell;
+                    this.$root.user.answers['cell_' + (activeCell - 1)] = ' ';
+                    this.$root.user.notes['cell_' + (activeCell - 1)] = 0;
+                    document.dispatchEvent(new CustomEvent('LetterDeleted', this.$root.getEventData(this, 'cell')));
+                }
+                app.helpers.saveUserState();
+            },
+        },
+        created: function () {
+            this.$root.$on('keyup-delete', this.delete)
+        },
+    });
+
+</script>
+
+<!--  component: "clueset"  -->
+<script>
+    Vue.component('component-clueset', {
+        template: '<div class="clue-sets" :class=" [$root.active.direction + \'-active\'] ">     <div class="clue-set" :class="[\'clue-set--\' + direction.name.toLowerCase()]" v-for="direction in item.directions" v-if="idx === $root.active.clueset">         <h2 class="clue-set__heading">{{direction.name}}</h2>         <ul class="clue-list" :id="[\'clue-set--\' + direction.name.toLowerCase()]">             <component-clue v-for="(clue, idx) in direction.clues" :item="clue" :idx="idx" :key="clue.word"></component-clue>         </ul>     </div> </div> ',
+        props: ['item', 'idx'],
+    });
+
+</script>
+
+<!--  component: "clue"  -->
+<script>
+    Vue.component('component-clue', {
+        template: '<li :class="[     {\'completed\' : isCompleted},     {\'current\' : isCurrent},     {\'hidden\' : isHidden}, ]" @click.stop.prevent="click">     <div class="clue">         <span class="clue__number">{{item.number}}</span>         <span class="clue__text" v-html="item.clue"></span>         <span class="clue__length">({{item.format}})</span>     </div>     <div class="clue-boxes">         <component-cluebox v-for="(cell, idx) in cells" :item="cell" :idx="idx" :key="idx"></component-cluebox>     </div>     <div class="clue-answer">         <span class="clue-answer__label">A.</span>         <span class="clue-answer__answer" v-html="item.answer"></span>     </div> </li> ',
+        props: ['item'],
+        computed: {
+            cells: function () {
+                var cells = this.$root.puzzle.words[this.item.word].cells;
+                return cells;
+            },
+            isCurrent: function () {
+                return this.item.word === this.$root.activeWord;
+            },
+            isCompleted: function () {
+                var isCompleted = true;
+                var cells = this.$root.puzzle.words[this.item.word].cells;
+                for (var r = 0; r < cells.length; r++) {
+                    var id = cells[r].id;
+                    var answer = this.$root.user.answers['cell_' + (id - 1)];
+                    if (answer === ' ') {
+                        isCompleted = false;
+                    }
+                }
+                return isCompleted;
+            },
+            isHidden: function () {
+                return this.item.word !== this.$root.activeWord && this.$root.user.settings.clueshidecompleted && this.isCompleted;
+            },
+        },
+        methods: {
+            click: function () {
+                document.dispatchEvent(new CustomEvent('ClueClick', this.$root.getEventData(this, 'clue')));
+                this.$root.resetActions();
+            },
+        },
+    });
+
+</script>
+
+<!--  component: "cluebox"  -->
+<script>
+    Vue.component('component-cluebox', {
+        template: '<span class="clue-boxes__box" :class="[ {\'correct\' : markAsCorrect}, {\'current\' : isCurrent}, {\'incorrect\' : markAsIncorrect}, {\'pencil\' : isPencil} ]" @click.stop.prevent="click">{{letterToDisplay}}</span> ',
+        props: ['item', 'idx'],
+        computed: {
+            isCorrect: function () {
+                if (this.item.isBlank === true || this.userAnswer.trim() === '') {
+                    return false;
+                }
+                return this.userAnswer === this.item.letter;
+            },
+            isCurrent: function () {
+                return this.item.id === this.$root.active.cell;
+            },
+            isIncorrect: function () {
+                if (this.item.isBlank === true || this.userAnswer.trim() === '') {
+                    return false;
+                }
+                return !this.isCorrect;
+            },
+            isPencil: function () {
+                var id = this.item.id;
+                return this.$root.user.notes['cell_' + (id - 1)] === 1;
+            },
+            isWordCompleted: function () {
+                return this.$root.isWordCompleted(this.$root.activeWord);
+            },
+            isWordSelected: function () {
+                return this.item.across === this.$root.activeWord || this.item.down === this.$root.activeWord;
+            },
+            letterToDisplay: function () {
+                var id = this.item.id;
+                var cell = this.$root.puzzle.cells[id];
+                if (this.$root.reveal.grid === true) {
+                    return this.item.letter;
+                }
+                return this.userAnswer;
+            },
+            markAsCorrect: function () {
+                if (!this.isCorrect) {
+                    return false;
+                }
+                return this.markCell;
+            },
+            markAsIncorrect: function () {
+                if (!this.isIncorrect) {
+                    return false;
+                }
+                return this.markCell;
+            },
+            markCell: function () {
+                if (this.$root.check.grid === true) {
+                    return true;
+                }
+                if (this.$root.reveal.grid === true) {
+                    return true;
+                }
+                if (this.$root.check.letter === this.item.id) {
+                    return true;
+                }
+                if (this.item.across && this.$root.check.word === this.item.across) {
+                    return true;
+                }
+                if (this.item.down && this.$root.check.word === this.item.down) {
+                    return true;
+                }
+                if (this.isWordCompleted && this.isWordSelected && this.$root.user.settings.answersautocheck) {
+                    return true;
+                }
+                return false;
+            },
+            userAnswer: function () {
+                var id = this.item.id;
+                return this.$root.user.answers['cell_' + (id - 1)];
+            },
+        },
+        methods: {
+            click: function () {
+                document.dispatchEvent(new CustomEvent('CellClick', this.$root.getEventData(this, 'cell')));
+                this.$root.resetActions();
+            },
+        },
+    });
+
+</script>
+
+<!--  component: "keyboard"  -->
+<script>
+    Vue.component('component-keyboard', {
+        template: '<div class="keyboard">     <div class="keys" v-for="(row, ridx) in $root.keys">         <component-keyboard-key v-for="(key, idx) in row" :item="key" :idx="idx" :key="\'r\'+(ridx+1)+\'c\'+(idx+1)"></component-keyboard-key>     </div> </div> ',
+        props: ['item', 'idx'],
+    });
+
+</script>
+
+<!--  component: "keyboard-key"  -->
+<script>
+    Vue.component('component-keyboard-key', {
+        template: '<a class="keys__key" href="#" :data-key="item.display" @click.stop.prevent="click" v-html="item.display" v-if="item.tooltip"></a> <a class="keys__key" href="#" @click.stop.prevent="click" v-html="item.display" v-else></a> ',
+        props: ['item', 'idx'],
+        methods: {
+            click: function () {
+                switch (this.item.event) {
+                    case 'delete':
+                    this.$root.$emit('keyup-delete', 'todo', this.item.code);
+                    break;
+                    default:
+                    document.dispatchEvent(new CustomEvent('LetterEntered', this.$root.getEventData(this, 'keyboard-key')));
+                    break;
+                }
+                this.$root.resetActions();
+            },
+            keyAZ: function (event, code, letter) {
+                if (code === this.item.code) {
+                    this.click();
+                }
+            },
+        },
+        created: function () {
+            this.$root.$on('keyup-az', this.keyAZ)
+        },
+    });
+
+</script>
+
+
+<script src="js/vendor/jquery-3.4.1.min.js"></script>
+<script src="js/polyfills.js"></script>
+<script src="js/class.dm-storage.js"></script>
+<script src="js/class.dm-timer.js"></script>
+<script src="js/core-puzzle.js"></script>
+<script src="js/core-puzzle-vue.js"></script>
+<script src="js/crossword.js"></script>
+<script src="js/crossword-vue.js"></script>
+<script>var LocalStorage = DMStorage;</script>
+
+
+<script>app.init({
+   "puzzle":{
+      "showGridCorrections":true,
+      "hasBtnEmail":false,
+      "hasTimer":true
+   },
+   "user":{
+      "timer":{
+         "id":"timer",
+         "type":"Boolean",
+         "default":false,
+         "display":"Timer"
+      },
+      "cellsskipfilled":{
+         "id":"cellsskipfilled",
+         "type":"Boolean",
+         "default":false,
+         "display":"Skip Filled Squares"
+      },
+      "answersautocheck":{
+         "id":"answersautocheck",
+         "type":"Boolean",
+         "default":false,
+         "display":"Auto Check Answers"
+      },
+      "soundskeyboard":{
+         "id":"soundskeyboard",
+         "type":"Boolean",
+         "default":false,
+         "display":"Keyboard Sounds"
+      },
+      "clueshidecompleted":{
+         "id":"clueshidecompleted",
+         "type":"Boolean",
+         "default":false,
+         "display":"Hide Completed Clues"
+      }
+   }
+});</script>
+<script>document.getElementById('spinner').style.display="none";</script>
+
+<script>
+    // Listen for on check callback.
+    window.addEventListener('checkGame', function() {
+        console.log('iframe: Got checkGame event');
+
+        app.vue.methods.checkGrid();
+
+      // Send back to parent.
+      if(app.vue.computed.isCompletedWithoutErrors()){
+        
+        var myCustomData = { status: 'correct' }
+        var event = new CustomEvent('myEvent', { detail: myCustomData })
+        window.parent.document.dispatchEvent(event)
+
+      } else {
+        var myCustomData = { status: 'incorrect' }
+        var event = new CustomEvent('myEvent', { detail: myCustomData })
+        window.parent.document.dispatchEvent(event)
+      }
+    });
+</script>
+           
+
+</script>
+
+</body>
+
+</html>

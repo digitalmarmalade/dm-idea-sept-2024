@@ -1,0 +1,23 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  &.no-margin {
+    margin: 0;
+  }
+}
+
+img.social-impact {
+  margin: 1.6em 0 2.4em;
+}
+.illustration--global-goals {
+    margin: 0 0 1.6em;
+    .img-source { margin-top: .8rem; }
+}
+
+@media only screen and (min-width: $lg-width) {
+  img.social-impact {
+    max-width: 80%;
+  }
+}

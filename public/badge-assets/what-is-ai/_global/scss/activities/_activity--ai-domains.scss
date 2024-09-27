@@ -1,0 +1,136 @@
+.activity--ai-domains {
+    ul {
+      margin: $margin;
+      p {
+        margin: 0;
+      }
+    .flip-card {
+      background-color: transparent;
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: $box-shadow;
+    }
+
+    .flipped .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: $white;
+      color: black;
+    }
+
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+    li {
+      padding: 0;
+      width: calc(33.3% - .8rem);
+      position: relative;
+      margin: .4rem;
+      height: 8rem;
+      &:last-child {
+        overflow:visible;
+      }
+    }
+
+    .box--front {
+      height: 8rem;
+      p {
+        font-size: 2.4rem;
+        margin: 0;
+      }
+    }
+    .box--back {
+      padding: .4rem;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 8rem;
+      &.blue-medium {
+        background-color: $blue-medium;
+        p{
+          color: white;
+        }
+      }
+      &.yellow {
+        background-color: $yellow;
+      }
+      &.box--back-domain {
+        p {
+          text-transform: uppercase;
+          margin: 0;
+        }
+        img {
+          margin: 0;
+        }
+      }
+
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: $sm-width) {
+  .activity--ai-domains {
+    ul {
+      li {
+        width: calc(16.6% - .8rem);
+      }
+      .box--back {
+        padding: .8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .activity--ai-domains {
+
+    ul {
+      .box--back {
+        padding: .8rem;
+
+        &.box--back-domain {
+          img {
+            margin: .8rem 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: $lg-width) {
+  .activity--ai-domains {
+
+    .list--examples-everyday-life {
+      li,
+      .box--front,
+      .box--back {
+        height: 12rem;
+      }
+    }
+  }
+}

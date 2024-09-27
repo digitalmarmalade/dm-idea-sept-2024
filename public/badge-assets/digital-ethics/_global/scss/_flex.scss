@@ -1,0 +1,360 @@
+/*!
+ * @license     proprietary, this file forms part of the Supplier Materials as defined in and subject to the Agreement signed between Digital Marmalade Ltd and their client
+ * @copyright  2022, Digital Marmalade Ltd. All Rights Reserved.
+ */
+
+.flex {
+    display: flex;
+
+    // &.gap--xx-sm {
+    //     gap: $space--xx-sm;
+    // }
+
+    // &.gap--x-sm {
+    //     gap: $space--x-sm;
+    // }
+
+    // &.gap--sm {
+    //     gap: $space--sm;
+    // }
+
+    // &.gap--md {
+    //     gap: $space--md;
+    // }
+
+    // &.gap--lg {
+    //     gap: $space--lg;
+    // }
+
+    // &.gap--x-lg {
+    //     gap: $space--x-lg;
+    // }
+
+    // &.gap--xx-lg {
+    //     gap: $space--xx-lg;
+    // }
+
+    // &.gap--xxx-lg {
+    //     gap: $space--xxx-lg;
+    // }
+}
+
+.inline-flex {
+    display: inline-flex;
+
+    // &.gap--xx-sm {
+    //     gap: $space--xx-sm;
+    // }
+
+    // &.gap--x-sm {
+    //     gap: $space--x-sm;
+    // }
+
+    // &.gap--sm {
+    //     gap: $space--sm;
+    // }
+
+    // &.gap--md {
+    //     gap: $space--md;
+    // }
+
+    // &.gap--lg {
+    //     gap: $space--lg;
+    // }
+}
+
+.flex--grow-1 {
+    flex-grow: 1;
+}
+
+.flex--grow-unset {
+    flex-grow: unset;
+}
+
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--column.invert {
+    flex-direction: column-reverse;
+}
+
+
+.flex--center {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.flex--align-start {
+    align-items: flex-start;
+}
+
+.flex--align-center {
+    align-items: center;
+}
+
+.flex--align-end {
+    align-items: flex-end;
+}
+
+.flex--align-stretch {
+    align-items: stretch;
+}
+
+
+.flex--align-self-start {
+    align-self: flex-start;
+}
+
+.flex--align-self-stretch {
+    align-self: stretch;
+}
+
+.flex--align-self-end {
+    align-self: flex-end;
+}
+
+
+.flex--justify-start {
+    justify-content: flex-start;
+}
+
+.flex--justify-space-between {
+    justify-content: space-between;
+}
+
+.flex--justify-center {
+    justify-content: center;
+}
+
+.flex--justify-end {
+    justify-content: flex-end;
+}
+
+.flex--justify-self-start {
+    justify-self: flex-start;
+}
+
+.flex--justify-self-center {
+    justify-self: center;
+}
+
+.flex--justify-self-end {
+    justify-self: flex-end;
+}
+
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-6 {
+    flex: 6;
+}
+
+.flex-7 {
+    flex: 7;
+}
+
+.flex-8 {
+    flex: 8;
+}
+
+.flex-9 {
+    flex: 9;
+}
+
+.flex-10 {
+    flex: 10;
+}
+
+
+/* Old code from 2021 */
+
+// .flex--basis-0 {
+//     flex-basis: 0;
+// }
+
+// .flex--100 {
+//     width: 100%;
+
+//     // &.with-margin {
+//     //     margin: $space--x-sm;
+//     //     width: calc(100% - #{$space--sm});
+//     // }
+// }
+
+
+// .flex--85 {
+//     width: 85%;
+
+//     // &.with-margin {
+//     //     margin: $space--x-sm;
+//     //     width: calc(85% - #{$space--sm});
+//     // }
+// }
+
+// .flex--75 {
+//     width: 75%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(75% - #{$space--sm});
+//     }
+// }
+
+// .flex--66 {
+//     width: 66.6%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(66.6% - #{$space--sm});
+//     }
+// }
+
+// .flex--60 {
+//     width: 60%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(60% - #{$space--sm});
+//     }
+// }
+
+// .flex--50 {
+//     width: 50%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(50% - #{$space--sm});
+//     }
+// }
+
+// .flex--49 {
+//     width: 49%;
+// }
+
+// .flex--48 {
+//     width: 48%;
+// }
+
+// .flex--40 {
+//     width: 40%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(40% - #{$space--sm});
+//     }
+// }
+
+
+// .flex--33 {
+//     width: 33.3%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(33.3% - #{$space--sm});
+//     }
+// }
+
+
+// .flex--32 {
+//     width: 32.4%;
+// }
+
+
+// .flex--33-lg-gap {
+//     width: calc(33.3% - 2.1rem);
+// }
+
+
+// .flex--25 {
+//     width: 25%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(25% - #{$space--sm});
+//     }
+// }
+
+
+// .flex--24 {
+//     width: 23.9%;
+// }
+
+// .flex--20 {
+//     width: 20%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(20% - #{$space--sm});
+//     }
+// }
+
+// .flex--16 {
+//     width: 16.6%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(16.6% - #{$space--sm});
+//     }
+// }
+
+// .flex--14 {
+//     width: 14%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(14% - #{$space--sm});
+//     }
+// }
+
+// .flex--8 {
+//     width: 8.3%;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//         width: calc(8.3% - #{$space--sm});
+//     }
+// }
+
+
+// .flex--grow-1 {
+//     flex-grow: 1;
+
+//     &.with-margin {
+//         margin: $space--x-sm;
+//     }
+// }
+
+
+// .flex--100 {
+//     width: 100%;
+// }

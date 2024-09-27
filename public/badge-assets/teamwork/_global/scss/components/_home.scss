@@ -1,0 +1,29 @@
+/*! Home */
+
+.home-intro-text { padding: 2rem; max-width: 60rem; margin: 0 auto; 
+    h1 { font-weight: 300; color: #00b3e3; font-size: 3rem; margin: 0 0 1.5rem; }
+}
+.home-intro-text-p { font-size: 2rem; line-height: 1.5; margin: 0 0 1rem; }
+.home-intro-learning { margin: 0 0 1.7rem; 
+    li { font-size: 2rem; padding: 2rem; margin: 0 0 .3rem; background: #221f1f; color: #fff; font-weight: 500;  }
+}
+.animation-container { border-bottom: 1rem solid #221f1f; }
+
+.home-pattern { background: url(../img/bg-pattern.png) no-repeat left top; background-size: 100% auto; }
+
+.home-cta { text-align: center; }
+
+@media only screen and (min-width: $sm-width) {
+    .home-intro-text {
+        h1 { display: none; }
+    }
+}
+@media only screen and (min-width: $md-width) {
+
+.animation-container { border-bottom: 3rem solid #221f1f; margin: 0 0 2rem; }
+.home-intro-text-p { background: #221f1f; color: #fff; display: table; padding: 2rem; font-size: 2rem; line-height: 1.5; margin: 0 0 1rem; }
+.home-intro-learning { margin: 0 0 1.7rem; 
+    li { font-size: 2rem; padding: 2rem; margin: 0 0 .3rem; background: #fff; color: #221f1f; border: 2px solid #221f1f; font-weight: 500;  }
+}
+
+}

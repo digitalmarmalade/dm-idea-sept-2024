@@ -1,0 +1,47 @@
+.step-7 {
+  background-color: $light-blue;
+  .quiz-question {
+    margin-top: 60px;
+    background-color: rgba(255,255,255,.5);
+    padding: 40px 20px;
+  }
+  .quiz-the-question {
+    span{
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      display: block;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+  }
+  .quiz-fail {
+    background-color: $red;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: $white;
+    padding: 30px 0;
+  }
+
+  .disabled {
+    pointer-events: none;
+  }
+}
+
+.quiz-options{
+  list-style: none;
+}
+
+@media only screen and (min-width: $md-width) {
+
+    .step-7 .quiz-question li {
+      width: 29.75%;
+    }
+
+    .step-7 .quiz-question-1 li,
+    .step-7 .quiz-question-5 li,
+    .step-7 .quiz-question-6 li {
+        width: 45%;
+      }
+
+}

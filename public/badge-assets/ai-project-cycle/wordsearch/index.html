@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="js/vendor/vue.js?v=2"></script>
+    <script src="js/vendor/axios.min.js?v=2"></script>
+
+    <script>
+    /*! modernizr 3.3.1 (Custom Build) | MIT *
+    * https://modernizr.com/download/?-touchevents-setclasses !*/
+    !function (e, n, t) { function o(e, n) { return typeof e === n } function s() { var e, n, t, s, a, i, r; for (var l in c) if (c.hasOwnProperty(l)) { if (e = [], n = c[l], n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)) for (t = 0; t < n.options.aliases.length; t++)e.push(n.options.aliases[t].toLowerCase()); for (s = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++)i = e[a], r = i.split("."), 1 === r.length ? Modernizr[r[0]] = s : (!Modernizr[r[0]] || Modernizr[r[0]] instanceof Boolean || (Modernizr[r[0]] = new Boolean(Modernizr[r[0]])), Modernizr[r[0]][r[1]] = s), f.push((s ? "" : "no-") + r.join("-")) } } function a(e) { var n = u.className, t = Modernizr._config.classPrefix || ""; if (p && (n = n.baseVal), Modernizr._config.enableJSClass) { var o = new RegExp("(^|\\s)" + t + "no-js(\\s|$)"); n = n.replace(o, "$1" + t + "js$2") } Modernizr._config.enableClasses && (n += " " + t + e.join(" " + t), p ? u.className.baseVal = n : u.className = n) } function i() { return "function" != typeof n.createElement ? n.createElement(arguments[0]) : p ? n.createElementNS.call(n, "http://www.w3.org/2000/svg", arguments[0]) : n.createElement.apply(n, arguments) } function r() { var e = n.body; return e || (e = i(p ? "svg" : "body"), e.fake = !0), e } function l(e, t, o, s) { var a, l, f, c, d = "modernizr", p = i("div"), h = r(); if (parseInt(o, 10)) for (; o--;)f = i("div"), f.id = s ? s[o] : d + (o + 1), p.appendChild(f); return a = i("style"), a.type = "text/css", a.id = "s" + d, (h.fake ? h : p).appendChild(a), h.appendChild(p), a.styleSheet ? a.styleSheet.cssText = e : a.appendChild(n.createTextNode(e)), p.id = d, h.fake && (h.style.background = "", h.style.overflow = "hidden", c = u.style.overflow, u.style.overflow = "hidden", u.appendChild(h)), l = t(p, e), h.fake ? (h.parentNode.removeChild(h), u.style.overflow = c, u.offsetHeight) : p.parentNode.removeChild(p), !!l } var f = [], c = [], d = { _version: "3.3.1", _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 }, _q: [], on: function (e, n) { var t = this; setTimeout(function () { n(t[e]) }, 0) }, addTest: function (e, n, t) { c.push({ name: e, fn: n, options: t }) }, addAsyncTest: function (e) { c.push({ name: null, fn: e }) } }, Modernizr = function () { }; Modernizr.prototype = d, Modernizr = new Modernizr; var u = n.documentElement, p = "svg" === u.nodeName.toLowerCase(), h = d._config.usePrefixes ? " -webkit- -moz- -o- -ms- ".split(" ") : ["", ""]; d._prefixes = h; var m = d.testStyles = l; Modernizr.addTest("touch", function () { var t; if ("ontouchstart" in e || e.DocumentTouch && n instanceof DocumentTouch) t = !0; else { var o = ["@media (", h.join("touch-enabled),("), "heartz", ")", "{#modernizr{top:9px;position:absolute}}"].join(""); m(o, function (e) { t = 9 === e.offsetTop }) } return t }), s(), a(f), delete d.addTest, delete d.addAsyncTest; for (var v = 0; v < Modernizr._q.length; v++)Modernizr._q[v](); e.Modernizr = Modernizr }(window, document);
+</script>
+</head>
+
+<body id="sniffer" ontouchstart="">
+
+    <p class="no-js-message" id="noJS">Javascript is required to play this puzzle. Please enable Javascript in your browser to continue.</p>
+
+
+    <div class="page-wrap">
+
+        <div class="wordsearch-layout" id="vue-container" @click.stop="wrapperClicked" v-cloak>
+
+            <div class="playable-area">
+
+                <div class="puzzle" id="puzzle" >
+                    <div class="table-holder" id="tableHolder">
+                        <div id="grid" class="grid">
+                            <component-grid></component-grid>
+                        </div>
+                        <div id="dragger" class="cell-drag-selection"></div>
+                        <div id="viewer-tpl" class="viewer"></div>
+
+                    </div>
+
+                    <ul class="words clearfix">
+                        <component-word v-for="(word, idx) in puzzle.words" :item="word" :idx="idx" :key="'word-'+idx" :ref="'word'+idx"></component-word>
+                    </ul>
+                </div>
+
+            </div><!--/.playable-area -->
+
+            <div class="test" data-iframe-height></div>
+
+        </div><!--/.wordsearch-layout -->
+    </div>
+
+    <script>document.getElementById('noJS').style.display="none";</script>
+
+   <!--  component: "grid"  -->
+   <script>
+    Vue.component('component-grid', {
+        template: '<table cellpadding="0" cellspacing="0" id="wordSearchTable">     <tbody class="puzzleholder">         <tr v-for="(row, idx) in $root.puzzle.grid">             <component-cell v-for="(cell, idx) in row" :item="cell" :idx="idx" :key="cell.id"></component-cell>         </tr>     </tbody> </table> ',
+        props: ['item'],
+    });
+
+</script>
+
+<!--  component: "cell"  -->
+<script>
+    Vue.component('component-cell', {
+        template: '<td :id="\'cell-\'+item.id"     :class="[         {\'selected\': isHighlighted},         {\'unused\': showAsUnused},         unusedClass     ]" >     <span class="text-cell-default">         {{item.letter}}     </span> </td> ',
+        props: ['item', 'idx'],
+        computed: {
+            animationClass: function () {
+            //var unused = this.$root.source.settings.unused.split(',');
+            //var idAsString = '' + this.item.id;
+            //return 'unused--' + unused.indexOf(idAsString);
+            return 'unused--1';
+        },
+        isHighlighted: function () {
+            return this.$root.highlightedCells.indexOf(this.item.id) > -1;
+        },
+        showAsUnused: function () {
+            if (!this.$root.source.settings.unused) {
+                return false;
+            }
+            var unused = this.$root.source.settings.unused.split(',');
+            var idAsString = '' + (this.item.id + 1);
+
+            return unused.indexOf(idAsString) > -1;
+        },
+        unusedClass: function () {
+            return this.showAsUnused ? this.animationClass : '';
+        },
+    },
+});
+
+</script>
+
+<!--  component: "word"  -->
+<script>
+    Vue.component('component-word', {
+        template: '<li      :class="[         \'text-cell-default word-\' + idx,         {\'got accent-fg\': found},         {\'need\': !found},     ]"      :data-start="item.start.row + \',\' + item.start.col"      :data-end="item.end.row + \',\' + item.end.col" >     <span>{{display}}</span> </li>',
+        props: ['item', 'idx'],
+        computed: {
+            display: function () {
+                var firstLetter = this.item.word.substr(0, 1),
+                lastLetter = this.item.word.substr(this.item.word.length - 1, 1),
+                firstAndLastLetter = 2,
+                spaces = '_'.repeat(this.item.word.length - firstAndLastLetter),
+                wordLength = this.item.word.length;
+
+                if (this.found) {
+                    return this.item.word;
+                }
+                if (this.$root.config.hasFullWords) {
+                    return this.item.word;
+                }
+
+                return firstLetter + spaces + lastLetter;
+            },
+            found: function () {
+                if (this.$root.check.grid === true) {
+                    return false;
+                }
+                var thisWord = this.item
+                for (var idx in this.$root.user.answers) {
+                    var obj = this.$root.user.answers[idx];
+                    if (thisWord.start.row === obj.start.row &&
+                        thisWord.start.col === obj.start.col &&
+                        thisWord.end.row === obj.end.row &&
+                        thisWord.end.col === obj.end.col
+                        ) {
+                        return true;
+                }
+                if (thisWord.start.row === obj.end.row &&
+                    thisWord.start.col === obj.end.col &&
+                    thisWord.end.row === obj.start.row &&
+                    thisWord.end.col === obj.start.col
+                    ) {
+                    return true;
+            }
+        }
+        return false;
+    },
+}
+});
+
+</script>
+
+
+
+<script src="js/vendor/jquery-2.2.4.min.js?v=2"></script>
+<script src="js/polyfills.js?v=2"></script>
+<script src="js/vendor/TweenMax.min.js?v=2"></script>
+<script src="js/vendor/Draggable.min.js?v=2"></script>
+<script src="js/class.dm-storage.js?v=2"></script>
+<script src="js/class.dm-timer.js?v=2"></script>
+<script src="js/core-puzzle.js?v=2"></script>
+<script src="js/core-puzzle-vue.js?v=2"></script>
+<script src="js/wordsearch.js?v=2"></script>
+<script src="js/wordsearch-vue.js?v=2"></script>
+<script src="js/wordsearch-drag.js?v=2"></script>
+
+<script src="js/iframeResizer.contentWindow.js"></script>
+
+<script>var LocalStorage = DMStorage;</script>
+
+<script>
+    (function () {
+
+        'use strict';
+
+        app.config.howOftenToShowLengthVideo = 3;
+
+    /*  -------
+        HELPERS
+        -------  */
+
+        app.helpers.userHasSeenWordLengthAnimation = false;
+
+    /*  --------------
+        CORE OVERRIDES
+        --------------  */
+
+        app.helpers.resetUserState = function () {
+            app.helpers.removeBlocks();
+            app.vue.data.user = app.helpers.getDefaultUserState();
+            app.vue.data.user.lives = app.vue.model.puzzle.lives
+            app.helpers.saveUserState();
+        };
+
+        app.vue.methods.getTitlePuzzleObject = function (puzzle) {
+
+        app.vue.data.config.hasFullWords = app.vue.data.source.meta.difficulty !== 'hard';
+
+        puzzle.unusedLetters = [];
+        if (app.vue.data.source.settings.unused) {
+            var solution = app.vue.data.source.celldata;
+            var unusedCellIds = app.vue.data.source.settings.unused.split(',');
+            for (var i = 0; i < unusedCellIds.length; i++) {
+                puzzle.unusedLetters.push(solution[unusedCellIds[i] - 1]);
+            }
+        }
+
+        return puzzle;
+    };
+
+    app.vue.methods.videoHide = function () {
+        app.helpers.videoHide();
+    };
+
+
+    /*  --------------
+        CORE OVERRIDES
+        --------------  */
+
+        app.vue.computed.tooltips = function () {
+
+        };
+
+    /*  ---------------
+        EVENT LISTENERS
+        ---------------  */
+
+        document.addEventListener('wordsearch-word-found', function (e) {
+            app.helpers.wordFound(e.detail);
+        });
+
+        document.addEventListener('wordsearch-word-not-found', function (e) {
+            app.helpers.wordNotFound(e.detail);
+        });
+
+    }());
+
+</script>
+
+<script>app.init({"puzzle":{"hasBtnEmail":false,"hasCheck":false,"hasLives":false,"hasTimer":false},"user":[]});</script>
+
+</body>
+
+</html>

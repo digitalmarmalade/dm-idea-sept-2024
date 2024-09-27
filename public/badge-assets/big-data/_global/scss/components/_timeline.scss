@@ -1,0 +1,164 @@
+.timeline-holder {
+  outline:none;
+  padding: 0;
+
+}
+
+
+
+.slide {
+  position: relative;
+  // background: url(../img/bg.svg) no-repeat 0 0;
+
+  h2 {
+    background-color: $red;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    margin: 20px auto;
+    display: inline-block;
+    width: auto;
+    max-width: 90%;
+  }
+}
+
+.slick-track  {
+  padding: 0 0 100px;
+}
+
+
+.timeline-text {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+    h3 {
+      line-height: 1;
+      margin: 20px 0 10px 0;
+      color: #fff;
+      font-size: 2.6rem;
+      font-family: 'bebas_neuebold';
+    }
+    p {
+      max-width: 100%;
+      margin: 0 0 20px;
+    }
+    // .slick-active & { transform: translateX(-50%) scale(1); }
+}
+
+.timeline-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.timeline-img-bg {
+  position: absolute;
+  left:-100%;
+  top: 40px;
+  transform: scale(0);
+  transition: all 2s;
+  opacity: 0;
+  width: 100%;
+  .slick-active & {
+    left: 0;
+    opacity: 1;
+    transform:scale(1);
+  }
+}
+
+.timeline-image-front {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transform: translateX(-50%) scale(0);
+  transition: all 1.5s ease .25s;
+  left: 50%;
+  transform-origin: bottom center;
+    .slick-active & { transform: translateX(-50%) scale(1); }
+}
+
+
+
+.timeline-error { color: #FF7058; padding: 1rem; border: 1px solid #FF7058; max-width: none; margin: -2rem 1rem 0; }
+
+@media only screen and (min-width: $md-width) {
+
+
+  .slick-slide {
+    height: auto !important;
+  }
+
+  .timeline-img-bg {
+    width: 75%;
+  }
+
+  .timeline-image {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .timeline-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .slick-track  {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .timeline-image-front {
+    width: 60%;
+  }
+
+  .slick-list{
+    height: 568px;
+  }
+
+  .slide-content {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    img {
+      width: 75%;
+      margin: 30px;
+      display: block;
+      height: auto;
+    }
+    div {
+      width: 50%;
+    }
+
+
+  }
+  .timeline-text {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: left;
+    padding: 0;
+    h3 {
+      text-align: left;
+    }
+  }
+
+  .timeline-img-bg {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: $xl-width) {
+  .slide-content {
+    max-width: 1120px;
+  }
+  .timeline-img-bg {
+    max-width:530px;
+    height: auto;
+  }
+}

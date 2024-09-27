@@ -1,0 +1,18 @@
+.animation--alert {
+  transform: scale(.5);
+  margin-top: -3.2rem;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .animation--alert {
+    margin-top: -4.8rem;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .animation--alert {
+    transform: scale(.75);
+
+  }
+}

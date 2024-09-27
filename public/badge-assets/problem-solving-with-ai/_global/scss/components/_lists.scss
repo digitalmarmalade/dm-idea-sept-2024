@@ -1,0 +1,130 @@
+
+
+.list--resources,
+.list--buttons {
+  margin: 0 auto 2.4rem;
+  li {
+    width: 100%;
+    padding:0;
+    background: transparent;
+    border-radius: 0;
+    margin: 0 0 .8rem;
+    text-align: left;
+    position: relative;
+    justify-content: flex-start;
+
+    &:last-child {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      text-align: center;
+      color: $blue-light;
+      sup {
+        position: absolute;
+        font-size: 60%;
+      }
+    }
+    .btn {
+      width: 100%;
+      max-width: 24rem;
+      margin: 0 auto;
+      color: $blue-dark;
+      span {
+        display: inline-flex;
+        text-transform: lowercase;
+        margin: 0 0 0 .2rem;
+      }
+    }
+  }
+
+}
+
+.list--resources{
+  margin: .8em 0 2.4em;
+  li, a {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.list--1-col {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: $sm-width) {
+
+  .list--2-cols {
+    p {
+      margin: 0 0 $bodycopy;
+    }
+    li,
+    .list--activity-answers__item {
+      width: calc(50% - .8rem);
+    }
+    li {
+      padding: $padding;
+    }
+  }
+
+  .list--3-cols {
+    p {
+      margin: 0 0 $bodycopy;
+    }
+    li,
+    .list--activity-answers__item  {
+      width: calc(33.3% - .8rem);
+    }
+    li {
+      padding: $padding;
+    }
+  }
+
+  .list--4-cols {
+    p {
+      margin: 0 0 $bodycopy;
+    }
+    li,
+    .list--activity-answers__item  {
+      width: calc(25% - .8rem);
+    }
+    li {
+      padding: $padding;
+    }
+  }
+
+  .list--5-cols {
+    p {
+      margin: 0 0 $bodycopy;
+    }
+    li,
+    .list--activity-answers__item  {
+      width: calc(20% - .8rem);
+    }
+    li {
+      padding: $padding;
+    }
+  }
+
+  .list--6-cols {
+    p {
+      margin: 0 0 $bodycopy;
+    }
+    li,
+    .list--activity-answers__item  {
+      width: calc(16.6% - .8rem);
+    }
+    li {
+      padding: $padding;
+    }
+  }
+
+  .list--resources{
+    margin: .8em 0 2.4em;
+    li, a, li a{
+      text-align: left;
+      justify-content: start;
+    }
+  }
+}

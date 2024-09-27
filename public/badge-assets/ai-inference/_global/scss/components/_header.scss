@@ -1,0 +1,12 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 $space-medium;
+  z-index: 1;
+  width: 100%;
+
+  & .logo--intel {
+    padding-top: 22px;
+  }
+}

@@ -1,0 +1,86 @@
+
+html {
+  font-size: 62.4%;
+  font-family: $source-code;
+  font-weight: 400;
+  color: $white;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h1, h2 {
+  margin: 0;
+  padding:0;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.5em;
+  word-spacing: -.15em;
+  font-weight: 900;
+  span.step {
+    color: $yellow;
+    display: block;
+    font-size: 50%;
+    font-weight: 600;
+  }
+  span.letter-spacing {
+    letter-spacing: .035em;
+  }
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+  color: $yellow;
+  margin: 0 0 -10px;
+}
+p {
+  font-size: 1.25rem;
+  margin: .5em 0;
+}
+
+.more-kerning {
+  letter-spacing: 0.01em;
+}
+
+.more-kerning-p {
+  letter-spacing: -0.025em;
+}
+
+@media only screen and (min-width: $md-width) {
+  html {
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 5em;
+    letter-spacing: -.075em;
+    span.step {
+      letter-spacing: normal;
+      font-size: 50%;
+    }
+  }
+
+  h2 {
+    font-size: 2.75em;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+  h1 {
+    max-width: 90%;
+    font-size: 6em;
+  }
+}

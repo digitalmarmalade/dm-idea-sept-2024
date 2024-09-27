@@ -1,0 +1,53 @@
+.box {
+  background-color: $white;
+  color: $blue-dark;
+  padding: $padding;
+  border-radius: $border-radius;
+  position: relative;
+  overflow: hidden;
+  + h1 {
+    margin: 3.2rem 0 1.2rem;
+  }
+  .col {
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &.box--transparent {
+    background: rgba(255,255,255,.25);
+    color: white;
+  }
+  &.box--probability {
+    div {
+      margin: 0 .4rem;
+    }
+    .border-bottom {
+      padding: 0 0 .8rem;
+      border-bottom: .1rem solid white;
+      &.fraction {
+        text-align: center;
+        width: 2rem;
+        padding: 0 0 .2rem;
+        margin: 0 0 .2rem;
+      }
+    }
+  }
+}
+
+.box__title {
+  font-size: $box-title;
+  margin: 0 0 .4em;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .box {
+      padding: $padding-lg;
+      .tooltip {
+        border-color: $blue-dark;
+      }
+  }
+
+}
+
+

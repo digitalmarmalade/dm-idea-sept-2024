@@ -1,0 +1,39 @@
+/* CSS Document */
+
+//Reset
+@import "framework/_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+//@import "framework/_fonts.scss";
+@import "framework/_typography.scss";
+@import "framework/_helpers.scss";
+@import "framework/_layout.scss";
+@import "framework/_backgrounds.scss";
+@import "framework/_inputs.scss";
+@import "framework/_ie11.scss";
+
+@import "components/_tooltip.scss";
+@import "components/_buttons.scss";
+@import "components/_header.scss";
+@import "components/_home.scss";
+@import "components/_slider.scss";
+@import "components/_steps.scss";
+@import "components/_quiz.scss";
+@import "components/_points.scss";
+@import "components/_slider-goals.scss";
+@import "components/_task-dropdown.scss";
+@import "components/_task-quiz.scss";
+@import "components/_task-quiz-goals.scss";
+
+@import "components/_wordsearch.scss";
+@import "components/_continue.scss";
+
+
+@import "components/_step-1.scss";
+@import "components/_step-2.scss";
+@import "components/_step-3.scss";
+@import "components/_step-4.scss";
+
+@import "components/_step-completed.scss";

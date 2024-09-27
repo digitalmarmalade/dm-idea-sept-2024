@@ -1,0 +1,23 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    span {
+        font-size: var(--font-size-md); 
+        font-family: var(--ranchers);
+        letter-spacing: 0.056em;
+    }
+    .logo--idea {
+        width: 80px;
+        height: auto;
+        img {
+            width: 100%;
+            height: auto;
+
+        }
+    }
+}

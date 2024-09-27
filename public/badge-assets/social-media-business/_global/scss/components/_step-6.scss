@@ -1,0 +1,218 @@
+
+.the-supermarket {
+  position: relative;
+  .building {
+    width: 110%;
+    bottom: -10px;
+    left: -5%;
+    position: relative;
+  }
+  .people {
+    position: absolute;
+    width: 7.5%;
+    bottom: -40px;
+    left: 22.5%;
+  }
+  .fence {
+    position: absolute;
+    width: 150%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.task-supermarket {
+  .question-number {
+    width: 80px;
+    height: 80px;
+    display: block;
+    background-color: $dark-blue;
+    font-family: 'bebas_neuebold';
+    font-weight: 700;
+    color: $white;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .question-text {
+    margin: 20px auto;
+  }
+  ul {
+    li {
+      width: calc(100% - 40px);
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $light-yellow;
+      margin: 0 0 10px;
+      text-decoration: none;
+      color: $dark-blue;
+      width: 100%;
+      padding: 20px;
+      border-radius: 5px;
+
+    }
+    a.selected,
+    a:hover {
+      background-color: $green;
+      color: $white;
+    }
+  }
+  .question-3 ul {
+    display: block;
+    li {
+      width: calc(100% - 40px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+      background-color: $light-yellow;
+      border-radius: 5px;
+      margin: 0 0 10px;
+    }
+    li:hover,
+    li.selected {
+      background-color: $light-yellow;
+      color: $dark-blue;
+      cursor: default;
+    }
+
+    span {
+      float: left;
+    }
+    span:last-child {
+      margin-left: -4px;
+    }
+    a {
+      border: 2px solid $dark-blue;
+      color: $dark-blue;
+      background-color: $white;
+      font-family: 'bebas_neuebold';
+      font-weight: 700;
+      display: block;
+      padding: 5px 0;
+      width: 80px;
+      font-size: 1.5em;
+      text-align: center;
+      border-radius: 0;
+      margin: 0;
+    }
+    a:hover,
+    span.selected a {
+      background-color:$green;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .the-supermarket-task {
+    .task-intro {
+      width: 70%;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+    }
+
+  }
+
+  .the-supermarket {
+    .people {
+      width: 6%;
+    }
+  }
+
+  .task-supermarket {
+    ul {
+      display: flex;
+      margin: 20px 0 30px;
+      width: 100%;
+      li {
+        width: 50%;
+        display: inline-flex;
+        margin:10px;
+      }
+    }
+    .question-3 ul {
+      p {
+        width: calc(66.5% - 20px);
+        margin: 0 20px 0 0;
+      }
+      .true-false-box {
+        width: 33.5%;
+        margin-left: 40px;
+      }
+
+      li {
+        width: calc(100% - 60px);
+        text-align: left;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .the-supermarket {
+    padding: 0;
+    .building {
+      width: 90%;
+      bottom: -20px;
+      left: 0;
+      position: relative;
+    }
+    .people {
+      width: 6%;
+      bottom: -70px;
+      left: 55%;
+    }
+    .fence {
+      position: absolute;
+      width: 120%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .task-supermarket {
+    .question-3 ul {
+      p {
+        width: calc(77% - 20px);
+      }
+      .true-false-box {
+        width: 23%;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+  .the-supermarket {
+    .building {
+      width: 75%;
+      bottom: -50px;
+    }
+    .people {
+      width: 3%;
+      bottom: -60px;
+    }
+    .fence {
+      width: 75%;
+    }
+  }
+}

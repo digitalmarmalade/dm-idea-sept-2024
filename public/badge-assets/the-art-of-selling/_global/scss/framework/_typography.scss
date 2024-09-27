@@ -1,0 +1,57 @@
+
+html {
+  font-size:1.1em;
+  font-family: $body-copy;
+  font-weight: 400;
+  color: $white;
+  line-height: 1.6;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: $headings;
+  margin: 0;
+  padding:0;
+  line-height: 1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+h1 {
+  font-size: 2.5em;
+
+}
+
+h2 {
+  font-size: 2.15em;
+  z-index: 3;
+}
+
+h3 {
+  font-size:1.75em;
+  margin: 0 0 10px;
+}
+
+p {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto 20px auto;
+}
+
+.cols-wrapper h2,
+.cols-wrapper h3,
+.cols-wrapper p {
+  margin: 0 0 20px;
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  h1 {
+    font-size: 3.75em;
+  }
+  h2 {
+    font-size: 3.15em;
+  }
+}

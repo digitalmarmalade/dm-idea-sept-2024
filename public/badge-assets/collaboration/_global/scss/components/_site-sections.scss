@@ -1,0 +1,51 @@
+.sections-quiz { background: #4abfe1 url(../img/step-2/magento-tile.png); padding: 2rem 0 0; margin: 0; color: #213773;
+    h2 { color: inherit; }
+}
+
+.site-section-person { background: rgba(255,255,255,1); border-radius: .3rem; padding: 2rem; border: none; margin: 0 0 2rem; box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2); color: #333; }
+.site-section-title { font-size: 1.8rem; margin: 0 0 1rem; color: #333; line-height: 1.1; }
+.site-sections { background: rgba(255,255,255,1); border-radius: .3rem; padding: 0; border: none; border: 1px solid #ededed; margin: 0 0 1rem;
+    p { position: relative; border-top: 1px solid #ededed; margin: 0; 
+        &:first-of-type { border-top: none; }
+    }
+    input[type="checkbox"] { position: absolute; opacity: 0;
+        + label { padding: 1.5rem 0 1.5rem 5rem; cursor: pointer; display: block; line-height: 1.1; color: #333; font-size: 1.6rem;
+            &:before { content: 'No'; position: absolute; left: 0; top: 0; background: rgba(0,0,0,.2); border-radius: .1rem; width: 4rem;  font-size: 1.2rem; text-transform: uppercase; height: 100%; display: flex; align-items: center; justify-content: center; color: #fff; transition: all .25s ease; }
+            &:hover { color: #666; }
+        }
+    }
+    input[type="checkbox"]:checked {
+        + label {
+            &:before { content: 'Yes'; background: #093; }
+        }
+    }
+
+}
+
+@media only screen and (min-width: $md-width) {
+    .sections-quiz { padding: 4rem 0 2rem; }
+    .site-section-intro { margin: 0 0 3rem; }
+    .site-section-title { margin: 0 0 1rem; font-size: 2rem; }
+    .site-sections { border: none;
+        p { width: calc(50% - 1.2rem); border: .1rem solid #ededed; display: inline-block; margin: 0 1rem 1rem 0;  
+            &:first-of-type { border-top: .1rem solid #ededed; }
+        }
+    }
+}
+
+.site-sections-outcome { margin: 0; padding: 1rem; border-radius: .3rem; color: #fff;
+    p { line-height: 1.3; margin: 0; }
+}
+.site-sections-outcome--right { background: #093; }
+.site-sections-outcome--wrong { background: #900; }
+
+.site-section-btn { background: #233975;; cursor: pointer; display: block; font-size: 1.6rem; padding: 1rem 2rem; color: #fff; text-decoration: none; text-transform: uppercase; border-radius: .3rem; font-weight: 700; white-space: nowrap; text-align: center; }
+
+.site-section-person-image { background: #fff; box-shadow: 0 0 10px rgba(0,0,0,.2); margin: 0 1rem 0 -3rem; float: left; transform: rotate(-3deg); height: 10rem; width: 10rem; 
+    img { width: 9rem; height: 9rem; margin: .5rem; }
+}
+
+@media only screen and (min-width: $sm-width) {
+    .hide .site-section-person-image {  transform: translate(3rem,0) rotate(0deg); transition: transform 1s ease 4s; }
+    .site-section-person-image { margin: -2rem 1rem 0 -3rem; transform: translate(0,0) rotate(-3deg);}
+}

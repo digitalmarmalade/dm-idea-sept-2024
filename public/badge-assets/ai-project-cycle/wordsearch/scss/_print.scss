@@ -1,0 +1,22 @@
+@media print {
+  .wordsearch-layout { position: relative; }
+  .single-clue
+  .keyboard,
+  .action-buttons,
+  .puzzle-header { display: none; }
+
+  .clue-sets { max-height: none; }
+  .clue-set__heading,
+  .clue-list li { font-size: 10pt; font-size: 1.2rem; padding: 5px; }
+  .clue-set { border: none; }
+  .clues { width: 60rem; }
+  .current .clue__number,
+  .current { color: #000; }
+  .puzzle-table .current,
+  .puzzle-table .selected-word { background: #fff; }
+  
+  .clue-list,
+  .clue-set__heading { border:0 none !important; }
+  .clue-sets { overflow: visible !important; }
+
+}

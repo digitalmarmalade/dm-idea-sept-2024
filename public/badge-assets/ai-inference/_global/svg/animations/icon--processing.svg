@@ -1,0 +1,93 @@
+<svg width="88" height="87" viewBox="0 0 88 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .fadeInOut {
+        animation: fadeInOut 1.8s ease-in-out infinite;
+      }
+
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .delay-1 {
+        animation-delay: .1s;
+      }
+      .delay-2 {
+        animation-delay: .2s;
+      }
+      .delay-3 {
+        animation-delay: .3s;
+      }
+      .delay-4 {
+        animation-delay: .4s;
+      }
+      .delay-5 {
+        animation-delay: .5s;
+      }
+      .delay-6 {
+        animation-delay: .6s;
+      }
+      .delay-7 {
+        animation-delay: .7s;
+      }
+      .delay-8 {
+        animation-delay: .8s;
+      }
+      .delay-9 {
+        animation-delay: .9s;
+      }
+      .delay-10 {
+        animation-delay: 1.0s;
+      }
+      .delay-11 {
+        animation-delay: 1.1s;
+      }
+      .delay-12 {
+        animation-delay: 1.2s;
+      }
+      .delay-13 {
+        animation-delay: 1.3s;
+      }
+      .delay-14 {
+        animation-delay: 1.4s;
+      }
+      .delay-15 {
+        animation-delay: 1.5s;
+      }
+      .delay-16 {
+        animation-delay: 1.6s;
+      }
+      .delay-17 {
+        animation-delay: 1.7s;
+      }
+
+    </style>
+  </defs>
+
+    <circle id="Ellipse 42"  cx="82.0929" cy="43.6644" r="5.08286" transform="rotate(90 82.0929 43.6644)" fill="#76CEFF" class="fadeInOut delay-17"/>
+    <circle id="Ellipse 36"  cx="79.9147" cy="57.4608" r="5.08286" transform="rotate(90 79.9147 57.4608)" fill="#76CEFF" class="fadeInOut delay-16"/>
+    <circle id="Ellipse 34"  cx="71.9269" cy="70.8939" r="5.08286" transform="rotate(90 71.9269 70.8939)" fill="#76CEFF" class="fadeInOut delay-15"/>
+    <circle id="Ellipse 40"  cx="58.6754" cy="78.8812" r="5.08286" transform="rotate(90 58.6754 78.8812)" fill="#76CEFF" class="fadeInOut delay-14"/>
+    <circle id="Ellipse 41"  cx="43.2453" cy="80.6969" r="5.08286" transform="rotate(-180 43.2453 80.6969)" fill="#76CEFF" class="fadeInOut delay-13"/>
+    <circle id="Ellipse 38"  cx="43.9713" cy="81.0594" r="5.08286" transform="rotate(90 43.9713 81.0594)" fill="#76CEFF" class="fadeInOut delay-12"/>
+    <circle id="Ellipse 35"  cx="29.4489" cy="78.5187" r="5.08286" transform="rotate(-180 29.4489 78.5187)" fill="#76CEFF" class="fadeInOut delay-11"/>
+    <circle id="Ellipse 33"  cx="16.0158" cy="70.5314" r="5.08286" transform="rotate(-180 16.0158 70.5314)" fill="#76CEFF" class="fadeInOut delay-10"/>
+    <circle id="Ellipse 39"  cx="8.02847" cy="57.2794" r="5.08286" transform="rotate(-180 8.02847 57.2794)" fill="#76CEFF" class="fadeInOut delay-9"/>
+    <circle id="Ellipse 37"  cx="5.84976" cy="42.5758" r="5.08286" transform="rotate(-180 5.84976 42.5758)" fill="#76CEFF" class="fadeInOut delay-8"/>
+    <circle id="Ellipse 32"  cx="5.84995" cy="42.5753" r="5.08286" transform="rotate(-90 5.84995 42.5753)" fill="#76CEFF" class="fadeInOut delay-7"/>
+    <circle id="Ellipse 29"  cx="8.02817" cy="28.779" r="5.08286" transform="rotate(-90 8.02817 28.779)" fill="#76CEFF" class="fadeInOut delay-6"/>
+    <circle id="Ellipse 28"  cx="16.0155" cy="15.3459" r="5.08286" transform="rotate(-90 16.0155 15.3459)" fill="#76CEFF" class="fadeInOut delay-5"/>
+    <circle id="Ellipse 31"  cx="29.2674" cy="7.35855" r="5.08286" transform="rotate(-90 29.2674 7.35855)" fill="#76CEFF" class="fadeInOut delay-4"/>
+    <circle id="Ellipse 30"  cx="43.9715" cy="5.17984" r="5.08286" transform="rotate(-90 43.9715 5.17984)" fill="#76CEFF" class="fadeInOut delay-3"/>
+    <circle id="Ellipse 26"  cx="57.7679" cy="7.35825" r="5.08286" fill="#76CEFF" class="fadeInOut delay-2"/>
+    <circle id="Ellipse 21"  cx="71.201" cy="15.3456" r="5.08286" fill="#76CEFF" class="fadeInOut delay-1"/>
+    <circle id="Ellipse 27"  cx="79.1883" cy="28.5975" r="5.08286" fill="#76CEFF" class="fadeInOut"/>
+</svg>

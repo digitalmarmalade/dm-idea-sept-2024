@@ -1,0 +1,16 @@
+.game-selector { text-align: center; margin: 0 0 10px;
+
+    li { display: inline-block; margin: 0 5px; font-size: 1.1em; }
+    a { display: block; border: 1px solid #ccc; color: #333; text-decoration: none; height: 40px; line-height: 40px; text-align: center; width: 140px; text-transform: uppercase; border-radius: 20px; transition: all .25s; }
+    a:hover { background: #ededed; }
+    li.active a { background: #2a2976; border-color: #2a2976; color: #fff; }
+
+}
+
+@media only screen and (min-width: $sm-width) {
+    
+    .game-selector li { font-size: 1.4em; 
+        a { width: 200px; }
+    }
+    
+}

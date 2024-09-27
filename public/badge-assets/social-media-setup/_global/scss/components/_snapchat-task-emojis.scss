@@ -1,0 +1,67 @@
+ul.boxes-emojis {
+  max-width: 800px;
+  margin: 0 auto !important
+}
+
+ul.boxes-emojis li {
+
+ min-height: 60px;
+  p {
+    padding-left: 110px;
+    text-align: left;
+    width: calc(100% - 110px);
+    font-size: .85em;
+  }
+}
+
+ul.boxes-emojis li::before {
+  content: "";
+  width: 100px;
+  height: 100%;
+  border: 4px solid $black;
+  display:block;
+  position: absolute;
+  left:-4px;
+  top:-4px;
+}
+
+ul.boxes-emojis li:nth-child(1)::before {
+  background: $white url(../img/snapchat/emoji-best-friend-two-weeks.png) no-repeat center center;
+  background-size: 60%;
+}
+ul.boxes-emojis li:nth-child(2)::before {
+  background: $white url(../img/snapchat/emoji-best-friend.png) no-repeat center center;
+  background-size: 60%;
+}
+ul.boxes-emojis li:nth-child(3)::before {
+  background: $white url(../img/snapchat/emoji-close-friend.png) no-repeat center center;
+  background-size: 60%;
+}
+ul.boxes-emojis li:nth-child(4)::before {
+  background: $white url(../img/snapchat/emoji-best-friend-2.png) no-repeat center center;
+  background-size: 60%;
+}
+ul.boxes-emojis li:nth-child(5)::before {
+  background: $white url(../img/snapchat/emoji-snapstreak.png) no-repeat center center;
+  background-size: 60%;
+}
+ul.boxes-emojis li:nth-child(6)::before {
+  background: $white url(../img/snapchat/emoji-birthday.png) no-repeat center center;
+  background-size: 60%;
+}
+
+@media only screen and (min-width: $md-width) {
+  ul.boxes-emojis li {
+    min-height: 100px;
+    p {
+        font-size: 1em;
+        padding-left: 140px;
+        text-align: left;
+        width: calc(100% - 140px);
+      }
+  }
+
+  ul.boxes-emojis li:before {
+    width: 140px;
+  }
+}

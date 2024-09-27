@@ -1,0 +1,127 @@
+.btn {
+  width:280px;
+  display:inline-block;
+  background:red;
+  padding:2px;
+  display:inline-block;
+  background:$blue-4;
+  text-align:center;
+  position:relative;
+  margin: 30px 0 70px;
+  font-family: $headings;
+  color: $white;
+  text-decoration: none;
+  font-size: 2em;
+  cursor: pointer;
+  // transition: all .8s;
+  &.selected-right,
+  &:hover,
+  &.selected,
+  &.correct-order {
+    background-color: $white;
+    color: $blue-3;
+  }
+  &:before {
+    position:absolute;
+    top:-19px;
+    left:0;
+    content:"";
+    width: 0;
+    height: 0;
+    border-right: 280px solid transparent;
+    border-bottom: 20px solid $blue-4;
+  }
+  &:after {
+    position:absolute;
+    top: 54px;
+    left:0;
+    content:"";
+    width: 0;
+    height: 0;
+    border-right: 280px solid transparent;
+    border-top: 20px solid $blue-4;
+  }
+  &.selected-right:before,
+  &:hover:before,
+  &.selected:before,
+  &.correct-order:before {
+    border-bottom: 20px solid $white;
+  }
+  &.selected-right:after,
+  &:hover:after,
+  &.selected:after,
+  &.correct-order:after {
+    border-top: 20px solid $white;
+  }
+}
+
+.btn-primary {
+  background-color: $blue-3;
+  &:before {
+    border-bottom: 20px solid $blue-3;
+  }
+  &:after {
+    top: 54px;
+    border-top: 20px solid $blue-3;
+  }
+  &.selected-right:before,
+  &:hover:before,
+  &.selected:before,
+  &.correct-order:before {
+    border-bottom: 20px solid $white;
+  }
+  &.selected-right:after,
+  &:hover:after,
+  &.selected:after,
+  &.correct-order:after {
+    border-top: 20px solid $white;
+  }
+}
+
+li.btn:nth-child(even) {
+  &:before {
+    border-left: 280px solid transparent;
+    border-bottom: 20px solid $blue-3;
+    border-right: none;
+  }
+  &:after {
+    border-left: 280px solid transparent;
+    border-top: 20px solid $blue-3;
+    border-right: none;
+  }
+  &.selected-right:before,
+  &:hover:before,
+  &.selected:before,
+  &.correct-order:before {
+    border-bottom: 20px solid $white;
+  }
+  &.selected-right:after,
+  &.selected:after,
+  &:hover:after,
+  &.correct-order:after {
+    border-top: 20px solid $white;
+  }
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  .btn {
+    width: 340px;
+    &:before {
+      border-right: 340px solid transparent;
+    }
+    &:after {
+      border-right: 340px solid transparent;
+    }
+  }
+
+  li.btn:nth-child(even) {
+    &:before {
+      border-left: 340px solid transparent;
+    }
+    &:after {
+      border-left: 340px solid transparent;
+    }
+  }
+}

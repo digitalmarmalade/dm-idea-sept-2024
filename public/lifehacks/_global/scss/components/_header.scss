@@ -1,0 +1,9 @@
+/*! Header */
+
+.lockup { position: absolute; left: 0; right: 0; top: 0; z-index: 100; }
+.idea-logo { position: absolute; right: 0; top: 0; width: 70px; }
+
+@media only screen and (min-width: 768px) {
+ 
+   .idea-logo { right: 30px; }
+}

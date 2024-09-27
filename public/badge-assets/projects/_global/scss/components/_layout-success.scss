@@ -1,0 +1,38 @@
+.top-success ul {
+  & li:first-child { animation-delay:.5s}
+  & li:nth-child(2) { animation-delay:.75s}
+  & li:nth-child(3) { animation-delay:1s}
+}
+
+.bottom-success .animation {
+  padding: 30px;
+  overflow-y: hidden;
+}
+
+.bottom-success img {
+  width: 80%;
+  height: auto;
+  margin-left: -100px;
+}
+
+.bottom-success .btn {
+  max-width: 400px;
+
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .bottom-success img {
+    width: 60%;
+    height: auto;
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .bottom-success img {
+    width: 40%;
+    height: auto;
+  }
+
+}

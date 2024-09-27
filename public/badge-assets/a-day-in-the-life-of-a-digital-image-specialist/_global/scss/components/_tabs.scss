@@ -1,0 +1,20 @@
+/*! Tabs */
+
+$tabs-border-colour: #ccc;
+$tab-current-colour: #333;
+$tab-content-bg: #fff;
+$tab-off-bg: #666;
+
+.tabs-navigation { margin: 0; padding: 0; text-align: left; position: relative; top: 1px; display: table; }
+.tabs-navigation li { list-style: none; display: inline; margin: 0; padding: 0 4px 0 0; display: table-cell; }
+.tabs-navigation li a { border: 1px solid $tabs-border-colour; padding: 10px 20px; background: $tab-off-bg; text-decoration: none; display: inline-block; color: $link-colour; border-radius: $border-radius $border-radius 0 0; background-clip: padding-box; }
+.tabs-navigation li a:hover { color: $link-colour-hover; }
+.tabs-navigation li a.current { background: $tab-content-bg; color: $tab-current-colour; border-bottom: 1px solid $tab-content-bg; }
+.tabs-content { border: 1px solid $tabs-border-colour; padding: 15px; display: none; background: $tab-content-bg; border-radius: 0 $border-radius $border-radius $border-radius; }
+.tabs-content.currentTab { display: block; }
+
+.tabs--pills .tabs-navigation { top: 0; margin: 0 0 15px; }
+.tabs--pills .tabs-navigation li { display: inline-block; padding: 0; margin: 0 10px 0 0; }
+.tabs--pills .tabs-navigation li a { border-radius: $border-radius; }
+.tabs--pills .tabs-navigation li a.current { border: 1px solid $tabs-border-colour; }
+.tabs--pills .tabs-content { border: none; padding: 0; }

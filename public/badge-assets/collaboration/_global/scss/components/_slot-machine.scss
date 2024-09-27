@@ -1,0 +1,111 @@
+$slotheight: 20rem;
+$reelheight: 12rem;
+
+.slice--slot-machine { padding: 3rem 0; background: #31343f; background:linear-gradient(230deg,#a24bcf,#4b79cf,#4bc5cf);background-size:300% 300%; background-position:0% 84%; }
+.slice--slot-machine.animate { animation:MoveBG 3s ease infinite; }
+
+
+@keyframes MoveBG { 
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+
+@keyframes shake { 
+    0%{ transform: translateX(0rem)}
+    15%{ transform: translateX(2rem)}
+    30%{ transform: translateX(-2rem)}
+    45%{ transform: translateX(2rem)}
+    60%{ transform: translateX(-2rem)}
+    75%{ transform: translateX(2rem)}
+    90%{ transform: translateX(0rem)}
+}
+
+#sm { background: #31343f; padding: 3rem 0; margin: 3rem -2rem; box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.2); }
+
+.lever button {box-shadow: 0 3px 9px rgba(0,0,0,.25)}
+  .group, .reel, .lever {display: inline-block;}
+  .group, .lever {
+
+
+  }
+
+.group { margin: 0;  position: relative; display: block; height: $slotheight;
+    &::before,
+    &::after { content: '+'; display: block; position: absolute; left: 66.66%; width: 2rem; border-radius: 50%; height: 2rem; background: #333; display: flex; align-items: center; justify-content: center; transform: translate(-50%,-50%); top: 50%; color: #fff;  font-size: 2rem; font-weight: 700; line-height: 1.6rem; }
+    &::before { left: 33.33%; }
+}
+
+  .reel {
+background: #fff;
+
+    text-align:center;
+    float: left;
+    padding:0 10px;
+    width: 33.33333%;
+    height: $slotheight;
+    overflow: hidden;
+    box-shadow: 0 2px 7px rgba(0,0,0,.3) inset, 0 0px 1px rgba(0,0,0,.2) inset;
+      
+      
+      
+  }
+    .reel div {
+      position: relative;
+      top: -5.6rem;
+    }
+    .reel p {
+      height: $reelheight;
+      margin-top: 10px;
+    }
+    .reel p:nth-child(1) {color:#ea4728}
+    .reel p:nth-child(2) {color:#04243b}
+    .reel p:nth-child(3) {color:#31343f}
+
+.lever {
+ width: 15rem; margin: 2rem auto; display: block;
+}
+  .lever button {
+    text-align:center;
+    border-radius: .3rem;
+    border: none;
+    font-size:1.8rem;
+    transition: all .2s ease; text-transform: uppercase; width: 100%; padding: 2rem;
+      background: #04243b; color: #fff; 
+  }
+  .lever button:active {
+    color: #ccc;
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    margin: 2px 0 -2px;
+  }
+
+.msg {
+  text-align: center;
+  color: #fff;
+  font-size:1.8rem;
+  padding: 2rem 0;
+}
+
+#sm a {
+  color: #222cff;
+  margin-top: 15px;
+  text-align: center;
+  display: block;
+  text-decoration:none;
+}
+
+#sm a:hover {
+  color:#ff4c00
+}
+
+@media only screen and (min-width: $md-width) {
+    
+    .slice--slot-machine { padding: 5rem 0; }
+   #sm { padding: 3rem 5rem; margin: 5rem 0; border-radius: 1rem; }
+    .group { border-radius: .3rem; overflow: hidden;
+    &::before,
+    &::after { width: 4rem; height: 4rem; font-size: 3rem; line-height: 3rem; }
+
+    }
+    
+}

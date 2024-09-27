@@ -1,0 +1,46 @@
+.definition-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-medium;
+  justify-content: space-around;
+  margin-top: $space-medium;
+
+  @media (min-width: $lg-width) {
+    gap: $space-xxx-small;
+    justify-content: space-between;
+    margin-top: $space-x-large;
+  }
+}
+
+.definition-terms__option {
+  flex-grow: 1; /* SNAG: This will give same height to boxes */
+  & .definition-terms__option__question {
+    align-items: center;
+    background-color: $blue-5;
+    border-radius: 0.4rem;
+    color: $blue-3;
+    display: flex;
+    font-size: $r-small;
+    font-weight: bold;
+    margin-bottom: -1.5rem;
+    padding: $space-xx-small;
+    text-align: center;
+
+    @media (min-width: $sm-width) {
+      min-height: 25rem;
+    }
+  }
+
+  & .definition-terms__option__select {
+    width: 100%;
+  }
+
+  @media (min-width: $sm-width) {
+    //width: 21rem;
+    width: calc(50% - #{$space-medium});
+  }
+
+  @media (min-width: $lg-width) {
+    width: 21rem;
+  }
+}

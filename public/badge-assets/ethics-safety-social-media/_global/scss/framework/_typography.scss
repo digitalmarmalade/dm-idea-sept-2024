@@ -1,0 +1,43 @@
+/*! Typography */
+
+html {
+  font-size:1.15em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  color: $white;
+  line-height: 1.4;
+  text-align: left;
+}
+
+h1, h2, h3 {
+  font-family: 'bebas_neuebold', sans-serif;
+  margin: 0;
+  padding:0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home h1 {
+  font-size: 4em;
+  line-height: .8;
+  span {
+    color: $light-green;
+  }
+}
+
+p {
+  margin: 0 auto 1rem auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: $md-width) {
+  .home h1 {
+    font-size: 6em;
+    line-height: .8;
+  }
+}

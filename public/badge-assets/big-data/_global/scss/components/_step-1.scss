@@ -1,0 +1,296 @@
+
+.step-1 {
+  .holder {
+    h2 {
+      margin: 40px 0 0;
+    }
+    h2.colour-pink {
+      color:$pink;
+    }
+  }
+  .boxes {
+    margin: 40px auto;
+    max-width: 80%;
+    li {
+      display: flex;
+      .title {
+
+        height: 50px;
+        width: auto;
+        position: absolute;
+        top: -49px;
+        left: 50%;
+        transform: translateX(-50%);
+       }
+       .icon {
+        width: 70%;
+        margin: 0 auto 0 auto;
+       }
+    }
+    li:nth-child(2) div:first-child,
+    li:nth-child(4) div:first-child,
+    li:nth-child(3) div:last-child,
+    li:nth-child(1) div:last-child {
+      background-color: $pink;
+      padding: 20px;
+      position: relative;
+      margin: 80px 0 0;
+    }
+
+  }
+  .big-image {
+    width: 90%;
+    max-width: 960px;
+    margin-bottom: -40px;
+  }
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+
+  .step-1 {
+    .holder {
+      display: flex;
+      justify-content: center;
+      div {
+        width: 50%;
+        margin: 0 20px;
+        text-align: left;
+      }
+    }
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        margin: 0 10px 0;
+        width: calc(50% - 20px);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .step-1 {
+    .boxes {
+      li {
+        p  {
+          font-size: 1em;
+        }
+        .title {
+          height: 50px;
+          top: -49px;
+        }
+      }
+      li:nth-child(2) div:first-child,
+      li:nth-child(4) div:first-child,
+      li:nth-child(3) div:last-child,
+      li:nth-child(1) div:last-child {
+        background-color: $pink;
+        padding:40px;
+        margin: 120px 0 0;
+      }
+
+      li:nth-child(2) div:last-child img,
+      li:nth-child(4) div:last-child img,
+      li:nth-child(3) div:first-child img,
+      li:nth-child(1) div:first-child img {
+        height: 560px;
+        width: auto;
+        margin-top: 120px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .step-1 {
+    .boxes {
+      max-width: 80%;
+      li {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        p  {
+          font-size: 1.25em;
+        }
+        div {
+          height: 560px;
+        }
+        .title {
+          height: 70px;
+          top: -69px;
+        }
+        .icon {
+          width: 50%;
+          max-width: 200px;
+        }
+
+      }
+      li:nth-child(2) div:first-child,
+      li:nth-child(4) div:first-child,
+      li:nth-child(3) div:last-child,
+      li:nth-child(1) div:last-child {
+        background-color: $pink;
+        padding:40px;
+        margin: 120px 0 0;
+      }
+
+      li:nth-child(2) div:last-child img,
+      li:nth-child(4) div:last-child img,
+      li:nth-child(3) div:first-child img,
+      li:nth-child(1) div:first-child img {
+        height: 560px;
+        width: auto;
+        margin-top: 120px;
+      }
+
+    }
+  }
+}
+
+
+
+.drop-wrapper {
+  width: 300px;
+  margin: 30px auto;
+  display: flex;
+}
+
+.droppable-zone {
+  width: 145px;
+  font-size: .725em;
+  margin: -40px 10px 0 0;
+  padding: 0 0 40px;
+}
+
+.dropzone {
+  background-color: $white;
+  height: 100px;
+  padding: 0 20px;
+  width: 150px;
+  margin: 40px 0 0 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: $pink;
+    font-size:1.25em;
+    line-height: 1.2;
+  }
+  span {
+   font-family: $bebas;
+   display: block;
+   font-size: 2.5em;
+   top: -11px;
+   position: absolute;
+   line-height: 0;
+   left:50%;
+   transform: translateX(-50%);
+ }
+ .after-drop {
+   display: none;
+ }
+}
+.drag-options {
+  width: 150px;
+  padding: 0 0 140px;
+}
+
+.drag-option {
+  border: 1px solid white;
+  border-radius: $border-radius;
+  height: 100px;
+  margin: 0 0 40px;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  transition: all .3s;
+  cursor: pointer;
+  font-size:.9em;
+  line-height: 1.2;
+}
+
+li.ui-draggable-dragging {
+  background-color: rgba(255,255,255,.75);
+  color: $pink;
+
+}
+
+.drag-option:hover {
+  transform: scale(1.05);
+}
+
+@media only screen and (min-width: $md-width) {
+  .drop-wrapper {
+    width: 100%;
+    max-width: 960px;
+    flex-direction: column;
+    padding: 40px 0 0;
+  }
+
+  .droppable-zone {
+    width: 90%;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+    }
+
+  }
+  .dropzone {
+    width: calc(25% - 20px);
+    padding: 30px 20px;
+    margin: 10px;
+    font-size: 1em;
+    height: 150px;
+    span {
+      font-size: 3.5em;
+      top: -16px;
+    }
+  }
+  .drag-options {
+    width: 90%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .drag-option {
+    vertical-align: top;
+    width: calc(50% - 15px);
+    margin: 7px;
+    display: inline-flex;
+    height: auto;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .dropzone {
+    font-size: 1.35em;
+    span {
+      font-size: 3.5em;
+      top: -21px;
+    }
+  }
+
+  .drag-option {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+
+
+}

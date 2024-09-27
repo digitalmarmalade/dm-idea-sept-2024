@@ -1,0 +1,20 @@
+/*! Word Search Grid */
+
+.grid-and-buttons { overflow: auto; -webkit-overflow-scrolling: touch; }
+
+body { background-color: $bg-colour; }
+
+.puzzle { transition: none; }
+
+.viewer { background: #01DEF3; opacity: 0.5; }
+.viewer.done { background-color: #01DEF3; opacity: 1; }
+
+.viewer, .viewer.done { border-radius: 4px; }
+
+.viewer { margin-top: -1px; }
+.touch .viewer { margin-top: 0; top: -2px; }
+
+table .text-cell-default { color: $text-colour;  }
+.intro-complete table td.selected .text-cell-default { color:#fff; }
+
+td span { position: relative; }

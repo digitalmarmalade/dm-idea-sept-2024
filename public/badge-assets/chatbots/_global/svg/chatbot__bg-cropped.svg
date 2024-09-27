@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="something" fill="none" viewBox="147.61 88.57 809.76 439.98">
+  <style>
+    * {
+      transform-origin: center center;
+    }
+
+    .rotate__40 {
+      animation: rotate linear infinite 500s;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .grow-1-1 {
+      --grow: 1.1;
+      animation: grow linear infinite 200s; 
+    }
+
+    .grow-1-25 {
+      --grow: 1.25;
+      animation: grow linear infinite 200s;
+    }
+
+    .grow-1-5 {
+      --grow: 1.5;
+      animation: grow linear infinite 200s;
+    }
+
+    @keyframes grow {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(var(--grow));
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <g id="Group 69">
+    <g id="bg--1">
+      <path class="grow-1-5" d="M889.461 183.317C884.856 187.128 881.451 191.71 879.265 196.664C860.613 237.741 816.929 264.406 768.603 264.182C750.822 264.095 732.952 269.864 718.679 281.673C697.587 299.125 689.884 325.191 696.195 348.91C704.435 380.422 679.842 411.178 644.726 413.215L644.74 413.229C639.927 413.503 635.175 415.204 631.307 418.403C622.192 425.945 621.437 438.87 629.62 447.274C637.802 455.676 651.823 456.374 660.934 448.834C664.803 445.634 667.149 441.461 667.962 437.079L667.976 437.092C673.949 405.129 709.767 385.9 742.864 396.844C767.766 405.178 796.706 400.925 817.8 383.473C832.072 371.662 840.216 355.905 842.035 339.598L842.036 339.598C846.993 295.285 880.454 258.118 926.763 245.445C932.338 243.974 937.649 241.347 942.254 237.537C958.493 224.1 959.84 201.068 945.261 186.095C930.683 171.126 905.7 169.879 889.461 183.317" fill="url(#paint0_linear_1446_82592)"/>
+      <g id="circle--lines" class="rotate__40">
+        <mask id="mask0_1446_82592" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="562" y="86" width="343" height="322">
+          <g id="lines">
+            <rect id="Rectangle 37" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 765.882 407.086)" fill="#C4C4C4"/>
+            <rect id="Rectangle 38" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 760.972 402.215)" fill="#C4C4C4"/>
+            <rect id="Rectangle 39" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 756.061 397.344)" fill="#C4C4C4"/>
+            <rect id="Rectangle 40" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 751.15 392.474)" fill="#C4C4C4"/>
+            <rect id="Rectangle 41" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 746.239 387.603)" fill="#C4C4C4"/>
+            <rect id="Rectangle 42" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 741.328 382.732)" fill="#C4C4C4"/>
+            <rect id="Rectangle 43" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 736.417 377.862)" fill="#C4C4C4"/>
+            <rect id="Rectangle 44" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 731.507 372.991)" fill="#C4C4C4"/>
+            <rect id="Rectangle 45" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 726.596 368.121)" fill="#C4C4C4"/>
+            <rect id="Rectangle 46" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 721.685 363.25)" fill="#C4C4C4"/>
+            <rect id="Rectangle 47" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 716.774 358.379)" fill="#C4C4C4"/>
+            <rect id="Rectangle 48" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 711.863 353.509)" fill="#C4C4C4"/>
+            <rect id="Rectangle 49" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 706.953 348.638)" fill="#C4C4C4"/>
+            <rect id="Rectangle 50" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 702.042 343.767)" fill="#C4C4C4"/>
+            <rect id="Rectangle 51" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 697.131 338.897)" fill="#C4C4C4"/>
+            <rect id="Rectangle 52" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 692.22 334.026)" fill="#C4C4C4"/>
+            <rect id="Rectangle 53" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 687.309 329.156)" fill="#C4C4C4"/>
+            <rect id="Rectangle 54" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 682.399 324.285)" fill="#C4C4C4"/>
+            <rect id="Rectangle 55" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 677.488 319.414)" fill="#C4C4C4"/>
+            <rect id="Rectangle 56" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 672.577 314.543)" fill="#C4C4C4"/>
+            <rect id="Rectangle 57" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 667.666 309.673)" fill="#C4C4C4"/>
+            <rect id="Rectangle 58" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 662.755 304.802)" fill="#C4C4C4"/>
+            <rect id="Rectangle 59" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 657.844 299.932)" fill="#C4C4C4"/>
+            <rect id="Rectangle 60" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 652.934 295.061)" fill="#C4C4C4"/>
+            <rect id="Rectangle 61" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 648.023 290.19)" fill="#C4C4C4"/>
+            <rect id="Rectangle 62" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 643.112 285.32)" fill="#C4C4C4"/>
+            <rect id="Rectangle 63" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 638.201 280.449)" fill="#C4C4C4"/>
+            <rect id="Rectangle 64" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 633.29 275.578)" fill="#C4C4C4"/>
+            <rect id="Rectangle 65" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 628.379 270.708)" fill="#C4C4C4"/>
+            <rect id="Rectangle 66" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 623.469 265.837)" fill="#C4C4C4"/>
+            <rect id="Rectangle 67" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 618.558 260.967)" fill="#C4C4C4"/>
+            <rect id="Rectangle 68" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 613.647 256.096)" fill="#C4C4C4"/>
+            <rect id="Rectangle 69" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 608.736 251.225)" fill="#C4C4C4"/>
+            <rect id="Rectangle 70" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 603.825 246.354)" fill="#C4C4C4"/>
+            <rect id="Rectangle 71" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 598.914 241.484)" fill="#C4C4C4"/>
+            <rect id="Rectangle 72" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 594.004 236.613)" fill="#C4C4C4"/>
+            <rect id="Rectangle 73" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 589.093 231.743)" fill="#C4C4C4"/>
+            <rect id="Rectangle 74" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 584.182 226.872)" fill="#C4C4C4"/>
+            <rect id="Rectangle 75" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 579.271 222.001)" fill="#C4C4C4"/>
+            <rect id="Rectangle 76" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 574.36 217.131)" fill="#C4C4C4"/>
+            <rect id="Rectangle 77" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 569.45 212.26)" fill="#C4C4C4"/>
+            <rect id="Rectangle 78" width="2.31159" height="182.287" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 564.539 207.389)" fill="#C4C4C4"/>
+          </g>
+        </mask>
+        <g mask="url(#mask0_1446_82592)">
+          <ellipse id="Ellipse 5" rx="91.2791" ry="91.1433" transform="matrix(-0.708145 -0.702351 0.760041 -0.653885 733.148 246.316)" fill="url(#paint1_linear_1446_82592)"/>
+        </g>
+      </g>
+      <g id="circle--solid" class="grow-1-25">
+        <path id="circle--solid_2" d="M863.261 313.545C871.011 299.831 889.317 294.537 904.151 301.725C918.983 308.912 924.728 325.857 916.978 339.571C909.228 353.288 890.92 358.58 876.087 351.393C861.254 344.206 855.511 327.26 863.261 313.545Z" fill="url(#paint2_linear_1446_82592)"/>
+      </g>
+      <g id="circle--solid_3" class="grow-1-25">
+        <path id="circle--solid_4" d="M679.675 363.146C682.937 379.931 670.846 395.955 652.665 398.934C634.487 401.914 617.103 390.724 613.841 373.939C610.578 357.153 622.671 341.129 640.851 338.149C659.029 335.169 676.412 346.361 679.675 363.146Z" fill="url(#paint3_linear_1446_82592)"/>
+      </g>
+    </g>
+    <g id="bg--3_2">
+      <path id="bg--3_3" class="grow-1-5" d="M689.649 378.85C681.225 376.125 672.582 375.339 664.278 376.234C595.061 383.051 528.142 350.594 494.799 293.992C482.537 273.161 462.196 256.306 436.092 247.857C397.517 235.373 356.471 244.526 328.398 268.413C291 299.98 231.773 292.671 204.533 253.072L204.524 253.099C200.798 247.668 195.16 243.301 188.088 241.011C171.416 235.616 153.199 243.734 147.393 259.144C141.589 274.551 150.396 291.414 167.062 296.806C174.137 299.098 181.481 298.931 188.046 296.83L188.038 296.855C235.951 281.576 287.214 310.023 295.279 356.302C301.211 391.192 327.184 422.034 365.761 434.521C391.867 442.966 419.108 441.507 442.696 432.276L442.697 432.278C506.808 407.212 580.984 420.415 630.578 465.681C636.474 471.17 643.767 475.543 652.19 478.269C681.89 487.881 714.356 473.416 724.701 445.962C735.041 418.511 719.351 388.461 689.649 378.85" fill="url(#paint4_linear_1446_82592)"/>
+      <g id="circle--lines_2" class="rotate__40">
+        <mask id="mask1_1446_82592" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="199" y="271" width="234" height="256">
+          <g id="lines_2">
+            <rect id="Rectangle 37_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 199.938 511.905)" fill="#C4C4C4"/>
+            <rect id="Rectangle 38_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 200.404 506.1)" fill="#C4C4C4"/>
+            <rect id="Rectangle 39_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 200.871 500.295)" fill="#C4C4C4"/>
+            <rect id="Rectangle 40_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 201.337 494.49)" fill="#C4C4C4"/>
+            <rect id="Rectangle 41_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 201.804 488.685)" fill="#C4C4C4"/>
+            <rect id="Rectangle 42_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 202.27 482.88)" fill="#C4C4C4"/>
+            <rect id="Rectangle 43_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 202.736 477.075)" fill="#C4C4C4"/>
+            <rect id="Rectangle 44_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 203.203 471.27)" fill="#C4C4C4"/>
+            <rect id="Rectangle 45_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 203.669 465.465)" fill="#C4C4C4"/>
+            <rect id="Rectangle 46_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 204.135 459.66)" fill="#C4C4C4"/>
+            <rect id="Rectangle 47_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 204.602 453.855)" fill="#C4C4C4"/>
+            <rect id="Rectangle 48_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 205.068 448.05)" fill="#C4C4C4"/>
+            <rect id="Rectangle 49_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 205.534 442.245)" fill="#C4C4C4"/>
+            <rect id="Rectangle 50_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 206.001 436.44)" fill="#C4C4C4"/>
+            <rect id="Rectangle 51_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 206.467 430.635)" fill="#C4C4C4"/>
+            <rect id="Rectangle 52_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 206.933 424.831)" fill="#C4C4C4"/>
+            <rect id="Rectangle 53_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 207.4 419.026)" fill="#C4C4C4"/>
+            <rect id="Rectangle 54_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 207.866 413.221)" fill="#C4C4C4"/>
+            <rect id="Rectangle 55_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 208.332 407.416)" fill="#C4C4C4"/>
+            <rect id="Rectangle 56_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 208.799 401.611)" fill="#C4C4C4"/>
+            <rect id="Rectangle 57_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 209.265 395.806)" fill="#C4C4C4"/>
+            <rect id="Rectangle 58_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 209.731 390.001)" fill="#C4C4C4"/>
+            <rect id="Rectangle 59_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 210.198 384.196)" fill="#C4C4C4"/>
+            <rect id="Rectangle 60_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 210.664 378.391)" fill="#C4C4C4"/>
+            <rect id="Rectangle 61_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 211.13 372.586)" fill="#C4C4C4"/>
+            <rect id="Rectangle 62_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 211.597 366.781)" fill="#C4C4C4"/>
+            <rect id="Rectangle 63_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 212.063 360.976)" fill="#C4C4C4"/>
+            <rect id="Rectangle 64_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 212.529 355.171)" fill="#C4C4C4"/>
+            <rect id="Rectangle 65_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 212.996 349.366)" fill="#C4C4C4"/>
+            <rect id="Rectangle 66_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 213.462 343.561)" fill="#C4C4C4"/>
+            <rect id="Rectangle 67_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 213.929 337.756)" fill="#C4C4C4"/>
+            <rect id="Rectangle 68_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 214.395 331.951)" fill="#C4C4C4"/>
+            <rect id="Rectangle 69_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 214.861 326.146)" fill="#C4C4C4"/>
+            <rect id="Rectangle 70_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 215.328 320.342)" fill="#C4C4C4"/>
+            <rect id="Rectangle 71_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 215.794 314.537)" fill="#C4C4C4"/>
+            <rect id="Rectangle 72_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 216.26 308.732)" fill="#C4C4C4"/>
+            <rect id="Rectangle 73_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 216.727 302.927)" fill="#C4C4C4"/>
+            <rect id="Rectangle 74_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 217.193 297.122)" fill="#C4C4C4"/>
+            <rect id="Rectangle 75_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 217.659 291.317)" fill="#C4C4C4"/>
+            <rect id="Rectangle 76_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 218.126 285.512)" fill="#C4C4C4"/>
+            <rect id="Rectangle 77_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 218.592 279.707)" fill="#C4C4C4"/>
+            <rect id="Rectangle 78_2" width="2" height="208.428" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 219.058 273.902)" fill="#C4C4C4"/>
+          </g>
+        </mask>
+        <g mask="url(#mask1_1446_82592)">
+          <ellipse id="Ellipse 5_2" rx="100.842" ry="104.214" transform="matrix(0.0777246 -0.96749 1.02495 0.0702611 316.453 398.478)" fill="url(#paint5_linear_1446_82592)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_1446_82592" x1="951.312" y1="324.415" x2="550.575" y2="310.066" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC444"/>
+      <stop offset="0.996403" stop-color="#F36F56"/>
+      <stop offset="1" stop-color="#F36F56"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1446_82592" x1="0" y1="94.4208" x2="226.456" y2="94.4208" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC444"/>
+      <stop offset="0.996403" stop-color="#F36F56"/>
+      <stop offset="1" stop-color="#F36F56"/>
+    </linearGradient>
+    <linearGradient id="paint2_linear_1446_82592" x1="870.43" y1="312.922" x2="1020.42" y2="299.875" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9085"/>
+      <stop offset="1" stop-color="#FB6FBB"/>
+    </linearGradient>
+    <linearGradient id="paint3_linear_1446_82592" x1="673.881" y1="368.158" x2="560.015" y2="480.459" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9085"/>
+      <stop offset="1" stop-color="#FB6FBB"/>
+    </linearGradient>
+    <linearGradient id="paint4_linear_1446_82592" x1="90.5791" y1="204.491" x2="668.614" y2="-2.66463" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#AA80F9"/>
+      <stop offset="0.996403" stop-color="#6165D7"/>
+      <stop offset="1" stop-color="#6165D7"/>
+    </linearGradient>
+    <linearGradient id="paint5_linear_1446_82592" x1="0" y1="107.962" x2="250.181" y2="107.962" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC444"/>
+      <stop offset="0.996403" stop-color="#F36F56"/>
+      <stop offset="1" stop-color="#F36F56"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,110 @@
+.feedback {
+    width: 100%;
+
+    padding: var(--space-md) var(--space);
+    transition: var(--transition);
+    border-radius: var(--space-xxsm);
+
+    @media (min-width: $md-width) {
+        padding: var(--space-lg);
+        max-width: 656px;
+    }
+
+    @media (min-width: $xlg-width) {
+        padding: var(--space-lg) var(--space-xlg);
+    }
+
+    .feedback__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+
+        @media (min-width: $xlg-width) {
+            gap: var(--space-lg);
+        }
+    }
+
+    &.success {
+        background-color: var(--green);
+    }
+
+    &.fail {
+        background-color: var(--red);
+    }
+
+    &.neutral-1 {
+        background-color: var(--white-48)
+    }
+
+    &.neutral-2 {
+        background-color: var(--white);
+    }
+
+    &.list {
+        background-color: var(--cream);
+        padding: var(--space-lg) var(--space);
+
+        @media (min-width: $md-width) {
+            padding: var(--space-xlg) var(--space-lg);
+        }
+
+        .feedback__content {
+            gap: var(--space-md);
+
+            @media (min-width: $md-width) {
+                gap: var(--space-lg);
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: var(--space-xsm);
+            }
+
+            li {
+                width: 100%;
+                flex-grow: 1;
+                text-align: center;
+                padding: var(--space) var(--space-md);
+                background-color: var(--white-48);
+                border-radius: var(--space-xxsm);
+                display: inline;
+
+                &:first-child {
+                    display: block !important;
+                }
+
+                &:last-child:not(.has-bg) {
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+        }
+    }
+
+    &.input-range {
+        padding: var(--space-sm);
+        font-size: var(--font-size-sm);
+
+        @media (min-width: $md-width) {
+            padding: var(--space-sm) var(--space-md);
+        }
+
+        .feedback__content {
+            text-align: left;
+            align-items: flex-start;
+
+            @media (min-width: $md-width) {
+                font-size: var(--font-size-default);
+            }
+        }
+    }
+}

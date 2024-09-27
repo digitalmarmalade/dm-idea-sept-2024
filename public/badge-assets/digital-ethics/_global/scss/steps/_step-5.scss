@@ -1,0 +1,153 @@
+.container--drag-drop {
+    display: flex;
+    width: 100%;
+    gap: var(--space-xsm);
+    @media (min-width: $md-width) {
+        flex-direction: column;
+    }
+    @media (min-width: $xlg-width) {
+        gap: var(--space-md);
+    }
+}
+
+.container--dropable-area,
+.container--dropable-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    gap: var(--space-xsm);
+    flex-grow: 1;
+    @media (min-width: $md-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (min-width: $xlg-width) {
+        gap: var(--space-sm);
+    }
+}
+.drop-area {
+    flex:1;
+    padding: var(--space-xsm) var(--space-xxsm);
+    gap: var(--space-xsm);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--space-xsm);
+    align-items: center;
+    .drop-zone {
+        background-color: var(--white);
+        // border: .1rem dotted var(--black);
+        min-height: var(--space-xlg);
+        width: 100%;
+        border-radius: var(--space--xsm);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+        flex-grow:1;
+        &.correct {
+            .dropable-item {
+             background-color: var(--green);
+            }
+        }
+        &:before {
+            top: 50%;
+            left: 50%;
+            content: "Dropping Zone";
+            position: absolute;
+            z-index: 1;
+            text-align: center;
+            font-size: var(--font-size-sm);
+            transform: translate(-50%, -50%);
+        }
+
+        .dropable-item {
+            z-index: 2;
+            position: relatve;
+            max-width: 100%;
+            font-size: var(--font-size-sm);
+            padding: var(--space-xsm);
+            pointer-events: none;
+
+            &.wrong {
+                background-color: var(--red);
+            }
+            &.correct {
+                 background-color: var(--green);
+                border-bottom: .2rem solid var(--cream);
+            }
+       
+        }
+    }
+    @media (min-width: $md-width) {
+        padding: var(--space-md);
+
+    }
+    h3 {
+        font-size: var(--font-size-sm);
+        
+        @media (min-width: $md-width) {
+            font-size: var(--font-size-default);
+        }
+    }
+    img {
+        width: var(--space-xlg);
+        height: auto;
+    
+        @media (min-width: $md-width) {
+            width: var(--space-xxxlg);
+        }
+    }
+    ul {
+        padding: 0;
+        width: 100%;
+        gap: var(--space-xxsm);
+        flex-wrap: wrap;
+        justify-content: center;
+          @media (min-width: $md-width) {
+            flex-direction: row;
+        }
+        
+    }
+    li {
+
+        width: auto;
+        font-size: var(--font-size-xsm);
+        @media (min-width: $md-width) {
+            font-size: var(--font-size-sm);
+        }
+        padding: var(--space-xxsm) ;
+        @media (min-width: $md-width) {
+            padding: var(--space-xxsm) var(--space-sm);
+        }
+    }
+}
+
+.dropable-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow:1;
+    padding: var(--space-xsm);
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-answer);
+    transition: var(--transition);
+    border-radius: var(--space-xxsm);
+    width: 100%;
+    font-size: var(--font-size-xsm);
+    z-index: 2;
+
+    @media (min-width: $md-width) {
+        padding: var(--space-sm);
+        font-size: var(--font-size-default);
+        max-width: 49%;
+    }
+    &:hover {
+        background-color: var(--black);
+        color:var(--white);
+        box-shadow: none;
+        transform: scale(.96);
+    }
+}

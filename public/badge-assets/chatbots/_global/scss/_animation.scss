@@ -1,0 +1,365 @@
+// step 5 deployment loader
+.step-5__loader {
+  animation: s1 1s infinite;
+  border: 5px solid;
+  border-color: $purple transparent;
+  border-radius: 50%;
+  height: 30px;
+  margin-bottom: $space-xx-small;
+  width: 30px;
+}
+
+@keyframes s1 {
+  to  {
+    transform: rotate(.5turn);
+  }
+}
+
+// floating chatbot toggle icon
+@keyframes float {
+  50% {
+    transform: translateY(-1.25rem);
+  }
+}
+
+.chatbot__toggle--icon {
+  animation: float 3s infinite;
+}
+
+// animations for chatbot overlay
+// animation size is altered in overlay scss file for initial loading screen
+.chatbot__loader--speech {
+  animation: d1 1s steps(4) infinite;
+  background: radial-gradient(circle closest-side, currentColor 90%, #00000000) 0 0/33% 100%;
+  clip-path: inset(0 100% 0 0);
+  display: inline-block;
+  height: 3px;
+  width: 25px;
+}
+
+@keyframes d1 {to{clip-path: inset(0 -34% 0 0)}};
+
+// home animation /////////////////////////// below ////////////////////////////////
+// positioning
+.home--animation {
+}
+
+#home--animation-base {
+  left: 40%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  @media (min-width: $md-width) {
+    left: 30%;
+  }
+}
+
+#icon--speaker-home {
+  left: 70%;
+  position: absolute;
+  top: 30%;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    left: 47.5%;
+  }
+}
+
+#speech-bubble--purple {
+  left: 2.5%;
+  position: absolute;
+  top: 42.5%;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    left: 12.5%;
+    top: 40%;
+    z-index: 4;
+  }
+}
+
+#speech-bubble--orange {
+  display: none;
+  right: 10%;
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    display: block;
+  }
+}
+
+#speech-bubble--orange-inverted {
+  right: 32.5%;
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    display: none;
+  }
+}
+
+#circle--lines-orange-medium-home {
+  bottom: 0;
+  left: 15%;
+  position: absolute;
+  z-index: 3;
+
+  @media (min-width: $md-width) {
+    right: 17.5%;
+    top: 42.5%;
+  }
+}
+
+#circle--lines-purple-large-home {
+  left: 20%;
+  position: absolute;
+  top: 20%;
+}
+
+#circle--solid-pink-small-home {
+  bottom: 40%;
+  position: absolute;
+  right: 5%;
+  z-index: 2;
+
+  @media (min-width: $md-width) {
+    bottom: 35%;
+    right: 32.5%;
+  }
+}
+
+#circle--solid-purple-medium-home {
+  left: 40%;
+  top: 22.5%;
+  position: absolute;
+}
+
+#circle--solid-pink-x-small-home {
+  bottom: 5%;
+  display: none;
+  position: absolute;
+  right: 10%;
+}
+
+#blob--pink-large-home {
+  left: 7.5%;
+  top: 10%;
+  position: absolute;
+}
+
+#blob--orange-medium-home {
+  bottom: 20%;
+  position: absolute;
+  right: 75%;
+  z-index: 1;
+
+  @media (min-width: $md-width) {
+    right: 10%;
+    z-index: 2;
+  }
+}
+
+// step 1 animatation below /////// positioning ///////
+#step-1--animation-base {
+  bottom: 10%;
+  left: 30%;
+  position: absolute;
+}
+
+#woman--home {
+  bottom: 2.5%;
+  left: 0;
+  position: absolute;
+}
+
+#bot--home {
+  left: 42.5%;
+  position: absolute;
+  top: 17.5%;
+  z-index: 4;
+}
+
+#blob--pink-large-step-1 {
+  left: 0;
+  position: absolute;
+  top: 2.5%;
+}
+
+#circle--solid-purple-medium-step-1 {
+  left: 1.5%;
+  position: absolute;
+  top: 17.5%;
+}
+
+#circle--lines-orange-x-large-step-1-1 {
+  left: 20%;
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+}
+
+#circle--lines-orange-x-large-step-1-2 {
+  left: 55%;
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+}
+
+#circle--solid-pink-small-step-1-1 {
+  position: absolute;
+  right: 2.5%;
+  top: 40%;
+}
+
+#circle--solid-pink-small-step-1-2 {
+  position: absolute;
+  right: 32.5%;
+  top: 65%;
+}
+
+#blob--purple-large-step-1 {
+  position: absolute;
+  right: 0;
+  top: 42.5%;
+}
+
+#speech-bubble--gold-step-1 {
+  left: 35%;
+  position: absolute;
+  top: 5%;
+  z-index: 3;
+}
+
+.chatbot__loader--speech-bubble-step-1 {
+  height: 8px;
+  width: 40px;
+}
+
+// success {
+#blob--purple-large-success {
+  bottom: 100px;
+  left: 0;
+  position: absolute;
+}
+
+#circle--lines-orange-medium-success {
+  bottom: 25px;
+  left: 50px;
+  position: absolute;
+}
+
+#circle--lines-orange-x-large-success {
+  position: absolute;
+  right: 75px;
+  top: 50px;
+  z-index: 1;
+}
+
+#blob--orange-medium-success {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+
+#circle--solid-pink-small-success {
+  position: absolute;
+  right: 15px;
+  top: 100px;
+}
+
+#circle--solid-purple-small-success {
+  position: absolute;
+  right: 200px;
+  top: 0;
+}
+
+// animate
+.rotate__40 {
+  animation: rotate linear infinite 40s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grow-1-1 {
+  --grow: 1.1;
+  animation: grow linear infinite 30s;
+}
+
+.grow-1-25 {
+  --grow: 1.25;
+  animation: grow linear infinite 30s;
+}
+
+.grow-1-5 {
+  --grow: 1.5;
+  animation: grow linear infinite 20s;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(var(--grow));
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.expand-bounce__1 {
+  animation: expand-bounce 15s infinite backwards;
+  transform: scale(0);
+  transform-origin: 0% 100%;
+}
+
+.expand-bounce__2 {
+  animation: expand-bounce 15s infinite backwards;
+  transform: scale(0);
+  transform-origin: 100% 0%;
+}
+
+@keyframes expand-bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  2.5% {
+    transform: scale(1.25);
+  }
+
+  5%, 75% {
+    transform: scale(1);
+  }
+
+  75.5% {
+    transform: scale(0);
+  }
+}
+
+// utils
+.delay-2-5 {
+  animation-delay: 2.5s;
+}
+
+.delay-5 {
+  animation-delay: 5s;
+}
+
+.delay-10 {
+  animation-delay: 10s;
+}

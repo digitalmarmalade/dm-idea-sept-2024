@@ -1,0 +1,26 @@
+header {
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  .holder {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .logo--intel {
+    height: 3.2rem;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width:$xl-width) {
+  .logo--intel {
+    height: 2.4rem;
+    width: auto;
+    margin-top: -1.2rem;
+  }
+  .logo--idea {
+    height: 7.2rem;
+    width: auto;
+  }
+}

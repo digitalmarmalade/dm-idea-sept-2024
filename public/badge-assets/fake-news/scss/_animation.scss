@@ -1,0 +1,150 @@
+// animate
+.rotate__40 {
+  animation: rotate linear infinite 40s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grow-1-1 {
+  --grow: 1.1;
+  animation: grow linear infinite 30s;
+}
+
+.grow-1-25 {
+  --grow: 1.25;
+  animation: grow linear infinite 30s;
+}
+
+.grow-1-25-fast {
+  --grow: 1.25;
+  animation: grow linear 1 0.35s; 
+}
+
+.grow-1-5 {
+  --grow: 1.5;
+  animation: grow linear infinite 20s;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(var(--grow));
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(var(--shrink));
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(var(--shrink));
+  }
+}
+
+.shrink-1-15 {
+  --shrink: 1.15;
+  animation: shrink linear infinite 30s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.expand-bounce__1 {
+  animation: expand-bounce 15s infinite backwards;
+  transform: scale(0);
+  transform-origin: 0% 100%;
+}
+
+.expand-bounce__2 {
+  animation: expand-bounce 15s infinite backwards;
+  transform: scale(0);
+  transform-origin: 100% 0%;
+}
+
+@keyframes expand-bounce {
+  0% {
+    transform: scale(0);
+  }
+
+  2.5% {
+    transform: scale(1.25);
+  }
+
+  5%, 75% {
+    transform: scale(1);
+  }
+
+  75.5% {
+    transform: scale(0);
+  }
+}
+
+// utils
+.delay-1-5 {
+  animation-delay: 1.5s;
+}
+
+.delay-2-5 {
+  animation-delay: 2.5s;
+}
+
+.delay-3 {
+  animation-delay: 3s;
+}
+
+.delay-3-5 {
+  animation-delay: 3.5s;
+}
+
+.delay-4-5 {
+  animation-delay: 4.5s;
+}
+
+.delay-5 {
+  animation-delay: 5s;
+}
+
+.delay-5-5 {
+  animation-delay: 5s;
+}
+
+.delay-9 {
+  animation-delay: 9s;
+}
+
+.delay-10 {
+  animation-delay: 10s;
+}
+
+.delay-15 {
+  animation-delay: 15s;
+}
+
+

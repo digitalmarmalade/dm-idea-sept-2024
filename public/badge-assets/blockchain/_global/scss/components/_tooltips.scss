@@ -1,0 +1,60 @@
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted $white;
+    cursor: pointer;
+
+}
+
+.tooltip .tooltiptext {
+    font-weight: 700;
+    visibility: hidden;
+      width: 260px;
+    background-color: $yellow;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+    text-transform: none;
+    line-height: 1.2;
+    color: $blue;
+    font-size: 1.25rem;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: $box-shadow;
+
+    transition: all .3s;
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: all .3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 99%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -20px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: $yellow transparent transparent transparent;
+}
+
+.tooltip-cryptography {
+  border-bottom: 1px dotted $blue;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .tooltip .tooltiptext {
+    width: 300px;
+    }
+}

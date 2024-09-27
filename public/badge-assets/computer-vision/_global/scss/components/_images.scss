@@ -1,0 +1,60 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+ &.width--auto {
+   width: auto;
+ }
+}
+
+figure {
+  width: 100%;
+  margin: 1.8rem 0;
+  img.border {
+    border: .4rem solid white;
+    overflow: hidden;
+  }
+}
+
+figcaption {
+  margin: .8rem 0 0;
+  font-size: .75rem;
+}
+
+picture {
+  width: 100%;
+  margin: 1.6rem;
+}
+
+
+.caption {
+  text-align: center;
+  width: 100%;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.illustration--kernel {
+  width: 40%;
+  height: auto;
+  margin: 1.6rem 0;
+}
+
+@media only screen and (min-width: $md-width) {
+  .illustration--kernel {
+    margin: 3.2rem 0 2.4rem;
+  }
+  picture {
+    margin: 1.6rem 0;
+    &.width--80 {
+      width: 76%;
+    }
+  }
+}
+
+.illustration--pixel-matrix {
+  width: 85%;
+}

@@ -1,0 +1,16 @@
+/*! Add Widget */
+
+.add-a-widget { position: fixed; left: 50%; margin-left: -540px; width: 120px; background: $primary-colour; }
+.add-a-widget ul { list-style: none; margin: 0; padding: 0; 
+	li { border-bottom: 1px solid #e07957; margin: 0; font-size: 1.2em; line-height: 1.1; }
+	a,button { color: #fff; text-transform: uppercase; display: block; text-align: center; padding: 10px; text-decoration: none; background: #dc582d; transition: background .25s ease-in; border: 0; width: 100%; }
+	a:hover, button:hover { background: none; }
+}
+
+.add-heading { font-size: 3em; display: block; padding: 20px; color: #fff; text-align: center; border-bottom: 1px solid #f77f57; }
+
+@media only screen and (max-width: 1200px) {
+	
+.add-a-widget { margin-left: -480px; }
+	
+}

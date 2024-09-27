@@ -1,0 +1,9 @@
+/*! Progress */
+
+.progress-holder { padding: 130px 0 40px; }
+.progress-bar { background: #ededed; height: 4px; position: relative; }
+.progress-bar-fill { height: 4px; width: 20px; background: #27b7ff; }
+.progress-bar-fill:before,
+.progress-bar-fill:after { content: ''; display: block; width: 14px; height: 14px; border-radius: 50%; background: #27b7ff; position: absolute; top: 50%;margin-top: -7px; }
+.progress-bar-fill:before { left: 0; }
+.progress-bar-fill:after { right: 0; background: #ededed; }

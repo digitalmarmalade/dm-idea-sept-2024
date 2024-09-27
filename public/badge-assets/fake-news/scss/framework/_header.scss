@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: calc($lg-width + ($space-medium * 2));
+  padding: 0 $space-medium;
+
+  & .logo__intel {
+    padding-top: 22px;
+  }
+}

@@ -1,0 +1,82 @@
+/*! Typography */
+body { font-size: 62.5% !important; font-family: 'FiraSans-Book', sans-serif; color:#1b4253; }
+
+h1, h2, h3, h4, h5, h6, h7 { font-weight: normal; margin: 0 0 15px; line-height: 1.2; }
+
+h1, .h1 { font-size: 3.6em; line-height: 1.16; }
+h2, .h2 { font-size: 2.4em; line-height: 1.25; }
+h3, .h3 { font-size: 1.8em; line-height: 1.33; }
+h4, .h4 { font-size: 1.6em; line-height: 1.375; }
+h5, .h5 { font-size: 1.4em; line-heigh: 1.43; }
+h6, .h6 { font-size: 1.2em; line-height: 1.5; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 65%; color: #666; }
+
+*+h1, *+h2, *+h3, *+h4, *+h5, *+h6 { margin-top: 25px; }
+
+p, li, dl, address { font-size: 1.6em; margin: 0 0 10px; line-height: 1.55; }
+p.lead { font-size: 1.25em; }
+
+address { font-style: normal; }
+
+a { color: $link-colour; }
+a:hover { text-decoration: none; }
+.link-reset { color: inherit; text-decoration: none; }
+
+/* Lists */
+
+ul, ol { margin: 0; padding: 0 0 0 20px; }
+ul ul, ol ol, ul ol, ol ul { padding: 15px 0 0 40px; }
+ol ol { list-style: lower-roman; }
+li li { font-size: 1em; }
+
+.reset-list { list-style: none; margin: 0; padding: 0; }
+
+hr { border: 0; border-top: 1px solid #ccc; margin: 30px 0; }
+
+dl { margin: 0 0 15px; }
+dt { font-weight: 700; }
+dd { margin: 0; }
+dt, dd { line-height: 1.45; }
+
+pre { padding: 10px; background: #fafafa; font: 1.4em/1.4 Consolas, monospace, serif; color: #666; -moz-tab-size: 4; tab-size: 4; overflow: auto; border: 1px solid #e5e5e5; border-radius: 3px; }
+
+.dl-horizontal dt { clear: left; float: left; overflow: hidden; text-align: right; text-overflow: ellipsis; white-space: nowrap; width: 160px; }
+.dl-horizontal dd { margin-left: 180px; }
+.dl-horizontal dd:before { content: ''; display: table; }
+
+blockquote { font-family: mullerlightitalic; margin: 0; padding: 0; }
+blockquote > p { font-size: 2em; line-height: 1.2; font-family: mullerlightitalic; }
+
+.quote-outdented { margin-left: -50px; }
+.quote-indented { padding-left: 20px; border-left: 5px solid #ccc; }
+.quote-pullout { width: 50%; margin: 0 20px 10px 0; float: left; font-style: italic; max-width: 400px; padding: 20px; background: #e6e6e6; }
+.quote-pullout > p { font-size: 2em; }
+
+@media only screen and (min-width: $sm-width) {
+
+.quote-pullout { width: 50%; margin: 0 20px 10px 0; float: left; font-style: italic; max-width: 400px; padding: 20px; background: #e6e6e6; }
+.quote-pullout > p { font-size: 3em; }
+
+}
+
+.quote-right { text-align: right; }
+.quote-right.quote-pullout { float: right; margin: 0 0 10px 20px; }
+.quote-right.quote-indented { border-left: none; border-right: 5px solid #ccc; padding-right: 20px; padding-left: 0; }
+
+.badge { display: inline-block; padding: 0 5px; background: #009dd8; font-size: 80%; font-weight: 700; line-height: 1.2; color: #fff; text-align: center; vertical-align: middle; text-transform: none; border: 1px solid rgba(0, 0, 0, .2); border-bottom-color: rgba(0, 0, 0, .3); background-origin: border-box; background-image: linear-gradient(to bottom, #00b4f5, #008dc5); border-radius: 2px; text-shadow: 0 -1px 0 rgba(0, 0, 0, .2); text-transform: uppercase; }
+
+.badge-danger { background: #C9181B; }
+
+.cta { font-size: 1.8em; padding: 20px 0 0; }
+.centre-cta { text-align: center; }
+
+.page-title { font-family: mullerextrabold; font-size: 3.6em; text-transform: uppercase; color: #455a64; }
+
+.centre-text { text-align: center; }
+
+@media only screen and (max-width: $md-max-width) {
+    h1 {
+        font-size: 5em;
+    }
+}

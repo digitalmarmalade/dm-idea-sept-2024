@@ -1,0 +1,72 @@
+.activity--face-recognition {
+  .box {
+    width: 100%;
+    max-width: 720px;
+  }
+
+
+
+  .box--activity--face-recognition__remaining-lives {
+    background-color: $blue-dark;
+    height: auto;
+    margin: 0 0 .8rem;
+    padding: .8em 0;
+    p {
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 0.125rem;
+      font-size: .6em;
+      white-space:nowrap;
+      margin: 0;
+
+    }
+    ul {
+      width: auto;
+      margin: 0 0 0 .8rem;
+    }
+    li {
+      margin: 0 .4rem;
+      padding: 0;
+      &.lost-life {
+        opacity: .25;
+      }
+    }
+    img {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0;
+    }
+
+  }
+
+  .holder--questions {
+    width: 100%;
+  }
+
+
+  .box--activity--face-recognition__questions {
+    background-color: $blue-light;
+  }
+
+  .speech-bubble::after {
+    top: 97.5%;
+  }
+
+  .activity--feedback {
+    margin: -3.2em auto 0;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .activity--face-recognition {
+    .box  {
+      padding: $padding-lg;
+      &.box--activity--face-recognition__remaining-lives {
+        padding: 0.8em 0
+      }
+    }
+    .activity--feedback {
+      margin: -7.2em auto 0;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+
+.home #animation_container {
+  position:relative;
+  margin:auto;
+  left:0;right:0;
+  top:0;bottom:0;
+  background-color:rgba(69, 69, 69, 0.00);
+  width:1360px;
+  height:700px;
+
+}
+
+.home #dom_overlay_container {
+  pointer-events:none;
+  overflow:hidden;
+  width:1360px;
+  height:700px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+}
+
+.home canvas {
+  position: absolute;
+  display: block;
+  background-color:rgba(69, 69, 69, 0.00);
+  width:100%;
+  height:auto;
+}
+
+.home ul {
+  font-family: 'bebas_neuebold';
+  line-height: 1;
+  margin: 3rem 0;
+ li {
+  padding: 2rem;
+  background-color: $yellow;
+  box-shadow: .4rem .4rem 0px $cream;
+  margin-bottom: 1.5rem;
+  font-size: 2.2rem;
+
+      &:first-child {
+        background-color: $white;
+        box-shadow: .4rem .4rem 0 $light-green;
+        color: $light-green;
+      }
+
+  }
+
+}
+
+.btn--home {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  background-color: $pink;
+  color: $white;
+  text-decoration: none;
+  font-family: 'bebas_neuebold';
+  font-size: 3rem;
+  transition: all .2s;
+  line-height: 1;
+  &:hover {
+      background-color: $purple;
+  }
+  span {
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+
+.home-animation {
+  margin-top: 60px;
+}
+
+@media only screen and (min-width: $md-width) {
+  .home ul  {
+    max-width: 75%;
+    margin: 6rem auto;
+    & li {
+      box-shadow: .6rem .6rem 0 $cream;
+    }
+    & li:first-child {
+      box-shadow: .6rem .6rem 0 $light-green;
+    }
+  }
+
+  .home h1 {
+    font-size: 16rem; line-height: 16rem;
+  }
+
+  .btn--home { font-size: 4.8rem; padding: 4rem 0; margin: 5rem 0 0; }
+}
+
+@media only screen and (min-width: $md-width) {
+
+  .home h1 {
+    font-size: 26rem; line-height: 26rem;
+  }
+
+  .home {
+      ul  {
+        max-width: 80%;
+        margin: 6rem auto 10rem;
+        li { font-size: 3rem; }
+      }
+      p { max-width: 80%; font-size: 2rem; }
+  }
+    .success {
+        ul { margin-bottom: 2rem; }
+    }
+
+}
+
+
+@media only screen and (min-width: $lg-width) {
+
+  .home h1 {
+    font-size: 20rem; line-height: 20rem;
+  }
+
+  .home {
+      ul  {
+        max-width: 60%;
+        margin: 6rem auto 10rem;
+        li { font-size: 3rem; }
+      }
+      p { max-width: 60%; font-size: 2rem; }
+  }
+    .success {
+        ul { margin-bottom: 2rem; }
+    }
+
+}
+
+@media only screen and (min-width: $xl-width) {
+  .home #animation_container {
+    margin: -6rem auto;
+  }
+}
+
+
+html, body { overflow-x: hidden; }

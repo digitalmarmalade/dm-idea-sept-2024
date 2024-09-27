@@ -1,0 +1,70 @@
+:where(input, textarea):focus {
+  outline: 0.1em dashed $grey-4;
+  outline-offset: -0.2em;
+}
+
+label, select {
+  display: block;
+}
+
+
+label + .select-wrapper, .select-wrapper + label {
+  margin-top: $space-xx-small;
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: 0.2em solid $orange;
+  border-radius: $small-border-radius;
+  color: $orange;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: inherit;
+  margin: 0 0 $space-small;
+  padding: 1em;
+  outline: none;
+  -webkit-appearance: none;
+  width: 100%;
+
+
+  &.inline {
+    margin-bottom: 0;
+    padding: 0.25em 3em 0.25em 0.5em;
+  }
+
+  & option {
+    padding: 2em;
+
+    &[value=""][disabled] {
+      display: none;
+    }
+  }
+}
+
+// This is for the gradient border - will do later.
+.select-wrapper {
+  //margin-right: $space-small;
+  position: relative;
+
+  &::after {
+    background-image: url('/badge-assets/chatbots/_global/svg/icon--dropdown.svg');
+    background-repeat: no-repeat;
+    content: '';
+    height: 1.5em;
+    pointer-events: none;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5em;
+  }
+  &.inline {
+    &::after {
+      right: .4rem;
+      top: 1.2rem;
+    }
+  }
+}

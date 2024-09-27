@@ -1,0 +1,86 @@
+.list {
+  display: flex;
+  gap: $space-xx-small;
+
+  :where(h2, h3, h4) + & {
+    margin-top: $space-medium;
+  }
+
+  & .list__item {
+    border-radius: $medium-border-radius;
+    font-weight: bold;
+    padding: $space-x-small $space-small;
+
+
+    @media (min-width: $md-width) {
+      padding: $space-small $space-medium;
+    }
+  }
+
+  & .list__item--grey {
+    background-color: $grey-1;
+  }
+  
+  & .list__item--purple {
+    background: $gradient-purple;
+    color: $white;
+  }
+
+  & .list__item--white {
+    background: $white;
+    color: $purple;
+  }
+
+  & .list__item--spicy {
+    border-radius: 0.8rem;
+    font-weight: normal !important;
+  }
+
+  & .list__item--headed {
+    font-weight: normal ;
+    padding: 3rem;
+  }
+
+  & .list__item__heading {
+    font-size: 2rem;
+    margin-bottom: $space-xxx-small;
+  }
+
+  & .list__item__heading--inherit {
+    font-size: inherit;
+    line-height: 1.5;
+  }
+}
+
+.list--one-col {
+  flex-direction: column;
+}
+
+.list--inline {
+  flex-wrap: wrap;
+
+  & .list-item {
+    font-weight: bold;
+    padding: $space-small $space-large;
+    text-align: center;
+  }
+
+}
+
+// probably wants to be one col on small devices
+.list--two-col {
+  flex-direction: column;
+
+  & .list__item {
+    padding: $space-small;
+
+    @media (min-width: $md-width) {
+      width: calc(50% - #{$space-xx-small});
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

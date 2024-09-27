@@ -1,0 +1,113 @@
+
+.completion-bg {
+	background: rgba(0, 0, 0, .2);
+	z-index: 19;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none
+}
+
+.completion {
+	overflow: hidden;
+	display: none
+}
+
+.completion .close-button {
+	top: 0;
+	right: 0;
+	-webkit-transform: none;
+	transform: none
+}
+
+.completion__content {
+	position: relative;
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	text-align: center
+}
+
+.completion__icon {
+	margin: 0 0 1rem
+}
+
+.completion__all-games {
+	color: #237d9a;
+	font-size: 1.6rem;
+	padding: 1.5rem 0;
+	text-decoration: underline
+}
+
+.completion__more {
+	background: #fafafa;
+	margin: 1.5rem 0 0;
+	padding: 1.3rem 3rem
+}
+
+.completion__more h3 {
+	font-size: 1.2rem;
+	color: #333;
+	text-transform: uppercase;
+	margin: 0 0 1.5rem
+}
+
+@media only screen and (max-width:767px) {
+	.completion {
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: #fff;
+		z-index: 20;
+		width: 100%;
+		height: 100%;
+		display: none;
+		flex-direction: column;
+		padding: 6rem 0 0;
+		overflow-y: auto;
+		overflow-x: hidden
+	}
+	.completion__title {
+		position: relative;
+		z-index: 3000;
+		font-family: TimesClassicDisplayMedium, serif
+	}
+	.completion__message {
+		font-size: 1.6rem;
+		margin: 0 0 2.5rem
+	}
+	.completion__button,
+	.completion__message {
+		position: relative;
+		z-index: 3000
+	}
+	.completion__button .button {
+		margin: 0 auto
+	}
+}
+
+@media only screen and (min-width:768px) {
+	.completion {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		background: #fff;
+		z-index: 20;
+		padding: 4rem 0 0;
+		width: 48rem;
+		height: 48rem;
+		transform: translate(-50%, -50%);
+		display: none;
+		flex-direction: column
+	}
+}
+
+.completion-bg--visible {
+	display: block
+}
+
+.completion--visible {
+	display: -webkit-box;
+	display: flex
+}

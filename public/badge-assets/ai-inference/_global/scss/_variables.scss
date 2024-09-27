@@ -1,0 +1,94 @@
+/* Variables */
+
+$sm-width: 568px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xl-width: 1200px;
+$xxl-width: 1440px;
+
+/* Colours */
+
+$white: #FFFFFF;
+$green: #00CB74;
+$red: #F71D57;
+$yellow: #FEE600;
+$yellow-1: #FFF9BF;
+
+$green-pastel: #CCFFE9;
+$red-pastel: #FFCCDA;
+
+$blue-1: rgba(118,206,255,1);
+$blue-2: rgba(0,104,181,1);
+$blue-3: #00285A;
+$blue-4: #00A3F6;
+$blue-5: #76ceff;
+$blue-6: #00285A;
+$blue-7: #F2F3FF;
+
+$grey-4: #BFC8D6;
+$grey-5: #8394AF;
+$grey-6: #c4c4c4;
+$grey-7: #888;
+
+// old - redo later
+$blue-light: rgba(118,206,255,1);
+$blue-medium: rgba(0,104,181,1);
+$blue-dark: #00285A;
+
+$purple-dark: #1B0D21;
+
+$cobalt-1: #98A1FF;
+$cobalt-2: #5B69FF;
+$cobalt-3: #1E2EB8;
+$cobalt-4: #000F8A;
+$cobalt-5: #000864;
+
+$idea-gold: #C89A09;
+$white: white;
+$white-transparent: rgba(255, 255, 255, 0.5);
+
+$gradient--blue-light: linear-gradient(1.77deg, #0071C5 22.54%, #01DFF4 98.5%);
+$gradient--blue-light-transparent: linear-gradient(1.77deg, rgba($blue-light, .4) 22.54%, rgba($blue-medium, .4) 98.5%);
+$gradient--blue-dark: linear-gradient(8.37deg, #00285A 6.41%, #0068B5 93.59%);
+$gradient--purple-dark: linear-gradient(74.68deg, #372C6B -34.64%, #1B0D21 99.85%, #1B0D21 100.58%);
+$gradient--purple-light: linear-gradient(172.36deg, #59417D 16.25%, #00285A 88.92%);
+
+/* Layout */
+
+$margin: .4em;
+$padding: 1.2em;
+$padding-lg: 2.4em;
+
+$space: 1rem;
+
+$space-xxxxx-small: calc(0.2 * #{$space});
+$space-xxxx-small: calc(0.4 * #{$space});
+$space-xxx-small: calc(0.8 * #{$space});
+$space-xx-small: calc(1.2 * #{$space});
+$space-x-small: calc(1.6 * #{$space});
+$space-small: calc(2.4 * #{$space});
+$space-medium: calc(3.2 * #{$space});
+$space-large: calc(4.8 * #{$space});
+$space-x-large: calc(6.4 * #{$space});
+$space-xx-large: calc(7.2 * #{$space});
+$space-xxx-large: calc(8 * #{$space});
+$space-xxxx-large: calc(9.6 * #{$space});
+
+$border-radius: 0.4rem;
+$box-shadow:4px 4px 20px rgba(0, 0, 0, 0.25);
+
+$bodycopy: 0.875rem;
+$roboto: 'Roboto', sans-serif;
+
+$r-x-small: 1.2rem;
+$r-small: 1.4rem;
+$r-def: 1.8rem;
+$r-medium: 2.4rem;
+$r-large: 3.2rem;
+$r-x-large: 4.0rem;
+$r-xx-large: 4.8rem;
+$r-xxx-large: 6.4rem;
+$r-xxxx-large: 7.2rem;
+
+/* Transitions */
+$transition: all .3s ease-in-out;

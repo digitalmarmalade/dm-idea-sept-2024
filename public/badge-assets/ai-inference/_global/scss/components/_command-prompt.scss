@@ -1,0 +1,44 @@
+.command-prompt-container {
+  backdrop-filter: blur(10px);
+  background-color: rgb(255 255 255 / 0.25);
+  border-radius: 1.4rem;
+  padding: 1rem;
+  height: 40rem;
+}
+
+.command-prompt__top {
+  background-color: $white;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+  color: $purple-dark;
+  font-size: $r-small;
+  line-height: 1;
+  padding: $space-xx-small $space-x-small;
+}
+
+.command-prompt__content {
+  background-image: $gradient--purple-dark;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Space Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: $space-xx-small $space-x-small;
+  height: calc(100% - 40px);
+  height: 34rem;
+  overflow: scroll;
+}
+
+.command-prompt__content__top {
+  margin-bottom: $space-xxxx-small;
+  & > .content-to-edit {
+    padding: 0 5px;
+    span {
+        background: transparent !important;
+        color: white !important;
+    }
+  }
+}

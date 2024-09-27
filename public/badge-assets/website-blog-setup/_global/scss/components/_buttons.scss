@@ -1,0 +1,39 @@
+/*! Buttons */
+
+// button,
+.btn {
+  display: inline-block;
+  margin: 30px 0;
+  text-align: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 38px;
+  font-size: 1em;
+  letter-spacing: .055em;
+  width: auto;
+  background-color: $green;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all .3s;
+  padding: 0 30px;
+  color: $white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-white {
+  background-color: $white;
+}

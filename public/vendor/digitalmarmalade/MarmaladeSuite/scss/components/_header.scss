@@ -1,0 +1,36 @@
+/*! Header */
+
+.suite-header { height: 50px; background: $primary-colour; display: table; width: 100%; text-transform: uppercase; }
+
+.suite-title,
+.header-user-details { display: table-cell; vertical-align: middle; padding: 0 20px; }
+
+.suite-title { font-size: 1.4em; margin: 0; line-height: 1; }
+.suite-title-link { text-decoration: none; color: #fff; letter-spacing: 2px; font-weight: 800; margin: 0 10px 0 0;
+	span { font-weight: 400; }
+	.glyph-icon { vertical-align: middle; font-size: 125%; margin: 0 5px 0 0; }
+}
+
+.header-user-details { text-align: right; color: #fff; cursor: pointer;
+	p { margin: 0; line-height: 1; }
+	.glyph-icon { vertical-align: middle; font-size: 160%; margin: 0 5px 0 0; }	
+}
+
+.btn-header { border-radius: 5px; background: rgba(0,0,0,.2); padding: 3px 8px; font-size: .75em; color: #fff; text-decoration: none; vertical-align: middle; }
+
+.header-user-details { position: relative; }
+
+.user-details { position: absolute; top: 50px; right: 20px; background: #fff; padding: 10px; border-radius: 10px; z-index: 200; border: 1px solid #ccc; display: none; }
+
+.user-details:after,
+.user-details:before { display: block; content: ''; width: 10px; height: 10px; background: #ccc; transform: rotate(45deg); position: absolute; right: 20px; top: -5px; }
+.user-details:after { top: -4px; background: #fff; }
+
+.user-details ul { margin: 0; list-style: none; padding: 0;
+
+	li { border-top: 1px solid #ccc; margin: 0; width: 150px; text-align: center; }
+	li:first-child { border-top: none; }
+	a { color: #666; text-transform: uppercase; text-decoration: none; display: block; padding: 10px 5px; transition: background .25s ease-in; }
+	a:hover { background: #f5f5f5; }
+
+ }

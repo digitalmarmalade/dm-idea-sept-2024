@@ -1,0 +1,11 @@
+header {
+
+  & .header__content {
+    display: flex;
+    justify-content: flex-end;
+
+    & .logo--intel {
+      padding-top: 22px;
+    }
+  }
+}

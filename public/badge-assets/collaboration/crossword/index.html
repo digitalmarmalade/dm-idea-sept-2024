@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta content="True" name="HandheldFriendly">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        
+        <style type="text/css">
+            .spinner-holder { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #fff; z-index: 100000; }
+            .spinner-holder.finished { z-index: -10 !important; background: none !important; }
+            div.spinner { height: 24px; width: 24px; position: fixed; top: 50%; left: 50%; margin: -12px 0 0 -12px; }            
+            div.spinner div {
+                width: 12%; height: 26%; background: #000; position: absolute; left: 44.5%; top: 37%; opacity: 0;
+                -webkit-border-radius: 50px;
+                -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+                -webkit-animation: fade 1s linear infinite;
+            }
+            div.spinner div.bar1 {
+                -webkit-transform:rotate(0deg) translate(0, -142%);
+                -webkit-animation-delay: 0s;
+            }    
+            div.spinner div.bar2 {
+                -webkit-transform:rotate(30deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.9167s;
+            }
+            div.spinner div.bar3 {
+                -webkit-transform:rotate(60deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.833s;
+            }
+            div.spinner div.bar4 {
+                -webkit-transform:rotate(90deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.7497s;
+            }
+            div.spinner div.bar5 {
+                -webkit-transform:rotate(120deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.6664s;
+            }
+            div.spinner div.bar6 {
+                -webkit-transform:rotate(150deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.5831s;
+            }
+            div.spinner div.bar7 {
+                -webkit-transform:rotate(180deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.4998s;
+            }
+            div.spinner div.bar8 {
+                -webkit-transform:rotate(210deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.4165s;
+            }
+            div.spinner div.bar9 {
+                -webkit-transform:rotate(240deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.3332s;
+            }
+            div.spinner div.bar10 {
+                -webkit-transform:rotate(270deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.2499s;
+            }
+            div.spinner div.bar11 {
+                -webkit-transform:rotate(300deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.1666s;
+            }
+            div.spinner div.bar12 {
+                -webkit-transform:rotate(330deg) translate(0, -142%); 
+                -webkit-animation-delay: -0.0833s;
+            }
+            div.spinner div.bar1 {-webkit-transform:rotate(0deg) translate(0, -142%); -webkit-animation-delay: 0s;}    
+            div.spinner div.bar2 {-webkit-transform:rotate(30deg) translate(0, -142%); -webkit-animation-delay: -0.9167s;}
+            div.spinner div.bar3 {-webkit-transform:rotate(60deg) translate(0, -142%); -webkit-animation-delay: -0.833s;}
+            div.spinner div.bar4 {-webkit-transform:rotate(90deg) translate(0, -142%); -webkit-animation-delay: -0.75s;}
+            div.spinner div.bar5 {-webkit-transform:rotate(120deg) translate(0, -142%); -webkit-animation-delay: -0.667s;}
+            div.spinner div.bar6 {-webkit-transform:rotate(150deg) translate(0, -142%); -webkit-animation-delay: -0.5833s;}
+            div.spinner div.bar7 {-webkit-transform:rotate(180deg) translate(0, -142%); -webkit-animation-delay: -0.5s;}
+            div.spinner div.bar8 {-webkit-transform:rotate(210deg) translate(0, -142%); -webkit-animation-delay: -0.41667s;}
+            div.spinner div.bar9 {-webkit-transform:rotate(240deg) translate(0, -142%); -webkit-animation-delay: -0.333s;}
+            div.spinner div.bar10 {-webkit-transform:rotate(270deg) translate(0, -142%); -webkit-animation-delay: -0.25s;}
+            div.spinner div.bar11 {-webkit-transform:rotate(300deg) translate(0, -142%); -webkit-animation-delay: -0.1667s;}
+            div.spinner div.bar12 {-webkit-transform:rotate(330deg) translate(0, -142%); -webkit-animation-delay: -0.0833s;}
+            @-webkit-keyframes fade {
+                from {opacity: 1;}
+                to {opacity: 0.25;}
+            }
+        </style>
+        <script src="js/modernizr-2.6.2.min.js"></script> 
+        <style media="all and (orientation: landscape)" id="landscapeStylesheet"></style>
+        <style media="all and (orientation: portrait)" id="portraitStylesheet"></style>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">      
+        <link rel="stylesheet" href="css/brand.css">
+
+    </head>
+
+    <body>
+    
+        <p class="no-js-message" id="noJS">Javascript is required to play this puzzle. Please enable Javascript in your browser to continue.</p>
+        <script>document.getElementById('noJS').style.display="none";</script>
+        <div id="contentWrapper">
+            <div class="spinner-holder" id="spinner">            
+                <div class="spinner">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div class="bar4"></div>
+                    <div class="bar5"></div>
+                    <div class="bar6"></div>
+                    <div class="bar7"></div>
+                    <div class="bar8"></div>
+                    <div class="bar9"></div>
+                    <div class="bar10"></div>
+                    <div class="bar11"></div>
+                    <div class="bar12"></div>
+                </div>            
+            </div>
+            <div class="cell" id="cell1" style="visibility:visible">
+                <div class="crossword" id="crossword-holder">
+                    <!--TITLE INFO-->
+                    <div class="title-info-holder">
+                        <div class="title-info">
+                            <h1><span class="puzzle-title text-title"> </span> </h1>
+                            <h2 class="setter-name">by </h2>
+                            <p><span class="setter-name">By </span> </p>
+                        </div>
+                    </div>
+                    <!--/TITLE INFO-->
+                    <!--THE PUZZLE-->
+					<div class="playable-area">
+                                <div class="puzzle-scroll">
+                                <div id="ourpuzzle" class="puzzle">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tbody class="puzzleholder">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--<p class="jsLastWeeksSolution last-weeks-solution hide"><a href="#" class="title">Last week&rsquo;s solution</a></p>-->
+                                </div>
+                                
+                    </div>
+                    <!--/THE PUZZLE-->
+
+					<!--MOBILE CONTROLS-->
+                    <div class="controls">
+                        <!--INDIVIDUAL CLUE-->
+                        <div class="individual-clue-holder">
+                            <div id="individualClue" class="individual-clue action-buttons-panel-default-bg">
+                                <ul class="next-prev">
+                                    <li class="btn-prev-holder"><a href="#" class="btn-prev"><span class="icon"></span></a></li>
+                                    <li class="btn-next-holder"><a href="#" class="btn-next"><span class="icon"></span></a></li>
+                                </ul>
+                                <p></p>
+                            </div>
+                        </div>
+                        <!--/INDIVIDUAL CLUE-->
+
+                        <div id="jsTimerOutput" class="timer clock-colour"></div>
+                        
+                        <!--<p class="jsLastWeeksSolution last-weeks-solution-mobile"><a href="#" class="title">Last week&rsquo;s solution</a></p>-->
+                        
+                        <!--ACTION BUTTONS-->
+                        <ul class="action-buttons action-buttons-panel-default-bg" id="actions"></ul>
+                        <!--/ACTION BUTTONS-->
+
+                    </div>
+                    <!--/MOBILE CONTROLS-->
+                    
+                    <!--BURGER - EXTRA CONTROLS-->
+                    <div class="burger-controls">
+                    
+                    	<a href="#" class="burger-menu">
+                        	<span class="strip"></span>
+                            <span class="strip"></span>
+                            <span class="strip"></span>
+                        </a>
+                    	<div class="burger-actions-holder">
+                        <ul class="burger-actions clearfix" id="burgerActions"></ul>
+                        
+                        <ul class="config">
+                        	<li class="custom-checkbox"><input type="checkbox" id="showTimer"> <label for="showTimer">Timer</label></li>
+                            <!--<li class="custom-checkbox"><input type="checkbox" id="skipCompleteAnswers"> <label for="skipCompleteAnswers">Skip Complete Answers</label></li>-->
+                            <li class="custom-checkbox"><input type="checkbox" id="skipFilledSquares"> <label for="skipFilledSquares">Skip Filled Squares</label></li>
+                            <li class="custom-checkbox"><input type="checkbox" id="showDemarcation"> <label for="showDemarcation">Show Demarcation</label></li>
+                        </ul>
+                        
+                        
+                        </div>
+                    </div>
+                    <!--/BURGER - EXTRA CONTROLS-->
+                        
+                    
+                    
+                    
+                    <!--CLUES LIST-->                    
+                    <h2 class="ios-h2-across">Across</h2><h2 class="ios-h2-down">Down</h2>
+                    <div class="clues-list-holder"></div>
+                    <!--/CLUES LIST-->                    
+
+                    <!--KEYBOARD-->
+                    <div class="keyboard-holder">
+                        <div id="keyBoard" class="keyboard"></div>
+                    </div>
+                    <!--/KEYBOARD-->
+
+                    <div class="overlay-bg" id="overlayBG"></div>
+
+                    <!--RESET OVERLAY-->
+                    <div class="overlay reset-overlay">
+                        <a href="#" class="close-overlay icon dmsjsOverlayClose">Close</a>
+                        <div class="overlay-content">
+                        <h2 class="message text-dialogue-box">Are you sure you want to reset the grid?</h2>
+                        <ul class="yes-no dmjsResetYesNo">
+                            <li><a href="#" class="btn-action dmjsYes">Yes</a></li>
+                            <li><a href="#" class="btn-action dmjsNo">No</a></li>                            
+                        </ul>
+                        </div>
+                    </div>
+                    <!--/RESET OVERLAY-->
+
+                    <!--CORRECT SOLUTION OVERLAY-->
+                    <article class="overlay complete dmjsCorrectSolutionOverlay" data-overlay-type="correct-solution" data-brands="the-sun">
+                        <a href="#" class="close-overlay icon dmsjsOverlayClose">Close</a>    
+                        <h1 class="text-title jsCorrectMessage">You've Done It</h1>
+                        <p class="complete-time text-dialogue-box jsCompletionTimeHolder">Time: <span id="overlayCompleted-time" class="jsCompletionTime clock-colour">00:00</span></p> 
+                        <p class="text-dialogue-box correct-message"></p>
+                            <ul class="game-over-option">
+                                <li class="btn-more-puzzles"><a id="overlayCompleted-mind-games-a" href="#" class="jsLinkMindGames no-button-bg no-button-fg">Continue</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    
+  
+                    
+                    
+                    <!--/CORRECT SOLUTION OVERLAY-->
+
+                    <!--INCORRECT SOLUTION OVERLAY-->
+                    <article class="overlay incorrect dmjsIncorrectSolutionOverlay" id="overlayIncorrect" data-overlay-type="incorrect-solution" data-brands="the-sun">
+                    
+						<a id="overlayIncorrect-close" href="#" class="close-overlay do-not-auto-close dmjsReturnToPuzzle">Close</a>  
+                          
+						<h1 class="text-error jsIncorrectMessage">Try again</h1>			
+						<p id="overlayIncorrect-p" class="text-dialogue-box incorrect-message"></p>
+						<ul class="game-over-option">
+							<li id="overlayIncorrect-btn-continue" class="btn-no btn-continue"><a id="overlayIncorrect-btn-continue-a" class="yes-button-bg yes-button-fg dmjsReturnToPuzzle" href="#">Return to Puzzle</a></li>
+						</ul>
+					</article>
+                    <!--/INCORRECT SOLUTION OVERLAY-->
+                    
+                    <!--GRID COMPLETE INCORRECT-->
+                    <article class="overlay incorrect" id="overlayIncorrect" data-overlay-type="incorrect-solution" data-brands="the-times,the-times-t2-puzzles,the-sunday-times">
+                    <a id="overlayIncorrect-close" href="#" class="close-overlay">Close</a>
+                    <div class="incorrect-content">
+                     
+  
+                        <h2 class="text-cell-default"><span class="puzzle-number jsPuzzleNumber text-title puzzle-title"></span></h2>                  
+                    
+                        <h1 class="text-error jsIncorrectMessage">Unlucky</h1>
+                    
+                    
+                        <p id="overlayIncorrect-p" class="text-dialogue-box">It's not quite right yet.</p>
+                        
+                       
+                        <a id="overlayIncorrect-btn-continue-a" class="back-to-home dmsjsOverlayClose play-again" href="#">Continue</a>
+                        </div>
+                    </article>
+                    <!--/GRID COMPLETE INCORRECT-->
+
+                    <!--SUCCESSFUL SUBMISSION OVERLAY-->
+                    <div class="overlay solution-overlay" id="successful-submission-overlay">
+                        <a href="#" class="close-overlay icon dmsjsOverlayClose">Close</a>
+                        <div class="overlay-content">
+                        <h2 class="text-dialogue-box">Your crossword has been submitted</h2>
+                        <p></p>
+                        </div>
+                    </div>
+                    <!--/SUCCESSFUL SUBMISSION OVERLAY-->
+
+                    <!--FAILED SUBMISSION OVERLAY-->
+                    <div class="overlay solution-overlay" id="failed-submission-overlay">
+                        <a href="#" class="close-overlay icon dmsjsOverlayClose">Close</a>
+                        <div class="overlay-content">
+                        <h2 class="text-dialogue-box">There has been an unexpected error</h2>
+                        <p class="text-dialogue-box">Please try submitting again. If this error continues please contact <a href="mailto:david@digitalmarmalade.co.uk">david@digitalmarmalade.co.uk</a></p>
+                        </div>
+                    </div>
+                    <!--/FAILED SUBMISSION OVERLAY-->
+
+                    <!--CONFIRM SUBMIT OVERLAY-->
+                    <div class="overlay submit-overlay competition-overlay" id="jsCompetitionSubmitForm" data-overlay-type="submit-solution" data-brands="the-times,the-times-t2-puzzles,the-sunday-times,the-sun">
+                        
+                        <div class="overlay-content competition-overlay-content competition-form-content">
+                            <a href="#" class="dmsjsOverlayClose competition-edit title">&larr; Back</a>
+                            <h2 class="text-dialogue-box competition-heading"><span></span></h2>
+                            <p class="instructions-p text-dialogue-box jsCompetitionInstructions"></p>
+                            
+                            <form class="competition-form" id="jsCompetitionForm">
+                                
+                                <div class="competition-shallow-device">
+                                <p>
+                                <select name="title" id="title" class="title">
+                                    <option value="">Title*</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Ms">Ms</option>
+                                    <option value="Dr">Dr</option>
+                                    <option value="Prof">Prof</option>
+                                    <option value="Rev">Rev</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <input type="text" name="firstname" id="firstname" placeholder="Forename*" class="forename title"></p>
+                                <p><input type="text" name="surname" id="surname" placeholder="Surname*" class="title"></p>
+                                </div>
+                                
+                                <div class="competition-shallow-device">
+                                <p class="mobile-address-toggle jsToggleAddress title">Tap to enter address</p>
+                                <div class="extended-address-information">
+                                <p><input type="text" name="house_no" id="house_no" placeholder="House Name/No" formnovalidate class="small-input title"></p>
+                                <p><input type="text" name="street_address_1" id="street_address_1" placeholder="Street Address 1" class="title"></p>
+                                <p><input type="text" name="street_address_2" id="street_address_2" placeholder="Street Address 2" class="title"></p>
+                                <p>
+                                <input type="text" name="postcode" id="postcode" placeholder="Postcode" class="small-input title">
+                                <input type="text" name="county" id="county" placeholder="County" class="small-input title">
+                                </p>
+                                <p>
+                                <input type="text" name="town_city" id="town_city" placeholder="Town/City" class="small-input title">
+                                <input type="text" name="country" id="country" placeholder="Country" class="small-input title">
+                                </p>
+                                </div>
+                                <p><input type="email" name="email_address" id="email_address" placeholder="Email Address*" class="title"></p>
+                                <p class="submiterror jsCompetitionSubmitError"></p>
+                                </div>
+                                <div class="form-footer">
+                                <p class="btn-submit" id="jsButtonCompetitionSubmit"><button type="submit" class="competition-submit title">Submit</button></p>
+                                <p class="competition-buttons"><a href="#" class="jsCompetitionPrize title">Prize Information</a> <a href="#" class="jsCompetitionTermsLink title">Terms and Conditions</a></p>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        
+                        <div class="overlay-content competition-overlay-content competition-prize-content hide">
+                            <a href="#" class="jsCompetitionBack competition-edit title">&larr; Back</a>
+                            <h2 class="text-dialogue-box competition-heading"><span></span></h2>
+                            <p class="jsCompetitionPrizeInfo prize-info title"></p>
+                           
+                        </div>
+                        
+                        <div class="overlay-content competition-overlay-content competition-thanks-content hide" id="jsCompetitionSubmitThanks">
+                            <p class="instructions-p text-dialogue-box">Thank you for entering</p>
+                            <p><a href="#" class="comp-completion-button title dmsjsOverlayClose"><span>Review</span></a></p>
+                        </div>
+                        
+                        <div class="overlay-content competition-overlay-content competition-failed-content hide" id="jsCompetitionSubmitProblem">
+                            <a href="#" class="jsCompetitionBack competition-edit title">&larr; Back</a>
+                            <h2 class="text-dialogue-box competition-heading"><span></span></h2>
+                            <p class="instructions-p text-dialogue-box">Sorry, your submission is not working at this time.<br><br>
+                            Please try again later.</p>
+                        </div>
+                        
+                        
+                        </div>
+                        
+                        
+                    <!--/CONFIRM SUBMIT OVERLAY-->
+
+                    <!--SETTINGS OVERLAY-->
+                    <div class="overlay settings-overlay">
+                    <a href="#" class="close-overlay icon dmsjsOverlayClose">Close</a>
+                    <div class="settings-content">
+                        <h2 class="text-dialogue-box">settings</h2>
+                        <ul class="settings">
+                            <li class="dmjsSkipFilled"><label class="text-dialogue-box">Skip Filled Squares <span><a href="#" class="dmjsNo onoff btn-off">No</a></span></label></li>
+                        </ul>
+                        
+                    </div>
+                    
+                    </div>
+                    <!--/SETTINGS OVERLAY-->
+        
+
+                    <!--SOLUTION OPTIONS OVERLAY-->
+                    <article class="overlay" data-overlay-type="solution-options" data-brands="the-times,the-times-t2-puzzles,the-sunday-times,the-sun">
+						<a href="#" class="close-overlay dmsjsOverlayClose">Close</a>    
+						<h1 class="text-error">Solution Options</h1>
+						<ul class="game-over-option">
+							<li id="overlayIncorrect-btn-continue" class="btn-no btn-continue"><a id="overlayIncorrect-btn-continue-a" class="yes-button-bg yes-button-fg dmsjsOverlayClose" href="#">Continue</a></li>
+							<li id="overlayIncorrect-btn-back" class="btn-more-puzzles"><a id="overlayIncorrect-btn-back-a" href="../../" class="jsLinkMindGames no-button-bg no-button-fg">Puzzle Homepage</a></li>							
+						</ul>
+					</article>
+                    <!--/SOLUTION OPTIONS OVERLAY-->
+                    
+                    <!--PRIZE INFORMATION OVERLAY-->
+                    <article class="overlay prize-overlay" data-overlay-type="prize-information" data-brands="the-times,the-times-t2-puzzles,the-sunday-times">
+						<a href="#" class="close-overlay dmsjsOverlayClose">Close</a>
+                        <h2 class="text-dialogue-box competition-heading"><span></span></h2> 
+					    <p class="jsCompetitionPrizeInfo prize-info title"></p>
+					</article>
+                    <!--/PRIZE INFORMATION OVERLAY-->
+
+
+                </div>
+
+            </div>
+
+</div>
+
+        <!--
+==================================
+ROTATE TO VIEW
+==================================
+-->
+
+<div class="rotate-warning">
+
+<div class="rotate-text text-dialogue-box">
+Rotate to<br>
+portrait<br>
+to view
+</div>
+
+</div>
+
+<!--
+==================================
+ROTATE TO VIEW ENDS
+==================================
+-->
+
+        <script>
+            var ua = navigator.userAgent.toLowerCase();
+            var isAndroid = ua.indexOf("android") > -1;
+            var iOS = /(iPad|iPhone|iPod)/g.test( navigator.userAgent ); 
+            if (isAndroid) { 
+                document.getElementById('contentWrapper').className += ' android'; 
+            } else if (iOS) {
+                document.getElementById('contentWrapper').className += ' ios'; 
+            } else { 
+                document.getElementById('contentWrapper').className += ' not-android-or-ios';
+            }
+            if (navigator.userAgent.match(/iPad;.*CPU.*OS 7_\d/i)) {
+                document.getElementsByTagName("html")[0].style.height = window.innerHeight +"px !important";
+            }
+        </script>
+
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/class.puzzlebase.js"></script> 
+        <script src="js/class.crosswordbase.js"></script> 
+        <script src="js/crosswordtype/class.crossword-standard.js"></script> 
+        <script src="js/crossword-event-handlers-web.js"></script> 
+        <script src="js/crosswordbase-platform-specific-web.js"></script> 
+        <script src="js/inobounce.min.js"></script> 
+        <!--[if lt IE 8]>
+        <script type="text/javascript" src="js/json2.js"></script>        
+        <![endif]--> 
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">   
+        <![endif]--> 
+        <script>
+            var utag,
+                utag_meta = {},
+                utag_data = {},
+                oApp = new Crossword();
+            oApp.init();
+        </script>
+        
+        <!-- Preloader -->
+        <script type="text/javascript">
+            // <![CDATA[
+            $(window).load(function() { $("#spinner").hide().addClass('finished'); })
+            // ]]>
+        </script>
+        
+        <script>
+        
+        $( "body" ).on( "click", ".jsLinkMindGames", function() {
+          window.top.postMessage('hello', '*');
+          return false;
+        });
+        
+        
+        </script>
+		
+        <!--_GOOGLE_ANALYTICS_TRACKING_CODE_-->
+    </body>
+
+</html>

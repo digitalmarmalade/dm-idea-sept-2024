@@ -1,0 +1,24 @@
+$number-of-links: 5;
+$each-link-height: 61px;
+$nav-height: $number-of-links*$each-link-height;
+
+
+/* Advanced Checkbox Hack */
+body { -webkit-animation: bugfix infinite 1s; height: 100%; }
+html { height: 100%; }
+
+@-webkit-keyframes bugfix {
+  from { padding: 0; }
+  to {  padding: 0; }
+}
+
+
+@media screen and (max-width: $lg-width-under) {
+
+
+}
+
+@media screen and (min-width: $lg-width) {
+
+
+}

@@ -1,0 +1,18 @@
+/*! Task */
+
+.task-content { margin: 0 auto; max-width: 74rem; padding: 2rem; }
+.task-header { position: relative; font-family: 'Nutmeg-UltraBlack'; }
+.task-title { display: table;  color: #fff; text-transform: uppercase; background: #221f1f; padding: 1rem 2rem; font-size: 2.4rem; }
+.task-step { width: 9rem; height: 9rem; background: #00b3e3; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.8rem; flex-direction: column; text-transform: uppercase; line-height: 1.8rem; position: absolute; right: 0rem; top: 50%; margin: 0; transform: translateY(-50%); transform-origin: right top;
+    span { display: block; font-size: 3rem; line-height: 3rem; }
+}
+
+.task-background { background: url(../img/bg-pattern.png) no-repeat left top; }
+
+@media only screen and (max-width: $md-width-under) {
+.task-step { transform: scale(.8) translateY(-50%); }
+.task-background { background-size: 100% auto; }
+}
+@media only screen and (min-width: $md-width) {
+.task-title { font-size: 6rem; line-height: 6rem; }
+}

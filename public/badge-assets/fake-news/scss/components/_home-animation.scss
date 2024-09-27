@@ -1,0 +1,149 @@
+.home-animation {
+  min-height: 45rem;
+  margin: 0 auto;
+  max-width: 72rem;
+  overflow: hidden;
+  position: relative;
+
+  & .home-animation__heading {
+    bottom: 0;
+    font-size: 4.5rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 3;
+  
+    @media (min-width: $md-width) {
+      font-size: 7.5rem;
+    }
+  }
+
+  & .home-animation__base {
+    left: 14%;
+    position: absolute;
+    z-index: 2;
+
+    @media (min-width: $md-width) {
+      left: 30%;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    min-height: 57rem;
+    overflow: visible;
+  }
+
+  & .home-animation__blob-1 {
+    left: -5%;
+    position: absolute;
+    top: 30%;
+
+    @media (min-width: $md-width) {
+      left: 15%;
+    }
+  }
+
+  & .home-animation__circle-lines-1 {
+    left: 2%;
+    position: absolute;
+    top: 35%;
+
+    @media (min-width: $md-width) {
+      left: 15%;
+    }
+  }
+
+  & .home-animation__circle-solid-1 {
+    left: 2%;
+    position: absolute;
+    top: 25%;
+
+    @media (min-width: $md-width) {
+      left: 20%;
+    }
+  }
+
+  & .home-animation__circle-solid-2 {
+    left: 20%;
+    position: absolute;
+    top: 60%;
+
+    @media (min-width: $md-width) {
+      left: 30%;
+      top: 40%;
+    }
+  }
+
+  & .home-animation__blob-2 {
+    position: absolute;
+    right: 0;
+    top: 5%;
+  }
+
+  & .home-animation__circle-lines-2 {
+    position: absolute;
+    right: 0;
+    top: 2.5%;
+  }
+  
+  & .home-animation__circle-solid-3 {
+    position: absolute;
+    right: 20%;
+    top: 0;
+  }
+
+  & .home-animation__article {
+    animation: appear 0.5s 1 forwards;
+    visibility: hidden;
+  }
+
+  & .home-animation__article-1 {
+    animation-delay: 1s;
+  }
+  
+  & .home-animation__article-2 {
+    animation-delay: 2.5s;
+  }
+  
+  & .home-animation__article-3 {
+    animation-delay: 3.5s;
+  }
+  
+  & .home-animation__article-4 {
+    animation-delay: 4s;
+  }
+  
+  & .home-animation__article-5 {
+    animation-delay: 4.5s;
+  }
+  
+  & .home-animation__article-6 {
+    animation-delay: 4.75s;
+  }
+  
+  & .home-animation__article-7 {
+    animation-delay: 5s;
+  }
+  
+  & .home-animation__article-8 {
+    animation-delay: 5.25s;
+  }
+  
+  & .home-animation__article-9 {
+    animation-delay: 5.5s
+  }
+  
+  & .home-animation__article-10 {
+    animation-delay: 5.75s;
+  }
+}
+
+@keyframes appear {
+  0%, 49% {
+    visibility: hidden;
+  }
+
+  50%, 100% {
+    visibility: visible;
+  }
+}

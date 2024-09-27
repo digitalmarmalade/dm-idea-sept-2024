@@ -1,0 +1,41 @@
+/*! Framework */
+
+html,
+body { background: $body-bg-color; color: $body-text-color; }
+
+body { margin: 0 auto;  }
+
+
+img { max-width: 100%; display: block; }
+
+.round-image { border-radius: 50%; }
+
+@mixin reset-list { margin: 0; padding: 0; list-style: none; }
+
+.attention-wysiwyg strong,
+.attention-paragraph { background: $gold; padding: 10px; color: $white; font-size: 1.6em; }
+
+.attention-wysiwyg strong { display: block; font-size: 1em; margin: 0 0 20px; }
+
+@media only screen and (min-width: $md-width) {
+	.md-hide { display: none; }
+}
+
+.links-404 { @include reset-list; margin: 0 0 15px; }
+.links-404 li { display: inline-block; margin: 0 10px 10px 0; }
+.links-404 a { display: block; padding: 5px 10px; background: #fff; border: 1px solid $grey; border-radius: 3px; text-decoration: none; color: #333; transition: .25s background; }
+.links-404 a:hover { background: $grey; }
+
+
+@mixin transition ($prop: all, $time: 200ms, $ease: linear) { -webkit-transition: $prop $time $ease; -moz-transition: $prop $time $ease; -o-transition: $prop $time $ease;	-ms-transition: $prop $time $ease; transition: $prop $time $ease; }
+@mixin noselect { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+@mixin cast-shadow ($hor:10px, $ver:10px, $blur:5px, $spread:0px, $color-r:0, $color-g:0, $color-b:0, $color-a:0.75) { -webkit-box-shadow: $hor $ver $blur $spread rgba($color-r,$color-g,$color-b,$color-a);
+-moz-box-shadow: $hor $ver $blur $spread rgba($color-r,$color-g,$color-b,$color-a); box-shadow: $hor $ver $blur $spread rgba($color-r,$color-g,$color-b,$color-a); }
+@mixin rotate ($degress:90deg) { -ms-transform: rotate($degress); -webkit-transform: rotate($degress); transform: rotate($degress); }
+@mixin translate3d($tx:0, $ty:0, $tz:0) { -webkit-transform: translate3d($tx,$ty,$tz); transform: translate3d($tx,$ty,$tz); }
+
+@mixin no-highlight { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+@mixin button-hover { border-color: $red; background-color: $red; color: $white; }
+
+
+@mixin transition-x2 ($prop: all, $time: 200ms, $ease: linear,$prop2: all, $time2: 200ms, $ease2: linear) { -webkit-transition: $prop $time $ease,$prop2 $time2 $ease2; -moz-transition: $prop $time $ease,$prop2 $time2 $ease2; -o-transition: $prop $time $ease,$prop2 $time2 $ease2;	-ms-transition: $prop $time $ease,$prop2 $time2 $ease2; transition: $prop $time $ease,$prop2 $time2 $ease2; }

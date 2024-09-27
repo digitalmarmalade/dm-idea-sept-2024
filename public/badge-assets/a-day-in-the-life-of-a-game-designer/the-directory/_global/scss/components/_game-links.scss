@@ -1,0 +1,25 @@
+.game-link { display: block; margin: 0 0 1px;  position: relative; color: #fff; background: #999; font-family: mullerextrabold; text-transform: uppercase; background-image: linear-gradient(to bottom, rgba(255,255,255,.2) 0%,rgba(255,255,255,0) 100%);
+    a { text-decoration: none; color: inherit; display: block; padding: 30px 100px 30px 20px; transition: background .25s; }
+    a:hover { background: rgba(0,0,0,.1); }
+    h2 { font-size: 1.5em; margin: 0; line-height: 1.55; }
+}
+.game-text,
+.game-url { display: none; }
+
+.game-plays { position: absolute; right: 0; top: 0; bottom: 0; display: block; background: rgba(0,0,0,.1); margin: 0; padding: 30px 20px 0; font-size: 1.5em; width: 100px; text-align: right;
+    span { display: block; font-size: 70%; text-align: right; position: relative; top: -5px; }
+ }
+ 
+ 
+ @media only screen and (min-width: $sm-width) {
+    
+    .game-link a { padding: 40px 100px 40px 20px; }
+    
+    .game-plays,   
+    .game-link h2 { font-size: 2.6em; }
+    
+    .game-plays { padding: 40px 20px 0; width: 120px;
+        span { display: block; font-size: 50%; text-align: right; position: relative; top: -10px; }
+    }
+    
+}

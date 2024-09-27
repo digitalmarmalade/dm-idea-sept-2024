@@ -1,0 +1,95 @@
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: $gradient--blue-dark;
+  //overflow-x: hidden;
+}
+
+.holder {
+  width: 100%;
+  height: auto;
+  max-width: 960px;
+  padding: $padding;
+  margin: 0 auto;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+
+.cols {
+  margin: $margin;
+}
+
+.col {
+  width: 100%;
+  margin: 0 0 $bodycopy;
+  p {
+    margin: 0 0 1.6em;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.col-single {
+  max-width: 600px;
+  margin: 0 auto 2.4em;
+}
+
+
+.col-single + ul {
+  margin: -1.6em 0 1.6em;
+}
+
+
+ul, ol {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+
+  li {
+    width: 100%;
+    margin: $margin;
+  }
+
+  img {
+    margin: 1.2em 0 0;
+  }
+}
+
+
+@media only screen and (min-width: $sm-width) {
+  .cols {
+    flex-direction: row;
+    text-align: left;
+  }
+  .col {
+    width: calc(50% - .8rem);
+    margin: 0;
+  }
+  .cols--resources {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    .col {
+      margin: 1.2em;
+      width: calc(50% - 2.4em);
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  .holder {
+    padding: $padding-lg;
+  }
+
+  .cols {
+    margin: 0 0 2.4rem;
+  }
+}

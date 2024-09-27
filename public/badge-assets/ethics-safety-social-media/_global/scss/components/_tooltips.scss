@@ -1,0 +1,104 @@
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted $white;
+}
+
+.tooltip-fake-news {
+  border-bottom: 1px dotted $green;
+}
+
+.tooltip .tooltiptext {
+   font-weight: 400;
+    font-size: 18px;
+    visibility: hidden;
+    width: 160px;
+    background-color: $yellow;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    text-transform: none;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.2;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100;
+    top: 110%;
+    left: -50%;
+}
+
+// .tooltip-fake-news .tooltiptext  {
+//   left: 50%;
+// }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: all .3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 98%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent $yellow transparent;
+}
+
+.tooltip .tooltiptext-unprecedented {
+  margin-left: -40px;
+}
+
+.tooltip .tooltiptext-ethical {
+  margin-left: -40px;
+}
+
+.tooltip .tooltip-text-integrity {
+  margin-left: -40px;
+}
+
+.tooltip .tooltiptext-ethical {
+  left: -65%;
+}
+
+.tooltip .tooltiptext-mitigate {
+  left: -80%;
+}
+
+.tooltip .tooltiptext-hack {
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext-trolling {
+  margin-left: -30px;
+}
+
+.tooltip .tooltiptext-cyberbullying {
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext-libellous {
+  margin-left: -30px;
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  .tooltip .tooltiptext-unprecedented {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .tooltip .tooltiptext-conscience {
+    left:0;
+  }
+  .tooltip .tooltiptext-ambiguity {
+    left:0;
+  }
+}

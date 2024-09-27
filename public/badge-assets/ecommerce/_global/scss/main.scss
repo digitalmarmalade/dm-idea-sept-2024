@@ -1,0 +1,25 @@
+/* CSS Document */
+
+//Reset
+@import "framework/_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "framework/_fonts.scss";
+@import "framework/_typography.scss";
+
+@import "framework/_framework.scss";
+@import "framework/_helpers.scss";
+@import "framework/_forms.scss";
+@import "framework/_animsition.scss";
+
+@import "page-structure/_header.scss";
+@import "page-structure/_footer.scss";
+@import "page-structure/_grid.scss";
+
+@import "components/_general.scss";
+@import "components/_media-queries.scss";
+
+//These are optional
+@import "components/_buttons.scss";

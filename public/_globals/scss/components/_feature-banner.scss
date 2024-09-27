@@ -1,0 +1,109 @@
+/*! Feature Banner */
+
+/*
+ * jQuery FlexSlider v2.5.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith ($mbmufffin)
+ * 
+ */
+
+/*--
+RESET
+--*/
+
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus { outline: none; }
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav { margin: 0; padding: 0; list-style: none; }
+.flex-pauseplay span { text-transform: capitalize; }
+
+/*--
+BASE
+--*/
+
+.flexslider { margin: 0; padding: 0; }
+.flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; font-size: 1em; overflow: hidden; }
+.flexslider .slides img { width: 100%; display: block; }
+.flexslider .slides:after { content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+html[xmlns] .flexslider .slides { display: block; }
+* html .flexslider .slides { height: 1%; }
+.no-js .flexslider .slides > li:first-child { display: block; }
+
+/*--
+THEME
+--*/
+
+.flexslider { margin: 0 0 60px; background: #ffffff; position: relative; zoom: 1; }
+.flexslider .slides { zoom: 1; }
+.flexslider .slides img { height: auto; }
+.flex-viewport { max-height: 2000px; transition: all 1s ease; }
+.loading .flex-viewport { max-height: 300px; }
+.carousel li { margin-right: 5px; }
+
+.flex-direction-nav { display: none; *height: 0; }
+.flex-direction-nav a { text-decoration: none; display: block; width: 40px; height: 40px; margin: -20px 0 0; position: absolute; top: 40%; z-index: 10; overflow: hidden; cursor: pointer; transition: all 0.3s ease-in-out; text-indent: -9999em; overflow: hidden; }
+.flex-direction-nav a:before { font-size: 30px; display: inline-block; font-family: 'Flaticon'; content: '\e036'; color: #fff; }
+.flex-direction-nav a.flex-next:before { content: '\e052'; }
+.flex-direction-nav .flex-prev { left: 10px; }
+.flex-direction-nav .flex-next { right: 10px; text-align: right; }
+
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter: alpha(opacity=0); cursor: default; }
+
+.flex-control-nav { width: 100%; position: absolute; bottom: -40px; text-align: center; }
+.flex-control-nav li { margin: 0 6px; display: inline-block; zoom: 1; *display: inline; }
+.flex-control-paging li a { width: 11px; height: 11px; display: block; background: #fff; cursor: pointer; text-indent: -9999px; border-radius: 20px; border: 1px solid #999; }
+.flex-control-paging li a:hover { background: #ccc; }
+.flex-control-paging li a.flex-active { background: #999; cursor: default; }
+
+@media screen and (min-width: $md-width) {
+ .flex-direction-nav a { top: 50%; } 
+ .flex-control-nav { bottom: 20px; z-index: 100; } 
+ .flex-control-paging li a { border-color: #fff; background: none; } 
+ .flex-control-paging li a:hover { background: rgba(255,255,255,.6); }
+.flex-control-paging li a.flex-active { background: #fff; cursor: default; }
+}
+
+@media screen and (min-width: $lg-width) {
+   .flex-direction-nav { display: block; }  
+}
+
+/*--
+RESPONSIVE
+--*/
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev { opacity: 1; left: 10px; }
+  .flex-direction-nav .flex-next { opacity: 1; right: 10px; }
+}
+
+/*--
+CONTENT ANIMATION
+--*/
+
+.slide-1 { background: purple; }
+.slide-2 { background: gray; }
+.slide-3 { background: pink; }
+.slide-4 { background: silver; }
+
+.feature-banner-content { padding: 50px; }
+
+.feature-animate-heading { transform:translateX(-300px); opacity: 0; transition: transform .4s ease-in-out .1s, opacity .4s ease-in-out .1s; }
+.feature-animate-blurb { transform:translateX(300px); opacity: 0; transition: transform .4s ease-in-out .1s, opacity .4s ease-in-out .1s; }
+.feature-animate-link { transform:translateX(-300px); opacity: 0; transition: transform .4s ease-in-out .1s, opacity .4s ease-in-out .1s; }
+
+.flex-active-slide .feature-animate-heading { transition: transform .4s ease-in-out .5s, opacity .4s ease-in-out .5s; }
+.flex-active-slide .feature-animate-blurb { transition: transform .4s ease-in-out .8s, opacity .4s ease-in-out .8s; }
+.flex-active-slide .feature-animate-link { transition: transform .4s ease-in-out 1.1s, opacity .4s ease-in-out 1.1s; }
+
+.flex-active-slide .feature-animate-heading,
+.flex-active-slide .feature-animate-blurb,
+.flex-active-slide .feature-animate-link { transform:translateX(0); opacity: 1; }

@@ -1,0 +1,75 @@
+html { width: 100%; }
+
+.step-item-4 { overflow-x: hidden; }
+
+body {
+  overflow-x: hidden;
+  margin:0;
+  padding:0;
+}
+
+
+section {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+@media(min-width: 1440px) and (min-height: 900px){
+  section { min-height: calc(100vh - 13rem); }
+
+}
+
+.no-min-height { min-height: 0; }
+
+section + section { min-height: 100vh; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+.no-margin { margin-bottom:0 !important  }
+
+/*  section { border:2px solid red; }*/
+
+.wrapper { max-width: 1440px; margin:0 auto; /*border:10px solid lime; */}
+
+/* DEBUG */
+
+/**/
+
+.hide { display: none !important; }
+
+.center-task { display: flex; justify-content: center; align-items: center; padding: 3rem 0; }
+
+@media(max-width:767px){
+	.section-padding { padding-top: 10rem; padding-bottom:10rem; }
+	.section-padding-top { padding-top: 20rem; }
+}
+
+
+/** DEBUG PURPOSES**/
+/*
+[data-answer] { outline:5px solid lime; }
+select [data-answer] { color:lime; }
+
+
+.hide { display: block !important; }
+
+.step-3 .task-dropdown li { display: block !important; }
+
+.quiz .hide { display: block !important; }
+.step-3 .task-dropdown li { display: block !important; }
+.step-3 .task-dropdown li.active { display: none !important; }
+.step-3 .task-dropdown li:nth-child(6) { display: block !important; }
+
+
+.next-step.hide { display: block !important; }
+
+.step-3 .task-dropdown li { display: none !important; }
+.step-3 .task-dropdown li.active { display: none !important; }
+.step-3 .task-dropdown li:nth-child(6) { display: block !important; }
+*/
+

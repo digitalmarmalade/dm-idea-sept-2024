@@ -1,0 +1,45 @@
+.typography-question { padding: 1rem 1rem 0; background: #fff; margin: 0 0 4rem;
+    h2 { background: #F8F1E7; text-align: center; padding: 2rem; font-size: 2.4rem; line-height: 3rem; margin: 0 0 1rem; }
+}
+@media only screen and (min-width: 768px) {
+ 
+    .typography-question { padding: 2.5rem;
+        h2 { padding: 6rem; margin: 0 0 2rem; }
+    }
+    
+}
+
+.typography-options { display: flex; flex-wrap: wrap; list-style: none; margin: 0 -.5rem; padding: 0; align-items: flex-end;
+    li { margin: 0 .5rem; flex: 1; }
+    a { display: block; text-decoration: none; text-align: center; background: #444; color: #fff; padding: 1.4rem 2rem; 
+        &:hover { background: #666; }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .typography-options {
+        li { width: calc(50% - .5rem); margin: 0 .5rem 1rem; }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .typography-options { flex-wrap: nowrap; }
+}
+.typography-options .selected a { background: $success; }
+.chart-bar { margin: 0 0 .3rem; display: none; }
+.chart-bar__bar { width: 100%; height: .2rem; background: #444; display: block; transition: height 1s ease; 
+    .selected & { background: $success; }
+}
+.chart-bar__percentage { text-align: center; display: block; }
+
+.font-demo { background: #fff; padding: 1rem; box-shadow: 0 0 2px rgba(0,0,0,.2); margin: 0 0 3rem; 
+    p { font-size: 2.8rem; word-break: break-all; margin: 0; }
+}
+.font-demo--sentences { text-align: center; margin: 0 0 8rem;
+    p { word-break: normal; }
+}
+@media only screen and (min-width: 600px) {
+    .font-demo { padding: 3.5rem;
+        p { font-size: 3.8rem; line-height: 4.8rem; }
+    }
+}

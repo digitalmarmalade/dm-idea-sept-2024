@@ -1,0 +1,306 @@
+/*! Tasks */
+
+.task { background: #ededed; padding: 20px; margin: 30px 0; border-radius: 15px; }
+.task li,
+.task p { font-size: 1.4em;  }
+.task .input-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: flex;
+    flex-direction: column;
+    margin: .8rem 0 0;
+  }
+}
+
+
+.image-holder { margin: 30px 0;
+    img { width: 100%; height: auto; box-shadow: 0 0 20px rgba(0,0,0,.4); }
+}
+
+.lets-move-on,
+.reveal-section-1,
+.reveal-section-2 { display:none; opacity: 0; transition: opacity .25s ease; pointer-events: none; }
+.lets-move-on.visible,
+.reveal-section-1.visible,
+.reveal-section-2.visible { opacity: 1; pointer-events: auto; display: block;}
+
+
+
+.correct-message {  padding: 78px 20px 25px 20px; border: 1px solid #ccc; border-radius: 5px; background: #fff; margin: 0 auto 30px; position: relative; min-height: 78px; font-size: 1.6em; text-align: center; background: #78ab55; color: #fff; }
+.tick-holder { position: absolute; left: 50%; top: 25px; margin: 0 0 0 -25px; background: #fff; border-radius: 50%; width: 50px; height: 50px; display: block; padding: 14px 0 0; }
+.correct-message svg { width: 30px; height: 23px; }
+
+.error { background: #900; color: #fff; text-align: center; opacity: 0; transition: all .25s ease; pointer-events: none; border-radius: 5px; height: 0; overflow: hidden;
+p { margin: 0; }
+}
+.error.visible { opacity: 1; pointer-events: auto; height: auto; padding: 20px; }
+
+.definition { background: #ededed; padding: 40px 20px; text-align: center; position: relative; margin: 20px 0;
+    footer { position: absolute; right: 10px; bottom: 10px; text-transform: uppercase; font-family: mullerlight; font-size: 1.2em; }
+}
+
+.border-image { border: 2px solid #ededed; margin: 10px 0 20px; }
+
+.comment { position: relative; padding: 0 0 0 60px; margin: 20px 0 20px; text-align: left; }
+.comment img.person { position: absolute; width: 40px; left: 0; top: 0; }
+.comment h3 { margin: 0 0 4px; text-transform: uppercase; font-size: 1.4em; }
+.comment-inner { padding: 15px; color: #333; border-radius: 10px; position: relative; border: 3px solid #718faf; }
+.comment-inner:before { content: ''; display: block; width: 0; height: 0; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-right: 6px solid #718faf; position: absolute; left: -9px; top: 15px;  }
+
+.info-graphic { background: #fff; position: relative; margin: 0 0 5px;
+    img { display: block; }
+}
+
+.infographic-bar { position: absolute; left: 0; top: 0; height: 100%; width: 0%; background: #718faf; transition: width 1s ease; }
+.info-fg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+.trainer-preview { border-radius: 0 0 10px 10px; overflow: hidden; margin: 20px -20px -20px;
+    li { float: left; width: 50%; background: #fff; margin: 0; transition: all .75s ease; }
+
+    img { display: block; }
+}
+
+.trainer-quotes { font-size: 1em; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-content: flex-start; align-items: stretch;
+	> li { padding: 20px;  background: #718faf; margin: 10px; flex-grow: 1; text-transform: uppercase; color: #fff; flex-shrink: 0; flex-basis: 200px; text-align: center; box-shadow: 2px 2px 2px rgba(0,0,0,.4); display: flex; flex-direction: column;  align-items: stretch; position: relative; transition: transform .25s ease; }
+	ul { list-style: none; margin: 0; padding: 20px 0 0; align-self: flex-end; width: 100%;
+		li { float: left; width: 50%; font-size: 1em; margin: 0; }
+		li:first-child { padding-right: 3px; }
+		li:last-child { padding-left: 3px; }
+		a { display: block; padding: 10px; text-align: center; text-decoration: none; background: rgba(0,0,0,.1); color: inherit; }
+		a:hover,
+        .active { background: #fff; color: #718faf; }
+	}
+}
+.trainer-quotes > li:nth-child(even):hover { transform: scale(1.1) rotate(1deg); z-index: 1; box-shadow: 2px 2px 10px rgba(0,0,0,.4); }
+.trainer-quotes > li:nth-child(odd):hover { transform: scale(1.1) rotate(-1deg); z-index: 1; box-shadow: 2px 2px 10px rgba(0,0,0,.4); }
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1){ .trainer-quotes { display: block; } .trainer-quotes > li { float: left; width: 46%; height: 220px; } }
+
+.quote { flex-grow: 1; }
+.quote small { display: block; margin: 10px 0 0; padding: 10px 0 0; border-top: 1px dotted #fff; }
+
+.trainer-quotes > li.suitable { background: #84AF48; }
+.trainer-quotes > li.not-suitable { opacity: .6; }
+
+.postits { text-align: center;
+    li { display: inline-block; width: 50%; margin: 0 0 0 -4px; padding: 5px; font-size: 22px; line-height: 1; vertical-align: top; }
+    li:hover {  }
+ }
+ .postit { background: rgb(241,241,167); padding: 40px 10px 10px; text-align: center; box-shadow: 2px 2px 2px rgba(0,0,0,.3); height: 120px; position: relative; border-bottom: 1px solid rgba(253,250,218,1.00); font-family: 'Indie Flower', cursive; left: 0; top: 0; transition: box-shadow .25s; font-size: 15px; }
+ .postit:before { content: ''; display: block; position: absolute; left: 0; top: 0; height: 20px; width: 100%; background: rgba(0,0,0,.05); }
+
+li:hover .postit { position: relative; left: -5px; top: -5px; box-shadow: 7px 7px 3px rgba(0,0,0,.1) }
+
+ .postit.ui-draggable-dragging { z-index: 10; }
+
+.whiteboard { border: 10px solid #ccc; border-bottom-color: #999; border-right-color: #777; box-shadow: inset 0 0 6px rgba(0,0,0,.8), 5px 5px 5px rgba(0,0,0,.3); margin: -20px -20px 10px; background: #fff; }
+
+.approach-bucket { padding: 20px 4px; text-align: center;
+    h2 { font-family: 'Indie Flower', cursive; border-bottom: 1px solid #039; color: #039; margin: 0 0 10px; padding: 0 0 10px; font-size: 1.6em; }
+    .dropzone { height: 200px; }
+}
+
+.dropzone .postit { width: 100% !important; padding: 25px 10px 10px !important;   line-height: 1 !important; margin: 0 0 5px; height: 90px !important; }
+
+@media only screen and (max-width: 599px) {
+.dropzone .postit { font-size: 12px; }
+}
+
+@media only screen and (min-width: 600px) {
+    .approach-bucket { padding: 20px;
+        h2 { font-size: 2.4em; }
+     }
+  .postits li { display: inline-block; width: 33.33333%; }
+  .postit { font-size: 22px; }
+  .dropzone .postit { font-size: 20px; height: 100px !important; }
+
+
+}
+
+.users-graph { padding: 10px 0 0;
+    li { margin: 0 0 1px; position: relative; height: 45px; background: #fff; }
+    svg { width: 35px; height: 35px; position: absolute; left: 5px; top: 5px; }
+}
+.social-bar { display: block; height: 45px; width: 1px; border-radius: 0 20px 20px 0; transition: width .5s; }
+.facebook-bar { background: #3B5998; }
+.youtube-bar { background: #D80027; }
+.instagram-bar { background: #6A453B; }
+
+.with-pie-chart { position: relative; min-height: 130px;
+    .question { padding-right: 120px; }
+}
+.pie-holder { position: absolute; right: 15px; top: 15px; width: 100px; height: 100px; background: #fff; border-radius: 50px; }
+
+/*
+  make each pie piece a rectangle twice as high as it is wide.
+  move the transform origin to the middle of the left side.
+  Also ensure that overflow is set to hidden.
+*/
+  .pie {
+		position:absolute;
+		width:50px;
+		height:100px;
+		overflow:hidden;
+		left:50px;
+		-moz-transform-origin:left center;
+		-ms-transform-origin:left center;
+		-o-transform-origin:left center;
+		-webkit-transform-origin:left center;
+		transform-origin:left center;
+	}
+/*
+  unless the piece represents more than 50% of the whole chart.
+  then make it a square, and ensure the transform origin is
+  back in the center.
+
+  NOTE: since this is only ever a single piece, you could
+  move this to a piece specific rule and remove the extra class
+*/
+	.pie.big {
+		width:100px;
+		height:100px;
+		left:0;
+		-moz-transform-origin:center center;
+		-ms-transform-origin:center center;
+		-o-transform-origin:center center;
+		-webkit-transform-origin:center center;
+		transform-origin:center center;
+	}
+/*
+  this is the actual visible part of the pie.
+  Give it the same dimensions as the regular piece.
+  Use border radius make it a half circle.
+  move transform origin to the middle of the right side.
+  Push it out to the left of the containing box.
+*/
+	.pie:BEFORE {
+		content:"";
+		position:absolute;
+		width:50px;
+		height:100px;
+		left:-50px;
+		border-radius:50px 0 0 50px;
+		-moz-transform-origin:right center;
+		-ms-transform-origin:right center;
+		-o-transform-origin:right center;
+		-webkit-transform-origin:right center;
+		transform-origin:right center;
+
+	}
+ /* if it's part of a big piece, bring it back into the square */
+	.pie.big:BEFORE {
+		left:0px;
+	}
+/*
+  big pieces will also need a second semicircle, pointed in the
+  opposite direction to hide the first part behind.
+*/
+	.pie.big:AFTER {
+		content:"";
+		position:absolute;
+		width:50px;
+		height:100px;
+		left:50px;
+		border-radius:0 50px 50px 0;
+	}
+/*
+  add colour to each piece.
+*/
+	.pie:nth-of-type(1):BEFORE,
+	.pie:nth-of-type(1):AFTER {
+		background-color:#718faf;
+	}
+	.pie:nth-of-type(2):AFTER,
+	.pie:nth-of-type(2):BEFORE {
+		background-color:orange;
+	}
+/*
+  now rotate each piece based on their cumulative starting
+  position
+*/
+	.pie[data-start="30"] {
+		transform:rotate(30deg);
+	}
+	.pie[data-start="60"] {
+		transform:rotate(60deg);
+	}
+	.pie[data-start="100"] {
+		transform:rotate(100deg);
+	}
+/*
+  and rotate the amount of the pie that's showing.
+
+  NOTE: add an extra degree to all but the final piece,
+  to fill in unsightly gaps.
+*/
+	.pie[data-value="10"]:BEFORE {
+		transform:rotate(10deg);
+	}
+	.pie[data-value="40"]:BEFORE {
+		transform:rotate(41deg);
+	}
+	.pie[data-value="260"]:BEFORE {
+		transform:rotate(260deg);
+	}
+
+.map-holder { position: relative; }
+.heat-map,
+.radius-map { position: absolute; left: 0; top: 0; width: 100%; display: none; }
+
+.map-controls { margin: 0 0 10px;
+    li { float: left; width: 50%; margin: 0; line-height: 1.1; }
+    li:first-child { border-right: 1px solid #ededed; }
+    li:last-child { border-left: 1px solid #ededed; }
+    a { display: block; padding: 10px; text-align: center; text-decoration: none; background: #fff; height: 66px; color: #333; }
+    a.active { background: #718faf; color: #fff; }
+}
+
+@media only screen and (min-width: 600px) {
+    .map-controls a { height: auto; }
+}
+
+.pin { display: block; width: 40px; height: 40px; text-align: center; line-height: 40px; border-radius: 20px; background: #a41a8d; box-shadow: 0 0 5px rgba(0,0,0,.5); color: #fff; text-decoration: none; font-family: mullerextrabold; font-size: 20px; position: absolute; }
+
+.pin1 { left: 71%; top: 58%; }
+.pin2 { left: 8%; top: 5%; }
+.pin3 { left: 43%; top: 45%; }
+.pin4 { left: 7%; top: 69%; }
+
+.location-overlay-bg { background: rgba(0,0,0,0.3); position: fixed; left: 0; top: 0; right: 0; bottom: 0; }
+.location-overlay { background: #fff; height: 400px; width: 320px; position: fixed; left: 50%; top: 50%; margin: -200px 0 0 -160px; box-shadow: 0 0 10px rgba(0,0,0,.5); padding: 20px;
+    h2 { font-size: 1.4em; font-family: mullerextrabold; text-transform: uppercase; margin: 0 0 10px; color: #a41a8d; }
+    h3 { margin: 10px 0 10px; font-size: 2em; }
+    .cta { padding-top: 0 !important; }
+}
+.stat { border-bottom: 1px dotted #ccc; padding: 0 0 5px; font-size: 1.4em;
+    span { float: right; }
+}
+
+.cold { background: #cff; display: inline-block; padding: 2px 5px; }
+.warm { background: #fcc; display: inline-block; padding: 2px 5px; }
+.hot { background: #f00; display: inline-block; padding: 2px 5px; color: #fff; }
+
+html,
+.payoff { height: 100%;
+    .page-content,
+    .research-banner { min-height: 100%; }
+}
+
+.not-right,
+.location-not-right { position: fixed; padding: 40px; left: 0; top: -200px; right: 0; background: rgba(153,0,0,.9) ; color: #fff; margin: 0; text-align: center; z-index: 1000; transition: top .7s ease; }
+.show-error .not-right,
+.show-location-error .location-not-right { top: 0; }
+
+.payoff-sentence { z-index: 2; position: relative; }
+
+.badge-holder { background: url(../img/badge.png) no-repeat center center; border-radius: 15px; background-size: 100%; width: 150px; height: 150px; box-shadow: 0 0 20px rgba(0,0,0,.4); z-index: 3; margin: 0 auto 20px; position: relative; z-index: 1; }
+
+.invisible,
+.task-reveal { display: none;}
+.task-reveal.visible,
+.task.visible { display: block; }

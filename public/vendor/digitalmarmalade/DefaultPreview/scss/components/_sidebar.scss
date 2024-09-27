@@ -1,0 +1,230 @@
+aside { display: block; width: 320px; position: absolute; left: 50%; margin-left: 280px; top: 166px; bottom: auto; -webkit-transform: translate3d(0,0,0); -webkit-transform: translateZ(0); z-index: 10;  }
+#wrap.pagebuilder aside,#wrap.no-hero aside  { top: 146px; }
+#wrap aside.no-header, #wrap.pagebuilder aside.no-header, #wrap.no-hero aside.no-header { top: 202px; }
+
+aside.drop-shadow { box-shadow: 1px 1px 10px #916044; }
+
+aside.fixed, #wrap.pagebuilder aside.fixed, #wrap.no-hero aside.fixed { position: fixed; top: 10px; }
+aside.fixed-bottom, #wrap.pagebuilder aside.fixed-bottom, #wrap.no-hero aside.fixed-bottom { position: absolute; top: auto; bottom: 0; }
+
+aside .sidebar-container { position: relative; display: block; }
+
+aside .header-a-bg { position: relative; background: $orange url(../img/aside-header.png); color: $white; overflow: auto; margin: 0 0 4px 0;  }
+aside .header-a { position: relative; display: block; @include transition(background,200ms,linear); color: $white; text-decoration: none; margin: 0 0 11px 0; }
+aside .header-a-bg span.title { position: relative; display: block; @include fs-semibold; font-size: 2em; width: 290px; margin: auto; padding: 12px 0 11px 33px; background: url(../img/aside-header-clock.png) no-repeat 0 12px; height: 45px; line-height: 22px; background-size: 22px 22px; }
+aside .header-a-bg span.date { position: absolute; display: block; top: 16px; right: 15px; font-size: 1.3em; text-transform: uppercase; @include fs-bold; line-height: 1em; }
+
+aside .header-a span.subtitle { position: relative; display: block; border: 1px solid $white; width: 290px; margin: auto; font-size: 1.4em; @include fs-medium; background: url(../img/aside-header-arrow.png) no-repeat right 9px top 10px; font-size: 1.4em; padding: 0 9px; height: 36px; line-height: 36px; @include transition(background-color,200ms,linear); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 30px; }
+
+aside .header-a:hover span { background: $white url(../img/aside-header-arrow-right-red.png) no-repeat right 9px top 10px; color: $red; }
+
+aside .sidebar-content { position: relative; display: block; background: $white; overflow: auto; }
+
+aside h2 { margin: 0; @include fs-medium; color: $red; font-size: 2.2em; text-align: left; padding: 0 0 15px 0; }
+aside .map h2 { font-size: 2em; }
+
+/**/
+
+aside .calendar { position: relative; background: $white; padding: 20px 15px 0 15px; margin: 0 0 10px 0; }
+aside .calendar .calendar-header { position: relative; }
+aside .calendar .calendar-header h2 { margin: 0; @include fs-medium; color: $red; font-size: 2.2em; text-align: center; padding: 0 0 15px 0; }
+aside .calendar .calendar-header h3 { font-size: 1.6em; @include fs-bold; margin: 0; text-align: center; color: $red; } 
+aside .calendar .arrow { position: absolute; display: block; bottom: 0; width: 10px; height: 15px; background: #000; text-indent: -9999px; overflow: hidden; }
+aside .calendar .arrow.left { background: url(../img/aside-header-arrow-left.png); left: 33px; } 
+aside .calendar .arrow.right { background: url(../img/aside-header-arrow-right.png); right: 33px; } 
+aside .calendar .arrow.left:hover { background: url(../img/aside-header-arrow-left-red.png); }
+aside .calendar .arrow.right:hover { background: url(../img/aside-header-arrow-right-red.png); }
+
+aside .calendar .table-container { position: relative; display: block; margin: 15px 0 0 0; }
+aside .calendar table { position: relative; display: block; }
+aside .calendar table thead { color: $white;background: $red; font-size: 1.3em; position: relative; display: block; border-bottom: 0; border-left: 1px solid $red; border-right: 1px solid $red; margin-bottom: 1px; }
+aside .calendar table thead tr {  position: relative; display: block; overflow: auto;  }
+aside .calendar table thead tr th { @include fs-bold; height: 24px;  position: relative; display: block; float: left; width: 41.14px; border-left: 1px solid $red; }
+aside .calendar table thead tr th:nth-child(1) { border-left: 0; }
+aside .calendar table tbody {  position: relative; display: block; border: 1px solid $red; }
+
+/*aside .calendar table tbody:before { content: ""; display: block; height: 1px; color: transparent; }*/
+
+aside .calendar table tbody tr { position: relative; display: block; overflow: auto;  }
+aside .calendar table tbody tr td { position: relative; display: block; border: 1px solid #f8e5e5; border-right: 0; border-bottom: 0; height: 41.14px; width: 41.14px; text-align: center; font-size: 1.2em; float: left; }
+aside .calendar table tbody tr:nth-child(1) td { border-top: 0; }
+aside .calendar table tbody tr td:nth-child(1) { border-left: 0;  }
+/*aside .calendar table tbody tr td:nth-child(1) { border-left: 1px solid $red; }
+aside .calendar table tbody tr td:nth-child(7) { border-right: 1px solid $red; }
+aside .calendar table tbody tr:last-child td { border-bottom: 1px solid $red; }*/
+aside .calendar table tbody tr td span { width: 26px; height: 26px; position: relative; display: block; line-height: 26px; margin: auto; border-radius: 50%; text-align: center; margin-top: 8px; }
+aside .calendar table tbody tr td.today span { background-color: $red; color: $white; }
+aside .calendar table tbody tr td.earmark { background: url(../img/earmark.png) no-repeat right top; }
+
+aside .date-list { position: relative; margin: 10px 0; }
+aside .date-list ul { position: relative; display: block; margin: 0 15px; padding: 0; list-style: none; }
+aside .date-list ul li { position: relative; display: block; margin: 0 0 10px 0; padding: 0; font-size: 1em; overflow: hidden; }
+aside .date-list.pods { margin: 15px 0; }
+aside .date-list.pods ul li { margin: 0 0 15px 0; }
+aside .date-list ul li .link { position: relative; display: block; border: 1px solid $orange; text-decoration: none; @include transition(border-color,200ms,linear); color: $body-color; }
+aside .date-list ul li .link .img { position: relative; display: block; overflow: hidden; }
+aside .date-list ul li .link img { display: block; width: 100%; border-bottom: 1px solid $orange;  @include transition(border-color,200ms,linear); }
+aside .date-list ul li .link .content { position: relative; display: block; min-height: 58px; z-index: 2; }
+aside .date-list ul li .link .date { position: absolute; display: block; width: 43px; margin: 0 12px 0 0; height: 100%; background: $orange; color: $white; text-align: center; @include transition(background-color,200ms,linear); }
+aside .date-list ul li .link .date span { position: relative; display: block; @include fs-semibold; text-transform: uppercase; line-height: 1em; }
+
+aside .date-list ul li .link .date span.day { font-size: 26px; }
+aside .date-list ul li .link .date span.month { font-size: 14px; padding: 1px 0; }
+aside .date-list ul li .link .date span.year { font-size: 12px; }
+
+aside .date-list ul li .link .copy { position: relative; display: block; padding: 12px 40px 14px 55px; font-size: 1.3em; background: url(../img/aside-header-arrow-right.png) no-repeat right 8px center;  @include transition(color,200ms,linear); height: 58px; line-height: 1.4em; }
+aside .date-list ul li .link .copy.no-date { padding-left: 9px; font-size: 2.2em; color: $orange; @include fs-medium; line-height: 34px; }
+aside .date-list ul li .link .copy.no-date.long { line-height: 27px; padding-top: 0; padding-bottom: 0; }
+aside .date-list ul li span.link .copy { padding-right: 9px; }
+aside .date-list ul li a.link:hover { border-color: $red; }
+aside .date-list ul li a.link:hover .date { background: $red; }
+aside .date-list ul li a.link:hover .copy { background-image: url(../img/aside-header-arrow-right-red.png); color: $red; }
+aside .date-list ul li a.link:hover img { border-color: $red; }
+
+aside .date-list ul li span.link .copy { background: none; }
+
+aside .date-list ul li a.link .more { display: block; position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; @include translate3d(0,100%,0); @include transition; }
+aside .date-list ul li a.link .more .bg { z-index: 2;  position: absolute; display: block; top: 0; left: 0; width: 100%; height: 100%; background: $red; opacity: .6; }
+aside .date-list ul li:hover a.link .more { @include translate3d(0,0,0); }
+
+aside .additional-info { margin: 30px 15px 15px 15px; }
+aside .additional-info h2 { margin: 0 0 20px 0; color: $red; @include fs-medium; font-size: 2em; padding: 0; }
+aside .additional-info ul { position: relative; display: block; margin: 0; padding: 0; list-style: none; }
+aside .additional-info ul li { position: relative; display: block; margin: 0 0 10px 0; padding: 0; font-size: 1.3em; }
+aside .additional-info ul li a { position: relative; display: block; background: $aside-grey url(../img/aside-header-arrow-right.png) no-repeat right 8px center; padding: 7px 9px; text-decoration: none; color: $body-text-color; border: 1px solid $aside-grey; @include transition(border-color,200ms,linear); @include transition(color,200ms,linear); @include transition(background-color,200ms,linear); }
+aside .additional-info ul li a:hover { border: 1px solid $red; color: $red; background: $white url(../img/aside-header-arrow-right-red.png) no-repeat right 8px center;  }
+
+aside .availability { margin: 15px; text-align: center; }
+aside .availability ul { position: relative; display: block; margin: 0 0 11px 0; padding: 0; list-style: none; overflow: auto; }
+aside .availability ul li { position: relative; display: block; float: left; width: 140px; background: $orange; color: $white; height: 56px; font-size: 1em; @include fs-medium; text-transform: uppercase; }
+aside .availability ul li:nth-child(1) { margin: 0 10px 0 0; }
+aside .availability ul li span { display: block;  line-height: 1em; }
+aside .availability ul li span:nth-child(1) { font-size: 1.5em; padding: 7px 0 0 0; }
+aside .availability ul li span:nth-child(2) { font-size: 2.0em; padding: 5px 0 0 0; }
+aside .availability a.book { display: block; height: 41px; border: 2px solid $orange; @include fs-medium; font-size: 1.9em; line-height: 37px; text-decoration: none; color: $orange; margin: 0 0 11px 0; @include transition(); }
+aside .availability a.book:hover { color: $white; background: $orange; }
+
+aside .course-dates { margin: 15px; }
+aside .course-dates ul { position: relative; display: block; margin: 0; padding: 0; list-style: none; overflow: auto; }
+aside .course-dates ul li { position: relative; display: block; border: 1px solid $orange; font-size: 1.5em; @include fs-semibold; overflow: auto; height: 28px; line-height: 26px; margin: 0 0 11px 0; }
+aside .course-dates ul li span { position: relative; display: block; float: left; overflow: auto; }
+aside .course-dates ul li span.date { width:50%;  background: $orange; color: $white; text-align: center; }
+aside .course-dates ul li span.time { width: 50%; }
+aside .course-dates ul li span.from { width: 95px; padding: 0 0 0 17px; background: url(../img/aside-header-arrow-right.png) no-repeat 70px center; color: $orange; }
+aside .course-dates ul li span.to { color: $orange;  }
+
+aside .event-dates { margin: 15px; }
+aside .event-dates ul { position: relative; display: block; list-style: none; margin: 0; padding: 0; }
+aside .event-dates ul li { font-size: 1.5em; text-transform: uppercase; height: 28px; background: url(../img/aside-header-arrow-right-event-details.png) no-repeat center; overflow: auto; @include fs-semibold;  margin: 0 0 4px 0; }
+aside .event-dates ul li.date span { display: block; width: 134px; background:$orange; color: $white; text-align: center; height: 28px; line-height: 28px; }
+aside .event-dates ul li.date span.from { float: left; }
+aside .event-dates ul li.date span.to { float: right; }
+aside .event-dates ul li.time { border: 1px solid $orange; }
+aside .event-dates ul li.time span { display: block; color: $orange; width: 124px; height: 26px; }
+aside .event-dates ul li.time span.from { float: left; text-align: right; }
+aside .event-dates ul li.time span.to { float: right; text-align: left; }
+
+
+aside .sidebar-content > .map { position: relative; background: $red; color: $white;  margin: 15px; padding: 4px 2px 2px 2px; }
+aside .sidebar-content > .map.alt { padding: 0px 2px 2px 2px; }
+aside .sidebar-content > .map h2 { color: $white; padding: 15px 10px; }
+aside .sidebar-content > .map p { padding: 0 10px; } 
+
+aside #mapContainerSidebar { height: 286px; }
+
+aside .tutors { margin: 15px; } 
+aside .tutors ul { position: relative; display: block; list-style: none; margin: 0; padding: 0; }
+aside .tutors ul li { position: relative; display: block; background: $tutors-grey; padding: 8px 12px; margin: 0 0 8px 0; font-size: 1.3em; }
+
+@media only screen and (max-width: $xl-width-under) {
+    aside { margin-left: 182px; }
+}
+
+@media only screen and (max-width: $lg-width-under) {
+    aside { position: fixed; top: 86px!important; right: 0; left: auto; margin: 0; @include translate3d(320px,0,0); @include transition(transform,250ms,linear);  z-index: 1000; }
+    html.show-sidebar aside { @include translate3d(0,0,0); height: calc(100% - 86px); overflow: auto; }     
+    /*aside.drop-shadow { box-shadow: none; }    */
+    aside.always-show { @include translate3d(0,0,0); position: absolute; right: 11px; top: 97px!important; }
+}
+
+@media only screen and (max-width: $md-width-under) {
+    aside { top: 65px!important; }
+    html.show-sidebar aside {  height: calc(100% - 65px);  }
+    aside.always-show { top: 76px!important; }
+}
+@media only screen and (max-width: $sm-width-under) {
+    aside.always-show { right: 50%; margin-right: -160px; }
+}
+
+@media only screen and (max-width: $xs-width) {
+    aside .header-a { margin: 0; }    
+}
+
+
+/*aside*/ .general-details img { border-bottom: 1px solid $body-bg-color; }
+/*aside*/ .general-details .general-details-content { color: $red; padding: 15px; } 
+/*aside*/ .general-details h2 { font-size: 2em; color: $red; @include fs-medium; } 
+/*aside*/ .general-details p { margin: 0; }
+/*aside*/ .general-details p.phone-link { margin: 10px 0; padding: 12px 0 0 0; border-top: 1px solid $body-bg-color;  }
+/*aside*/ .general-details p.phone-link.no-border { margin: 0 0 10px 0; padding: 0 0 0 0; border: 0; }
+
+/*aside*/ .general-details p.phone-link a { color: $orange;   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; display: block; }
+/*aside*/ .general-details .social { position: relative; display: block; margin: 0; padding: 0; list-style: none; overflow: auto; list-style: none; border-top: 1px solid $body-bg-color; padding-top: 13px;  overflow: auto; }
+/*aside*/ .general-details .social li { position: relative; display: block; float: left; margin: 0 11px 0 0; padding: 0; }
+/*aside*/ .general-details .social li a { width: 31px; height: 30px; overflow: hidden; text-indent: -9999px; background: url(../img/social-contact.png); position: relative; display: block; /*background-size: auto 76px;*/ }
+/*aside*/ .general-details p.phone-link a:hover { color: $red; }
+
+.general-details .social.with-instagram li a { background: url(../img/social-contact-alt.png); }
+
+
+/*aside*/ .general-details .social li a.twitter { background-position: 0 0; }
+/*aside*/ .general-details .social li a.facebook { background-position: -42px 0; }
+/*aside*/ .general-details .social li a.youtube { background-position: -84px 0; }
+/*aside*/ .general-details .social li a.linkedin { background-position: -126px 0; }
+/*aside*/ .general-details .social li a.twitter:hover { background-position: 0 -30px; }
+/*aside*/ .general-details .social li a.facebook:hover { background-position: -42px -30px; }
+/*aside*/ .general-details .social li a.youtube:hover { background-position: -84px -30px; }
+/*aside*/ .general-details .social li a.linkedin:hover { background-position: -126px -30px; }
+
+aside .general-details-header { position: relative; padding: 15px 15px 15px 145px; border-bottom: 1px solid $body-bg-color; min-height: 124px; }
+aside .general-details-header .img { position: absolute; display: block; width: 110px; height: 90px; overflow: hidden; top: 15px; left: 15px; overflow: hidden; }
+aside .general-details-header .img span.overlay { position: absolute; display: block; top: 0; left: 0; background: rgba($red,.6); width: 100%; height: 100%; @include transition();  @include translate3d(0,100px,0); }
+aside .general-details-header:hover .img span.overlay { @include translate3d(0,0,0); }
+aside .general-details-header .img img { border-bottom: 0; height: 90px; max-width: none; margin-left: -20px; }
+aside .general-details-header h2 { @include fs-bold; font-size: 1.3em; text-transform: uppercase; padding: 0 0 10px 0; }
+aside .general-details-header h3 { @include fs-medium; color: $orange; font-size: 1.7em; margin: 0 0 7px 0; min-height: 37.4px; @include transition(color,200ms,linear); }
+aside .general-details-header:hover h3 { color: $red; }
+aside .general-details-header .fake-a { display: block; @include fs-medium; color: $orange; font-size: 1.4em; text-decoration: none; @include transition(color,200ms,linear); background: url(../img/aside-header-arrow-right.png) no-repeat right 4px; }
+aside .general-details-header:hover .fake-a { color: $red; background: url(../img/aside-header-arrow-right-red.png) no-repeat right 4px;  }
+aside .general-details-header a.uber-a { position: absolute; display: block; width:100%; height: 100%; overflow: hidden; background: transparent; top: 0; left: 0; @include transition(); border: 1px solid $red; text-indent: -9999px; opacity: 0; }
+
+aside .general-details-header a.uber-a:hover { opacity: 1; }
+
+/*aside .general-details-header a { display: block; @include fs-medium; color: $orange; font-size: 1.4em; text-decoration: none; @include transition(color,200ms,linear); background: url(../img/aside-header-arrow-right.png) no-repeat right 4px; }
+aside .general-details-header a:hover { color: $red; background: url(../img/aside-header-arrow-right-red.png) no-repeat right 4px;  }*/
+
+aside .shop { position: relative; margin: 15px;  }
+aside .shop .empty,aside .shop .shop-list li.empty { color: $red; font-size: 1.2em; border: 0; margin: 0; padding: 0; min-height: 0; }
+aside .shop .shop-list { position: relative; display: block; margin: 0; padding: 0; list-style: none; }
+aside .shop .shop-list li { position: relative; display: block; padding:5px 11px; margin: 0 0 11px 0; font-size: 1.3em; min-height: 60px; border: 1px solid $body-bg-color; overflow: auto; }
+aside .shop .shop-list li > span { position: relative; display: block; float: left; }
+aside .shop .shop-list li > span.title { float: none; margin: 3px 18px 10px 0; }
+aside .shop .shop-list li .delete { position: absolute; top: 12px; right: 10px; width: 9px; height: 9px; background: url(../img/basket-delete.png); overflow: hidden; text-indent: -9999px; }
+aside .shop .shop-list li .delete:hover { background-position: 0 9px; }
+aside .shop .shop-list li span.price { width: 191px; }
+aside .shop .shop-list li span.quantity { width: 25px; font-weight: bold; }
+aside .shop .shop-list li span.price-total { width: 50px; text-align: right; font-weight: bold; }
+aside .shop .total { background: $body-bg-color; color: $red; font-weight: bold; font-size: 1.3em; padding: 10px; line-height: 1em; position: relative; display: block; margin: 0 0 11px 0; }
+aside .shop .total.shipping { background: $white; color: $body-text-color; border: 1px solid $body-bg-color; padding: 8px; }
+aside .shop .total span { position: absolute; display: block; top: 10px; right: 10px; }
+aside .shop .place-order { position: relative; display: block; border: 2px solid $orange; height: 33px; width: auto; line-height: 29px; text-decoration: none; @include fs-medium; text-align: center; font-size: 1.6em; color: $orange; @include transition(background); display: block; }
+aside .shop .place-order:hover { @include button-hover; }
+
+/*aside*/ .general-details .cta { color: $orange; border: 2px solid $orange; @include fs-medium; font-size: 1.6em; text-transform: uppecase; text-decoration: none; text-transform: uppercase; height: 33px; line-height: 29px; padding: 0 14px; display: inline-block; margin: 20px 0 0 0; @include transition(); }
+/*aside*/ .general-details .cta:hover { @include button-hover; }
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted $pink;
+    cursor: pointer;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 260px;
+    background-color: $pink;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    text-transform: none;
+    line-height: 1.6;
+    color: $white !important;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: $box-shadow;
+
+    transition: all .3s;
+    ul {
+      list-style: none;
+    }
+    li {
+      position: relative;
+      margin: 0 0 30px !important;
+      &:after {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $white;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin: 10px 0 10px;
+      }
+      &:last-child:after {
+        background-color: transparent;
+      }
+    }
+    a {
+      color: $white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: all .3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 99%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -20px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: $pink transparent transparent transparent;
+}
+
+.tooltip-cryptography {
+  border-bottom: 1px dotted $pink;
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .tooltip .tooltiptext {
+    width: 300px;
+    }
+}

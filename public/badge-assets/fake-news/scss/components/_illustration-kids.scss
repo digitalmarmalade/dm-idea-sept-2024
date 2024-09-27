@@ -1,0 +1,32 @@
+.illustration-kids {
+  height: 300px;
+  position: relative;
+
+  & .illustration-kids__illustration {
+    position: absolute;
+    z-index: 1;
+  }
+
+  & .illustration-kids__blob {
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+
+  & .illustration-kids__circle-lines {
+    position: absolute;
+    right: -1%;
+    top: 15%;
+  }
+
+  & .illustration-kids__circle-solid {
+    position: absolute;
+    right: -5%;
+    top: 12.5%;
+  }
+
+  @media (min-width: $sm-width) {
+    height: 423px;
+    margin-bottom: $space-small;
+  }
+}

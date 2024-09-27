@@ -1,0 +1,64 @@
+.success {
+  margin-bottom: -100px;
+}
+
+.success h3  {
+  color: $light-green;
+  margin-top: 10px;
+}
+
+.success #animation_container {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: $md-width) {
+  .success {
+    .holder {
+      width: 100%;
+      padding: 0;
+      margin: 0 50px;
+    }
+    #animation_container {
+      transform: scale(1);
+      right: -260px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .success {
+    .holder {
+      width: 80%;
+      padding: 0;
+      margin: 0 50px;
+    }
+    #animation_container {
+      bottom: -290px;
+      right: -380px;
+    }
+  }
+
+}
+
+@media only screen and (min-width: $xl-width) {
+  .success {
+    #animation_container {
+      bottom: -390px;
+      right: -250px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1490px) {
+  .success {
+
+    #animation_container {
+      transform: scale(1.3);
+      right: -240px;
+      bottom: -40px;
+    }
+  }
+
+}

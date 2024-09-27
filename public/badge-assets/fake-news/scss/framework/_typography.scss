@@ -1,0 +1,63 @@
+body {
+  color: $main-text-colour;
+  font-family: $main-text-style;
+  font-size: 1.6rem;
+
+  @media (min-width: $md-width) {
+  }
+}
+
+a {
+  background: $gradient-orange;
+  background-clip: text;
+  background-color: $orange;
+  color: transparent;
+  font-weight: bold;
+  -webkit-background-clip: text;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1;
+}
+
+h1, .heading-one {
+  font-size: $m-x-large;
+  margin-bottom: $space-small;
+
+  @media (min-width: $md-width) {
+    font-size: $m-xx-large;
+  }
+}
+
+h2 {
+  font-size: $m-medium;
+  margin-bottom: $space-x-small;
+}
+
+h3 {
+  font-size: $m-medium;
+  margin-bottom: $space-xxx-small;
+}
+
+.heading-orange {
+  background: $gradient-orange;
+  background-clip: text;
+  background-color: $orange;
+  color: transparent;
+  font-family: $title-text-style, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+}
+
+h1.heading-orange {
+  word-spacing: $space-x-small;
+}
+
+h2.heading-orange {
+  word-spacing: $space-xx-small;
+}
+
+h2.heading-orange, h3.heading-orange {
+  word-spacing: $space-xxx-small;
+}

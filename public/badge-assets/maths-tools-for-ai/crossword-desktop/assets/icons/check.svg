@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" width="30" height="28" viewBox="0 0 30 28">
+  <defs>
+    <clipPath id="clip-Check">
+      <rect width="30" height="28"/>
+    </clipPath>
+  </defs>
+  <g id="Check" clip-path="url(#clip-Check)">
+    <g id="Group_2445" data-name="Group 2445" transform="translate(-350 -993.227)">
+      <path id="check-2" data-name="check" d="M9.171,84.837.4,76.062a1.35,1.35,0,0,1,0-1.909L2.3,72.244a1.35,1.35,0,0,1,1.909,0l5.911,5.911L22.786,65.494a1.35,1.35,0,0,1,1.909,0L26.6,67.4a1.35,1.35,0,0,1,0,1.909L11.08,84.837a1.35,1.35,0,0,1-1.909,0Z" transform="translate(352 927.994)"/>
+    </g>
+  </g>
+</svg>

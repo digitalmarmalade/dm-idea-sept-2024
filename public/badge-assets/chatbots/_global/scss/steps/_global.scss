@@ -1,0 +1,421 @@
+
+.step__counter {
+  color: $grey-5;
+  margin: $space-small;
+  padding: 0 $space-x-small;
+  position: absolute;
+  top: 0;
+  left: -.8rem;
+
+  & ol {
+    display: flex;
+    list-style-type: none;
+
+    & li {
+      align-items: center;
+      background-color: $white;
+      border-radius: 50%;
+      box-shadow: 0 0 1.5em 0.25em $grey-2;
+      cursor: pointer;
+      display: flex;
+      font-family: 'Monoton', sans-serif;
+      font-size: 1.25rem;
+      height: 2rem;
+      justify-content: center;
+      width: 2rem;
+      margin: .2rem;
+
+      &.step__counter--current, &.step__counter--completed {
+        position: relative;
+
+        & > span {
+          background: $gradient-orange;
+          background-clip: text;
+          color: transparent;
+          display: inline-block;
+          text-shadow: 0px 0px #00000000;
+          -webkit-background-clip: text;
+        }
+      }
+
+      &.step__counter--completed {
+
+        &::after {
+          background-image: url('/badge-assets/chatbots/_global/svg/step__completed-icon.svg');
+          background-repeat: no-repeat;
+          content: '';
+          font-size: $small-text-size;
+          height: 1.5rem;
+          position: absolute;
+          right: -0.5em;
+          top: -0.5em;
+          width: 1.5rem;
+
+          @media (min-width: $md-width) {
+            right: -0.25em;
+            top: 0;
+          }
+        }
+      }
+
+      @media (min-width: $lg-width) {
+        font-size: 2rem;
+        height: 3.5rem;
+        width: 3.5rem;
+      }
+    }
+
+    @media (min-width: $lg-width) {
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: $lg-width) {
+    left: $space-large;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 101px;
+  }
+}
+
+.step__completed {
+  display: flex;
+  justify-content: center;
+  margin: $space-large 0;
+}
+
+.success--box, .fail--box {
+  background-position: $space-small;
+  background-repeat: no-repeat;
+  border-radius: $x-small-border-radius;
+  color: $white;
+  margin-top: $space;
+  padding: $space-small $space-x-small $space-small $space-x-large;
+  position: relative;
+
+  @media (min-width: $md-width) {
+    padding: $space-small $space-x-small $space-small $space-x-large;
+  }
+}
+
+.success--box {
+  background-color: $green-success;
+  background-image: url('/badge-assets/chatbots/_global/svg/icon--success.svg');
+}
+
+.fail--box {
+  background-color: $red-fail;
+  background-image: url('/badge-assets/chatbots/_global/svg/icon--fail.svg');
+
+  .step-4__activity--step-4-code-playground-middle + & {
+    border-radius: 0;
+    font-size: $small-text-size;
+    margin-top: 0;
+    padding: $space-xx-small;
+  }
+}
+
+.success--box-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -2rem;
+
+  & .success--box {
+    background-position: 96% 1.2rem;
+    border-radius: $medium-border-radius;
+    padding: $space-x-large $space-small $space-small $space-small;
+
+    @media (min-width: $md-width) {
+          background-position: 96% 1.2rem;
+          padding: $space;
+    }
+
+    & h4 {
+      font-size: 120%;
+      margin-bottom: $space-x-small;
+      line-height: 1.25;
+    }
+  }
+
+  & .success--box-example {
+    background-color: $white;
+    border-radius: $medium-border-radius;
+    font-size: $small-text-size;
+    padding: $space-small;
+    position: relative;
+
+    &::before {
+      background-image: linear-gradient(to bottom right, transparent 50%, $white 0);
+      content: '';
+      left: 5%;
+      height: 1rem;
+      position: absolute;
+      top: -2%;
+      transform: rotate(225deg);
+      width: 1rem;
+    }
+
+    @media (min-width: $md-width) {
+      padding: $space;
+    }
+  }
+
+  & .btn-orange {
+    margin-top: $space-small;
+    margin-left: auto;
+  }
+}
+
+.activity__brief {
+  background-color: $white;
+  background-image: url('/badge-assets/chatbots/_global/svg/logos/logo--idea-icon.svg');
+  background-position: 90% $space-medium;
+  background-repeat: no-repeat;
+  background-size: 20%;
+  border-radius: $x-small-border-radius;
+  box-shadow: 1em 1em 2em 1em #f3f5f8;
+  font-family: 'Monaco', monospace;
+  letter-spacing: 0.1em;
+  padding: $space-xx-large $space-medium $space-large $space-medium;
+  margin-bottom: $space-large;
+  @media (min-width: $md-width) {
+      background-position: 90% $space-large;
+      background-size: 12.5%;
+  }
+
+  & p {
+    font-size: $small-text-size;
+
+    &:first-child {
+      margin-top: $space-small;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: $space-small;
+    }
+  }
+
+  & ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: $small-text-size;
+    letter-spacing: unset;
+    margin-bottom: $space-small;
+
+    & li {
+      font-size: 125%;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    padding:  $space-xxx-large $space-x-large $space-x-large;
+  }
+}
+
+.activity__grey--container {
+  background-color: $grey-1;
+  border-radius: $x-small-border-radius;
+  padding: $space-small;
+  position: relative;
+  @media (min-width: 768px) {
+      padding: $space-large;
+  }
+  .btn-orange {
+    margin-top: $space-large;
+  }
+
+  & .activity__grey--counter {
+    font-family: 'Monoton', sans-serif;
+    font-size: 1rem;
+    word-spacing: 0.75rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+      position: absolute;
+      right:$space-large;
+      top: $space-large;
+    }
+  }
+
+
+
+  .activity__grey--speech-bubble {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: $space;
+    & > span {
+      flex-shrink: 0;
+      height: 3.2rem;
+      width: 3.2rem;
+    }
+
+    & > p {
+      background-color: $idea-gold;
+      border-radius: $small-border-radius;
+      color: $white;
+      margin-left: $space-small;
+      padding: $space-small;
+      position: relative;
+
+      &::before {
+        background-image: linear-gradient(to top right, transparent 50%, $idea-gold 0);
+        content:  '';
+        height: 1.25em;
+        left: -0.75em;
+        position: absolute;
+        top: 0;
+        width: 1.25em;
+      }
+    }
+    .btn-orange {
+      margin: $space-large 0 0;
+    }
+  }
+
+  //& :where(h3, p:not(:last-child)) {
+    //margin-bottom: $space-x-small;
+  //}
+
+  & h3, p:not(:last-child) {
+    margin-bottom: $space-x-small;
+  }
+}
+
+.container__large .activity__grey--speech-bubble img {
+  margin: 0;
+}
+
+.badge__title--page {
+  text-align: center;
+}
+
+.badge__title--container {
+
+  & .badge__title--title {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: -2.75rem;
+    text-align: center;
+
+    @media (min-width: $sm-width) {
+      font-size: 4rem;
+    }
+
+    @media (min-width: $md-width) {
+      font-size: 8rem;
+      margin-bottom: -2.5rem;
+    }
+  }
+
+  & .badge__title--image {
+    margin-bottom: $space-x-small;
+  }
+
+  & .badge__title--brief {
+    text-align: center;
+  }
+}
+
+.badge__goals--title {
+  font-size: inherit;
+  font-weight: normal;
+  margin-bottom: $space-medium;
+  text-align: center;
+}
+
+.badge__goals--begin {
+  text-align: center;
+}
+
+.badge__title--svg {
+  display: none;
+  position: fixed;
+  z-index: -1;
+
+  @media (min-width: $md-width) {
+    bottom: 0;
+    display: block;
+  }
+}
+
+#badge__title--svg-1 {
+  bottom: -5%;
+  left: -32.5%;
+}
+
+#badge__title--svg-2 {
+  bottom: -12.5%;
+  left: 10%;
+}
+
+#badge__title--svg-3 {
+  bottom: 0;
+  left: 22.5%;
+}
+
+#badge__title--svg-4 {
+  bottom: -5%;
+  right: -20%;
+}
+
+#badge__title--svg-5 {
+  bottom: -15%;
+  right: 5%;
+}
+
+.animation-holder {
+  margin-bottom: $space-x-small;
+  position: relative;
+  width: 100%;
+}
+
+.animation-holder__home {
+  min-height: 456px;
+  max-width: 960px;
+  margin: 0 auto $space-small auto;
+  overflow: hidden;
+}
+
+.animation-holder__step-1 {
+  min-height: 441px;
+  max-width: 720px;
+  margin: $space-large auto;
+  overflow: visible;
+}
+
+.animation-holder__success {
+  min-height: 500px;
+  text-align: left;
+
+  & > h1 {
+    font-size: 6rem;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+  }
+
+  @media (min-width: $md-width) {
+  }
+}
+
+.chatbot__toggle--icon {
+  bottom: $space-large;
+  filter: drop-shadow(0 0.25em 0.5em $grey-3);
+  height: 3rem;
+  position: fixed;
+  right: $space-large;
+  width: 3rem;
+  z-index: 3;
+
+  @media (min-width: $md-width) {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
+.example {
+  background-color: $pastel-yellow;
+  border: 0.1em solid $grey-3;
+  border-radius: $x-small-border-radius;
+  padding: $space-x-small;
+}

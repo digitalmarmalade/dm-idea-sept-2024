@@ -1,0 +1,78 @@
+html { font-size: 62.5%; box-sizing: border-box; width: 100%; }
+*, *:before, *:after { box-sizing: inherit; }
+body { padding: 0; margin: 0; background: $body-bg; color: $body-colour; font-family: 'Lato', sans-serif; height: 100%; }
+html { height: 100%;}
+
+main { overflow: hidden; }
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.hide { display: none !important; }
+.disabled { pointer-events: none; }
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+h1, h2, h3, h4 { font-weight: 400; margin: 0; }
+
+h1 { font-size: 4rem; margin: 0 0 2rem; line-height: 1; font-weight: 900; }
+h2 { font-size: 3.6rem; margin: 2rem 0; line-height: 1.3; position: relative; z-index: 1; }
+h3 { font-size: 2.8rem; margin: 0 0 2rem; line-height: 1.3; }
+ul { margin: 1rem 0 2rem; padding: 0 0 0 2rem; }
+p,
+li { font-size: 1.6rem; line-height: 1.6; position: relative; z-index: 1; margin: 0 0 1.4rem; }
+
+@media only screen and (min-width: 600px) {
+    h1 { font-size: 6rem; margin: 0 0 3rem; }
+    h2,
+    h3 { margin: 0 0 3rem; }
+    p,
+    li { font-size: 1.6rem; line-height: 2; margin: 0 0 1.4rem; }
+}
+@media only screen and (min-width: 1024px) {
+    h1 { font-size: 6rem; margin: 0 0 3rem; line-height: 1.1; }
+    p,
+    li { font-size: 1.6rem; line-height: 2; margin: 0 0 1.4rem; }
+}
+
+
+.triangle { width: 0; height: 0; border-style: solid; border-width: 0 172px 171px 172px; border-color: transparent transparent #F7EFE4 transparent; opacity: .5; }
+
+.holder { max-width: 68rem; margin: 0 auto; padding: 0 4rem; position: relative; z-index: 5; }
+
+.page-header-image { position: relative; z-index: 10; }
+.page-header { position: relative; 
+
+    &:before {content: ''; position: absolute; top: 0; left: 0; border-style: solid; border-color: transparent; border-bottom-color: transparent; border-bottom-width: 30vh; border-right-width: 0; border-top-width: 30vh; border-left-width: 100vw; border-top-color: #8F1ED8; z-index: 3; opacity: 1; }
+    &:after {content: ''; position: absolute; top: 0; left: 0; border-style: solid; border-color: transparent; border-bottom-color: transparent; border-bottom-width: 30vh; border-right-width: 0; border-top-width: 20vh; border-left-width: 100vw; border-top-color: #312671; opacity: .3; z-index: 4; }
+    
+}
+.page-header-triangles { position: absolute; left: 0; right: 0; top: 0;
+    
+ /*  &:before {content: ''; position: absolute; top: 0; left: -15%; border-style: solid; border-color: transparent; border-bottom-color: transparent; border-bottom-width: 30vh; border-right-width: 100vw; border-top-width: 30vh; border-left-width: 0; border-top-color: #8F1ED8; z-index: 1; opacity: .5; }
+    &:after {content: ''; position: absolute; top: 0; left: -15%; border-style: solid; border-color: transparent; border-bottom-color: transparent; border-bottom-width: 30vh; border-right-width: 100vw; border-top-width: 20vh; border-left-width: 0; border-top-color: #312671; opacity: .3; z-index: 2; }*/
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .page-header { 
+        &:before { border-bottom-width: 35vh; border-top-width: 35vh; border-left-width: 100vw; }
+        &:after { border-bottom-width: 26vh; border-top-width: 26vh; border-left-width: 100vw; }
+    }
+    .page-header-triangles { 
+        &:before { border-bottom-width: 35vh; border-right-width: 100vw; border-top-width: 35vh; }
+        &:after { border-bottom-width: 26vh; border-right-width: 100vw; border-top-width: 26vh; }
+    }
+}
+
+.tooltip { position: relative; border-bottom: .1rem dotted #fff; display: inline-block; cursor: help;
+    &:after { display: block; content: attr(data-title); padding: 1rem; border-radius: .3rem; position: absolute; background: rgba(0,0,0,.8); box-shadow: .2rem .2rem .4rem rgba(0,0,0,.2); max-width: 25rem; color: #fff; width: 25rem; line-height: 1.3; font-size: 1.4rem; display: none; margin: .5rem 0 0; }
+    &:hover { background: rgba(0,0,0,.1); border-radius: .3rem;
+        &:after { display: block; }
+    }
+}

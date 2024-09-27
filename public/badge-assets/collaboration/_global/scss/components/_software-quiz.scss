@@ -1,0 +1,72 @@
+.software-quiz-holder { background: #4abfe1; padding: 2rem 0 0; margin: 0; color: #213773;
+    h2 { color: inherit; }
+}
+
+@media only screen and (min-width: $md-width) {
+    .software-quiz-holder { background: #4abfe1; padding: 2rem 2rem 4rem; margin: 8rem 0 0; }
+}
+
+.software-quiz-question { position: relative; background: #fff; padding: 4rem 2rem; max-width: 60rem; margin: 0 auto; color: #333; text-align: left; border-bottom: 1px solid #ccc; z-index: 2; box-shadow: 1rem 1rem 2rem rgba(0,0,0,.2); }
+
+@media only screen and (min-width: 768px) {
+    .software-quiz-question { padding: 4rem; border: none; margin: 0 auto 4rem; }
+}
+
+.software-quiz-label { display: flex; height: 8rem; width: 6rem; align-items: center; justify-content: center;  margin: 0 1rem 0 0; float: left;
+    img { max-width: 60%; }
+}
+.software-quiz-label--question { background: #223873; }
+.software-quiz-label--right { background: #018e33; }
+.software-quiz-label--wrong { background: #900; }
+
+@media only screen and (min-width: $md-width) {
+.software-quiz-holder { margin: 4rem 0 0; padding: 2rem 0; }
+    .software-quiz-label { position: absolute; left: 0; top: 4rem; width: 8rem; height: 8rem; transition: left .25s ease .2s; 
+        .come-in & { left: -6rem; }
+    }
+}
+
+.software-quiz-options { list-style: none; margin: 0 -.5rem; padding: 1rem 0 0; display: flex; flex-wrap: wrap;
+    li { width: 50%; padding: 0 .5rem 1rem; margin: 0; font-size: 1.6rem; }
+    a { display: block; text-decoration: none; color: inherit; background: #ededed; text-align: center; padding: 10.4rem 1rem 2rem; height: 16rem; position: relative; }
+    img { display: block; margin: 0 auto .5rem; }
+    .option-hover { position: absolute; left: 0; right: 0; top: 100%; bottom: 0; display: block; transition: top .25s ease; overflow: hidden; }
+    .option-hover-content { text-align: center; padding: 10.4rem 1rem 2rem; display: block;  height: 16rem; position: absolute; left: 0; bottom: -1rem; width: 100%; color: #fff; z-index: 1; }
+    a:hover,
+    .selected { 
+        .option-hover { top: 0; }
+    }
+}
+.disabled a { pointer-events: none; cursor: pointer;  }
+
+@media only screen and (min-width: $md-width) {
+    .software-quiz-options  { 
+        li { width: 25%; }
+    }
+}
+
+.option-slack {
+    a { border-bottom: 1rem solid #e41570; background: #ededed url(../img/step-1/quiz-slack.png) no-repeat center 2rem; }
+    .option-hover-content { background: #e41570 url(../img/step-1/quiz-slack-white.png) no-repeat center 2rem; }
+}
+.option-trello {
+    a { border-bottom: 1rem solid #0079bf; background: #ededed url(../img/step-1/quiz-trello.png) no-repeat center 2rem; }
+    .option-hover-content { background: #0079bf url(../img/step-1/quiz-trello-white.png) no-repeat center 2rem; }
+}
+.option-conceptboard {
+    a { border-bottom: 1rem solid #1b7dc1; background: #ededed url(../img/step-1/quiz-conceptboard.png) no-repeat center 2rem; }
+    .option-hover-content { background: #1b7dc1 url(../img/step-1/quiz-conceptboard-white.png) no-repeat center 2rem; }
+}
+.option-teamweek {
+    a { border-bottom: 1rem solid #5fd257; background: #ededed url(../img/step-1/quiz-teamweek.png) no-repeat center 2rem; }
+    .option-hover-content { background: #5fd257 url(../img/step-1/quiz-teamweek-white.png) no-repeat center 2rem; }
+}
+
+.software-quiz-answer { position: relative; margin: 0 -2rem; padding: 2rem; }
+@media only screen and (min-width: $md-width) {
+    .software-quiz-answer { margin: 0 -4rem; padding: 4rem 4rem 0; }
+}
+
+.well-done { max-width: 100%; }
+
+.next-step { text-align: center; padding: 4rem 0; }

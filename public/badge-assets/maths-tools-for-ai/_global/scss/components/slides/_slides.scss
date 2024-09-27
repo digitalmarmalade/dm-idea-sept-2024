@@ -1,0 +1,561 @@
+.slides__holder {
+  transform: scale(.9);
+  margin: -1.6em auto 0;
+}
+
+.slides {
+    margin: .3em auto;
+    width: 100%;
+    color: $blue-dark;
+    .slide {
+      
+    }
+  h2 {
+    font-size: 100%;
+  }
+  li, p, .btn {
+    font-size: 80%;
+  }
+  .col-single {
+    margin: 0 auto .8em;
+  }
+  .disabled {
+    pointer-events:
+    none; opacity: .5;
+  }
+  .tooltipster  {
+    border-color: $blue-dark;
+  }
+  .slide {
+    width: 100%;
+    &.slide--activity {
+      border-radius: $border-radius;
+      background: $gradient--blue-light;
+    }
+    &:last-child {
+      img {
+        width: 50%;
+        margin: -1.2rem auto 1.2rem;
+      }
+      .activity--feedback {
+        img {
+          width: 60px;
+        }
+      }
+    }
+  }
+  .cols {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    margin: 0;
+  }
+  .col {
+    width: 100%;
+    height:100%;
+    height: auto;
+    padding: 1.2em;
+    + .col {
+      margin: -2.4em 0 0;
+    }
+
+
+    img {
+      width: 70%;
+      margin: 0 auto;
+    }
+    &.col:nth-child(2) {
+      img {
+        margin: -1.2em auto 1.2em;
+        &.illustration--system-map {
+          width: 75%;
+          margin: .4em auto;
+        }
+      }
+
+    }
+    &.col--no-pading {
+      padding: .6rem;
+    }
+
+
+  }
+
+  .box--relationship {
+    img {
+      width: 50%;
+    }
+  }
+
+  .tooltip {
+    border-color: $blue-dark;
+  }
+  .tooltip .tooltiptext {
+    max-width: 350px;
+    line-height: 1.4;
+    &::after {
+      margin-left: -20px;
+      border-width: 20px;
+    }
+  }
+  .holder {
+    height: 100%;
+  }
+  .question {
+    .btn {
+      margin: 0;
+    }
+    .list--activity-answers {
+      margin: .4em auto;
+      .list--activity-answers__item {
+        margin: .2rem;
+      }
+    }
+  }
+
+  .activity--fill-blanks {
+    fieldset {
+      margin: 1.2rem 0;
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  .slide--activity {
+    font-size: 125%;
+  }
+
+
+  .activity--feedback {
+    margin: 0;
+    width: 100%;
+    img {
+      display: flex !important; /* this is need to override the dynamic css from the slides */
+      width: 60px;
+      margin: 0;
+    }
+    ul {
+      margin: .2em 0 0;
+    }
+    li {
+      color: $white;
+      margin: 0 0 .8rem;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    p {
+      font-size: 115%;
+      text-align: left;
+    }
+    &.activity--feedback-fail {
+      p {
+        color: white;
+      }
+    }
+    .holder {
+      padding:0;
+    }
+    .btn {
+      width: 10em;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    background: transparent;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+    transition: $transition;
+    &.slick-disabled {
+      opacity: 0;
+    }
+    &:hover {
+      opacity: .25;
+    }
+    &.slick-prev {
+      left: -1rem;
+      &::before {
+        content:url("../svg/icon--arrow-left.svg");
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &.slick-next {
+      right: -1rem;
+      &::before {
+        content:url("../svg/icon--arrow-right.svg");
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  .slick-dots {
+    width: auto;
+    margin: .8rem 0 0;
+    padding: 0;
+    display: inline-flex;
+    li {
+      cursor: pointer;
+      border-radius: .4rem;
+      width: .4rem;
+      height: .4rem;
+      display: inline-flex;
+      padding: 0;
+      margin: 0 .2rem;
+      transition: $transition;
+      pointer-events: none;
+      button {
+        border: none;
+        font-size: 0px;
+        color: transparent;
+        background-color: $white;
+        border-radius: .4rem;
+        width: .4rem;
+        height: .4rem;
+        padding: 0;
+        cursor: pointer;
+        transition: $transition;
+      }
+      &:hover,
+      &.slick-active {
+        button {
+          background-color: $blue-light;
+        }
+      }
+
+    }
+
+  }
+}
+
+
+  .slides__holder, .slick-slide, .slides {
+  height: 550px !important;
+}
+
+
+
+@media only screen and (min-width: $sm-width) {
+  .slides__holder {
+    transform: scale(.85);
+  }
+  .slides {
+
+    h2 {
+      font-size: 100%;
+    }
+    li,  p {
+      font-size: 75%;
+
+    }
+    .col {
+      img {
+        margin: 0;
+        &.illustration--system-map {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+
+      + .col {
+        margin: 0;
+      }
+      &.col--negative-top-margin {
+        margin: -2.4em 0 0;
+      }
+    }
+
+    .slide--activity {
+      font-size: 100%;
+    }
+    .question {
+      .list--activity-answers {
+        .list--activity-answers__item {
+          width: calc(50% - .4rem);
+        }
+      }
+      .list--activity-answers-3-cols {
+        .list--activity-answers__item {
+          width: calc(33.3% - .4rem);
+        }
+      }
+    }
+    .activity--fill-blanks {
+      fieldset {
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .activity--feedback {
+      p {
+        text-align: left;
+      }
+      .btn {
+        width: 12rem;
+        position: absolute;
+        margin: 0;
+        left: 50%;
+        margin-left: -6rem;
+        bottom: 1.6rem;
+      }
+    }
+    .box--relationship {
+      padding: .8em 1.6em;
+      p {
+        text-align: center;
+      }
+      img {
+        margin: .4em;
+        width: 60%;
+      }
+    }
+  }
+  .slides__holder, .slick-slide, .slides {
+    height: 360px !important;
+  }
+
+}
+
+@media only screen and (min-width: $md-width) {
+  .slides__holder {
+    transform: scale(.75);
+    margin: -8em auto;
+  }
+  .slides {
+
+    .holder {
+      margin:0 auto;
+      padding: $padding-lg;
+    }
+    h2 {
+      text-align: center;
+      font-size: 250%;
+      margin: 0 0 .4em;
+    }
+    p, li, .btn {
+      text-align: center;
+      font-size: 125%;
+    }
+    .cols {
+      padding: $padding-lg;
+      flex-direction: column;
+
+    }
+    .col {
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+      &.col--no-pading {
+        padding: .6rem;
+      }
+
+    }
+
+    .box--relationship {
+      img {
+        width: 80%;
+      }
+    }
+    .question {
+
+      .list--activity-answers {
+        margin: 1.6em auto;
+        .list--activity-answers__item {
+          width: 100%;
+          margin: .4rem 0;
+          padding: $padding;
+        }
+      }
+
+    }
+    .activity--fill-blanks {
+      fieldset {
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .activity--feedback {
+      .speech-bubble::after {
+        content: " ";
+        position: absolute;
+        top: 97.5%;
+        border-width: 1.2rem;
+        border-style: solid;
+      }
+    }
+    .activity--feedback-fail {
+      p {
+        color: $white;
+      }
+    }
+    .slick-arrow {
+      &.slick-prev {
+        margin-left: -1rem;
+        &::before {
+          transform: scale(2);
+        }
+      }
+
+      &.slick-next {
+        margin-right: -1rem;
+        &::before {
+          transform: scale(2);
+        }
+      }
+    }
+    .slick-dots {
+      top: 1.2rem;
+      position: relative;
+      transform: scale(1.5);
+    }
+
+    .slide--activity {
+      font-size: 125%;
+    }
+
+  }
+
+  .slides__holder, .slick-slide, .slides {
+    height: 1024px !important;
+  }
+
+}
+
+@media only screen and (min-width: 812px) {
+  .slides__holder {
+    transform: scale(.85);
+    max-width: 1278px;
+    margin: -3.2em auto;
+  }
+  .slides {
+    height: 600px;
+    width: 100%;
+    padding: 0 0 2.4em;
+
+    .slide {
+      &:last-child {
+        img {
+          width: 57.5%;
+          margin: 0 auto 2.4rem;
+        }
+        .activity--feedback {
+          img {
+            margin: 0;
+          }
+        }
+      }
+      .col {
+        img.illustration--system-map {
+          width: 82.5%;
+        }
+        .col--negative-top-margin {
+          margin: -5.4em 0 0;
+        }
+      }
+
+
+
+    }
+    .slide--activity {
+      font-size: 100%;
+    }
+
+
+    .cols {
+      flex-direction: row;
+
+    }
+
+    h2{
+      font-size: 150%;
+      text-align: left;
+    }
+    p, li, .btn {
+      text-align: left;
+      font-size: 100%;
+    }
+    .question {
+      p, li, .btn {
+        text-align: center;
+      }
+
+      .list--activity-answers {
+        .list--activity-answers__item {
+          width: calc(50% - .8rem);
+          margin: .4rem;
+        }
+      }
+      .list--activity-answers-3-cols {
+        .list--activity-answers__item {
+          width: calc(33.3% - .8rem);
+        }
+      }
+
+    }
+
+    .activity--fill-blanks {
+      fieldset {
+        p {
+          text-align: left;
+        }
+      }
+    }
+
+
+  }
+  .slick-slider {
+    max-height: 680px !important;
+  }
+  .slides__holder, .slick-slide, .slides {
+    height: 660px !important;
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+  .slides {
+    .slide {
+      .col {
+        img.illustration--system-map {
+          width: 82%;
+        }
+      }
+    }
+  }
+}
+
+
+#slick-slide013 .activity--feedback-fail {
+  max-width: 40rem;
+}
+
+// Fix for white line.
+
+.slick-slider .slide {
+  margin-left: .1rem;
+  margin-right: .1rem;
+  padding-left: .1rem;
+  padding-right: .1rem;
+}

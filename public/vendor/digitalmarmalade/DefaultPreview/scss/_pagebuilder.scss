@@ -1,0 +1,49 @@
+/*--Widgets--*/
+
+body.with-widgets { padding-bottom: 300px; }
+.show-preview-btn { color: $white; background: $theme-primary-bg; border-radius: 5px; display: inline-block; padding: 5px 10px; font-size: 14px; font-weight: 400; vertical-align: middle; margin: 0 10px 0 0; position: relative; top: -3px; cursor: pointer; line-height: 1.4; }
+.widget-page * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.widget-teaser-horizontal h1 { margin: 0 0 10px; }
+.widget-image-holder img, .widget-image img { width: 100%; max-width: 100%; }
+.widget-promo .widget-image-holder { margin: 0 0 10px; }
+.widget-text h1 { margin: 0 0 10px; }
+.widget-page h1 input { color: $theme-primary-bg; width: 100%; }
+.main-form .widget .widget-cta-action-holder { padding: 10px 0; }
+.widget-page .add-a-new-widget-row { padding: 20px; text-align: center; background: $other-grey; margin: 0; }
+.widget-list h1 { display: inline-block; margin: 0 15px 15px 0; font-size: 20px; }
+.widget-nav a { color: $grey; }
+.widget-list .slides {margin: 0; padding: 0; list-style: none;} 
+.widget-list { position: fixed; background: $other-grey; padding: 10px 20px 65px; border-top: 3px solid $theme-primary-bg; left: 0; bottom: 0; width: 100%; z-index: 9;  }
+.widget-list .slides li { background: $white; text-align: center; padding: 10px 0; margin-right: 10px; width: 204px; float: left; display: block; }
+.widget-list .slides li a { text-decoration: none; }
+.widget-list .slides li img { margin: 0 auto 10px; display: block; }
+.widget-list .flex-prev, .widget-list .flex-next { position: absolute; top: 50%; background: $grey url(../img/pagebuilder/next.png) no-repeat 12px center; border-radius: 50%; text-indent: -9999em; height: 30px; width: 30px; }
+.widget-control { position: absolute; top: 10px; right: 20px; margin: 0; cursor: pointer; color: $theme-primary-bg; text-indent: -9999em; background: url(../img/btn-clear2.png) no-repeat -30px 0; height: 15px; width: 15px; }
+.flex-viewport { overflow: visible !important; }
+.widget-list { padding-bottom: 15px !important; z-index:20; }
+
+.section-wrapper { position: relative; display: block; }
+.section-wrapper .btn-delete.main-btn-delete { display: block; position: absolute; top: 6px; right: 10px; }
+
+.widget-img { margin: 0 auto 10px; display: block; background: $grey; width: 177px; height: 113px; } 
+.widget-img.Rich-Text { background: url('../img/pagebuilder/widget-icons/widget-text.gif'); }
+.widget-img.Pod-Images { background: url('../img/pagebuilder/widget-icons/widget-image.gif'); }
+.widget-img.Section-Banner { background: url('../img/pagebuilder/widget-icons/widget-promo.gif'); }
+
+#widgetCarousel { position: relative; display: block;  overflow: auto;  }
+#widgetCarousel > #widgetCarouselBelt { position: relative; display: block; }
+.widget-list .slides { position: relative; display: block; overflow: auto; width: 1284px; }
+
+.widget.snippet { background: #fff; }
+
+.ui-sortable-handle.ui-sortable-helper .widget.snippet { @include cast-shadow(16px,16px,18px,-9px,0,0,0,.75); } 
+ 
+
+/*
+			<!--<li><img src="/mdf3/public/img/pagebuilder/widget-icons/widget-headline.gif" alt="Headline">Headline</li>
+			<li><img src="/mdf3/public/img/pagebuilder/widget-icons/widget-text.gif" alt="Text"> Text</li>
+			<li><img src="/mdf3/public/img/pagebuilder/widget-icons/widget-image.gif" alt="Image">Image</li>
+			<li><img src="/mdf3/public/img/pagebuilder/widget-icons/widget-teaser-horizontal.gif" alt="Teaser Horizontal"> Teaser Horizontal</li>
+			<li><img src="/mdf3/public/img/pagebuilder/widget-icons/widget-teaser-vertical.gif" alt="Teaser Vertical"> Teaser Vertical</li>
+			<li><img src="/mdf3/public/img/pagebuilder/widget-icons/widget-promo.gif" alt="Promo">Promo</li>-->
+*/

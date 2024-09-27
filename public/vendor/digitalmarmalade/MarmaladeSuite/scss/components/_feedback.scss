@@ -1,0 +1,11 @@
+/*! Feedback */
+
+.feedback-message.positive { position: fixed; top: -50px; left: 0; right: 0; height: 50px; background: #696; text-align: center; z-index: 1000; transition: top .25s ease-in; opacity: .9; }
+.show-feedback .feedback-message.positive { top: 0; }
+.feedback-message.positive p { color: #fff; margin: 0; height: 50px; line-height: 50px; font-size: 1.4em; }
+.positive .close-feedback { position: absolute; right: 20px; top: 50%; display: block; width: 50px; height: 50px; margin: -25px 0 0; color: #fff; line-height: 50px; text-align: center; font-size: 1.2em; }
+
+.feedback-message.negative { max-width: 800px; margin: 0 auto 20px; background: #fcc; padding: 20px 20px 15px; position: relative; }
+.feedback-message.negative p { margin: 0 0 5px 10px; color: #900; }
+.feedback-message.negative .negative-title { border-bottom: 1px dotted #900; padding: 0 0 10px; margin: 0 0 15px; }
+.negative .close-negative-feedback { position: absolute; right: 0; top: 0; display: block; width: 50px; height: 50px; margin: 0; color: #900; line-height: 50px; text-align: center; font-size: 1em; }

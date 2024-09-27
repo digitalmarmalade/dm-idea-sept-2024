@@ -1,0 +1,75 @@
+.task-2 {
+  .correct-answers {
+    position: relative;
+    img {
+      position: relative;
+      z-index: 2;
+      margin-bottom: -16.5%;
+    }
+    p {
+      padding: 20px 80px;
+      border-radius: $border-radius;
+      background-color: $blue;
+      text-align: center;
+      text-transform: uppercase;
+      box-shadow: $box-shadow;
+    }
+    span {
+      font-size: 3em;
+      font-weight: 900;
+      display: block;
+      line-height: 1.1;
+      span {
+        display: inline;
+        font-size: 1em;
+      }
+    }
+  }
+  .correct-answer {
+    color: $green;
+  }
+  .correct-order {
+    color: $white;
+    background-color: $green;
+  }
+  .ui-sortable-helper {
+    color: $white;
+    background-color: $green;
+    box-shadow: $box-shadow;
+  }
+
+  .hint {
+    background-color: $white;
+    color: $blue;
+    margin: 1em 0 0;
+    .tooltip {
+      border-bottom: none;
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .task-2 {
+    ul.list li {
+      font-size: 1em;
+    }
+    .cols {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .check-answers-wrapper {
+    margin: 0 0 0 2em;
+    .btn {
+      padding: 1em;
+      &.hint {font-size: .75em;}
+    }
+    .correct-answers {
+
+      img {
+      margin-bottom: -3.25em;
+      }
+    }
+  }
+}

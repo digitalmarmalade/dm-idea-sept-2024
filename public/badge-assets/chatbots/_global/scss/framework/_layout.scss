@@ -1,0 +1,244 @@
+body {
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100%;
+  padding-bottom: $space-small;
+  position: relative;
+}
+
+.container__large {
+  margin: auto;
+  max-width: 960px;
+  padding: 0 $space-medium;
+
+  & .container__small {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 65ch;
+
+    & {
+      margin-bottom: $space-small;
+    }
+  }
+
+  & .list__single-col, & .list__double-col, & .list__triple-col {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    //gap: $space-xx-small;
+
+    & li {
+      background-color: $grey-1;
+      border-radius: $small-border-radius;
+    }
+
+    // ideally we would use flex gap as above, but this would fix top margins
+  }
+
+  & .list__single-col, & .list__double-col {
+
+    & li {
+      padding: $space-small;
+    }
+  }
+
+  & .list__single-col {
+    text-align: center;
+
+    & li {
+
+      & + li {
+        margin-top: $space-x-small;
+      }
+    }
+  }
+
+  // only when there's enough space
+  & .list__double-col {
+
+    & li {
+      text-align: center;
+
+      & + li {
+        margin-top: $space-x-small;
+      }
+    }
+
+    @media (min-width: $md-width) {
+      align-content: flex-start; // fix this
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      & li {
+        flex: 1 0 33.333%;
+
+        // ideally we would use flex gap as above, but this would fix left margins
+        &:nth-of-type(even) {
+          margin-left: $space;
+        }
+
+        // fixes spacing between list items on dbl cols
+        &:nth-of-type(2) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+      // only when there's enough space
+  & .list__triple-col {
+
+    & li {
+      padding: $space-small;
+      text-align: center;
+
+      & + li {
+        margin-top: $space-x-small;
+      }
+    }
+
+    @media (min-width: $md-width) {
+      align-content: flex-start; // fix this
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      & li {
+        flex: 1 0 25%;
+
+        // ideally we would use flex gap as above, but this would fix left margins
+        &:not(:first-child):not(:nth-child(4)) {
+          margin-left: $space-x-small;
+        }
+
+        // fixes spacing between list items on dbl cols
+        &:nth-child(-n + 3) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  & img {
+    margin: auto;
+  }
+}
+
+// on wide enough devices
+.two-col-table__container {
+  table {
+    border-collapse: collapse;
+  }
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $space-large;
+  .two-col-table {
+    border-spacing: $space;
+    line-height: inherit;
+    margin-bottom: $space-x-small;
+
+    &:first-child th {
+      background-color: $green-success;
+    }
+
+    &:last-child th {
+      background-color: $red-fail;
+    }
+
+    & th {
+      border-top-right-radius: $medium-border-radius;
+      border-top-left-radius: $medium-border-radius;
+      color: $white;
+      font-size: 125%;
+      padding: $space-small 0;
+      text-transform: uppercase;
+      border: .2rem solid white;
+
+      & > img {
+        display: inline-block;
+        margin: 0 0 0.2em $space;
+        vertical-align: middle;
+      }
+    }
+
+    & td {
+      background-color: $grey-1;
+      padding: $space-small;
+      border: .2rem solid white;
+    }
+
+    & tr {
+
+      &:last-child > td {
+        border-bottom-right-radius: $small-border-radius;
+        border-bottom-left-radius: $small-border-radius;
+      }
+    }
+
+    @media (min-width: $lg-width) {
+
+      &:first-child {
+        margin-right: -0.25em;
+      }
+    }
+  }
+
+  @media (min-width: $lg-width) {
+    flex-direction: row;
+  }
+}
+
+section {
+
+  & + section {
+    margin-top: $space-xx-large;
+
+    &.complete {
+      margin: $space-large $space-large;
+    }
+  }
+}
+
+article {
+
+  &:not(:first-child) {
+    margin-top: $space-small;
+  }
+}
+
+.hidden, .hide {
+  display: none !important;
+}
+
+.inline {
+  display: inline-block !important;
+}
+
+.disclaimer {
+  font-size: $small-text-size;
+  padding-bottom: $space-xx-small;
+}
+
+.disabled {
+  opacity: 0.33;
+  pointer-events: none;
+}
+
+.pe-none {
+  pointer-events: none;
+}
+
+.closed {
+  transform: scale(0) !important;
+}
+
+:is(a, button:not(button.btn), input, textarea):focus {
+  outline: 0.1em dashed $grey-5;
+  outline-offset: 0.1em;
+}
+
+.mb-m {
+  margin-bottom: $space-medium;
+}

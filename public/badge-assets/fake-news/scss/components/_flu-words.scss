@@ -1,0 +1,111 @@
+.flu-words {
+  background-color: $white;
+  box-shadow: 0 0 1.5em 0.15em $grey-2;
+  cursor: pointer;
+  padding: $space-small;
+
+  & .flu-words__header {
+    display: flex;
+    flex-direction: column;
+    gap: $space-small;
+    margin-bottom: $space-small;
+
+    & > * {
+      //width: calc(50% - #{$space-small});
+    }
+
+    & > .flu-words__header--inner {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      width: 100%;
+
+      @media (min-width: $md-width) {
+        padding-left: 1rem;
+        width: calc(50% - #{$space-small});
+      }
+    }
+
+    @media (min-width: $md-width) {
+      flex-direction: row;
+    }
+  }
+
+  & .flu-words__image {
+    width: 100%;
+
+    @media (min-width: $md-width) {
+      width: calc(50% - #{$space-small});
+    }
+  }
+
+  & .flu-words__title {
+    font-size: $r-medium;
+  }
+
+  & .flu-words__content {
+    display: flex;
+    flex-direction: column;
+    font-size: $r-small;
+    gap: $space-small;
+
+    & > .flu-words__content--first, & > .flu-words__content--second {
+      flex: 1;
+    }
+
+    & .flu-words__source {
+      text-align: right;
+    }
+
+    @media (min-width: $md-width) {
+      flex-direction: row;
+      font-size: $r-x-small;
+    }
+  }
+}
+
+.flu-selected {
+  color: $green-success;
+  font-weight: bold;
+}
+
+.flu-words-timer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: $space-medium;
+  justify-content: center;
+  height: auto;
+
+  .countdown-animation .countdown-animation__svg{
+    flex: 1;
+    position: relative;
+    height: 160px;
+  }
+  .countdown-animation .countdown-animation__time {
+    top:90px;
+    font-size: 3rem;
+    @media (min-width: $md-width) {
+      top:80px;
+    }
+  }
+
+  .countdown-animation .countdown-animation__unit--dig {
+    bottom: 16%;
+    @media (min-width: $sm-width) {
+      bottom: 32%;
+    }
+
+    @media (min-width: $md-width) {
+      bottom: 40%;
+    }
+  }
+
+  & .flu-words-timer__start {
+    margin-bottom: $space-small;
+  }
+
+  @media (min-width: $sm-width) {
+    flex-direction: row;
+  }
+}

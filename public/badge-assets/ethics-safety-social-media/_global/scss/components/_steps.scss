@@ -1,0 +1,35 @@
+.step {
+  background-color: $light-green;
+  font-weight: 700;
+  color: $green;
+  // height: 50px;
+  // line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 1em;
+  padding: 5px 0 5px 70px;
+  width: calc(100% - 70px);
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .step {
+    line-height: 70px;
+    padding: 5px 0 5px 100px;
+    width: calc(100% - 100px);
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step {
+    padding: 5px 0 5px 110px;
+    width: calc(100% - 110px);
+  }
+}
+
+@media only screen and (min-width: $xl-width) {
+  .step {
+    padding: 5px 0 5px 160px;
+    width: calc(100% - 160px);
+  }
+}

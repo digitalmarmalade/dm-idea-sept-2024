@@ -1,0 +1,157 @@
+html { font-size: 62.5%; box-sizing: border-box; width: 100%; }
+*, *:before, *:after { box-sizing: inherit; }
+body { padding: 0; margin: 0; background: $body-bg; color: $body-colour; font-family: 'Vollkorn', serif; height: 100%; }
+html { height: 100%;}
+
+main { overflow: hidden; display: block; }
+
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.hide { display: none !important; }
+.disabled { pointer-events: none; }
+
+.visuallyhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
+
+h1, h2, h3, h4 { font-weight: 400; margin: 0; }
+
+h1 { font-size: 4rem; margin: 0 0 2rem; line-height: 1.2; }
+h2 { font-size: 3.6rem; margin: 2rem 0; line-height: 1.3; position: relative; z-index: 1; }
+h3 { font-size: 2.8rem; margin: 0 0 2rem; line-height: 1.3; }
+p,
+li { font-size: 2rem; line-height: 1.6; position: relative; z-index: 1; margin: 0 0 1.4rem; }
+
+@media only screen and (min-width: 600px) {
+    h1 { font-size: 6rem; margin: 10rem 0 3rem; }
+    h2,
+    h3 { margin: 0 0 3rem; }
+    p,
+    li { font-size: 2rem; line-height: 2; margin: 0 0 1.4rem; }
+}
+@media only screen and (min-width: 1024px) {
+    h1 { font-size: 6.4rem; margin: 10rem 0 3rem; }
+    p,
+    li { font-size: 2rem; line-height: 2; margin: 0 0 1.4rem; }
+}
+
+
+.triangle { width: 0; height: 0; border-style: solid; border-width: 0 172px 171px 172px; border-color: transparent transparent #F7EFE4 transparent; opacity: .5; }
+
+.holder { max-width: 92rem; margin: 0 auto; padding: 0 2rem; }
+
+@media only screen and (max-width: 767px) {
+    .columns { display: flex; flex-direction: column; }   
+    .columns--content-right { flex-direction: column-reverse; }
+    .columns--content-left { flex-direction: column-reverse; }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .columns { display: flex; margin: 0 -2rem; }
+    .columns--text { align-items: flex-start; 
+    }
+    .column { flex: 1; padding: 7rem 2rem; display: flex; flex-direction: column; justify-content: center;
+        p:last-of-type { margin: 0; }
+    }    
+}
+
+.tint-section { background: rgba(248, 241, 231, 0.75); overflow: hidden; padding: 4rem 0; }
+@media only screen and (min-width: 768px) {
+    .tint-section { padding: 10rem 0; margin: 5rem 0 0; }   
+}
+
+.grey-tint-section { background: #ededed; overflow: hidden; padding: 4rem 0; }
+@media only screen and (min-width: 768px) {
+    .grey-tint-section { padding: 10rem 0; margin: 5rem 0 0; }   
+}
+
+.grey-tint-section + .tint-section { margin-top: 0; }
+
+.lines { position: absolute; width: 45rem; opacity: .3; transform: rotate(-45deg); transform-origin: center center;
+    span::before,
+    span::after { content: ''; animation: linesAnim 5s linear 2s infinite forwards; }
+    span,
+    span::before,
+    span::after { display: block; height: .1rem; background: #000; width: 35rem;  }
+    span { position: relative; margin: 1.5rem 0; }
+    span:before { position: absolute; top: -.5rem; left: 0; }
+    span:after { position: absolute; bottom: -.5rem; left: 0; }
+    
+    span:nth-child(1) { margin-left: auto; animation-delay: 2.6s;
+        &::before { left: -1rem; animation-delay: 3.2s; }
+        &:after { left: -5rem; animation-delay: 3s; }
+    }
+    span:nth-child(2) { margin-left: auto; margin-right: auto; animation-delay: 2s;
+        &::before { left: 2.5rem; animation-delay: 2.8s; }
+        &:after { left: -1rem; animation-delay: 3.6s; }
+    }
+    span:nth-child(3) { animation-delay: 2.2s;
+        &::before { left: 2.5rem; animation-delay: 3.4s; }
+        &:after { left: -2rem; animation-delay: 2.4s; }
+    }
+}
+
+@keyframes linesAnim {
+    0%, 70%, 100%   { width: 35rem; }
+    85% { width: 2rem; } 
+}
+
+.squares { position: absolute; width: 15rem; height: 15rem; border: .1rem solid #000; opacity: .2; 
+    &::before,
+    &::after { content: ''; display: block; }
+    &::before { position: absolute; left: 50%; top: 50%; width: 14rem; height: 14rem; border: .1rem solid #000; transform: translate(-50%, -50%); }
+    &::after { position: absolute; left: 50%; top: 50%; width: 13rem; height: 13rem; border: .1rem solid #000; transform: translate(-50%, -50%); }
+    span { position: absolute; left: 50%; top: 50%; width: 12rem; height: 12rem; border: .1rem solid #000; transform: translate(-50%, -50%); 
+        &::after { position: absolute; left: 50%; top: 50%; width: 11rem; height: 11rem; border: .1rem solid #000; transform: translate(-50%, -50%); }
+    }
+}
+
+.barbell { position: absolute; height: .1rem; background: #000; width: 12rem; opacity: .3; transform: rotate(-45deg);
+    &::before,
+    &::after { display: block; content: ''; width: 4.5rem; height: 4.5rem; position: absolute; top: -2.2rem; border-radius: 50%; border: .1rem solid #000; }
+    &::before { right: 100%; }
+    &::after { left: 100%; }
+}
+
+.barbell--small { width: 8rem;
+    &::before,
+    &::after { width: 1.5rem; height: 1.5rem; top: -.7rem; }    
+}
+
+@keyframes barbellAnim {
+    0%, 90%   { transform: rotate(-45deg);}
+    95% { transform: rotate(-135deg); }
+    100% { transform: rotate(-225deg); } 
+}
+
+.fill-square { width: 1.2rem; height: 1.2rem; position: absolute; background: #444; left: 50%; top: 50%; }
+
+@keyframes squareAnim {
+    0%, 65%, 95% { transform: scale(1) rotate(0deg); }
+    70% { transform: scale(1.2) rotate(0deg); }
+    80% { transform: scale(0.1) rotate(355deg); }
+    90% { transform: scale(1.2) rotate(0deg); }
+}
+
+.triangle { width: 0; height: 0; border-style: solid; border-width: 0 172px 172px 172px; border-color: transparent transparent #F7EFE4 transparent; opacity: .5; position: absolute;  }
+
+.circle { width: 20rem; height: 20rem; background: #F7EFE4; opacity: .8; border-radius: 50%; position: absolute; }
+.circle--white { background: #fff; }
+
+.centre-text { max-width: 44rem; margin: 5rem auto; }
+.full-width-image { box-shadow: 0 0 2px rgba(0,0,0,.2); display: block; max-width: 100%; margin: 0 0 3rem; }
+
+.text-and-diagrams { padding-top: 5rem; padding-bottom: 4rem; 
+    h3 { margin-top: 4rem; }
+}
+@media only screen and (min-width: 768px) {
+    .text-and-diagrams { padding-top: 13rem; padding-bottom: 8rem; 
+        h3 { margin-top: 4rem; }
+    }
+    .top-margin { margin-top: 5rem; }
+}

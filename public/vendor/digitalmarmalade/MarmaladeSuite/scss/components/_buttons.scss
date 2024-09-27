@@ -1,0 +1,75 @@
+/*! Buttons */
+
+$btn-default-colour: #333;
+$btn-default-bg: #fff;
+$btn-default-border: #ccc;
+
+$btn-primary-colour: #fff;
+$btn-primary-bg: $primary-colour;
+$btn-primary-border: #ea0e37;
+
+$btn-primary-focus-colour: #fff;
+$btn-primary-focus-bg: #333;
+$btn-primary-focus-border: #333;
+
+$btn-secondary-colour: #666;
+$btn-secondary-bg: #ddd;
+$btn-secondary-border: #ddd;
+
+$btn-secondary-focus-colour: #666;
+$btn-secondary-focus-bg: #ccc;
+$btn-secondary-focus-border: #ccc;
+
+$btn-tertiary-colour: #fff;
+$btn-tertiary-bg: #c30;
+$btn-tertiary-border: #c30;
+
+$btn-tertiary-focus-colour: #fff;
+$btn-tertiary-focus-bg: darken($btn-tertiary-bg, 10%);
+$btn-tertiary-focus-border: darken($btn-tertiary-border, 10%);
+
+$btn-padding: 10px 15px;
+$lg-btn-padding: 10px 35px;
+$sm-btn-padding: 4px 8px;
+
+$btn-border-radius: 25px;
+
+.btn { display: inline-block; padding: $btn-padding; margin-bottom: 0; font-weight: 400; line-height: 1.1; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;background-image: none; border-radius: $btn-border-radius; text-decoration: none; transition: background .2s, border-color .2s, color .2s; text-transform: uppercase; border: none; text-align: center; transition: background .25s ease-in, border-color .25s ease-in; }
+
+.btn:disabled { opacity: .5; }
+
+.btn-default { color: $btn-default-colour; background-color: $btn-default-bg; border-color: $btn-default-border }
+
+.btn-default.active,
+.btn-default.focus,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover { color: #333; background-color: #e6e6e6; border-color: #adadad; }
+
+.btn-primary:disabled,
+.btn-primary:disabled:hover,
+.btn-primary { color: $btn-primary-colour; background-color: $btn-primary-bg; border-color: $btn-primary-border; }
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary:hover { color: $btn-primary-focus-colour;background-color: $btn-primary-focus-bg; border-color: $btn-primary-focus-border }
+
+.btn-secondary { color: $btn-secondary-colour; background-color: $btn-secondary-bg; border-color: $btn-secondary-border; }
+.btn-secondary:active, 
+.btn-secondary:focus, 
+.btn-secondary:hover { color: $btn-secondary-focus-colour;background-color: $btn-secondary-focus-bg; border-color: $btn-secondary-focus-border }
+
+.btn-tertiary { color: $btn-tertiary-colour; background-color: $btn-tertiary-bg; border-color: $btn-tertiary-border; }
+.btn-tertiary:active, 
+.btn-tertiary:focus, 
+.btn-tertiary:hover { color: $btn-tertiary-focus-colour;background-color: $btn-tertiary-focus-bg; border-color: $btn-tertiary-focus-border }
+
+.btn--lg { font-size: 100%; padding: $lg-btn-padding; }
+.btn--sm { font-size: 90%; padding: $sm-btn-padding; }
+
+.btn-outline { color: $primary-colour; border: 1px solid transparent; background: none; }
+.btn-outline:active, 
+.btn-outline:focus, 
+.btn-outline:hover { }
+.on .btn-outline { color: $primary-colour; border-color: $primary-colour; padding: 8px 15px }
+
+

@@ -1,0 +1,59 @@
+ul.task-profile {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  li {
+    width: calc(50% - 40px);
+    display: inline-block;
+    margin: 5px 10px;
+    a {
+
+      width: 100%;
+      // height: 100%;
+      padding: 5px;
+      background-color: $white;
+      display: block;
+      transition: all .3s;
+    }
+    a:hover, a.selected {
+      background-color: $purple;
+    }
+    img {
+      vertical-align: top;
+      transition: all .3s;
+    }
+  }
+
+}
+
+ul.task-profile-facebook {
+  a {
+      border: 1px solid #ededed;
+  }
+}
+
+ul.task-profile-linkedin li a:hover,
+ul.task-profile-linkedin li a.selected {
+  background-color: $white;
+}
+
+ul.task-profile-linkedin a img,
+ul.task-profile-linkedin a img{
+  border: 4px solid $white;
+  border-radius: 50%;
+}
+
+ul.task-profile-linkedin a:hover img,
+ul.task-profile-linkedin a.selected img{
+  border: 4px solid $purple;
+}
+
+@media only screen and (min-width: $lg-width) {
+  ul.task-profile {
+    li {
+      width: calc(33.3% - 40px);
+      display: inline-block;
+      margin: 5px 10px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 2.4rem auto;
+}
+
+img.illustration--the-future-of-work {
+  margin: -2.4em auto;
+}
+
+img.illustration--nest-thermostat {
+  margin-bottom: -5.6em;
+}
+
+@media only screen and (min-width: $sm-width) {
+  img {
+    margin: 4.8rem auto;
+  }
+  img.illustration--the-future-of-work {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  img.illustration--nest-thermostat {
+    position: absolute;
+    bottom: -1%;
+    left: -2.5%;
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .illustration--face-recognition {
+    width: 85%;
+    height: auto;
+    margin: 3.2em auto 0;
+  }
+}

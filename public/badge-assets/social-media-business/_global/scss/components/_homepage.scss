@@ -1,0 +1,236 @@
+
+.home .intro {
+  margin: 40px auto;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 800;
+  max-width: 400px;
+}
+
+.home-businesses {
+  position: relative;
+  margin-bottom: -25px;
+  .buildings {
+    width: 400%;
+    height: auto;
+    display: block;
+    margin-left: -200%;
+  }
+  .people {
+    position: absolute;
+    width: 200%;
+    height: auto;
+    display: block;
+    bottom: -15px;
+    left: 0;
+    margin-left: -50%;
+  }
+}
+
+.airplane-title {
+  animation-duration: 20s;
+  animation-name: airplane_title;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 2;
+  position: relative;
+  display: block;
+}
+
+.cloud {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  display: block;
+  // border: 1px solid red;
+}
+
+.cloud-1 {
+  left: -25%;
+  top: 15%;
+  animation-duration: 100s;
+  animation-name: cloud_left;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0;
+}
+.cloud-2 {
+    left: -20%;
+  top: 17.5%;
+  animation-duration: 60s;
+  animation-name: cloud_left;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+}
+.cloud-3 {
+    right: -20%;
+  top: 20%;
+  animation-duration: 100s;
+  animation-name: cloud_right;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay:0;
+}
+.cloud-4 {
+    right: -20%;
+  top: 22.5%;
+  animation-duration: 80s;
+  animation-name: cloud_right;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 6s;
+}
+.cloud-5 {
+    left: -20%;
+  top: 25%;
+  animation-duration: 120s;
+  animation-name: cloud_left;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 9s;
+}
+.cloud-6 {
+    right: -20%;
+  top: 12.5%;
+  animation-duration: 120s;
+  animation-name: cloud_right;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 9s;
+}
+
+.learning-outcomes {
+  li {
+    background-color: $pink;
+    color: $white;
+    font-family: 'bebas_neuebold';
+    font-weight: 700;
+    padding: 8px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    font-size: 1.5em;
+  }
+}
+
+.scroll-down {
+  display: none;
+}
+
+
+@keyframes airplane_title {
+  from {
+    left: -55%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+
+@keyframes cloud_left {
+  from {
+    left: -20%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+
+@keyframes cloud_right {
+  from {
+    right: -20%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .home .panel {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .airplane-title {
+    width: 60%;
+    max-width: 800px;
+    left: 0;
+  }
+
+  .cloud {
+    width: 20%;
+  }
+
+  .home-businesses {
+    margin-bottom: -40px;
+    .buildings {
+      width: 200%;
+      margin-left: -50%;
+
+    }
+    .people {
+      width: 90%;
+      left: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $lg-width) {
+
+
+  .home .intro {
+    margin: 40px auto;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    max-width: 400px;
+    text-align: left;
+    margin: -100px 0 -60px 15%;
+  }
+
+
+  .cloud {
+    width: 20%;
+  }
+
+  .home-businesses {
+
+    .buildings {
+      width: 150%;
+      margin-left: -25%;
+    }
+    .people {
+      width: 80%;
+      left: 0;
+      margin-left: 10%;
+      bottom: -35px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+  .scroll-down {
+    display: block;
+    position: absolute;
+    bottom: -125px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    background-color: $white;
+    img {
+      width: 100%;
+      height: auto;
+      transition: all .3s;
+    }
+    &:hover {
+      img {
+        margin-top: 2px;
+      }
+    }
+  }
+}

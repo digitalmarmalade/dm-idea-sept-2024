@@ -1,0 +1,133 @@
+.tooltip-trigger {
+    text-decoration:underline;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// Don't touch the edge of the screen.
+.tooltipster-base.tooltipster-top,
+.tooltipster-base.tooltipster-bottom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.tooltipster-base.tooltipster-right {
+    padding-right: 1.5rem;
+}
+
+.tooltipster-base.tooltipster-left {
+    padding-left: 1.5rem;
+}
+
+.tooltipster {
+    background: var(--black);
+}
+
+.tooltip_templates {
+    display: none;
+}
+
+.tooltipster-sidetip .tooltipster-box {
+    background: var(--black);
+    border-radius:var(--space-xxsm);
+    padding: var(--space-md);
+    text-align: left;
+    box-shadow: var(--box-shadow-button);
+    border: 0 none;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color:  var(--black);
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color:  var(--black);
+}
+
+.tooltipster-sidetip .tooltipster-content {
+    color:  var(--white);
+    font-size: var(--font-size-default);
+    line-height: inherit;
+    padding: 0;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow {
+    bottom: 0;
+    height: 1rem;
+    margin-left: -1rem;
+    width: 2rem;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-border {
+    border: 1rem solid transparent;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-background {
+    border: 1rem solid transparent;
+}
+
+.tooltipster-sidetip .tooltipster-arrow-background {
+    border: 1rem solid transparent;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    top: 0;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+    margin-top: 1rem;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-box {
+    margin-bottom: 1rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border,
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    display: none;
+}
+
+.tooltipster-sidetip.tooltipster-top {
+    margin-top: .5rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom {
+    margin-top: -.5rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+    height: 1rem;
+    margin-left: -1rem;
+    top: 0;
+    width: 2rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+    border-bottom-color: var(--black);
+    top: 0;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+    margin-top: 1.4rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+    height: 2rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-uncropped {
+    top: -.7rem;
+}
+
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow {
+    top: 2px;
+ }
+
+ .tooltipster {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

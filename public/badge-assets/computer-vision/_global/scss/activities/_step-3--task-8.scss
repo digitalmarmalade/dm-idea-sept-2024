@@ -1,0 +1,106 @@
+.task-8 {
+
+  .image_container {
+    position: relative;
+    width: 286px;
+    height: 214px;
+    border: .2rem solid white;
+  }
+
+  .crime-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .selection-items__holder {
+
+    .item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      cursor: pointer;
+      &.correct {
+          border: .2rem solid $green;
+          background-color: rgba(0, 203, 116, 0.4);
+      }
+
+      &.wrong {
+        border: .2rem solid $red;
+          background-color: rgba(247, 29, 87, 0.4);
+
+      }
+    }
+
+    #image-frame {
+        width: 55px;
+        height: 60px;
+        top: 1%;
+        left: 75%;
+    }
+
+    #helmet {
+      width: 85px;
+      height: 85px;
+      top: 33%;
+      left: 70%;
+    }
+
+    #screen {
+      width: 130px;
+      height: 115px;
+      top: 12%;
+      left: 23%;
+    }
+
+    #keyboard {
+      width: 120px;
+      height: 50px;
+      top: 65%;
+      left: 22%;
+    }
+
+    #pen-holder {
+      width: 40px;
+      height: 60px;
+      top: 65%;
+      left: 3%;
+    }
+
+    #cup {
+      width: 45px;
+      height: 45px;
+      top: 70%;
+      left: 65%;
+    }
+
+    #lamp {
+        width:75px;
+        height: 115px;
+        top: 7.5%;
+        left: 0;
+    }
+
+  }
+
+  .caption {
+    margin: 1.2rem  0;
+    font-weight: bold;
+  }
+
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  .task-8 {
+    .image_container {
+      margin: 7.2rem 0 2.4rem;
+      transform: scale(2);
+    }
+
+
+  }
+}

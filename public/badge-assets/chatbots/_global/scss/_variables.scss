@@ -1,0 +1,72 @@
+/* SCREEN SIZES */
+
+$sm-width: 568px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xl-width: 1200px;
+$xxl-width: 1500px;
+
+/* Colours */
+
+$white: #FFFFFF;
+$grey-1: #f3f5f8;
+$grey-2: #eceff4;
+$grey-3: #d8dee8;
+$grey-4: #bfc8d6;
+$grey-5: #bfc8d6;
+$pastel-yellow: #fef7e6;
+$pastel-pink: #fee7fc;
+$pastel-blue: #b8def9;
+$orange: #f68352;
+$purple: #311944;
+$purple-1: #7C6FE3;
+$pink: #FE8D88;
+$green-success: #29a366;
+$red-fail: #f68352;
+$idea-gold: #C89A09;
+
+$gradient-orange: linear-gradient(90deg, #FFC444 0%, #F36F56 123.6%, #F36F56 124.05%);
+$gradient-purple: linear-gradient(46.24deg, #311944 28.61%, #893976 78.12%);
+$gradient-purple-2: linear-gradient(135deg, #311944 10%, #A03976 78.12%);
+$gradient-blue: linear-gradient(90deg, #444b8c 0%, #26264f 100%);
+
+/* Layout */
+
+$space: 1.4rem;
+
+$space-xx-small: calc(.2 * #{$space});
+$space-x-small: calc(.4 * #{$space});
+$space-small: calc(.8 * #{$space});
+$space-medium: calc(1.2 * #{$space});
+$space-large: calc(1.6 * #{$space});
+$space-x-large: calc(2.4 * #{$space});
+$space-xx-large: calc(3.2 * #{$space});
+$space-xxx-large: calc(4.8 * #{$space});
+
+$large-border-radius: 3em;
+$medium-border-radius: 1em;
+$small-border-radius: 0.5em;
+$x-small-border-radius: 0.25em;
+
+$box-shadow:4px 4px 20px rgba(0, 0, 0, 0.25); // Change?
+$box-shadow-two: 1em 2em 3em 2em $grey-1;
+
+/* Typography */ /*more variables for this in framework/typography */
+
+$main-text-size: 1rem;
+$small-text-size: 85%;
+$x-small-text-size: 70%;
+
+$main-text-style: 'Roboto', sans-serif;
+$title-text-style: 'Monoton', sans-serif;
+
+$main-text-colour: #24264A;
+
+
+/* Transitions */
+$transition: all .3s ease-in-out;
+
+
+/* Box shadows */
+
+/* STEP 1 */

@@ -1,0 +1,44 @@
+<svg width="120" height="121" viewBox="0 0 120 121" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="circle--lines">
+    <mask id="mask0_1922_1180" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-43" y="-3" width="206" height="126">
+      <g id="lines">
+        <rect id="Rectangle 45" x="-4.05591" y="6.66052" width="1.60278" height="114.07" transform="rotate(-3.22738 -4.05591 6.66052)" fill="#C4C4C4"/>
+        <rect id="Rectangle 46" x="0.744781" y="6.38989" width="1.60278" height="114.07" transform="rotate(-3.22738 0.744781 6.38989)" fill="#C4C4C4"/>
+        <rect id="Rectangle 47" x="5.5455" y="6.11914" width="1.60278" height="114.07" transform="rotate(-3.22738 5.5455 6.11914)" fill="#C4C4C4"/>
+        <rect id="Rectangle 48" x="10.3462" y="5.84839" width="1.60278" height="114.07" transform="rotate(-3.22738 10.3462 5.84839)" fill="#C4C4C4"/>
+        <rect id="Rectangle 49" x="15.1469" y="5.57776" width="1.60278" height="114.07" transform="rotate(-3.22738 15.1469 5.57776)" fill="#C4C4C4"/>
+        <rect id="Rectangle 50" x="19.9476" y="5.30701" width="1.60278" height="114.07" transform="rotate(-3.22738 19.9476 5.30701)" fill="#C4C4C4"/>
+        <rect id="Rectangle 51" x="24.7484" y="5.03638" width="1.60278" height="114.07" transform="rotate(-3.22738 24.7484 5.03638)" fill="#C4C4C4"/>
+        <rect id="Rectangle 52" x="29.5491" y="4.76562" width="1.60278" height="114.07" transform="rotate(-3.22738 29.5491 4.76562)" fill="#C4C4C4"/>
+        <rect id="Rectangle 53" x="34.3498" y="4.49487" width="1.60278" height="114.07" transform="rotate(-3.22738 34.3498 4.49487)" fill="#C4C4C4"/>
+        <rect id="Rectangle 54" x="39.1505" y="4.22424" width="1.60278" height="114.07" transform="rotate(-3.22738 39.1505 4.22424)" fill="#C4C4C4"/>
+        <rect id="Rectangle 55" x="43.9512" y="3.95349" width="1.60278" height="114.07" transform="rotate(-3.22738 43.9512 3.95349)" fill="#C4C4C4"/>
+        <rect id="Rectangle 56" x="48.7519" y="3.68286" width="1.60278" height="114.07" transform="rotate(-3.22738 48.7519 3.68286)" fill="#C4C4C4"/>
+        <rect id="Rectangle 57" x="53.5526" y="3.41211" width="1.60278" height="114.07" transform="rotate(-3.22738 53.5526 3.41211)" fill="#C4C4C4"/>
+        <rect id="Rectangle 58" x="58.3533" y="3.14136" width="1.60278" height="114.07" transform="rotate(-3.22738 58.3533 3.14136)" fill="#C4C4C4"/>
+        <rect id="Rectangle 59" x="63.154" y="2.87073" width="1.60278" height="114.07" transform="rotate(-3.22738 63.154 2.87073)" fill="#C4C4C4"/>
+        <rect id="Rectangle 60" x="67.9547" y="2.59998" width="1.60278" height="114.07" transform="rotate(-3.22738 67.9547 2.59998)" fill="#C4C4C4"/>
+        <rect id="Rectangle 61" x="72.7554" y="2.32935" width="1.60278" height="114.07" transform="rotate(-3.22738 72.7554 2.32935)" fill="#C4C4C4"/>
+        <rect id="Rectangle 62" x="77.5562" y="2.05859" width="1.60278" height="114.07" transform="rotate(-3.22738 77.5562 2.05859)" fill="#C4C4C4"/>
+        <rect id="Rectangle 63" x="82.3568" y="1.78784" width="1.60278" height="114.07" transform="rotate(-3.22738 82.3568 1.78784)" fill="#C4C4C4"/>
+        <rect id="Rectangle 64" x="87.1576" y="1.51721" width="1.60278" height="114.07" transform="rotate(-3.22738 87.1576 1.51721)" fill="#C4C4C4"/>
+        <rect id="Rectangle 65" x="91.9583" y="1.24646" width="1.60278" height="114.07" transform="rotate(-3.22738 91.9583 1.24646)" fill="#C4C4C4"/>
+        <rect id="Rectangle 66" x="96.759" y="0.97583" width="1.60278" height="114.07" transform="rotate(-3.22738 96.759 0.97583)" fill="#C4C4C4"/>
+        <rect id="Rectangle 67" x="101.56" y="0.705078" width="1.60278" height="114.07" transform="rotate(-3.22738 101.56 0.705078)" fill="#C4C4C4"/>
+        <rect id="Rectangle 68" x="106.36" y="0.434326" width="1.60278" height="114.07" transform="rotate(-3.22738 106.36 0.434326)" fill="#C4C4C4"/>
+        <rect id="Rectangle 69" x="111.161" y="0.163696" width="1.60278" height="114.07" transform="rotate(-3.22738 111.161 0.163696)" fill="#C4C4C4"/>
+        <rect id="Rectangle 70" x="115.962" y="-0.107056" width="1.60278" height="114.07" transform="rotate(-3.22738 115.962 -0.107056)" fill="#C4C4C4"/>
+      </g>
+    </mask>
+    <g mask="url(#mask0_1922_1180)">
+      <ellipse id="Ellipse 5" cx="60.4205" cy="60.1504" rx="57.1421" ry="57.0349" transform="rotate(-3.22738 60.4205 60.1504)" fill="url(#paint0_linear_1922_1180)"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear_1922_1180" x1="3.27838" y1="62.2014" x2="145.043" y2="62.2014" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFC444"/>
+      <stop offset="0.996403" stop-color="#F36F56"/>
+      <stop offset="1" stop-color="#F36F56"/>
+    </linearGradient>
+  </defs>
+</svg>

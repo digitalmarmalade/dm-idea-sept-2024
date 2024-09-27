@@ -1,0 +1,318 @@
+
+.the-clothes-shop {
+  position: relative;
+  .building {
+    width: 100%;
+    bottom: -20px;
+    left: 15%;
+    position: relative;
+  }
+  .people {
+    position: absolute;
+    width: 50%;
+    bottom: -40px;
+    left: 22.5%;
+  }
+  .fence {
+    position: absolute;
+    width: 200%;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.the-clothes-shop-task {
+  font-weight: 400;
+  ul {
+    max-width: 80%;
+    margin: 0 auto;
+
+    li {
+      width: calc(100% - 40px);
+      margin: 0 0 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: $light-yellow;
+      color: $dark-blue;
+
+      text-align: left;
+      padding: 20px;
+      transition: all .3s;
+    }
+    li:hover {
+      background-color: $green;
+      color: $white;
+    }
+    .selected {
+      background-color: $green;
+      color: $white;
+    }
+  }
+  .feedback-fail .btn {
+    font-size: .75em;
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+
+  .the-clothes-shop {
+
+      .building {
+      bottom: -60px;
+      left: 10%;
+    }
+    .people {
+      bottom: -80px;
+      left: 22.5%;
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .the-clothes-shop{
+    padding-top: 0;
+    .building {
+      width: 80%;
+      left: 25%;
+      position: relative;
+    }
+    .people {
+      width: 40%;
+      bottom: -80px;
+      left: 20%;
+    }
+    .fence {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $xl-width) {
+  .the-clothes-shop {
+    .building {
+      width: 50%;
+      bottom: -60px;
+      left: 20%;
+    }
+    .people {
+      width: 25%;
+      bottom: -100px;
+      left: 65%;
+    }
+    .fence {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.panel-drag-drop{
+  float:left;
+  padding: 20px 20px 0;
+  float: left;
+  padding: 20px 20px 0;
+  width: calc(100% - 50px);
+  margin: 0 0 40px;
+  .feedback {
+    width: 100%;
+    float: left;
+    color: #FFF;
+    position: relative;
+    padding: 50px 20px 10px;
+    margin: 20px -20px 0;
+  }
+}
+
+ .drop-wrapper {
+  width: 336px;
+  margin: 30px auto 0 auto;
+  float: left;
+}
+
+.drop-wrapper .droppable-zone {
+  width: 60%;
+  float: left;
+  font-size: .725em;
+  margin: 0 auto;
+  padding: 0 0 40px;
+}
+
+ .drop-wrapper .dropzone {
+  height: 86px;
+  background-size: 100%;
+  width: 57.5%;
+  border: 2px solid $dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin: 0 0 20px;
+  padding: 0 5px;
+  background-color: $white;
+  flex-direction: column;
+
+   p {
+     margin: 0 0 5px;
+   }
+   span {
+     font-family: 'bebas_neuebold';
+     font-weight: 700;
+     display: block;
+     margin: 0 0 5px;
+   }
+   .after-drop {
+     img {
+      width: 20px;
+      height: auto;
+     }
+     display: none;
+    font-size: .75em;
+   }
+   .before-drop {
+    width: 100%;
+    display: block;
+    font-size: .8em;
+   }
+}
+ .drop-wrapper .drag-options {
+  width: 30%;
+  float: left;
+  font-size: .9em;
+  margin-right: 10px;
+
+}
+.drop-wrapper .drag-option {
+    background-color: $light-yellow;
+    border-radius: 5px;
+    margin: 0 0 18px;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:6px 10px;
+    transition: all .3s;
+    cursor: pointer;
+    font-size: .9em;
+    text-align: center;
+    margin: 0 0 20px 0;
+    width: calc(100% - 16px);
+    font-family: 'bebas_neuebold';
+    font-weight: 700;
+    color: $dark-blue;
+    img {
+      height: 50px;
+      margin: 5px;
+
+    }
+  }
+
+.drop-wrapper li.ui-draggable-dragging {
+  background-colour:$green;
+
+}
+
+.drop-wrapper .drag-option:hover {
+  background-colour:$green;
+}
+
+@media only screen and (min-width: 375px) {
+
+  .drop-wrapper .dropzone {
+    width: calc(100% - 40px);
+  }
+
+}
+
+
+@media only screen and (min-width: $md-width) {
+    .drop-wrapper{
+      width: 100%;
+      margin: 30px auto 0 auto;
+      max-width: 600px;
+      float: none;
+    }
+
+    .drop-wrapper .drag-options {
+      width: 20%;
+      margin-right: 20px;
+    }
+
+    .drop-wrapper .drag-option {
+      padding: 5px;
+      font-size: 1.15em;
+      z-index: 3;
+      img {
+        height: 60px;
+        width: auto;
+        margin: 5px;
+      }
+    }
+
+    .drop-wrapper .droppable-zone {
+      width: calc(80% - 20px);
+    }
+
+    .drop-wrapper .dropzone {
+      width: 100%;
+      height: 99px;
+      position: relative;
+      background-color: $dark-blue;
+      color: $white;
+      align-items: flex-start;
+      .before-drop {
+        display: flex;
+        span {
+          border:1px solid red;
+          display: inline-flex;
+          width: 99px;
+          height: 99px;
+          border: 2px solid $dark-blue;
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          background-color: $white;
+          color: $dark-blue;
+        }
+        p {
+          width: calc(100% - 98px);
+          padding: 0 20px 0 108px;
+          text-align: left;
+          font-size: 1.5em;
+        }
+      }
+      .after-drop {
+        span {
+          border:1px solid red;
+          display: inline-flex;
+          width: 99px;
+          height: 99px;
+          border: 2px solid $dark-blue;
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          background-color: $white;
+          color: $dark-blue;
+          justify-content: center;
+          align-items: center;
+          font-size: 2em;
+          float:left;
+          line-height: 1;
+        }
+        p {
+          margin: 0;
+          padding: 0 0 0 110px;
+          text-align: left;
+          font-size: 1.65em;
+          max-width:340px;
+          display: inline-flex;
+        }
+      }
+    }
+
+}

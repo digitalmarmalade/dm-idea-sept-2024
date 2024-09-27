@@ -1,0 +1,343 @@
+.step-4__activity--step-1-option-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    & + li {
+      margin-top: $space-x-small;
+    }
+
+    & button {
+
+      & figure {
+
+        & > span {
+          align-items: center;
+          background-color: $white;
+          border-radius: 50%;
+          display: flex;
+          height: 144px;
+          justify-content: center;
+          width: 144px;
+
+          &.step-4__activity--step-1-success {
+            background-color: $green-success;
+          }
+
+          &.step-4__activity--step-1-fail {
+            background-color: $red-fail;
+          }
+        }
+
+        & > figcaption {
+          font-size: $small-text-size;
+          font-weight: bold;
+          line-height: 1;
+          padding-top: $space-xx-small;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    & li {
+
+      & + li {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.step-4__activity--eco-areas-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: $space-medium;
+
+  & > button {
+    background-color: $white;
+    border: 0.2em solid $orange;
+    border-radius: $small-border-radius;
+    padding: $space-xx-small $space-x-small;
+    margin: $space-xx-small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(33.3% - .6rem);
+
+
+    & > span {
+      background: $gradient-orange;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      text-transform: lowercase;
+      -webkit-background-clip: text;
+    }
+  }
+
+  & .step-4__activity--eco-areas-button-success {
+    background-color: $green-success;
+    background-image: url('/badge-assets/chatbots/_global/svg/icon--success-small.svg');
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    border-color: $green-success;
+    padding-right: $space-medium;
+    pointer-events: none;
+    text-align: left;
+
+    & > span {
+      color: $white;
+      width: 100%;
+    }
+  }
+
+  & .step-4__activity--eco-areas-button-fail {
+    background-color: $red-fail;
+    border-color: $red-fail;
+
+    & > span {
+      color: $white;
+    }
+  }
+}
+
+.step-4__activity--step-2-select-container {
+
+  & p {
+    background-color: $white;
+    border-radius: $small-border-radius;
+    margin-top: $space-x-small;
+    padding: $space-small;
+
+    & > label {
+      display: inline;
+
+      & > .step-4__activity--step-2-input {
+        background-color: $grey-1;
+        border: 0.2em solid $orange;
+        border-radius: $small-border-radius;
+        max-width: 12ch;
+
+        @media (min-width: $lg-width) {
+          margin: 0 $space;
+          max-width: 15ch;
+          padding: $space $space-xx-small;
+        }
+      }
+    }
+  }
+
+  & .step-4__activity--step-2-success, & .step-4__activity--step-2-fail {
+
+    & .inline {
+      border: 0;
+      padding: 0;
+
+      & select {
+        color: unset;
+        width: 64px;
+        text-align: center;
+        padding: .1rem .2rem;
+        background-color: rgba(255,255,255, .25);
+        border-radius: .2rem;
+      }
+    }
+
+    & .select-wrapper {
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  & .step-4__activity--step-2-success {
+    background-color: $green-success;
+    color: $white;
+  }
+
+  & .step-4__activity--step-2-fail {
+    background-color: $red-fail;
+    color: $white;
+  }
+}
+
+.step-4__activity--step-3-container {
+  background-color: $white;
+  border-radius: $medium-border-radius;
+  margin-bottom: $space-large;
+  padding: $space-medium;
+  max-width: 320px;
+  margin: 0 auto;
+
+  & .step-4__activity--step-3-chat-entry {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: $space-x-small;
+    }
+
+    & > p {
+      border-radius: $small-border-radius;
+      flex: 1;
+      font-size: 100%;
+      max-width: 85%;
+      padding: $space-x-small;
+      position: relative;
+
+      &::before, &::after {
+        content:  '';
+        height: 1.25em;
+        position: absolute;
+        top: 0;
+        width: 1em;
+      }
+
+      @media (min-width: $md-width) {
+        padding: $space;
+      }
+    }
+  }
+
+  & .step-4__activity--step-3-chat-entry-left-blue {
+
+    & > p {
+      background-color: $pastel-blue;
+      border-top-left-radius: 0;
+
+      &::before {
+        background-image: linear-gradient(to top right, transparent 50%, $pastel-blue 0);
+        left: -0.75em;
+      }
+    }
+  }
+
+  & .step-4__activity--step-3-chat-entry-right-yellow {
+    justify-content: flex-end;
+
+    & > p {
+      background-color: $pastel-yellow;
+      border-top-right-radius: 0;
+
+      &::after {
+        background-image: linear-gradient(to top left, transparent 50%, $pastel-yellow 0);
+        right: -0.75em;
+      }
+    }
+  }
+
+  @media (min-width: $md-width) {
+    padding: $space;
+  }
+}
+
+.step-4__activity--step-3-success-container {
+  background-color: $green-success;
+}
+
+.step-4__activity--step-3-fail-container {
+  background-color: $red-fail;
+}
+
+.step-4__activity--step-4-code-example-container {
+  background-color: $grey-2;
+  border: 0.1em solid $grey-3;
+  border-radius: $small-border-radius;
+  margin: $space-small 0;
+  padding: $space-xx-small;
+  @media (min-width: $md-width) {
+    padding: $space-medium;
+    margin: $space 0;
+  }
+
+}
+
+.step-4__activity--step-4-code-playground-container {
+  background-color: $white;
+  border: 0.1em solid $grey-3;
+
+  & .step-4__activity--step-4-code-playground-top {
+    border-bottom: 0.1em solid $grey-3;
+    display: flex;
+    justify-content: space-between;
+
+    .step-4__activity--step-4-code-playground-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 16.6%;
+      font-size: 62.5%;
+      padding: $space-xx-small;
+      transition: $transition;
+      @media (min-width: $md-width) {
+          padding: $space-x-small;
+          font-size: $small-text-size;
+      }
+      &:hover, &:focus, &.step-4__activity--step-4-code-playground-button-selected {
+        background-color:  $grey-2;
+
+
+      }
+    }
+  }
+
+  & .step-4__activity--step-4-code-playground-middle {
+    background-color: $grey-2;
+    border-bottom: 0.1em solid $grey-3;
+    display: flex;
+    flex-wrap: wrap;
+    padding: $space-xx-small;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // div.disabled {
+    //   filter: grayscale(50%);
+    // }
+    svg {
+      margin: $space-xx-small;
+      cursor: pointer;
+      filter: drop-shadow(0 0.25em 0.5em #d8dee8);
+      transition: $transition;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    @media (min-width: $md-width) {
+      flex-direction: row;
+    }
+  }
+
+  .fail--box {
+    padding-left: 3rem;
+    margin: 0;
+    border-radius: 0;
+
+    @media (min-width: $md-width) {
+      padding: $space-medium $space-medium $space-medium 4rem;
+    }
+  }
+
+  & .step-4__activity--step-4-code-playground-middle-long-content {
+    flex-direction: column;
+  }
+
+  & .step-4__activity--step-4-code-playground-bottom {
+    padding: $space-xx-small;
+
+    @media (min-width: $md-width) {
+      padding: $space-medium;
+    }
+  }
+
+}

@@ -1,0 +1,80 @@
+
+.step-9 {
+  .cols {
+    width: 100%;
+    margin: 0 0 40px;
+    img {
+      margin: 20px auto;
+    }
+  }
+  .cols:first-child {
+    img {
+      margin: 0;
+    }
+  }
+  .analytics {
+    li {
+      background-color: $light-blue;
+      padding: 20px 40px;
+      margin: 0 0 20px;
+    }
+    img {
+      width: 60%;
+      max-width: 100px;
+      margin: 20px auto;
+      display: block;
+    }
+    span {
+      font-family: 'bebas_neuebold';
+      font-weight: 700;
+      display: block;
+      font-size: 2em;
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .step-9 {
+    .cols:first-child {
+      padding: 200px 0 0;
+      p {
+      text-align: left;
+      }
+
+      .col {
+        margin: 0 10px;
+      }
+    }
+    .step-title {
+      margin-bottom: -60px;
+      h1 {
+        top: 0;
+      }
+    }
+
+    .panel-analytics {
+      .col {
+        text-align: left;
+        margin: 0 10px;
+      }
+      .analytics li {
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .step-9 {
+    .cols:first-child {
+      padding: 100px 0 0;
+    }
+    .step-title {
+      h1 {
+        top: 10%;
+      }
+    }
+  }
+
+}

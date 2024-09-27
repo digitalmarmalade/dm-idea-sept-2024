@@ -1,0 +1,124 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="199px" height="199px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+  <g transform="rotate(0 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-29s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(12 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-28s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(24 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-27s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(36 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-26s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(48 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-25s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(60 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-24s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(72 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-23s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(84 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-22s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(96 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-21s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(108 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-20s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(120 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-19s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(132 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-18s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(144 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-17s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(156 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-16s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(168 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-15s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(180 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-14s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(192 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-13s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(204 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-12s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(216 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-11s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(228 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-10s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(240 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-9s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(252 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-8s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(264 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-7s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(276 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-6s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(288 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-5s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(300 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-4s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(312 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-3s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(324 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-2s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(336 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="-1s" repeatCount="indefinite"></animate>
+    </rect>
+  </g><g transform="rotate(348 50 50)">
+    <rect x="47.5" y="3" rx="2" ry="2" width="5" height="10" fill="#f68352">
+      <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="30s" begin="0s" repeatCount="indefinite"></animate>
+    </rect>
+  </g>
+</svg>

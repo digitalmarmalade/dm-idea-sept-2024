@@ -1,0 +1,57 @@
+
+/* Advanced Checkbox Hack */
+body { -webkit-animation: bugfix infinite 1s; height: 100%; }
+html { height: 100%; }
+
+@-webkit-keyframes bugfix {
+  from { padding: 0; }
+  to {  padding: 0; }
+}
+
+
+.suite-nav { height: 50px; background: #fff; border-bottom: 1px solid #ccc; position: relative; margin: 0 0 20px; }
+
+.menu-trigger-holder { width: 50px; float: left; border-right: 1px solid #ccc; }
+.menu-trigger { display: block; height: 49px; width: 49px; position: relative; transition: $fade-transition; }
+.menu-trigger:hover { background: #ededed; }
+
+.menu-bar { position: absolute; left: 50%; top: 50%; margin: -2px 0 0 -15px;  }
+
+.menu-bar,
+.menu-bar::after,
+.menu-bar::before { display: block; background: $primary-colour; border-radius: 2px; width: 30px; height: 3px; content: ''; }
+
+.menu-bar::after { position: absolute; bottom: -9px; }
+.menu-bar::before { position: absolute; top: -9px; }
+
+.dropdown-nav { position: absolute; background: #fff; top: 50px; left: 0; width: 100%; padding: 50px 30px 30px; display: none; border-bottom: 1px solid #ccc; box-shadow: 0 1px 1px rgba(0,0,0,.2); z-index: 100; }
+.dropdown-nav ul { max-width: 800px; margin: 0 auto; padding: 0; list-style: none;
+	li { width: 33.3333%; float: left; margin: 0 0 20px; }
+	a { color: #333; text-decoration: none; text-transform: uppercase; display: inline-block; padding: 3px 10px; border-radius: 10px; transition: $fade-transition; }
+	a:hover { background: #ededed; }
+	li.on a { background: $primary-colour; color: #fff; }
+}
+
+.dropdown-nav.expanded { display: block; }
+
+.suite-nav { position: relative; }
+.suite-quicklinks { margin: 0; padding: 0; list-style: none; 
+	li { display: table; border-right: 1px solid #ccc; float: left; line-height: 1; }
+    li.right { float: right; border-right: 0; border-left: 1px solid #ccc;  }
+	a { color: $primary-colour; text-decoration: none; height: 49px; display: table-cell; vertical-align: middle; padding: 0 20px; text-transform: uppercase; transition: $fade-transition; }
+	a:hover { background: #ededed; }
+}
+
+.num-results-holder-quicklinks { position: absolute; display: block; top: 8px; right: 11px; list-style: none; padding: 0;  
+    li { float: left; }
+    a { background-color: #fff; border: 1px solid $pagination-border-colour; color: $pagination-link-colour; float: left; margin-left: -1px; padding: 6px 12px; position: relative; text-decoration: none; line-height: 1.4; transition: background .25s ease-in; }
+    
+    a:focus, 
+    a:hover { background-color: $pagination-hover-bg; color: $link-colour-hover; }    
+
+    li.on > span,
+    li.on > a,
+    li.on > a:hover { color: $pagination-active; background: $pagination-active-bg; cursor: default; }
+}
+
+

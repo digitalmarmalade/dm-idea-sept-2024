@@ -1,0 +1,194 @@
+.bg-grad--blue-dark {
+  background: $gradient--blue-dark;
+}
+
+.bg-grad--blue-light {
+  background: $gradient--blue-light;
+}
+
+.bg-grad--purple-dark {
+  background: $gradient--purple-dark;
+}
+
+
+
+.bg--empty-office {
+  height: 100vh;
+  background: $blue-dark url("../imgs/illustration--empty-office.png") no-repeat 0 100%;
+}
+
+.bg--cctv {
+  height: 100vh;
+  background: url("../imgs/illustration--cctv-sm.png") no-repeat center 100%, $gradient--purple-dark;
+  background-size: 300%;
+}
+
+.bg--cctv-2 {
+    height: auto;
+  background: url("../imgs/illustration--cctv-2-sm.png") no-repeat 0 100%, $gradient--purple-dark;
+}
+
+.bg--computer {
+  height: 100vh;
+  background: url("../imgs/illustration--computer-sm.png") no-repeat 0 35%;
+  background-size: 125%;
+  &.image--dropped {
+    height: 100vh;
+    background: url("../imgs/illustration--computer-image-dropped-sm.png") no-repeat 0 35%;
+    background-size: 125%
+  }
+
+  .bg--computer-processed-image {
+    height: 100vh;
+    background: url("../imgs/illustration--computer-processed-image-sm.png") no-repeat 0 35%;
+    background-size: 125%;
+  }
+}
+
+.bg--computer-zoomed-in {
+  position: relative;
+  min-height: 480px;
+
+}
+
+@media only screen and (min-width: $sm-width) {
+  .bg--empty-office {
+        height: auto;
+    background: $blue-dark url("../imgs/illustration--empty-office.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+  .bg--cctv {
+    height: auto;
+    background: url("../imgs/illustration--cctv.png") no-repeat center 100%, $gradient--purple-dark;
+    background-size: 200%;
+  }
+  .bg--cctv-2 {
+        height: auto;
+    background: url("../imgs/illustration--cctv-2.png") no-repeat 0 100%, $gradient--purple-dark;
+    background-size: 100%;
+  }
+  .bg--computer {
+
+    height: 100vh;
+    background: url("../imgs/illustration--computer.png") no-repeat 0 0;
+    background-size: 100%;
+      overflow: visible;
+    &.image--dropped {
+      height: 100vh;
+      background: url("../imgs/illustration--computer-image-dropped.png") no-repeat 0 0;
+      background-size: 100%;
+    }
+  }
+  .bg--computer-zoomed-in {
+    position: relative;
+    width: auto;
+    background: url("../imgs/illustration--computer-zoomed-in.png") no-repeat 50% 100%;
+    background-size: 90%;
+    min-height: 560px;
+  }
+
+  .bg--computer-processed-image {
+    background: url("../imgs/illustration--computer-processed-image.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+  .bg--empty-office {
+    background: $blue-dark url("../imgs/illustration--empty-office.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+  .bg--cctv {
+    background: url("../imgs/illustration--cctv.png") no-repeat center 100%, $gradient--purple-dark;
+    background-size: 200%;
+  }
+  .bg--cctv-2 {
+    background: url("../imgs/illustration--cctv-2.png") no-repeat 0 100%, $gradient--purple-dark;
+    background-size: 100%;
+  }
+  .bg--computer {
+    height: 100vh;
+    background: url("../imgs/illustration--computer.png") no-repeat 0 0;
+    background-size: 100%;
+      overflow: visible;
+    &.image--dropped {
+      height: 100vh;
+      background: url("../imgs/illustration--computer-image-dropped.png") no-repeat 0 0;
+      background-size: 100%;
+    }
+  }
+
+  .bg--computer-processed-image {
+    height: 640px;
+    background: url("../imgs/illustration--computer-processed-image.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .bg--empty-office {
+    background: $blue-dark url("../imgs/illustration--empty-office.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+  .bg--cctv {
+    background: url("../imgs/illustration--cctv.png") no-repeat center 100%,$gradient--purple-dark;
+    background-size: 100%;
+  }
+
+  .bg--computer-processed-image {
+    height: 720px;
+    background: url("../imgs/illustration--computer-processed-image.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+
+
+}
+
+
+
+
+@media only screen and (min-width: $xl-width) {
+  .bg--empty-office {
+    height: 100vh;
+    background: $blue-dark url("../imgs/illustration--empty-office.png") no-repeat 0 100%;
+    background-size: 100%;
+  }
+  .bg--cctv {
+    height: 100vh;
+    background: url("../imgs/illustration--cctv.png") no-repeat 0 100%,$gradient--purple-dark;
+    background-size: 100%;
+  }
+  .bg--cctv-2 {
+    height: 100vh;
+    background: url("../imgs/illustration--cctv-2.png") no-repeat 0 100%, $gradient--purple-dark;
+    background-size: 100%;
+  }
+  .bg--computer-zoomed-in {
+    background: url("../imgs/illustration--computer-zoomed-in.png") no-repeat 50% 100%;
+    background-size: 80%;
+  }
+  .bg--computer-processed-image {
+    height: 900px;
+    background: url("../imgs/illustration--computer-processed-image.png") no-repeat 0 0;
+    background-size: 100%;
+  }
+
+}
+
+@media only screen and (min-width: $xxl-width) {
+  .bg--computer-zoomed-in {
+    height: 60vh;
+    background: url("../imgs/illustration--computer-zoomed-in.png") no-repeat 50% 100%;
+    background-size: 100%;
+  }
+
+
+
+}

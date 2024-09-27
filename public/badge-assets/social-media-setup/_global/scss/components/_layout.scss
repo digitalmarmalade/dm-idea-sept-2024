@@ -1,0 +1,397 @@
+body, html, main{
+  // height:100%;
+
+}
+
+body > main{
+  height:auto;
+  min-height:100%;
+  float: left;
+  width: 100%;
+}
+
+section {
+  padding: 40px 0;
+  float: left;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+section.last-section {
+  padding: 40px 0 140px;
+}
+
+section.only-section {
+  padding: 0 0 140px;
+
+}
+
+section.section-success {
+  min-height: 100vh;
+  padding: 0 0 40px;
+  .holder {
+    width: 90%;
+  }
+}
+
+section.section-quiz-incomplete {
+  min-height: 100vh;
+  margin-bottom: -170px;
+}
+
+.section-1 {
+  background: $green url(../img/bg-green.png) repeat 0 0;
+  padding: 0 0 40px;
+}
+
+.section-2 {
+  background: $purple url(../img/bg-purple.png) repeat 0 0;
+  color: $white;
+  font-weight: 400;
+  h1 {
+    color: $white;
+  }
+  h2 {
+    color: $white;
+    margin: 0;
+    padding: 40px 0;
+    text-transform: none;
+  }
+  h3 {
+    color: $white;
+    margin-top: 40px;
+  }
+}
+
+.section-3 {
+  background: $pink url(../img/bg-purple.png) repeat 0 0;
+  color: $white;
+  font-weight: 400;
+  h2 {
+    color: $white;
+    margin-bottom: 30px;
+    text-transform: none;
+  }
+}
+
+.section-4 {
+  background: #f1efef;
+}
+
+.section-task {
+  padding: 0 0 140px;
+}
+
+.holder {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  li {
+    margin: 0 0 40px;
+    position: relative;
+  }
+  > li:before {
+    margin: 0 auto 10px;
+  }
+}
+ol {
+  counter-reset: li;
+}
+ol > li:before {
+	content:counter(li); /* Use the counter as content */
+	counter-increment:li; /* Increment the counter by 1 */
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	color:#fff;
+	background:$pink;
+	font-weight:700;
+	text-align:center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+
+}
+
+ul.boxes {
+  margin: 0 0 20px;
+  li {
+    border: 4px solid $black;
+    background-color: $white;
+    padding: 20px;
+    margin: 0 0 20px;
+    color: $black;
+    text-align: center;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img + .cols {
+  margin: 0 auto;
+}
+
+.cols {
+  width: 100%;
+  max-width: 760px;
+  padding: 0;
+  margin: 40px auto;
+}
+
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.cover img,
+.profile img {
+  margin: 30px 0 30px 20px;
+  width: 80%;
+}
+
+.section-negative-margin {
+  margin: -100px 0 0 0;
+}
+
+p + img {
+  margin: 40px auto;
+}
+
+
+.list-title {
+  background-color: $white;
+  padding: 20px;
+  border: $black 4px solid;
+  font-size: 1.25em;
+  position: relative;
+  font-weight: 700;
+  margin-top: 180px;
+  width: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.list-title-phone::before {
+  content: url(../img/instagram/mobile.svg);
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  width: 90px;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.list-title-computer::before {
+  content: url(../img/instagram/computer.svg);
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  width: 150px;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.list-title-photo::before {
+  content: url(../img/instagram/feature-photo.svg);
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 110px;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.list-title-video::before {
+  content: url(../img/instagram/feature-video.svg);
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  width: 120px;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+
+h1 + img {
+  margin-bottom: 30px;
+}
+
+img.border {
+  margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: $md-width) {
+
+  .holder {
+    width: 60%;
+  }
+
+  .profile img {
+    margin: 0 0 40px 20px;
+    width: 50%;
+    max-width: 200px;
+  }
+
+  section.section-success {
+    padding: 0;
+  }
+
+  h1 + img.border {
+    margin: 0 0 30px 0;
+  }
+
+}
+
+@media only screen and (min-width: $lg-width) {
+
+
+  .holder {
+    width: 760px;
+    // overflow-x: hidden;
+  }
+
+  .cols {
+    padding: 0;
+    display: flex;
+    max-width: 960px;
+    h3 {
+      text-align: left;
+      margin: 0 0 20px;
+    }
+    .col {
+      width: 50%;
+      margin: 0 20px;
+      text-align: left;
+    }
+  }
+
+  .col + .col {
+    margin-top: 0;
+  }
+
+  .cols-snapchat-adding-friends h2 {
+    text-align: left;
+  }
+
+  .cols-vertical-aligment .col {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      margin: 0;
+    }
+  }
+
+  ul.boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 60px;
+    li {
+      width: calc(33.3% - 84px);
+      margin: 10px;
+      font-size: .85em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  ul.boxes-grid {
+    display: inline-block;
+    width: calc(50% - 20px);
+    vertical-align: top;
+    li {
+      width: calc(100% - 68px);
+      display: block;
+      margin: 0 20px 20px
+    }
+  }
+
+  ul.boxes-grid-3-cols {
+    width: calc(33.3% - 20px);
+  }
+
+  ol li {
+    padding-left: 50px;
+    p {
+      margin: 0;
+    }
+  }
+
+  ol > li:before {
+  	position:absolute;
+  	top:-2px;
+  	left:-2em;
+  	-moz-box-sizing:border-box;
+  	-webkit-box-sizing:border-box;
+  	box-sizing:border-box;
+  	color:#fff;
+  	background:$pink;
+  	font-weight:700;
+  	text-align:center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    margin: 0 0 0 40px;
+  }
+
+  ul.boxes-full-width li {
+    width: 100%;
+  }
+
+
+  .cols-1-col {
+    width: 75%;
+    margin: 60px auto;
+    text-align: left;
+    b {
+      display: inline;
+    }
+  }
+
+  section.section-success {
+    padding: 0 0 0px;
+    .holder {
+      width: 90%;
+    }
+  }
+
+  ul.boxes-grid--linkedin-profile li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (min-width: $xl-width) {
+  .holder {
+    width: 960px;
+  }
+}

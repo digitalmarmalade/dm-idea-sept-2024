@@ -1,0 +1,92 @@
+/* SCREEN SIZES */
+
+$sm-width: 568px;
+$md-width: 768px;
+$lg-width: 1024px;
+$xl-width: 1200px;
+$xxl-width: 1500px;
+
+/* Colours */
+
+$white: #FFFFFF;
+$grey-1: #f3f5f8;
+$grey-2: #eceff4;
+$grey-3: #d8dee8;
+$grey-4: #bfc8d6;
+$grey-5: #8394AF;
+$pastel-yellow: #fef7e6;
+$pastel-pink: #fee7fc;
+$pastel-blue: #b8def9;
+$orange: #f68352;
+$orange-1: #F9AB37;
+$blue: #26264f;
+$blue-1: #53AEF2;
+$blue-2: #3285D1;
+$blue-3: #444b8c;
+$teal: #108696;
+$purple: #311944;
+$purple-1: #7C6FE3;
+$purple-2: #8A74EA;
+$purple-3: #976FE1;
+$pink: #FE8D88;
+$pink-1: #FF8C8C;
+$green-success: #29a366;
+$red-fail: #f68352;
+$red: #E76969;
+$idea-gold: #C89A09;
+
+$gradient-orange: linear-gradient(90deg, #FFC444 0%, #F36F56 123.6%, #F36F56 124.05%);
+$gradient-purple: linear-gradient(46.24deg, #311944 28.61%, #893976 78.12%);
+$gradient-purple-2: linear-gradient(135deg, #311944 10%, #A03976 78.12%);
+$gradient-blue: linear-gradient(90deg, #444b8c 0%, #26264f 100%);
+
+/* Layout */
+
+$space: 1rem;
+
+$space-xxxxx-small: calc(0.2 * #{$space});
+$space-xxxx-small: calc(0.4 * #{$space});
+$space-xxx-small: calc(0.8 * #{$space});
+$space-xx-small: calc(1.2 * #{$space});
+$space-x-small: calc(1.6 * #{$space});
+$space-small: calc(2.4 * #{$space});
+$space-medium: calc(3.2 * #{$space});
+$space-large: calc(4.8 * #{$space});
+$space-x-large: calc(6.4 * #{$space});
+$space-xx-large: calc(7.2 * #{$space});
+$space-xxx-large: calc(8 * #{$space});
+$space-xxxx-large: calc(9.6 * #{$space});
+
+$large-border-radius: 3em;
+$medium-border-radius: 1em;
+$small-border-radius: 0.5em;
+$x-small-border-radius: 0.25em;
+
+$box-shadow:4px 4px 20px rgba(0, 0, 0, 0.25); // Change?
+$box-shadow-two: 1em 2em 3em 2em $grey-1;
+
+/* Typography */ /*more variables for this in framework/typography */
+
+$main-text-style: 'Roboto', sans-serif;
+$title-text-style: 'Monoton', sans-serif;
+
+$main-text-colour: #24264A;
+
+$r-x-small: 1.2rem;
+$r-small: 1.4rem;
+$r-def: 1.6rem;
+$r-medium: 2.4rem;
+$r-large: 3.2rem;
+$r-x-large: 4rem;
+$r-xx-large: 4.8rem;
+$r-xxx-large: 6.4rem;
+$r-xxxx-large: 7.2rem;
+
+$m-small: 1.6rem;
+$m-medium: 2.4rem;
+$m-large: 3rem;
+$m-x-large: 4rem;
+$m-xx-large: 4.8rem;
+$m-xxx-large: 6.4rem;
+$m-xxxx-large: 7.2rem;
+$m-xxxxx-large: 12.2rem;

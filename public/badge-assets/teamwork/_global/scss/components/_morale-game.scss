@@ -1,0 +1,63 @@
+/*! morale Game */
+
+.morale-game { border: 1px solid #ccc; background: #fff; padding: 0 2rem 2rem; margin: 0 0 5rem; }
+.morale-game-title { display: table;  color: #fff; text-transform: uppercase; background: #221f1f; padding: 1rem 2rem; font-size: 2.4rem; font-family: 'Nutmeg-UltraBlack'; }
+
+
+.morale-ometer { border-bottom: 1px solid #ccc; padding: 3rem 2rem 3rem; margin: 0 -2rem 2rem; position: relative; overflow: hidden;
+    h2 { position: absolute; left: 2rem; top: 0; font-size: 6.2rem; text-transform: uppercase; font-weight: 500; color: #000; opacity: .1; line-height: 6.2rem; margin: 0; font-family: 'Nutmeg-UltraBlack'; }
+}
+.morale-bar { height: .5rem; background: #fff; position: relative; width: 40%; transition: 1s ease width, 1s ease background;
+    .low & { background: #BF3434; }
+    .ok & { background: #D9753B; }
+    .good & { background: #F2B441; }
+    .excellent & { background: #09A603; }
+}
+.morale-face { width: 5rem; height: 5rem; background: #fff; border-radius: 50%; position: absolute; right: -1rem; top: 50%; transform: translateY(-50%); transition: 1s ease background; 
+    .low & { background: #BF3434 url(../img/poor-morale.png) no-repeat center center; }
+    .ok & { background: #D9753B url(../img/ok-morale.png) no-repeat center center; }
+    .good & { background: #F2B441 url(../img/good-morale.png) no-repeat center center; }
+    .excellent & { background: #09A603 url(../img/excellent-morale.png) no-repeat center center; }
+}
+
+.morale-game-question { font-size: 1.8rem; margin: 0; display: none; }
+
+.morale-game-options {
+    a { display: block; padding: 2rem; background: #ededed; margin: 0 0 .5rem; text-decoration: none; font-weight: 500; transition: all .25s ease;
+        &:hover { background: #221f1f; color: #fff;}
+    }
+}
+
+.morale-game-feedback { display: none; margin: 0 0 2rem; font-size: 1.8rem; text-align: center; padding: 3rem;
+    &.right { color: #276416; }
+    &.wrong { color: #b44426; }
+}
+.feedback-message { margin: 0 0 2rem; }
+
+.morale-game--question-1 {
+    .morale-game-question-1 { display: block; }
+}
+.morale-game--question-2 {
+    .morale-game-question-2 { display: block; }
+}
+.morale-game--question-3 {
+    .morale-game-question-3 { display: block; }
+}
+.morale-game--question-4 {
+    .morale-game-question-4 { display: block; }
+}
+.morale-game--question-5 {
+    .morale-game-question-5 { display: block; }
+}
+.morale-game--question-6 {
+    .morale-game-question-6 { display: block; }
+}
+
+.morale-game-conclusion { text-align: center; display: none; background: #ededed; padding: 3rem; margin: 0 0 2rem; }
+
+.final-team-morale { font-family: 'Nutmeg-UltraBlack'; text-transform: uppercase; font-size: 3rem; }
+.morale-success-message { margin: 0 0 2rem; font-weight: 500; }
+
+@media only screen and (min-width: $sm-width) {
+    .final-team-morale { font-size: 6rem; margin: 2rem 0; }
+}

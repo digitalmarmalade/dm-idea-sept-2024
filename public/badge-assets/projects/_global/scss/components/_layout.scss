@@ -1,0 +1,154 @@
+.holder {
+  width: 100%;
+  max-width: 960px;
+  padding: 0 2rem;
+  margin: 6rem auto 0;
+}
+
+.top {
+  position: relative;
+  z-index: 2;
+}
+
+.bottom {
+  margin-top: -6em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checkered-box{
+  position: relative;
+  border-top: 0.1rem solid $black;
+  border-bottom: 0.1rem solid $black;
+  height: 15rem;
+}
+
+.checkered {
+  background: url(../img/checkered.png) repeat 0 0;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+
+}
+
+.checkered-inverted {
+ transform: rotate(180deg);
+}
+
+
+
+.theory-box {
+  width: 100%;
+  margin: 2em 0;
+  border: $border-mob;
+  background: #FFF;
+  padding: 2rem;
+  p {
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.activity-box {
+  background-color: $green-1;
+  color: #FFF;
+  padding: 4em 2em;
+  position: relative;
+  height: auto;
+  float: left;
+  width: 100%;
+}
+
+.activity-box .holder {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.answer-correct {
+  background-color: $green-2;
+}
+
+.fail-box,
+.next-box {
+  background-color: #FFF;
+  border: $border-mob;
+  margin: -8em auto 8em auto;
+  padding: 2em 4em;
+  width: auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  .btn {
+    width: 6em;
+  }
+}
+
+.fail-box p,
+.next-box p {
+  text-transform: uppercase;
+  font-family: 'bebas_neuebold', sans-serif;
+  margin: 0 0 2rem;
+}
+
+
+
+@media only screen and (min-width: $md-width) {
+
+  .checkered-box{
+    height: 10.5rem;
+  }
+
+  .theory-box {
+    padding: 4em 2em;
+  }
+  // .theory-box p {
+  //   max-width: 90%;
+  //   margin: 20px auto;
+  // }
+  //
+  // h1 {
+  //
+  //
+  // }
+  //
+  // .cols {
+  //   width: 100%;
+  //   display: flex;
+  //   margin: 40px 0;
+  // }
+  //
+  // .col {
+  //   width: 48%;
+  //   margin-right: 4%;
+  //   float: left;
+  // }
+  //
+  // .col:last-child {
+  //   margin-right: 0;
+  // }
+  //
+  //
+  // .fail-box p, .next-box p {
+  //   width: 75%;
+  //   margin: 40px auto 0 auto;
+  // }
+
+
+}
+
+@media only screen and (min-width: $lg-width) {
+  // .fail-box,
+  // .next-box {
+  //   width: 960px;
+  // }
+  //
+  // .theory-box {
+  //   padding: 60px 60px 40px 60px;
+  // }
+}

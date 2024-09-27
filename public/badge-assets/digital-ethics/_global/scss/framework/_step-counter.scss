@@ -1,0 +1,34 @@
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ranchers);
+    font-size: var(--font-size-md);
+    color: var(--black);
+    width: var(--space-lg);
+    height: var(--space-lg);
+    border-radius: var(--space-lg);
+    border: .16rem solid var(--black);
+    position: relative;
+    &.active {
+        background-color: var(--yellow);
+    }
+    &.completed {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+.step:before {
+    content:"";
+    border-bottom:.16rem solid var(--black);
+    position: absolute;
+    left: calc(var(--space) * -1);
+    width: var(--space);
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.step:first-of-type:before {
+    width: 0;
+}

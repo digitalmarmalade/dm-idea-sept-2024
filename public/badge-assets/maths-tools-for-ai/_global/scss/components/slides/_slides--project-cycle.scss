@@ -1,0 +1,21 @@
+.slides__holder--project-cycle {
+  .slide__top {
+    background: white;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+    padding: 2.4rem 1.6rem 1.6rem;
+  }
+  .slide__bottom {
+    background: rgba(255,255,255,.85);
+    border-bottom-left-radius: .8em;
+    border-bottom-right-radius: .8em;
+    padding: 1.6rem 1.6rem 2.4rem;
+  }
+  .stage-index {
+    font-size: .8rem;
+    text-transform: uppercase;
+  }
+  .stage-name {
+    font-size: 1.6rem;
+  }
+}

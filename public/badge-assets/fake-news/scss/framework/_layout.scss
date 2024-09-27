@@ -1,0 +1,73 @@
+body {
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+.main-content {
+  padding: $space-small 0 $space-x-large 0;
+  position: relative;
+
+  & > section {
+    margin-bottom: $space-xx-large;
+  }  
+}
+
+article {
+  margin-bottom: $space-medium;
+
+  & section {
+    
+    &:not(:last-child) {
+      margin-bottom: $space-medium;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    margin-bottom: $space-large;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(73ch + calc($space-small * 2));
+  padding: 0 $space-small;
+
+  @media (min-width: $md-width) {
+    max-width: calc(73ch + calc($space-medium * 2));
+    padding: 0 $space-medium;
+  }
+}
+
+p, li {
+  orphans: 3;
+  widows: 3;
+}
+
+p {
+
+  & + * {
+    margin-top: $space-small;
+  }
+}
+
+ul {
+
+  & + * {
+    margin-top: $space-small;
+  }
+}
+
+img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img, svg {
+  height: auto;
+}
+
+:is(a, button:not(button.btn), input, textarea):focus {
+  outline: 0.1em dashed $grey-5;
+  outline-offset: 0.1em;
+}

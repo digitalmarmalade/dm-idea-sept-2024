@@ -1,0 +1,159 @@
+.drag-n-drop {
+  display: flex;
+  justify-content: space-between;
+
+  & + button {
+    margin-top: $space-small;
+  }
+
+  & .drag-n-drop__item {
+    background-color: $white;
+    box-shadow: 2px 2px 2.4em 0.1rem rgba(0 0 0 / 15%);
+    border-radius: 0.2rem;
+    cursor: move;
+    flex-shrink: 0;
+    height: 9.62rem;
+    outline: 0.2rem solid $orange;
+    width: 6.591rem;
+    z-index: 2;
+
+    @media (min-width: $sm-width) {
+      height: 14.8rem;
+      width: 10.14rem;
+    }
+  }
+
+  .drag-n-drop__item--success {
+    outline-color: $green-success;
+  }
+
+  & .drag-n-drop__drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: $sm-width) {
+      flex-direction: row;
+    }
+  }
+
+  & .drag-n-drop__target {
+    align-items: center;
+    display: flex;
+    background-color: $grey-2;
+    border: 0.2rem dashed $grey-5;
+    border-radius: 0.25rem;
+    color: $grey-5;
+    flex-shrink: 0;
+    font-size: 3.2rem;
+    font-weight: 900;
+    height: 9.62rem;
+    justify-content: center;
+    position: relative;
+    width: 6.591rem;
+
+    @media (min-width: $sm-width) {
+      font-size: 4.8rem;
+      height: 14.8rem;
+      width: 10.14rem;
+    }
+  }
+
+  @media (min-width: $sm-width) {
+    flex-direction: column;
+    gap: $space-small;
+    justify-content: center;
+  }
+}
+
+.drag-n-drop__section {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xxx-small;
+  justify-content: space-between;
+
+  @media (min-width: $sm-width) {
+    flex-direction: row;
+  }
+}
+
+.drag-n-drop__box-n-img {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drag-n-drop__box-n-img--col {
+  flex-direction: row;
+  gap: 1.75rem;
+
+  @media (min-width: $sm-width) {
+    flex-direction: column;
+  }
+}
+
+.drag-n-drop__box-n-img--row {
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: $sm-width) {
+    flex-direction: row;
+  }
+}
+
+.drag-n-drop__box-n-img--1 {
+  margin-top: 14rem;
+
+  @media (min-width: $sm-width) {
+    margin-left: 16.2rem;
+    margin-top: 0;
+  }
+}
+
+.drag-n-drop__arrow--flip-lg {
+
+  @media (min-width: $sm-width) {
+    transform: rotate(90deg);
+    transform-origin: center center;
+  }
+}
+
+.drag-n-drop__arrow--flip-sm {
+  transform: rotate(90deg);
+  transform-origin: center center;
+
+  @media (min-width: $sm-width) {
+    transform: none;
+  }
+}
+
+.drag-n-drop__box-n-img--condensed {
+  
+  & .drag-n-drop__target{
+  
+    @media (min-width: $sm-width) {
+      font-size: 4.8rem;
+      height: 11.84rem;
+      width: 8.112rem;
+    }
+  }
+}
+
+.drag-n-drop__section {
+  
+  & .drag-n-drop__item--condensed {
+
+    @media (min-width: $sm-width) {
+      height: 11.84rem !important;
+      width: 8.112rem !important;
+
+      &:first-child {
+        margin-left: -0.25rem;
+      }
+
+      &:last-child {
+        margin-right: -0.25rem;
+      }
+    }
+  }
+}

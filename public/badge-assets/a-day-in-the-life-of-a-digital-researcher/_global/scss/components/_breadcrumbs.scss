@@ -1,0 +1,10 @@
+/*! Breadcrumbs */
+
+$breadcrumb-bg: #f5f5f5;
+$breadcrumb-active: #333;
+$breadcrumb-separator: #ccc;
+
+.breadcrumbs { background-color: $breadcrumb-bg; border-radius: $border-radius; list-style: outside none none; margin-bottom: 20px; padding: 8px 15px; }
+.breadcrumbs > li { display: inline-block; margin: 0; }
+.breadcrumbs > li + li::before { color: $breadcrumb-separator; content: "/ "; padding: 0 5px; }
+.breadcrumbs > .active { color: $breadcrumb-active; }

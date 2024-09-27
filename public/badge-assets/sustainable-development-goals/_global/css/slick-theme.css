@@ -1,0 +1,100 @@
+@charset 'UTF-8';
+
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 45%;
+    display: block;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    z-index: 2;
+    border:0;
+}
+
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled { opacity: 0; }
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 80px;
+    color: white;
+    line-height: 30px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+[dir='rtl'] .slick-prev { right: 10px;  left: 10px; }
+
+.slick-prev:before { content: url(../img/arrow-left.svg); }
+
+[dir='rtl'] .slick-prev:before { content: url(../img/arrow-right.svg); }
+
+[dir='rtl'] .slick-next { right: 10px; left: 10px; }
+
+.slick-next:before { content: url(../img/arrow-right.svg); }
+
+[dir='rtl'] .slick-next:before { content: url(../img/arrow-left.svg); }
+*/
+
+ button.slick-arrow { width: 20px; height: 40px; }
+
+/* Dots */
+
+.slick-dots {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 0;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+}
+
+.slick-prev { left: 0; }
+.slick-next { right: 0 }
+
+.slick-dots li:hover,
+.slick-dots li:focus { opacity: 1; }
+
+.slick-dots li.slick-active { opacity: 1; }
+
+button.slick-arrow { width: 2.4rem;  height: 6rem; background-size: 50%;  }
+
+@media only screen and (min-width:768px) {
+
+  button.slick-arrow { width:4rem;  height: 10rem; }
+
+  .slick-prev { left: -4rem; }
+  .slick-next  { right: -4rem; }
+}

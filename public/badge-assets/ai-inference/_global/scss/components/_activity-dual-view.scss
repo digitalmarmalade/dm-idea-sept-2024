@@ -1,0 +1,73 @@
+.activity-dual-view {
+  display: flex;
+  flex-direction: column;
+  gap: $space-small;
+  justify-content: space-between;
+  margin-top: $space-medium;
+
+  & > div {
+    width: 100%;
+    align-self: flex-start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    gap: $space-medium;
+  }
+}
+
+.activity-dual-view--e {
+
+  & > div {
+
+    @media (min-width: $md-width) {
+      flex-basis: calc(50% - calc(#{$space-medium} / 2));
+    }
+  }
+}
+
+.activity-dual-view--mr {
+
+  & > div {
+
+    &:first-child {
+
+      @media (min-width: $md-width) {
+        flex-basis: calc(35% - calc(#{$space-medium} / 2));
+      }
+    }
+
+    &:last-child {
+
+      @media (min-width: $md-width) {
+        flex-basis: calc(65% - calc(#{$space-medium} / 2));
+      }
+    }
+  }
+  .list__item{
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+.activity-dual-view-header {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-dual-view-counter {
+  background-color: $white;
+  border-radius: 0.4rem;
+  color: $cobalt-5;
+  font-size: $r-small;
+  font-weight: bold;
+  line-height: normal;
+  padding: 8px;
+  white-space: nowrap;
+  position: relative;
+  bottom: 8px;
+}

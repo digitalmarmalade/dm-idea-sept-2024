@@ -1,0 +1,123 @@
+
+.step-5 .panel {
+  margin: 0 0 20px;
+  img {
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+  li {
+    padding: 20px;
+    margin: 0 0 20px;
+  }
+}
+
+.panel-frequency{
+  li {
+    background-color: $light-yellow;
+  }
+}
+
+.panel-branding,
+.panel-engagement {
+  li {
+    background-color: $light-blue;
+  }
+}
+
+.crises-management {
+  li {
+    background-color: white;
+    padding: 20px;
+    margin: 0 0 20px;
+    div {
+      background-color: $dark-blue;
+      color: $white;
+      font-size: 300%;
+      font-family: 'bebas_neuebold';
+      width: 100%;
+      margin: -20px -20px 20px -20px;
+      padding: 20px;
+      display: inline-block;
+    }
+    span {
+      font-family: 'bebas_neuebold';
+      font-size: 2.5em;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: $md-width) {
+  .step-5 {
+    text-align: left;
+    p {
+      max-width: 100%;
+    }
+    .grey h1,
+    .dark-grey h1,
+    .grey h2,
+    .dark-grey h2,
+    .grey h3,
+    .dark-grey h3 {
+      margin: 20px 0;
+      padding: 0;
+      text-align: left;
+    }
+    .grey h3,
+    .dark-grey h3 {
+      margin: 0 0 10px;
+    }
+    .col {
+      margin: 0 10px;
+    }
+    .familiarity {
+      .cols {
+        width: 100%;
+      }
+      .col {
+        margin: 0;
+      }
+      h1, p {
+        max-width: 90%;
+        margin: 0 0 20px;
+      }
+      .panel p {
+        max-width: 100%;
+        margin:0;
+      }
+    }
+    .crises-management {
+      .cols {
+        margin-left: -10px;
+      }
+    }
+  }
+  .crises-management {
+    li {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      height: auto;
+      div {
+        background-color: $dark-blue;
+        color: $white;
+        font-size: 500%;
+        font-family: 'bebas_neuebold';
+        width: 15%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+      p {
+        width: 80%;
+        padding: 20px;
+        margin: 0;
+
+      }
+    }
+  }
+}

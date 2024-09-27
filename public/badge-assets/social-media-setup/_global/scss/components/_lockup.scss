@@ -1,0 +1,39 @@
+
+.lockup {
+  position: relative;
+  div {
+    display: none;
+  }
+
+  a {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    right: 0;
+    img {
+      display: block;
+      width: 40px;
+      height: auto;
+    }
+  }
+  a:hover {
+    transform: scale(1);
+  }
+}
+
+
+@media only screen and (min-width: $md-width) {
+  .lockup div {
+    display: block;
+    width: 100%;
+    background-color: $purple;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+  .lockup a { right: 30px; }
+  .lockup a img { width: 80px;  }
+}

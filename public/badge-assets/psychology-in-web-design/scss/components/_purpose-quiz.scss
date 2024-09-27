@@ -1,0 +1,33 @@
+.purpose-quiz { background: #fff; padding: 2rem; text-align: center; margin: 0 0 4rem; }
+
+@media only screen and (min-width: 768px) {
+    .purpose-quiz { padding: 6rem; }
+}
+
+@media only screen and (max-width: 767px) {
+.purpose-quiz { background: #fff; padding: 4rem 2rem 1rem; }
+.purpose-list { list-style: none; margin: 0; padding: 0;
+    
+    li { margin: 0 0 1rem; }
+    a { display: block; padding: 2rem; text-align: center; color: #fff; text-decoration: none; background: #444;
+        &.selected { background: $success; }
+    }
+}
+}
+@media only screen and (min-width: 768px) {
+    .purpose-list { list-style: none; margin: 0 .5rem; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;
+
+        li { width: calc(33.33% - 1rem); margin: 0 .5rem 1rem; display: flex; }
+        a { display: flex; padding: 3rem; text-align: center; color: #fff; text-decoration: none; background: #444; align-items: center; line-height: 1.2; justify-content: center; width: 100%;
+            &.selected { background: $success; }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .layout-list { margin: 0 1.5rem; padding: 0 0 1rem; }
+    .layout-image { margin: 0 0 2rem; }
+}
+
+.purpose-quiz__title { font-size: 2rem; margin: 0 0 2rem; }
+.purpose-quiz__question { font-size: 2.4rem; margin: 0 0 3rem; }

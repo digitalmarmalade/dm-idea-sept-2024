@@ -1,0 +1,138 @@
+<svg width="258" height="215" viewBox="0 0 258 215" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style type="text/css">
+      .processing {
+        animation: processing 1.8s ease-in-out infinite;
+        transform-origin: center center;
+        transform-box: fill-box;
+        animation-direction: alternate;
+      }
+
+      @keyframes processing {
+        0% {
+          transform:scale(1);
+          fill: white;
+        }
+        50% {
+          transform:scale(1.2);
+          fill: #76CEFF;
+        }
+        100% {
+          transform:scale(1);
+          fill: white;
+        }
+      }
+
+      .delay-1 {
+        animation-delay: .1s;
+      }
+      .delay-2 {
+        animation-delay: .2s;
+      }
+      .delay-3 {
+        animation-delay: .3s;
+      }
+      .delay-4 {
+        animation-delay: .4s;
+      }
+      .delay-5 {
+        animation-delay: .5s;
+      }
+      .delay-6 {
+        animation-delay: .6s;
+      }
+      .delay-7 {
+        animation-delay: .7s;
+      }
+      .delay-8 {
+        animation-delay: .8s;
+      }
+      .delay-9 {
+        animation-delay: .9s;
+      }
+      .delay-10 {
+        animation-delay: 1.0s;
+      }
+      .delay-11 {
+        animation-delay: 1.1s;
+      }
+      .delay-12 {
+        animation-delay: 1.2s;
+      }
+      .delay-13 {
+        animation-delay: 1.3s;
+      }
+      .delay-14 {
+        animation-delay: 1.4s;
+      }
+      .delay-15 {
+        animation-delay: 1.5s;
+      }
+      .delay-16 {
+        animation-delay: 1.6s;
+      }
+      .delay-17 {
+        animation-delay: 1.7s;
+      }
+      .hide-on-mobile {
+        display: none;
+      }
+
+
+      @media only screen and (min-width: $md-width) {
+        .hide-on-mobile {
+          display: block;
+        }
+      }
+
+    </style>
+  </defs>
+
+  <g id="animation--cnn" clip-path="url(#clip0_664_71557)">
+    <g id="lines">
+      <path id="Vector 2" d="M28.8262 74.9453L78.419 58.616" stroke="white" stroke-width="0.403194"/>
+      <path id="Vector 3" d="M78.621 58.6162L128.214 58.6162M78.621 58.6162L28.625 107.403M78.621 58.6162L128.617 91.6781M78.621 58.6162C85.0721 67.3252 115.177 105.79 128.214 123.934M78.621 58.6162L128.617 156.189M78.621 58.6162L28.625 139.658M128.214 58.6162L178.815 58.6162M128.214 58.6162L78.8226 91.6781M128.214 58.6162L178.815 91.6781M128.214 58.6162L78.621 123.934M128.214 58.6162L78.621 156.189M128.214 58.6162L178.815 123.934M128.214 58.6162L178.815 156.189M178.815 58.6162L229.415 107.403M178.815 58.6162L128.617 91.6781M178.815 58.6162L128.214 123.934M178.815 58.6162L128.617 156.189M229.415 107.403L178.815 91.6781M229.415 107.403L178.815 123.934M229.415 107.403L178.815 156.189M178.815 91.6781L128.617 91.6781M178.815 91.6781L128.214 123.934M178.815 91.6781C168.466 107.671 143.455 143.287 128.617 156.189M128.617 91.6781L78.8226 91.6781M128.617 91.6781L78.621 123.934M128.617 91.6781L78.621 156.189M128.617 91.6781L178.815 123.934M128.617 91.6781L178.815 156.189M78.8226 91.6781L28.625 107.403M78.8226 91.6781L28.625 74.744M78.8226 91.6781L128.617 156.189M78.8226 91.6781L128.214 123.934M78.8226 91.6781L28.625 139.658M28.625 107.403L78.621 123.934M28.625 107.403L78.621 156.189M78.621 123.934L28.625 74.744M78.621 123.934L128.214 123.934M78.621 123.934L128.617 156.189M78.621 123.934L28.625 139.658M128.214 123.934L178.815 123.934M128.214 123.934L78.621 156.189M128.214 123.934L178.815 156.189M178.815 123.934C163.196 133.845 130.805 154.172 128.617 156.189M28.625 74.744L78.621 156.189M78.621 156.189L128.617 156.189M78.621 156.189L28.625 139.658M128.617 156.189L178.815 156.189" stroke="white" stroke-width="0.403194"/>
+    </g>
+    <g id="arrows " class="hide-on-mobile">
+      <path id="Vector 4" d="M19.8608 74.9453L15.8289 72.6175V77.2732L19.8608 74.9453ZM7.86084 75.3485H16.2321V74.5421H7.86084V75.3485Z" fill="#76CEFF"/>
+      <path id="Vector 7" d="M247.416 107.402L243.384 105.075L243.384 109.73L247.416 107.402ZM235.416 107.806L243.787 107.806L243.787 106.999L235.416 106.999L235.416 107.806Z" />
+      <path id="Vector 6" d="M19.8594 140.263L15.8274 137.935V142.591L19.8594 140.263ZM7.85938 140.666H16.2306V139.86H7.85938V140.666Z" fill="#76CEFF"/>
+    </g>
+      <path id="Vector 5" d="M20.7617 107.604L16.7298 105.277V109.932L20.7617 107.604ZM8.76172 108.008H17.133V107.201H8.76172V108.008Z" fill="#76CEFF"/>
+    <g id="dots">
+      <g id="Frame 42">
+        <circle id="Ellipse 16" cx="28.6244" cy="75.3486" r="6.4511" fill="#76CEFF" />
+        <circle id="Ellipse 17" cx="28.6244" cy="107.603" r="6.4511" fill="#76CEFF" />
+        <circle id="Ellipse 18" cx="28.6244" cy="139.859" r="6.4511" fill="#76CEFF" />
+      </g>
+      <g id="Frame 39">
+        <circle id="Ellipse 15" cx="78.6205" cy="59.2206" r="6.4511"  class="processing delay-1"/>
+        <circle id="Ellipse 16_2" cx="78.6205" cy="91.4765" r="6.4511"  class="processing delay-2"/>
+        <circle id="Ellipse 17_2" cx="78.6205" cy="123.731" r="6.4511"  class="processing delay-3"/>
+        <circle id="Ellipse 18_2" cx="78.6205" cy="155.987" r="6.4511"  class="processing delay-4"/>
+      </g>
+      <g id="Frame 40">
+        <circle id="Ellipse 15_2" cx="128.617" cy="59.2206" r="6.4511"  class="processing delay-5"/>
+        <circle id="Ellipse 16_3" cx="128.617" cy="91.4765" r="6.4511"  class="processing delay-6"/>
+        <circle id="Ellipse 17_3" cx="128.617" cy="123.731" r="6.4511"  class="processing delay-7"/>
+        <circle id="Ellipse 18_3" cx="128.617" cy="155.987" r="6.4511"  class="processing delay-8"/>
+      </g>
+      <g id="Frame 41">
+        <circle id="Ellipse 15_3" cx="178.613" cy="59.2206" r="6.4511"  class="processing delay-9"/>
+        <circle id="Ellipse 16_4" cx="178.613" cy="91.4765" r="6.4511"  class="processing delay-10"/>
+        <circle id="Ellipse 17_4" cx="178.613" cy="123.731" r="6.4511"  class="processing delay-11"/>
+        <circle id="Ellipse 18_4" cx="178.613" cy="155.987" r="6.4511"  class="processing delay-12"/>
+      </g>
+      <g id="Frame 41_2">
+        <circle id="Ellipse 18_5" cx="228.608" cy="107.603" r="6.4511"  class="processing delay-13"/>
+      </g>
+    </g>
+    <path id="Vector 6_2" d="M126.47 194.591L129.356 189.591H123.583L126.47 194.591ZM125.97 170.591V190.091H126.97V170.591H125.97Z" fill="red" class="processing" />
+    <path id="Vector 5_2" d="M114.47 165.239L111.583 170.239H117.356L114.47 165.239ZM114.97 189.239V169.739H113.97V189.239H114.97Z" fill="red" class="processing delay-3"/>
+  </g>
+  <defs>
+    <clipPath id="clip0_664_71557">
+      <rect width="257.482" height="214.235"  transform="translate(0.279297 0.285156)"/>
+    </clipPath>
+  </defs>
+</svg>

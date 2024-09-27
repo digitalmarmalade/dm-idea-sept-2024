@@ -1,0 +1,72 @@
+.earth-and-moon { position: relative; overflow: hidden; padding: 4rem 0 0 2rem; }
+.earth-and-moon__earth { position: relative; z-index: 2; }
+.earth-image { max-width: 100%; }
+.earth-and-moon__moon { width: 25%; max-width: 19.9rem; position: absolute; z-index: 1; left: 50%; top: 0; transform: translateX(150%); animation: moon-rotate 60s 0s infinite alternate linear; }
+
+.star { background: #ebdf59; width: .5rem; height: .5rem; border-radius: 50%; position: absolute; display: block; z-index: 0; }
+
+.star-glitter-1 { animation: glitter 4.5s linear 0s infinite normal; }
+.star-glitter-2 { animation: glitter 4.5s linear 4s infinite normal; }
+.star-glitter-3 { animation: glitter 4.5s linear 3s infinite normal; }
+.star-glitter-4 { animation: glitter 4.5s linear 2s infinite normal; }
+.star-glitter-5 { animation: glitter 4.5s linear 1s infinite normal; }
+.star-glitter-6 { animation: glitter 4.5s linear .4s infinite normal; }
+.star-glitter-7 { animation: glitter 4.5s linear .8s infinite normal; }
+.star-glitter-8 { animation: glitter 4.5s linear 1.7s infinite normal; }
+.star-glitter-9 { animation: glitter 4.5s linear 2.86s infinite normal; }
+.star-glitter-10 { animation: glitter 4.5s linear 3.9s infinite normal; }
+
+@media only screen and (min-width: 600px) {
+.star { width: 1rem; height: 1rem; }
+}
+
+.earth-and-moon-speech { position: absolute; width: 4rem; height: auto; transform: scale(0); }
+.earth-and-moon-speech--1 { left: 10%; top: 20%; animation: speech-bubble 2s ease .5s infinite;  transform-origin: bottom right; }
+.earth-and-moon-speech--2 { left: 41%; top: 27%; animation: speech-bubble 2s ease 0s infinite; transform-origin: bottom right; }
+.earth-and-moon-speech--3 { left: 50%; top: 50%; animation: speech-bubble 2s ease 1.5s infinite; transform-origin: bottom left; }
+.earth-and-moon-speech--4 { left: 84%; top: 60%; animation: speech-bubble 2s ease 1s infinite; transform-origin: bottom left; }
+
+@media only screen and (min-width: 750px) {
+.earth-and-moon-speech { width: auto; }
+.earth-and-moon-speech--1 { left: 50%; top: 50%; margin: -23rem 0 0 -35rem; }
+.earth-and-moon-speech--2 { left: 50%; top: 50%; margin: -20rem 0 0 -9rem; }
+.earth-and-moon-speech--3 { left: 50%; top: 50%; margin: -2rem 0 0 8rem }
+.earth-and-moon-speech--4 { left: 50%; top: 50%; margin: 5rem 0 0 24rem;  }
+}
+
+
+
+@keyframes moon-rotate {
+  0% { transform: translate(150%,0%) scale(1); }
+  50% { transform: translate(0%,-20%) scale(.8); }
+  100% { transform: translate(-150%,0%) scale(1); } 
+}
+
+@keyframes speech-bubble {
+  0%,100% { transform: scale(0); }
+  40%, 60% { transform: scale(1); }
+
+}
+
+@keyframes glitter {
+    0% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    25% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}

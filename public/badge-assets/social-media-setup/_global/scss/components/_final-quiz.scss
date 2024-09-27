@@ -1,0 +1,92 @@
+.section-final-quiz .quiz-intro {
+  border: 4px solid $black;
+  background-color: $white;
+  padding: 60px 0 30px;
+  margin: 40px 0;
+  p {
+    width: 80%;
+    max-width: 960px;
+  }
+  img {
+    width: auto;
+    height: 120px;
+    margin: 0 auto 20px auto;
+  }
+}
+
+.section-final-quiz .quiz-the-question span {
+  font-weight: 700;
+  display: block;
+  margin: 0 0 10px;
+  font-size: 150%;
+}
+
+.section-final-quiz .quiz-fail {
+  color: $white;
+  background: $pink url(../img/bg-purple.png) repeat 0 0;
+  border: 4px solid $black;
+  padding: 30px;
+  width: calc(100% - 80px);
+}
+
+.section-final-quiz ul.task .selected-right span {
+  background-color: $green;
+}
+.section-final-quiz ul.task .selected-wrong,
+.section-final-quiz ul.task .selected-wrong span {
+  background-color: $pink;
+  color: $white;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.section-final-quiz ul.task a {
+  font-weight: 400;
+}
+
+.section-final-quiz section.feedback-quiz {
+  margin-top: 0 !important;
+}
+
+@media only screen and (min-width: $md-width) {
+
+  .section-final-quiz .quiz-intro img {
+    height: 120px;
+  }
+  .section-final-quiz .quiz-fail {
+    width: calc(100% - 200px);
+  }
+}
+
+@media only screen and (min-width: $lg-width) {
+  .section-final-quiz ul.task a {
+    font-size: 1em;
+    display: flex;
+  }
+
+
+  .section-final-quiz #question3 ul.task span {
+    min-height: 200px;
+  }
+
+  .section-final-quiz #question5 ul.task span {
+    min-height: 170px;
+  }
+
+  .section-final-quiz #question8 ul.task a {
+    display: block;
+    height: 120px;
+  }
+
+  .section-final-quiz #question8 ul.task span {
+    display: block;
+    height: 70px;
+  }
+  .section-final-quiz #question8 ul.task b {
+    display: block;
+  }
+
+
+  section.section-final-quiz {
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,39 @@
+.fake-article {
+  background-color: $white;
+  border: 0.1em solid $grey-3;
+
+  & .fake-article__address-bar {
+    border-bottom: 0.1em solid $grey-3;
+    padding: $space-xxx-small;
+  }
+
+  & .fake-article__url {
+    background-color: $grey-1;
+    border-radius: $large-border-radius;
+    font-size: $r-x-small;
+    padding: $space-xxx-small $space-x-small;
+
+    @media (min-width: $md-width) {
+      font-size: inherit;
+    }
+  }
+
+  & .fake-article__article {
+    color: #000;
+    font-size: 1.4rem;
+    padding: $space-small;
+
+    & .fake-article__article__heading {
+      font-size: 1.9rem;
+      margin-bottom: $space-small;
+
+      @media (min-width: $md-width) {
+        font-size: $m-medium;
+      }
+    }
+
+    @media (min-width: $md-width) {
+      font-size: inherit;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.spicy-sections {
+  --const-mq-affordances: [screen and (max-width: 768px) ] exclusive-collapse | [screen and
+    (min-width: 768px) ] tab-bar;
+  display: block;
+  margin: $space-large 0;
+
+  & .spicy-sections__heading {
+    font-family: 'Monoton', sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+    word-spacing: 0.5rem;
+  }
+}
+
+[affordance] h2 {
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  cursor: pointer;
+  padding: $space-x-small $space-xxx-small;
+}
+
+[affordance="tab-bar"] h2 {
+  flex: 1;
+  text-align: center;
+}
+
+[affordance="tab-bar"] h2[tabindex="0"] {
+  background-color: $pastel-yellow;
+  border: none;
+  color: $orange;
+}
+
+[affordance="tab-bar"] h2:not([tabindex="0"]) {
+  background: $gradient-orange;
+  color: $white;
+}
+
+[affordance] [role="tabpanel"] {
+  background-color: $pastel-yellow;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  padding: $space-medium calc(#{$space-medium} + 0.75rem);
+}
+
+[affordance="exclusive-collapse"] > div {
+  background-color: $pastel-yellow;
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  margin-bottom: $space-small;
+  padding: $space-x-small;
+}
+
+[affordance="exclusive-collapse"] h2 {
+  background: $gradient-orange;
+  color: $white;
+}
+
+[affordance="exclusive-collapse"] h2[aria-expanded="false"] {
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  margin-bottom: $space-x-small;
+}
+
+[affordance="exclusive-collapse"] h2[aria-expanded="true"] {
+  background: $pastel-yellow !important;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: $orange;
+}

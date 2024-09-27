@@ -1,0 +1,17 @@
+/*! Header */
+
+header {
+  z-index: 3; display: flex; justify-content: space-between; position: absolute; top: 0; left: 0; align-items: center; height: auto; width: 100%;
+  .idea-logo {
+    width: 5rem;
+    height: auto;
+  }
+  .progress-bar {  width: 70%; max-width: 50rem; position: relative;}
+}
+
+
+@media only screen and (min-width: $md-width) {
+  header {
+    .progress-bar {  left: -2rem;}
+  }
+}

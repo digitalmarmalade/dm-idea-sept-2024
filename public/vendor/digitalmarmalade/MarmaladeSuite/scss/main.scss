@@ -1,0 +1,49 @@
+/* CSS Document */
+
+//Reset
+@import "_normalise.scss";
+
+//These are required
+@import "_variables.scss";
+
+@import "components/_typography.scss";
+
+//Import icon fonts if required
+@import "components/_flaticon.scss";
+
+@import "components/_framework.scss";
+@import "components/_helpers.scss";
+
+@import "components/_header.scss";
+@import "components/_footer.scss";
+
+@import "components/_general.scss";
+
+//These are optional
+@import "components/_add-widget.scss";
+@import "components/_breadcrumbs.scss";
+@import "components/_buttons.scss";
+@import "components/_dashboard.scss";
+@import "components/_feedback.scss";
+@import "components/_filter-panel.scss";
+@import "components/_forms.scss";
+@import "components/_grid.scss";
+@import "components/_lazyload.scss";
+@import "components/_lister-panel.scss";
+@import "components/_login.scss";
+@import "components/_overlays.scss";
+@import "components/_page-header.scss";
+@import "components/_pagination.scss";
+@import "components/_pick-from-existing.scss";
+@import "components/_search.scss";
+@import "components/_side-panel-form.scss";
+@import "components/_tables.scss";
+@import "components/_tabs.scss";
+@import "components/_tooltips.scss";
+@import "components/_transforms.scss";
+
+//Choose your style of responsive navigation
+@import "components/navigation.scss";
+@import "components/_in-page-navigation.scss";
+
+@import "components/_cropper.scss";

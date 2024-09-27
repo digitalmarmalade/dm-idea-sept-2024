@@ -1,0 +1,41 @@
+.input-output {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xx-small;
+
+  & + .input-output {
+    margin-top: $space-small;
+
+    @media (min-width: $md-width) {
+      margin-top: $space-x-small;
+    }
+  }
+
+  & .input-output__heading {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2rem;
+    text-align: right;
+    width: 10%;
+  }
+
+  & .input-output__heading--input {
+    color: $green-success;
+  }
+
+  & .input-output__heading--output {
+    color: $orange;
+  }
+
+  & .input-output__result {
+    width: 100%;
+
+    @media (min-width: $md-width) {
+      width: calc(90% - #{$space-xx-small});
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+    gap: $space-x-small;
+  }
+}

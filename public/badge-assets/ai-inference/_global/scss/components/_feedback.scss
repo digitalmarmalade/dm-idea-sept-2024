@@ -1,0 +1,149 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  margin: $space-medium auto;
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 70rem;
+
+  & .feedback__bottom {
+    position: relative;
+  }
+  @media (min-width: $md-width) {
+    &.feedback--absolute-bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+}
+
+.feedback--switched {
+  flex-direction: column-reverse;
+}
+
+.feedback--pushed {
+
+  & .feedback__bottom {
+    margin-top: auto;
+  }
+}
+
+.feedback--one-line {
+  flex-direction: row-reverse;
+  flex-grow: unset;
+
+  & .feedback__bottom {
+    flex-shrink: 0;
+    margin-right: $space-x-small;
+  }
+}
+
+.feedback--small {
+  max-width: 51rem;
+
+  & .feedback__top {
+    margin-bottom: $space-x-small;
+  }
+
+  & .feedback__bottom--large {
+    width: 100%;
+  }
+}
+
+.feedback--large {
+  max-width: 70rem;
+
+  & .feedback__top {
+    order: 1;
+    margin-bottom: 0;
+    flex-grow: 1;
+
+    @media (min-width: $md-width) {
+      order: 2;
+      margin-bottom: $space-x-small
+    }
+  }
+
+  & .feedback__bottom--large {
+    width: 108px;
+  }
+
+  & .feedback__bottom {
+    order: 2;
+
+    @media (min-width: $md-width) {
+      order: 1;
+    }
+  }
+
+  @media (min-width: $md-width) {
+      align-items: flex-start;
+    flex-direction: row;
+  }
+}
+
+.feedback__bottom--small {
+  height: 60px;
+
+  & .feedback__icon {
+    left: 2.5rem;
+    position: absolute;
+    top: 0;
+  }
+
+  & .feedback__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.feedback__bottom--large {
+  flex-shrink: 0;
+  height: 108px;
+  margin-top: $space-small;
+
+  & .feedback__icon {
+    left: 0;
+    position: absolute;
+  }
+
+  & .feedback__btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: $md-width) {
+    margin-top: 0;
+    margin-right: $space-small;
+  }
+}
+
+.feedback__bottom--x-large {
+  flex-shrink: 0;
+  height: 227px;
+  width: 227px;
+
+  & .feedback__icon {
+    left: -5rem;
+    position: absolute;
+  }
+}
+
+.feedback__person {
+  flex-shrink: 0;
+  height: 100px;
+  margin-left: auto;
+  margin-top: $space-x-small;
+  width: 100px;
+
+  & .feedback__icon {
+    right: 0;
+    position: absolute;
+  }
+}

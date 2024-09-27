@@ -1,0 +1,155 @@
+.step-1__title--image {
+  padding-bottom: $space-x-small;
+}
+
+.step-1__activity {
+  background-color: $grey-1;
+  border-radius: $x-small-border-radius;
+  padding: $space-large;
+
+  & h4 {
+    margin-bottom: $space-medium;
+  }
+}
+
+.step-1__activity--conversation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .fail--box + & {
+    margin-top: $space-x-small;
+  }
+
+  & .step-1__activity--conversation-option {
+    background-color: $white;
+    border-radius: $small-border-radius;
+    box-shadow: 0.3em 0.3em 0.75em 0.1em rgba(150, 150, 150, 0.1);
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: $space-small;
+
+    &:last-child {
+      margin-top: $space-x-small;
+
+      @media (min-width: $md-width) {
+        margin-top: 0;
+        margin-left: $space-x-small;
+      }
+    }
+
+    &.step-1__success--border {
+      border: 0.2em solid $green-success;
+    }
+
+    &.step-1__fail--border {
+      border: 0.2em solid $red-fail;
+    }
+  }
+
+  @media (min-width: $md-width) {
+    flex-direction: row;
+  }
+}
+
+// stop nesting for legibility
+.step-1__activity--conversation-option-chat-entry {
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+
+  & > span, & > p {
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    padding: $space-x-small;
+  }
+
+  & > span {
+    border-radius: 50%;
+    display: flex;
+    height: 2rem;
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 2rem;
+  }
+
+  & > p {
+    border-radius: $x-small-border-radius;
+    font-size: $x-small-text-size;
+    line-height: 1.5;
+    position: relative;
+
+    &::before, &::after {
+      content:  '';
+      height: 1.25em;
+      position: absolute;
+      top: 0;
+      width: 1.25em;
+    }
+
+    & > span:first-child {
+      display: block;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $space-x-small;
+  }
+}
+
+.step-1__activity--conversation-option-chat-entry-left {
+
+  & > span, & > p {
+    background-color: $pastel-yellow;
+  }
+
+  &  > .step-1__activity-entry-left-blue {
+    background-color: $pastel-blue;
+
+    &::before {
+      background-image: linear-gradient(to top right, transparent 50%, $pastel-blue 0);
+    }
+  }
+
+  & > p {
+    margin-left: $space-xx-small;
+
+    &::before {
+      background-image: linear-gradient(to top right, transparent 50%, $pastel-yellow 0);
+      left: -0.75em;
+    }
+
+    & > span:not(:first-child) {
+      border: 0.1em solid $orange;
+      border-radius: $large-border-radius;
+      color: $orange;
+      font-size: 0.5rem;
+      letter-spacing: 0.1em;
+      line-height: 2.5;
+      padding: $space-xx-small $space-x-small;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+}
+
+.step-1__activity--conversation-option-chat-entry-right {
+  align-self: flex-end;
+
+  & > span, & > p {
+    background-color: $pastel-pink;
+  }
+
+  & > p {
+    margin-right: $space-xx-small;
+
+    &::after {
+      background-image: linear-gradient(to top left, transparent 50%, $pastel-pink 0);
+      right: -0.75em;
+    }
+  }
+}

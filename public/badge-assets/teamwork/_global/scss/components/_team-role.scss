@@ -1,0 +1,17 @@
+/*! Task */
+
+.team-role { border: 1px solid #ccc; padding: 0 2rem 2rem; margin: 0 0 2rem; background: #fff; position: relative;
+    img { max-width: 100%; margin: 0 auto 2rem; display: block; position: absolute; top: 0; left: 50%; transform: translateX(-50%); }
+}
+.team-role-image-holder { padding-bottom: 83.65%; height: 0; overflow: hidden; position: relative; margin: 0 0 2rem; }
+
+.team-role-title { font-size: 2rem; font-weight: 500; margin: 0 0 1rem; }
+.team-role-description { margin: 0; }
+
+@media only screen and (min-width: $md-width) {
+    .team-roles { margin: 0 -1rem; }
+    .team-role { width: calc(50% - 2rem); float: left; margin: 0 1rem 2rem; }
+    .team-role:nth-child(2n+1) { clear: left; }
+    .team-role-description { min-height: 6rem; }
+}
+
